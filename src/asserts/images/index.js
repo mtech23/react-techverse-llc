@@ -1,4 +1,4 @@
-
+import mainSiteLogo from "./logo.png";
 import headerBurgerIcon from "./Header-Burger-Menu.png";
 import mainLogo from "./home-logo.png";
 import headerSearchIcon from "./search-icon.png";
@@ -48,9 +48,14 @@ import profileFeetImg03 from "./profile-feet-img-03.png";
 import profileFeetImg04 from "./profile-feet-img-04.png";
 import profileFeetImg05 from "./profile-feet-img-05.png";
 import profileFeetImg06 from "./profile-feet-img-06.png";
+import  dmca from "./dmca.png";
 
-
+import  ConeBlueGlossy from "./Cone-Blue-Glossy.png";
+import  playstore from "./playstore.png";
+import dmcacomplaint from "./dmca-complaint.png";
+import footerCertificate from "./footerCertificate.png";
 export{
+    mainSiteLogo,
     headerBurgerIcon,
     mainLogo,
     headerSearchIcon,
@@ -99,5 +104,10 @@ export{
     profileFeetImg03,
     profileFeetImg04,
     profileFeetImg05,
-    profileFeetImg06
+    profileFeetImg06,
+    dmca,
+    ConeBlueGlossy,
+    dmcacomplaint,
+    footerCertificate,
+    playstore
 };

@@ -1,0 +1,207 @@
+
+.techVerse_footer {
+    background-image: linear-gradient(322deg, #002025, #000000) !important;
+    padding: 80px 0 30px;
+  }
+  .footer_logo_img_box {
+    margin: 0 0 20px;
+    max-width: 170px;
+  }
+  .footer_logo_img_box img {
+    width: 100%;
+  }
+  .techVerse_footer .foooter__subhead {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 35px;
+  }
+  .icon_list_items {
+    margin-bottom: 0;
+    list-style: none;
+  }
+  .footer__links {
+    padding-left: 0 !important;
+  }
+  .footer__links .footer__link {
+    font-size: 19px;
+    line-height: 2;
+  }
+  .footer__links .footer__link a {
+    display: flex;
+    align-items: center;
+  }
+  .footer__links .footer__link a {
+    color: #fff;
+    line-height: 2;
+    font-size: 15px;
+    font-weight: 400;
+    display: block;
+  }
+  .footer__categories_links .footer__link a {
+    color: #ffffffb3;
+  }
+  .footer__categories_links .footer__link a:hover {
+    text-decoration: none;
+  }
+  .footer__links .footer__link a .icon_list_text {
+    color: #ffffffb3;
+  }
+  .footer_contactUS .footer__link .icon_list_icon {
+    font-size: 17px;
+    margin-right: 12px;
+  }
+  .icon_list_item a {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.15s;
+  }
+  .icon_list_item a {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.15s;
+  }
+  .techVerse_footerContent {
+    max-width: 1600px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .footer_formBox input.form-control {
+    padding: 10px 10px;
+    border: unset;
+  }
+  .footer_formBox input.form-control:hover {
+    box-shadow: unset;
+    border: unset;
+  }
+  .footer_formBox button.btn.btn-primary {
+    width: 100%;
+    font-family: "Poppins";
+    padding: 10px 10px;
+    font-size: 15px;
+    line-height: 1.5;
+    background-color: #0161cd;
+    border: unset;
+  }
+  .techVerse_footerRrequest_quote .hero_brands {
+    justify-content: center;
+  }
+  .techVerse_footer_copyright p {
+    margin: 0;
+    color: #fff;
+    font-size: 13px;
+  }
+  .techVerse_powerdby {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+  }
+  .techVerse_powerdby a {
+    color: #ffffffb3;
+    font-size: 13px;
+  }
+  .techVerse_powerdby a:hover {
+    text-decoration: none;
+  }
+  .footer_copyright {
+    margin-top: 20px;
+  }
+  .techVerse_disclaimer {
+    color: #ffffffb3;
+    border-top: 1px solid #ffffff6b;
+    margin-top: 16px;
+    padding-top: 16px;
+  }
+  .techVerse_disclaimer_title {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .techVerse_disclaimer p {
+    font-size: 12px;
+    margin: 0;
+  }
+  .social_links {
+    display: flex;
+    gap: 15px;
+    margin: 10px 0 0;
+  }
+  .social_links .social_link {
+    color: #fff;
+    font-size: 25px;
+  }
+  p.company_wishText {
+    margin: 0;
+    color: #fff;
+    font-size: 15px;
+  }
+  
+  .footer_bbb {
+    display: flex;
+    gap: 10px;
+    margin: 5px 0;
+  }
+  .footer_certicate {
+    display: flex;
+    justify-content: center;
+  }
+  .footer_certicate img {
+    width: 90px;
+  }
+  .footer_row {
+    z-index: 99;
+    position: relative;
+  }
+  /* Footer End */
+
+
+
+
+  /* #particles-js {
+    max-width: 380px;
+    max-height: 401px;
+    margin: 0 auto;
+  } */
+
+  #particles-js {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* canvas.particles-js-canvas-el {
+  width: 100%;
+  height: 100% !important;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+} */
+
+/* #tsparticles canvas {
+  position: absolute !important;
+  display: block;
+  vertical-align: bottom;
+} */
+
+/* #tsparticles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #0d47a1;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+} */
+ #custom_partilce{
+  position: relative;
+  z-index: -1;
+ }
