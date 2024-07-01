@@ -5,43 +5,50 @@
     /* background-image: url(../images/hero-bg.png); */
     background-size: cover;
     background-position: center;
-  }
-  .techVerse_hero_content h1 {
+}
+
+.techVerse_hero_content h1 {
     font-size: 54px;
     font-weight: bold;
-  }
-  .color-lightBlue1 {
+}
+
+.color-lightBlue1 {
     color: #89d6fb;
-  }
-  .color-lightBlue2 {
+}
+
+.color-lightBlue2 {
     color: #02a9f7;
-  }
-  
-  .color-darkBlue {
+}
+
+.color-darkBlue {
     color: #02577a;
-  }
-  .color-darkBlue1 {
+}
+
+.color-darkBlue1 {
     color: #2c5871;
-  }
-  .techVerse_hero_content p {
+}
+
+.techVerse_hero_content p {
     line-height: 2;
-  }
-  
-  .techVerse_hero .row {
+}
+
+.techVerse_hero .row {
     height: 100vh;
     align-items: center;
-  }
-  
-  .techVerse_hero_btns {
+}
+
+.techVerse_hero_btns {
     display: flex;
     justify-content: flex-start;
     gap: 15px;
     flex-wrap: wrap;
-  }
-  .btn_with_icon_img {
+}
+
+.btn_with_icon_img {
     width: 25px;
-  }
-  .btn_with_icon {
+}
+
+.btn_with_icon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -51,50 +58,156 @@
     font-size: 18px;
     border-radius: 30px;
     background-image: linear-gradient(45deg, #3dc1ff, #02a9f7);
-  }
-  .btn_with_icon:hover {
+}
+
+.btn_with_icon:hover {
     outline: none;
     border: unset;
     text-decoration: none;
     color: #000000;
-  }
-  .btn_secondary {
+}
+
+.btn_secondary {
     background: #000000;
     color: #fff;
     border: 1px solid #02a9f7;
-  }
-  .btn_secondary:hover {
+}
+
+.btn_secondary:hover {
     background: #000000;
     color: #fff;
     border: 1px solid #02a9f7;
-  }
-  
-  .hero_brands {
+}
+
+.hero_brands {
     display: flex;
     margin: 16px 0;
     gap: 10px;
     flex-wrap: wrap;
-  }
-  .hero_brands_img {
+}
+
+.hero_brands_img {
     width: 120px;
-  }
-  .techVerse_hero_img {
+}
+
+.techVerse_hero_img {
     position: relative;
-  }
-  .techVerse_hero_img img {
+}
+
+.techVerse_hero_img img {
     width: 100%;
-  }
-  
-  /* Hero End */
+}
+
+/* Hero End */
 
 
-  .hero_pagination .swiper-pagination-bullet {
+.hero_pagination .swiper-pagination-bullet {
     width: 40px;
     height: 10px;
     border-radius: 10px;
     background: #a9a9a9;
     opacity: 1;
-  }
-  .hero_pagination .swiper-pagination-bullet-active {
+}
+
+.hero_pagination .swiper-pagination-bullet-active {
     background: #3bc0ff;
-  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#app {
+    height: 100%
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+
+.swiper-slide {
+    font-size: 18px;
+    color: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 40px 60px;
+}
+
+.parallax-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.swiper-slide .title {
+    font-size: 41px;
+    font-weight: 300;
+}
+
+.swiper-slide .subtitle {
+    font-size: 21px;
+}
+
+.swiper-slide .text {
+    font-size: 14px;
+    max-width: 400px;
+    line-height: 1.3;
+}
+
+/* .btn{
+    background-image: url(../../asserts/images/hero-bg.png);
+} */
