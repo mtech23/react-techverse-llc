@@ -211,3 +211,24 @@ body {
 /* .btn{
     background-image: url(../../asserts/images/hero-bg.png);
 } */
+
+
+
+
+
+
+.caseStudy_img_bg_one{
+    background-image: url(../../../asserts/images/p6-bg.png) !important;
+}
+.caseStudy_img_bg_two{
+    background-image: url(../../asserts/images/p5-bg.png);
+}
+.caseStudy_img_bg_three{
+    background-image: url(../../asserts/images/p4-bg.png);
+}
+.caseStudy_img_bg_four{
+    background-image: url(../../asserts/images/p3-bg.png);
+}
+.caseStudy_img_bg_five{
+    background-image: url(../../asserts/images/p2-bg.png);
+}

@@ -401,6 +401,7 @@ body {
   .techVerse_portfolio {
     padding: 60px 0 80px;
     background-image: url(../../../asserts/images/our-porfolio-bg.png);
+    background-size: cover;
   }
   .techVerse_portfolio .sec_title {
     text-align: center;
@@ -680,7 +681,7 @@ body {
   
   .techVerse_mobileApp {
     background-image: url(../../../asserts/images/mobile-app-bg.gif);
-    background-image: url(../../../asserts/images/mobileApp-bg.png);
+    /* background-image: url(../../../asserts/images/mobileApp-bg.png); */
     /* background-image: url(../../../asserts/images/mobile-app-bg.gif); */
     background-size: cover;
   }
