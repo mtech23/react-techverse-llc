@@ -1,6 +1,7 @@
 import React from 'react';
 import { UserLayout } from "../../Components/Layout/UserLayout";
 import phoneicon from "../../asserts/images/phone-icon.png";
+import chaticon from "../../asserts/images/chat-icon.png";
 import herophonemockupgroup from "../../asserts/images/hero-phone-mockup-group.png";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -16,13 +17,21 @@ import pinkcapsol from "../../asserts/images/pink-capsol.png";
 import Pill from "../../asserts/images/Pill.png";
 import bbb from "../../asserts/images/bbb.png";
 import donatblue from "../../asserts/images/donat-blue.png";
-import chaticon from "../../asserts/images/chat-icon.png";
+
 import ConeBlueGlossy from "../../asserts/images/Cone-Blue-Glossy.png";
 import PillBlueGlossy from "../../asserts/images/Pill-Blue-Glossy.png";
 import greenCube from "../../asserts/images/green-cube.png";
 import pinkCapsol from "../../asserts/images/pink-capsol.png";
 // import donatorange from "../../asserts/images/donat-orange.png";
 import ecommerceimg01 from "../../asserts/images/ecommerce-img-01.png";
+import androidiconw from "../../asserts/images/android-icon-w.png";
+import angularicon from "../../asserts/images/angular-icon.png";
+import appleicon from "../../asserts/images/apple-icon.png";
+import ecommersedevhero from "../../asserts/images/ecommersedevhero.png";
+import HeroSection from '../../Components/herosection/index'
+import fluttericon from "../../asserts/images/flutter-icon.png";
+import reacticon from "../../asserts/images/react-icon.png";
+
 
 import Aos from "aos";
 import 'swiper/css';
@@ -37,278 +46,91 @@ const EcommerseDevelopment = () => {
   return (
     <UserLayout>
 
-      <Swiper
-        style={{
-          '--swiper-navigation-color': '#fff',
-          '--swiper-pagination-color': '#fff',
-        }}
-        speed={600}
-        parallax={true}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Parallax, Pagination, Navigation]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
 
-          <section class="techVerse_hero">
-            <div class="techVerse_heroContent">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="techVerse_hero_content">
-                      <h1
-                        data-aos="fade-right"
-                        data-aos-offset="300"
-                        data-aos-duration="1000"
-                      >
-                        Award-Winning Mobile App
-                        <span class="color-lightBlue1">Development</span>
-                        Company In USA
-                      </h1>
-                      <p
-                        data-aos="fade-right"
-                        data-aos-offset="300"
-                        data-aos-duration="2000"
-                      >
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type
-                      </p>
-                      <div
-                        class="techVerse_hero_btns"
-                        data-aos="fade-right"
-                        data-aos-offset="300"
-                        data-aos-duration="3000"
-                      >
-                        <a href="#" class="btn_with_icon">
-                          <img
-                            class="btn_with_icon_img"
-                            src={phoneicon}
-                            alt=""
-                          />
-                          <span class="btn_with_icon_text">Call Now</span>
-                        </a>
-                        <a href="#" class="btn_with_icon btn_secondary">
-                          <img
-                            class="btn_with_icon_img"
-                            src={chaticon}
-                            alt=""
-                          />
-                          <span class="btn_with_icon_text">Chat Now</span>
-                        </a>
-                      </div>
-                      <div
-                        class="hero_brands"
-                        data-aos="fade-right"
-                        data-aos-offset="300"
-                        data-aos-duration="3000"
-                      >
-                        <a href="#" class="hero_brands_img"
-                        ><img src={clutch} alt=""
-                          /></a>
-                        <a href="#" class="hero_brands_img"
-                        ><img src={truspilot} alt=""
-                          /></a>
-                        <a href="#" class="hero_brands_img"
-                        ><img src={bbb} alt=""
-                          /></a>
-                      </div>
-                    </div>
+      {/* <!-- Inner Hero --> */}
+      <section class="inner_hero">
+        <div class="inner-bgColor"></div>
+        <div className=' width-1600'>
+
+
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="inner_hero_content">
+                  <h1
+                    data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-duration="1000"
+                  >
+                    Custom Ecommerce Website
+                    <span class="color-lightBlue1">Development</span> Company
+                  </h1>
+                  <p
+                    data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-duration="2000"
+                  >
+                    Top-notch eCommerce web solutions that grow retail businesses and amplify sales.
+                  </p>
+                  <div class="hero_social-icons">
+                    <a href="#" class="hero_social-icon"><img src={androidiconw} alt="" /></a>
+                    <a href="#" class="hero_social-icon"><img src={angularicon} alt="" /></a>
+                    <a href="#" class="hero_social-icon"><img src={appleicon} alt="" /></a>
+                    <a href="#" class="hero_social-icon"><img src={fluttericon} alt="" /></a>
+                    <a href="#" class="hero_social-icon"><img src={reacticon} alt="" /></a>
                   </div>
-                  <div class="col-md-6">
-                    <div class="techVerse_hero_img">
+                  <div
+                    class="techVerse_hero_btns"
+                    data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-duration="3000"
+                  >
+                    <a href="#" class="btn_with_icon">
                       <img
-                        src={donatblue}
-                        class="techVerse_hero_icon1 animation11"
+                        class="btn_with_icon_img"
+                        src={phoneicon}
                         alt=""
                       />
+                      <span class="btn_with_icon_text">Call Now</span>
+                    </a>
+                    <a href="#" class="btn_with_icon btn_secondary">
                       <img
-                        src={PillBlueGlossy}
-                        class="techVerse_hero_icon2 animation22"
+                        class="btn_with_icon_img"
+                        src={chaticon}
                         alt=""
                       />
-                      <img
-                        src={ConeBlueGlossy}
-                        class="techVerse_hero_icon3 animation22"
-                        alt=""
-                      />
-                      <img
-                        src={herophonemockupgroup}
-                        data-aos="fade-left"
-                        data-aos-offset="300"
-                        data-aos-duration="3000"
-                        alt=""
-                      />
-                    </div>
+                      <span class="btn_with_icon_text">Chat Now</span>
+                    </a>
                   </div>
                 </div>
               </div>
-            </div>
-          </section>
-
-
-
-
-
-        </SwiperSlide>
-
-
-
-
-        <SwiperSlide>
-          <section class="techVerse_hero">
-            <div class="techVerse_heroContent">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="techVerse_hero_content">
-                      <h1
-                        data-aos="fade-right"
-                        data-aos-offset="300"
-                        data-aos-duration="1000"
-                      >
-                        Award-Winning Mobile App
-                        <span class="color-lightBlue1">Development</span>
-                        Company In USA
-                      </h1>
-                      <p
-                        data-aos="fade-right"
-                        data-aos-offset="300"
-                        data-aos-duration="2000"
-                      >
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type
-                      </p>
-                      <div
-                        class="techVerse_hero_btns"
-                        data-aos="fade-right"
-                        data-aos-offset="300"
-                        data-aos-duration="3000"
-                      >
-                        <a href="#" class="btn_with_icon">
-                          <img
-                            class="btn_with_icon_img"
-                            src={phoneicon}
-                            alt=""
-                          />
-                          <span class="btn_with_icon_text">Call Now</span>
-                        </a>
-                        <a href="#" class="btn_with_icon btn_secondary">
-                          <img
-                            class="btn_with_icon_img"
-                            src={chaticon}
-                            alt=""
-                          />
-                          <span class="btn_with_icon_text">Chat Now</span>
-                        </a>
-                      </div>
-                      <div
-                        class="hero_brands"
-                        data-aos="fade-right"
-                        data-aos-offset="300"
-                        data-aos-duration="3000"
-                      >
-                        <a href="#" class="hero_brands_img"
-                        ><img src={clutch} alt=""
-                          /></a>
-                        <a href="#" class="hero_brands_img"
-                        ><img src={truspilot} alt=""
-                          /></a>
-                        <a href="#" class="hero_brands_img"
-                        ><img src={bbb} alt=""
-                          /></a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="techVerse_hero_img">
-                      <img
-                        src={donatblue}
-                        class="techVerse_hero_icon1 animation11"
-                        alt=""
-                      />
-                      <img
-                        src={PillBlueGlossy}
-                        class="techVerse_hero_icon2 animation22"
-                        alt=""
-                      />
-                      <img
-                        src={ConeBlueGlossy}
-                        class="techVerse_hero_icon3 animation22"
-                        alt=""
-                      />
-                      <img
-                        src={herophonemockupgroup}
-                        data-aos="fade-left"
-                        data-aos-offset="300"
-                        data-aos-duration="3000"
-                        alt=""
-                      />
-                    </div>
-                  </div>
+              <div class="col-md-6 inner-hero_rightCol">
+                <div class="inner_hero_img">
+                  <img
+                    className='ecommerceDev_hero_img'
+                    src={ecommersedevhero}
+                    data-aos="fade-left"
+                    data-aos-offset="300"
+                    data-aos-duration="3000"
+                    alt=""
+                  />
                 </div>
               </div>
-            </div>
-          </section>
-
-        </SwiperSlide>
-
-      </Swiper>
-
-      {/* <!-- Trusted Partners --> */}
-      <section class="techVerse_trustedPartners techVerse_trustedPartnersServices">
-        <div class="container-fluid">
-          <div class="row">
-
-            <div class="col-md-12">
-              <div className="row flex-nowrap gap-4" style={{ overflowX: 'auto', gap: '15px' }}>
-
-                <marquee>
-                  <div class="trustedPartners">
-                    <div class="trustedPartner col">
-                      <img src="images/t-p-blue.png" alt="" />
-                    </div>
-                    <div class="trustedPartner col">
-                      <img src="images/t-p-black.png" alt="" />
-                    </div>
-                    <div class="trustedPartner col">
-                      <img src="images/t-p-blue.png" alt="" />
-                    </div>
-                    <div class="trustedPartner col">
-                      <img src="images/t-p-black.png" alt="" />
-                    </div>
-                    <div class="trustedPartner col">
-                      <img src="images/t-p-blue.png" alt="" />
-                    </div>
-                    <div class="trustedPartner col">
-                      <img src="images/t-p-black.png" alt="" />
-                    </div>
-                    <div class="trustedPartner col">
-                      <img src="images/t-p-blue.png" alt="" />
-                    </div>
-                    <div class="trustedPartner col">
-                      <img src="images/t-p-black.png" alt="" />
-                    </div>
-                    <div class="trustedPartner col">
-                      <img src="images/t-p-blue.png" alt="" />
-                    </div>
-                    <div class="trustedPartner col">
-                      <img src="images/t-p-black.png" alt="" />
-                    </div>
-                  </div>
-                </marquee>
-              </div>
-
             </div>
           </div>
+
         </div>
       </section>
+      <HeroSection
+        title={"Custom Ecommerce Website"}
+        subtitle={"Development"}
+
+        title2={"Company"}
+        tagline={"Top - notch eCommerce web solutions that grow retail businesses and amplify sales."}
+        heroimage={ecommersedevhero}
+
+      />
+
       {/* ecommerce section */}
 
       <section class="techVerse_about techVerse_aboutServices2">
