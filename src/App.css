@@ -1988,7 +1988,8 @@ canvas.particles-js-canvas-el {
   content: "";
   width: 70px;
   height: 60px;
-  /* background: url(../images/donat-blue.png); */
+  /* background: url(../../asserts/images/donat-blue.png); */
+  background: url(../src/asserts/images/donat-blue.png);
   /* background-color: red; */
   top: 0px;
   right: 0;
@@ -2906,4 +2907,13 @@ canvas.particles-js-canvas-el {
   .testimonials_title {
     font-size: 45px;
   }
+}
+.width-1600 {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.ecommerceDev_hero_img{
+  transform: scale(1.5) translateX(0%) !important;
+  transform-origin: center;
 }

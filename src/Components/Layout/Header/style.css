@@ -1542,7 +1542,7 @@ body {
     overflow: hidden;
   }
   .realEstate_hero .inner-bgColor {
-    background-image: url(../../../asserts/images/real-estate-hero-bg.png);
+    /* background-image: url(../../../asserts/images/real-estate-hero-bg.png); */
     opacity: 0.7;
     background-position: top center;
   }
