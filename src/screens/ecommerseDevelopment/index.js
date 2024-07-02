@@ -261,10 +261,57 @@ const EcommerseDevelopment = () => {
 
       </Swiper>
 
+      {/* <!-- Trusted Partners --> */}
+      <section class="techVerse_trustedPartners techVerse_trustedPartnersServices">
+        <div class="container-fluid">
+          <div class="row">
 
-        {/* ecommerce section */}
+            <div class="col-md-12">
+              <div className="row flex-nowrap gap-4" style={{ overflowX: 'auto', gap: '15px' }}>
 
-        <section class="techVerse_about techVerse_aboutServices2">
+                <marquee>
+                  <div class="trustedPartners">
+                    <div class="trustedPartner col">
+                      <img src="images/t-p-blue.png" alt="" />
+                    </div>
+                    <div class="trustedPartner col">
+                      <img src="images/t-p-black.png" alt="" />
+                    </div>
+                    <div class="trustedPartner col">
+                      <img src="images/t-p-blue.png" alt="" />
+                    </div>
+                    <div class="trustedPartner col">
+                      <img src="images/t-p-black.png" alt="" />
+                    </div>
+                    <div class="trustedPartner col">
+                      <img src="images/t-p-blue.png" alt="" />
+                    </div>
+                    <div class="trustedPartner col">
+                      <img src="images/t-p-black.png" alt="" />
+                    </div>
+                    <div class="trustedPartner col">
+                      <img src="images/t-p-blue.png" alt="" />
+                    </div>
+                    <div class="trustedPartner col">
+                      <img src="images/t-p-black.png" alt="" />
+                    </div>
+                    <div class="trustedPartner col">
+                      <img src="images/t-p-blue.png" alt="" />
+                    </div>
+                    <div class="trustedPartner col">
+                      <img src="images/t-p-black.png" alt="" />
+                    </div>
+                  </div>
+                </marquee>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* ecommerce section */}
+
+      <section class="techVerse_about techVerse_aboutServices2">
         <img
           class="techVerse_about_icon1 animation11"
           src={pinkCapsol}
@@ -288,39 +335,39 @@ const EcommerseDevelopment = () => {
         <div class="techVerse_aboutContent techVerse_aboutContentServices2">
           <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="sec_title buildStore_sec_title">
-                      <h2
-                        class="sec_title_head color-lightBlue2"
-                        data-aos="fade-up"
-                        data-aos-offset="300"
-                        data-aos-duration="1000"
-                      >
-                      Build Your e-Store with Us and Skyrocket the 
-                        <span class="color-darkBlue">Success!</span>
-                      </h2>
-                      <p
-                        data-aos="fade-up"
-                        data-aos-offset="300"
-                        data-aos-duration="2000"
-                      >
-                      Do you want to improve the sales of your business by promoting it digitally? If yes, then Techverse has got you covered. We are a leading eCommerce store development agency, and we offer a comprehensive range of e-store solutions that help businesses grow online and reach out to prospects. We create e-commerce website stores for our clients using the following platforms:
-                      </p>
-                    </div>
-                  </div>
+              <div class="col-md-12">
+                <div class="sec_title buildStore_sec_title">
+                  <h2
+                    class="sec_title_head color-lightBlue2"
+                    data-aos="fade-up"
+                    data-aos-offset="300"
+                    data-aos-duration="1000"
+                  >
+                    Build Your e-Store with Us and Skyrocket the
+                    <span class="color-darkBlue">Success!</span>
+                  </h2>
+                  <p
+                    data-aos="fade-up"
+                    data-aos-offset="300"
+                    data-aos-duration="2000"
+                  >
+                    Do you want to improve the sales of your business by promoting it digitally? If yes, then Techverse has got you covered. We are a leading eCommerce store development agency, and we offer a comprehensive range of e-store solutions that help businesses grow online and reach out to prospects. We create e-commerce website stores for our clients using the following platforms:
+                  </p>
+                </div>
+              </div>
               <div class="col-md-6">
-                  <div class="techVerse_about_img">
-                    <div class="techVerse_about_laptop_img">
-                      <img
-                        src={ecommerceimg01}
-                        class="about-laptopImg"
-                        data-aos="fade-right"
-                        data-aos-offset="300"
-                        data-aos-duration="1000"
-                      />
-                    </div>
+                <div class="techVerse_about_img">
+                  <div class="techVerse_about_laptop_img">
+                    <img
+                      src={ecommerceimg01}
+                      class="about-laptopImg"
+                      data-aos="fade-right"
+                      data-aos-offset="300"
+                      data-aos-duration="1000"
+                    />
                   </div>
                 </div>
+              </div>
               <div class="col-md-6">
                 <div class="techVerse_about_content services-abbout2">
                   <div class="sec_title">
@@ -330,14 +377,14 @@ const EcommerseDevelopment = () => {
                       data-aos-offset="300"
                       data-aos-duration="1000"
                     >
-                    <span class="color-lightBlue2">Shopify</span>
+                      <span class="color-lightBlue2">Shopify</span>
                     </h2>
                     <p
                       data-aos="fade-up"
                       data-aos-offset="300"
                       data-aos-duration="2000"
                     >
-                    The most commonly used eCommerce platform is ideal for businesses of all sizes.
+                      The most commonly used eCommerce platform is ideal for businesses of all sizes.
                     </p>
                     <h2
                       class="sec_title_head color-darkBlue"
@@ -345,14 +392,14 @@ const EcommerseDevelopment = () => {
                       data-aos-offset="300"
                       data-aos-duration="1000"
                     >
-                    <span class="color-lightBlue2">WooCommerce</span>
+                      <span class="color-lightBlue2">WooCommerce</span>
                     </h2>
                     <p
                       data-aos="fade-up"
                       data-aos-offset="300"
                       data-aos-duration="2000"
                     >
-                    An easy-to-use and management WordPress eCommerce plugin that allows e-store creation.
+                      An easy-to-use and management WordPress eCommerce plugin that allows e-store creation.
                     </p>
                     <h2
                       class="sec_title_head color-darkBlue"
@@ -360,22 +407,22 @@ const EcommerseDevelopment = () => {
                       data-aos-offset="300"
                       data-aos-duration="1000"
                     >
-                    <span class="color-lightBlue2">Magento</span>
+                      <span class="color-lightBlue2">Magento</span>
                     </h2>
                     <p
                       data-aos="fade-up"
                       data-aos-offset="300"
                       data-aos-duration="2000"
                     >
-                    For enterprises, we create large-scale responsive and functional website stores using Magento.
+                      For enterprises, we create large-scale responsive and functional website stores using Magento.
                     </p>
-                    
+
+                  </div>
                 </div>
+
               </div>
-              
             </div>
           </div>
-        </div>
         </div>
       </section>
 
