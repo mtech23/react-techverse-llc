@@ -507,8 +507,8 @@ h2 {
   z-index: 99;
 }
 .icc img {
-  width: 140px;
-  height: 140px;
+  width: 89px;
+  height: 89px;
 }
 .icc p {
   color: #04325f;
@@ -938,7 +938,7 @@ h2 {
   text-transform: uppercase;
   font-family: "Sora", sans-serif;
   position: absolute;
-  left: -36.1%;
+  left: -45.1%;
   top: 46%;
   transform: rotate(90deg);
   width: 834px;

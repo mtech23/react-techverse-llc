@@ -1,21 +1,47 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { UserLayout } from "../../Components/Layout/UserLayout";
 import phoneicon from "../../asserts/images/phone-icon.png";
 import herophonemockupgroup from "../../asserts/images/hero-phone-mockup-group.png";
-// import { Pagination } from 'swiper/modules';
+import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
+import bluecubelarge from '../../asserts/images/blue-cube-large.png'
+import Particles from 'react-particles';
+import { loadFull } from 'tsparticles';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { gsap } from "gsap";
+// peramidLeftAngles
+// path_to_peramidleftangles
+// import mobileAppImg from '../assets/images/mobileAppimg.png';
 
+import goodfirms from '../../asserts/images/good-firms.png';
+import partnersbbb from '../../asserts/images/partners-bbb.png';
+import partnerstruspilot from '../../asserts/images/partners-trus-pilot.png';
+import partnersclutch from '../../asserts/images/partners-clutch.png';
+import peramidleftangles from '../../asserts/images/peramid-left-angles.png';
+import pinkcapsol from '../../asserts/images/pink-capsol.png';
+import chaticonblues from '../../asserts/images/chat-icon-blue.png'
+// import orangehalfcircle from 'path_to_orangehalfcircle';
+import mobileAppimg from '../../asserts/images/mobileAppimg.png'
+// import 'path_to_your_css_file.css';
+import processicon1 from '../../asserts/images/process-icon-1.png'
+
+import arrowicon from '../../asserts/images/arrow-icon.png'
+import processicon2 from '../../asserts/images/process-icon-2.png'
+import processicon3 from '../../asserts/images/process-icon-3.png'
+import processicon4 from '../../asserts/images/process-icon-4.png'
+import processicon5 from '../../asserts/images/process-icon-5.png'
+import processicon6 from '../../asserts/images/process-icon-6.png'
 import { Parallax, Pagination, Navigation } from 'swiper/modules';
-
+import peramidleftangle from "../../asserts/images/peramid-left-angles.png"
 import clutch from "../../asserts/images/clutch.png";
 import truspilot from "../../asserts/images/trus-pilot.png";
 import laptopFrame from "../../asserts/images/laptop-Frame.png";
 import laptop from "../../asserts/images/laptop.png";
 import donatorange from "../../asserts/images/donat-orange.png";
 import greencube from "../../asserts/images/green-cube.png";
-import pinkcapsol from "../../asserts/images/pink-capsol.png";
+// import pinkcapsol from "../../asserts/images/pink-capsol.png";
 import Pill from "../../asserts/images/Pill.png";
 import bbb from "../../asserts/images/bbb.png";
+
 import donatblue from "../../asserts/images/donat-blue.png";
 import chaticon from "../../asserts/images/chat-icon.png";
 import chat_icon from "../../asserts/images/chat-icon.png";
@@ -47,14 +73,9 @@ import carbuying from "../../asserts/images/car-buying.png";
 import lllreptile from "../../asserts/images/lll-reptile.png";
 import privateastrology from "../../asserts/images/private-astrology.png";
 import Macbook from "../../asserts/images/Macbook.png";
-import peramidleftangles from "../../asserts/images/peramid-left-angles.png";
-import processicon1 from "../../asserts/images/process-icon-1.png";
-import processicon2 from "../../asserts/images/process-icon-2.png";
-import processicon3 from "../../asserts/images/process-icon-3.png";
-import processicon4 from "../../asserts/images/process-icon-4.png";
-import processicon5 from "../../asserts/images/process-icon-5.png";
-import processicon6 from "../../asserts/images/process-icon-6.png";
-import mobileAppimg from "../../asserts/images/mobileAppimg.png";
+// import peramidleftangles from "../../asserts/images/peramid-left-angles.png";
+
+
 import peramidangled from "../../asserts/images/peramid-angled.png";
 import p2 from "../../asserts/images/p2.png";
 import p1 from "../../asserts/images/p1.png";
@@ -66,19 +87,65 @@ import p6 from "../../asserts/images/p6.png";
 import Aos from "aos";
 
 import 'swiper/css';
-
-
+gsap.registerPlugin(MotionPathPlugin);
 
 const Home = () => {
-
-
-
-
-
+  const particlesInit = async (main) => {
+    await loadFull(main);
+  };
 
 
   Aos.init();
- 
+  // useEffect(() => {
+  //   gsap.set(".road", { opacity: 1 });
+  //   const circles = gsap.utils.toArray(".ani_cnt .icc");
+  //   const tl2 = gsap.timeline({ repeat: 20 });
+
+  //   circles.forEach((circle, i) => {
+  //     let start = i / circles.length; // secret sauce for circles
+  //     tl2.to(
+  //       circle,
+  //       {
+  //         motionPath: {
+  //           path: ".mypath",
+  //           align: ".mypath",
+  //           alignOrigin: [0.5, 0.4],
+  //           start: start,
+  //           end: start + 1,
+  //         },
+  //         ease: "none",
+  //         duration: 40,
+  //       },
+  //       0
+  //     );
+  //   });
+  // }, []);
+
+
+  useEffect(() => {
+    gsap.set(".road", { opacity: 1 });
+    const circles = gsap.utils.toArray(".ani_cnt .icc");
+    const tl2 = gsap.timeline({ repeat: 20 });
+
+    circles.forEach((circle, i) => {
+      let start = i / circles.length; // secret sauce for circles
+      tl2.to(
+        circle,
+        {
+          motionPath: {
+            path: ".mypath",
+            align: ".mypath",
+            alignOrigin: [0.5, 0.4],
+            start: start,
+            end: start + 1,
+          },
+          ease: "none",
+          duration: 40,
+        },
+        0
+      );
+    });
+  }, []);
 
   return (
     <UserLayout>
@@ -93,14 +160,14 @@ const Home = () => {
         pagination={{
           clickable: true,
         }}
-           data-swiper-parallax="-23%"
+        data-swiper-parallax="-23%"
         navigation={true}
         modules={[Parallax, Pagination, Navigation]}
         className="mySwiper"
       >
         <SwiperSlide>
 
-         <section class="techVerse_hero">
+          <section class="techVerse_hero">
             <div class="techVerse_heroContent">
               <div class="container-fluid">
                 <div class="row">
@@ -195,7 +262,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-          </section> 
+          </section>
 
 
 
@@ -304,13 +371,13 @@ const Home = () => {
               </div>
             </div>
           </section>
-         
+
 
 
 
 
         </SwiperSlide>
-      
+
       </Swiper>
 
       {/* 'backgroundImage: url(../../asserts/images/hero-bg.png);' */}
@@ -428,359 +495,359 @@ const Home = () => {
       </section>
 
       {/* <!-- Website --> */}
-    <section class="techVerse_webSolution">
-      <img
-        class="techVerse_webSolution_icon1 animation11"
-        src={donateWhite}
-        alt=""
-      />
-      <img
-        class="techVerse_webSolution_icon2 animation22"
-        src={peramidicon}
-        alt=""
-      />
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="techVerse_webSolution_content">
-              <div class="sec_title">
-                <h2
-                  class="sec_title_head color-lightBlue1"
-                  data-aos="fade-up"
-                  data-aos-offset="300"
-                  data-aos-duration="1000"
-                >
-                  Elevate your business presence with a customized
-                  <span class="color-lightBlue2">Website Solution</span>
-                </h2>
-                <p
-                  data-aos="fade-up"
-                  data-aos-offset="300"
-                  data-aos-duration="2000"
-                >
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s,
-                </p>
+      <section class="techVerse_webSolution">
+        <img
+          class="techVerse_webSolution_icon1 animation11"
+          src={donateWhite}
+          alt=""
+        />
+        <img
+          class="techVerse_webSolution_icon2 animation22"
+          src={peramidicon}
+          alt=""
+        />
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="techVerse_webSolution_content">
+                <div class="sec_title">
+                  <h2
+                    class="sec_title_head color-lightBlue1"
+                    data-aos="fade-up"
+                    data-aos-offset="300"
+                    data-aos-duration="1000"
+                  >
+                    Elevate your business presence with a customized
+                    <span class="color-lightBlue2">Website Solution</span>
+                  </h2>
+                  <p
+                    data-aos="fade-up"
+                    data-aos-offset="300"
+                    data-aos-duration="2000"
+                  >
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s,
+                  </p>
+                  <div
+                    class="techVerse_hero_btns"
+                    data-aos="fade-up"
+                    data-aos-offset="300"
+                    data-aos-duration="3000"
+                  >
+                    <a href="tel:+(1) 23456-7890" class="btn_with_icon">
+                      <img
+                        class="btn_with_icon_img"
+                        src={phoneicongreen}
+                        alt=""
+                      />
+                      <span class="btn_with_icon_text">+(1) 23456-7890</span>
+                    </a>
+                    <a href="#" class="btn_with_icon btn_secondary">
+                      <img
+                        class="btn_with_icon_img"
+                        src={chaticonblue}
+                        alt=""
+                      />
+                      <span class="btn_with_icon_text">Start A Live Chat</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      {/* <!-- Services --> */}
+      <section class="techVerse_services" id="particles-js2">
+        <img
+          class="techVerse_services_icon1 animation11"
+          src={pinkcapsol}
+          alt=""
+        />
+        <img
+          class="techVerse_services_icon2 animation11"
+          src={greencube}
+          alt=""
+        />
+        <img
+          class="techVerse_services_icon3 animation33"
+          src={orangecircle}
+          alt=""
+        />
+        <img
+          class="techVerse_services_icon4 animation22"
+          src={donatewhitesmall}
+          alt=""
+        />
+        <img
+          class="techVerse_services_icon5 animation33"
+          src={orangehalfcircle}
+          alt=""
+        />
+        <div class="container services_offerContainer">
+          <div class="row">
+            <div class="sec_title">
+              <h2
+                class="sec_title_head color-lightBlue2"
+                data-aos="fade-up"
+                data-aos-offset="300"
+                data-aos-duration="1000"
+              >
+                Services
+                <span class="color-darkBlue"> We Offer</span>
+              </h2>
+              <p
+                data-aos="fade-up"
+                data-aos-offset="300"
+                data-aos-duration="2000"
+              >
+                Techverse does not provide services only; we become a partner with
+                our clients to scale up their businesses with our wide range of
+                digital marketing services. We have helped hundreds of large
+                enterprises in the US to get new wings to fly higher on the
+                digital landscapes globally. Get a unique digital marketing
+                experience with the amalgamation of our proven strategies,
+                professional team, and the use of modern technology.
+              </p>
+            </div>
+            <div class="techVerse_services_content">
+              <img src={bluecube} class="blue-cube1 animation11" alt="" />
+              <img src={bluecube} class="blue-cube2 animation11" alt="" />
+              <div class="service_box_1"></div>
+              <div class="service_box_2"></div>
+              <div class="service_box_3"></div>
+              <div class="service_box">
+                <div class="service_box_before">
+                  <div class="service_box_icon">
+                    <img src={iosicon} alt="" />
+                  </div>
+                  <h3 class="service_box_title">IOS Development</h3>
+                </div>
+                <div class="service_box_after">
+                  <h3 class="service_box_title">Cross-Platform Development</h3>
+                  <p class="service_box_p">
+                    Elevate your mobile apps by overlaying virtual elements onto
+                    the real world, enhancing user interaction, entertainment, and
+                    practical experiences to instill a UX unlike any other.
+                  </p>
+                </div>
+              </div>
+              <div class="service_box">
+                <div class="service_box_before">
+                  <div class="service_box_icon">
+                    <img src={smartcontracticon} alt="" />
+                  </div>
+                  <h3 class="service_box_title">Smart Contract Development</h3>
+                </div>
+                <div class="service_box_after">
+                  <h3 class="service_box_title">Cross-Platform Development</h3>
+                  <p class="service_box_p">
+                    Elevate your mobile apps by overlaying virtual elements onto
+                    the real world, enhancing user interaction, entertainment, and
+                    practical experiences to instill a UX unlike any other.
+                  </p>
+                </div>
+              </div>
+              <div class="service_box">
+                <div class="service_box_before">
+                  <div class="service_box_icon">
+                    <img src={andriodicon} alt="" />
+                  </div>
+                  <h3 class="service_box_title">Android Development</h3>
+                </div>
+                <div class="service_box_after">
+                  <h3 class="service_box_title">Cross-Platform Development</h3>
+                  <p class="service_box_p">
+                    Elevate your mobile apps by overlaying virtual elements onto
+                    the real world, enhancing user interaction, entertainment, and
+                    practical experiences to instill a UX unlike any other.
+                  </p>
+                </div>
+              </div>
+              <div class="service_box">
+                <div class="service_box_before">
+                  <div class="service_box_icon">
+                    <img src={customappicon} alt="" />
+                  </div>
+                  <h3 class="service_box_title">Custom App Development</h3>
+                </div>
+                <div class="service_box_after">
+                  <h3 class="service_box_title">Cross-Platform Development</h3>
+                  <p class="service_box_p">
+                    Elevate your mobile apps by overlaying virtual elements onto
+                    the real world, enhancing user interaction, entertainment, and
+                    practical experiences to instill a UX unlike any other.
+                  </p>
+                </div>
+              </div>
+              <div class="service_box">
+                <div class="service_box_before">
+                  <div class="service_box_icon">
+                    <img src={enterprizeicon} alt="" />
+                  </div>
+                  <h3 class="service_box_title">Enterprise App Development</h3>
+                </div>
+                <div class="service_box_after">
+                  <h3 class="service_box_title">Cross-Platform Development</h3>
+                  <p class="service_box_p">
+                    Elevate your mobile apps by overlaying virtual elements onto
+                    the real world, enhancing user interaction, entertainment, and
+                    practical experiences to instill a UX unlike any other.
+                  </p>
+                </div>
+              </div>
+              <div class="service_box">
+                <div class="service_box_before">
+                  <div class="service_box_icon">
+                    <img src={crossplatform} alt="" />
+                  </div>
+                  <h3 class="service_box_title">Cross-Platform Development</h3>
+                </div>
+                <div class="service_box_after">
+                  <h3 class="service_box_title">Cross-Platform Development</h3>
+                  <p class="service_box_p">
+                    Elevate your mobile apps by overlaying virtual elements onto
+                    the real world, enhancing user interaction, entertainment, and
+                    practical experiences to instill a UX unlike any other.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 text-center mt-5">
+              <a
+                href="#"
+                class="btn_with_icon"
+                data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-duration="2000"
+              >
+                <span class="btn_with_icon_text">START YOUR PROJECT NOW!</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* <!-- Portfolio --> */}
+      <section class="techVerse_portfolio">
+        <div class="techVerse_portfolioContent">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="sec_title">
+                  <h2
+                    class="sec_title_head color-lightBlue2"
+                    data-aos="fade-up"
+                    data-aos-offset="300"
+                    data-aos-duration="1000"
+                  >
+                    Our
+                    <span class="color-darkBlue"> Portfolio </span>
+                  </h2>
+                  <p
+                    data-aos="fade-up"
+                    data-aos-offset="300"
+                    data-aos-duration="2000"
+                  >
+                    Our Company has worked with thousands of businesses all across
+                    the world and has developed highly functional, responsive, and
+                    feature-rich applications. Check out some of our best works:
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-12">
                 <div
-                  class="techVerse_hero_btns"
+                  class="portfolio_tabs nav nav-tabs"
+                  id="myTab"
+                  role="tablist"
                   data-aos="fade-up"
                   data-aos-offset="300"
                   data-aos-duration="3000"
                 >
-                  <a href="tel:+(1) 23456-7890" class="btn_with_icon">
-                    <img
-                      class="btn_with_icon_img"
-                      src={phoneicongreen}
-                      alt=""
-                    />
-                    <span class="btn_with_icon_text">+(1) 23456-7890</span>
-                  </a>
-                  <a href="#" class="btn_with_icon btn_secondary">
-                    <img
-                      class="btn_with_icon_img"
-                      src={chaticonblue}
-                      alt=""
-                    />
-                    <span class="btn_with_icon_text">Start A Live Chat</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    {/* <!-- Services --> */}
-    <section class="techVerse_services" id="particles-js2">
-      <img
-        class="techVerse_services_icon1 animation11"
-        src={pinkcapsol}
-        alt=""
-      />
-      <img
-        class="techVerse_services_icon2 animation11"
-        src={greencube}
-        alt=""
-      />
-      <img
-        class="techVerse_services_icon3 animation33"
-        src={orangecircle}
-        alt=""
-      />
-      <img
-        class="techVerse_services_icon4 animation22"
-        src={donatewhitesmall}
-        alt=""
-      />
-      <img
-        class="techVerse_services_icon5 animation33"
-        src={orangehalfcircle}
-        alt=""
-      />
-      <div class="container services_offerContainer">
-        <div class="row">
-          <div class="sec_title">
-            <h2
-              class="sec_title_head color-lightBlue2"
-              data-aos="fade-up"
-              data-aos-offset="300"
-              data-aos-duration="1000"
-            >
-              Services
-              <span class="color-darkBlue"> We Offer</span>
-            </h2>
-            <p
-              data-aos="fade-up"
-              data-aos-offset="300"
-              data-aos-duration="2000"
-            >
-              Techverse does not provide services only; we become a partner with
-              our clients to scale up their businesses with our wide range of
-              digital marketing services. We have helped hundreds of large
-              enterprises in the US to get new wings to fly higher on the
-              digital landscapes globally. Get a unique digital marketing
-              experience with the amalgamation of our proven strategies,
-              professional team, and the use of modern technology.
-            </p>
-          </div>
-          <div class="techVerse_services_content">
-            <img src={bluecube} class="blue-cube1 animation11" alt="" />
-            <img src={bluecube} class="blue-cube2 animation11" alt="" />
-            <div class="service_box_1"></div>
-            <div class="service_box_2"></div>
-            <div class="service_box_3"></div>
-            <div class="service_box">
-              <div class="service_box_before">
-                <div class="service_box_icon">
-                  <img src={iosicon} alt="" />
-                </div>
-                <h3 class="service_box_title">IOS Development</h3>
-              </div>
-              <div class="service_box_after">
-                <h3 class="service_box_title">Cross-Platform Development</h3>
-                <p class="service_box_p">
-                  Elevate your mobile apps by overlaying virtual elements onto
-                  the real world, enhancing user interaction, entertainment, and
-                  practical experiences to instill a UX unlike any other.
-                </p>
-              </div>
-            </div>
-            <div class="service_box">
-              <div class="service_box_before">
-                <div class="service_box_icon">
-                  <img src={smartcontracticon} alt="" />
-                </div>
-                <h3 class="service_box_title">Smart Contract Development</h3>
-              </div>
-              <div class="service_box_after">
-                <h3 class="service_box_title">Cross-Platform Development</h3>
-                <p class="service_box_p">
-                  Elevate your mobile apps by overlaying virtual elements onto
-                  the real world, enhancing user interaction, entertainment, and
-                  practical experiences to instill a UX unlike any other.
-                </p>
-              </div>
-            </div>
-            <div class="service_box">
-              <div class="service_box_before">
-                <div class="service_box_icon">
-                  <img src={andriodicon} alt="" />
-                </div>
-                <h3 class="service_box_title">Android Development</h3>
-              </div>
-              <div class="service_box_after">
-                <h3 class="service_box_title">Cross-Platform Development</h3>
-                <p class="service_box_p">
-                  Elevate your mobile apps by overlaying virtual elements onto
-                  the real world, enhancing user interaction, entertainment, and
-                  practical experiences to instill a UX unlike any other.
-                </p>
-              </div>
-            </div>
-            <div class="service_box">
-              <div class="service_box_before">
-                <div class="service_box_icon">
-                  <img src={customappicon} alt="" />
-                </div>
-                <h3 class="service_box_title">Custom App Development</h3>
-              </div>
-              <div class="service_box_after">
-                <h3 class="service_box_title">Cross-Platform Development</h3>
-                <p class="service_box_p">
-                  Elevate your mobile apps by overlaying virtual elements onto
-                  the real world, enhancing user interaction, entertainment, and
-                  practical experiences to instill a UX unlike any other.
-                </p>
-              </div>
-            </div>
-            <div class="service_box">
-              <div class="service_box_before">
-                <div class="service_box_icon">
-                  <img src={enterprizeicon} alt="" />
-                </div>
-                <h3 class="service_box_title">Enterprise App Development</h3>
-              </div>
-              <div class="service_box_after">
-                <h3 class="service_box_title">Cross-Platform Development</h3>
-                <p class="service_box_p">
-                  Elevate your mobile apps by overlaying virtual elements onto
-                  the real world, enhancing user interaction, entertainment, and
-                  practical experiences to instill a UX unlike any other.
-                </p>
-              </div>
-            </div>
-            <div class="service_box">
-              <div class="service_box_before">
-                <div class="service_box_icon">
-                  <img src={crossplatform} alt="" />
-                </div>
-                <h3 class="service_box_title">Cross-Platform Development</h3>
-              </div>
-              <div class="service_box_after">
-                <h3 class="service_box_title">Cross-Platform Development</h3>
-                <p class="service_box_p">
-                  Elevate your mobile apps by overlaying virtual elements onto
-                  the real world, enhancing user interaction, entertainment, and
-                  practical experiences to instill a UX unlike any other.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12 text-center mt-5">
-            <a
-              href="#"
-              class="btn_with_icon"
-              data-aos="fade-right"
-              data-aos-offset="300"
-              data-aos-duration="2000"
-            >
-              <span class="btn_with_icon_text">START YOUR PROJECT NOW!</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    {/* <!-- Portfolio --> */}
-    <section class="techVerse_portfolio">
-      <div class="techVerse_portfolioContent">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="sec_title">
-                <h2
-                  class="sec_title_head color-lightBlue2"
-                  data-aos="fade-up"
-                  data-aos-offset="300"
-                  data-aos-duration="1000"
-                >
-                  Our
-                  <span class="color-darkBlue"> Portfolio </span>
-                </h2>
-                <p
-                  data-aos="fade-up"
-                  data-aos-offset="300"
-                  data-aos-duration="2000"
-                >
-                  Our Company has worked with thousands of businesses all across
-                  the world and has developed highly functional, responsive, and
-                  feature-rich applications. Check out some of our best works:
-                </p>
-              </div>
-            </div>
-            <div class="col-md-12">
-              <div
-                class="portfolio_tabs nav nav-tabs"
-                id="myTab"
-                role="tablist"
-                data-aos="fade-up"
-                data-aos-offset="300"
-                data-aos-duration="3000"
-              >
-                <a
-                  class="nav-link active"
-                  id="mobile_apps"
-                  data-toggle="tab"
-                  href="#mobile-app"
-                  role="tab"
+                  <a
+                    class="nav-link active"
+                    id="mobile_apps"
+                    data-toggle="tab"
+                    href="#mobile-app"
+                    role="tab"
                   >Mobile Apps</a
-                >
-                <a
-                  class="nav-link"
-                  id="websites_tab"
-                  data-toggle="tab"
-                  href="#website-tab"
-                  role="tab"
+                  >
+                  <a
+                    class="nav-link"
+                    id="websites_tab"
+                    data-toggle="tab"
+                    href="#website-tab"
+                    role="tab"
                   >Websites</a
-                >
-                <a
-                  class="nav-link"
-                  id="cms_tab"
-                  data-toggle="tab"
-                  href="#cms-tab"
-                  role="tab"
+                  >
+                  <a
+                    class="nav-link"
+                    id="cms_tab"
+                    data-toggle="tab"
+                    href="#cms-tab"
+                    role="tab"
                   >CMS</a
-                >
-              </div>
-              <div class="tab-content" id="portfolioTabs">
-                <div
-                  class="tab-pane fade show active"
-                  id="mobile-app"
-                  role="tabpanel"
-                  aria-labelledby="mobile_apps"
-                >
-                  <div class="mobile_app_carousel"> 
+                  >
+                </div>
+                <div class="tab-content" id="portfolioTabs">
+                  <div
+                    class="tab-pane fade show active"
+                    id="mobile-app"
+                    role="tabpanel"
+                    aria-labelledby="mobile_apps"
+                  >
+                    <div class="mobile_app_carousel">
 
-                  <Swiper
+                      <Swiper
 
-                slidesPerView={5}
-                spaceBetween={30}
-                pagination={{
-                  clickable: true,
-               
-                }}
-                modules={[Parallax, Pagination, Navigation]}
-                className="mySwiper"
+                        slidesPerView={5}
+                        spaceBetween={30}
+                        pagination={{
+                          clickable: true,
 
-              >
-        
-           <SwiperSlide>
+                        }}
+                        modules={[Parallax, Pagination, Navigation]}
+                        className="mySwiper"
 
-           <img src={portfoliomockup1} alt="" />
-           </SwiperSlide>
+                      >
 
-           <SwiperSlide>
+                        <SwiperSlide>
 
-           <img src={portfoliomockup2} alt="" />
-           </SwiperSlide>
-           <SwiperSlide>
+                          <img src={portfoliomockup1} alt="" />
+                        </SwiperSlide>
 
-           <img src={portfoliomockup3} alt="" />
-           </SwiperSlide>
+                        <SwiperSlide>
 
-           <SwiperSlide>
+                          <img src={portfoliomockup2} alt="" />
+                        </SwiperSlide>
+                        <SwiperSlide>
 
-           <img src={portfoliomockup4} alt="" />
-           </SwiperSlide>
+                          <img src={portfoliomockup3} alt="" />
+                        </SwiperSlide>
 
-           <SwiperSlide>
+                        <SwiperSlide>
 
-           <img src={portfoliomockup5} alt="" />
-           </SwiperSlide>
-           <SwiperSlide>
+                          <img src={portfoliomockup4} alt="" />
+                        </SwiperSlide>
 
-           <img src={portfoliomockup1} alt="" />
-           </SwiperSlide>
-           <SwiperSlide>
+                        <SwiperSlide>
 
-           <img src={portfoliomockup2} alt="" />
-           </SwiperSlide>
-           </Swiper>
-       
-                    {/* <div class="swiper mobileAppCarousel">
+                          <img src={portfoliomockup5} alt="" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+
+                          <img src={portfoliomockup1} alt="" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+
+                          <img src={portfoliomockup2} alt="" />
+                        </SwiperSlide>
+                      </Swiper>
+
+                      {/* <div class="swiper mobileAppCarousel">
                       <div class="swiper-wrapper">
                     
                         <div class="swiper-slide">
@@ -805,67 +872,67 @@ const Home = () => {
                           <img src="images/portfolio-mockup-2.png" alt="" />
                         </div>
                       </div> */}
-                    {/* </div> */}
-                    <div class="our-slider-img">
-                      <img src={mobileframe} alt="" />
+                      {/* </div> */}
+                      <div class="our-slider-img">
+                        <img src={mobileframe} alt="" />
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div
-                  class="tab-pane fade"
-                  id="website-tab"
-                  role="tabpanel"
-                  aria-labelledby="websites_tab"
-                >
-                  <div class="web_app_carousel">
+                  <div
+                    class="tab-pane fade"
+                    id="website-tab"
+                    role="tabpanel"
+                    aria-labelledby="websites_tab"
+                  >
+                    <div class="web_app_carousel">
 
 
-                  <Swiper
+                      <Swiper
 
-                slidesPerView={5}
-                spaceBetween={30}
-                pagination={{
-                  clickable: true,
-                }}
-               
-                modules={[Parallax, Pagination, Navigation]}
-                className="mySwiper">
+                        slidesPerView={5}
+                        spaceBetween={30}
+                        pagination={{
+                          clickable: true,
+                        }}
 
-
+                        modules={[Parallax, Pagination, Navigation]}
+                        className="mySwiper">
 
 
-              
 
-                <SwiperSlide>
-                <img src={carbuying} alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                <img src={jeffwilson} alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                <img src={lllreptile} alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                <img src={privateastrology} alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                <img src={carbuying} alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                <img src={jeffwilson} alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                <img src={lllreptile} alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                <img src={privateastrology} alt="" />
-                </SwiperSlide>
 
-                
-                
-                </Swiper>
 
-                    {/* <div class="swiper webAppCarousel">
+
+                        <SwiperSlide>
+                          <img src={carbuying} alt="" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                          <img src={jeffwilson} alt="" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                          <img src={lllreptile} alt="" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                          <img src={privateastrology} alt="" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                          <img src={carbuying} alt="" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                          <img src={jeffwilson} alt="" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                          <img src={lllreptile} alt="" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                          <img src={privateastrology} alt="" />
+                        </SwiperSlide>
+
+
+
+                      </Swiper>
+
+                      {/* <div class="swiper webAppCarousel">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <img src="images/car-buying.png" alt="" />
@@ -892,65 +959,65 @@ const Home = () => {
                           <img src="images/private-astrology.png" alt="" />
                         </div>
                       </div> */}
-                    {/* </div> */}
-                    <div class="our-slider-webframe">
-                      <img src={Macbook} alt="" />
+                      {/* </div> */}
+                      <div class="our-slider-webframe">
+                        <img src={Macbook} alt="" />
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div
-                  class="tab-pane fade"
-                  id="cms-tab"
-                  role="tabpanel"
-                  aria-labelledby="cms_tab"
-                >
+                  <div
+                    class="tab-pane fade"
+                    id="cms-tab"
+                    role="tabpanel"
+                    aria-labelledby="cms_tab"
+                  >
 
 
-                <div class="web_app_carousel">
+                    <div class="web_app_carousel">
 
 
 
 
-                 <Swiper
+                      <Swiper
 
-                  slidesPerView={5}
-                  spaceBetween={30}
-                  pagination={{
-                  clickable: true,
-                  }}
-                
-                  modules={[Parallax, Pagination, Navigation]}
-                  className="mySwiper">
+                        slidesPerView={5}
+                        spaceBetween={30}
+                        pagination={{
+                          clickable: true,
+                        }}
+
+                        modules={[Parallax, Pagination, Navigation]}
+                        className="mySwiper">
 
 
-                    <SwiperSlide>
-                    <img src={carbuying} alt="" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                    <img src={jeffwilson} alt="" />
-                    </SwiperSlide>
-                      <SwiperSlide>
-                      <img src={lllreptile} alt="" />
-                      </SwiperSlide>
-                      <SwiperSlide>
-                      <img src={privateastrology} alt="" />
-                      </SwiperSlide>
-                      <SwiperSlide>
-                      <img src={carbuying} alt="" />
-                      </SwiperSlide>
-                      <SwiperSlide>
-                      <img src={jeffwilson} alt="" />
-                      </SwiperSlide>
-                      <SwiperSlide>
-                      <img src={lllreptile} alt="" />
-                      </SwiperSlide>
-                      <SwiperSlide>
-                      <img src={privateastrology} alt="" />
-                      </SwiperSlide>
+                        <SwiperSlide>
+                          <img src={carbuying} alt="" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                          <img src={jeffwilson} alt="" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                          <img src={lllreptile} alt="" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                          <img src={privateastrology} alt="" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                          <img src={carbuying} alt="" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                          <img src={jeffwilson} alt="" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                          <img src={lllreptile} alt="" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                          <img src={privateastrology} alt="" />
+                        </SwiperSlide>
 
-                    </Swiper>
+                      </Swiper>
 
-                  {/* <div class="swiper webAppCarousel">
+                      {/* <div class="swiper webAppCarousel">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
                         <img src="images/car-buying.png" alt="" />
@@ -978,203 +1045,337 @@ const Home = () => {
                       </div>
                     </div>
                   </div> */}
-                  <div class="our-slider-webframe">
-                    <img src={Macbook} alt="" />
+                      <div class="our-slider-webframe">
+                        <img src={Macbook} alt="" />
+                      </div>
+                    </div>
                   </div>
-                </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-
-    {/* <!-- Mobile App --> */}
-    <section class="techVerse_mobileApp">
-      <div class="techVerse_mobileAppContent">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-xl-6">
-              <div class="techVerse_mobileApp_content">
-                <div class="sec_title">
-                  <h2
-                    class="sec_title_head color-lightBlue1"
-                    data-aos="fade-right"
-                    data-aos-offset="300"
-                    data-aos-duration="1000"
-                  >
-                    Elevate your business presence with a customized
-                    <span class="color-lightBlue2">Mobile Application</span>
-                  </h2>
-                  <p
-                    data-aos="fade-right"
-                    data-aos-offset="300"
-                    data-aos-duration="2000"
-                  >
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s,
-                  </p>
-                  <div
-                    class="techVerse_hero_btns"
-                    data-aos="fade-right"
-                    data-aos-offset="300"
-                    data-aos-duration="3000"
-                  >
-                    <a href="tel:+(1) 23456-7890" class="btn_with_icon">
-                      <img
-                        class="btn_with_icon_img"
-                        src={phoneicongreen}
-                        alt=""
-                      />
-                      <span class="btn_with_icon_text">+(1) 23456-7890</span>
-                    </a>
-                    <a href="#" class="btn_with_icon btn_secondary">
-                      <img
-                        class="btn_with_icon_img"
-                        src={chaticonblue}
-                        alt=""
-                      />
-                      <span class="btn_with_icon_text">Start A Live Chat</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-6 px-0">
-              <div class="techVerse_mobileApp_img">
-                <img
-                  src={mobileAppimg}
-                  alt=""
-                  data-aos="fade-left"
-                  data-aos-offset="300"
-                  data-aos-duration="3000"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
 
 
-    {/* <!-- Case Studies --> */}
-    <section class="techVerse_caseStudies">
-      <img
-        class="techVerse_caseStudies_icon1 animation22"
-        src={peramidangled}
-        alt=""
-      />
-      <img
-        class="techVerse_caseStudies_icon2 animation11"
-        src={greencube}
-        alt=""
-      />
-      <img
-        class="techVerse_caseStudies_icon3 animation22"
-        src={donatewhitesmall}
-        alt=""
-      />
-      <img
-        class="techVerse_caseStudies_icon4 animation33"
-        src={orangecircle}
-        alt=""
-      />
-      <div class="techVerse_caseStudies-Content">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="sec_title">
+
+
+      <section className="techVerse_process">
+        <img
+          className="techVerse_process_icon1 animation22"
+          src={peramidleftangles}
+          alt=""
+        />
+        <img
+          className="techVerse_process_icon2 animation11"
+          src={pinkcapsol}
+          alt=""
+        />
+        <img
+          className="techVerse_process_icon3 animation33"
+          src={orangehalfcircle}
+          alt=""
+        />
+        <img
+          className="techVerse_process_icon4 animation22"
+          src={peramidleftangles}
+          alt=""
+        />
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="sec_title">
                 <h2
-                  class="sec_title_head color-lightBlue2"
+                  className="sec_title_head color-lightBlue2"
                   data-aos="fade-up"
                   data-aos-offset="300"
                   data-aos-duration="1000"
                 >
-                  Our
-                  <span class="color-darkBlue">CASE STUDIES</span>
+                  Process
+                  <span className="color-darkBlue">We Use</span>
                 </h2>
                 <p
                   data-aos="fade-up"
                   data-aos-offset="300"
                   data-aos-duration="2000"
                 >
-                  Our Company has worked with thousands of businesses all across
-                  the world and has developed highly functional, responsive, and
-                  feature-rich applications. Check out some of our best works:
+                  We nurture creativity in our skilled teams by harnessing fresh
+                  ideas, perspectives, techniques and tapping into new sources of
+                  inspiration. We are on a mission to design and build products
+                  that are fit-for-purpose, fulfil their objectives, and that
+                  deliver value to their users. Whether it’s Mobile App
+                  Development, game development, UI/UX design, or anything else,
+                  we deliver – keeping in mind your budget, timeline, and unique
+                  needs!
                 </p>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6">
-              <div
-                class="techVerse_caseStudy_img bgOrange"
-                data-aos="fade-right"
-                data-aos-offset="300"
-                data-aos-duration="1000"
-              >
-                <img src={p1} alt="" />
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div
-                class="techVerse_caseStudy_img bgOrange" style={{backgroundImage: "url(https://custom.mystagingserver.site/techversellc/images/p2-bg.png)"}} 
-                data-aos="fade-up"
-                data-aos-offset="300"
-                data-aos-duration="2000"
-              >
-                <img src={p2} alt="" />
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div
-                class="techVerse_caseStudy_img bgOrange" style={{backgroundImage: "url(https://custom.mystagingserver.site/techversellc/images/p3-bg.png)"}} 
-                data-aos="fade-left"
-                data-aos-offset="300"
-                data-aos-duration="3000"
-              >
-              <img src={p3} alt="" />
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div
-                class="techVerse_caseStudy_img bgOrange" style={{backgroundImage: "url(https://custom.mystagingserver.site/techversellc/images/p4-bg.png)"}} 
-                data-aos="fade-right"
-                data-aos-offset="300"
-                data-aos-duration="1000"
-              >
-                <img src={p4} alt="" />
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div
-                class="techVerse_caseStudy_img bgOrange " style={{backgroundImage: "url(https://custom.mystagingserver.site/techversellc/images/p5-bg.png)"}} 
-                data-aos="fade-up"
-                data-aos-offset="300"
-                data-aos-duration="2000"
-              >
-                <img src={p5} alt="" />
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div
-                class="techVerse_caseStudy_img bgOrange " style={{backgroundImage: "url(https://custom.mystagingserver.site/techversellc/images/p6-bg.png)"}}
-                // class="techVerse_caseStudy_img bgOrange caseStudy_img_bg_one"
-                data-aos="fade-left"
-                data-aos-offset="300"
-                data-aos-duration="3000"
-              >
-                <img src={p6} alt="" />
+            <div className="col-md-12 px-0">
+              <div className="ani_cnt">
+                <div className="oneicon icc">
+                  <img src={processicon1} alt="Bespoke-Designs" />
+                  <p>Idea Conceptualization and Research</p>
+                </div>
+                <div className="twoicon icc">
+                  <img src={processicon2} alt="Agile-Methodology" />
+                  <p>Strategic Planning and Feature</p>
+                </div>
+                <div className="threeicon icc">
+                  <img
+                    src={processicon3}
+                    alt="Time-Bound-Professionals"
+                  />
+                  <p>Wireframing and Prototyping</p>
+                </div>
+                <div className="fouricon icc">
+                  <img src={processicon4} alt="Award-Agency" />
+                  <p>Development</p>
+                </div>
+                <div className="fiveicon icc">
+                  <img
+                    src={processicon5}
+                    alt="Continuous-Digital-Improvement"
+                  />
+                  <p>Testing & QA</p>
+                </div>
+                <div className="sixicon icc">
+                  <img
+                    src={processicon6}
+                    alt="Innovative-approach"
+                  />
+                  <p>Deployment</p>
+                </div>
+                <svg
+                  viewBox="0 0 1916 479"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    className="mypath"
+                    d="M0 1H1400C1453.42 1 1496.73 44.3047 1496.73 97.7238V97.7238V97.7238C1496.73 146.55 1457.15 186.132 1408.32 186.132H408.437C354.985 186.132 311.653 229.464 311.653 282.916V282.916C311.653 336.368 354.985 379.7 408.437 379.7H1915.13"
+                    stroke="url(#paint0_linear_2_2097)"
+                    stroke-dasharray="18 18"
+                  ></path>
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_2_2097"
+                      x1="0.839028"
+                      y1="190.525"
+                      x2="1914.91"
+                      y2="190.525"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stopColor="#02a9f7"></stop>
+                      <stop offset="1" stopColor="#02a9f7"></stop>
+                    </linearGradient>
+                  </defs>
+                </svg>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      
-    </section>
+      </section>
 
+
+
+      <section class="techVerse_mobileApp">
+        <div class="techVerse_mobileAppContent">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xl-6">
+                <div class="techVerse_mobileApp_content">
+                  <div class="sec_title">
+                    <h2
+                      class="sec_title_head color-lightBlue1"
+                      data-aos="fade-right"
+                      data-aos-offset="300"
+                      data-aos-duration="1000"
+                    >
+                      Elevate your business presence with a customized
+                      <span class="color-lightBlue2">Mobile Application</span>
+                    </h2>
+                    <p
+                      data-aos="fade-right"
+                      data-aos-offset="300"
+                      data-aos-duration="2000"
+                    >
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s,
+                    </p>
+                    <div
+                      class="techVerse_hero_btns"
+                      data-aos="fade-right"
+                      data-aos-offset="300"
+                      data-aos-duration="3000"
+                    >
+                      <a href="tel:+(1) 23456-7890" class="btn_with_icon">
+                        <img
+                          class="btn_with_icon_img"
+                          src={phoneicongreen}
+                          alt=""
+                        />
+                        <span class="btn_with_icon_text">+(1) 23456-7890</span>
+                      </a>
+                      <a href="#" class="btn_with_icon btn_secondary">
+                        <img
+                          class="btn_with_icon_img"
+                          src={chaticonblue}
+                          alt=""
+                        />
+                        <span class="btn_with_icon_text">Start A Live Chat</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 px-0">
+                <div class="techVerse_mobileApp_img">
+                  <img
+                    src={mobileAppimg}
+                    alt=""
+                    data-aos="fade-left"
+                    data-aos-offset="300"
+                    data-aos-duration="3000"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {/* <!-- Case Studies --> */}
+      <section class="techVerse_caseStudies">
+        <img
+          class="techVerse_caseStudies_icon1 animation22"
+          src={peramidangled}
+          alt=""
+        />
+        <img
+          class="techVerse_caseStudies_icon2 animation11"
+          src={greencube}
+          alt=""
+        />
+        <img
+          class="techVerse_caseStudies_icon3 animation22"
+          src={donatewhitesmall}
+          alt=""
+        />
+        <img
+          class="techVerse_caseStudies_icon4 animation33"
+          src={orangecircle}
+          alt=""
+        />
+        <div class="techVerse_caseStudies-Content">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="sec_title">
+                  <h2
+                    class="sec_title_head color-lightBlue2"
+                    data-aos="fade-up"
+                    data-aos-offset="300"
+                    data-aos-duration="1000"
+                  >
+                    Our
+                    <span class="color-darkBlue">CASE STUDIES</span>
+                  </h2>
+                  <p
+                    data-aos="fade-up"
+                    data-aos-offset="300"
+                    data-aos-duration="2000"
+                  >
+                    Our Company has worked with thousands of businesses all across
+                    the world and has developed highly functional, responsive, and
+                    feature-rich applications. Check out some of our best works:
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div
+                  class="techVerse_caseStudy_img bgOrange"
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-duration="1000"
+                >
+                  <img src={p1} alt="" />
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div
+                  class="techVerse_caseStudy_img bgOrange" style={{ backgroundImage: "url(https://custom.mystagingserver.site/techversellc/images/p2-bg.png)" }}
+                  data-aos="fade-up"
+                  data-aos-offset="300"
+                  data-aos-duration="2000"
+                >
+                  <img src={p2} alt="" />
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div
+                  class="techVerse_caseStudy_img bgOrange" style={{ backgroundImage: "url(https://custom.mystagingserver.site/techversellc/images/p3-bg.png)" }}
+                  data-aos="fade-left"
+                  data-aos-offset="300"
+                  data-aos-duration="3000"
+                >
+                  <img src={p3} alt="" />
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div
+                  class="techVerse_caseStudy_img bgOrange" style={{ backgroundImage: "url(https://custom.mystagingserver.site/techversellc/images/p4-bg.png)" }}
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-duration="1000"
+                >
+                  <img src={p4} alt="" />
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div
+                  class="techVerse_caseStudy_img bgOrange " style={{ backgroundImage: "url(https://custom.mystagingserver.site/techversellc/images/p5-bg.png)" }}
+                  data-aos="fade-up"
+                  data-aos-offset="300"
+                  data-aos-duration="2000"
+                >
+                  <img src={p5} alt="" />
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div
+                  class="techVerse_caseStudy_img bgOrange " style={{ backgroundImage: "url(https://custom.mystagingserver.site/techversellc/images/p6-bg.png)" }}
+                  // class="techVerse_caseStudy_img bgOrange caseStudy_img_bg_one"
+                  data-aos="fade-left"
+                  data-aos-offset="300"
+                  data-aos-duration="3000"
+                >
+                  <img src={p6} alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
 
 
 
