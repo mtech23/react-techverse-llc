@@ -1869,7 +1869,7 @@ canvas.particles-js-canvas-el {
 
 
 .body-bullet-list li::before {
-background-image: url("../assets/images/Sphere-Blue-circle.png");  
+/* background-image: url("../assets/images/Sphere-Blue-circle.png");   */
   display: inline-block;
   margin-right: 10px;
   height: 20px;
@@ -2929,4 +2929,11 @@ background-image: url("../assets/images/Sphere-Blue-circle.png");
 .ecommerceDev_hero_img{
   transform: scale(1.5) translateX(0%) !important;
   transform-origin: center;
+}
+
+
+
+.custom_trusted_partners_seprator{
+  overflow-x: auto;
+   gap: 15px;
 }

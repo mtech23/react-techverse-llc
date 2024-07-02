@@ -9,10 +9,11 @@ import ecommersedevhero from "../../../src/asserts/images/ecommersedevhero.png";
 import fluttericon from "../../../src/asserts/images/flutter-icon.png";
 import reacticon from "../../../src/asserts/images/react-icon.png";
 
-const Aboutsection = (props) => {
+const Portfolio = (props) => {
     return (
         <div>
-            <section class="techVerse_about techVerse_aboutServices1" id="particles-js1">
+
+            <section class="techVerse_about techVerse_aboutServices2">
                 <img
                     class="techVerse_about_icon1 animation11"
                     src={props?.pinkcapsol}
@@ -29,12 +30,24 @@ const Aboutsection = (props) => {
                     src={props?.donatorange}
                     alt=""
                 />
-                <div class="techVerse_aboutContent techVerse_aboutContentServices1">
+                <div class="techVerse_aboutContent techVerse_aboutContentServices2">
                     <div class="container">
                         <div class="row">
-
                             <div class="col-md-6">
-                                <div class="techVerse_about_content services-abbout1">
+                                <div class="techVerse_about_img">
+                                    <div class="techVerse_about_laptop_img">
+                                        <img
+                                            src={props?.webaboutimg1}
+                                            class="about-laptopImg"
+                                            data-aos="fade-right"
+                                            data-aos-offset="300"
+                                            data-aos-duration="1000"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="techVerse_about_content services-abbout2">
                                     <div class="sec_title">
                                         <h2
                                             class="sec_title_head color-darkBlue"
@@ -43,44 +56,43 @@ const Aboutsection = (props) => {
                                             data-aos-duration="1000"
                                         >
                                             {props?.title}
-                                            <span class="color-lightBlue2">      {props?.subtitle}</span>   {props?.title2}
+                                            <span class="color-lightBlue2">                       {props?.subtitle}.</span>
                                         </h2>
                                         <p
                                             data-aos="fade-up"
                                             data-aos-offset="300"
                                             data-aos-duration="2000"
                                         >
-                                              {props?.para}
+                                            {props?.para}
                                         </p>
-                                        <ul
-                                            class="body-bullet-list"
+
+                                        <div
+                                            class="techVerse_hero_btns"
                                             data-aos="fade-up"
                                             data-aos-offset="300"
-                                            data-aos-duration="2000"
+                                            data-aos-duration="3000"
                                         >
-                                            <li>{props?.WordPress}</li>
-                                            <li>  {props?.PHP}</li>
-                                            <li>    {props?.Shopify}</li>
-                                            <li>  {props?.Joomla}</li>
-                                            <li>  {props?.Magneto}</li>
-                                        </ul>
+                                            <a href="#" class="btn_with_icon">
+                                                <img
+                                                    class="btn_with_icon_img"
+                                                    src={props?.phoneicon}
+                                                    alt=""
+                                                />
+                                                <span class="btn_with_icon_text">Call Now</span>
+                                            </a>
+                                            <a href="#" class="btn_with_icon btn_secondary">
+                                                <img
+                                                    class="btn_with_icon_img"
+                                                    src={props?.chaticon}
+                                                    alt=""
+                                                />
+                                                <span class="btn_with_icon_text">Chat Now</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="techVerse_about_img">
-                                    <div class="techVerse_about_laptop_img">
-                                        <img
-                                            src={props?.digitalmarketing01}
-                                            class="about-laptopImg business-devlopmentImg"
-                                            data-aos="fade-right"
-                                            data-aos-offset="300"
-                                            data-aos-duration="1000"
-                                        />
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -89,4 +101,4 @@ const Aboutsection = (props) => {
     )
 }
 
-export default Aboutsection
+export default Portfolio

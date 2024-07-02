@@ -3,13 +3,16 @@ import { UserLayout } from "../../Components/Layout/UserLayout";
 import phoneicon from "../../asserts/images/phone-icon.png";
 import chaticon from "../../asserts/images/chat-icon.png";
 import herophonemockupgroup from "../../asserts/images/hero-phone-mockup-group.png";
+import Website from '../../Components/Website';
+import Aboutsection from '../../Components/aboutsection';
 import webapplicationhero from '../../asserts/images/web-application-hero.png'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import pinkcapsolgtom from '../../asserts/images/pink-capsol.png'
 import { Parallax, Pagination, Navigation } from 'swiper/modules';
- 
+import Portfolio from '../../Components/Portfolio'
 import webaboutimg1 from "../../asserts/images/web-about-img1.png";
 import clutch from "../../asserts/images/clutch.png";
+import TrustedPartners from '../../Components/TrustedPartners'
 import truspilot from "../../asserts/images/trus-pilot.png";
 import digitalmarketing01 from '../../asserts/images/digital-marketing-01.png'
 
@@ -37,6 +40,10 @@ import reacticon from "../../asserts/images/react-icon.png";
 
 import Aos from "aos";
 import 'swiper/css';
+import TechnologiesUse from '../../Components/technologiesuse';
+import Process from '../../Components/Process';
+import Frequentlyaskquestion from '../../Components/frequentlyaskquestion';
+import Elevateyourbusiness from '../../Components/elevateyourbusiness';
 const WebApplication = () => {
 
 
@@ -60,199 +67,49 @@ const WebApplication = () => {
         heroimage={webapplicationhero}
 
       />
-
+      {/* TrustedPartners */}
+      <TrustedPartners />
       {/* ecommerce section */}
+      <Aboutsection
+        pinkcapsol={pinkcapsol}
+        greencube={greencube}
+        donatorange={donatorange}
+        title2="that Accelerate Your Business Growth"
+        title="POWERFUL" subtitle="Web Solutions"
+        para=" A good website design has the power to bring organic traffic to your business site. At Techverse, we have a team of experienced web developers who work diligently to strengthen businesses by creating top-notch websites for their brands. Our developers have extensive knowledge and expertise in developing websites using all the latest platforms such as:"
+        WordPress="WordPress"
 
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<aboutsection 
-
-/>
-
-<section class="techVerse_about techVerse_aboutServices1" id="particles-js1">
-      <img
-        class="techVerse_about_icon1 animation11"
-        src={pinkcapsol}
-        alt=""
+        PHP="PHP"
+        Shopify="Shopify"
+        Joomla="Joomla"
+        Magneto="Magneto"
+        digitalmarketing01={digitalmarketing01}
       />
-      
-      <img
-        class="techVerse_about_icon3 animation11"
-        src={greencube}
-        alt=""
-      />
-      <img
-        class="techVerse_about_icon4 animation11"
-        src={donatorange}
-        alt=""
-      />
-      <div class="techVerse_aboutContent techVerse_aboutContentServices1">
-        <div class="container">
-          <div class="row">
-            
-            <div class="col-md-6">
-              <div class="techVerse_about_content services-abbout1">
-                <div class="sec_title">
-                  <h2
-                    class="sec_title_head color-darkBlue"
-                    data-aos="fade-up"
-                    data-aos-offset="300"
-                    data-aos-duration="1000"
-                  >
-                  Powerful 
-                    <span class="color-lightBlue2">Web Solutions</span> that Accelerate Your Business Growth
-                  </h2>
-                  <p
-                    data-aos="fade-up"
-                    data-aos-offset="300"
-                    data-aos-duration="2000"
-                  >
-                  A good website design has the power to bring organic traffic to your business site. At Techverse, we have a team of experienced web developers who work diligently to strengthen businesses by creating top-notch websites for their brands. Our developers have extensive knowledge and expertise in developing websites using all the latest platforms such as:
-                  </p>
-                  <ul
-                    class="body-bullet-list"
-                    data-aos="fade-up"
-                    data-aos-offset="300"
-                    data-aos-duration="2000"
-                  >
-                  <li>WordPress</li>
-                  <li>PHP</li>
-                  <li>Shopify</li>
-                  <li>Joomla</li>
-                  <li>Magneto</li>
-                  </ul>
-                  
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-                <div class="techVerse_about_img">
-                  <div class="techVerse_about_laptop_img">
-                    <img
-                    src={digitalmarketing01}
-                      class="about-laptopImg business-devlopmentImg"
-                      data-aos="fade-right"
-                      data-aos-offset="300"
-                      data-aos-duration="1000"
-                    />
-                  </div>
-                </div>
-              </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="techVerse_about techVerse_aboutServices2">
-        <img
-          class="techVerse_about_icon1 animation11"
-          src={pinkcapsol}
-          alt=""
-        />
-        
-        <img
-          class="techVerse_about_icon3 animation11"
-          src={greencube}
-          alt=""
-        />
-        <img
-          class="techVerse_about_icon4 animation11"
-          src={donatorange}
-          alt=""
-        />
-        <div class="techVerse_aboutContent techVerse_aboutContentServices2">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                  <div class="techVerse_about_img">
-                    <div class="techVerse_about_laptop_img">
-                      <img
-                        src={webaboutimg1}
-                        class="about-laptopImg"
-                        data-aos="fade-right"
-                        data-aos-offset="300"
-                        data-aos-duration="1000"
-                      />
-                    </div>
-                  </div>
-                </div>
-              <div class="col-md-6">
-                <div class="techVerse_about_content services-abbout2">
-                  <div class="sec_title">
-                    <h2
-                      class="sec_title_head color-darkBlue"
-                      data-aos="fade-up"
-                      data-aos-offset="300"
-                      data-aos-duration="1000"
-                    >
-                    A Web Application Development Portfolio
-                      <span class="color-lightBlue2">without bounds.</span>
-                    </h2>
-                    <p
-                      data-aos="fade-up"
-                      data-aos-offset="300"
-                      data-aos-duration="2000"
-                    >
-                    We have perfected the art of creating custom-made web applications that meet the specific needs of our clients. Whether it's a simple content management system or a complex e-commerce platform, Techverse has the skills and experience to get the job done right.
-                    </p>
-                    
-                    <div
-                      class="techVerse_hero_btns"
-                      data-aos="fade-up"
-                      data-aos-offset="300"
-                      data-aos-duration="3000"
-                    >
-                      <a href="#" class="btn_with_icon">
-                        <img
-                          class="btn_with_icon_img"
-                          src="images/phone-icon.png"
-                          alt=""
-                        />
-                        <span class="btn_with_icon_text">Call Now</span>
-                      </a>
-                      <a href="#" class="btn_with_icon btn_secondary">
-                        <img
-                          class="btn_with_icon_img"
-                          src="images/chat-icon.png"
-                          alt=""
-                        />
-                        <span class="btn_with_icon_text">Chat Now</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-      </section>
-    
-    
+      <Portfolio pinkcapsol={pinkcapsol}
+        greencube={greencube}
+        donatorange={donatorange}
+
+        title="  A Web Application Development Portfolio" subtitle="without bounds."
+
+        para="We have perfected the art of creating custom-made web applications that meet the specific needs of our clients. Whether it's a simple content management system or a complex e-commerce platform, Techverse has the skills and experience to get the job done right."
+
+        digitalmarketing01={digitalmarketing01}
+        chaticon={chaticon}
+        phoneicon={phoneicon}
+        webaboutimg1={webaboutimg1} />
+
+      <Process />
+      <Website />
+
+
+      <TechnologiesUse />
+<Elevateyourbusiness/>
+
+<Frequentlyaskquestion/>
+
+
+
     </UserLayout>
   )
 }

@@ -14,8 +14,8 @@ const HeroSection = (props ) => {
         <div>
             <section class="inner_hero">
                 <div class="inner-bgColor"></div>
-                <div className=' width-1600'>
-
+                <div className=' '>
+{/* width-1600 */}
 
                     <div class="container">
                         <div class="row">
@@ -27,7 +27,7 @@ const HeroSection = (props ) => {
                                         data-aos-duration="1000"
                                     >
                                         {props?.title}
-                                        <span class="color-lightBlue1">                    {props?.subtitle}</span>                     {props?.title2}
+                                        <span class="color-lightBlue1">  {props?.subtitle}</span>  {props?.title2}
                                     </h1>
                                     <p
                                         data-aos="fade-right"
