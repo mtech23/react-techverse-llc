@@ -3,9 +3,12 @@ import { Link } from "react-router-dom";
 import Particles from "react-particles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Logo, mainSiteLogo, dmca, dmcacomplaint, footerCertificate, playstore } from "../../../asserts/images";
-
-
-
+import partnersbbb from '../../../asserts/images/partners-bbb.png';
+import arrowicon from '../../../asserts/images/arrow-icon.png'
+import goodfirms from '../../../asserts/images/good-firms.png';
+import partnersclutch from '../../../asserts/images/partners-clutch.png';
+import bluecubelarge from '../../../asserts/images/blue-cube-large.png'
+import partnerstruspilot from '../../../asserts/images/partners-trus-pilot.png';
 import { useCallback } from "react";
 // import Particles from "react-particles";
 // import type { Container, Engine } from "tsparticles-engine";
@@ -45,7 +48,217 @@ export const Footer = (props) => {
 
     <footer id="custom_partilce">
 
-      
+         {/* <!-- Contact --> */}
+         <section class="techVerse_contact">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-5 contact-laptopBG">
+              <div class="contactLaptop-outer">
+                <div
+                  class="techVerse-contact-img"
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-duration="2000"
+                >
+                  <img
+                    src="images/contactUs-laptop.png"
+                    class="contactUs-laptop"
+                    alt=""
+                  />
+                </div>
+                <img
+                  src="images/SuperToroid-Orange-Glossy.png"
+                  class="techVerse-contact-imgIcon animation11"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="contact_form">
+                    <div class="contact_formContent">
+                      <div class="sec_title">
+                        <h2 class="sec_title_head color-lightBlue2">
+                          CONTACT
+                          <span class="color-darkBlue">Us</span>
+                        </h2>
+                      </div>
+                      <form>
+                        <div class="row">
+                          <div class="col-md-5 mb-5 contact-formCols">
+                            <div class="form-group">
+                              <input
+                                type="text"
+                                placeholder="First Name"
+                                class="inputForm"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-md-5 mb-5 contact-formCols">
+                            <div class="form-group">
+                              <input
+                                type="text"
+                                placeholder="Last Name"
+                                class="inputForm"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-md-5 mb-5 contact-formCols">
+                            <div class="form-group">
+                              <input
+                                type="text"
+                                placeholder="Phone Number"
+                                class="inputForm"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-md-5 mb-5 contact-formCols">
+                            <div class="form-group">
+                              <input
+                                type="email"
+                                placeholder="Your Email"
+                                class="inputForm"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-md-10 mb-5 contact-formCols">
+                            <div class="form-group">
+                              <textarea
+                                rows="8"
+                                class="inputForm"
+                                placeholder="Message"
+                              ></textarea>
+                            </div>
+                          </div>
+                          <div class="col-md-10 mb-5 contact-formCols">
+                            <div class="budget-wrap">
+                              <div class="budget-header">
+                                <span class="budget-title">Set Your Budget</span>
+                                <span class="budget-value"> $500</span>
+                              </div>
+                              <div class="budget-content">
+                                <input
+                                  type="range"
+
+                                  min="500"
+                                  max="5000"
+                                  class="budget-slider"
+                                  id="budgetRange"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-10 mb-5 contact-formCols">
+                            <div class="form-group">
+                              <div class="techVerse_hero_btns">
+                                <a href="#" class="btn_with_icon w-100">
+                                  <span class="btn_with_icon_text">SUBMIT</span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                      <div class="get_discount">GET DISCOUNT</div>
+                    </div>
+                    <div class="newLetterBox">
+                      <div class="contentBox">
+                        <h3
+                          class="newLetterBox_strokeTxt"
+                          data-aos="fade-up"
+                          data-aos-offset="300"
+                          data-aos-duration="1000"
+                        >
+                          NEWSLETTER
+                        </h3>
+                        <h3
+                          data-aos="fade-up"
+                          data-aos-offset="300"
+                          data-aos-duration="2000"
+                        >
+                          subscribe our newsletter
+                        </h3>
+                        <p
+                          data-aos="fade-up"
+                          data-aos-offset="300"
+                          data-aos-duration="2000"
+                        >
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry. Lorem Ipsum has been the
+                          industry's standard.
+                        </p>
+                        <form
+                          data-aos="fade-up"
+                          data-aos-offset="300"
+                          data-aos-duration="3000"
+                        >
+                          <div class="formGroup news_letterInput">
+                            <input
+                              type="email"
+                              placeholder="Enter Your Email...."
+                            />
+                            <button type="submit">
+                              Subscribe Now
+                              <img
+                                class="btn_with_icon_img"
+                                src={arrowicon}
+                                alt=""
+                              />
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+ 
+      {/* <!-- Partners --> */}
+
+
+      <section class="techVerse_partners">
+        <img
+          class="techVerse_partners_icon1 animation11"
+          src={bluecubelarge}
+          alt=""
+        />
+        <img
+          class="techVerse_partners_icon2 animation22"
+          src="images/peramid-angled.png"
+          alt=""
+        />
+        <div class="techVerse_Contentpartners">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="partners-imgBox">
+                  <img src={partnersclutch} alt="" />
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="partners-imgBox">
+                  <img src={partnerstruspilot} alt="" />
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="partners-imgBox">
+                  <img src={partnersbbb} alt="" />
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="partners-imgBox">
+                  <img src={goodfirms} alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
 
       <section class="techVerse_footer" >
