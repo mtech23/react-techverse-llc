@@ -9,7 +9,7 @@ import ecommersedevhero from "../../../src/asserts/images/ecommersedevhero.png";
 import fluttericon from "../../../src/asserts/images/flutter-icon.png";
 import reacticon from "../../../src/asserts/images/react-icon.png";
 
-const HeroSection = ({ props }) => {
+const HeroSection = ( props ) => {
     return (
         <div>
             <section class="inner_hero">
@@ -27,7 +27,7 @@ const HeroSection = ({ props }) => {
                                         data-aos-duration="1000"
                                     >
                                         {props?.title}
-                                        <span class="color-lightBlue1">                    {props?.subtitle}</span>                     {props?.title2}
+                                        <span class="color-lightBlue1">  {props?.subtitle}</span>  {props?.title2}
                                     </h1>
                                     <p
                                         data-aos="fade-right"

@@ -1059,7 +1059,7 @@ const Home = () => {
 
 
 
-
+{/* process we use */}
 
       <section className="techVerse_process">
         <img
@@ -1177,7 +1177,7 @@ const Home = () => {
         </div>
       </section>
 
-
+        {/* MOBILE APP */}
 
       <section class="techVerse_mobileApp">
         <div class="techVerse_mobileAppContent">
