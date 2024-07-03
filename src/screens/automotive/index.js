@@ -44,6 +44,8 @@ import qualityicon from '../../asserts/images/quality-icon.png'
 import devandmaintenenceicon from '../../asserts/images/dev-and-maintenence-icon.png'
 import automotivedesktop from '../../asserts/images/automotive-desktop.png'
 import drivingsecsecreen from '../../asserts/images/driving-sec-secreen.png'
+import Driving_Exprience from '../../Components/Driving_experience';
+import Portfolios from '../../Components/portfolios';
 import reicon1 from '../../asserts/images/re-icon1.png'
 import reicon2 from '../../asserts/images/re-icon2.png'
 import reicon3 from '../../asserts/images/re-icon3.png'
@@ -52,7 +54,17 @@ import reicon5 from '../../asserts/images/re-icon5.png'
 import reicon6 from '../../asserts/images/re-icon6.png'
 import reicon7 from '../../asserts/images/re-icon7.png'
 import reicon8 from '../../asserts/images/re-icon8.png'
-import Driving_Exprience from '../../Components/Driving_experience';
+import automotivescreen1 from '../../asserts/images/automotive-screen1.png'
+import automotivescreen2 from '../../asserts/images/automotive-screen2.png'
+import automotivescreen3 from '../../asserts/images/automotive-screen3.png'
+import automotivescreen4  from '../../asserts/images/automotive-screen4.png'
+import automotivescreen5  from '../../asserts/images/automotive-screen5.png'
+import mobileframe from '../../asserts/images/mobile-frame.webp'
+import carbuying from '../../asserts/images/car-buying.png'
+import jeffwilson from '../../asserts/images/jeff-wilson.png'
+import lllreptile from '../../asserts/images/lll-reptile.png'
+import privateastrology from '../../asserts/images/private-astrology.png'
+import Macbook from '../../asserts/images/Macbook.png'
 
 gsap.registerPlugin(MotionPathPlugin);
 
@@ -95,7 +107,7 @@ const Automotive = () => {
                 classheroimage="inner-automotive-bgColor "
                 title={"Upgrade The Riding Experience With Techverse"}
                 subtitle={"Automotive Apps"}
-                title2={"Services for Online Businesses"}
+                // title2={"Services for Online Businesses"}
                 tagline={"Accelerate with our leading-edge app solutions and stay ahead of the curve."}
                 className={"mobileApp_hero_img"}
             // heroimage={Mobileapphero}
@@ -272,16 +284,16 @@ const Automotive = () => {
 
 
 
-            {/*                     
+                                
       <Portfolios
-        title="REAL ESTATE "
-        subtitle="Portfolio   "
+        title="AUTOMOTIVE "
+        subtitle=" Portfolio"
         para="Our Company has worked with thousands of businesses all across the world and has developed highly functional, responsive, and feature-rich applications. Check out some of our best works:"
-        image1={realEstateportfolioimg1}
-        image2={realEstateportfolioimg2}
-        image3={realEstateportfolioimg3}
-        image4={realEstateportfolioimg4}
-        image5={realEstateportfolioimg5}
+        image1={automotivescreen1}
+        image2={automotivescreen2}
+        image3={automotivescreen3}
+        image4={automotivescreen4}
+        image5={automotivescreen5}
         image6={mobileframe}
         image7={carbuying}
         image8={jeffwilson}
@@ -294,7 +306,7 @@ const Automotive = () => {
         CMS="CMS"
         Mobile_Apps="Mobile Apps"
         Websites="Websites"
-      /> */}
+      />
 
 
 

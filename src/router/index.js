@@ -16,6 +16,7 @@ import DigitalMarketing from "../screens/digitalMarketing";
 import Finance from "../screens/finance";
 import WebDevelopment from "../screens/webDevelopment";
 import Automotive from "../screens/automotive";
+import Media from "../screens/media";
 
 
 const Router = () => {
@@ -38,6 +39,8 @@ const Router = () => {
         <Route path="/digital-marketing" element={<DigitalMarketing />}></Route>
         <Route path="/webDevelopment" element={<WebDevelopment />}></Route>
         <Route path="/automotive" element={<Automotive />}></Route>
+        <Route path="/media" element={<Media />}></Route>
+      
         <Route path="/finance" element={<Finance />}></Route>
          
 
