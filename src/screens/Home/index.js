@@ -7,6 +7,7 @@ import bluecubelarge from '../../asserts/images/blue-cube-large.png'
 import Particles from 'react-particles';
 import { loadFull } from 'tsparticles';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Parallax, Pagination, Navigation } from 'swiper/modules';
 import { gsap } from "gsap";
 // peramidLeftAngles
 // path_to_peramidleftangles
@@ -29,7 +30,7 @@ import processicon3 from '../../asserts/images/process-icon-3.png'
 import processicon4 from '../../asserts/images/process-icon-4.png'
 import processicon5 from '../../asserts/images/process-icon-5.png'
 import processicon6 from '../../asserts/images/process-icon-6.png'
-import { Parallax, Pagination, Navigation } from 'swiper/modules';
+ 
 import peramidleftangle from "../../asserts/images/peramid-left-angles.png"
 import clutch from "../../asserts/images/clutch.png";
 import truspilot from "../../asserts/images/trus-pilot.png";
@@ -87,6 +88,7 @@ import Aos from "aos";
 
 import 'swiper/css';
 import Process from '../../Components/Process';
+import Testimonials from '../../Components/Tetimonials';
 gsap.registerPlugin(MotionPathPlugin);
 
 const Home = () => {
@@ -1235,7 +1237,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-
+<Testimonials/>
       </section>
 
 

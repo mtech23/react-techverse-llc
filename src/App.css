@@ -1912,7 +1912,7 @@ canvas.particles-js-canvas-el {
   line-height: 1.7;
 }
 .app_devSec {
-  /* background-image: url(../images/real-estate-secBG.png); */
+  background-image: url("./asserts/images/real-estate-secBG.png");
   background-size: cover;
   background-position: top center;
   padding: 60px 0;
