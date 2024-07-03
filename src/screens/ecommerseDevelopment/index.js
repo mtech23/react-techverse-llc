@@ -106,6 +106,7 @@ const EcommerseDevelopment = () => {
         subtitle={"Development"}
         title2={"Company"}
         tagline={"Top - notch eCommerce web solutions that grow retail businesses and amplify sales."}
+        className={"inner_hero_img"}
         heroimage={ecommersedevhero}
 
       /> 

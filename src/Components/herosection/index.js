@@ -70,7 +70,7 @@ const HeroSection = ( props ) => {
                             <div class="col-md-6 inner-hero_rightCol">
                                 <div class="inner_hero_img">
                                     <img
-                                        className='ecommerceDev_hero_img'
+                                        className={ props?.className} 
                                         src={props?.heroimage}
                                         data-aos="fade-left"
                                         data-aos-offset="300"

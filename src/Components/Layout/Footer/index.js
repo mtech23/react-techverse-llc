@@ -9,6 +9,8 @@ import goodfirms from '../../../asserts/images/good-firms.png';
 import partnersclutch from '../../../asserts/images/partners-clutch.png';
 import bluecubelarge from '../../../asserts/images/blue-cube-large.png'
 import partnerstruspilot from '../../../asserts/images/partners-trus-pilot.png';
+import contactUslaptop from '../../../asserts/images/contactUs-laptop.png';
+import SuperToroidOrangeGlossy from '../../../asserts/images/SuperToroid-Orange-Glossy.png';
 import { useCallback } from "react";
 // import Particles from "react-particles";
 // import type { Container, Engine } from "tsparticles-engine";
@@ -215,13 +217,13 @@ export const Footer = (props) => {
                   data-aos-duration="2000"
                 >
                   <img
-                    src="images/contactUs-laptop.png"
+                    src={contactUslaptop}
                     class="contactUs-laptop"
                     alt=""
                   />
                 </div>
                 <img
-                  src="images/SuperToroid-Orange-Glossy.png"
+                  src={SuperToroidOrangeGlossy}
                   class="techVerse-contact-imgIcon animation11"
                   alt=""
                 />
