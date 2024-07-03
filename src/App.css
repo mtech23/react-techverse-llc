@@ -1858,14 +1858,27 @@ canvas.particles-js-canvas-el {
   font-weight: 600;
   align-items: center;
 }
-.body-bullet-list li::before {
-  /* background-image: url("../images/Sphere-Blue-circle.png"); */
+/* .body-bullet-list li::before {
+  background-image: url("../assets/images/Sphere-Blue-circle.png");
   content: "";
   display: inline-block;
   margin-right: 10px;
   height: 20px;
   width: 20px;
+} */
+
+
+.body-bullet-list li::before {
+/* background-image: url("../assets/images/Sphere-Blue-circle.png");   */
+  display: inline-block;
+  margin-right: 10px;
+  height: 20px;
+  width: 20px;
+  background-size: contain; /* Ensure the image fits well */
+  background-repeat: no-repeat; /* Avoid repeating the image */
 }
+
+
 .body-unorder-list {
   padding-left: 18px;
 }

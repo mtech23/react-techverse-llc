@@ -6,8 +6,10 @@ import herophonemockupgroup from "../../asserts/images/hero-phone-mockup-group.p
 import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
 import { gsap } from "gsap";
 import { Swiper, SwiperSlide } from 'swiper/react';
+import TrustPartners from '../../Components/TrustedPartners'
 import { Parallax, Pagination, Navigation } from 'swiper/modules';
 import clutch from "../../asserts/images/clutch.png";
+import TrustedPartners from '../../Components/TrustedPartners'
 import truspilot from "../../asserts/images/trus-pilot.png";
 import donatorange from "../../asserts/images/donat-orange.png";
 import greencube from "../../asserts/images/green-cube.png";
@@ -21,7 +23,7 @@ import greenCube from "../../asserts/images/green-cube.png";
 import pinkCapsol from "../../asserts/images/pink-capsol.png";
 // import donatorange from "../../asserts/images/donat-orange.png";
 import ecommerceimg01 from "../../asserts/images/ecommerce-img-01.png";
-import mobileAppimg from '../../asserts/images/mobileAppimg.png'
+
 import androidiconw from "../../asserts/images/android-icon-w.png";
 import angularicon from "../../asserts/images/angular-icon.png";
 import appleicon from "../../asserts/images/apple-icon.png";
@@ -34,8 +36,7 @@ import ecommerceabout1 from "../../asserts/images/ecommerce-about-1.png";
 import reacticon from "../../../src/asserts/images/react-icon.png";
 import donateWhite from "../../asserts/images/donate-white.png";
 import peramidicon from "../../asserts/images/peramid-icon.png";
-import phoneicongreen from "../../asserts/images/phone-icon-green.png";
-import chaticonblue from "../../asserts/images/phone-icon-green.png";
+ 
 import peramidleftangles from '../../asserts/images/peramid-left-angles.png';
 import orangehalfcircle from "../../asserts/images/orange-half-circle.png";
 import processicon1 from '../../asserts/images/process-icon-1.png'
@@ -45,24 +46,14 @@ import processicon3 from '../../asserts/images/process-icon-3.png'
 import processicon4 from '../../asserts/images/process-icon-4.png'
 import processicon5 from '../../asserts/images/process-icon-5.png'
 import processicon6 from '../../asserts/images/process-icon-6.png'
-import techimg15 from '../../asserts/images/tech-img-15.png'
-import techimg14 from '../../asserts/images/tech-img-14.png'
-import techimg13 from '../../asserts/images/tech-img-13.png'
-import techimg12 from '../../asserts/images/tech-img-12.png'
-import techimg11 from '../../asserts/images/tech-img-11.png'
-import techimg10 from '../../asserts/images/tech-img-10.png'
-import techimg09 from '../../asserts/images/tech-img-09.png'
-import techimg08 from '../../asserts/images/tech-img-08.png'
-import techimg07 from '../../asserts/images/tech-img-07.png'
-import techimg06 from '../../asserts/images/tech-img-06.png'
-import techimg05 from '../../asserts/images/tech-img-05.png'
-import techimg04 from '../../asserts/images/tech-img-04.png'
-import techimg03 from '../../asserts/images/tech-img-03.png'
-import techimg02 from '../../asserts/images/tech-img-02.png'
-import techimg01 from '../../asserts/images/tech-img-01.png'
+ 
 
 import Aos from "aos";
 import 'swiper/css';
+import Website from '../../Components/Website';
+import TechnologiesUse from '../../Components/technologiesuse';
+import Frequentlyaskquestion from '../../Components/frequentlyaskquestion';
+import Elevateyourbusiness from '../../Components/elevateyourbusiness';
 gsap.registerPlugin(MotionPathPlugin);
 const EcommerseDevelopment = () => {
 
@@ -114,57 +105,8 @@ const EcommerseDevelopment = () => {
 
 
 {/* <!-- Trusted Partners --> */}
-    <section class="techVerse_trustedPartners techVerse_trustedPartnersServices">
-        <div class="container-fluid">
-          <div class="row">
-            
-            <div class="col-md-12">
-              <div
-                class="row flex-nowrap gap-4 custom_trusted_partners_seprator"
-                
-              >
-                <marquee>
-                  <div class="trustedPartners">
-                    <div class="trustedPartner col">
-                      <img src={tpblue} alt="" />
-                    </div>
-                    <div class="trustedPartner col">
-                      <img src={tpblack} alt="" />
-                    </div>
-                    <div class="trustedPartner col">
-                      <img src={tpblue} alt="" />
-                    </div>
-                    <div class="trustedPartner col">
-                      <img src={tpblack} alt="" />
-                    </div>
-                    <div class="trustedPartner col">
-                      <img src={tpblue} alt="" />
-                    </div>
-                    <div class="trustedPartner col">
-                      <img src={tpblack} alt="" />
-                    </div>
-                    <div class="trustedPartner col">
-                      <img src={tpblue} alt="" />
-                    </div>
-                    <div class="trustedPartner col">
-                      <img src={tpblack} alt="" />
-                    </div>
-                    <div class="trustedPartner col">
-                      <img src={tpblue} alt="" />
-                    </div>
-                    <div class="trustedPartner col">
-                      <img src={tpblack} alt="" />
-                    </div>
-                  </div>
-                </marquee>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </section>
-
-
+     
+<TrustedPartners/>
 
       {/* <!-- About Sec --> */}
     <section class="techVerse_about techVerse_aboutServices1" id="particles-js1">
@@ -258,69 +200,7 @@ const EcommerseDevelopment = () => {
     
 
           {/* <!-- Website --> */}
-          <section class="techVerse_webSolution">
-        <img
-          class="techVerse_webSolution_icon1 animation11"
-          src={donateWhite}
-          alt=""
-        />
-        <img
-          class="techVerse_webSolution_icon2 animation22"
-          src={peramidicon}
-          alt=""
-        />
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="techVerse_webSolution_content">
-                <div class="sec_title">
-                  <h2
-                    class="sec_title_head color-lightBlue1"
-                    data-aos="fade-up"
-                    data-aos-offset="300"
-                    data-aos-duration="1000"
-                  >
-                    Elevate your business presence with a customized
-                    <span class="color-lightBlue2">Website Solution</span>
-                  </h2>
-                  <p
-                    data-aos="fade-up"
-                    data-aos-offset="300"
-                    data-aos-duration="2000"
-                  >
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s,
-                  </p>
-                  <div
-                    class="techVerse_hero_btns"
-                    data-aos="fade-up"
-                    data-aos-offset="300"
-                    data-aos-duration="3000"
-                  >
-                    <a href="tel:+(1) 23456-7890" class="btn_with_icon">
-                      <img
-                        class="btn_with_icon_img"
-                        src={phoneicongreen}
-                        alt=""
-                      />
-                      <span class="btn_with_icon_text">+(1) 23456-7890</span>
-                    </a>
-                    <a href="#" class="btn_with_icon btn_secondary">
-                      <img
-                        class="btn_with_icon_img"
-                        src={chaticonblue}
-                        alt=""
-                      />
-                      <span class="btn_with_icon_text">Start A Live Chat</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        <Website/>
     
    
 
@@ -572,231 +452,15 @@ const EcommerseDevelopment = () => {
 
 
       {/* <!-- Technologies --> */}
-    <section class="techVerse_tech">
-      <div class="container-fluid">
-          <div class="row">
-              <div class="col-md-12">
-                  <div class="sec_title text-center">
-                      <h2
-                        class="sec_title_head color-lightBlue2"
-                        data-aos="fade-up"
-                        data-aos-offset="300"
-                        data-aos-duration="1000"
-                      >
-                      <span class="color-darkBlue">Technologies</span>
-                      WE USE
-                      </h2>
-                    </div>
-              </div>
-              <div class="col-md-12">
-                <div class="tech-line2">
-                  <div class="marquee-container">
-                    <div class="marquee1">
-                         <div class="all_logos">
-             
-                        <div class="single_logo">
-                            <img src={techimg01} alt="" />
-                        </div>
-             
-                        <div class="single_logo">
-                            <img src={techimg02} alt="" />
-                        </div>
-             
-                        <div class="single_logo">
-                            <img src={techimg03} alt="" />
-             
-                        </div>  
-             
-                        <div class="single_logo">
-                            <img src={techimg04} alt="" />
-                        </div>
-             
-                        <div class="single_logo">
-                            <img src={techimg05} alt="" />
-                        </div>
-             
-                        <div class="single_logo">
-                            <img src={techimg06} alt="" />
-                        </div>
-                   
-                        <div class="single_logo">
-                            <img src={techimg07} alt="" />
-                        </div>
-             
-                        <div class="single_logo">
-                            <img src={techimg08} alt=""/>
-                        </div>
-                        <div class="single_logo">
-                            <img src={techimg01} alt="" />
-                        </div>
-             
-                        <div class="single_logo">
-                            <img src={techimg02} alt=""/>
-                        </div>
-             
-                        <div class="single_logo">
-                            <img src={techimg03} alt="" />
-             
-                        </div>  
-             
-                        <div class="single_logo">
-                            <img src={techimg04} alt="" />
-                        </div>
-             
-                        <div class="single_logo">
-                            <img src={techimg05} alt="" />
-                        </div>
-             
-                        <div class="single_logo">
-                            <img src={techimg06} alt="" />
-                        </div>
-                   
-                        <div class="single_logo">
-                            <img src={techimg07} alt="" />
-                        </div>
-             
-                        <div class="single_logo">
-                            <img src={techimg08} alt=""/>
-                        </div>
-             
-                     
-                        </div>
-             
-                    </div>
-                    </div>
-                </div>
-                  <div class="tech-line2">
-                    <div class="marquee-container">
-                      <div class="marquee">
-                           <div class="all_logos">
-               
-                            <div class="single_logo">
-                              <img src={techimg09} alt="" />
-                          </div>
-                            <div class="single_logo">
-                              <img src={techimg10} alt="" />
-                          </div>
-               
-                            <div class="single_logo">
-                              <img src={techimg11} alt="" />
-                          </div>
-                            <div class="single_logo">
-                              <img src={techimg12} alt=""/>
-                          </div>
-                            <div class="single_logo">
-                              <img src={techimg13} alt="" />
-                          </div>
-                            <div class="single_logo">
-                              <img src={techimg14} alt="" />
-                          </div>
-                            <div class="single_logo">
-                              <img src={techimg15} alt="" />
-                          </div>
-                            <div class="single_logo">
-                              <img src={techimg09} alt=""/>
-                          </div>
-                            <div class="single_logo">
-                              <img src={techimg10} alt="" />
-                          </div>
-               
-                            <div class="single_logo">
-                              <img src={techimg11} alt="" />
-                          </div>
-                            <div class="single_logo">
-                              <img src={techimg12} alt="" />
-                          </div>
-                            <div class="single_logo">
-                              <img src={techimg13} alt="" />
-                          </div>
-                            <div class="single_logo">
-                              <img src={techimg14} alt="" />
-                          </div>
-                            <div class="single_logo">
-                              <img src={techimg15} alt=""/>
-                          </div>
-               
-                       
-                          </div>
-               
-                      </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-   </section>
+      <TechnologiesUse/>
+ 
 
 
    {/* MOBILE APP */}
 
-   <section class="techVerse_mobileApp">
-        <div class="techVerse_mobileAppContent">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-xl-6">
-                <div class="techVerse_mobileApp_content">
-                  <div class="sec_title">
-                    <h2
-                      class="sec_title_head color-lightBlue1"
-                      data-aos="fade-right"
-                      data-aos-offset="300"
-                      data-aos-duration="1000"
-                    >
-                      Elevate your business presence with a customized
-                      <span class="color-lightBlue2">Mobile Application</span>
-                    </h2>
-                    <p
-                      data-aos="fade-right"
-                      data-aos-offset="300"
-                      data-aos-duration="2000"
-                    >
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s,
-                    </p>
-                    <div
-                      class="techVerse_hero_btns"
-                      data-aos="fade-right"
-                      data-aos-offset="300"
-                      data-aos-duration="3000"
-                    >
-                      <a href="tel:+(1) 23456-7890" class="btn_with_icon">
-                        <img
-                          class="btn_with_icon_img"
-                          src={phoneicongreen}
-                          alt=""
-                        />
-                        <span class="btn_with_icon_text">+(1) 23456-7890</span>
-                      </a>
-                      <a href="#" class="btn_with_icon btn_secondary">
-                        <img
-                          class="btn_with_icon_img"
-                          src={chaticonblue}
-                          alt=""
-                        />
-                        <span class="btn_with_icon_text">Start A Live Chat</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-6 px-0">
-                <div class="techVerse_mobileApp_img">
-                  <img
-                    src={mobileAppimg}
-                    alt=""
-                    data-aos="fade-left"
-                    data-aos-offset="300"
-                    data-aos-duration="3000"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+ <Elevateyourbusiness/>
 
-
+<Frequentlyaskquestion/>
     </UserLayout>
   )
 }

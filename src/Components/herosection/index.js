@@ -9,15 +9,15 @@ import ecommersedevhero from "../../../src/asserts/images/ecommersedevhero.png";
 import fluttericon from "../../../src/asserts/images/flutter-icon.png";
 import reacticon from "../../../src/asserts/images/react-icon.png";
 
-const HeroSection = ( props ) => {
+const HeroSection = (props ) => {
     return (
         <div>
             <section class="inner_hero">
                 <div class="inner-bgColor"></div>
-                <div className=' width-1600'>
+                <div className=' '>
+{/* width-1600 */}
 
-
-                    <div class="container-fluid">
+                    <div class="container">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="inner_hero_content">
