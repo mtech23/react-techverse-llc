@@ -88,13 +88,13 @@ const Aboutsection = (props) => {
                                         </div> */}
 
 
-<Ctnbutton 
-phoneicon={props?.phoneicon}
-calltext={props?.calltext}
-chaticon={props?.chaticon}
-chatenow={props?.chatenow}
+                                            <Ctnbutton 
+                                            phoneicon={props?.phoneicon}
+                                            calltext={props?.calltext}
+                                            chaticon={props?.chaticon}
+                                            chatenow={props?.chatenow}
 
-/>
+                                            />
 
 
 

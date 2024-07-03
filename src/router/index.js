@@ -4,9 +4,15 @@ import Home from '../screens/Home';
 import MobileApp from '../screens/MobileApp';
 
 
+
 import WebApplication from "../screens/webApplication";
 // import EcommerseDevelopment from '../screens/EcommerseDevelopment';
 import EcommerseDevelopment from "../screens/ecommerseDevelopment";
+import DigitalMarketing from "../screens/digitalMarketing";
+import WebDevelopment from "../screens/webDevelopment";
+import Automotive from "../screens/automotive";
+
+
 const Router = () => {
   return (
     <BrowserRouter basename="project-name">
@@ -15,9 +21,16 @@ const Router = () => {
 
 
         <Route path="/EcommerseDevelopment" element={<EcommerseDevelopment/>}></Route>
-      <Route path="/MobileApp" element={< MobileApp/>}> </Route>
+        <Route path="/MobileApp" element={< MobileApp/>}> </Route>
         <Route path="/ecommerse-development" element={<EcommerseDevelopment />}></Route>
+      
         <Route path="/web-application" element={<WebApplication />}></Route>
+        <Route path="/digitalMarketing" element={<DigitalMarketing />}></Route>
+        <Route path="/webDevelopment" element={<WebDevelopment />}></Route>
+        <Route path="/automotive" element={<Automotive />}></Route>
+      
+
+   
       </Routes>
     </BrowserRouter>
   );

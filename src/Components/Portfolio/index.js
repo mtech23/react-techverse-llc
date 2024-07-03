@@ -56,7 +56,8 @@ const Portfolio = (props) => {
                                             data-aos-duration="1000"
                                         >
                                             {props?.title}
-                                            <span class="color-lightBlue2">                       {props?.subtitle}.</span>
+                                            <span class="color-lightBlue2">{props?.subtitle} </span>
+                                            {props?.title2}
                                         </h2>
                                         <p
                                             data-aos="fade-up"
@@ -88,6 +89,18 @@ const Portfolio = (props) => {
                                                 />
                                                 <span class="btn_with_icon_text">Chat Now</span>
                                             </a>
+                                        </div>
+                                        <div>
+                                            <div class="techVerse_store_links aos-init aos-animate" data-aos="fade-right" data-aos-offset="0" data-aos-duration="3000">
+                                                <a href="#" class="techVerse_store_link">
+                                                <img src={props?.playstore}
+                                                 alt=""/>
+                                                </a>
+                                                <a href="#" class="techVerse_store_link">
+                                                <img src={props?.appstore} 
+                                                alt="" />
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

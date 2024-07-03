@@ -1,4 +1,5 @@
-
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"); */
 
 @font-face {
   font-family: Averta;
@@ -100,10 +101,10 @@ h2 {
   background-color: #fff;
   padding: 46px 46px 46px;
 }
+
 #navbarDropdown {
   position: relative;
 }
-
 .first-dropdown-menu {
   opacity: 0;
   visibility: hidden;
@@ -111,8 +112,24 @@ h2 {
   width: 100%;
   background-color: #fff;
 }
-
 .showing {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+#navbarDropdown1 {
+  position: relative;
+}
+
+.second-dropdown-menu {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+}
+
+.showing1 {
   opacity: 1 !important;
   visibility: visible !important;
 }
@@ -181,6 +198,9 @@ h2 {
 .color-darkBlue1 {
   color: #2c5871;
 }
+.color-white {
+  color: #fff;
+}
 .techVerse_hero_content p {
   line-height: 2;
 }
@@ -193,6 +213,7 @@ h2 {
 .techVerse_hero_btns {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   gap: 15px;
   flex-wrap: wrap;
 }
@@ -280,6 +301,7 @@ h2 {
   line-height: 1.2;
   margin-bottom: 30px;
   text-transform: uppercase;
+  text-transform: capitalize;
 }
 .sec_title p {
   line-height: 2;
@@ -359,7 +381,8 @@ h2 {
 .service_box_after {
   color: #fff;
   padding: 30px 15px;
-  /* background-image: url(../images/service-box-bg.png); */
+  background-image: url(../src/asserts/images/service-box-bg.png);
+   /* background-image: url(../images/service-box-bg.png); */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -406,7 +429,7 @@ h2 {
 /* Portfolio Start */
 .techVerse_portfolio {
   padding: 60px 0 80px;
-  /* background-image: url(../images/our-porfolio-bg.png); */
+  background-image: url(../src/asserts/images/our-porfolio-bg.png);
 }
 .techVerse_portfolio .sec_title {
   text-align: center;
@@ -507,8 +530,8 @@ h2 {
   z-index: 99;
 }
 .icc img {
-  width: 89px;
-  height: 89px;
+  width: 140px;
+  height: 140px;
 }
 .icc p {
   color: #04325f;
@@ -685,9 +708,8 @@ h2 {
 /* Testimonials End */
 
 .techVerse_mobileApp {
-  /* background-image: url(../images/mobileApp-bg.png); */
-  /* background-image: url(../images/mobile-app-bg.gif); */
-  /* background-image: url(../../../asserts/images/mobile-app-bg.gif); */
+  background-image: url(../src/asserts/images/mobileApp-bg.png);
+  background-image: url(../src/asserts/images/mobile-app-bg.gif);
   background-size: cover;
 }
 .techVerse_mobileApp_content {
@@ -713,7 +735,7 @@ h2 {
 
 /* Case Studies Start */
 .techVerse_caseStudies {
-  /* background-image: url(../images/casestudy-bg.png); */
+  background-image: url(../src/asserts/images/casestudy-bg.png);
   padding: 60px 0;
   position: relative;
   overflow: hidden;
@@ -837,7 +859,7 @@ h2 {
 }
 
 .bgOrange {
-  /* background-image: url(https://custom.mystagingserver.site/techversellc/images/bgImage.png); */
+  background-image: url(https://custom.mystagingserver.site/techversellc/images/bgImage.png);
   height: 560px;
   overflow: hidden;
   position: relative;
@@ -894,7 +916,7 @@ h2 {
   width: 170px;
 }
 .contact-laptopBG {
-  /* background-image: url(../images/contact-laptopBG.png); */
+  background-image: url(../src/asserts/images/contact-laptopBG.png);
   background-size: cover;
 }
 
@@ -903,12 +925,15 @@ h2 {
   z-index: 9999;
 }
 .contact_formContent {
-  /* background-image: url(../images/bgContatc.png); */
+  background-image: url(../src/asserts/images/bgContatc.png);
   padding-left: 100px;
   padding-top: 50px;
   position: relative;
   background-repeat: no-repeat;
   background-position: right;
+}
+.contact_formContent form{
+    z-index: 9999;
 }
 .budget-header {
   display: flex;
@@ -938,7 +963,8 @@ h2 {
   text-transform: uppercase;
   font-family: "Sora", sans-serif;
   position: absolute;
-  left: -45.1%;
+  /*left: -36.1%;*/
+  left: -390px;
   top: 46%;
   transform: rotate(90deg);
   width: 834px;
@@ -1536,19 +1562,33 @@ canvas.particles-js-canvas-el {
 
 .inner_hero {
   background-color: #001c36;
-  /* background-image: url(../images/inner-hero-bg.gif); */
+  background-image: url(../src/asserts/images/inner-hero-bg.gif);
   background-repeat: no-repeat;
   background-size: cover;
   /* padding: 150px 0 60px; */
-  padding: 180px 0 70px;
+  /* padding: 180px 0 70px; */
+  padding: 200px 0 110px;
 
   position: relative;
   overflow: hidden;
 }
 .realEstate_hero .inner-bgColor {
-  /* background-image: url(../images/real-estate-hero-bg.png); */
+  background-image: url(../src/asserts/images/real-estate-hero-bg.png);
   opacity: 0.7;
   background-position: top center;
+  background-size: cover;
+}
+.ecommerse-hero .inner-bgColor {
+  background-image: url(../src/asserts/images/ecommer-hero-bg.png);
+  opacity: 0.7;
+  background-position: top center;
+  background-size: cover;
+}
+.automotive-hero .inner-bgColor {
+  background-image: url(../src/asserts/images/automotive-hero-bg.png);
+  opacity: 0.7;
+  background-position: top center;
+  background-size: cover;
 }
 .inner_hero .row {
   align-items: center;
@@ -1564,7 +1604,7 @@ canvas.particles-js-canvas-el {
   /* font-size: 38px; */
   font-size: 36px;
   font-weight: bold;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 .hero_social-icons {
   display: flex;
@@ -1762,7 +1802,7 @@ canvas.particles-js-canvas-el {
 
 /* Tech Start */
 .techVerse_tech {
-  /* background-image: url(../images/tech-bg.png); */
+  background-image: url(../src/asserts/images/tech-bg.png);
   padding: 60px 0;
 }
 .tech-boxes {
@@ -1773,7 +1813,7 @@ canvas.particles-js-canvas-el {
   width: 170px;
 }
 .single_logo {
-  /* background-image: url(../images/white-polygon.png); */
+  background-image: url(../src/asserts/images/white-polygon.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 140px;
@@ -1792,7 +1832,7 @@ canvas.particles-js-canvas-el {
 }
 
 .single_logo:hover {
-  /* background-image: url(../images/blue-polygon.png); */
+  background-image: url(../src/asserts/images/blue-polygon.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -1858,27 +1898,14 @@ canvas.particles-js-canvas-el {
   font-weight: 600;
   align-items: center;
 }
-/* .body-bullet-list li::before {
-  background-image: url("../assets/images/Sphere-Blue-circle.png");
+.body-bullet-list li::before {
+  background-image: url("../src/asserts/images/Sphere-Blue-circle.png");
   content: "";
   display: inline-block;
   margin-right: 10px;
   height: 20px;
   width: 20px;
-} */
-
-
-.body-bullet-list li::before {
-/* background-image: url("../assets/images/Sphere-Blue-circle.png");   */
-  display: inline-block;
-  margin-right: 10px;
-  height: 20px;
-  width: 20px;
-  background-size: contain; /* Ensure the image fits well */
-  background-repeat: no-repeat; /* Avoid repeating the image */
 }
-
-
 .body-unorder-list {
   padding-left: 18px;
 }
@@ -1912,7 +1939,7 @@ canvas.particles-js-canvas-el {
   line-height: 1.7;
 }
 .app_devSec {
-  /* background-image: url(../images/real-estate-secBG.png); */
+  background-image: url(../src/asserts/images/real-estate-secBG.png);
   background-size: cover;
   background-position: top center;
   padding: 60px 0;
@@ -2001,7 +2028,6 @@ canvas.particles-js-canvas-el {
   content: "";
   width: 70px;
   height: 60px;
-  /* background: url(../../asserts/images/donat-blue.png); */
   background: url(../src/asserts/images/donat-blue.png);
   /* background-color: red; */
   top: 0px;
@@ -2012,7 +2038,63 @@ canvas.particles-js-canvas-el {
   background-repeat: no-repeat;
   animation: animation1 6s linear 0s infinite normal none;
 }
+.techVerse_store_links {
+  margin: 20px 0;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.techVerse_store_link {
+  display: block;
+  max-width: 150px;
+}
+.techVerse_store_link img {
+  width: 100%;
+}
 
+.drivingSec {
+  background-image: url(../src/asserts/images/automotive-bg-gif.gif);
+  /* opacity: 0.7; */
+  background-position: bottom center;
+  background-size: cover;
+}
+.drivingSec_innerBG {
+  background: #001c36;
+  position: absolute;
+  opacity: 80%;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.drivingSec .icon_box h4 {
+  color: #fff;
+}
+
+.webDev_hero_img {
+  transform: scale(1.2) !important;
+  transform-origin: center;
+}
+.mobileApp_hero_img {
+  transform: scale(1.5) translateX(-7%) !important;
+  transform-origin: center;
+}
+.web-development_hero_img {
+  transform: scale(1.4) translateX(3%) !important;
+  transform-origin: center;
+}
+.webApp_hero_img {
+  transform: scale(1.3) translateX(10%) !important;
+  transform-origin: center;
+}
+.ecommerceDev_hero_img {
+  transform: scale(1.5) translateX(0%) !important;
+  transform-origin: center;
+}
+.width-1600 {
+  max-width: 1600px;
+  margin: 0 auto;
+}
 /* Media Quries */
 @media (max-width: 1600px) {
   .about-laptopImg {
@@ -2055,6 +2137,9 @@ canvas.particles-js-canvas-el {
     bottom: -88pc;
     right: 0px;
   }
+  .width-1600 {
+    max-width: 1400px;
+  }
 }
 @media (max-width: 1440px) {
   .techVerse_mobileApp .sec_title .sec_title_head {
@@ -2077,6 +2162,18 @@ canvas.particles-js-canvas-el {
   /* .techVerse_aboutContent {
     padding: 80px 0 50px;
   } */
+
+  .mobileApp_hero_img {
+    transform: scale(1.3) translateX(-10%) !important;
+    transform-origin: center;
+  }
+  .web-development_hero_img {
+    transform: scale(1.4) translateX(3%) !important;
+    transform-origin: center;
+  }
+  .webApp_hero_img {
+    transform: scale(1.3) translateX(7%) !important;
+  }
 }
 @media (max-width: 1380px) {
   .techVerse_mobileApp_content {
@@ -2133,6 +2230,17 @@ canvas.particles-js-canvas-el {
     transform: scale(0.7) rotate(36deg) translateY(67pc);
     bottom: -79pc;
     right: 10px;
+  }
+  .mobileApp_hero_img {
+    transform: scale(1.3) translateX(-10%) !important;
+  }
+  .web-development_hero_img {
+    transform: scale(1.3) translateX(3%) !important;
+    transform-origin: center;
+  }
+  .webApp_hero_img {
+    transform: scale(1.2) translateX(2%) !important;
+    transform-origin: center;
   }
 }
 @media (max-width: 1024px) {
@@ -2305,6 +2413,20 @@ canvas.particles-js-canvas-el {
   .icon_box h4 {
     font-size: 13px;
   }
+  .techVerse_store_link {
+    max-width: 120px;
+  }
+
+  .webDev_hero_img {
+    transform: scale(1.3) translateX(-3%) !important;
+  }
+  .mobileApp_hero_img {
+    transform: scale(1.3) translateX(-11%) !important;
+  }
+  .web-development_hero_img {
+    transform: scale(1.2) translateX(0%) !important;
+    transform-origin: center;
+  }
 }
 @media (max-width: 991px) {
   .techVerse_navbar .navbar-toggler {
@@ -2469,6 +2591,28 @@ canvas.particles-js-canvas-el {
   .icon_box {
     margin: 0 0;
   }
+  .driving-2screen {
+    margin-bottom: 30px;
+  }
+  .techVerse_hero_btns {
+    gap: 10px;
+  }
+  .techVerse_store_links {
+    margin: 10px 0;
+    gap: 150x;
+  }
+
+  .webDev_hero_img {
+    transform: scale(1.3) translateX(-3%) translateY(2%) !important;
+  }
+  .web-development_hero_img {
+    transform: scale(1.5) translateX(6%) !important;
+    transform-origin: center;
+  }
+  .webApp_hero_img {
+    transform: scale(1.5) translateX(10%) !important;
+    transform-origin: center;
+  }
 }
 @media (max-width: 800px) {
   .get_discount {
@@ -2539,6 +2683,12 @@ canvas.particles-js-canvas-el {
     bottom: -80pc;
     right: 64px;
   }
+  .web-development_hero_img {
+    transform: scale(1.3) translateX(-1%) !important;
+  }
+  .webApp_hero_img {
+    transform: scale(1.2) translateX(0%) !important;
+  }
 }
 @media (max-width: 768px) {
   .company_wishText {
@@ -2577,6 +2727,11 @@ canvas.particles-js-canvas-el {
   }
   .app_devBoxe h4 {
     font-size: 14px;
+  }
+  .testimonial {
+    padding: 50px 50px;
+    height: 350px;
+    width: 350px;
   }
 }
 
@@ -2746,6 +2901,19 @@ canvas.particles-js-canvas-el {
   .customDropdown_leftCol {
     background-color: #fff;
   }
+  .techVerse_store_links {
+    justify-content: center;
+  }
+  .webDev_hero_img {
+    transform: scale(1.1) translateX(0%) translateY(2%) !important;
+  }
+  .mobileApp_hero_img {
+    transform: scale(1) translateX(-10%) !important;
+    transform-origin: center;
+  }
+  .digital-marketing-hero {
+    transform: translate(3%, 0%) !important;
+  }
 }
 @media (max-width: 480px) {
   .techVerse_services .sec_title {
@@ -2862,6 +3030,18 @@ canvas.particles-js-canvas-el {
   .mobileApp_devSec_img {
     max-width: 268px;
   }
+  .mobileApp_hero_img {
+    transform: scale(1.1) translateX(-8%) !important;
+  }
+  .web-development_hero_img {
+    transform: scale(1.1) translateX(0%) !important;
+    transform-origin: center;
+  }
+  .bgOrange img {
+    transform: scale(0.7) rotate(36deg) translateY(85pc);
+    bottom: -85pc;
+    right: -50px;
+    }
 }
 
 @media (max-width: 428px) {
@@ -2903,6 +3083,11 @@ canvas.particles-js-canvas-el {
     max-width: 360px;
     margin: 0 auto;
   }
+  .bgOrange img {
+        transform: scale(0.7) rotate(36deg) translateY(75pc);
+        bottom: -75pc;
+        right: -50px;
+    }
 }
 
 @media (max-width: 375px) {
@@ -2920,20 +3105,9 @@ canvas.particles-js-canvas-el {
   .testimonials_title {
     font-size: 45px;
   }
-}
-.width-1600 {
-  max-width: 1600px;
-  margin: 0 auto;
-}
-
-.ecommerceDev_hero_img{
-  transform: scale(1.5) translateX(0%) !important;
-  transform-origin: center;
-}
-
-
-
-.custom_trusted_partners_seprator{
-  overflow-x: auto;
-   gap: 15px;
+  .bgOrange img {
+        transform: scale(0.7) rotate(36deg) translateY(55pc);
+        bottom: -70pc;
+        right: 0;
+    }
 }

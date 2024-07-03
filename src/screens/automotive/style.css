@@ -1,0 +1,13 @@
+.techVerse_store_links {
+    margin: 20px 0;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  .techVerse_store_link {
+    display: block;
+    max-width: 150px;
+  }
+  .techVerse_store_link img {
+    width: 100%;
+  }

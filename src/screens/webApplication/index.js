@@ -64,6 +64,7 @@ const WebApplication = () => {
 
         // title2={"Company"}
         tagline={"We help our clients to increase their visibility on all app stores resulting in more downloads and more conversions."}
+        className={"webApp_hero_img"}
         heroimage={webapplicationhero}
 
       />
@@ -83,7 +84,7 @@ const WebApplication = () => {
         Shopify="Shopify"
         Joomla="Joomla"
         Magneto="Magneto"
-        digitalmarketing01={digitalmarketing01}
+        image={digitalmarketing01}
       />
 
       <Portfolio pinkcapsol={pinkcapsol}
@@ -94,10 +95,11 @@ const WebApplication = () => {
 
         para="We have perfected the art of creating custom-made web applications that meet the specific needs of our clients. Whether it's a simple content management system or a complex e-commerce platform, Techverse has the skills and experience to get the job done right."
 
-        digitalmarketing01={digitalmarketing01}
+        image={webaboutimg1}
         chaticon={chaticon}
         phoneicon={phoneicon}
-        webaboutimg1={webaboutimg1} />
+        // webaboutimg1={webaboutimg1} 
+        />
 
       <Process />
       <Website />
