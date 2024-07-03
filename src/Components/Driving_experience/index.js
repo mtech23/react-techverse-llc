@@ -18,7 +18,9 @@ const Driving_Exprience = (props) => {
             <section
                 className={`techVerse_about techVerse_aboutServices2 ${props?.classheroimage}`}
             >
-                <div class="drivingSec_innerBG"></div>
+                <div class={props?.class_innerBG}>
+                    
+                </div>
                 <img class="techVerse_about_icon1 animation11"
                     src={pinkcapsol} alt="" />
                 {/* <!-- <img

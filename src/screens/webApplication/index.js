@@ -60,13 +60,13 @@ const WebApplication = () => {
       {/* <!-- Inner Hero --> */}
 
       <HeroSection
-        title={"Seamless Web Application Development"}
-        subtitle={"Solutions"}
+        title={"   Future-Proof Your Business "}
+      subtitle={"With "}
 
-        // title2={"Company"}
-        tagline={"We help our clients to increase their visibility on all app stores resulting in more downloads and more conversions."}
-        className={"webApp_hero_img"}
-        heroimage={webapplicationhero}
+        title2={"Cutting-Edge Web Apps"}
+      tagline={"Whether you're looking to streamline operations, enhance customer engagement, or drive efficiency, our web applications are designed to empower your business for the future. From intuitive user interfaces to robust backend systems, we ensure your application not only meets but exceeds expectations."}
+      className={"inner_hero"}
+      heroimage={webapplicationhero}
 
       />
       {/* TrustedPartners */}
@@ -101,14 +101,14 @@ const WebApplication = () => {
         chaticon={chaticon}
         phoneicon={phoneicon}
         webaboutimg1={webaboutimg1} />
-<Elevateyourbusiness/>
-<Testimonials/>
- 
+      <Elevateyourbusiness />
+      <Testimonials />
+
       <Website />
 
 
-      <Testimonials/>
- 
+      <Testimonials />
+
 
       <Frequentlyaskquestion />
 

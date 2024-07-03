@@ -14,6 +14,7 @@ import EcommerseDevelopment from "../screens/ecommerseDevelopment";
 import DigitalMarketing from "../screens/digitalMarketing";
 import WebDevelopment from "../screens/webDevelopment";
 import Automotive from "../screens/automotive";
+import Media from "../screens/media";
 
 
 const Router = () => {
@@ -36,6 +37,7 @@ const Router = () => {
         <Route path="/digitalMarketing" element={<DigitalMarketing />}></Route>
         <Route path="/webDevelopment" element={<WebDevelopment />}></Route>
         <Route path="/automotive" element={<Automotive />}></Route>
+        <Route path="/media" element={<Media />}></Route>
       
 
    

@@ -14,10 +14,10 @@ const HeroSection = (props) => {
         <div>
             <section class="inner_hero">
                 <div class={props?.classheroimage}></div>
-                <div className=' '>
+                {/* <div className=' '> */}
                     {/* width-1600 */}
 
-                    <div class="container-fluid">
+                    <div class="container">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="inner_hero_content">
@@ -82,7 +82,7 @@ const HeroSection = (props) => {
                         </div>
                     </div>
 
-                </div>
+                {/* </div> */}
             </section>
         </div>
     )
