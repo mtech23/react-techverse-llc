@@ -58,43 +58,13 @@ const Aboutsection = (props) => {
 
 
 
-
-
-{/* 
-
-
-                                        <div
-                                            class="techVerse_hero_btns"
-                                            data-aos="fade-up"
-                                            data-aos-offset="300"
-                                            data-aos-duration="3000"
-                                        >
-                                            <a href="#" class="btn_with_icon">
-                                                <img
-                                                    class="btn_with_icon_img"
-                                                    src={phoneicon}
-                                                    alt=""
-                                                />
-                                                <span class="btn_with_icon_text">Call Now</span>
-                                            </a>
-                                            <a href="#" class="btn_with_icon btn_secondary">
-                                                <img
-                                                    class="btn_with_icon_img"
-                                                    src={chaticon}
-                                                    alt=""
-                                                />
-                                                <span class="btn_with_icon_text">Chat Now</span>
-                                            </a>
-                                        </div> */}
-
-
-                                            <Ctnbutton 
+                                        <Ctnbutton
                                             phoneicon={props?.phoneicon}
                                             calltext={props?.calltext}
                                             chaticon={props?.chaticon}
                                             chatenow={props?.chatenow}
 
-                                            />
+/>
 
 
 

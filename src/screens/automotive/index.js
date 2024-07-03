@@ -3,6 +3,7 @@ import { UserLayout } from "../../Components/Layout/UserLayout";
 import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
 import { gsap } from "gsap";
 import Aboutsection from '../../Components/aboutsection';
+import "./style.css"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Parallax, Pagination, Navigation } from 'swiper/modules';
 import Aos from "aos";
@@ -12,7 +13,7 @@ import HeroSection from '../../Components/herosection';
 import Elevateyourbusiness from '../../Components/elevateyourbusiness';
 import TechnologiesUse from '../../Components/technologiesuse';
 import Frequentlyaskquestion from '../../Components/frequentlyaskquestion';
-import Process  from '../../Components/Process';
+import Process from '../../Components/Process';
 import TrustedPartners from '../../Components/TrustedPartners'
 import serviceherobg from '../../asserts/images/service-hero-bg.png'
 import tpblue from "../../asserts/images/t-p-blue.png";
@@ -51,6 +52,7 @@ import reicon5 from '../../asserts/images/re-icon5.png'
 import reicon6 from '../../asserts/images/re-icon6.png'
 import reicon7 from '../../asserts/images/re-icon7.png'
 import reicon8 from '../../asserts/images/re-icon8.png'
+import Driving_Exprience from '../../Components/Driving_experience';
 
 gsap.registerPlugin(MotionPathPlugin);
 
@@ -90,20 +92,21 @@ const Automotive = () => {
         <UserLayout>
 
             <HeroSection
-                title={"Top Mobile App"}
-                subtitle={"Development"}
+                classheroimage="inner-automotive-bgColor "
+                title={"Upgrade The Riding Experience With Techverse"}
+                subtitle={"Automotive Apps"}
                 title2={"Services for Online Businesses"}
-                tagline={"Improve your brand awareness and maximize ROI through a responsive mobile application"}
+                tagline={"Accelerate with our leading-edge app solutions and stay ahead of the curve."}
                 className={"mobileApp_hero_img"}
-                heroimage={Mobileapphero}
+            // heroimage={Mobileapphero}
 
             />
             {/* <!-- Trusted Partners --> */}
-          
-            <TrustedPartners/>
+
+            <TrustedPartners />
 
 
-            {/* <!-- About Sec --> */} 
+            {/* <!-- About Sec --> */}
 
 
             <Portfolio pinkcapsol={pinkcapsol}
@@ -130,246 +133,197 @@ const Automotive = () => {
 
             {/* <!-- App Development Sec --> */}
             <section class="app_devSec services-abbout1">
-            <div class="container">
-                <div class="row">
-                <div class="sec_title">
-                    <h2 class="sec_title_head color-darkBlue" data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000">Transform Your Real Estate Business with a Wide Spectrum Of
-                    <span class="color-darkBlue1">App Development</span> Solutions
-                    </h2>
-                    <p data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000">
-                    We offer comprehensive real estate mobile app development solutions tailored to your business requirements.
-                    </p>
-                </div>
-                </div>
-            </div>
-            <div class="app_devBoxes" data-aos="fade-up" data-aos-offset="0" data-aos-duration="3000">
-                <div class="app_devBoxe">
-                <div class="app_devBoxeIcon">
-                    <img src={analysisresporticon} alt="" />
+                <div class="container">
+                    <div class="row">
+                        <div class="sec_title">
+                            <h2 class="sec_title_head color-darkBlue" data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000">Transform Your Real Estate Business with a Wide Spectrum Of
+                                <span class="color-darkBlue1">App Development</span> Solutions
+                            </h2>
+                            <p data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000">
+                                We offer comprehensive real estate mobile app development solutions tailored to your business requirements.
+                            </p>
+                        </div>
                     </div>
-                <h4>Analytics & Reporting</h4>
-                <p>We are a leading real estate mobile app development service provider. Our team of skilled professionals is dedicated to helping real estate businesses scale and achieve their goals by</p>
                 </div>
-                <div class="app_devBoxe">
-                <div class="app_devBoxeIcon">
-                    <img src={uiixicon} alt=""/>
+                <div class="app_devBoxes" data-aos="fade-up" data-aos-offset="0" data-aos-duration="3000">
+                    <div class="app_devBoxe">
+                        <div class="app_devBoxeIcon">
+                            <img src={analysisresporticon} alt="" />
+                        </div>
+                        <h4>Analytics & Reporting</h4>
+                        <p>We are a leading real estate mobile app development service provider. Our team of skilled professionals is dedicated to helping real estate businesses scale and achieve their goals by</p>
                     </div>
-                <h4>UI/UX Design</h4>
-                <p>We are a leading real estate mobile app development service provider. Our team of skilled professionals is dedicated to helping real estate businesses scale and achieve their goals by</p>
-                </div>
-                <div class="app_devBoxe">
-                <div class="app_devBoxeIcon">
-                    <img src={appdevicon} alt=""/>
-                </div>
-                <h4>App Development</h4>
-                <p>We are a leading real estate mobile app development service provider. Our team of skilled professionals is dedicated to helping real estate businesses scale and achieve their goals by</p>
-                </div>
-                <div class="app_devBoxe">
-                <div class="app_devBoxeIcon">
-                    <img src={testingandqaicon} alt="" />
+                    <div class="app_devBoxe">
+                        <div class="app_devBoxeIcon">
+                            <img src={uiixicon} alt="" />
+                        </div>
+                        <h4>UI/UX Design</h4>
+                        <p>We are a leading real estate mobile app development service provider. Our team of skilled professionals is dedicated to helping real estate businesses scale and achieve their goals by</p>
                     </div>
-                <h4>Testing & QA</h4>
-                <p>We are a leading real estate mobile app development service provider. Our team of skilled professionals is dedicated to helping real estate businesses scale and achieve their goals by</p>
+                    <div class="app_devBoxe">
+                        <div class="app_devBoxeIcon">
+                            <img src={appdevicon} alt="" />
+                        </div>
+                        <h4>App Development</h4>
+                        <p>We are a leading real estate mobile app development service provider. Our team of skilled professionals is dedicated to helping real estate businesses scale and achieve their goals by</p>
+                    </div>
+                    <div class="app_devBoxe">
+                        <div class="app_devBoxeIcon">
+                            <img src={testingandqaicon} alt="" />
+                        </div>
+                        <h4>Testing & QA</h4>
+                        <p>We are a leading real estate mobile app development service provider. Our team of skilled professionals is dedicated to helping real estate businesses scale and achieve their goals by</p>
+                    </div>
                 </div>
-            </div>
             </section>
 
 
 
             {/* <!-- Real Estate App Dev --> */}
             <section class="techVerse_about techVerse_aboutServices2">
-            <img class="techVerse_about_icon1 animation11" src="images/pink-capsol.png" alt="" />
-            {/* <!-- <img
+                <img class="techVerse_about_icon1 animation11" src="images/pink-capsol.png" alt="" />
+                {/* <!-- <img
                     class="techVerse_about_icon2 animation33"
                     src="images/Pill.png"
                     alt=""
                     /> --> */}
-            <img class="techVerse_about_icon3 animation11" src="images/green-cube.png" alt="" />
-            <img class="techVerse_about_icon4 animation11" src="images/donat-orange.png" alt="" />
-            <div class="techVerse_aboutContent techVerse_aboutContentServices2">
-                <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                    <div class="techVerse_about_img">
-                        <div class="techVerse_about_laptop_img realEstate-gif">
-                        <img src={automotivedesktop}
-                         class="about-laptopImg" data-aos="fade-right" data-aos-offset="0" data-aos-duration="1000" />
-                        </div>
-                        <div class="techVerse_hero_btns re_appDev_btns" data-aos="fade-up" data-aos-offset="0" data-aos-duration="3000">
-                        <a href="#" class="btn_with_icon">
-                            <img class="btn_with_icon_img" 
-                            src={phoneicon} alt=""/>
-                            <span class="btn_with_icon_text">Call Now</span>
-                        </a>
-                        <a href="#" class="btn_with_icon btn_secondary">
-                            <img class="btn_with_icon_img" 
-                            src={chaticon} alt=""/>
-                            <span class="btn_with_icon_text">Chat Now</span>
-                        </a>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="col-md-6">
-                    <div class="techVerse_about_content services-abbout2">
-                        <div class="sec_title realEstate-appSec_title">
-                        <h2 class="sec_title_head color-darkBlue" data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000">Our
-                            <span class="color-lightBlue2">Real Estate</span> Mobile App Development Process
-                        </h2>
-                        <p data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000">
-                            We follow a streamlined approach to ensure customer satisfaction by delivering customized real estate mobile app development solutions.
-                        </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                        <div class="reApp_box" data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000">
-                            <div class="reApp_box_icon">
-                                <img src={businessanalysisicon} alt=""/>
+                <img class="techVerse_about_icon3 animation11" src="images/green-cube.png" alt="" />
+                <img class="techVerse_about_icon4 animation11" src="images/donat-orange.png" alt="" />
+                <div class="techVerse_aboutContent techVerse_aboutContentServices2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="techVerse_about_img">
+                                    <div class="techVerse_about_laptop_img realEstate-gif">
+                                        <img src={automotivedesktop}
+                                            class="about-laptopImg" data-aos="fade-right" data-aos-offset="0" data-aos-duration="1000" />
+                                    </div>
+                                    <div class="techVerse_hero_btns re_appDev_btns" data-aos="fade-up" data-aos-offset="0" data-aos-duration="3000">
+                                        <a href="#" class="btn_with_icon">
+                                            <img class="btn_with_icon_img"
+                                                src={phoneicon} alt="" />
+                                            <span class="btn_with_icon_text">Call Now</span>
+                                        </a>
+                                        <a href="#" class="btn_with_icon btn_secondary">
+                                            <img class="btn_with_icon_img"
+                                                src={chaticon} alt="" />
+                                            <span class="btn_with_icon_text">Chat Now</span>
+                                        </a>
+                                    </div>
                                 </div>
-                            <h4>Business Analysis</h4>
-                            <p>We thoroughly analyze your business requirements, target audience, and competition to develop a comprehensive plan.</p>
-                        </div>
-                        </div>
-                        <div class="col-md-6">
-                        <div class="reApp_box" data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000">
-                            <div class="reApp_box_icon">
-                            <img src={designanddevicon} alt=""/>
                             </div>
-                            <h4>Design & Development</h4>
-                            <p>Our designers and developers work collaboratively to create a visually stunning and user-friendly mobile app.</p>
-                        </div>
-                        </div>
-                        <div class="col-md-6">
-                        <div class="reApp_box" data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000">
-                            <div class="reApp_box_icon">
-                            <img src={qualityicon} alt="" />
-                            </div>
-                            <h4>Quality Assurance</h4>
-                            <p>We conduct rigorous testing and quality assurance to ensure your mobile app works flawlessly.</p>
-                        </div>
-                        </div>
-                        <div class="col-md-6">
-                        <div class="reApp_box" data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000">
-                            <div class="reApp_box_icon">
-                            <img src={devandmaintenenceicon} alt="" />
-                            </div>
-                            <h4>Deployment and Maintenance</h4>
-                            <p>We deploy your application and provide ongoing maintenance and support.</p>
-                        </div>
-                        </div>
-                    </div>
+                            <div class="col-md-6">
+                                <div class="techVerse_about_content services-abbout2">
+                                    <div class="sec_title realEstate-appSec_title">
+                                        <h2 class="sec_title_head color-darkBlue" data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000">Our
+                                            <span class="color-lightBlue2">Real Estate</span> Mobile App Development Process
+                                        </h2>
+                                        <p data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000">
+                                            We follow a streamlined approach to ensure customer satisfaction by delivering customized real estate mobile app development solutions.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="reApp_box" data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000">
+                                            <div class="reApp_box_icon">
+                                                <img src={businessanalysisicon} alt="" />
+                                            </div>
+                                            <h4>Business Analysis</h4>
+                                            <p>We thoroughly analyze your business requirements, target audience, and competition to develop a comprehensive plan.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="reApp_box" data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000">
+                                            <div class="reApp_box_icon">
+                                                <img src={designanddevicon} alt="" />
+                                            </div>
+                                            <h4>Design & Development</h4>
+                                            <p>Our designers and developers work collaboratively to create a visually stunning and user-friendly mobile app.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="reApp_box" data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000">
+                                            <div class="reApp_box_icon">
+                                                <img src={qualityicon} alt="" />
+                                            </div>
+                                            <h4>Quality Assurance</h4>
+                                            <p>We conduct rigorous testing and quality assurance to ensure your mobile app works flawlessly.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="reApp_box" data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000">
+                                            <div class="reApp_box_icon">
+                                                <img src={devandmaintenenceicon} alt="" />
+                                            </div>
+                                            <h4>Deployment and Maintenance</h4>
+                                            <p>We deploy your application and provide ongoing maintenance and support.</p>
+                                        </div>
+                                    </div>
+                                </div>
 
+                            </div>
+                        </div>
                     </div>
-                </div>
-                </div>
                 </div>
             </section>
+
+
+
+
+
+            {/*                     
+      <Portfolios
+        title="REAL ESTATE "
+        subtitle="Portfolio   "
+        para="Our Company has worked with thousands of businesses all across the world and has developed highly functional, responsive, and feature-rich applications. Check out some of our best works:"
+        image1={realEstateportfolioimg1}
+        image2={realEstateportfolioimg2}
+        image3={realEstateportfolioimg3}
+        image4={realEstateportfolioimg4}
+        image5={realEstateportfolioimg5}
+        image6={mobileframe}
+        image7={carbuying}
+        image8={jeffwilson}
+        image9={lllreptile}
+        image10={privateastrology}
+        image11={Macbook}
+        classmobileapp="nav-link"
+        classwebsite="nav-link"
+        classcms="nav-link"
+        CMS="CMS"
+        Mobile_Apps="Mobile Apps"
+        Websites="Websites"
+      /> */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
             {/* <!-- Mobile App Dev --> */}
-            <section class="techVerse_about techVerse_aboutServices2 drivingSec">
-            <div class="drivingSec_innerBG"></div>
-            <img class="techVerse_about_icon1 animation11" 
-            src={pinkcapsol} alt="" />
-            {/* <!-- <img
-                class="techVerse_about_icon2 animation33"
-                src="images/Pill.png"
-                alt=""
-                /> --> */}
-            <img class="techVerse_about_icon3 animation11" 
-            src={greencube} alt="" />
-            <img class="techVerse_about_icon4 animation11"
-             src={donatorange} alt="" />
-            <div class="techVerse_aboutContent techVerse_aboutContentServices2">
-                <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                    <div class="sec_title buildStore_sec_title">
-                        <h2 class="sec_title_head color-lightBlue2" data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000">
-                        <span class="color-white">Enhancing Your</span> Driving Experience <span class="color-white">Like Never Before</span>
-                        </h2>
-                    </div>
-                    </div>
-                    <div class="col-lg-5">
-                    <div class="techVerse_about_img">
-                        <div class="techVerse_about_laptop_img driving-2screen">
-                        <img src={drivingsecsecreen}
-                         class="about-laptopImg mobileApp_devSec_img"
-                        data-aos="fade-right" data-aos-offset="0" data-aos-duration="1000" />
-                        </div>
-                    </div>
-                    </div>
-                    <div class="col-lg-7">
-                    <div class="techVerse_about_content services-abbout2">
-                        <div class="row">
-                        <div class="col-md-6">
-                            <div class="icon_box" data-aos="fade-up" data-aos-duration="1000">
-                            <div class="box_icon">
-                            <img src={reicon1} alt="" />
-                            </div>
-                            <h4>Expert UI/UX Design</h4>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="icon_box" data-aos="fade-up" data-aos-duration="1000">
-                            <div class="box_icon">
-                            <img src={reicon2} alt=""/>
-                            </div>
-                            <h4>Customized Solutions</h4>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="icon_box" data-aos="fade-up" data-aos-duration="1000">
-                            <div class="box_icon">
-                            <img src={reicon3} alt="" /></div>
-                            <h4>Real-Time Property Listings</h4>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="icon_box" data-aos="fade-up" data-aos-duration="1000">
-                            <div class="box_icon">
-                                <img src={reicon4} alt="" /></div>
-                            <h4>Secure Payment Integration</h4>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="icon_box" data-aos="fade-up" data-aos-duration="1000">
-                            <div class="box_icon">
-                                <img src={reicon5} alt="" /></div>
-                            <h4>Virtual Property Tours</h4>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="icon_box" data-aos="fade-up" data-aos-duration="1000">
-                            <div class="box_icon">
-                                <img src={reicon6} alt="" /></div>
-                            <h4>24/7 Customer Support</h4>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="icon_box" data-aos="fade-up" data-aos-duration="1000">
-                            <div class="box_icon">
-                                <img src={reicon7} alt="" />
-                                </div>
-                            <h4>Competitive Pricing</h4>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="icon_box" data-aos="fade-up" data-aos-duration="1000">
-                            <div class="box_icon">
-                            <img src={reicon8} alt="" />
-                            </div>
-                            <h4>Latest Technologies</h4>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-
-                    </div>
-                </div>
-                </div>
-                </div>
-            </section>
+            
+            <Driving_Exprience
+classheroimage="drivingSec"
+                title="
+ENHANCING YOUR"
+subtitle="DRIVING EXPERIENCE"
+title2="LIKE NEVER BEFORE"
+image={drivingsecsecreen}
+            />
 
 
 
@@ -378,25 +332,24 @@ const Automotive = () => {
 
 
 
-     
 
 
-      
-    
+
+
 
 
             {/* <!-- Technologies --> */}
-            <TechnologiesUse/>
+            <TechnologiesUse />
 
 
-          
+
 
             {/* FAQ section */}
 
-            <Frequentlyaskquestion/>
+            <Frequentlyaskquestion />
 
 
-         
+
 
 
 

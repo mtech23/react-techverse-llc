@@ -1939,7 +1939,7 @@ canvas.particles-js-canvas-el {
   line-height: 1.7;
 }
 .app_devSec {
-  background-image: url(../src/asserts/images/real-estate-secBG.png);
+  background-image: url("./asserts/images/real-estate-secBG.png");
   background-size: cover;
   background-position: top center;
   padding: 60px 0;
@@ -2053,7 +2053,7 @@ canvas.particles-js-canvas-el {
 }
 
 .drivingSec {
-  background-image: url(../src/asserts/images/automotive-bg-gif.gif);
+  background-image: url("../src/asserts/images/automotive-bg-gif.gif");
   /* opacity: 0.7; */
   background-position: bottom center;
   background-size: cover;

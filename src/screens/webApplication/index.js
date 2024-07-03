@@ -44,6 +44,7 @@ import TechnologiesUse from '../../Components/technologiesuse';
 import Process from '../../Components/Process';
 import Frequentlyaskquestion from '../../Components/frequentlyaskquestion';
 import Elevateyourbusiness from '../../Components/elevateyourbusiness';
+import Testimonials from '../../Components/Tetimonials';
 const WebApplication = () => {
 
 
@@ -85,6 +86,7 @@ const WebApplication = () => {
         Joomla="Joomla"
         Magneto="Magneto"
         image={digitalmarketing01}
+        image={digitalmarketing01}
       />
 
       <Portfolio pinkcapsol={pinkcapsol}
@@ -95,20 +97,20 @@ const WebApplication = () => {
 
         para="We have perfected the art of creating custom-made web applications that meet the specific needs of our clients. Whether it's a simple content management system or a complex e-commerce platform, Techverse has the skills and experience to get the job done right."
 
-        image={webaboutimg1}
+        image={digitalmarketing01}
         chaticon={chaticon}
         phoneicon={phoneicon}
-        // webaboutimg1={webaboutimg1} 
-        />
-
-      <Process />
+        webaboutimg1={webaboutimg1} />
+<Elevateyourbusiness/>
+<Testimonials/>
+ 
       <Website />
 
 
-      <TechnologiesUse />
-<Elevateyourbusiness/>
+      <Testimonials/>
+ 
 
-<Frequentlyaskquestion/>
+      <Frequentlyaskquestion />
 
 
 
