@@ -12,6 +12,8 @@ import WebApplication from "../screens/webApplication";
 // import EcommerseDevelopment from '../screens/EcommerseDevelopment';
 import EcommerseDevelopment from "../screens/ecommerseDevelopment";
 import DigitalMarketing from "../screens/digitalMarketing";
+ 
+import Finance from "../screens/finance";
 import WebDevelopment from "../screens/webDevelopment";
 import Automotive from "../screens/automotive";
 
@@ -33,10 +35,11 @@ const Router = () => {
       
         <Route path="/web-application" element={<WebApplication />}></Route>
         <Route path="/realEstate-and-property" element={<RealEstate_and_property />}></Route>
-        <Route path="/digitalMarketing" element={<DigitalMarketing />}></Route>
+        <Route path="/digital-marketing" element={<DigitalMarketing />}></Route>
         <Route path="/webDevelopment" element={<WebDevelopment />}></Route>
         <Route path="/automotive" element={<Automotive />}></Route>
-      
+        <Route path="/finance" element={<Finance />}></Route>
+         
 
    
       </Routes>
