@@ -129,6 +129,7 @@ const Media = () => {
 
 
             <Portfolio pinkcapsol={pinkcapsol}
+            // newClass={"media-abt1"}
                 greencube={greencube}
                 donatorange={donatorange}
 

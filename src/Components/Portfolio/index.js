@@ -13,7 +13,7 @@ const Portfolio = (props) => {
     return (
         <div>
 
-            <section class="techVerse_about techVerse_aboutServices2">
+            <section class={`techVerse_about techVerse_aboutServices2 ${props?.newClass}`}>
                 <img
                     class="techVerse_about_icon1 animation11"
                     src={props?.pinkcapsol}
