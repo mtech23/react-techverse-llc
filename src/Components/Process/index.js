@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react'
+import React, { useEffect,  } from 'react'
+
 import phoneicon from "../../../src/asserts/images/phone-icon.png";
 import chaticon from "../../../src/asserts/images/chat-icon.png";
 import androidiconw from "../../../src/asserts/images/android-icon-w.png";
@@ -40,9 +41,12 @@ import mobileAppimg from '../../../src/asserts/images/mobileAppimg.png'
 const Process = (props) => {
 
 
-
+ 
 
     useEffect(() => {
+
+      
+
         gsap.set(".road", { opacity: 1 });
         const circles = gsap.utils.toArray(".ani_cnt .icc");
         const tl2 = gsap.timeline({ repeat: 20 });
@@ -65,7 +69,12 @@ const Process = (props) => {
                 0
             );
         });
-    }, []);
+       
+    }, []
+
+);
+
+   
     return (
         <div>
             <section className="techVerse_process">
@@ -100,7 +109,7 @@ const Process = (props) => {
                                     data-aos-duration="1000"
                                 >
                                     Process
-                                    <span className="color-darkBlue">We Use</span>
+                                    <span className="color-darkBlue"> We Use </span>
                                 </h2>
                                 <p
                                     data-aos="fade-up"

@@ -30,7 +30,7 @@ const Elevateyourbusiness = (props) => {
                                             data-aos-duration="1000"
                                         >
                                             Elevate your business presence with a customized
-                                            <span class="color-lightBlue2">Mobile Application</span>
+                                            <span class="color-lightBlue2"> Mobile Application </span>
                                         </h2>
                                         <p
                                             data-aos="fade-right"
@@ -61,7 +61,7 @@ const Elevateyourbusiness = (props) => {
                                                     src={chaticonblue}
                                                     alt=""
                                                 />
-                                                <span class="btn_with_icon_text">Start A Live Chat</span>
+                                                <span class="btn_with_icon_text"> Start A Live Chat</span>
                                             </a>
                                         </div>
                                     </div>

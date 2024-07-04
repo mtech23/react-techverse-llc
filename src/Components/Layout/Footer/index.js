@@ -9,6 +9,7 @@ import goodfirms from '../../../asserts/images/good-firms.png';
 import partnersclutch from '../../../asserts/images/partners-clutch.png';
 import bluecubelarge from '../../../asserts/images/blue-cube-large.png'
 import partnerstruspilot from '../../../asserts/images/partners-trus-pilot.png';
+
 import contactUslaptop from '../../../asserts/images/contactUs-laptop.png';
 import SuperToroidOrangeGlossy from '../../../asserts/images/SuperToroid-Orange-Glossy.png';
 import { useCallback } from "react";

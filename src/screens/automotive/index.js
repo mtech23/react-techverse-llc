@@ -327,14 +327,14 @@ const Automotive = () => {
 
 
             {/* <!-- Mobile App Dev --> */}
-            
+
             <Driving_Exprience
-classheroimage="drivingSec"
+                classheroimage="drivingSec"
                 title="
 ENHANCING YOUR"
-subtitle="DRIVING EXPERIENCE"
-title2="LIKE NEVER BEFORE"
-image={drivingsecsecreen}
+                subtitle="DRIVING EXPERIENCE"
+                title2="LIKE NEVER BEFORE"
+                image={drivingsecsecreen}
             />
 
 

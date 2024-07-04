@@ -101,17 +101,6 @@
 /* Hero End */
 
 
-.hero_pagination .swiper-pagination-bullet {
-    width: 40px;
-    height: 10px;
-    border-radius: 10px;
-    background: #a9a9a9;
-    opacity: 1;
-}
-
-.hero_pagination .swiper-pagination-bullet-active {
-    background: #3bc0ff;
-}
 
 
 

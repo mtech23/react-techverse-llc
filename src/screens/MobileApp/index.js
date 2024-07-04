@@ -3,10 +3,10 @@ import { UserLayout } from "../../Components/Layout/UserLayout";
 import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
 import { gsap } from "gsap";
 import Aboutsection from '../../Components/aboutsection';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Parallax, Pagination, Navigation } from 'swiper/modules';
+
+
 import Aos from "aos";
-import 'swiper/css';
+
 import Ctnbutton from '../../Components/ctnbutton/index'
 import HeroSection from '../../Components/herosection';
 import Elevateyourbusiness from '../../Components/elevateyourbusiness';
@@ -30,7 +30,21 @@ import donateWhite from "../../asserts/images/donate-white.png";
 import peramidicon from "../../asserts/images/peramid-icon.png";
 import phoneicongreen from "../../asserts/images/phone-icon-green.png";
 import chaticonblue from '../../asserts/images/chat-icon-blue.png'
+import portfoliomockup1 from "../../asserts/images/portfolio-mockup-1.png";
+import mobileframe from "../../asserts/images/mobile-frame.webp";
+import Macbook from "../../asserts/images/Macbook.png";
+import carbuying from "../../asserts/images/car-buying.png";
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+
+
+// import required modules
+import { Pagination } from 'swiper/modules';
 gsap.registerPlugin(MotionPathPlugin);
 
 const MobileApp = () => {
@@ -189,6 +203,325 @@ We help businesses delight their users with impressive native iOS/Android, Cross
           </div>
         </div>
       </section>
+
+
+
+
+
+
+
+      {/* new Portfolio swipper section */}
+
+        <section class="techVerse_portfolio">
+        <div class="techVerse_portfolioContent">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="sec_title">
+                  <h2 class="sec_title_head color-lightBlue2" data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000">
+                    Our
+                    <span class="color-darkBlue"> Portfolio </span>
+                  </h2>
+                  <p data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000">
+                    Our Company has worked with thousands of businesses all across
+                    the world and has developed highly functional, responsive, and
+                    feature-rich applications. Check out some of our best works:
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="portfolio_tabs nav nav-tabs" id="myTab" role="tablist" data-aos="fade-up" data-aos-offset="0" data-aos-duration="3000">
+                  <a class="nav-link active" id="mobile_apps" data-toggle="tab" href="#mobile-app" role="tab">Mobile Apps</a>
+                  <a class="nav-link" id="websites_tab" data-toggle="tab" href="#website-tab" role="tab">Websites</a>
+                  <a class="nav-link" id="cms_tab" data-toggle="tab" href="#cms-tab" role="tab">CMS</a>
+                </div>
+                <div class="tab-content" id="portfolioTabs">
+                  <div class="tab-pane fade show active" id="mobile-app" role="tabpanel" aria-labelledby="mobile_apps">
+                    <div class="mobile_app_carousel">
+
+
+                    {/* <Swiper
+                          slidesPerView={5}
+                          spaceBetween={10}
+                          pagination={{
+                            clickable: true,
+                          }}
+                          breakpoints={{
+                            640: {
+                              slidesPerView: 2,
+                              spaceBetween: 20,
+                            },
+                            768: {
+                              slidesPerView: 4,
+                              spaceBetween: 40,
+                            },
+                            1024: {
+                              slidesPerView: 5,
+                              spaceBetween: 50,
+                            },
+                          }}
+                          modules={[Pagination]}
+                          className="mySwiper mobileAppCarousel"
+                        >
+                          <SwiperSlide><img src={portfoliomockup1} alt="" /></SwiperSlide>
+                          <SwiperSlide><img src={portfoliomockup1} alt="" /></SwiperSlide>
+                          <SwiperSlide><img src={portfoliomockup1} alt="" /></SwiperSlide>
+                          <SwiperSlide><img src={portfoliomockup1} alt="" /></SwiperSlide>
+                          <SwiperSlide><img src={portfoliomockup1} alt="" /></SwiperSlide>
+                          <SwiperSlide><img src={portfoliomockup1} alt="" /></SwiperSlide>
+                          <SwiperSlide><img src={portfoliomockup1} alt="" /></SwiperSlide>
+                         
+                  
+                       
+                        </Swiper> */}
+
+
+
+
+
+<Swiper
+        slidesPerView={5}
+        spaceBetween={10}
+        speed={600}
+      
+        pagination={{
+          clickable: true,
+        }}
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        }}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
+        <SwiperSlide>Slide 1</SwiperSlide>
+        <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide>Slide 4</SwiperSlide>
+        <SwiperSlide>Slide 5</SwiperSlide>
+        <SwiperSlide>Slide 6</SwiperSlide>
+        <SwiperSlide>Slide 7</SwiperSlide>
+        <SwiperSlide>Slide 8</SwiperSlide>
+        <SwiperSlide>Slide 9</SwiperSlide>
+      </Swiper>
+
+
+   
+
+{/* 
+                      <div class="swiper mobileAppCarousel">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                          <img src={portfoliomockup1} alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                          <img src={portfoliomockup1} alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                          <img src={portfoliomockup1} alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                          <img src={portfoliomockup1} alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                          <img src={portfoliomockup1} alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                          <img src={portfoliomockup1} alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                          <img src={portfoliomockup1} alt="" />
+                          </div>
+                        </div>
+                      </div> */}
+                      <div class="our-slider-img">
+                        <img src={mobileframe} alt="" />
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="tab-pane fade" id="website-tab" role="tabpanel" aria-labelledby="websites_tab">
+                    <div class="web_app_carousel">
+
+
+
+
+                    <Swiper
+                          slidesPerView={1}
+                          spaceBetween={10}
+                          pagination={{
+                            clickable: true,
+                          }}
+                          breakpoints={{
+                            640: {
+                              slidesPerView: 2,
+                              spaceBetween: 20,
+                            },
+                            768: {
+                              slidesPerView: 4,
+                              spaceBetween: 40,
+                            },
+                            1024: {
+                              slidesPerView: 5,
+                              spaceBetween: 50,
+                            },
+                          }}
+                          modules={[Pagination]}
+                          className="mySwiper swiper webAppCarousel"
+                        >
+                          <SwiperSlide><img src={carbuying} alt="" /></SwiperSlide>
+                          <SwiperSlide><img src={carbuying} alt="" /></SwiperSlide>
+                          <SwiperSlide><img src={carbuying} alt="" /></SwiperSlide>
+                       
+                        </Swiper>
+
+
+
+
+
+
+
+
+                      {/* <div class="swiper webAppCarousel">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img src={carbuying} alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                          <img src={carbuying} alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                          <img src={carbuying} alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                          <img src={carbuying} alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                          <img src={carbuying} alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                          <img src={carbuying} alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                          <img src={carbuying} alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                          <img src={carbuying} alt="" />
+                          </div>
+                        </div>
+                      </div> */}
+
+
+                      <div class="our-slider-webframe">
+                        <img src={Macbook} alt="" />
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="tab-pane fade" id="cms-tab" role="tabpanel" aria-labelledby="cms_tab">
+                    <div class="web_app_carousel">
+
+
+
+                    <Swiper
+                          slidesPerView={1}
+                          spaceBetween={10}
+                          pagination={{
+                            clickable: true,
+                          }}
+                          breakpoints={{
+                            640: {
+                              slidesPerView: 2,
+                              spaceBetween: 20,
+                            },
+                            768: {
+                              slidesPerView: 4,
+                              spaceBetween: 40,
+                            },
+                            1024: {
+                              slidesPerView: 5,
+                              spaceBetween: 50,
+                            },
+                          }}
+                          modules={[Pagination]}
+                          className="mySwiper swiper webAppCarousel"
+                        >
+                          <SwiperSlide><img src={carbuying} alt="" /></SwiperSlide>
+                          <SwiperSlide><img src={carbuying} alt="" /></SwiperSlide>
+                          <SwiperSlide><img src={carbuying} alt="" /></SwiperSlide>
+                       
+                        </Swiper>
+
+
+
+{/* 
+                      <div class="swiper webAppCarousel">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                          <img src={carbuying} alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                          <img src={carbuying} alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                          <img src={carbuying} alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                          <img src={carbuying} alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                          <img src={carbuying} alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                          <img src={carbuying} alt="" />
+                          </div>
+                        </div>
+                      </div> */}
+
+
+
+
+
+                      <div class="our-slider-webframe">
+                      <img src={Macbook} alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
       

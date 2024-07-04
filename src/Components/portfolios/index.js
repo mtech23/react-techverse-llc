@@ -1,6 +1,9 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Parallax, Pagination, Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+
 const Portfolios = (props) => {
     return (
         <div>
@@ -72,19 +75,36 @@ const Portfolios = (props) => {
                                         <div class="mobile_app_carousel">
 
                                             <Swiper
+                                           
 
                                                 slidesPerView={5}
                                                 spaceBetween={30}
                                                 pagination={{
                                                     clickable: true,
 
+                                                
                                                 }}
+                                                breakpoints={{
+                                                    640: {
+                                                      slidesPerView: 2,
+                                                      spaceBetween: 20,
+                                                    },
+                                                    768: {
+                                                      slidesPerView: 4,
+                                                      spaceBetween: 40,
+                                                    },
+                                                    1024: {
+                                                      slidesPerView: 5,
+                                                      spaceBetween: 50,
+                                                    },
+                                                  }}
+                                                
                                                 modules={[Parallax, Pagination, Navigation]}
-                                                className="mySwiper"
+                                                className="mySwiper mobileAppCarousel"
 
                                             >
 
-                                                <SwiperSlide>
+                                                {/* <SwiperSlide>
 
                                                     <img src={props?.image1} alt="" />
                                                 </SwiperSlide>
@@ -114,7 +134,87 @@ const Portfolios = (props) => {
                                                 <SwiperSlide>
 
                                                     <img src={props?.image2} alt="" />
-                                                </SwiperSlide>
+                                                </SwiperSlide> */}
+
+
+
+
+
+
+
+
+
+
+
+                                              
+                                                    <SwiperSlide>
+                                                    <img src={props?.image1} alt="" />
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                    <img src={props?.image2} alt="" />
+                                                    </SwiperSlide>
+                                            
+                                                    <SwiperSlide>
+                                                    <img src={props?.image3} alt="" />
+                                                    </SwiperSlide>
+                                            
+                                                    <SwiperSlide>
+                                                    <img src={props?.image4} alt="" />
+                                                    </SwiperSlide>
+                                            
+                                                    <SwiperSlide>
+                                                    <img src={props?.image5} alt="" />
+                                                    </SwiperSlide>
+                                            
+                                                    <SwiperSlide>
+                                                    <img src={props?.image1} alt="" />
+                                                    </SwiperSlide>
+                                            
+                                                    <SwiperSlide>
+                                                    <img src={props?.image2} alt="" />
+                                                    </SwiperSlide>
+                                            
+
+                                            
+                                               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                                             </Swiper>
 
 
@@ -129,22 +229,19 @@ const Portfolios = (props) => {
                                         role="tabpanel"
                                         aria-labelledby="websites_tab"
                                     >
-                                        <div class="web_app_carousel">
+                                        <div class="web_app_carousel" id="">
 
 
                                             <Swiper
 
-                                                slidesPerView={5}
+                                                slidesPerView={3}
                                                 spaceBetween={30}
                                                 pagination={{
                                                     clickable: true,
                                                 }}
 
                                                 modules={[Parallax, Pagination, Navigation]}
-                                                className="mySwiper">
-
-
-
+                                                className="mySwiper webAppCarousel">
 
 
 
@@ -198,14 +295,15 @@ const Portfolios = (props) => {
 
                                             <Swiper
 
-                                                slidesPerView={5}
+                                                slidesPerView={1}
                                                 spaceBetween={30}
                                                 pagination={{
                                                     clickable: true,
                                                 }}
+                                              
 
                                                 modules={[Parallax, Pagination, Navigation]}
-                                                className="mySwiper">
+                                                className="mySwiper mySwiperHero">
 
 
 
@@ -248,6 +346,11 @@ const Portfolios = (props) => {
                     </div>
                 </div>
             </section>
+
+
+
+
+            
         </div>
     )
 }
