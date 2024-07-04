@@ -10,7 +10,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import pinkcapsolgtom from '../../asserts/images/pink-capsol.png'
 import { Parallax, Pagination, Navigation } from 'swiper/modules';
 import Portfolio from '../../Components/Portfolio'
-import webaboutimg1 from "../../asserts/images/web-about-img1.png";
+import webaboutimg1es from "../../asserts/images/web-about-imges.png";
 import clutch from "../../asserts/images/clutch.png";
 import TrustedPartners from '../../Components/TrustedPartners'
 import truspilot from "../../asserts/images/trus-pilot.png";
@@ -45,6 +45,7 @@ import Process from '../../Components/Process';
 import Frequentlyaskquestion from '../../Components/frequentlyaskquestion';
 import Elevateyourbusiness from '../../Components/elevateyourbusiness';
 import Testimonials from '../../Components/Tetimonials';
+import Development_Process from '../../Components/Development_Process';
 const WebApplication = () => {
 
 
@@ -61,12 +62,12 @@ const WebApplication = () => {
 
       <HeroSection
         title={"   Future-Proof Your Business "}
-      subtitle={"With "}
+        subtitle={"With "}
 
         title2={"Cutting-Edge Web Apps"}
-      tagline={"Whether you're looking to streamline operations, enhance customer engagement, or drive efficiency, our web applications are designed to empower your business for the future. From intuitive user interfaces to robust backend systems, we ensure your application not only meets but exceeds expectations."}
-      className={"inner_hero"}
-      heroimage={webapplicationhero}
+        tagline={"Whether you're looking to streamline operations, enhance customer engagement, or drive efficiency, our web applications are designed to empower your business for the future. From intuitive user interfaces to robust backend systems, we ensure your application not only meets but exceeds expectations."}
+        className={"inner_hero"}
+        heroimage={webapplicationhero}
 
       />
       {/* TrustedPartners */}
@@ -76,9 +77,12 @@ const WebApplication = () => {
         pinkcapsol={pinkcapsol}
         greencube={greencube}
         donatorange={donatorange}
-        title2="that Accelerate Your Business Growth"
-        title="POWERFUL" subtitle="Web Solutions"
-        para=" A good website design has the power to bring organic traffic to your business site. At Techverse, we have a team of experienced web developers who work diligently to strengthen businesses by creating top-notch websites for their brands. Our developers have extensive knowledge and expertise in developing websites using all the latest platforms such as:"
+        title2="Bespoke Web Solutions
+"
+        title="Scaling Success" subtitle="  With "
+        para=" At Techverse LLC, we specialize in crafting cutting-edge web applications that propel your business forward. Our bespoke web solutions are tailored to meet your unique needs, whether you're aiming to streamline operations, enhance user engagement, or scale your digital presence. With our expertise in agile development and meticulous attention to detail, we ensure your web application not only meets but exceeds your expectations. Trust Techverse LLC to transform your ideas into impactful digital realities and accelerate your business growth with innovative web solutions.
+
+"
         WordPress="WordPress"
 
         PHP="PHP"
@@ -86,25 +90,38 @@ const WebApplication = () => {
         Joomla="Joomla"
         Magneto="Magneto"
         image={digitalmarketing01}
-        image={digitalmarketing01}
+
+
+        bulletListItems={[
+          "WordPress",
+          "PHP",
+          "Shopify",
+          "Joomla",
+
+          "Magneto"
+        ]}
+
       />
 
       <Portfolio pinkcapsol={pinkcapsol}
         greencube={greencube}
         donatorange={donatorange}
 
-        title="  A Web Application Development Portfolio" subtitle="without bounds."
-
-        para="We have perfected the art of creating custom-made web applications that meet the specific needs of our clients. Whether it's a simple content management system or a complex e-commerce platform, Techverse has the skills and experience to get the job done right."
-
-        image={digitalmarketing01}
+        title=" Empower Your Enterprise" subtitle="With   ."
+        title2="Techverse LLC's Scalable Web Development."
+        para="Discover limitless possibilities with Techverse LLC's Web Application Development services. Our team of seasoned developers and designers harness cutting-edge technologies to craft robust, scalable web applications that cater precisely to your needs. Whether you're launching a startup or scaling an enterprise, our commitment to innovative design and seamless functionality ensures your web application not only meets but exceeds expectations. Modify your online presence with Techverse LLC and get on a journey toward digital transformation today."
+        image={webaboutimg1es}
         chaticon={chaticon}
         phoneicon={phoneicon}
-        webaboutimg1={webaboutimg1} />
+        webaboutimg1={webaboutimg1es}
+      />
       <Elevateyourbusiness />
-      <Testimonials />
+      <Process />
+      <TechnologiesUse />
 
-      <Website />
+      <Testimonials />
+      {/* <Development_Process /> */}
+ 
 
 
       <Testimonials />

@@ -36,7 +36,7 @@ import ecommerceabout1 from "../../asserts/images/ecommerce-about-1.png";
 import reacticon from "../../../src/asserts/images/react-icon.png";
 import donateWhite from "../../asserts/images/donate-white.png";
 import peramidicon from "../../asserts/images/peramid-icon.png";
- 
+
 import peramidleftangles from '../../asserts/images/peramid-left-angles.png';
 import orangehalfcircle from "../../asserts/images/orange-half-circle.png";
 import processicon1 from '../../asserts/images/process-icon-1.png'
@@ -46,8 +46,8 @@ import processicon3 from '../../asserts/images/process-icon-3.png'
 import processicon4 from '../../asserts/images/process-icon-4.png'
 import processicon5 from '../../asserts/images/process-icon-5.png'
 import processicon6 from '../../asserts/images/process-icon-6.png'
- 
-
+import Ctnbutton from '../../Components/ctnbutton'
+import Aboutsection from '../../Components/aboutsection';
 import Aos from "aos";
 import 'swiper/css';
 import Website from '../../Components/Website';
@@ -90,8 +90,8 @@ const EcommerseDevelopment = () => {
     <UserLayout>
 
 
-    
-     
+
+
       <HeroSection
         title={"Custom Ecommerce Website"}
         subtitle={"Development"}
@@ -100,109 +100,50 @@ const EcommerseDevelopment = () => {
         className={"ecommerceDev_hero_img"}
         heroimage={ecommersedevhero}
 
-      /> 
+      />
 
 
 
-{/* <!-- Trusted Partners --> */}
-     
-<TrustedPartners/>
+      {/* <!-- Trusted Partners --> */}
+
+      <TrustedPartners />
 
       {/* <!-- About Sec --> */}
-    <section class="techVerse_about techVerse_aboutServices1" id="particles-js1">
-      <img
-        class="techVerse_about_icon1 animation11"
-        src={pinkcapsol}
-        alt=""
-      />
-      {/* <!-- <img
-        class="techVerse_about_icon2 animation33"
-        src="images/Pill.png"
-        alt=""
-      /> --> */}
-      <img
-        class="techVerse_about_icon3 animation11"
-        src={greencube}
-        alt=""
-      />
-      <img
-        class="techVerse_about_icon4 animation11"
-        src={donatorange}
-        alt=""
-      />
-      <div class="techVerse_aboutContent techVerse_aboutContentServices1">
-        <div class="container">
-          <div class="row">
-            
-            <div class="col-md-6">
-              <div class="techVerse_about_content services-abbout1">
-                <div class="sec_title">
-                  <h2
-                    class="sec_title_head color-darkBlue"
-                    data-aos="fade-up"
-                    data-aos-offset="300"
-                    data-aos-duration="1000"
-                  >
-                  MAXIMIZE REVENUES WITH OUR
-                    <span class="color-lightBlue2">ECOMMERCE-WEBSITE</span> DEVELOPMENT SERVICES
-                  </h2>
-                  <p
-                    data-aos="fade-up"
-                    data-aos-offset="300"
-                    data-aos-duration="2000"
-                  >
-                  Techverse is a leading web development company known for providing top-of-the-line eCommerce web solutions to brands. We help businesses maximize their profits by developing highly responsive and engaging eCommerce stores that provide customers with an excellent online shopping experience.
-                  </p>
-                  
-                  <div
-                    class="techVerse_hero_btns"
-                    data-aos="fade-up"
-                    data-aos-offset="300"
-                    data-aos-duration="3000"
-                  >
-                    <a href="#" class="btn_with_icon">
-                      <img
-                        class="btn_with_icon_img"
-                        src={phoneicon}
-                        alt=""
-                      />
-                      <span class="btn_with_icon_text">Call Now</span>
-                    </a>
-                    <a href="#" class="btn_with_icon btn_secondary">
-                      <img
-                        class="btn_with_icon_img"
-                        src={chaticon}
-                        alt=""
-                      />
-                      <span class="btn_with_icon_text">Chat Now</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-                <div class="techVerse_about_img">
-                  <div class="techVerse_about_laptop_img">
-                    <img
-                    src={ecommerceabout1}
-                      class="about-laptopImg business-devlopmentImg"
-                      data-aos="fade-right"
-                      data-aos-offset="300"
-                      data-aos-duration="1000"
-                    />
-                  </div>
-                </div>
-              </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
 
-          {/* <!-- Website --> */}
-        <Website/>
-    
-   
+
+      <Aboutsection
+        pinkcapsol={pinkcapsol}
+        greencube={greencube}
+        donatorange={donatorange}
+
+
+        title="  Drive Profitability
+" subtitle="With" title2="Our Seamless E-Commerce Solutions.
+  "
+        para="Our expert team customizes every aspect of your website, from intuitive user interfaces to robust backend systems, ensuring seamless functionality and enhanced customer experiences. Whether you're launching a new venture or upgrading an existing platform, trust Techverse LLC to deliver scalable, secure, and visually stunning E-Commerce websites that maximize conversions and propel your business forward in the digital age."
+
+        CtnbuttonComponent={Ctnbutton}
+        ctnButtonProps={{
+          phoneicon: phoneicon,
+          calltext: "Call Us",
+          chaticon: chaticon,
+          chatenow: "Chat Now"
+        }}
+
+        image={ecommerceabout1}
+      />
+
+
+
+
+
+
+
+
+      {/* <!-- Website --> */}
+      <Website />
+
+
 
 
 
@@ -332,8 +273,8 @@ const EcommerseDevelopment = () => {
 
 
 
-         {/* process we use */}
-         <section className="techVerse_process">
+      {/* process we use */}
+      <section className="techVerse_process">
         <img
           className="techVerse_process_icon1 animation22"
           src={peramidleftangles}
@@ -452,15 +393,15 @@ const EcommerseDevelopment = () => {
 
 
       {/* <!-- Technologies --> */}
-      <TechnologiesUse/>
- 
+      <TechnologiesUse />
 
 
-   {/* MOBILE APP */}
 
- <Elevateyourbusiness/>
+      {/* MOBILE APP */}
 
-<Frequentlyaskquestion/>
+      <Elevateyourbusiness />
+
+      <Frequentlyaskquestion />
     </UserLayout>
   )
 }

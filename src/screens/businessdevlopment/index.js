@@ -13,27 +13,39 @@ import Elevateyourbusiness from '../../Components/elevateyourbusiness';
 import TechnologiesUse from '../../Components/technologiesuse';
 import Frequentlyaskquestion from '../../Components/frequentlyaskquestion';
 import Process from '../../Components/Process';
-import TrustedPartners from '../../Components/TrustedPartners'
-import serviceherobg from '../../asserts/images/service-hero-bg.png'
 import tpblue from "../../asserts/images/t-p-blue.png";
 import Portfolio from '../../Components/Portfolio'
 import tpblack from "../../asserts/images/t-p-black.png";
-import pinkcapsol from "../../asserts/images/pink-capsol.png";
-import greencube from "../../asserts/images/green-cube.png";
-import donatorange from "../../asserts/images/donat-orange.png";
-import phoneicon from "../../asserts/images/phone-icon.png";
-import chaticon from "../../asserts/images/chat-icon.png";
-import rapidappimg from "../../asserts/images/rapidapp-img.png";
-import highendimg from "../../asserts/images/high-end-img.png";
-import Mobileapphero from "../../asserts/images/Mobile-app-hero.png";
+
 import donateWhite from "../../asserts/images/donate-white.png";
 import peramidicon from "../../asserts/images/peramid-icon.png";
 import phoneicongreen from "../../asserts/images/phone-icon-green.png";
 import chaticonblue from '../../asserts/images/chat-icon-blue.png'
+import pinkcapsol from "../../asserts/images/pink-capsol.png";
+import greencube from "../../asserts/images/green-cube.png";
+import donatorange from "../../asserts/images/donat-orange.png";
+import phoneicon from "../../asserts/images/phone-icon.png";
+ 
+ 
+import chaticon from "../../asserts/images/chat-icon.png";
+import rapidappimg from "../../asserts/images/rapidapp-img.png";
+import highendimg from "../../asserts/images/high-end-img.png";
+import digitalmarketinghero from "../../asserts/images/digital-marketing-hero.png";
+import digitalmarketing01 from "../../asserts/images/digital-marketing-01.png";
+import digitalmarketing02 from "../../asserts/images/digital-marketing-02.png";
+import webdevelopmenthero from "../../asserts/images/web-development-hero.png";
+import businessimg01 from "../../asserts/images/business-img-01.png";
+
+
+
+import businessdevelopmenthero from '../../asserts/images/business-development-hero.png'
+
+
+
 
 gsap.registerPlugin(MotionPathPlugin);
 
-const MobileApp = () => {
+const Businessdevlopment = () => {
 
 
   Aos.init();
@@ -69,17 +81,64 @@ const MobileApp = () => {
     <UserLayout>
 
       <HeroSection
-        title={"Top Mobile App"}
-        subtitle={"Development"}
-        title2={"Services for Online Businesses"}
-        tagline={"Improve your brand awareness and maximize ROI through a responsive mobile application"}
-        className={"mobileApp_hero_img"}
-        heroimage={Mobileapphero}
+        title={"We"}
+        subtitle={"Design Websites"}
+        title2={"That Make Businesses Shine Online"}
+        tagline={"Grow your business’s online presence and witness an increase in conversions with Techverse."}
+        className={"web-development_hero_img"}
+        heroimage={businessdevelopmenthero}
 
       />
       {/* <!-- Trusted Partners --> */}
+      <section class="techVerse_trustedPartners techVerse_trustedPartnersServices">
+        <div class="container-fluid">
+          <div class="row">
 
-      <TrustedPartners />
+            <div class="col-md-12">
+              <div
+                class="row flex-nowrap gap-4 custom_trusted_partners_seprator"
+
+              >
+                <marquee>
+                  <div class="trustedPartners">
+                    <div class="trustedPartner col">
+                      <img src={tpblue} alt="" />
+                    </div>
+                    <div class="trustedPartner col">
+                      <img src={tpblack} alt="" />
+                    </div>
+                    <div class="trustedPartner col">
+                      <img src={tpblue} alt="" />
+                    </div>
+                    <div class="trustedPartner col">
+                      <img src={tpblack} alt="" />
+                    </div>
+                    <div class="trustedPartner col">
+                      <img src={tpblue} alt="" />
+                    </div>
+                    <div class="trustedPartner col">
+                      <img src={tpblack} alt="" />
+                    </div>
+                    <div class="trustedPartner col">
+                      <img src={tpblue} alt="" />
+                    </div>
+                    <div class="trustedPartner col">
+                      <img src={tpblack} alt="" />
+                    </div>
+                    <div class="trustedPartner col">
+                      <img src={tpblue} alt="" />
+                    </div>
+                    <div class="trustedPartner col">
+                      <img src={tpblack} alt="" />
+                    </div>
+                  </div>
+                </marquee>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
 
 
       {/* <!-- About Sec --> */}
@@ -89,6 +148,15 @@ const MobileApp = () => {
         pinkcapsol={pinkcapsol}
         greencube={greencube}
         donatorange={donatorange}
+        // chaticon={chaticon}
+        // phoneicon={phoneicon}
+        calltext={"Call Now"}
+        chatenow={"Chat Now"}
+        title="Launch Smart" subtitle="    With  " title2="Mvps Validate, Iterate, Succeed!"
+        para="Our MVP Development Services empower you to validate your business idea effectively before full-scale implementation. We specialize in crafting Minimum Viable Products (MVPs) that allow you to test core functionalities and gather crucial feedback from early users. By leveraging rapid prototyping and iterative development methodologies, we ensure your MVP evolves based on real-world insights, validating market demand and optimizing your product-market fit. With Techverse LLC, you can confidently refine your concept, mitigate risks, and position your product for successful market entry.
+        
+ 
+        "
 
         CtnbuttonComponent={Ctnbutton}
         ctnButtonProps={{
@@ -97,38 +165,18 @@ const MobileApp = () => {
           chaticon: chaticon,
           chatenow: "Chat Now"
         }}
-        title="RAPID APPLICATION DEVELOPMENT USING" subtitle="  CUTTING-EDGE" title2="TECHNOLOGIES  "
-        para="Techverse offers top-notch mobile app solutions that improve the performance of businesses by increasing revenues 
-                                and amplifying the online presence of the brand. We create applications for businesses of all sizes and provide them with an exceptional custom app
-                                 design experience that builds for them a loyal customer base and has a competitive advantage.
+        listItems={[
+          "Robust approach to connect your product with the target market",
+          "Verification of your idea with a test version of your digital product"
+        ]}
+        image={businessimg01}
+      
 
-                We help businesses delight their users with impressive native iOS/Android, Cross-Platform, and web application development, leveraging our extensive expertise in working with major app technologies."
-
-
-
-        image={rapidappimg}
 
       />
 
 
 
-
-
-
-      <Portfolio pinkcapsol={pinkcapsol}
-        greencube={greencube}
-        donatorange={donatorange}
-
-        title="HIGH-END MOBILE APP SOLUTIONS FOR" subtitle="  BUSINESSES"
-        para=" For startups to enterprise-level businesses, we offer a full cycle of app development, design, integration, and management services. From ideation to the delivery of the final application to the ongoing support, our company leads the whole process.
-
-We help businesses delight their users with impressive native iOS/Android, Cross-Platform, and web application development, leveraging our extensive expertise in working with major app technologies."
-
-        image={highendimg}
-        chaticon={chaticon}
-        phoneicon={phoneicon}
-
-      />
       {/* <!-- Website --> */}
       <section class="techVerse_webSolution">
         <img
@@ -215,29 +263,9 @@ We help businesses delight their users with impressive native iOS/Android, Cross
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </UserLayout>
   )
 }
 
-export default MobileApp
+export default Businessdevlopment
+

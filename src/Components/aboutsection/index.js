@@ -11,6 +11,10 @@ import reacticon from "../../../src/asserts/images/react-icon.png";
 import Ctnbutton from '../../Components/ctnbutton'
 
 const Aboutsection = (props) => {
+
+
+    const { CtnbuttonComponent, ctnButtonProps } = props;
+
     return (
         <div>
             <section class="techVerse_about techVerse_aboutServices1" id="particles-js1">
@@ -55,33 +59,34 @@ const Aboutsection = (props) => {
                                         </p>
 
 
-
-
-
-                                        <Ctnbutton
-                                            phoneicon={props?.phoneicon}
-                                            calltext={props?.calltext}
-                                            chaticon={props?.chaticon}
-                                            chatenow={props?.chatenow}
-
-/>
-
+                                        <ul
+                                            className="body-unorder-list"
+                                            data-aos="fade-up"
+                                            data-aos-offset="0"
+                                            data-aos-duration="2000"
+                                        >
+                                            {props?.listItems?.map((item, index) => (
+                                                <li key={index}>{item}</li>
+                                            ))}
+                                        </ul>
 
 
 
                                         <ul
-                                            class="body-bullet-list"
+                                            className="body-bullet-list"
                                             data-aos="fade-up"
                                             data-aos-offset="300"
                                             data-aos-duration="2000"
                                         >
-                                            <li>{props?.WordPress}</li>
-                                            <li>  {props?.PHP}</li>
-                                            <li>    {props?.Shopify}</li>
-                                            <li>  {props?.Joomla}</li>
-                                            <li>  {props?.Magneto}</li>
+                                            {props?.bulletListItems?.map((item, index) => (
+                                                <li key={index}>{item}</li>
+                                            ))}
                                         </ul>
 
+
+                                        {CtnbuttonComponent && (
+                                            <CtnbuttonComponent {...ctnButtonProps} />
+                                        )}
                                     </div>
                                 </div>
                             </div>
@@ -102,50 +107,6 @@ const Aboutsection = (props) => {
                     </div>
                 </div>
             </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         </div>
