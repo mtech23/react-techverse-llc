@@ -121,10 +121,10 @@ const WebApplication = () => {
 
       <Testimonials />
       {/* <Development_Process /> */}
- 
 
 
-      <Testimonials />
+
+
 
 
       <Frequentlyaskquestion />

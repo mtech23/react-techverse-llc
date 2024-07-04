@@ -1041,74 +1041,9 @@ const Home = () => {
      
 
         {/* MOBILE APP */}
+<Testimonials/>
 
-      <section class="techVerse_mobileApp">
-        <div class="techVerse_mobileAppContent">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-xl-6">
-                <div class="techVerse_mobileApp_content">
-                  <div class="sec_title">
-                    <h2
-                      class="sec_title_head color-lightBlue1"
-                      data-aos="fade-right"
-                      data-aos-offset="300"
-                      data-aos-duration="1000"
-                    >
-                      Elevate your business presence with a customized
-                      <span class="color-lightBlue2">Mobile Application</span>
-                    </h2>
-                    <p
-                      data-aos="fade-right"
-                      data-aos-offset="300"
-                      data-aos-duration="2000"
-                    >
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s,
-                    </p>
-                    <div
-                      class="techVerse_hero_btns"
-                      data-aos="fade-right"
-                      data-aos-offset="300"
-                      data-aos-duration="3000"
-                    >
-                      <a href="tel:+(1) 23456-7890" class="btn_with_icon">
-                        <img
-                          class="btn_with_icon_img"
-                          src={phoneicongreen}
-                          alt=""
-                        />
-                        <span class="btn_with_icon_text">+(1) 23456-7890</span>
-                      </a>
-                      <a href="#" class="btn_with_icon btn_secondary">
-                        <img
-                          class="btn_with_icon_img"
-                          src={chaticonblue}
-                          alt=""
-                        />
-                        <span class="btn_with_icon_text">Start A Live Chat</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-6 px-0">
-                <div class="techVerse_mobileApp_img">
-                  <img
-                    src={mobileAppimg}
-                    alt=""
-                    data-aos="fade-left"
-                    data-aos-offset="300"
-                    data-aos-duration="3000"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      
 
 
 
@@ -1237,7 +1172,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-<Testimonials/>
+ 
       </section>
 
 

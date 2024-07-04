@@ -57,14 +57,17 @@ import reicon8 from '../../asserts/images/re-icon8.png'
 import automotivescreen1 from '../../asserts/images/automotive-screen1.png'
 import automotivescreen2 from '../../asserts/images/automotive-screen2.png'
 import automotivescreen3 from '../../asserts/images/automotive-screen3.png'
-import automotivescreen4  from '../../asserts/images/automotive-screen4.png'
-import automotivescreen5  from '../../asserts/images/automotive-screen5.png'
+import automotivescreen4 from '../../asserts/images/automotive-screen4.png'
+import automotivescreen5 from '../../asserts/images/automotive-screen5.png'
 import mobileframe from '../../asserts/images/mobile-frame.webp'
 import carbuying from '../../asserts/images/car-buying.png'
 import jeffwilson from '../../asserts/images/jeff-wilson.png'
 import lllreptile from '../../asserts/images/lll-reptile.png'
 import privateastrology from '../../asserts/images/private-astrology.png'
 import Macbook from '../../asserts/images/Macbook.png'
+import App_development_solutions from '../../Components/App_development_solutions';
+import Development_Process from '../../Components/Development_Process';
+import Testimonials from '../../Components/Tetimonials';
 
 gsap.registerPlugin(MotionPathPlugin);
 
@@ -125,9 +128,11 @@ const Automotive = () => {
                 greencube={greencube}
                 donatorange={donatorange}
 
-                title="How Techverse Mobile Apps Is Transforming The" subtitle=" Automotive " title2="Industry"
-                para="Techverse, founded in 2014, is an automotive app development company, a leading provider of innovative
-                 automotive mobile app development solutions. Our mission is to empower the industry with the tools to enhance the driving experience and keep vehicles running smoothly"
+                title="Why" subtitle=" Choose   " title2="Us?
+"
+                para="With a deep understanding of industry complexities, we deliver cutting-edge software, IoT solutions, and mobile applications that seamlessly integrate into your operations. Our commitment to excellence ensures reliable support and proactive maintenance, empowering your business to stay ahead in a rapidly evolving landscape.
+
+"
 
                 image={automotiveabt2screens}
                 chaticon={chaticon}
@@ -144,169 +149,48 @@ const Automotive = () => {
 
 
             {/* <!-- App Development Sec --> */}
-            <section class="app_devSec services-abbout1">
-                <div class="container">
-                    <div class="row">
-                        <div class="sec_title">
-                            <h2 class="sec_title_head color-darkBlue" data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000">Transform Your Real Estate Business with a Wide Spectrum Of
-                                <span class="color-darkBlue1">App Development</span> Solutions
-                            </h2>
-                            <p data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000">
-                                We offer comprehensive real estate mobile app development solutions tailored to your business requirements.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="app_devBoxes" data-aos="fade-up" data-aos-offset="0" data-aos-duration="3000">
-                    <div class="app_devBoxe">
-                        <div class="app_devBoxeIcon">
-                            <img src={analysisresporticon} alt="" />
-                        </div>
-                        <h4>Analytics & Reporting</h4>
-                        <p>We are a leading real estate mobile app development service provider. Our team of skilled professionals is dedicated to helping real estate businesses scale and achieve their goals by</p>
-                    </div>
-                    <div class="app_devBoxe">
-                        <div class="app_devBoxeIcon">
-                            <img src={uiixicon} alt="" />
-                        </div>
-                        <h4>UI/UX Design</h4>
-                        <p>We are a leading real estate mobile app development service provider. Our team of skilled professionals is dedicated to helping real estate businesses scale and achieve their goals by</p>
-                    </div>
-                    <div class="app_devBoxe">
-                        <div class="app_devBoxeIcon">
-                            <img src={appdevicon} alt="" />
-                        </div>
-                        <h4>App Development</h4>
-                        <p>We are a leading real estate mobile app development service provider. Our team of skilled professionals is dedicated to helping real estate businesses scale and achieve their goals by</p>
-                    </div>
-                    <div class="app_devBoxe">
-                        <div class="app_devBoxeIcon">
-                            <img src={testingandqaicon} alt="" />
-                        </div>
-                        <h4>Testing & QA</h4>
-                        <p>We are a leading real estate mobile app development service provider. Our team of skilled professionals is dedicated to helping real estate businesses scale and achieve their goals by</p>
-                    </div>
-                </div>
-            </section>
-
+          <App_development_solutions/>
 
 
             {/* <!-- Real Estate App Dev --> */}
-            <section class="techVerse_about techVerse_aboutServices2">
-                <img class="techVerse_about_icon1 animation11" src="images/pink-capsol.png" alt="" />
-                {/* <!-- <img
-                    class="techVerse_about_icon2 animation33"
-                    src="images/Pill.png"
-                    alt=""
-                    /> --> */}
-                <img class="techVerse_about_icon3 animation11" src="images/green-cube.png" alt="" />
-                <img class="techVerse_about_icon4 animation11" src="images/donat-orange.png" alt="" />
-                <div class="techVerse_aboutContent techVerse_aboutContentServices2">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="techVerse_about_img">
-                                    <div class="techVerse_about_laptop_img realEstate-gif">
-                                        <img src={automotivedesktop}
-                                            class="about-laptopImg" data-aos="fade-right" data-aos-offset="0" data-aos-duration="1000" />
-                                    </div>
-                                    <div class="techVerse_hero_btns re_appDev_btns" data-aos="fade-up" data-aos-offset="0" data-aos-duration="3000">
-                                        <a href="#" class="btn_with_icon">
-                                            <img class="btn_with_icon_img"
-                                                src={phoneicon} alt="" />
-                                            <span class="btn_with_icon_text">Call Now</span>
-                                        </a>
-                                        <a href="#" class="btn_with_icon btn_secondary">
-                                            <img class="btn_with_icon_img"
-                                                src={chaticon} alt="" />
-                                            <span class="btn_with_icon_text">Chat Now</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="techVerse_about_content services-abbout2">
-                                    <div class="sec_title realEstate-appSec_title">
-                                        <h2 class="sec_title_head color-darkBlue" data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000">Our
-                                            <span class="color-lightBlue2">Real Estate</span> Mobile App Development Process
-                                        </h2>
-                                        <p data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000">
-                                            We follow a streamlined approach to ensure customer satisfaction by delivering customized real estate mobile app development solutions.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="reApp_box" data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000">
-                                            <div class="reApp_box_icon">
-                                                <img src={businessanalysisicon} alt="" />
-                                            </div>
-                                            <h4>Business Analysis</h4>
-                                            <p>We thoroughly analyze your business requirements, target audience, and competition to develop a comprehensive plan.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="reApp_box" data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000">
-                                            <div class="reApp_box_icon">
-                                                <img src={designanddevicon} alt="" />
-                                            </div>
-                                            <h4>Design & Development</h4>
-                                            <p>Our designers and developers work collaboratively to create a visually stunning and user-friendly mobile app.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="reApp_box" data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000">
-                                            <div class="reApp_box_icon">
-                                                <img src={qualityicon} alt="" />
-                                            </div>
-                                            <h4>Quality Assurance</h4>
-                                            <p>We conduct rigorous testing and quality assurance to ensure your mobile app works flawlessly.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="reApp_box" data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000">
-                                            <div class="reApp_box_icon">
-                                                <img src={devandmaintenenceicon} alt="" />
-                                            </div>
-                                            <h4>Deployment and Maintenance</h4>
-                                            <p>We deploy your application and provide ongoing maintenance and support.</p>
-                                        </div>
-                                    </div>
-                                </div>
+        
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+
+
+<Development_Process 
+title="OUR"
+subtitle="REAL ESTATE"
+title2="MOBILE APP DEVELOPMENT PROCESS"
+image={automotivedesktop}
+/>
 
 
 
 
+            <Portfolios
+                title="Automotive And Transport "
+                subtitle=" Portfolio"
+                para="At Techverse LLC, we specialize in delivering cutting-edge solutions tailored for the Automotive and Transport industry. With a understanding of the sector's unique challenges and opportunities, we provide innovative services that drive efficiency, safety, and customer satisfaction.
 
-                                
-      <Portfolios
-        title="AUTOMOTIVE "
-        subtitle=" Portfolio"
-        para="Our Company has worked with thousands of businesses all across the world and has developed highly functional, responsive, and feature-rich applications. Check out some of our best works:"
-        image1={automotivescreen1}
-        image2={automotivescreen2}
-        image3={automotivescreen3}
-        image4={automotivescreen4}
-        image5={automotivescreen5}
-        image6={mobileframe}
-        image7={carbuying}
-        image8={jeffwilson}
-        image9={lllreptile}
-        image10={privateastrology}
-        image11={Macbook}
-        classmobileapp="nav-link"
-        classwebsite="nav-link"
-        classcms="nav-link"
-        CMS="CMS"
-        Mobile_Apps="Mobile Apps"
-        Websites="Websites"
-      />
+"
+                image1={automotivescreen1}
+                image2={automotivescreen2}
+                image3={automotivescreen3}
+                image4={automotivescreen4}
+                image5={automotivescreen5}
+                image6={mobileframe}
+                image7={carbuying}
+                image8={jeffwilson}
+                image9={lllreptile}
+                image10={privateastrology}
+                image11={Macbook}
+                classmobileapp="nav-link"
+                classwebsite="nav-link"
+                classcms="nav-link"
+ 
+                Mobile_Apps="Mobile Apps"
+                Websites="Websites"
+            />
 
 
 
@@ -330,8 +214,7 @@ const Automotive = () => {
 
             <Driving_Exprience
                 classheroimage="drivingSec"
-                title="
-ENHANCING YOUR"
+                title="ENHANCING YOUR"
                 subtitle="DRIVING EXPERIENCE"
                 title2="LIKE NEVER BEFORE"
                 image={drivingsecsecreen}
@@ -353,7 +236,7 @@ ENHANCING YOUR"
             {/* <!-- Technologies --> */}
             <TechnologiesUse />
 
-
+<Testimonials/>
 
 
             {/* FAQ section */}

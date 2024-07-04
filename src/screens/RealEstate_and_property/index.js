@@ -3,7 +3,7 @@ import './style.css'
 import { UserLayout } from "../../Components/Layout/UserLayout";
 import phoneicon from "../../asserts/images/phone-icon.png";
 import chaticon from "../../asserts/images/chat-icon.png";
-
+import realestateimg from '../../asserts/images/realEstate-img-3.png'
 import realEstateportfolioimg1 from '../../asserts/images/realEstate-portfolio-img1.png'
 import realEstateportfolioimg2 from '../../asserts/images/realEstate-portfolio-img2.png'
 import realEstateportfolioimg3 from '../../asserts/images/realEstate-portfolio-img3.png'
@@ -15,7 +15,7 @@ import jeffwilson from '../../asserts/images/jeff-wilson.png'
 import lllreptile from '../../asserts/images/lll-reptile.png'
 import privateastrology from '../../asserts/images/private-astrology.png'
 import Macbook from '../../asserts/images/Macbook.png'
-
+import Ctnbutton from '../../Components/ctnbutton'
 import herophonemockupgroup from "../../asserts/images/hero-phone-mockup-group.png";
 // import { Swiper, SwiperSlide } from 'swiper/react';
 // import { Parallax, Pagination, Navigation } from 'swiper/modules';
@@ -72,6 +72,7 @@ import Testimonials from '../../Components/Tetimonials';
 import Portfolios from '../../Components/portfolios';
 import App_development_solutions from '../../Components/App_development_solutions';
 import Development_Process from '../../Components/Development_Process';
+import Driving_Exprience from '../../Components/Driving_experience';
 const RealEstate_and_property = () => {
 
 
@@ -88,11 +89,11 @@ const RealEstate_and_property = () => {
 
       <HeroSection
         classheroimage={"inner-realEstate-bgColor"}
-        title={"Full-Fledged"}
-        subtitle={"App Store  "}
+        title={"Revolutionary Digital Solutions"}
+        subtitle={"For"}
 
-        title2={"Optimization Services"}
-        tagline={"Take the charge and unleash your business's true potential with powerful mobile app & web application development solutions."}
+        title2={"  Modern Real Estate"}
+        tagline={"In today's dynamic real estate landscape, staying ahead requires more than traditional methods. At Techverse LLC, we redefine the digital frontier with innovative solutions tailored to the modern real estate industry. Our comprehensive digital marketing strategies empower real estate professionals to enhance visibility, attract qualified leads, and drive conversions effectively."}
       // heroimage={webapplicationhero}
 
       />
@@ -103,14 +104,18 @@ const RealEstate_and_property = () => {
         pinkcapsol={pinkcapsol}
         greencube={greencube}
         donatorange={donatorange}
-        title2="Business"
-        title="Enhance The Operational Efficiency Of Your" subtitle=" Real Estate  "
-        para=" We are a leading real estate mobile app development service provider. Our team of skilled professionals is dedicated to helping real estate businesses scale and achieve their goals by leveraging the latest technologies and industry best practices."
+        CtnbuttonComponent={Ctnbutton}
+        ctnButtonProps={{
+          phoneicon: phoneicon,
+          calltext: "Call Us",
+          chaticon: chaticon,
+          chatenow: "Chat Now"
+        }}
+        title2="Real Estate Success With Us"
+        title="Innovate Your Way" subtitle="   To  "
+        para="At Techverse LLC, we understand the pivotal role technology plays in optimizing real estate operations. With our tailored digital marketing solutions, we empower your business to streamline processes, maximize productivity, and achieve unparalleled growth in the competitive real estate market."
         image={realestateimg1}
-        chaticon={chaticon}
-        phoneicon={phoneicon}
-        calltext={"Call Now"}
-        chatenow={"Chat Now"}
+
       />
 
 
@@ -122,12 +127,10 @@ const RealEstate_and_property = () => {
       {/* <!-- Real Estate App Dev --> */}
       <Development_Process
         image={realestateimg2}
-        title="Our "
-        subtitle="Real Estate"
-        para="The most commonly used eCommerce platform is ideal for businesses of all sizes.
-
-"
-        title2="   Mobile App Development Process" />
+        title="Our Mobile App Development Process At "
+        subtitle="   Techverse LLC"
+        para="At Techverse LLC, we follow a meticulous mobile app development process designed to deliver exceptional results tailored to your business needs. Our approach encompasses the following key stages:"
+      />
 
 
 
@@ -139,7 +142,7 @@ const RealEstate_and_property = () => {
       <Portfolios
         title="REAL ESTATE "
         subtitle="Portfolio   "
-        para="Our Company has worked with thousands of businesses all across the world and has developed highly functional, responsive, and feature-rich applications. Check out some of our best works:"
+        para="We take pride in our diverse and dynamic Real Estate Portfolio, tailored to meet the needs of modern property investors and developers:"
         image1={realEstateportfolioimg1}
         image2={realEstateportfolioimg2}
         image3={realEstateportfolioimg3}
@@ -160,28 +163,26 @@ const RealEstate_and_property = () => {
       />
 
 
+      <Driving_Exprience
+ 
+        titleclass2="color-darkBlue"
+        titleclass="color-darkBlue"
+        title="Why Choose Our  "
+        subtitle="  Real Estate"
+        title2="     Mobile App Development"
+        image={realestateimg}
+
+      />
 
 
-
-      <Portfolio pinkcapsol={pinkcapsol}
-        greencube={greencube}
-        donatorange={donatorange}
-
-        title="  A Web Application Development Portfolio" subtitle="without bounds."
-
-        para="We have perfected the art of creating custom-made web applications that meet the specific needs of our clients. Whether it's a simple content management system or a complex e-commerce platform, Techverse has the skills and experience to get the job done right."
-
-        image={digitalmarketing01}
-        chaticon={chaticon}
-        phoneicon={phoneicon}
-        webaboutimg1={webaboutimg1} />
-      <Elevateyourbusiness />
-      <Testimonials />
-
-      <Website />
-
+      <TechnologiesUse />
 
       <Testimonials />
+
+
+
+
+
 
 
       <Frequentlyaskquestion />

@@ -93,12 +93,12 @@ const Portfolio = (props) => {
                                         <div>
                                             <div class="techVerse_store_links aos-init aos-animate" data-aos="fade-right" data-aos-offset="0" data-aos-duration="3000">
                                                 <a href="#" class="techVerse_store_link">
-                                                <img src={props?.playstore}
-                                                 alt=""/>
+                                                    <img src={props?.playstore}
+                                                        alt="" />
                                                 </a>
                                                 <a href="#" class="techVerse_store_link">
-                                                <img src={props?.appstore} 
-                                                alt="" />
+                                                    <img src={props?.appstore}
+                                                        alt="" />
                                                 </a>
                                             </div>
                                         </div>

@@ -2028,7 +2028,7 @@ canvas.particles-js-canvas-el {
   content: "";
   width: 70px;
   height: 60px;
-  background: url(../src/asserts/images/donat-blue.png);
+  /* background: url(../src/asserts/images/donat-blue.png); */
   /* background-color: red; */
   top: 0px;
   right: 0;

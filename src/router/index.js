@@ -30,7 +30,7 @@ const Router = () => {
         <Route path="/app-store" element={<App_store />}></Route>
         <Route path="/MobileApp" element={< MobileApp />}> </Route>
         <Route path="/mobile-app" element={< MobileApp />}> </Route>
-        <Route path="/ecommerse-development" element={<EcommerseDevelopment />}></Route>
+        <Route path="/ecommerse" element={<EcommerseDevelopment />}></Route>
         <Route path="/web-application" element={<WebApplication />}></Route>
         <Route path="/realEstate-and-property" element={<RealEstate_and_property />}></Route>
         <Route path="/digital-marketing" element={<DigitalMarketing />}></Route>

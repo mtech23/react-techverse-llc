@@ -38,7 +38,7 @@ const Driving_Exprience = (props) => {
                             <div class="col-md-12">
                                 <div class="sec_title buildStore_sec_title">
                                     <h2 class="sec_title_head color-lightBlue2" data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000">
-                                        <span class="color-white">{props?.title}</span> {props?.subtitle} <span class="color-white"> {props?.title2}    </span>
+                                        <span class={props?.titleclass}>{props?.title}</span> {props?.subtitle} <span class={props?.titleclass2}> {props?.title2}    </span>
                                     </h2>
                                 </div>
                             </div>
