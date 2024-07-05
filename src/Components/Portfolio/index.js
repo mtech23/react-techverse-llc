@@ -49,8 +49,8 @@ const Portfolio = (props) => {
                             <div class="col-md-6">
                                 <div class="techVerse_about_content services-abbout2">
                                     <div class="sec_title">
-                                        <h2
-                                            class="sec_title_head color-darkBlue"
+                                        <h2 
+                                            class={` sec_title_head ${props?.classtitle} aos-init aos-animate`}
                                             data-aos="fade-up"
                                             data-aos-offset="300"
                                             data-aos-duration="1000"
@@ -59,7 +59,7 @@ const Portfolio = (props) => {
                                             <span class="color-lightBlue2">{props?.subtitle} </span>
                                             {props?.title2}
                                         </h2>
-                                        <p
+                                        <p className={`${props?.classpara} aos-init aos-animate`}
                                             data-aos="fade-up"
                                             data-aos-offset="300"
                                             data-aos-duration="2000"

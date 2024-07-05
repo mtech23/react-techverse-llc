@@ -70,7 +70,8 @@ import Macbook from '../../asserts/images/Macbook.png'
 import mediaimg1 from '../../asserts/images/media-img-1.gif'
 import mediaimg2 from '../../asserts/images/media-img-2.png'
 import Testimonials from '../../Components/Tetimonials';
-
+ 
+import mediaimg3 from '../../asserts/images/media-img-3.png'
 gsap.registerPlugin(MotionPathPlugin);
 
 const Media = () => {
@@ -108,17 +109,29 @@ const Media = () => {
     return (
         <UserLayout>
 
+
+
             <HeroSection
+                classheroimage={"media_bg_custom"}
+                title={"Creating Digital Waves "}
+                subtitle={"  In  "}
+                title2={"Media & Entertainment!"}
+                tagline={"At Techverse LLC, we specialize in revolutionizing the Media & Entertainment industry through innovative solutions. Our expertise in this dynamic niche allows us to craft strategies that captivate audiences, amplify brand presence, and drive engagement across various platforms."}
+                className={"ecommerceDev_hero_img"}
 
-                classheroimage="inner-bgColor"
-                title={"And"}
-                subtitle={"Entertainment"}
-                subtitle2={"Media"}
-                title2={"App Development Solutions"}
-                tagline={"Techverse provides unparalleled mobile app Development services, transforming how people interact with media and entertainment."}
-                className={"mobileApp_hero_img"}
-            // heroimage={Mobileapphero}
 
+                CtnbuttonComponent={Ctnbutton}
+                ctnButtonProps={{
+                    phoneicon: phoneicon,
+                    calltext: "Call Us",
+                    primaryButtonClass: "btn_with_icon",
+                    playstore: playstore,
+                    appstore: appstore
+                }}
+
+
+
+            // secondaryButtonClass="btn_with_icon btn_secondary"
             />
             {/* <!-- Trusted Partners --> */}
 
@@ -129,13 +142,16 @@ const Media = () => {
 
 
             <Portfolio pinkcapsol={pinkcapsol}
-            // newClass={"media-abt1"}
+
+                classtitle={" color-white  "}
+
+                newClass={"media-abt1"}
                 greencube={greencube}
                 donatorange={donatorange}
-
-                title="Perfectly Curated Mobile Applications For The" subtitle=" Entertainment Industry "
-                para="We offer cutting-edge mobile app development solutions to transform the media and entertainment industry. 
-                Our team of experts creates unique, high-performance mobile apps that provide a seamless user experience to your audience."
+                classpara="color-white"
+                title="Why " subtitle="   Choose  "
+                title2="Us?"
+                para="At Techverse LLC, we understand the unique dynamics and fast-paced nature of the media and entertainment industry. Our services of this niche, ensuring your brand stands out in a crowded market. Here's why Techverse LLC should be your go-to partner:"
 
                 image={mediaimg1}
                 chaticon={chaticon}
@@ -173,9 +189,11 @@ const Media = () => {
 
 
             <Portfolios
-                title="AUTOMOTIVE "
+                title="Our Media & Entertainment  "
                 subtitle=" Portfolio"
-                para="Our Company has worked with thousands of businesses all across the world and has developed highly functional, responsive, and feature-rich applications. Check out some of our best works:"
+                para="With a deep understanding of industry trends and audience engagement, we offer a suite of services designed to raise your brand presence and amplify audience connection.
+
+"
                 image1={automotivescreen1}
                 image2={automotivescreen2}
                 image3={automotivescreen3}
@@ -196,34 +214,18 @@ const Media = () => {
             />
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             {/* <!-- Mobile App Dev --> */}
 
-            <Driving_Exprience
-                // classheroimage="drivingSec"
 
-                title="
-            ENHANCING YOUR"
-                subtitle="DRIVING EXPERIENCE"
-                title2="LIKE NEVER BEFORE"
-                image={drivingsecsecreen}
-            />
+            <Driving_Exprience titleclass2="color-darkBlue"
+                titleclass="color-darkBlue"
+                title="Why Choose Our  "
+                subtitle="    Media & Entertainment  "
+                title2=" App Development Service  "
+                para="When you choose Blitz Mobile Apps for your media and entertainment mobile app development needs, you can expect:"
+                image={mediaimg3} />
+
+
 
 
 
