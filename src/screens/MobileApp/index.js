@@ -4,7 +4,6 @@ import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
 import { gsap } from "gsap";
 import Aboutsection from '../../Components/aboutsection';
 
-
 import Aos from "aos";
 
 import Ctnbutton from '../../Components/ctnbutton/index'
@@ -31,10 +30,16 @@ import peramidicon from "../../asserts/images/peramid-icon.png";
 import phoneicongreen from "../../asserts/images/phone-icon-green.png";
 import chaticonblue from '../../asserts/images/chat-icon-blue.png'
 import portfoliomockup1 from "../../asserts/images/portfolio-mockup-1.png";
+import portfoliomockup5 from "../../asserts/images/portfolio-mockup-5.png";
+import portfoliomockup2 from "../../asserts/images/portfolio-mockup-2.png";
+import portfoliomockup3 from "../../asserts/images/portfolio-mockup-3.png";
+import portfoliomockup4 from "../../asserts/images/portfolio-mockup-4.png";
 import mobileframe from "../../asserts/images/mobile-frame.webp";
 import Macbook from "../../asserts/images/Macbook.png";
 import carbuying from "../../asserts/images/car-buying.png";
-
+import lllreptile from "../../asserts/images/lll-reptile.png";
+import jeffwilson from "../../asserts/images/jeff-wilson.png";
+import privateastrology from "../../asserts/images/private-astrology.png";
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -42,9 +47,10 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 // import required modules
-import { Pagination } from 'swiper/modules';
+// import { Pagination,  Autoplay } from 'swiper/modules';
 gsap.registerPlugin(MotionPathPlugin);
 
 const MobileApp = () => {
@@ -239,111 +245,50 @@ We help businesses delight their users with impressive native iOS/Android, Cross
                   <div class="tab-pane fade show active" id="mobile-app" role="tabpanel" aria-labelledby="mobile_apps">
                     <div class="mobile_app_carousel">
 
+          <Swiper
+              slidesPerView={5}
+              spaceBetween={10}
+              // speed={2}
+              centeredSlides={false}
+              loop= {true}
+              autoplay={{
+                delay: 2000,
+                disableOnInteraction: false,
+              }}
+            
+            
+              breakpoints={{
+                640: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                768: {
+                  slidesPerView: 4,
+                  spaceBetween: 40,
+                },
+                1024: {
+                  slidesPerView: 5,
+                  spaceBetween: 50,
+                },
+              }}
+              modules={[Pagination, Autoplay]}
+              className="mySwiper"
+          
+            >
 
-                    {/* <Swiper
-                          slidesPerView={5}
-                          spaceBetween={10}
-                          pagination={{
-                            clickable: true,
-                          }}
-                          breakpoints={{
-                            640: {
-                              slidesPerView: 2,
-                              spaceBetween: 20,
-                            },
-                            768: {
-                              slidesPerView: 4,
-                              spaceBetween: 40,
-                            },
-                            1024: {
-                              slidesPerView: 5,
-                              spaceBetween: 50,
-                            },
-                          }}
-                          modules={[Pagination]}
-                          className="mySwiper mobileAppCarousel"
-                        >
-                          <SwiperSlide><img src={portfoliomockup1} alt="" /></SwiperSlide>
-                          <SwiperSlide><img src={portfoliomockup1} alt="" /></SwiperSlide>
-                          <SwiperSlide><img src={portfoliomockup1} alt="" /></SwiperSlide>
-                          <SwiperSlide><img src={portfoliomockup1} alt="" /></SwiperSlide>
-                          <SwiperSlide><img src={portfoliomockup1} alt="" /></SwiperSlide>
-                          <SwiperSlide><img src={portfoliomockup1} alt="" /></SwiperSlide>
-                          <SwiperSlide><img src={portfoliomockup1} alt="" /></SwiperSlide>
-                         
-                  
-                       
-                        </Swiper> */}
-
-
-
-
-
-<Swiper
-        slidesPerView={5}
-        spaceBetween={10}
-        speed={600}
+        <SwiperSlide> <img src={portfoliomockup1} alt="" /></SwiperSlide>
+        <SwiperSlide> <img src={portfoliomockup2} alt="" /></SwiperSlide>
+        <SwiperSlide> <img src={portfoliomockup3} alt="" /></SwiperSlide>
+        <SwiperSlide> <img src={portfoliomockup4} alt="" /></SwiperSlide>
+        <SwiperSlide> <img src={portfoliomockup5} alt="" /></SwiperSlide>
+        <SwiperSlide> <img src={portfoliomockup1} alt="" /></SwiperSlide>
+        <SwiperSlide> <img src={portfoliomockup2} alt="" /></SwiperSlide>
       
-        pagination={{
-          clickable: true,
-        }}
-        breakpoints={{
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 4,
-            spaceBetween: 40,
-          },
-          1024: {
-            slidesPerView: 5,
-            spaceBetween: 50,
-          },
-        }}
-        modules={[Pagination]}
-        className="mySwiper"
-      >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+
       </Swiper>
 
 
-   
-
-{/* 
-                      <div class="swiper mobileAppCarousel">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                          <img src={portfoliomockup1} alt="" />
-                          </div>
-                          <div class="swiper-slide">
-                          <img src={portfoliomockup1} alt="" />
-                          </div>
-                          <div class="swiper-slide">
-                          <img src={portfoliomockup1} alt="" />
-                          </div>
-                          <div class="swiper-slide">
-                          <img src={portfoliomockup1} alt="" />
-                          </div>
-                          <div class="swiper-slide">
-                          <img src={portfoliomockup1} alt="" />
-                          </div>
-                          <div class="swiper-slide">
-                          <img src={portfoliomockup1} alt="" />
-                          </div>
-                          <div class="swiper-slide">
-                          <img src={portfoliomockup1} alt="" />
-                          </div>
-                        </div>
-                      </div> */}
+  
                       <div class="our-slider-img">
                         <img src={mobileframe} alt="" />
                       </div>
@@ -358,69 +303,37 @@ We help businesses delight their users with impressive native iOS/Android, Cross
 
 
                     <Swiper
-                          slidesPerView={1}
-                          spaceBetween={10}
-                          pagination={{
-                            clickable: true,
-                          }}
-                          breakpoints={{
-                            640: {
-                              slidesPerView: 2,
-                              spaceBetween: 20,
-                            },
-                            768: {
-                              slidesPerView: 4,
-                              spaceBetween: 40,
-                            },
-                            1024: {
-                              slidesPerView: 5,
-                              spaceBetween: 50,
-                            },
-                          }}
-                          modules={[Pagination]}
-                          className="mySwiper swiper webAppCarousel"
+                        slidesPerView={2}
+                        spaceBetween={30}
+                        // speed={200}
+                        centeredSlides={true}
+                     
+                        loop= {true}
+                        autoplay= {{
+                          delay: 1500,
+                          disableOnInteraction: false,
+                        }}
+                                            
+                        breakpoints={ {
+                          640: {
+                            slidesPerView: 2.1,
+                            spaceBetween: 30,
+                          }
+                        }
+                      }
+                    
+                        modules={[Pagination, Autoplay]}
+                        className="mySwiper "
                         >
                           <SwiperSlide><img src={carbuying} alt="" /></SwiperSlide>
+                          <SwiperSlide><img src={lllreptile} alt="" /></SwiperSlide>
+                          <SwiperSlide><img src={jeffwilson} alt="" /></SwiperSlide>
+                          <SwiperSlide><img src={privateastrology} alt="" /></SwiperSlide>
                           <SwiperSlide><img src={carbuying} alt="" /></SwiperSlide>
-                          <SwiperSlide><img src={carbuying} alt="" /></SwiperSlide>
-                       
+                          <SwiperSlide><img src={lllreptile} alt="" /></SwiperSlide>
+                          <SwiperSlide><img src={jeffwilson} alt="" /></SwiperSlide>
+                          <SwiperSlide><img src={privateastrology} alt="" /></SwiperSlide>
                         </Swiper>
-
-
-
-
-
-
-
-
-                      {/* <div class="swiper webAppCarousel">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <img src={carbuying} alt="" />
-                          </div>
-                          <div class="swiper-slide">
-                          <img src={carbuying} alt="" />
-                          </div>
-                          <div class="swiper-slide">
-                          <img src={carbuying} alt="" />
-                          </div>
-                          <div class="swiper-slide">
-                          <img src={carbuying} alt="" />
-                          </div>
-                          <div class="swiper-slide">
-                          <img src={carbuying} alt="" />
-                          </div>
-                          <div class="swiper-slide">
-                          <img src={carbuying} alt="" />
-                          </div>
-                          <div class="swiper-slide">
-                          <img src={carbuying} alt="" />
-                          </div>
-                          <div class="swiper-slide">
-                          <img src={carbuying} alt="" />
-                          </div>
-                        </div>
-                      </div> */}
 
 
                       <div class="our-slider-webframe">
@@ -436,64 +349,40 @@ We help businesses delight their users with impressive native iOS/Android, Cross
 
 
 
+                  
+
                     <Swiper
-                          slidesPerView={1}
-                          spaceBetween={10}
-                          pagination={{
-                            clickable: true,
-                          }}
-                          breakpoints={{
-                            640: {
-                              slidesPerView: 2,
-                              spaceBetween: 20,
-                            },
-                            768: {
-                              slidesPerView: 4,
-                              spaceBetween: 40,
-                            },
-                            1024: {
-                              slidesPerView: 5,
-                              spaceBetween: 50,
-                            },
-                          }}
-                          modules={[Pagination]}
-                          className="mySwiper swiper webAppCarousel"
+                        slidesPerView={2}
+                        spaceBetween={30}
+                        // speed={200}
+                        centeredSlides={true}
+                     
+                        loop= {true}
+                        autoplay= {{
+                          delay: 1500,
+                          disableOnInteraction: false,
+                        }}
+                                            
+                        breakpoints={ {
+                          640: {
+                            slidesPerView: 2.1,
+                            spaceBetween: 30,
+                          }
+                        }
+                      }
+                    
+                        modules={[Pagination, Autoplay]}
+                        className="mySwiper "
                         >
+                           <SwiperSlide><img src={carbuying} alt="" /></SwiperSlide>
+                          <SwiperSlide><img src={lllreptile} alt="" /></SwiperSlide>
+                          <SwiperSlide><img src={jeffwilson} alt="" /></SwiperSlide>
+                          <SwiperSlide><img src={privateastrology} alt="" /></SwiperSlide>
                           <SwiperSlide><img src={carbuying} alt="" /></SwiperSlide>
-                          <SwiperSlide><img src={carbuying} alt="" /></SwiperSlide>
-                          <SwiperSlide><img src={carbuying} alt="" /></SwiperSlide>
-                       
+                          <SwiperSlide><img src={lllreptile} alt="" /></SwiperSlide>
+                          <SwiperSlide><img src={jeffwilson} alt="" /></SwiperSlide>
+                          <SwiperSlide><img src={privateastrology} alt="" /></SwiperSlide>
                         </Swiper>
-
-
-
-{/* 
-                      <div class="swiper webAppCarousel">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                          <img src={carbuying} alt="" />
-                          </div>
-                          <div class="swiper-slide">
-                          <img src={carbuying} alt="" />
-                          </div>
-                          <div class="swiper-slide">
-                          <img src={carbuying} alt="" />
-                          </div>
-                          <div class="swiper-slide">
-                          <img src={carbuying} alt="" />
-                          </div>
-                          <div class="swiper-slide">
-                          <img src={carbuying} alt="" />
-                          </div>
-                          <div class="swiper-slide">
-                          <img src={carbuying} alt="" />
-                          </div>
-                        </div>
-                      </div> */}
-
-
-
-
 
                       <div class="our-slider-webframe">
                       <img src={Macbook} alt="" />

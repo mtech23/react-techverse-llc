@@ -1,6 +1,7 @@
 import React, { useEffect, } from 'react';
 
 import { UserLayout } from "../../Components/Layout/UserLayout";
+import Portfolios from "../../Components/portfolios"
 import phoneicon from "../../asserts/images/phone-icon.png";
 import herophonemockupgroup from "../../asserts/images/hero-phone-mockup-group.png";
 import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
@@ -8,8 +9,7 @@ import bluecubelarge from '../../asserts/images/blue-cube-large.png'
 import Particles from 'react-particles';
 import { loadFull } from 'tsparticles';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Parallax, Pagination, Navigation } from 'swiper/modules';
-
+import { Parallax, Pagination, Navigation, Autoplay } from 'swiper/modules';
 import { gsap } from "gsap";
 // peramidLeftAngles
 // path_to_peramidleftangles
@@ -65,12 +65,13 @@ import customappicon from "../../asserts/images/custom-app-icon.png";
 import enterprizeicon from "../../asserts/images/enter-prize-icon.png";
 import crossplatform from "../../asserts/images/cross-platform.png";
 import portfoliomockup1 from "../../asserts/images/portfolio-mockup-1.png";
-import portfoliomockup2 from "../../asserts/images/portfolio-mockup-2.png";
+
 import mobileframe from "../../asserts/images/mobile-frame.webp";
+import portfoliomockup5 from "../../asserts/images/portfolio-mockup-5.png";
+import portfoliomockup2 from "../../asserts/images/portfolio-mockup-2.png";
 import portfoliomockup3 from "../../asserts/images/portfolio-mockup-3.png";
 import portfoliomockup4 from "../../asserts/images/portfolio-mockup-4.png";
 import jeffwilson from "../../asserts/images/jeff-wilson.png";
-import portfoliomockup5 from "../../asserts/images/portfolio-mockup-5.png";
 import carbuying from "../../asserts/images/car-buying.png";
 import lllreptile from "../../asserts/images/lll-reptile.png";
 import privateastrology from "../../asserts/images/private-astrology.png";
@@ -146,7 +147,7 @@ const Home = () => {
       >
         <div
           slot="container-start"
-          className="parallax-bg"
+          className="parallax-bg pagination_custom"
           // style={{
           //   'background-image':
           //     'url(./asserts/images/hero-bg.png)',
@@ -733,304 +734,25 @@ const Home = () => {
       </section>
 
       {/* <!-- Portfolio --> */}
-      <section class="techVerse_portfolio">
-        <div class="techVerse_portfolioContent">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="sec_title">
-                  <h2
-                    class="sec_title_head color-lightBlue2"
-                    data-aos="fade-up"
-                    data-aos-offset="300"
-                    data-aos-duration="1000"
-                  >
-                    Our
-                    <span class="color-darkBlue"> Portfolio </span>
-                  </h2>
-                  <p
-                    data-aos="fade-up"
-                    data-aos-offset="300"
-                    data-aos-duration="2000"
-                  >
-                    Our Company has worked with thousands of businesses all across
-                    the world and has developed highly functional, responsive, and
-                    feature-rich applications. Check out some of our best works:
-                  </p>
-                </div>
-              </div>
-              <div class="col-md-12">
-                <div
-                  class="portfolio_tabs nav nav-tabs"
-                  id="myTab"
-                  role="tablist"
-                  data-aos="fade-up"
-                  data-aos-offset="300"
-                  data-aos-duration="3000"
-                >
-                  <a
-                    class="nav-link active"
-                    id="mobile_apps"
-                    data-toggle="tab"
-                    href="#mobile-app"
-                    role="tab"
-                  >Mobile Apps</a
-                  >
-                  <a
-                    class="nav-link"
-                    id="websites_tab"
-                    data-toggle="tab"
-                    href="#website-tab"
-                    role="tab"
-                  >Websites</a
-                  >
-                  <a
-                    class="nav-link"
-                    id="cms_tab"
-                    data-toggle="tab"
-                    href="#cms-tab"
-                    role="tab"
-                  >CMS</a
-                  >
-                </div>
-                <div class="tab-content" id="portfolioTabs">
-                  <div
-                    class="tab-pane fade show active"
-                    id="mobile-app"
-                    role="tabpanel"
-                    aria-labelledby="mobile_apps"
-                  >
-                    <div class="mobile_app_carousel">
+     <Portfolios
 
-                      <Swiper
-
-                        slidesPerView={5}
-                        spaceBetween={30}
-                        pagination={{
-                          clickable: true,
-
-                        }}
-                        modules={[Parallax, Pagination, Navigation]}
-                        className="mySwiper"
-
-                      >
-
-                        <SwiperSlide>
-
-                          <img src={portfoliomockup1} alt="" />
-                        </SwiperSlide>
-
-                        <SwiperSlide>
-
-                          <img src={portfoliomockup2} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-
-                          <img src={portfoliomockup3} alt="" />
-                        </SwiperSlide>
-
-                        <SwiperSlide>
-
-                          <img src={portfoliomockup4} alt="" />
-                        </SwiperSlide>
-
-                        <SwiperSlide>
-
-                          <img src={portfoliomockup5} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-
-                          <img src={portfoliomockup1} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-
-                          <img src={portfoliomockup2} alt="" />
-                        </SwiperSlide>
-                      </Swiper>
-
-                      {/* <div class="swiper mobileAppCarousel">
-                      <div class="swiper-wrapper">
-                    
-                        <div class="swiper-slide">
-                          <img src={portfoliomockup1} alt="" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src={portfoliomockup2} alt="" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="images/portfolio-mockup-3.png" alt="" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="images/portfolio-mockup-4.png" alt="" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="images/portfolio-mockup-5.png" alt="" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="images/portfolio-mockup-1.png" alt="" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="images/portfolio-mockup-2.png" alt="" />
-                        </div>
-                      </div> */}
-                      {/* </div> */}
-                      <div class="our-slider-img">
-                        <img src={mobileframe} alt="" />
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="tab-pane fade"
-                    id="website-tab"
-                    role="tabpanel"
-                    aria-labelledby="websites_tab"
-                  >
-                    <div class="web_app_carousel">
-
-
-                      <Swiper
-
-                        slidesPerView={5}
-                        spaceBetween={30}
-                        pagination={{
-                          clickable: true,
-                        }}
-
-                        modules={[Parallax, Pagination, Navigation]}
-                        className="mySwiper">
-
-
-
-
-
-
-                        <SwiperSlide>
-                          <img src={carbuying} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                          <img src={jeffwilson} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                          <img src={lllreptile} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                          <img src={privateastrology} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                          <img src={carbuying} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                          <img src={jeffwilson} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                          <img src={lllreptile} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                          <img src={privateastrology} alt="" />
-                        </SwiperSlide>
-
-
-
-                      </Swiper>
-
-                      {/* <div class="swiper webAppCarousel">
-                      <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                          <img src="images/car-buying.png" alt="" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="images/jeff-wilson.png" alt="" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="images/lll-reptile.png" alt="" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="images/private-astrology.png" alt="" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="images/car-buying.png" alt="" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="images/jeff-wilson.png" alt="" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="images/lll-reptile.png" alt="" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="images/private-astrology.png" alt="" />
-                        </div>
-                      </div> */}
-                      {/* </div> */}
-                      <div class="our-slider-webframe">
-                        <img src={Macbook} alt="" />
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="tab-pane fade"
-                    id="cms-tab"
-                    role="tabpanel"
-                    aria-labelledby="cms_tab"
-                  >
-
-
-                    <div class="web_app_carousel">
-
-
-
-
-                      <Swiper
-
-                        slidesPerView={5}
-                        spaceBetween={30}
-                        pagination={{
-                          clickable: true,
-                        }}
-
-                        modules={[Parallax, Pagination, Navigation]}
-                        className="mySwiper">
-
-
-                        <SwiperSlide>
-                          <img src={carbuying} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                          <img src={jeffwilson} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                          <img src={lllreptile} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                          <img src={privateastrology} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                          <img src={carbuying} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                          <img src={jeffwilson} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                          <img src={lllreptile} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                          <img src={privateastrology} alt="" />
-                        </SwiperSlide>
-
-                      </Swiper>
-
-                     
-                      <div class="our-slider-webframe">
-                        <img src={Macbook} alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-      </section>
+     title="Our"
+     subtitle="Portfolio"
+     para="Our Company has worked with thousands of businesses 
+     all across the world and has developed highly functional, responsive, and feature-rich applications. Check out some of our best works:"
+     image1={portfoliomockup1}
+     image2={portfoliomockup2}
+     image3={portfoliomockup3}
+     image4={portfoliomockup4}
+     image5={portfoliomockup5}
+     image6={mobileframe}
+     image7={carbuying}
+     image8={lllreptile}
+     image9={jeffwilson}
+     image10={privateastrology}
+     image11={Macbook}
+     
+     />
 
 
 
