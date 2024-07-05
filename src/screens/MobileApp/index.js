@@ -89,6 +89,7 @@ const MobileApp = () => {
     <UserLayout>
 
       <HeroSection
+      innerbgclass={"inner-bgColor"}
         title={"Top Mobile App"}
         subtitle={"Development"}
         title2={"Services for Online Businesses"}

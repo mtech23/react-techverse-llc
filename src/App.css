@@ -3275,6 +3275,14 @@ font-size: 11px !important;
 
 
 @media (max-width: 480px) {
+  .icc img{
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .icc p{
+    font-size : 8px !important;
+    line-height: 0.9 !important;
+  }
 
   .sec_title .sec_title_head {
     font-size: 17px !important;
@@ -3482,6 +3490,14 @@ font-size: 11px !important;
         transform: scale(0.7) rotate(36deg) translateY(55pc);
         bottom: -70pc;
         right: 0;
+    }
+    .icc img{
+      width: 40px !important;
+      height: 40px !important;
+    }
+    .icc p{
+      font-size : 8px !important;
+      line-height: 0.9 !important;
     }
 }
 @media (min-width:2560px){

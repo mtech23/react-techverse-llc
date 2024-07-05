@@ -105,7 +105,7 @@ const EcommerseDevelopment = () => {
 
 
       <HeroSection
-        // classheroimage={"inner-ecommerce-bgColor"}
+        classheroimage={"inner-ecommerce-bgColor"}
         title={"Custom Ecommerce Website"}
         subtitle={"Development"}
         title2={"Company"}

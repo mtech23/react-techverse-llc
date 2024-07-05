@@ -17,7 +17,7 @@ const HeroSection = (props) => {
                 <div class={props?.classheroimage}></div>
                 {/* <div className=' '> */}
                 {/* width-1600 */}
-
+                <div class={props.innerbgclass}></div>
             <div className='techVerse_heroContent'>
     
             <div class="container-fluid">

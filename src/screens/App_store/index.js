@@ -6,7 +6,7 @@ import Aboutsection from '../../Components/aboutsection';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import appimg01 from '../../asserts/images/app-img-01.png'
-import appstorehero from '../../asserts/images/app-store-hero-img.png'
+import appstorehero from '../../asserts/images/app-store-hero.png'
 import { Parallax, Pagination, Navigation } from 'swiper/modules';
 import Aos from "aos";
 import 'swiper/css';
@@ -69,11 +69,11 @@ const App_store = () => {
         <UserLayout>
 
             <HeroSection
-                title={"Full-Fledged"}
-                subtitle={" App Store"}
-                title2={"Optimization Services"}
-                tagline={"Take the charge and unleash your business's true potential with powerful mobile app & web application development solutions."}
-                className={"service-hero-bg"}
+                title={"FInnovate Today"}
+                subtitle={" With "}
+                title2={"Techverse App Store"}
+                tagline={"Whether you're an aspiring entrepreneur or a seasoned developer, our App Store is your gateway to reaching millions of users worldwide. With our robust platform, you can harness the power of cutting-edge technology and provide a seamless user experience. From app discovery to deployment, we provide supreme support and resources to raise your app's visibility and success"}
+                className={"storeApp_hero_img"}
                 heroimage={appstorehero}
 
             />
@@ -93,7 +93,7 @@ const App_store = () => {
                 donatorange={donatorange}
 
 
-                title="    Boost Downloads" subtitle="And " title2="  Visibility Techverse LLC's App Optimization At Your Service. ."
+                title="Boost Downloads" subtitle="And " title2="  Visibility Techverse LLC's App Optimization At Your Service. ."
                 para="Get the full potential of your mobile app with Techverse LLC's Comprehensive App Store Optimization service. We specialize in enhancing your app's visibility and reach across major platforms, including the Apple App Store and Google Play Store. Our expert team leverages advanced strategies in keyword optimization, metadata refinement, competitor analysis, and user engagement tactics to ensure your app not only ranks higher but also attracts and retains a loyal user base. Whether you're launching a new app or looking to boost downloads for an existing one, trust Techverse LLC to optimize your app for success in today's competitive marketplace.
 
 "
