@@ -4,22 +4,15 @@ import Home from '../screens/Home';
 import MobileApp from '../screens/MobileApp';
 import App_store from '../screens/App_store';
 import RealEstate_and_property from '../screens/RealEstate_and_property';
-
-
-
-
-import WebApplication from "../screens/webApplication";
- 
+import WebApplication from "../screens/webApplication"; 
 import EcommerseDevelopment from "../screens/ecommerseDevelopment";
 import DigitalMarketing from "../screens/digitalMarketing";
-
 import Finance from "../screens/finance";
 import WebDevelopment from "../screens/webDevelopment";
 import Automotive from "../screens/automotive";
 import Media from "../screens/media";
 import Businessdevlopment from "../screens/businessdevlopment";
- 
-
+import Education_hr from "../screens/education-hr";
 
 const Router = () => {
   return (
@@ -39,6 +32,7 @@ const Router = () => {
         <Route path="/media" element={<Media />}></Route>
         <Route path="/finance" element={<Finance />}></Route>
         <Route path="/business-devlopment" element={<Businessdevlopment />}></Route>
+        <Route path="/education-hr" element={<Education_hr />}></Route>
          
 
 
