@@ -13,7 +13,8 @@ import Automotive from "../screens/automotive";
 import Media from "../screens/media";
 import Businessdevlopment from "../screens/businessdevlopment";
 import Education_hr from "../screens/education-hr";
-
+import Health_care from "../screens/health-care";
+ 
 const Router = () => {
   return (
     <BrowserRouter basename="project-name">
@@ -33,7 +34,8 @@ const Router = () => {
         <Route path="/finance" element={<Finance />}></Route>
         <Route path="/business-devlopment" element={<Businessdevlopment />}></Route>
         <Route path="/education-hr" element={<Education_hr />}></Route>
-         
+        <Route path="/health-care" element={<Health_care />}></Route>
+ 
 
 
       </Routes>

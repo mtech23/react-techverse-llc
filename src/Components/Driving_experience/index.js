@@ -19,7 +19,7 @@ const Driving_Exprience = (props) => {
                 className={`techVerse_about techVerse_aboutServices2 ${props?.classheroimage}`}
             >
                 <div class={props?.class_innerBG}>
-                    
+
                 </div>
                 <img class="techVerse_about_icon1 animation11"
                     src={pinkcapsol} alt="" />
@@ -40,7 +40,12 @@ const Driving_Exprience = (props) => {
                                     <h2 class="sec_title_head color-lightBlue2" data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000">
                                         <span class={props?.titleclass}>{props?.title}</span> {props?.subtitle} <span class={props?.titleclass2}> {props?.title2}    </span>
                                     </h2>
-                                </div>
+
+
+                                    <p data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000">
+                                 {props?.para}
+            </p>
+                                                        </div>
                             </div>
                             <div class="col-lg-5">
                                 <div class="techVerse_about_img">

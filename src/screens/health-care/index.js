@@ -61,6 +61,10 @@ import Elevateyourbusiness from '../../Components/elevateyourbusiness';
 import Portfolio from '../../Components/Portfolio';
 import { playstore } from '../../asserts/images';
 import appstore from '../../asserts/images/app-store.png';
+import healthcareimg1 from '../../asserts/images/health-care-img1.png';
+import healthcareimg2 from '../../asserts/images/health-care-img2.png';
+import healthcareimg3 from '../../asserts/images/health-care-img3.png';
+ 
 import App_store from '../App_store';
 import App_development_solutions from '../../Components/App_development_solutions';
 import Development_Process from '../../Components/Development_Process';
@@ -68,7 +72,7 @@ import Portfolios from '../../Components/portfolios';
 import Driving_Exprience from '../../Components/Driving_experience';
 import Testimonials from '../../Components/Tetimonials';
 gsap.registerPlugin(MotionPathPlugin);
-const Education_hr = () => {
+const Health_care = () => {
 
 
   Aos.init();
@@ -106,11 +110,11 @@ const Education_hr = () => {
 
 
       <HeroSection
-        classheroimage={"inner-ecommerce-bgColor"}
-        title={"Alter Your HR And Education Systems"}
-        subtitle={"With "}
-        title2={"Techverse"}
-        tagline={"In today's fast-paced digital world, adapting to innovative solutions is crucial for staying ahead. At Techverse LLC, we specialize in transforming HR and education systems with cutting-edge technology to enhance efficiency, engagement, and effectiveness."}
+        classheroimage={"inner-health-bgColor"}
+        title={"Premium "}
+        subtitle={"Mobile App "}
+        title2={"Development Solutions For Healthcare Agencies"}
+        tagline={"Enhance patient care and optimize operations with our state-of-the-art healthcare mobile apps."}
         className={"ecommerceDev_hero_img"}
 
 
@@ -135,31 +139,34 @@ const Education_hr = () => {
       <TrustedPartners />
 
 
-      <Portfolio title="Why "
+      <Portfolio title="Perfectly Curated Mobile Applications For The  "
 
-title2=" Us?
-"
-        subtitle="Choose "
+// title2=" Entertainment Industry"
+        subtitle="Entertainment Industry "
         para="We specialize in digital marketing for the Education and HR sectors, leveraging our deep industry expertise to deliver tailored strategies that address the unique challenges and opportunities of these fields. Our team stays ahead of trends and regulations to ensure compliance and effectiveness, creating customized campaigns that resonate with your target audience.
 
 "
 
 
-        image={eduhrimg1}
+        image={healthcareimg1}
 
         playstore={playstore}
         appstore={appstore}
       />
       <App_development_solutions />
 
-      <Development_Process title="Our " subtitle="Real Estate" title2="Mobile App Development Process"
-        para="We follow a streamlined approach to ensure customer satisfaction by delivering customized real estate mobile app development solutions."
-        image={ecommersedesktopimg} />
+      <Development_Process title="App Development For The " subtitle="  Entertainment Industry"  
+        para="We follow a streamlined approach to ensure customer satisfaction by delivering customized real estate mobile app development solutions.
+
+"
+        image={healthcareimg2} />
 
       <Portfolios
-        title="ECOMMERCE "
-        subtitle="Portfolio"
-        para="Our Company has worked with thousands of businesses all across the world and has developed highly functional, responsive, and feature-rich applications. Check out some of our best works:"
+        title="HEALTH & LIFE SCIENCE "
+        subtitle="PORTFOLIO"
+        para="Our Company has worked with thousands of businesses all across the world and has developed highly functional, responsive, and feature-rich applications. Check out some of our best works:
+
+"
 
         Mobile_Apps="Mobile Apps"
         Websites="Websites"
@@ -172,9 +179,9 @@ title2=" Us?
       <Driving_Exprience titleclass2="color-darkBlue"
         titleclass="color-darkBlue"
         title="Why Choose Our  "
-        subtitle="  Ecommerce App "
-        title2=" Development Service"
-        image={ecommersdoubleScreens} />
+        subtitle="    Media & Entertainment "
+        title2="    App Development Service"
+        image={healthcareimg3} />
 
 
 
@@ -192,4 +199,4 @@ title2=" Us?
     </UserLayout>
   )
 }
-export default Education_hr
+export default Health_care
