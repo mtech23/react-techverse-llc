@@ -4,7 +4,7 @@ import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
 import { gsap } from "gsap";
 import Aboutsection from '../../Components/aboutsection';
 import { Swiper, SwiperSlide } from 'swiper/react';
- 
+
 import appimg01 from '../../asserts/images/app-img-01.png'
 import appstorehero from '../../asserts/images/app-store-hero-img.png'
 import { Parallax, Pagination, Navigation } from 'swiper/modules';
@@ -29,6 +29,7 @@ import TechnologiesUse from '../../Components/technologiesuse';
 import Website from '../../Components/Website';
 import Testimonials from '../../Components/Tetimonials';
 import Frequentlyaskquestion from '../../Components/frequentlyaskquestion';
+import TrustedPartners from '../../Components/TrustedPartners';
 
 gsap.registerPlugin(MotionPathPlugin);
 
@@ -77,83 +78,53 @@ const App_store = () => {
 
             />
             {/* <!-- Trusted Partners --> */}
-            <section class="techVerse_trustedPartners techVerse_trustedPartnersServices">
-                <div class="container-fluid">
-                    <div class="row">
-
-                        <div class="col-md-12">
-                            <div
-                                class="row flex-nowrap gap-4 custom_trusted_partners_seprator"
-
-                            >
-                                <marquee>
-                                    <div class="trustedPartners">
-                                        <div class="trustedPartner col">
-                                            <img src={tpblue} alt="" />
-                                        </div>
-                                        <div class="trustedPartner col">
-                                            <img src={tpblack} alt="" />
-                                        </div>
-                                        <div class="trustedPartner col">
-                                            <img src={tpblue} alt="" />
-                                        </div>
-                                        <div class="trustedPartner col">
-                                            <img src={tpblack} alt="" />
-                                        </div>
-                                        <div class="trustedPartner col">
-                                            <img src={tpblue} alt="" />
-                                        </div>
-                                        <div class="trustedPartner col">
-                                            <img src={tpblack} alt="" />
-                                        </div>
-                                        <div class="trustedPartner col">
-                                            <img src={tpblue} alt="" />
-                                        </div>
-                                        <div class="trustedPartner col">
-                                            <img src={tpblack} alt="" />
-                                        </div>
-                                        <div class="trustedPartner col">
-                                            <img src={tpblue} alt="" />
-                                        </div>
-                                        <div class="trustedPartner col">
-                                            <img src={tpblack} alt="" />
-                                        </div>
-                                    </div>
-                                </marquee>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </section>
 
 
+
+            <TrustedPartners />
             {/* <!-- About Sec --> */}
+
+
 
 
             <Aboutsection
                 pinkcapsol={pinkcapsol}
                 greencube={greencube}
                 donatorange={donatorange}
-                chaticon={chaticon}
-                phoneicon={phoneicon}
-                calltext={"Call Now"}
-                chatenow={"Chat Now"}
-                title="Comprehensive " subtitle="  App Store" title2="TECHNOLOGIES  "
-                para="Techverse is the leading provider of app store optimization services. Our team of experts uses various techniques to optimize your app, including keyword research, title optimization, and description optimization."
 
 
+                title="    Boost Downloads" subtitle="And " title2="  Visibility Techverse LLC's App Optimization At Your Service. ."
+                para="Get the full potential of your mobile app with Techverse LLC's Comprehensive App Store Optimization service. We specialize in enhancing your app's visibility and reach across major platforms, including the Apple App Store and Google Play Store. Our expert team leverages advanced strategies in keyword optimization, metadata refinement, competitor analysis, and user engagement tactics to ensure your app not only ranks higher but also attracts and retains a loyal user base. Whether you're launching a new app or looking to boost downloads for an existing one, trust Techverse LLC to optimize your app for success in today's competitive marketplace.
+
+"
+
+                CtnbuttonComponent={Ctnbutton}
+                ctnButtonProps={{
+                    phoneicon: phoneicon,
+                    calltext: "Call Us",
+                    chaticon: chaticon,
+                    chatenow: "Chat Now"
+                }}
 
                 image={appimg01}
-
             />
- <Website/>
-            <Process/>
-            <TechnologiesUse/>
-            
-            <Elevateyourbusiness/>
-            <Testimonials/>
-        <Frequentlyaskquestion/>
+
+
+
+
+
+
+
+
+
+
+            <Website />
+            <Process />
+            <TechnologiesUse />
+
+            <Elevateyourbusiness />
+            <Testimonials />
+            <Frequentlyaskquestion />
 
 
 

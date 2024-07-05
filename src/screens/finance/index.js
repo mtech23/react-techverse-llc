@@ -5,6 +5,7 @@ import { UserLayout } from "../../Components/Layout/UserLayout";
 import phoneicon from "../../asserts/images/phone-icon.png";
 import chaticon from "../../asserts/images/chat-icon.png";
 import financeimg1 from '../../asserts/images/finance-img1.gif'
+import financeimg3 from '../../asserts/images/finance-img3.png'
 import realEstateportfolioimg1 from '../../asserts/images/realEstate-portfolio-img1.png'
 import realEstateportfolioimg2 from '../../asserts/images/realEstate-portfolio-img2.png'
 import realEstateportfolioimg3 from '../../asserts/images/realEstate-portfolio-img3.png'
@@ -75,14 +76,11 @@ import Portfolios from '../../Components/portfolios';
 import App_development_solutions from '../../Components/App_development_solutions';
 import Development_Process from '../../Components/Development_Process';
 import Driving_Exprience from '../../Components/Driving_experience';
+import Ctnbutton from '../../Components/ctnbutton'
+import { playstore } from '../../asserts/images';
+import appstore from '../../asserts/images/app-store.png';
 const Finance = () => {
-
-
   Aos.init();
-
-
-
-
   return (
     <UserLayout>
 
@@ -90,12 +88,24 @@ const Finance = () => {
       {/* <!-- Inner Hero --> */}
 
       <HeroSection
-        classheroimage="finance-hero"
-        title={"Full-Fledged"}
-        subtitle={"App Store  "}
 
-        title2={"Optimization Services"}
-        tagline={"Take the charge and unleash your business's true potential with powerful mobile app & web application development solutions."}
+
+        CtnbuttonComponent={Ctnbutton}
+
+        ctnButtonProps={{
+          phoneicon: phoneicon,
+          calltext: "Call Us",
+          primaryButtonClass: "btn_with_icon",
+          playstore: playstore,
+          appstore: appstore
+        }}
+
+
+        classheroimage="finance-hero"
+        title={" Transform Your Financial Future With Techverse LLC"}
+        // subtitle={"App Store  "}
+ 
+        tagline={"Discover the power of high-end technology with Techverse customized finance app solutions designed to transform the way you do business."}
       // heroimage={webapplicationhero}
 
       />
@@ -136,29 +146,16 @@ const Finance = () => {
 
       />
 
-      {/* <Aboutsection
-        pinkcapsol={pinkcapsol}
-        greencube={greencube}
-        donatorange={donatorange}
-        title2="Business"
-        title="Enhance The Operational Efficiency Of Your" subtitle=" Real Estate  "
-        para=" We are a leading real estate mobile app development service provider. Our team of skilled professionals is dedicated to helping real estate businesses scale and achieve their goals by leveraging the latest technologies and industry best practices."
-        image={realestateimg1}
-        chaticon={chaticon}
-        phoneicon={phoneicon}
-        calltext={"Call Now"}
-        chatenow={"Chat Now"}
-      /> */}
-
 
 
 
 
       <Portfolios
-
-        title2="PORTFOLIO"
+        title="EDUCATION   "
         subtitle="PORTFOLIO   "
-        para="Our Company has worked with thousands of businesses all across the world and has developed highly functional, responsive, and feature-rich applications. Check out some of our best works:"
+        para="Our Company has worked with thousands of businesses all across the world and has developed highly functional, responsive, and feature-rich applications. Check out some of our best works:
+
+"
         image1={realEstateportfolioimg1}
         image2={realEstateportfolioimg2}
         image3={realEstateportfolioimg3}
@@ -172,20 +169,23 @@ const Finance = () => {
         image11={Macbook}
         classmobileapp="nav-link"
         classwebsite="nav-link"
-        classcms="nav-link"
-        CMS="CMS"
+
         Mobile_Apps="Mobile Apps"
         Websites="Websites"
       />
+
+
+
+
       <Driving_Exprience
-        classheroimage="drivingSec"
-        title="
-ENHANCING YOUR"
-        subtitle="DRIVING EXPERIENCE"
-        title2="LIKE NEVER BEFORE"
-         />  
+        titleclass2="color-darkBlue"
+        titleclass="color-darkBlue"
+        title="    Feel The Power Of Innovative  "
+        subtitle="    Finance Apps   "
+        title2="    With Techverse LLC"
+        image={financeimg3} />
 
-
+      <TechnologiesUse />
       <Testimonials />
 
 

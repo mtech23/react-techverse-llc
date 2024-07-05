@@ -156,202 +156,353 @@ export const Header = (props) => {
         console.log(error);
       })
   }
-  return (
-    <div className="techVerse_navbar">
 
-<nav className="navbar navbar-expand-lg">
-        
-        <a className="navbar-brand techVerse_logo" href="index.html">
+  const [naveshow, setNavshow] = useState(false)
+  const handleclick = () => {
+    setNavshow(prevState => !prevState);
+    setindustriesshow(false);
+  }
+
+
+
+  const [industries, setindustriesshow] = useState(false)
+  const handleindustriea = () => {
+    setNavshow(false);
+    setindustriesshow(!industries);
+  }
+  console.log("naveshow", naveshow)
+  return (
+    <section class="techVerse_navbar">
+      <nav class="navbar navbar-expand-lg">
+
+        <Link class="navbar-brand techVerse_logo" href="/">
           <img src={logo} alt="" />
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-                  {/* <span className="navbar-toggler-icon"></span>     */}
-          <i className="fa-solid fa-bars"></i>
+        </Link>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          {/* <!-- <span class="navbar-toggler-icon"></span> --> */}
+          <i class="fa-solid fa-bars"></i>
         </button>
-        <div className="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul className="navbar-nav ml-auto">
-            <li className="nav-item">
-              <a className="nav-link" href="#">About Us</a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <Link class="nav-link" href="about-us.php">About Us</Link>
             </li>
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <li class="nav-item dropdown " >
+              <Link type="button" onClick={handleclick} class="nav-link dropdown-toggle"  >
                 Services
-              </a>
-              <div className=""  aria-labelledby="navbarDropdown">
-                        {/* <div className="row">
-                  <div className="col-md-9">
-                    <div className="customDropdown_left">
-                      <div className="dropdown_head">
-                        <div className="row align-items-center">
-                          <div className="col-md-3">
-                            <div className="dropdown_title"><h3>Services</h3></div>
-                          </div>
-                          <div className="col-md-9">
-                            <div className="dropdown_desc"><p>Leading to the next-gen digital solutions that help businesses to fulfill their needs in the digital era.</p></div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="dropdown_content">
-                        <div className="row">
-                          <div className="col-md-4">
-                            <ul className="custom_dropdown_list">
-                              <li>
-                                <a href="#" className="dropdown_linkBox">
-                                  <h4>Mobile Application Development</h4>
-                                  <p>Custom Mobile App Development.</p>
-                                </a>
-                              </li>
-                              <li>
-                                <a href="#" className="dropdown_linkBox">
-                                  <h4>Mobile Application Development</h4>
-                                  <p>Custom Mobile App Development.</p>
-                                </a>
-                              </li>
-                              <li>
-                                <a href="#" className="dropdown_linkBox">
-                                  <h4>Mobile Application Development</h4>
-                                  <p>Custom Mobile App Development.</p>
-                                </a>
-                              </li>
-                              <li>
-                                <a href="#" className="dropdown_linkBox">
-                                  <h4>Mobile Application Development</h4>
-                                  <p>Custom Mobile App Development.</p>
-                                </a>
-                              </li>
-                            </ul>
-                
-                          </div>
-                          <div className="col-md-4">
-                            <ul className="custom_dropdown_list">
-                              <li>
-                                <a href="#" className="dropdown_linkBox">
-                                  <h4>Mobile Application Development</h4>
-                                  <p>Custom Mobile App Development.</p>
-                                </a>
-                              </li>
-                              <li>
-                                <a href="#" className="dropdown_linkBox">
-                                  <h4>Mobile Application Development</h4>
-                                  <p>Custom Mobile App Development.</p>
-                                </a>
-                              </li>
-                              <li>
-                                <a href="#" className="dropdown_linkBox">
-                                  <h4>Mobile Application Development</h4>
-                                  <p>Custom Mobile App Development.</p>
-                                </a>
-                              </li>
-                              <li>
-                                <a href="#" className="dropdown_linkBox">
-                                  <h4>Mobile Application Development</h4>
-                                  <p>Custom Mobile App Development.</p>
-                                </a>
-                              </li>
-                            </ul>
-                
-                          </div>
-                          <div className="col-md-4">
-                            <ul className="custom_dropdown_list">
-                              <li>
-                                <a href="#" className="dropdown_linkBox">
-                                  <h4>Mobile Application Development</h4>
-                                  <p>Custom Mobile App Development.</p>
-                                </a>
-                              </li>
-                              <li>
-                                <a href="#" className="dropdown_linkBox">
-                                  <h4>Mobile Application Development</h4>
-                                  <p>Custom Mobile App Development.</p>
-                                </a>
-                              </li>
-                              <li>
-                                <a href="#" className="dropdown_linkBox">
-                                  <h4>Mobile Application Development</h4>
-                                  <p>Custom Mobile App Development.</p>
-                                </a>
-                              </li>
-                              <li>
-                                <a href="#" className="dropdown_linkBox">
-                                  <h4>Mobile Application Development</h4>
-                                  <p>Custom Mobile App Development.</p>
-                                </a>
-                              </li>
-                            </ul>
-                
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-3 ">
-                    <div className="custom_dropdown_sidebar">
-                      <h3 className="custom_dropdown_sidebarTitle">How We Work?</h3>
-                      <ul className="custom_dropdown_list">
-                        <li>
-                          <a href="#" className="dropdown_linkBox">
-                            <h4>Mobile Application Development</h4>
-                            <p>Custom Mobile App Development.</p>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="dropdown_linkBox">
-                            <h4>Mobile Application Development</h4>
-                            <p>Custom Mobile App Development.</p>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="dropdown_linkBox">
-                            <h4>Mobile Application Development</h4>
-                            <p>Custom Mobile App Development.</p>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" className="dropdown_linkBox">
-                            <h4>Mobile Application Development</h4>
-                            <p>Custom Mobile App Development.</p>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>     */}
+              </Link>
+              <div class="" aria-labelledby="navbarDropdown">
               </div>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">Industries</a>
+            <li class="nav-item dropdown">
+              <Link onClick={handleindustriea} type="button" class="nav-link dropdown-toggle" >
+                Industries
+              </Link>
+              <div class="" aria-labelledby="navbarDropdown">
+              </div>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">About Us</a>
+            <li class="nav-item">
+              <Link class="nav-link" href="contact.php">Contact</Link>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">Case Studies</a>
-            </li>
-            <li className="nav-item icon_list_item">
-                      {/* <a className="nav-link" href="#">+(1) 23456-7890</a>     */}
-              <a href="tel:+(1) 23456-7890" className="nav-link">
-                <span className="icon_list_icon">
-                  <img src={usaflag} alt="" />
+            {/* <!--<li class="nav-item">--> */}
+            {/* <!--    <Link class="nav-link" to={"/"}>About Us</Link>--> */}
+            {/* <!--</li>--> */}
+            {/* <!--<li class="nav-item">--> */}
+            {/* <!--    <Link class="nav-link" to={"/"}>Case Studies</Link>--> */}
+            {/* <!--</li>--> */}
+            <li class="nav-item icon_list_item">
+              {/* <!-- <Link class="nav-link" to={"/"}>+(1) 23456-7890</Link> --> */}
+              <Link href="mailto:info@techversellc.com" class="nav-link">
+                <span class="icon_list_icon">
+                  {/* <!--<img src="images/usa-flag.png" alt="" />--> */}
+                  <i class="fa-solid fa-envelope"></i>
                 </span>
-                <span className="icon_list_text">+(1) 23456-7890</span>
-              </a>
+                <span class="icon_list_text"> info@techversellc.com </span>
+              </Link>
+
             </li>
           </ul>
-      </div>
-    
-    </nav>
+        </div>
+
+      </nav>
+
+
+      {naveshow === true && (<div class="container-fluid  ">
+        <div class="row">
+          <div class="col-xl-9 col-md-8 customDropdown_leftCol">
+            <div class="customDropdown_left">
+              <div class="dropdown_head">
+                <div class="row align-items-center">
+                  <div class="col-lg-3 col-md-12">
+                    <div class="dropdown_title">
+                      <h3>Services</h3>
+                    </div>
+                  </div>
+                  <div class="col-lg-9 col-md-12">
+                    <div class="dropdown_desc">
+                      <p>Leading to the next-gen digital solutions that help businesses to fulfill their needs in the digital era.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="dropdown_content">
+                <div class="row">
+                  <div class="col-md-6 col-xl-4">
+                    <ul class="custom_dropdown_list">
+                      <li>
+                        <Link to={"/mobile-app"} class="dropdown_linkBox">
+                          <h4>Mobile Application Development</h4>
+                          <p>Custom Mobile App Development.</p>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to={"/ecommerse-development"}   class="dropdown_linkBox">
+                          <h4>E-Commerce Development</h4>
+                          <p>Custom Mobile App Development.</p>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to={"/app-store"}   class="dropdown_linkBox">
+                          <h4>App Store</h4>
+                          <p>Custom Mobile App Development.</p>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to={"/business-devlopment"} class="dropdown_linkBox">
+                          <h4>Business Development</h4>
+                          <p>Custom Mobile App Development.</p>
+                        </Link>
+                      </li>
+                    </ul>
+
+                  </div>
+                  <div class="col-md-6 col-xl-4">
+                    <ul class="custom_dropdown_list">
+                      <li>
+                        <Link to={"/web-development"} class="dropdown_linkBox">
+                          <h4>Web Development</h4>
+                          <p>Custom Mobile App Development.</p>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to={"/digital-marketing"} class="dropdown_linkBox">
+                          <h4>Digital Marketing</h4>
+                          <p>Custom Mobile App Development.</p>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to={"/web-application"} class="dropdown_linkBox">
+                          <h4>Web Application</h4>
+                          <p>Custom Mobile App Development.</p>
+                        </Link>
+                      </li>
+             
+                    </ul>
+
+                  </div>
+            
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-4 custom_dropdown_sidebar">
+            <div class="">
+              <h3 class="custom_dropdown_sidebarTitle">How We Work?</h3>
+              <ul class="custom_dropdown_list">
+                <li>
+                  <Link to={"/"} class="dropdown_linkBox">
+                    <h4>Design</h4>
+                    <p>Compelling and Eye-Catching Designs.</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link to={"/"} class="dropdown_linkBox">
+                    <h4>Development</h4>
+                    <p>Agile Working Methodologies.</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link to={"/"} class="dropdown_linkBox">
+                    <h4>Testing</h4>
+                    <p>Rigorous Testing & QA</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link to={"/"} class="dropdown_linkBox">
+                    <h4>Deployment</h4>
+                    <p>Seamless Launch of Product.</p>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>)}
+      {industries === true && (<div class="container-fluid ">
+        <div class="row">
+          <div class="col-xl-9 col-md-8 customDropdown_leftCol">
+            <div class="customDropdown_left">
+              <div class="dropdown_head">
+                <div class="row align-items-center">
+                  <div class="col-lg-3 col-md-12">
+                    <div class="dropdown_title">
+                      <h3>Industries</h3>
+                    </div>
+                  </div>
+                  <div class="col-lg-9 col-md-12">
+                    <div class="dropdown_desc">
+                      <p>We have been successfully delivering the finest mobile applications and eCommerce solutions for clients belonging to a wide range of industries.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="dropdown_content">
+                <div class="row">
+
+                  <div class="col-md-6 col-xl-4">
+                    <ul class="custom_dropdown_list">
+
+                      <li>
+                        <Link to={"/realEstate-and-property"} class="dropdown_linkBox">
+                          <h4>Real Estate & Property </h4>
+                          <p>Custom-Built Real Estate Solutions.</p>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to={"/automotive"} class="dropdown_linkBox">
+                          <h4>Automotive and Transport </h4>
+                          <p>Best Automotive Apps.</p>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to={"/ecommerse"} class="dropdown_linkBox">
+                          <h4>E-commerce & Retails </h4>
+                          <p>Revolutionized Apps for Retail.</p>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to={"/"} class="dropdown_linkBox">
+                          <h4>Advertising </h4>
+                          <p>Advertising Apps Development.</p>
+                        </Link>
+                      </li>
+                    </ul>
+
+                  </div>
+                  <div class="col-md-6 col-xl-4">
+                    <ul class="custom_dropdown_list">
+
+                      <li>
+                        <Link to={"/education-hr"} class="dropdown_linkBox">
+                          <h4>Education & HR </h4>
+                          <p>Educational App Development.</p>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to={"/health-care"} class="dropdown_linkBox">
+                          <h4>Health and Life Sciences</h4>
+                          <p>Seamless Healthcare App.</p>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to={"/"} class="dropdown_linkBox">
+                          <h4>Software & High Tech</h4>
+                          <p>Custom Software Apps.</p>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to={"/finance"} class="dropdown_linkBox">
+                          <h4>Finance</h4>
+                          <p>Fintech Software Developers.</p>
+                        </Link>
+                      </li>
+                    </ul>
+
+                  </div>
+                  <div class="col-md-6 col-xl-4">
+                    <ul class="custom_dropdown_list">
+
+                      <li>
+                        <Link to={"/media"} class="dropdown_linkBox">
+                          <h4>Media & Entertainment </h4>
+                          <p>Application Development Services.</p>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to={"/"} class="dropdown_linkBox">
+                          <h4>Sports Teams & Leagues </h4>
+                          <p>Sports Teams Management Apps.</p>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to={"/"} class="dropdown_linkBox">
+                          <h4>Gaming & Leisure </h4>
+                          <p>Top Game Developers.</p>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to={"/"} class="dropdown_linkBox">
+                          <h4>Travel & Hospitality</h4>
+                          <p>Application Development Services.</p>
+                        </Link>
+                      </li>
+                    </ul>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-4 custom_dropdown_sidebar">
+            <div class="">
+              <h3 class="custom_dropdown_sidebarTitle">Core Solutions</h3>
+              <ul class="custom_dropdown_list">
+                <li>
+                  <Link to={"/"} class="dropdown_linkBox">
+                    <h4>E-Commerce Solution</h4>
+                    <p>Ecommerce for Small Business.</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link to={"/"} class="dropdown_linkBox">
+                    <h4>Booking App</h4>
+                    <p>Booking App Development Solutions.</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link to={"/"} class="dropdown_linkBox">
+                    <h4>On Demand Delivery</h4>
+                    <p>On Demand Delivery App.</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link to={"/"} class="dropdown_linkBox">
+                    <h4>Restaurant Management</h4>
+                    <p>Cloud Based Restaurant Management.</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link to={"/"} class="dropdown_linkBox">
+                    <h4>Real Estate</h4>
+                    <p>Commercial Real Estate App.</p>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>)}
 
 
 
-    </div>
-
+    </section>
   );
 };

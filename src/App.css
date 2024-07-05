@@ -3193,6 +3193,16 @@ canvas.particles-js-canvas-el {
 }
 
 @media (max-width: 600px) {
+
+  .single_logo img {
+    width: 60px;
+  }
+.single_logo {
+  height: 100px;
+  width: 100px;
+  min-width: 100px;
+  min-height: 100px;
+}
   .testimonial {
     padding: 11px 23px !important;
     height: 350px !important;
@@ -3266,7 +3276,9 @@ font-size: 11px !important;
 
 @media (max-width: 480px) {
 
- 
+  .sec_title .sec_title_head {
+    font-size: 17px !important;
+}
   .techVerse_services .sec_title {
     margin: 0 15px 20px;
   }
@@ -3448,6 +3460,10 @@ font-size: 11px !important;
 }
 
 @media (max-width: 375px) {
+  .inner_hero_content h1 {
+
+    font-size: 20px;
+}
   .techVerse_about_icon2 {
     display: none;
   }
@@ -3479,9 +3495,3 @@ font-size: 11px !important;
 }
 
 }
-
-
-
-
-
-

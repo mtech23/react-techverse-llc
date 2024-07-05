@@ -65,7 +65,6 @@ import customappicon from "../../asserts/images/custom-app-icon.png";
 import enterprizeicon from "../../asserts/images/enter-prize-icon.png";
 import crossplatform from "../../asserts/images/cross-platform.png";
 import portfoliomockup1 from "../../asserts/images/portfolio-mockup-1.png";
-
 import mobileframe from "../../asserts/images/mobile-frame.webp";
 import portfoliomockup5 from "../../asserts/images/portfolio-mockup-5.png";
 import portfoliomockup2 from "../../asserts/images/portfolio-mockup-2.png";
@@ -77,8 +76,6 @@ import lllreptile from "../../asserts/images/lll-reptile.png";
 import privateastrology from "../../asserts/images/private-astrology.png";
 import Macbook from "../../asserts/images/Macbook.png";
 // import peramidleftangles from "../../asserts/images/peramid-left-angles.png";
-
-
 import peramidangled from "../../asserts/images/peramid-angled.png";
 import p2 from "../../asserts/images/p2.png";
 import p1 from "../../asserts/images/p1.png";
@@ -86,7 +83,6 @@ import p3 from "../../asserts/images/p3.png";
 import p4 from "../../asserts/images/p4.png";
 import p5 from "../../asserts/images/p5.png";
 import p6 from "../../asserts/images/p6.png";
-
 import Aos from "aos";
 import 'swiper/css/pagination';
 import 'swiper/css';
@@ -99,7 +95,6 @@ const Home = () => {
     await loadFull(main);
   };
 
- 
   Aos.init();
  
   useEffect(() => {
@@ -761,74 +756,9 @@ const Home = () => {
      
 
         {/* MOBILE APP */}
+<Testimonials/>
 
-      <section class="techVerse_mobileApp">
-        <div class="techVerse_mobileAppContent">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-xl-6">
-                <div class="techVerse_mobileApp_content">
-                  <div class="sec_title">
-                    <h2
-                      class="sec_title_head color-lightBlue1"
-                      data-aos="fade-right"
-                      data-aos-offset="300"
-                      data-aos-duration="1000"
-                    >
-                      Elevate your business presence with a customized
-                      <span class="color-lightBlue2">Mobile Application</span>
-                    </h2>
-                    <p
-                      data-aos="fade-right"
-                      data-aos-offset="300"
-                      data-aos-duration="2000"
-                    >
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s,
-                    </p>
-                    <div
-                      class="techVerse_hero_btns"
-                      data-aos="fade-right"
-                      data-aos-offset="300"
-                      data-aos-duration="3000"
-                    >
-                      <a href="tel:+(1) 23456-7890" class="btn_with_icon">
-                        <img
-                          class="btn_with_icon_img"
-                          src={phoneicongreen}
-                          alt=""
-                        />
-                        <span class="btn_with_icon_text">+(1) 23456-7890</span>
-                      </a>
-                      <a href="#" class="btn_with_icon btn_secondary">
-                        <img
-                          class="btn_with_icon_img"
-                          src={chaticonblue}
-                          alt=""
-                        />
-                        <span class="btn_with_icon_text">Start A Live Chat</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-6 px-0">
-                <div class="techVerse_mobileApp_img">
-                  <img
-                    src={mobileAppimg}
-                    alt=""
-                    data-aos="fade-left"
-                    data-aos-offset="300"
-                    data-aos-duration="3000"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      
 
 
 
@@ -880,7 +810,7 @@ const Home = () => {
                     data-aos-duration="1000"
                   >
                     Our
-                    <span class="color-darkBlue">CASE STUDIES</span>
+                    <span class="color-darkBlue"> CASE STUDIES </span>
                   </h2>
                   <p
                     data-aos="fade-up"
@@ -957,7 +887,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-<Testimonials/>
+ 
       </section>
 
 

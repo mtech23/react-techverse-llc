@@ -12,7 +12,7 @@ import HeroSection from '../../Components/herosection';
 import Elevateyourbusiness from '../../Components/elevateyourbusiness';
 import TechnologiesUse from '../../Components/technologiesuse';
 import Frequentlyaskquestion from '../../Components/frequentlyaskquestion';
-import Process  from '../../Components/Process';
+import Process from '../../Components/Process';
 import tpblue from "../../asserts/images/t-p-blue.png";
 import Portfolio from '../../Components/Portfolio'
 import tpblack from "../../asserts/images/t-p-black.png";
@@ -32,6 +32,7 @@ import digitalmarketinghero from "../../asserts/images/digital-marketing-hero.pn
 import digitalmarketing01 from "../../asserts/images/digital-marketing-01.png";
 import digitalmarketing02 from "../../asserts/images/digital-marketing-02.png";
 import webdevelopmenthero from "../../asserts/images/web-development-hero.png";
+import TrustedPartners from '../../Components/TrustedPartners';
 
 
 
@@ -45,121 +46,84 @@ gsap.registerPlugin(MotionPathPlugin);
 const WebDevelopment = () => {
 
 
-    Aos.init();
+  Aos.init();
 
 
-    useEffect(() => {
-        gsap.set(".road", { opacity: 1 });
-        const circles = gsap.utils.toArray(".ani_cnt .icc");
-        const tl2 = gsap.timeline({ repeat: 20 });
+  useEffect(() => {
+    gsap.set(".road", { opacity: 1 });
+    const circles = gsap.utils.toArray(".ani_cnt .icc");
+    const tl2 = gsap.timeline({ repeat: 20 });
 
-        circles.forEach((circle, i) => {
-            let start = i / circles.length; // secret sauce for circles
-            tl2.to(
-                circle,
-                {
-                    motionPath: {
-                        path: ".mypath",
-                        align: ".mypath",
-                        alignOrigin: [0.5, 0.4],
-                        start: start,
-                        end: start + 1,
-                    },
-                    ease: "none",
-                    duration: 40,
-                },
-                0
-            );
-        });
-    }, []);
-
-
-    return (
-        <UserLayout>
-
-            <HeroSection
-                title={"We"}
-                subtitle={"Design Websites"}
-                title2={"That Make Businesses Shine Online"}
-                tagline={"Grow your business’s online presence and witness an increase in conversions with Techverse."}
-                className={"web-development_hero_img"}
-                heroimage={webdevelopmenthero}
-
-            />
-            {/* <!-- Trusted Partners --> */}
-            <section class="techVerse_trustedPartners techVerse_trustedPartnersServices">
-                <div class="container-fluid">
-                    <div class="row">
-
-                        <div class="col-md-12">
-                            <div
-                                class="row flex-nowrap gap-4 custom_trusted_partners_seprator"
-
-                            >
-                                <marquee>
-                                    <div class="trustedPartners">
-                                        <div class="trustedPartner col">
-                                            <img src={tpblue} alt="" />
-                                        </div>
-                                        <div class="trustedPartner col">
-                                            <img src={tpblack} alt="" />
-                                        </div>
-                                        <div class="trustedPartner col">
-                                            <img src={tpblue} alt="" />
-                                        </div>
-                                        <div class="trustedPartner col">
-                                            <img src={tpblack} alt="" />
-                                        </div>
-                                        <div class="trustedPartner col">
-                                            <img src={tpblue} alt="" />
-                                        </div>
-                                        <div class="trustedPartner col">
-                                            <img src={tpblack} alt="" />
-                                        </div>
-                                        <div class="trustedPartner col">
-                                            <img src={tpblue} alt="" />
-                                        </div>
-                                        <div class="trustedPartner col">
-                                            <img src={tpblack} alt="" />
-                                        </div>
-                                        <div class="trustedPartner col">
-                                            <img src={tpblue} alt="" />
-                                        </div>
-                                        <div class="trustedPartner col">
-                                            <img src={tpblack} alt="" />
-                                        </div>
-                                    </div>
-                                </marquee>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </section>
+    circles.forEach((circle, i) => {
+      let start = i / circles.length; // secret sauce for circles
+      tl2.to(
+        circle,
+        {
+          motionPath: {
+            path: ".mypath",
+            align: ".mypath",
+            alignOrigin: [0.5, 0.4],
+            start: start,
+            end: start + 1,
+          },
+          ease: "none",
+          duration: 40,
+        },
+        0
+      );
+    });
+  }, []);
 
 
-            {/* <!-- About Sec --> */} 
+  return (
+    <UserLayout>
 
-            
-            <Aboutsection
-                pinkcapsol={pinkcapsol}
-                greencube={greencube}
-                donatorange={donatorange}
-              
-                title="Powerful" subtitle=" Web Solutions "  title2="That Accelerate Your Business Growth"
-                para="A good website design has the power to bring organic traffic to your business site. At Techverse, we have a team of experienced web developers who work diligently to strengthen businesses
-                 by creating top-notch websites for their brands. Our developers have extensive knowledge and expertise in developing websites using all the latest platforms such as:"
-             
-               
-                image={digitalmarketing01}
-                // WordPress="10+ Years of Experience"
-                // PHP="Team of 50+ Digital Marketing Experts"
-                // Shopify="2k+ Satisfied Clients"
-                // Joomla="150+ Ongoing Projects"
-                // Magneto="Up to 43% Increase in ROI"
-              
-                            
-                />
+      <HeroSection
+        title={"We"}
+        subtitle={"Design Websites"}
+        title2={"That Make Businesses Shine Online"}
+        tagline={"Grow your business’s online presence and witness an increase in conversions with Techverse."}
+        className={"web-development_hero_img"}
+        heroimage={webdevelopmenthero}
+
+      />
+      {/* <!-- Trusted Partners --> */}
+      <TrustedPartners />
+
+
+      {/* <!-- About Sec --> */}
+
+
+      <Aboutsection
+        pinkcapsol={pinkcapsol}
+        greencube={greencube}
+        donatorange={donatorange}
+
+        title="Innovative Web Solutions" subtitle="   For  " title2="Your Digital Success"
+        para="At Techverse LLC, we specialize in crafting web solutions that propel your business forward. Our expert team of developers blends creativity with practical ability to deliver websites that not only impress but also drive results. Whether you need a smooth company site, an engaging e-commerce platform, or a robust web application, we tailor our web development services to meet your unique goals. Partner with us to leverage cutting-edge technology and strategic insights that enhance your online presence and accelerate your business growth."
+
+        //  CtnbuttonComponent={Ctnbutton}
+        //  ctnButtonProps={{
+        //    phoneicon: phoneIcon,
+        //    calltext: "Call Us",
+        //    chaticon: chatIcon,
+        //    chatenow: "Chat Now"
+        //  }}
+        image={digitalmarketing01}
+        // WordPress="10+ Years of Experience"
+        // PHP="Team of 50+ Digital Marketing Experts"
+        // Shopify="2k+ Satisfied Clients"
+        // Joomla="150+ Ongoing Projects"
+        // Magneto="Up to 43% Increase in ROI"
+
+        bulletListItems={[
+          "WordPress",
+          "PHP",
+          "Shopify",
+          "Joomla",
+          "Magneto  "
+        ]}
+      />
 
 
 
@@ -229,25 +193,22 @@ const WebDevelopment = () => {
       </section>
 
 
-      
-            {/* process we use */}
-            <Process/>
+
+      {/* process we use */}
+      <Process />
 
 
-            {/* <!-- Technologies --> */}
-            <TechnologiesUse/>
+      {/* <!-- Technologies --> */}
+      <TechnologiesUse />
 
 
-               {/* MOBILE APP */}
+      {/* MOBILE APP */}
 
-            <Elevateyourbusiness/> 
+      <Elevateyourbusiness />
 
-            {/* FAQ section */}
+      {/* FAQ section */}
 
-            <Frequentlyaskquestion/>
-
-
-         
+      <Frequentlyaskquestion />
 
 
 
@@ -270,8 +231,11 @@ const WebDevelopment = () => {
 
 
 
-        </UserLayout>
-    )
+
+
+
+    </UserLayout>
+  )
 }
 
 export default WebDevelopment

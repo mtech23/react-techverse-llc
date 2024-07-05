@@ -12,7 +12,7 @@ import HeroSection from '../../Components/herosection';
 import Elevateyourbusiness from '../../Components/elevateyourbusiness';
 import TechnologiesUse from '../../Components/technologiesuse';
 import Frequentlyaskquestion from '../../Components/frequentlyaskquestion';
-import Process  from '../../Components/Process';
+import Process from '../../Components/Process';
 import TrustedPartners from '../../Components/TrustedPartners'
 import tpblue from "../../asserts/images/t-p-blue.png";
 import Portfolio from '../../Components/Portfolio'
@@ -45,97 +45,101 @@ gsap.registerPlugin(MotionPathPlugin);
 const DigitalMarketing = () => {
 
 
-    Aos.init();
+  Aos.init();
 
 
-    useEffect(() => {
-        gsap.set(".road", { opacity: 1 });
-        const circles = gsap.utils.toArray(".ani_cnt .icc");
-        const tl2 = gsap.timeline({ repeat: 20 });
+  useEffect(() => {
+    gsap.set(".road", { opacity: 1 });
+    const circles = gsap.utils.toArray(".ani_cnt .icc");
+    const tl2 = gsap.timeline({ repeat: 20 });
 
-        circles.forEach((circle, i) => {
-            let start = i / circles.length; // secret sauce for circles
-            tl2.to(
-                circle,
-                {
-                    motionPath: {
-                        path: ".mypath",
-                        align: ".mypath",
-                        alignOrigin: [0.5, 0.4],
-                        start: start,
-                        end: start + 1,
-                    },
-                    ease: "none",
-                    duration: 40,
-                },
-                0
-            );
-        });
-    }, []);
-
-
-    return (
-        <UserLayout>
-
-            <HeroSection
-                title={"Best Digital Marketing Agency For"}
-                subtitle={"Online Growth"}
-                // title2={"Services for Online Businesses"}
-                tagline={"Grow your business’s online presence and witness an increase in conversions with Techverse."}
-                className={"digital-marketing-hero"}
-                heroimage={digitalmarketinghero}
-
-            />
-            {/* <!-- Trusted Partners --> */}
-            
-            <TrustedPartners/>
+    circles.forEach((circle, i) => {
+      let start = i / circles.length; // secret sauce for circles
+      tl2.to(
+        circle,
+        {
+          motionPath: {
+            path: ".mypath",
+            align: ".mypath",
+            alignOrigin: [0.5, 0.4],
+            start: start,
+            end: start + 1,
+          },
+          ease: "none",
+          duration: 40,
+        },
+        0
+      );
+    });
+  }, []);
 
 
-            {/* <!-- About Sec --> */} 
+  return (
+    <UserLayout>
 
-            
-            <Aboutsection
-                pinkcapsol={pinkcapsol}
-                greencube={greencube}
-                donatorange={donatorange}
-              
-                title="Top Digital Marketing Solutions By" subtitle="  Experts! " 
-                para="At Techverse, we have got the team and the expertise to take your online presence to the next level. From website designing to optimization, 
-                social media marketing to content marketing, 
-                we can help you make the most of your marketing investment. Here’s why you should hire us:"
-                chaticon={chaticon}
-                phoneicon={phoneicon}
-                calltext={"Call Now"}
-                chatenow={"Chat Now"}
-               
-                image={digitalmarketing01}
-                // WordPress="10+ Years of Experience"
-                // PHP="Team of 50+ Digital Marketing Experts"
-                // Shopify="2k+ Satisfied Clients"
-                // Joomla="150+ Ongoing Projects"
-                // Magneto="Up to 43% Increase in ROI"
-              
-                            
-                />
+      <HeroSection
+        title={"Best Digital Marketing Agency For"}
+        subtitle={"Online Growth"}
+        // title2={"Services for Online Businesses"}
+        tagline={"Grow your business’s online presence and witness an increase in conversions with Techverse."}
+        className={"digital-marketing-hero"}
+        heroimage={digitalmarketinghero}
+
+      />
+      {/* <!-- Trusted Partners --> */}
+
+      <TrustedPartners />
 
 
+      {/* <!-- About Sec --> */}
+
+
+      <Aboutsection
+        pinkcapsol={pinkcapsol}
+        greencube={greencube}
+        donatorange={donatorange}
+        title2={"Visibility With Our Dynamic Digital Solutions!"}
+        title="Drive Growth" subtitle="  And  "
+        para="Discover top-tier digital marketing solutions tailored to raise your brand's online presence with Techverse LLC. Our expert team crafts comprehensive strategies encompassing SEO optimization, targeted PPC campaigns, engaging social media management, and compelling content marketing. Whether you're aiming to boost conversions, enhance brand visibility, or drive traffic, our innovative approach ensures measurable results. Trust Techverse LLC to navigate the digital landscape and push your business to sustained growth and success.
+
+"   CtnbuttonComponent={Ctnbutton}
+        ctnButtonProps={{
+          phoneicon: phoneicon,
+          calltext: "Call Us",
+          chaticon: chaticon,
+          chatenow: "Chat Now"
+        }}
+
+        image={digitalmarketing01}
+
+        bulletListItems={[
+          "10+ Years of Experience",
+          "Team of 50+ Digital Marketing Experts",
+          "2k+ Satisfied Clients",
+          "150+ Ongoing Projects",
+          "Up to 43% Increase in ROI  "
+        ]}
+
+      />
 
 
 
 
-            <Portfolio pinkcapsol={pinkcapsol}
-                greencube={greencube}
-                donatorange={donatorange}
 
-                title="We Build" subtitle=" Brands "
-                para="Great brands start with consumer demands and marketplace gaps, not corporate strengths, which may seem paradoxical. That's why we start our brand development process by going deep
+
+      <Portfolio pinkcapsol={pinkcapsol}
+        greencube={greencube}
+        donatorange={donatorange}
+
+        title="We Build" subtitle=" Brands "
+        para="Great brands start with consumer demands and marketplace gaps, not corporate strengths, which may seem paradoxical. That's why we start our brand development process by going deep
                  – really deep – into research to find ways to make your brand genuine to who you are, different in the market, and memorable."
 
-                image={digitalmarketing02}
-                chaticon={chaticon}
-                phoneicon={phoneicon}
+        image={digitalmarketing02}
+        chaticon={chaticon}
+        phoneicon={phoneicon}
 
-            />
+      />
       {/* <!-- Website --> */}
       <section class="techVerse_webSolution">
         <img
@@ -202,25 +206,22 @@ const DigitalMarketing = () => {
       </section>
 
 
-      
-            {/* process we use */}
-            <Process/>
+
+      {/* process we use */}
+      <Process />
 
 
-            {/* <!-- Technologies --> */}
-            <TechnologiesUse/>
+      {/* <!-- Technologies --> */}
+      <TechnologiesUse />
 
 
-               {/* MOBILE APP */}
+      {/* MOBILE APP */}
 
-            <Elevateyourbusiness/> 
+      <Elevateyourbusiness />
 
-            {/* FAQ section */}
+      {/* FAQ section */}
 
-            <Frequentlyaskquestion/>
-
-
-         
+      <Frequentlyaskquestion />
 
 
 
@@ -243,8 +244,11 @@ const DigitalMarketing = () => {
 
 
 
-        </UserLayout>
-    )
+
+
+
+    </UserLayout>
+  )
 }
 
 export default DigitalMarketing

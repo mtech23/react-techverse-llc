@@ -11,7 +11,7 @@ import HeroSection from '../../Components/herosection';
 import Elevateyourbusiness from '../../Components/elevateyourbusiness';
 import TechnologiesUse from '../../Components/technologiesuse';
 import Frequentlyaskquestion from '../../Components/frequentlyaskquestion';
-import Process  from '../../Components/Process';
+import Process from '../../Components/Process';
 import TrustedPartners from '../../Components/TrustedPartners'
 import serviceherobg from '../../asserts/images/service-hero-bg.png'
 import tpblue from "../../asserts/images/t-p-blue.png";
@@ -56,65 +56,69 @@ gsap.registerPlugin(MotionPathPlugin);
 const MobileApp = () => {
 
 
-    Aos.init();
+  Aos.init();
 
 
-    useEffect(() => {
-        gsap.set(".road", { opacity: 1 });
-        const circles = gsap.utils.toArray(".ani_cnt .icc");
-        const tl2 = gsap.timeline({ repeat: 20 });
+  useEffect(() => {
+    gsap.set(".road", { opacity: 1 });
+    const circles = gsap.utils.toArray(".ani_cnt .icc");
+    const tl2 = gsap.timeline({ repeat: 20 });
 
-        circles.forEach((circle, i) => {
-            let start = i / circles.length; // secret sauce for circles
-            tl2.to(
-                circle,
-                {
-                    motionPath: {
-                        path: ".mypath",
-                        align: ".mypath",
-                        alignOrigin: [0.5, 0.4],
-                        start: start,
-                        end: start + 1,
-                    },
-                    ease: "none",
-                    duration: 40,
-                },
-                0
-            );
-        });
-    }, []);
-
-
-    return (
-        <UserLayout>
-
-            <HeroSection
-                title={"Top Mobile App"}
-                subtitle={"Development"}
-                title2={"Services for Online Businesses"}
-                tagline={"Improve your brand awareness and maximize ROI through a responsive mobile application"}
-                className={"mobileApp_hero_img"}
-                heroimage={Mobileapphero}
-
-            />
-            {/* <!-- Trusted Partners --> */}
-          
-            <TrustedPartners/>
+    circles.forEach((circle, i) => {
+      let start = i / circles.length; // secret sauce for circles
+      tl2.to(
+        circle,
+        {
+          motionPath: {
+            path: ".mypath",
+            align: ".mypath",
+            alignOrigin: [0.5, 0.4],
+            start: start,
+            end: start + 1,
+          },
+          ease: "none",
+          duration: 40,
+        },
+        0
+      );
+    });
+  }, []);
 
 
-            {/* <!-- About Sec --> */} 
+  return (
+    <UserLayout>
+
+      <HeroSection
+        title={"Top Mobile App"}
+        subtitle={"Development"}
+        title2={"Services for Online Businesses"}
+        tagline={"Improve your brand awareness and maximize ROI through a responsive mobile application"}
+        className={"mobileApp_hero_img"}
+        heroimage={Mobileapphero}
+
+      />
+      {/* <!-- Trusted Partners --> */}
+
+      <TrustedPartners />
 
 
-            <Aboutsection
-                pinkcapsol={pinkcapsol}
-                greencube={greencube}
-                donatorange={donatorange}
-                chaticon={chaticon}
-                phoneicon={phoneicon}
-                calltext={"Call Now"}
-                chatenow={"Chat Now"}
-                                title="RAPID APPLICATION DEVELOPMENT USING" subtitle="  CUTTING-EDGE" title2="TECHNOLOGIES  "
-                                para="Techverse offers top-notch mobile app solutions that improve the performance of businesses by increasing revenues 
+      {/* <!-- About Sec --> */}
+
+
+      <Aboutsection
+        pinkcapsol={pinkcapsol}
+        greencube={greencube}
+        donatorange={donatorange}
+
+        CtnbuttonComponent={Ctnbutton}
+        ctnButtonProps={{
+          phoneicon: phoneicon,
+          calltext: "Call Us",
+          chaticon: chaticon,
+          chatenow: "Chat Now"
+        }}
+        title="RAPID APPLICATION DEVELOPMENT USING" subtitle="  CUTTING-EDGE" title2="TECHNOLOGIES  "
+        para="Techverse offers top-notch mobile app solutions that improve the performance of businesses by increasing revenues 
                                 and amplifying the online presence of the brand. We create applications for businesses of all sizes and provide them with an exceptional custom app
                                  design experience that builds for them a loyal customer base and has a competitive advantage.
 
@@ -122,29 +126,29 @@ const MobileApp = () => {
 
 
 
-                                image={rapidappimg}
-                            
-                            />
+        image={rapidappimg}
+
+      />
 
 
 
 
 
 
-            <Portfolio pinkcapsol={pinkcapsol}
-                greencube={greencube}
-                donatorange={donatorange}
+      <Portfolio pinkcapsol={pinkcapsol}
+        greencube={greencube}
+        donatorange={donatorange}
 
-                title="HIGH-END MOBILE APP SOLUTIONS FOR" subtitle="  BUSINESSES"
-                para=" For startups to enterprise-level businesses, we offer a full cycle of app development, design, integration, and management services. From ideation to the delivery of the final application to the ongoing support, our company leads the whole process.
+        title="HIGH-END MOBILE APP SOLUTIONS FOR" subtitle="  BUSINESSES"
+        para=" For startups to enterprise-level businesses, we offer a full cycle of app development, design, integration, and management services. From ideation to the delivery of the final application to the ongoing support, our company leads the whole process.
 
 We help businesses delight their users with impressive native iOS/Android, Cross-Platform, and web application development, leveraging our extensive expertise in working with major app technologies."
 
-                image={highendimg}
-                chaticon={chaticon}
-                phoneicon={phoneicon}
+        image={highendimg}
+        chaticon={chaticon}
+        phoneicon={phoneicon}
 
-            />
+      />
       {/* <!-- Website --> */}
       <section class="techVerse_webSolution">
         <img
@@ -216,185 +220,38 @@ We help businesses delight their users with impressive native iOS/Android, Cross
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       {/* new Portfolio swipper section */}
 
-        <section class="techVerse_portfolio">
-        <div class="techVerse_portfolioContent">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="sec_title">
-                  <h2 class="sec_title_head color-lightBlue2" data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000">
-                    Our
-                    <span class="color-darkBlue"> Portfolio </span>
-                  </h2>
-                  <p data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000">
-                    Our Company has worked with thousands of businesses all across
-                    the world and has developed highly functional, responsive, and
-                    feature-rich applications. Check out some of our best works:
-                  </p>
-                </div>
-              </div>
-              <div class="col-md-12">
-                <div class="portfolio_tabs nav nav-tabs" id="myTab" role="tablist" data-aos="fade-up" data-aos-offset="0" data-aos-duration="3000">
-                  <a class="nav-link active" id="mobile_apps" data-toggle="tab" href="#mobile-app" role="tab">Mobile Apps</a>
-                  <a class="nav-link" id="websites_tab" data-toggle="tab" href="#website-tab" role="tab">Websites</a>
-                  <a class="nav-link" id="cms_tab" data-toggle="tab" href="#cms-tab" role="tab">CMS</a>
-                </div>
-                <div class="tab-content" id="portfolioTabs">
-                  <div class="tab-pane fade show active" id="mobile-app" role="tabpanel" aria-labelledby="mobile_apps">
-                    <div class="mobile_app_carousel">
-
-          <Swiper
-              slidesPerView={5}
-              spaceBetween={10}
-              // speed={2}
-              centeredSlides={false}
-              loop= {true}
-              autoplay={{
-                delay: 2000,
-                disableOnInteraction: false,
-              }}
-            
-            
-              breakpoints={{
-                640: {
-                  slidesPerView: 2,
-                  spaceBetween: 20,
-                },
-                768: {
-                  slidesPerView: 4,
-                  spaceBetween: 40,
-                },
-                1024: {
-                  slidesPerView: 5,
-                  spaceBetween: 50,
-                },
-              }}
-              modules={[Pagination, Autoplay]}
-              className="mySwiper"
-          
-            >
-
-        <SwiperSlide> <img src={portfoliomockup1} alt="" /></SwiperSlide>
-        <SwiperSlide> <img src={portfoliomockup2} alt="" /></SwiperSlide>
-        <SwiperSlide> <img src={portfoliomockup3} alt="" /></SwiperSlide>
-        <SwiperSlide> <img src={portfoliomockup4} alt="" /></SwiperSlide>
-        <SwiperSlide> <img src={portfoliomockup5} alt="" /></SwiperSlide>
-        <SwiperSlide> <img src={portfoliomockup1} alt="" /></SwiperSlide>
-        <SwiperSlide> <img src={portfoliomockup2} alt="" /></SwiperSlide>
-      
-
-      </Swiper>
-
-
-  
-                      <div class="our-slider-img">
-                        <img src={mobileframe} alt="" />
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <div class="tab-pane fade" id="website-tab" role="tabpanel" aria-labelledby="websites_tab">
-                    <div class="web_app_carousel">
-
-
-
-
-                    <Swiper
-                        slidesPerView={2}
-                        spaceBetween={30}
-                        // speed={200}
-                        centeredSlides={true}
-                     
-                        loop= {true}
-                        autoplay= {{
-                          delay: 1500,
-                          disableOnInteraction: false,
-                        }}
-                                            
-                        breakpoints={ {
-                          640: {
-                            slidesPerView: 2.1,
-                            spaceBetween: 30,
-                          }
-                        }
-                      }
-                    
-                        modules={[Pagination, Autoplay]}
-                        className="mySwiper "
-                        >
-                          <SwiperSlide><img src={carbuying} alt="" /></SwiperSlide>
-                          <SwiperSlide><img src={lllreptile} alt="" /></SwiperSlide>
-                          <SwiperSlide><img src={jeffwilson} alt="" /></SwiperSlide>
-                          <SwiperSlide><img src={privateastrology} alt="" /></SwiperSlide>
-                          <SwiperSlide><img src={carbuying} alt="" /></SwiperSlide>
-                          <SwiperSlide><img src={lllreptile} alt="" /></SwiperSlide>
-                          <SwiperSlide><img src={jeffwilson} alt="" /></SwiperSlide>
-                          <SwiperSlide><img src={privateastrology} alt="" /></SwiperSlide>
-                        </Swiper>
+   
 
 
-                      <div class="our-slider-webframe">
-                        <img src={Macbook} alt="" />
-                      </div>
-                    </div>
-                  </div>
 
 
 
-                  <div class="tab-pane fade" id="cms-tab" role="tabpanel" aria-labelledby="cms_tab">
-                    <div class="web_app_carousel">
 
 
 
-                  
 
-                    <Swiper
-                        slidesPerView={2}
-                        spaceBetween={30}
-                        // speed={200}
-                        centeredSlides={true}
-                     
-                        loop= {true}
-                        autoplay= {{
-                          delay: 1500,
-                          disableOnInteraction: false,
-                        }}
-                                            
-                        breakpoints={ {
-                          640: {
-                            slidesPerView: 2.1,
-                            spaceBetween: 30,
-                          }
-                        }
-                      }
-                    
-                        modules={[Pagination, Autoplay]}
-                        className="mySwiper "
-                        >
-                           <SwiperSlide><img src={carbuying} alt="" /></SwiperSlide>
-                          <SwiperSlide><img src={lllreptile} alt="" /></SwiperSlide>
-                          <SwiperSlide><img src={jeffwilson} alt="" /></SwiperSlide>
-                          <SwiperSlide><img src={privateastrology} alt="" /></SwiperSlide>
-                          <SwiperSlide><img src={carbuying} alt="" /></SwiperSlide>
-                          <SwiperSlide><img src={lllreptile} alt="" /></SwiperSlide>
-                          <SwiperSlide><img src={jeffwilson} alt="" /></SwiperSlide>
-                          <SwiperSlide><img src={privateastrology} alt="" /></SwiperSlide>
-                        </Swiper>
 
-                      <div class="our-slider-webframe">
-                      <img src={Macbook} alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
 
 
@@ -403,35 +260,33 @@ We help businesses delight their users with impressive native iOS/Android, Cross
 
 
 
+      {/* process we use */}
+      <Process />
 
 
+      {/* <!-- Technologies --> */}
+      <TechnologiesUse />
 
 
+      {/* MOBILE APP */}
 
+      <Elevateyourbusiness />
 
+      {/* FAQ section */}
 
+      <Frequentlyaskquestion />
 
 
 
-      
-            {/* process we use */}
-            <Process/>
 
 
-            {/* <!-- Technologies --> */}
-            <TechnologiesUse/>
 
 
-               {/* MOBILE APP */}
 
-            <Elevateyourbusiness/> 
 
-            {/* FAQ section */}
 
-            <Frequentlyaskquestion/>
 
 
-         
 
 
 
@@ -445,17 +300,8 @@ We help businesses delight their users with impressive native iOS/Android, Cross
 
 
 
-
-
-
-
-
-
-
-
-
-        </UserLayout>
-    )
+    </UserLayout>
+  )
 }
 
 export default MobileApp
