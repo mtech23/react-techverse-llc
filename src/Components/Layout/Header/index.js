@@ -258,13 +258,13 @@ export const Header = (props) => {
                         </Link>
                       </li>
                       <li>
-                        <Link to={"/ecommerse-development"}   class="dropdown_linkBox">
+                        <Link to={"/ecommerse-development"} class="dropdown_linkBox">
                           <h4>E-Commerce Development</h4>
                           <p>Custom Mobile App Development.</p>
                         </Link>
                       </li>
                       <li>
-                        <Link to={"/app-store"}   class="dropdown_linkBox">
+                        <Link to={"/app-store"} class="dropdown_linkBox">
                           <h4>App Store</h4>
                           <p>Custom Mobile App Development.</p>
                         </Link>
@@ -298,11 +298,11 @@ export const Header = (props) => {
                           <p>Custom Mobile App Development.</p>
                         </Link>
                       </li>
-             
+
                     </ul>
 
                   </div>
-            
+
 
                 </div>
               </div>
@@ -435,19 +435,13 @@ export const Header = (props) => {
                         </Link>
                       </li>
                       <li>
-                        <Link to={"/"} class="dropdown_linkBox">
+                        <Link to={"/sports"} class="dropdown_linkBox">
                           <h4>Sports Teams & Leagues </h4>
                           <p>Sports Teams Management Apps.</p>
                         </Link>
                       </li>
                       <li>
-                        <Link to={"/"} class="dropdown_linkBox">
-                          <h4>Gaming & Leisure </h4>
-                          <p>Top Game Developers.</p>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to={"/"} class="dropdown_linkBox">
+                        <Link to={"/travel"} class="dropdown_linkBox">
                           <h4>Travel & Hospitality</h4>
                           <p>Application Development Services.</p>
                         </Link>

@@ -14,6 +14,8 @@ import Media from "../screens/media";
 import Businessdevlopment from "../screens/businessdevlopment";
 import Education_hr from "../screens/education-hr";
 import Health_care from "../screens/health-care";
+import Sports from "../screens/sports";
+import Travel from "../screens/travel";
  
 const Router = () => {
   return (
@@ -35,8 +37,10 @@ const Router = () => {
         <Route path="/business-devlopment" element={<Businessdevlopment />}></Route>
         <Route path="/education-hr" element={<Education_hr />}></Route>
         <Route path="/health-care" element={<Health_care />}></Route>
- 
-
+        <Route path="/sports" element={<Sports/>}></Route>
+        <Route path="/travel" element={<Travel/>}></Route>
+         
+         
 
       </Routes>
     </BrowserRouter>

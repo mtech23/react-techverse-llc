@@ -11,7 +11,7 @@ import reacticon from "../../../src/asserts/images/react-icon.png";
 import Ctnbutton from '../../Components/ctnbutton'
 
 const Aboutsection = (props) => {
-
+   
 
     const { CtnbuttonComponent, ctnButtonProps } = props;
 
@@ -35,7 +35,8 @@ const Aboutsection = (props) => {
                     alt=""
                 />
                 <div class="techVerse_aboutContent techVerse_aboutContentServices1">
-                    <div class="container">
+                 <div className=" techVerse_heroContent">
+                 <div class="container-fluid">
                         <div class="row">
 
                             <div class="col-md-6">
@@ -105,6 +106,7 @@ const Aboutsection = (props) => {
                             </div>
                         </div>
                     </div>
+                 </div>
                 </div>
             </section>
 

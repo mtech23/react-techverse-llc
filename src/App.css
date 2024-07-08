@@ -2603,6 +2603,7 @@ canvas.particles-js-canvas-el {
     line-height: 1.5;
     margin-bottom: 20px;
     font-size: 14px;
+    text-align: justify;
   }
   .techVerse_aboutContentServices1 .techVerse_about_laptop_img img {
     width: 100%;
@@ -2780,6 +2781,11 @@ canvas.particles-js-canvas-el {
   .services-abbout1 .sec_title .sec_title_head,
   .services-abbout2 .sec_title .sec_title_head {
     font-size: 19px;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    padding: 0;
   }
   .btn_with_icon {
     padding: 11px 20px;
@@ -2952,6 +2958,9 @@ canvas.particles-js-canvas-el {
   
 }
 @media (max-width: 768px) {
+  .testimonials_title{
+    font-size: 45px !important;
+  }
   .company_wishText {
     font-size: 13px;
   }
@@ -2990,9 +2999,9 @@ canvas.particles-js-canvas-el {
     font-size: 14px;
   }
   .testimonial {
-    padding: 50px 50px;
-    height: 350px;
-    width: 350px;
+    padding: 50px 50px !important;
+    height: 350px !important;
+    width: 350px !important;
   }
 }
 
@@ -3013,10 +3022,10 @@ canvas.particles-js-canvas-el {
   .techVerse_hero_content .hero_brands {
     justify-content: center;
   }
-
+/* 
   .techVerse_about_content .sec_title {
     text-align: center;
-  }
+  } */
   .techVerse_about_content .techVerse_hero_btns {
     justify-content: center;
   }
@@ -3193,6 +3202,22 @@ canvas.particles-js-canvas-el {
 }
 
 @media (max-width: 600px) {
+  .techVerse_about_icon4 {
+
+    width: 53px;
+    z-index: 9999;
+}
+  .techVerse_about_content{
+    margin-top: 30px;
+  }
+  .icc p{
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    padding: 0;
+    font-size: 11px !important;
+  }
 
   .single_logo img {
     width: 60px;
@@ -3242,7 +3267,7 @@ canvas.particles-js-canvas-el {
 
 
 .sec_title p {
-  font-size: 11px !important;;
+  font-size: 11px !important;
 }
 
 /* .service_box {
@@ -3275,14 +3300,14 @@ font-size: 11px !important;
 
 
 @media (max-width: 480px) {
+  .body-bullet-list li{
+    font-size: 12px;
+  }
   .icc img{
     width: 40px !important;
     height: 40px !important;
   }
-  .icc p{
-    font-size : 8px !important;
-    line-height: 0.9 !important;
-  }
+
 
   .sec_title .sec_title_head {
     font-size: 17px !important;

@@ -37,10 +37,10 @@ const Portfolios = (props) => {
                  href="#website-tab" role="tab">
                      Websites
                 </a>
-                <a class="nav-link"
+                <a class={props?.classcms}
                 id="cms_tab" data-toggle="tab"
                  href="#cms-tab" role="tab">
-                   CMS
+                   {props?.CMS}
                 </a>
                 </div>
                 <div class="tab-content" id="portfolioTabs">
