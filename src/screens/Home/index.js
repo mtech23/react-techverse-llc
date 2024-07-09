@@ -22,7 +22,7 @@ import partnersclutch from '../../asserts/images/partners-clutch.png';
 import peramidleftangles from '../../asserts/images/peramid-left-angles.png';
 import pinkcapsol from '../../asserts/images/pink-capsol.png';
 import chaticonblues from '../../asserts/images/chat-icon-blue.png'
- 
+
 import mobileAppimg from '../../asserts/images/mobileAppimg.png'
 // import 'path_to_your_css_file.css';
 import processicon1 from '../../asserts/images/process-icon-1.png'
@@ -32,7 +32,7 @@ import processicon3 from '../../asserts/images/process-icon-3.png'
 import processicon4 from '../../asserts/images/process-icon-4.png'
 import processicon5 from '../../asserts/images/process-icon-5.png'
 import processicon6 from '../../asserts/images/process-icon-6.png'
- 
+
 import peramidleftangle from "../../asserts/images/peramid-left-angles.png"
 import clutch from "../../asserts/images/clutch.png";
 import truspilot from "../../asserts/images/trus-pilot.png";
@@ -96,7 +96,7 @@ const Home = () => {
   };
 
   Aos.init();
- 
+
   useEffect(() => {
     gsap.set(".road", { opacity: 1 });
     const circles = gsap.utils.toArray(".ani_cnt .icc");
@@ -125,129 +125,129 @@ const Home = () => {
   return (
     <UserLayout>
 
-     <div  className="relative" >
-     <Swiper
-        style={{
-          '--swiper-navigation-color': '#fff',
-          '--swiper-pagination-color': '#fff',
-        }}
-        speed={600}
-        parallax={true}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[ Pagination]}
-        className="mySwiper"
-      >
-        <div
-          slot="container-start"
-          className="parallax-bg pagination_custom"
-          // style={{
-          //   'background-image':
-          //     'url(./asserts/images/hero-bg.png)',
-          // }}
-          data-swiper-parallax="-23%"
-        ></div>
-        <SwiperSlide>
-          
-       
+      <div className="relative" >
+        <Swiper
+          style={{
+            '--swiper-navigation-color': '#fff',
+            '--swiper-pagination-color': '#fff',
+          }}
+          speed={600}
+          parallax={true}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Pagination]}
+          className="mySwiper"
+        >
+          <div
+            slot="container-start"
+            className="parallax-bg pagination_custom"
+            // style={{
+            //   'background-image':
+            //     'url(./asserts/images/hero-bg.png)',
+            // }}
+            data-swiper-parallax="-23%"
+          ></div>
+          <SwiperSlide>
 
 
-        <section class="techVerse_hero hoverEffectSec">
-            <div class="techVerse_heroContent">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="techVerse_hero_content">
-                      <h1
-                        data-aos="fade-right"
-                        data-aos-offset="300"
-                        data-aos-duration="1000"
-                      >
-                       TECHVERSE LLC Pioneering 
-                        <span class="color-lightBlue1"> The </span>
-                        Future Of Mobile Development Company In USA
-                      </h1>
-                      <p
-                        data-aos="fade-right"
-                        data-aos-offset="300"
-                        data-aos-duration="2000"
-                      >
-                        At Techverse LLC, we are at the forefront of mobile app development, shaping the future with innovation and cutting-edge technology. Our team of expert developers,
-                        designers, and organizers work tirelessly to transform visionary ideas into dynamic mobile solutions that meet the needs of an ever-evolving digital landscape.
-                      </p>
-                      <div
-                        class="techVerse_hero_btns"
-                        data-aos="fade-right"
-                        data-aos-offset="300"
-                        data-aos-duration="3000"
-                      >
-                        <a href="#" class="btn_with_icon">
-                          <img
-                            class="btn_with_icon_img"
-                            src={phoneicon}
-                            alt=""
-                          />
-                          <span class="btn_with_icon_text">Call Now</span>
-                        </a>
-                        <a href="#" class="btn_with_icon btn_secondary">
-                          <img
-                            class="btn_with_icon_img"
-                            src={chaticon}
-                            alt=""
-                          />
-                          <span class="btn_with_icon_text">Chat Now</span>
-                        </a>
-                      </div>
-                      <div
-                        class="hero_brands"
-                        data-aos="fade-right"
-                        data-aos-offset="300"
-                        data-aos-duration="3000"
-                      >
-                        <a href="#" class="hero_brands_img"
-                        ><img src={clutch} alt=""
-                          /></a>
-                        <a href="#" class="hero_brands_img"
-                        ><img src={truspilot} alt=""
-                          /></a>
-                        <a href="#" class="hero_brands_img"
-                        ><img src={bbb} alt=""
-                          /></a>
+
+
+            <section class="techVerse_hero hoverEffectSec">
+              <div class="techVerse_heroContent">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="techVerse_hero_content">
+                        <h1
+                          data-aos="fade-right"
+                          data-aos-offset="300"
+                          data-aos-duration="1000"
+                        >
+                          TECHVERSE LLC Pioneering
+                          <span class="color-lightBlue1"> The </span>
+                          Future Of Mobile Development Company In USA
+                        </h1>
+                        <p
+                          data-aos="fade-right"
+                          data-aos-offset="300"
+                          data-aos-duration="2000"
+                        >
+                          At Techverse LLC, we are at the forefront of mobile app development, shaping the future with innovation and cutting-edge technology. Our team of expert developers,
+                          designers, and organizers work tirelessly to transform visionary ideas into dynamic mobile solutions that meet the needs of an ever-evolving digital landscape.
+                        </p>
+                        <div
+                          class="techVerse_hero_btns"
+                          data-aos="fade-right"
+                          data-aos-offset="300"
+                          data-aos-duration="3000"
+                        >
+                          <a href="#" class="btn_with_icon">
+                            <img
+                              class="btn_with_icon_img"
+                              src={phoneicon}
+                              alt=""
+                            />
+                            <span class="btn_with_icon_text">Call Now</span>
+                          </a>
+                          <a href="#" class="btn_with_icon btn_secondary">
+                            <img
+                              class="btn_with_icon_img"
+                              src={chaticon}
+                              alt=""
+                            />
+                            <span class="btn_with_icon_text">Chat Now</span>
+                          </a>
+                        </div>
+                        <div
+                          class="hero_brands"
+                          data-aos="fade-right"
+                          data-aos-offset="300"
+                          data-aos-duration="3000"
+                        >
+                          <a href="#" class="hero_brands_img"
+                          ><img src={clutch} alt=""
+                            /></a>
+                          <a href="#" class="hero_brands_img"
+                          ><img src={truspilot} alt=""
+                            /></a>
+                          <a href="#" class="hero_brands_img"
+                          ><img src={bbb} alt=""
+                            /></a>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="techVerse_hero_img">
-                      <img
-                        src={donatblue}
-                        class="techVerse_hero_icon1 animation11"
-                        alt=""
-                      />
-                      <img
-                        src={PillBlueGlossy}
-                        class="techVerse_hero_icon2 animation22"
-                        alt=""
-                      />
-                      <img
-                        src={ConeBlueGlossy}
-                        class="techVerse_hero_icon3 animation22"
-                        alt=""
-                      />
-                      <img
-                        src={herophonemockupgroup}
-                        data-aos="fade-left"
-                        data-aos-offset="300"
-                        data-aos-duration="3000"
-                        alt=""
-                      />
+                    <div class="col-md-6">
+                      <div class="techVerse_hero_img">
+                        <img
+                          src={donatblue}
+                          class="techVerse_hero_icon1 animation11"
+                          alt=""
+                        />
+                        <img
+                          src={PillBlueGlossy}
+                          class="techVerse_hero_icon2 animation22"
+                          alt=""
+                        />
+                        <img
+                          src={ConeBlueGlossy}
+                          class="techVerse_hero_icon3 animation22"
+                          alt=""
+                        />
+                        <img
+                          src={herophonemockupgroup}
+                          data-aos="fade-left"
+                          data-aos-offset="300"
+                          data-aos-duration="3000"
+                          alt=""
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </section>
+            </section>
 
 
           </SwiperSlide>
@@ -255,115 +255,115 @@ const Home = () => {
 
 
 
-        <SwiperSlide>
-         
+          <SwiperSlide>
 
 
 
-        <section class="techVerse_hero hoverEffectSec">
-            <div class="techVerse_heroContent">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="techVerse_hero_content">
-                      <h1
-                        data-aos="fade-right"
-                        data-aos-offset="300"
-                        data-aos-duration="1000"
-                      >
-                       TECHVERSE LLC Pioneering 
-                        <span class="color-lightBlue1"> The </span>
-                        Future Of Mobile Development Company In USA
-                      </h1>
-                      <p
-                        data-aos="fade-right"
-                        data-aos-offset="300"
-                        data-aos-duration="2000"
-                      >
-                        At Techverse LLC, we are at the forefront of mobile app development, shaping the future with innovation and cutting-edge technology. Our team of expert developers,
-                        designers, and organizers work tirelessly to transform visionary ideas into dynamic mobile solutions that meet the needs of an ever-evolving digital landscape.
-                      </p>
-                      <div
-                        class="techVerse_hero_btns"
-                        data-aos="fade-right"
-                        data-aos-offset="300"
-                        data-aos-duration="3000"
-                      >
-                        <a href="#" class="btn_with_icon">
-                          <img
-                            class="btn_with_icon_img"
-                            src={phoneicon}
-                            alt=""
-                          />
-                          <span class="btn_with_icon_text">Call Now</span>
-                        </a>
-                        <a href="#" class="btn_with_icon btn_secondary">
-                          <img
-                            class="btn_with_icon_img"
-                            src={chaticon}
-                            alt=""
-                          />
-                          <span class="btn_with_icon_text">Chat Now</span>
-                        </a>
-                      </div>
-                      <div
-                        class="hero_brands"
-                        data-aos="fade-right"
-                        data-aos-offset="300"
-                        data-aos-duration="3000"
-                      >
-                        <a href="#" class="hero_brands_img"
-                        ><img src={clutch} alt=""
-                          /></a>
-                        <a href="#" class="hero_brands_img"
-                        ><img src={truspilot} alt=""
-                          /></a>
-                        <a href="#" class="hero_brands_img"
-                        ><img src={bbb} alt=""
-                          /></a>
+
+            <section class="techVerse_hero hoverEffectSec">
+              <div class="techVerse_heroContent">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="techVerse_hero_content">
+                        <h1
+                          data-aos="fade-right"
+                          data-aos-offset="300"
+                          data-aos-duration="1000"
+                        >
+                          TECHVERSE LLC Pioneering
+                          <span class="color-lightBlue1"> The </span>
+                          Future Of Mobile Development Company In USA
+                        </h1>
+                        <p
+                          data-aos="fade-right"
+                          data-aos-offset="300"
+                          data-aos-duration="2000"
+                        >
+                          At Techverse LLC, we are at the forefront of mobile app development, shaping the future with innovation and cutting-edge technology. Our team of expert developers,
+                          designers, and organizers work tirelessly to transform visionary ideas into dynamic mobile solutions that meet the needs of an ever-evolving digital landscape.
+                        </p>
+                        <div
+                          class="techVerse_hero_btns"
+                          data-aos="fade-right"
+                          data-aos-offset="300"
+                          data-aos-duration="3000"
+                        >
+                          <a href="#" class="btn_with_icon">
+                            <img
+                              class="btn_with_icon_img"
+                              src={phoneicon}
+                              alt=""
+                            />
+                            <span class="btn_with_icon_text">Call Now</span>
+                          </a>
+                          <a href="#" class="btn_with_icon btn_secondary">
+                            <img
+                              class="btn_with_icon_img"
+                              src={chaticon}
+                              alt=""
+                            />
+                            <span class="btn_with_icon_text">Chat Now</span>
+                          </a>
+                        </div>
+                        <div
+                          class="hero_brands"
+                          data-aos="fade-right"
+                          data-aos-offset="300"
+                          data-aos-duration="3000"
+                        >
+                          <a href="#" class="hero_brands_img"
+                          ><img src={clutch} alt=""
+                            /></a>
+                          <a href="#" class="hero_brands_img"
+                          ><img src={truspilot} alt=""
+                            /></a>
+                          <a href="#" class="hero_brands_img"
+                          ><img src={bbb} alt=""
+                            /></a>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="techVerse_hero_img">
-                      <img
-                        src={donatblue}
-                        class="techVerse_hero_icon1 animation11"
-                        alt=""
-                      />
-                      <img
-                        src={PillBlueGlossy}
-                        class="techVerse_hero_icon2 animation22"
-                        alt=""
-                      />
-                      <img
-                        src={ConeBlueGlossy}
-                        class="techVerse_hero_icon3 animation22"
-                        alt=""
-                      />
-                      <img
-                        src={herophonemockupgroup}
-                        data-aos="fade-left"
-                        data-aos-offset="300"
-                        data-aos-duration="3000"
-                        alt=""
-                      />
+                    <div class="col-md-6">
+                      <div class="techVerse_hero_img">
+                        <img
+                          src={donatblue}
+                          class="techVerse_hero_icon1 animation11"
+                          alt=""
+                        />
+                        <img
+                          src={PillBlueGlossy}
+                          class="techVerse_hero_icon2 animation22"
+                          alt=""
+                        />
+                        <img
+                          src={ConeBlueGlossy}
+                          class="techVerse_hero_icon3 animation22"
+                          alt=""
+                        />
+                        <img
+                          src={herophonemockupgroup}
+                          data-aos="fade-left"
+                          data-aos-offset="300"
+                          data-aos-duration="3000"
+                          alt=""
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </section>
+            </section>
 
 
 
 
 
-        </SwiperSlide>
-       
-      </Swiper>
-      
-     </div>
+          </SwiperSlide>
+
+        </Swiper>
+
+      </div>
 
 
 
@@ -380,7 +380,7 @@ const Home = () => {
       {/* 'backgroundImage: url(../../asserts/images/hero-bg.png);' */}
 
 
-    
+
 
 
       {/* <!-- About Sec --> */}
@@ -514,17 +514,18 @@ const Home = () => {
                     data-aos-offset="300"
                     data-aos-duration="1000"
                   >
-                    Elevate your business presence with a customized
-                    <span class="color-lightBlue2"> Website Solution </span>
+                    Revolutionize Your Business Presence
+                    <span class="color-lightBlue2"> With    </span>
+                    A Custom Website Design
                   </h2>
                   <p
                     data-aos="fade-up"
                     data-aos-offset="300"
                     data-aos-duration="2000"
                   >
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s,
+                    Our expert team combines cutting-edge technology with creative finesse to craft custom websites that not only enhance user experience but also drive tangible results.
+
+
                   </p>
                   <div
                     class="techVerse_hero_btns"
@@ -729,36 +730,36 @@ const Home = () => {
       </section>
 
       {/* <!-- Portfolio --> */}
-     <Portfolios
+      <Portfolios
 
-     title="Our"
-     subtitle="Portfolio"
-     para="Our Company has worked with thousands of businesses 
+        title="Our"
+        subtitle="Portfolio"
+        para="Our Company has worked with thousands of businesses 
      all across the world and has developed highly functional, responsive, and feature-rich applications. Check out some of our best works:"
-     image1={portfoliomockup1}
-     image2={portfoliomockup2}
-     image3={portfoliomockup3}
-     image4={portfoliomockup4}
-     image5={portfoliomockup5}
-     image6={mobileframe}
-     image7={carbuying}
-     image8={lllreptile}
-     image9={jeffwilson}
-     image10={privateastrology}
-     image11={Macbook}
-     
-     />
+        image1={portfoliomockup1}
+        image2={portfoliomockup2}
+        image3={portfoliomockup3}
+        image4={portfoliomockup4}
+        image5={portfoliomockup5}
+        image6={mobileframe}
+        image7={carbuying}
+        image8={lllreptile}
+        image9={jeffwilson}
+        image10={privateastrology}
+        image11={Macbook}
+
+      />
 
 
 
-{/* process we use */}
-<Process/>
-     
+      {/* process we use */}
+      <Process />
 
-        {/* MOBILE APP */}
-<Testimonials/>
 
-      
+      {/* MOBILE APP */}
+      <Testimonials />
+
+
 
 
 
@@ -887,7 +888,7 @@ const Home = () => {
             </div>
           </div>
         </div>
- 
+
       </section>
 
 

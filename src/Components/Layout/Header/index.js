@@ -175,7 +175,7 @@ export const Header = (props) => {
     <section class="techVerse_navbar">
       <nav class="navbar navbar-expand-lg">
 
-        <Link class="navbar-brand techVerse_logo" href="/">
+        <Link class="navbar-brand techVerse_logo" to={"/"}>
           <img src={logo} alt="" />
         </Link>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -185,7 +185,7 @@ export const Header = (props) => {
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <Link class="nav-link" href="about-us.php">About Us</Link>
+              <Link class="nav-link" to={"/about-us"}>About Us</Link>
             </li>
             <li class="nav-item dropdown " >
               <Link type="button" onClick={handleclick} class="nav-link dropdown-toggle"  >
@@ -201,8 +201,12 @@ export const Header = (props) => {
               <div class="" aria-labelledby="navbarDropdown">
               </div>
             </li>
+             
             <li class="nav-item">
-              <Link class="nav-link" href="contact.php">Contact</Link>
+              <Link class="nav-link" to={"/case-study"}>Case study</Link>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link" to={"/contact"}>Contact</Link>
             </li>
             {/* <!--<li class="nav-item">--> */}
             {/* <!--    <Link class="nav-link" to={"/"}>About Us</Link>--> */}
@@ -212,7 +216,7 @@ export const Header = (props) => {
             {/* <!--</li>--> */}
             <li class="nav-item icon_list_item">
               {/* <!-- <Link class="nav-link" to={"/"}>+(1) 23456-7890</Link> --> */}
-              <Link href="mailto:info@techversellc.com" class="nav-link">
+              <Link to="/" class="nav-link">
                 <span class="icon_list_icon">
                   {/* <!--<img src="images/usa-flag.png" alt="" />--> */}
                   <i class="fa-solid fa-envelope"></i>

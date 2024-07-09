@@ -85,7 +85,18 @@ const WebDevelopment = () => {
         tagline={"Grow your business’s online presence and witness an increase in conversions with Techverse."}
         className={"web-development_hero_img"}
         heroimage={webdevelopmenthero}
+        CtnbuttonComponent={Ctnbutton}
+        ctnButtonProps={{
+          phoneicon: phoneicon,
+          calltext: "Call Us",
+          primaryButtonClass: "btn_with_icon",
+          chaticon: chaticon,
+          chatenow: "Chat Us",
+          secondaryButtonClass: "btn_with_icon btn_secondary  "
 
+          // playstore: playstore,
+          // appstore: appstore
+        }}
       />
       {/* <!-- Trusted Partners --> */}
       <TrustedPartners />

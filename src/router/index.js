@@ -4,8 +4,10 @@ import Home from '../screens/Home';
 import MobileApp from '../screens/MobileApp';
 import App_store from '../screens/App_store';
 import RealEstate_and_property from '../screens/RealEstate_and_property';
-import WebApplication from "../screens/webApplication"; 
+import WebApplication from "../screens/webApplication";
+import Ecommerse from "../screens/ecommerse";
 import EcommerseDevelopment from "../screens/ecommerseDevelopment";
+ 
 import DigitalMarketing from "../screens/digitalMarketing";
 import Finance from "../screens/finance";
 import WebDevelopment from "../screens/webDevelopment";
@@ -16,6 +18,9 @@ import Education_hr from "../screens/education-hr";
 import Health_care from "../screens/health-care";
 import Sports from "../screens/sports";
 import Travel from "../screens/travel";
+import About_us from "../screens/About_us";
+import Contact from "../screens/contact";
+import Case_study from "../screens/Case_study";
  
 const Router = () => {
   return (
@@ -26,7 +31,7 @@ const Router = () => {
         <Route path="/app-store" element={<App_store />}></Route>
         <Route path="/MobileApp" element={< MobileApp />}> </Route>
         <Route path="/mobile-app" element={< MobileApp />}> </Route>
-        <Route path="/ecommerse" element={<EcommerseDevelopment />}></Route>
+        <Route path="/ecommerse" element={<Ecommerse />}></Route>
         <Route path="/web-application" element={<WebApplication />}></Route>
         <Route path="/realEstate-and-property" element={<RealEstate_and_property />}></Route>
         <Route path="/digital-marketing" element={<DigitalMarketing />}></Route>
@@ -37,10 +42,14 @@ const Router = () => {
         <Route path="/business-devlopment" element={<Businessdevlopment />}></Route>
         <Route path="/education-hr" element={<Education_hr />}></Route>
         <Route path="/health-care" element={<Health_care />}></Route>
-        <Route path="/sports" element={<Sports/>}></Route>
-        <Route path="/travel" element={<Travel/>}></Route>
+        <Route path="/sports" element={<Sports />}></Route>
+        <Route path="/travel" element={<Travel />}></Route>
+        <Route path="/ecommerse-development" element={<EcommerseDevelopment />}></Route>
+        <Route path="/about-us" element={<About_us />} />
+        <Route path="/contact" element={<Contact/>} />
+        <Route path="/case-study" element={<Case_study/>} />
          
-         
+   
 
       </Routes>
     </BrowserRouter>

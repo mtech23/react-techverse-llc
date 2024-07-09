@@ -48,7 +48,7 @@ import automotivedesktop from '../../asserts/images/automotive-desktop.png'
 import drivingsecsecreen from '../../asserts/images/driving-sec-secreen.png'
 import Driving_Exprience from '../../Components/Driving_experience';
 import Portfolios from '../../Components/portfolios';
- import automotivescreen1 from '../../asserts/images/automotive-screen1.png'
+import automotivescreen1 from '../../asserts/images/automotive-screen1.png'
 import automotivescreen2 from '../../asserts/images/automotive-screen2.png'
 import automotivescreen3 from '../../asserts/images/automotive-screen3.png'
 import automotivescreen4 from '../../asserts/images/automotive-screen4.png'
@@ -60,7 +60,7 @@ import lllreptile from '../../asserts/images/lll-reptile.png'
 import privateastrology from '../../asserts/images/private-astrology.png'
 import sportsimg111 from '../../asserts/images/sports-img-111.png'
 import sportsimg3 from '../../asserts/images/sports-img-3.png'
- 
+
 import Macbook from '../../asserts/images/Macbook.png'
 import mediaimg1 from '../../asserts/images/media-img-1.gif'
 import mediaimg2 from '../../asserts/images/media-img-2.png'
@@ -116,14 +116,17 @@ const Sports = () => {
                 tagline={"Providing cutting-edge mobile app solutions for the sports industry."}
                 className={"ecommerceDev_hero_img"}
 
-
                 CtnbuttonComponent={Ctnbutton}
                 ctnButtonProps={{
                     phoneicon: phoneicon,
                     calltext: "Call Us",
                     primaryButtonClass: "btn_with_icon",
-                    playstore: playstore,
-                    appstore: appstore
+                    chaticon: chaticon,
+                    chatenow: "Chat Us",
+                    secondaryButtonClass: "btn_with_icon btn_secondary  "
+
+                    // playstore: playstore,
+                    // appstore: appstore
                 }}
 
 

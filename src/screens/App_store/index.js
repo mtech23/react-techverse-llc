@@ -75,7 +75,18 @@ const App_store = () => {
                 tagline={"Whether you're an aspiring entrepreneur or a seasoned developer, our App Store is your gateway to reaching millions of users worldwide. With our robust platform, you can harness the power of cutting-edge technology and provide a seamless user experience. From app discovery to deployment, we provide supreme support and resources to raise your app's visibility and success"}
                 className={"storeApp_hero_img"}
                 heroimage={appstorehero}
+                CtnbuttonComponent={Ctnbutton}
+                ctnButtonProps={{
+                    phoneicon: phoneicon,
+                    calltext: "Call Us",
+                    primaryButtonClass: "btn_with_icon",
+                    chaticon: chaticon,
+                    chatenow: "Chat Us",
+                    secondaryButtonClass: "btn_with_icon btn_secondary  "
 
+                    // playstore: playstore,
+                    // appstore: appstore
+                }}
             />
             {/* <!-- Trusted Partners --> */}
 
@@ -102,10 +113,14 @@ const App_store = () => {
                 ctnButtonProps={{
                     phoneicon: phoneicon,
                     calltext: "Call Us",
+                    primaryButtonClass: "btn_with_icon",
                     chaticon: chaticon,
-                    chatenow: "Chat Now"
-                }}
+                    chatenow: "Chat Us",
+                    secondaryButtonClass: "btn_with_icon btn_secondary  "
 
+                    // playstore: playstore,
+                    // appstore: appstore
+                }}
                 image={appimg01}
             />
 

@@ -8,7 +8,7 @@ import ecommersedevhero from "../../../src/asserts/images/ecommersedevhero.png";
 import donateWhite from "../../../src/asserts/images/donate-white.png";
 import peramidicon from "../../../src/asserts/images/peramid-icon.png";
 import phoneicongreen from "../../../src/asserts/images/phone-icon-green.png";
-import chaticonblue from "../../../src/asserts/images/phone-icon-green.png";
+import chaticonblue from "../../../src/asserts/images/chat-icon-blue.png";
 import fluttericon from "../../../src/asserts/images/flutter-icon.png";
 import reacticon from "../../../src/asserts/images/react-icon.png";
 
@@ -37,17 +37,18 @@ const Website = (props) => {
                                         data-aos-offset="300"
                                         data-aos-duration="1000"
                                     >
-                                        Elevate your business presence with a customized
-                                        <span class="color-lightBlue2">Website Solution</span>
+                                        Revolutionize Your Business Presence
+                                        <span class="color-lightBlue2">Website  </span>
+                                        A Custom Website Design
                                     </h2>
                                     <p
                                         data-aos="fade-up"
                                         data-aos-offset="300"
                                         data-aos-duration="2000"
                                     >
-                                        Lorem Ipsum is simply dummy text of the printing and
-                                        typesetting industry. Lorem Ipsum has been the industry's
-                                        standard dummy text ever since the 1500s,
+                                  Our expert team combines cutting-edge technology with creative finesse to craft custom websites that not only enhance user experience but also drive tangible results.
+
+
                                     </p>
                                     <div
                                         class="techVerse_hero_btns"

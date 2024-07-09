@@ -60,8 +60,6 @@ import Elevateyourbusiness from '../../Components/elevateyourbusiness';
 import Portfolio from '../../Components/Portfolio';
 import { playstore } from '../../asserts/images';
 import appstore from '../../asserts/images/app-store.png';
-import Ecommercedevelopmenthero from '../../asserts/images/Ecommerce-development-hero.png';
-
 import App_store from '../App_store';
 import App_development_solutions from '../../Components/App_development_solutions';
 import Development_Process from '../../Components/Development_Process';
@@ -69,7 +67,7 @@ import Portfolios from '../../Components/portfolios';
 import Driving_Exprience from '../../Components/Driving_experience';
 import Testimonials from '../../Components/Tetimonials';
 gsap.registerPlugin(MotionPathPlugin);
-const EcommerseDevelopment = () => {
+const Ecommerse = () => {
 
 
   Aos.init();
@@ -107,28 +105,21 @@ const EcommerseDevelopment = () => {
 
 
       <HeroSection
-        innerbgclass={"inner-bgColor"}
-        // classheroimage={"inner-ecommerce-bgColor"}
-        title={"    Your Gateway"}
-        subtitle={"To "}
-        title2={"Powerful Online Retail Solutions"}
-        tagline={"At Techverse LLC, we specialize in creating tailored E-Commerce Development solutions that empower businesses to thrive in the digital marketplace. Whether you're starting a new online store or aiming to enhance an existing platform, our squad of skilled developers and designers is devoted to delivering scalable, secure, and feature-rich solutions perfectly suited to your business."}
+        classheroimage={"inner-ecommerce-bgColor"}
+        title={"Custom Ecommerce Website"}
+        subtitle={"Development"}
+        title2={"Company"}
+        tagline={"Top - notch eCommerce web solutions that grow retail businesses and amplify sales."}
         className={"ecommerceDev_hero_img"}
-
-
         CtnbuttonComponent={Ctnbutton}
         ctnButtonProps={{
           phoneicon: phoneicon,
           calltext: "Call Us",
           primaryButtonClass: "btn_with_icon",
-          chaticon: chaticon,
-          chatenow: "Chat Us",
-          secondaryButtonClass: "btn_with_icon btn_secondary  "
-
-          // playstore: playstore,
-          // appstore: appstore
+          playstore: playstore,
+          appstore: appstore
         }}
-        classheroimage={Ecommercedevelopmenthero}
+
 
       />
 
@@ -164,33 +155,19 @@ const EcommerseDevelopment = () => {
       />
  */}
 
-
-      <Aboutsection
-        pinkcapsol={pinkcapsol}
-        greencube={greencube}
-        donatorange={donatorange}
-
-        CtnbuttonComponent={Ctnbutton}
-        ctnButtonProps={{
-          phoneicon: phoneicon,
-          calltext: "Call Us",
-          primaryButtonClass: "btn_with_icon",
-          chaticon: chaticon,
-          chatenow: "Chat Us",
-          secondaryButtonClass: "btn_with_icon btn_secondary  "
-
-          // playstore: playstore,
-          // appstore: appstore
-        }}
-        title="Drive Profitability" subtitle=" With " title2="Our Seamless E-Commerce Solutions.  "
-        para="Our expert team customizes every aspect of your website, from intuitive user interfaces to robust backend systems, ensuring seamless functionality and enhanced customer experiences. Whether you're launching a new venture or upgrading an existing platform, trust Techverse LLC to deliver scalable, secure, and visually stunning E-Commerce websites that maximize conversions and propel your business forward in the digital age."
+      <Portfolio title="Welcome To"
 
 
+        subtitle="Techverse"
+        para="Techverse provides top-notch e-commerce mobile app development services for clients worldwide. We help your organization scale better, increase cash flow and retain customers."
 
-        image={ecommerceabout1}
+
+        image={ecommerce}
+
+        playstore={playstore}
+        appstore={appstore}
 
       />
-
 
 
 
@@ -201,10 +178,7 @@ const EcommerseDevelopment = () => {
 
       <Development_Process title="Our " subtitle="Real Estate" title2="Mobile App Development Process"
         para="We follow a streamlined approach to ensure customer satisfaction by delivering customized real estate mobile app development solutions."
-        image={ecommersedesktopimg}
-
-
-      />
+        image={ecommersedesktopimg} />
 
       <Portfolios
         title="ECOMMERCE "
@@ -243,4 +217,4 @@ const EcommerseDevelopment = () => {
     </UserLayout>
   )
 }
-export default EcommerseDevelopment
+export default Ecommerse

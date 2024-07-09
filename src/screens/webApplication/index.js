@@ -36,7 +36,7 @@ import ecommersedevhero from "../../asserts/images/ecommersedevhero.png";
 import HeroSection from '../../Components/herosection/index'
 import fluttericon from "../../asserts/images/flutter-icon.png";
 import reacticon from "../../asserts/images/react-icon.png";
-
+import Ctnbutton from '../../Components/ctnbutton'
 
 import Aos from "aos";
 import 'swiper/css';
@@ -68,7 +68,18 @@ const WebApplication = () => {
         tagline={"Whether you're looking to streamline operations, enhance customer engagement, or drive efficiency, our web applications are designed to empower your business for the future. From intuitive user interfaces to robust backend systems, we ensure your application not only meets but exceeds expectations."}
         className={"inner_hero"}
         heroimage={webapplicationhero}
+        CtnbuttonComponent={Ctnbutton}
+        ctnButtonProps={{
+          phoneicon: phoneicon,
+          calltext: "Call Us",
+          primaryButtonClass: "btn_with_icon",
+          chaticon: chaticon,
+          chatenow: "Chat Us",
+          secondaryButtonClass: "btn_with_icon btn_secondary  "
 
+          // playstore: playstore,
+          // appstore: appstore
+        }}
       />
       {/* TrustedPartners */}
       <TrustedPartners />

@@ -94,9 +94,21 @@ const RealEstate_and_property = () => {
 
         title2={"  Modern Real Estate"}
         tagline={"In today's dynamic real estate landscape, staying ahead requires more than traditional methods. At Techverse LLC, we redefine the digital frontier with innovative solutions tailored to the modern real estate industry. Our comprehensive digital marketing strategies empower real estate professionals to enhance visibility, attract qualified leads, and drive conversions effectively."}
-      // heroimage={webapplicationhero}
+        // heroimage={webapplicationhero}
+        CtnbuttonComponent={Ctnbutton}
+        ctnButtonProps={{
+          phoneicon: phoneicon,
+          calltext: "Call Us",
+          primaryButtonClass: "btn_with_icon",
+          chaticon: chaticon,
+          chatenow: "Chat Us",
+          secondaryButtonClass: "btn_with_icon btn_secondary  "
 
+          // playstore: playstore,
+          // appstore: appstore
+        }}
       />
+
       {/* TrustedPartners */}
       <TrustedPartners />
       {/* ecommerce section */}
@@ -108,8 +120,13 @@ const RealEstate_and_property = () => {
         ctnButtonProps={{
           phoneicon: phoneicon,
           calltext: "Call Us",
+          primaryButtonClass: "btn_with_icon",
           chaticon: chaticon,
-          chatenow: "Chat Now"
+          chatenow: "Chat Us",
+          secondaryButtonClass: "btn_with_icon btn_secondary  "
+
+          // playstore: playstore,
+          // appstore: appstore
         }}
         title2="Real Estate Success With Us"
         title="Innovate Your Way" subtitle="   To  "
@@ -164,7 +181,7 @@ const RealEstate_and_property = () => {
 
 
       <Driving_Exprience
- 
+
         titleclass2="color-darkBlue"
         titleclass="color-darkBlue"
         title="Why Choose Our  "

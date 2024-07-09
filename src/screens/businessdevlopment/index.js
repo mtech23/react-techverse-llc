@@ -25,8 +25,8 @@ import pinkcapsol from "../../asserts/images/pink-capsol.png";
 import greencube from "../../asserts/images/green-cube.png";
 import donatorange from "../../asserts/images/donat-orange.png";
 import phoneicon from "../../asserts/images/phone-icon.png";
- 
- 
+
+
 import chaticon from "../../asserts/images/chat-icon.png";
 import rapidappimg from "../../asserts/images/rapidapp-img.png";
 import highendimg from "../../asserts/images/high-end-img.png";
@@ -87,7 +87,18 @@ const Businessdevlopment = () => {
         tagline={"Grow your business’s online presence and witness an increase in conversions with Techverse."}
         className={"web-development_hero_img"}
         heroimage={businessdevelopmenthero}
+        CtnbuttonComponent={Ctnbutton}
+        ctnButtonProps={{
+          phoneicon: phoneicon,
+          calltext: "Call Us",
+          primaryButtonClass: "btn_with_icon",
+          chaticon: chaticon,
+          chatenow: "Chat Us",
+          secondaryButtonClass: "btn_with_icon btn_secondary  "
 
+          // playstore: playstore,
+          // appstore: appstore
+        }}
       />
       {/* <!-- Trusted Partners --> */}
       <section class="techVerse_trustedPartners techVerse_trustedPartnersServices">
@@ -153,24 +164,26 @@ const Businessdevlopment = () => {
         calltext={"Call Now"}
         chatenow={"Chat Now"}
         title="Launch Smart" subtitle="    With  " title2="Mvps Validate, Iterate, Succeed!"
-        para="Our MVP Development Services empower you to validate your business idea effectively before full-scale implementation. We specialize in crafting Minimum Viable Products (MVPs) that allow you to test core functionalities and gather crucial feedback from early users. By leveraging rapid prototyping and iterative development methodologies, we ensure your MVP evolves based on real-world insights, validating market demand and optimizing your product-market fit. With Techverse LLC, you can confidently refine your concept, mitigate risks, and position your product for successful market entry.
-        
- 
-        "
+        para="Our MVP Development Services empower you to validate your business idea effectively before full-scale implementation. We specialize in crafting Minimum Viable Products (MVPs) that allow you to test core functionalities and gather crucial feedback from early users. By leveraging rapid prototyping and iterative development methodologies, we ensure your MVP evolves based on real-world insights, validating market demand and optimizing your product-market fit. With Techverse LLC, you can confidently refine your concept, mitigate risks, and position your product for successful market entry. "
 
         CtnbuttonComponent={Ctnbutton}
         ctnButtonProps={{
           phoneicon: phoneicon,
           calltext: "Call Us",
+          primaryButtonClass: "btn_with_icon",
           chaticon: chaticon,
-          chatenow: "Chat Now"
+          chatenow: "Chat Us",
+          secondaryButtonClass: "btn_with_icon btn_secondary  "
+
+          // playstore: playstore,
+          // appstore: appstore
         }}
         listItems={[
           "Robust approach to connect your product with the target market",
           "Verification of your idea with a test version of your digital product"
         ]}
         image={businessimg01}
-      
+
 
 
       />
