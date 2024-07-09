@@ -1701,7 +1701,7 @@ canvas.particles-js-canvas-el {
 
 
 .aboutUS_hero .inner-bgColor {
-    background-image: url(./asserts/images/about-hero-bg.png);
+    background-image: url("./asserts/images/about-hero-bg.png");
     opacity: 0.8;
     background-position: top center;
     background-size: cover;
@@ -1714,7 +1714,7 @@ canvas.particles-js-canvas-el {
     background: #001c36ab;
 }
 .contactUS_hero .inner-bgColor {
-    background-image: url(./asserts/images/contact-herobg.png);
+    /* background-image: url("./asserts/images/contact-herobg.png"); */
     opacity: 0.8;
     background-position: top center;
     background-size: cover;
@@ -1729,7 +1729,7 @@ canvas.particles-js-canvas-el {
 
 
 .ecommerse-hero .inner-bgColor {
-  background-image: url(./asserts/images/ecommer-hero-bg.png);
+  background-image: url('./asserts/images/ecommer-hero-bg.png');
   opacity: 0.7;
   background-position: top center;
   background-size: cover;

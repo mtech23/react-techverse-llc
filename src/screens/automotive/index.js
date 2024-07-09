@@ -113,7 +113,15 @@ const Automotive = () => {
                 // title2={"Services for Online Businesses"}
                 tagline={"Accelerate with our leading-edge app solutions and stay ahead of the curve."}
                 className={"mobileApp_hero_img"}
-            // heroimage={Mobileapphero}
+                // heroimage={Mobileapphero}
+                CtnbuttonComponent={Ctnbutton}
+                ctnButtonProps={{
+                    phoneicon: phoneicon,
+                    calltext: "Call Us",
+                    primaryButtonClass: "btn_with_icon",
+                    playstore: playstore,
+                    appstore: appstore
+                }}
 
             />
             {/* <!-- Trusted Partners --> */}
@@ -149,20 +157,20 @@ const Automotive = () => {
 
 
             {/* <!-- App Development Sec --> */}
-          <App_development_solutions/>
+            <App_development_solutions />
 
 
             {/* <!-- Real Estate App Dev --> */}
-        
 
 
 
-<Development_Process 
-title="OUR"
-subtitle="REAL ESTATE"
-title2="MOBILE APP DEVELOPMENT PROCESS"
-image={automotivedesktop}
-/>
+
+            <Development_Process
+                title="OUR"
+                subtitle="REAL ESTATE"
+                title2="MOBILE APP DEVELOPMENT PROCESS"
+                image={automotivedesktop}
+            />
 
 
 
@@ -234,7 +242,7 @@ image={automotivedesktop}
             {/* <!-- Technologies --> */}
             <TechnologiesUse />
 
-<Testimonials/>
+            <Testimonials />
 
 
             {/* FAQ section */}

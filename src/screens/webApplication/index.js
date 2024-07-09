@@ -36,6 +36,7 @@ import ecommersedevhero from "../../asserts/images/ecommersedevhero.png";
 import HeroSection from '../../Components/herosection/index'
 import fluttericon from "../../asserts/images/flutter-icon.png";
 import reacticon from "../../asserts/images/react-icon.png";
+import Ctnbutton from '../../Components/ctnbutton'
 import webaboutimg11 from "../../asserts/images/web-about-img11.png";
 
 
@@ -68,9 +69,8 @@ const WebApplication = () => {
 
         title2={"Cutting-Edge Web Apps"}
         tagline={"Whether you're looking to streamline operations, enhance customer engagement, or drive efficiency, our web applications are designed to empower your business for the future. From intuitive user interfaces to robust backend systems, we ensure your application not only meets but exceeds expectations."}
-        // className={"inner_hero"}
-        className={"webApp_hero_img"}
-        heroimage={webapplicationhero1}
+        className={"inner_hero"}
+        heroimage={webapplicationhero}
 
       />
       {/* TrustedPartners */}

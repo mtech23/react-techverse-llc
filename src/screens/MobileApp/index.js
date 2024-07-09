@@ -89,14 +89,25 @@ const MobileApp = () => {
     <UserLayout>
 
       <HeroSection
-      innerbgclass={"inner-bgColor"}
+        innerbgclass={"inner-bgColor"}
         title={"Top Mobile App"}
         subtitle={"Development"}
         title2={"Services for Online Businesses"}
         tagline={"Improve your brand awareness and maximize ROI through a responsive mobile application"}
         className={"mobileApp_hero_img"}
         heroimage={Mobileapphero}
+        CtnbuttonComponent={Ctnbutton}
+        ctnButtonProps={{
+          phoneicon: phoneicon,
+          calltext: "Call Us",
+          primaryButtonClass: "btn_with_icon",
+          chaticon: chaticon,
+          chatenow: "Chat Us",
+          secondaryButtonClass: "btn_with_icon btn_secondary  "
 
+          // playstore: playstore,
+          // appstore: appstore
+        }}
       />
       {/* <!-- Trusted Partners --> */}
 
@@ -115,8 +126,13 @@ const MobileApp = () => {
         ctnButtonProps={{
           phoneicon: phoneicon,
           calltext: "Call Us",
+          primaryButtonClass: "btn_with_icon",
           chaticon: chaticon,
-          chatenow: "Chat Now"
+          chatenow: "Chat Us",
+          secondaryButtonClass: "btn_with_icon btn_secondary  "
+
+          // playstore: playstore,
+          // appstore: appstore
         }}
         
         title="RAPID APPLICATION DEVELOPMENT USING" subtitle="  CUTTING-EDGE" title2="TECHNOLOGIES  "
@@ -243,7 +259,7 @@ We help businesses delight their users with impressive native iOS/Android, Cross
 
       {/* new Portfolio swipper section */}
 
-   
+
 
 
 

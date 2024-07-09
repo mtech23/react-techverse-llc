@@ -13,7 +13,6 @@ import reacticon from "../../../src/asserts/images/react-icon.png";
 import Ctnbutton from '../../Components/ctnbutton'
 
 const Aboutsection = (props) => {
- 
 
 
     const { CtnbuttonComponent, ctnButtonProps } = props;
@@ -40,54 +39,67 @@ const Aboutsection = (props) => {
                 />
             
                 <div class="techVerse_aboutContent techVerse_aboutContentServices1">
-                 <div className=" techVerse_heroContent">
-                 <div class="container-fluid">
-                        <div class="row">
+                    <div className=" techVerse_heroContent">
+                        <div class="container-fluid">
+                            <div class="row">
 
-                            <div class="col-md-6">
-                                <div class="techVerse_about_content services-abbout1">
-                                    <div class="sec_title">
-                                        <h2
-                                            class="sec_title_head color-darkBlue"
-                                            data-aos="fade-up"
-                                            data-aos-offset="300"
-                                            data-aos-duration="1000"
-                                        >
-                                            {props?.title}
-                                            <span class="color-lightBlue2">      {props?.subtitle}</span>   {props?.title2}
-                                        </h2>
-                                        <p
+                                <div class="col-md-6">
+                                    <div class="techVerse_about_content services-abbout1">
+                                        <div class="sec_title">
+                                            <h2
+                                                class="sec_title_head color-darkBlue"
+                                                data-aos="fade-up"
+                                                data-aos-offset="300"
+                                                data-aos-duration="1000"
+                                            >
+                                                {props?.title}
+                                                <span class="color-lightBlue2">      {props?.subtitle}</span>   {props?.title2}
+                                            </h2>
+                                            {/* <p
                                             data-aos="fade-up"
                                             data-aos-offset="300"
                                             data-aos-duration="2000"
                                         >
                                             {props?.para}
-                                        </p>
+                                        </p> */}
+                                            <p
+                                                data-aos="fade-up"
+                                                data-aos-offset="0"
+                                                data-aos-duration="2000"
+                                            >
+                                                {props?.para}
+                                            </p>
+                                            <p
+                                                data-aos="fade-up"
+                                                data-aos-offset="0"
+                                                data-aos-duration="2000"
+                                            >
+                                                {props?.para2}
+                                            </p>
+
+                                            <ul
+                                                className="body-unorder-list"
+                                                data-aos="fade-up"
+                                                data-aos-offset="0"
+                                                data-aos-duration="2000"
+                                            >
+                                                {props?.listItems?.map((item, index) => (
+                                                    <li key={index}>{item}</li>
+                                                ))}
+                                            </ul>
 
 
-                                        <ul
-                                            className="body-unorder-list"
-                                            data-aos="fade-up"
-                                            data-aos-offset="0"
-                                            data-aos-duration="2000"
-                                        >
-                                            {props?.listItems?.map((item, index) => (
-                                                <li key={index}>{item}</li>
-                                            ))}
-                                        </ul>
 
-
-
-                                        <ul
-                                            className="body-bullet-list"
-                                            data-aos="fade-up"
-                                            data-aos-offset="300"
-                                            data-aos-duration="2000"
-                                        >
-                                            {props?.bulletListItems?.map((item, index) => (
-                                                <li key={index}>{item}</li>
-                                            ))}
-                                        </ul>
+                                            <ul
+                                                className="body-bullet-list"
+                                                data-aos="fade-up"
+                                                data-aos-offset="300"
+                                                data-aos-duration="2000"
+                                            >
+                                                {props?.bulletListItems?.map((item, index) => (
+                                                    <li key={index}>{item}</li>
+                                                ))}
+                                            </ul>
 
 
                                         {CtnbuttonComponent && (
@@ -101,7 +113,7 @@ const Aboutsection = (props) => {
                                     <div class="techVerse_about_laptop_img">
                                         <img
                                             src={props?.image}
-                                            class={`about-laptopImg business-devlopmentImg ${props?.webclass}`}
+                                            class="about-laptopImg business-devlopmentImg"
                                             data-aos="fade-right"
                                             data-aos-offset="300"
                                             data-aos-duration="1000"
