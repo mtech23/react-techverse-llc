@@ -14,6 +14,7 @@ import ecommersdoubleScreens from '../../asserts/images/ecommers-doubleScreens.p
 import TrustedPartners from '../../Components/TrustedPartners'
 import ecommersedesktopimg from '../../asserts/images/ecommerse-desktop-img.png'
 import eduhrimg1 from '../../asserts/images/edu-hr-img-1.png'
+import eduhrimg2 from '../../asserts/images/edu-hr-img-2.png'
 import truspilot from "../../asserts/images/trus-pilot.png";
 import donatorange from "../../asserts/images/donat-orange.png";
 import greencube from "../../asserts/images/green-cube.png";
@@ -40,7 +41,6 @@ import ecommerceabout1 from "../../asserts/images/ecommerce-about-1.png";
 import reacticon from "../../../src/asserts/images/react-icon.png";
 import donateWhite from "../../asserts/images/donate-white.png";
 import peramidicon from "../../asserts/images/peramid-icon.png";
-
 import peramidleftangles from '../../asserts/images/peramid-left-angles.png';
 import orangehalfcircle from "../../asserts/images/orange-half-circle.png";
 import processicon1 from '../../asserts/images/process-icon-1.png'
@@ -50,6 +50,24 @@ import processicon3 from '../../asserts/images/process-icon-3.png'
 import processicon4 from '../../asserts/images/process-icon-4.png'
 import processicon5 from '../../asserts/images/process-icon-5.png'
 import processicon6 from '../../asserts/images/process-icon-6.png'
+import ecomemrsescreen1 from "../../asserts/images/ecomemrse-screen1.png";
+import ecomemrsescreen2 from "../../asserts/images/ecomemrse-screen2.png";
+import ecomemrsescreen3 from "../../asserts/images/ecomemrse-screen3.png";
+import ecomemrsescreen4 from "../../asserts/images/ecomemrse-screen4.png";
+import ecomemrsescreen5 from "../../asserts/images/ecomemrse-screen5.png";
+import mobileframe from "../../asserts/images/mobile-frame.webp";
+import jeffwilson from "../../asserts/images/jeff-wilson.png";
+import carbuying from "../../asserts/images/car-buying.png";
+import lllreptile from "../../asserts/images/lll-reptile.png";
+import privateastrology from "../../asserts/images/private-astrology.png";
+import Macbook from "../../asserts/images/Macbook.png";
+import eduhrportfolio1 from "../../asserts/images/edu-hr-portfolio-1.png";
+import eduhrportfolio2 from "../../asserts/images/edu-hr-portfolio-2.png";
+import eduhrportfolio3 from "../../asserts/images/edu-hr-portfolio-3.png";
+import eduhrportfolio4 from "../../asserts/images/edu-hr-portfolio-4.png";
+import eduhrportfolio5 from "../../asserts/images/edu-hr-portfolio-5.png";
+
+
 import Ctnbutton from '../../Components/ctnbutton'
 import Aboutsection from '../../Components/aboutsection';
 import Aos from "aos";
@@ -145,7 +163,9 @@ title2=" Us?
 "
 
 
-        image={eduhrimg1}
+        image={eduhrimg2}
+        // image={eduhrimg1}
+       
 
         playstore={playstore}
         appstore={appstore}
@@ -161,10 +181,26 @@ title2=" Us?
         subtitle="Portfolio"
         para="Our Company has worked with thousands of businesses all across the world and has developed highly functional, responsive, and feature-rich applications. Check out some of our best works:"
 
-        Mobile_Apps="Mobile Apps"
-        Websites="Websites"
+
+        image1={eduhrportfolio1}
+        image2={eduhrportfolio2}
+        image3={ecomemrsescreen3}
+        image4={ecomemrsescreen4}
+        image5={ecomemrsescreen5}
+        image6={mobileframe}
+        image7={carbuying}
+        image8={lllreptile}
+        image9={jeffwilson}
+        image10={privateastrology}
+        image11={Macbook}
         classmobileapp="nav-link"
         classwebsite="nav-link"
+    
+       
+        Mobile_Apps="Mobile Apps"
+        Websites="Websites"
+   
+   
       />
 
 

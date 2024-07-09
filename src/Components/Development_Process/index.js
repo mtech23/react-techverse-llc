@@ -14,7 +14,7 @@ import donatorange from "../../asserts/images/donat-orange.png";
 const Development_Process = (props) => {
     return (
         <div>
-            <section class="techVerse_about techVerse_aboutServices2">
+            <section class="techVerse_about techVerse_aboutServices2 ">
                 <img
                     class="techVerse_about_icon1 animation11"
                     src={pinkcapsol}
@@ -31,10 +31,10 @@ const Development_Process = (props) => {
                     src={donatorange}
                     alt=""
                 />
-                <div class="techVerse_aboutContent techVerse_aboutContentServices2">
-                    <div class="container">
+                <div class="techVerse_aboutContent techVerse_aboutContentServices2 width-1600">
+                    <div class="container-fluid">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-lg-6">
                                 <div class="techVerse_about_img">
                                     <div class="techVerse_about_laptop_img realEstate-gif">
                                         <img
@@ -57,7 +57,7 @@ const Development_Process = (props) => {
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-lg-6">
                                 <div class="techVerse_about_content services-abbout2">
                                     <div class="sec_title realEstate-appSec_title">
                                         <h2

@@ -109,7 +109,7 @@ const Sports = () => {
 
 
             <HeroSection
-                classheroimage={"media_bg_custom"}
+                classheroimage={"sports_bg_custom"}
                 title={"     Revolutionizing Sports Mobile App Development "}
                 // subtitle={"  In  "}
                 // title2={"Media & Entertainment!"}

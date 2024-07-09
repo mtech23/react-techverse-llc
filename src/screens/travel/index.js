@@ -112,7 +112,7 @@ const Travel = () => {
 
 
             <HeroSection
-                classheroimage={"media_bg_custom"}
+                classheroimage={"travel_bg_custom"}
                 title={"Redefining Travelling Experience For Your Clients"}
                 // subtitle={"  In  "}
                 // title2={"Media & Entertainment!"}

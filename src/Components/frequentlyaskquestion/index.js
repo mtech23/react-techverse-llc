@@ -16,7 +16,7 @@ const Frequentlyaskquestion = (props) => {
         {/* <!-- FAQS Section --> */}
     <section class="techVerse_faqs">
             <div class="container">
-                <div class="row">
+                <div class="row justify-content-center">
                     <div class="col-md-12">
                         <div class="sec_title text-center">
                             <h2 class="sec_title_head color-lightBlue2">
@@ -26,7 +26,7 @@ const Frequentlyaskquestion = (props) => {
                           </div>
                     </div>
         
-                    <div class="col-sm-12 col-lg-6">
+                    <div class="col-md-9 col-lg-6">
         
                         <div id="accordion">
                         <div class="card">
@@ -88,7 +88,7 @@ const Frequentlyaskquestion = (props) => {
         
                     </div>
         
-                    <div class="col-sm-12 col-lg-6">
+                    <div class="col-md-9 col-lg-6">
         
                     <div id="accordion">
                         <div class="card">

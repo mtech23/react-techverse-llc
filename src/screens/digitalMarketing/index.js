@@ -78,6 +78,7 @@ const DigitalMarketing = () => {
     <UserLayout>
 
       <HeroSection
+           innerbgclass={"inner-bgColor"}
         title={"Best Digital Marketing Agency For"}
         subtitle={"Online Growth"}
         // title2={"Services for Online Businesses"}
@@ -141,7 +142,7 @@ const DigitalMarketing = () => {
 
       />
       {/* <!-- Website --> */}
-      <section class="techVerse_webSolution">
+      {/* <section class="techVerse_webSolution">
         <img
           class="techVerse_webSolution_icon1 animation11"
           src={donateWhite}
@@ -203,7 +204,7 @@ const DigitalMarketing = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
 
 

@@ -81,6 +81,7 @@ const Businessdevlopment = () => {
     <UserLayout>
 
       <HeroSection
+         innerbgclass={"inner-bgColor"}
         title={"We"}
         subtitle={"Design Websites"}
         title2={"That Make Businesses Shine Online"}

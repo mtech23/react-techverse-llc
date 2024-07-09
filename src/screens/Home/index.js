@@ -83,6 +83,9 @@ import p3 from "../../asserts/images/p3.png";
 import p4 from "../../asserts/images/p4.png";
 import p5 from "../../asserts/images/p5.png";
 import p6 from "../../asserts/images/p6.png";
+import cms1 from "../../asserts/images/Cms-1.png";
+import cms2 from "../../asserts/images/CMS-2.png";
+import cms3 from "../../asserts/images/CMS-3.png";
 import Aos from "aos";
 import 'swiper/css/pagination';
 import 'swiper/css';
@@ -746,7 +749,15 @@ const Home = () => {
      image9={jeffwilson}
      image10={privateastrology}
      image11={Macbook}
-     
+     image12={cms1}
+     image13={cms2}
+     image14={cms3}
+     classmobileapp="nav-link"
+     classwebsite="nav-link"
+     classcms="nav-link"
+     CMS="CMS"
+     Mobile_Apps="Mobile Apps"
+     Websites="Websites"
      />
 
 

@@ -5,20 +5,24 @@ import androidiconw from "../../../src/asserts/images/android-icon-w.png";
 import angularicon from "../../../src/asserts/images/angular-icon.png";
 import appleicon from "../../../src/asserts/images/apple-icon.png";
 import ecommersedevhero from "../../../src/asserts/images/ecommersedevhero.png";
-
+import Particles from "react-particles";
+import { loadSlim } from "tsparticles-slim";
+import { useCallback } from "react";
 import fluttericon from "../../../src/asserts/images/flutter-icon.png";
 import reacticon from "../../../src/asserts/images/react-icon.png";
 import Ctnbutton from '../../Components/ctnbutton'
 
 const Aboutsection = (props) => {
-   
+ 
+
 
     const { CtnbuttonComponent, ctnButtonProps } = props;
 
     return (
         <div>
-            <section class="techVerse_about techVerse_aboutServices1" id="particles-js1">
-                <img
+            <section class="techVerse_about techVerse_aboutServices1"  id="particles-js1">
+            
+              <img
                     class="techVerse_about_icon1 animation11"
                     src={props?.pinkcapsol}
                     alt=""
@@ -34,6 +38,7 @@ const Aboutsection = (props) => {
                     src={props?.donatorange}
                     alt=""
                 />
+            
                 <div class="techVerse_aboutContent techVerse_aboutContentServices1">
                  <div className=" techVerse_heroContent">
                  <div class="container-fluid">
@@ -96,7 +101,7 @@ const Aboutsection = (props) => {
                                     <div class="techVerse_about_laptop_img">
                                         <img
                                             src={props?.image}
-                                            class="about-laptopImg business-devlopmentImg"
+                                            class={`about-laptopImg business-devlopmentImg ${props?.webclass}`}
                                             data-aos="fade-right"
                                             data-aos-offset="300"
                                             data-aos-duration="1000"
@@ -108,6 +113,7 @@ const Aboutsection = (props) => {
                     </div>
                  </div>
                 </div>
+               
             </section>
 
 

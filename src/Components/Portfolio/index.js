@@ -30,8 +30,8 @@ const Portfolio = (props) => {
                     src={props?.donatorange}
                     alt=""
                 />
-                <div class="techVerse_aboutContent techVerse_aboutContentServices2">
-                    <div class="container">
+                <div class="techVerse_aboutContent techVerse_aboutContentServices2 width-1600">
+                    <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="techVerse_about_img">
@@ -39,6 +39,7 @@ const Portfolio = (props) => {
                                         <img
                                             src={props?.image}
                                             class="about-laptopImg"
+                                            // class={`about-laptopImg ${props?.eduHR}`}
                                             data-aos="fade-right"
                                             data-aos-offset="300"
                                             data-aos-duration="1000"

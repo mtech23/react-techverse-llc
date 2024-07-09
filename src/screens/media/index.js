@@ -207,8 +207,8 @@ const Media = () => {
                 image11={Macbook}
                 classmobileapp="nav-link"
                 classwebsite="nav-link"
-                classcms="nav-link"
-                CMS="CMS"
+              
+              
                 Mobile_Apps="Mobile Apps"
                 Websites="Websites"
             />

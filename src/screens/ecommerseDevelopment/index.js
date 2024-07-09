@@ -39,7 +39,18 @@ import ecommerceabout1 from "../../asserts/images/ecommerce-about-1.png";
 import reacticon from "../../../src/asserts/images/react-icon.png";
 import donateWhite from "../../asserts/images/donate-white.png";
 import peramidicon from "../../asserts/images/peramid-icon.png";
+import ecomemrsescreen1 from "../../asserts/images/ecomemrse-screen1.png";
+import ecomemrsescreen2 from "../../asserts/images/ecomemrse-screen2.png";
+import ecomemrsescreen3 from "../../asserts/images/ecomemrse-screen3.png";
+import ecomemrsescreen4 from "../../asserts/images/ecomemrse-screen4.png";
+import ecomemrsescreen5 from "../../asserts/images/ecomemrse-screen5.png";
+import mobileframe from "../../asserts/images/mobile-frame.webp";
 
+import jeffwilson from "../../asserts/images/jeff-wilson.png";
+import carbuying from "../../asserts/images/car-buying.png";
+import lllreptile from "../../asserts/images/lll-reptile.png";
+import privateastrology from "../../asserts/images/private-astrology.png";
+import Macbook from "../../asserts/images/Macbook.png";
 import peramidleftangles from '../../asserts/images/peramid-left-angles.png';
 import orangehalfcircle from "../../asserts/images/orange-half-circle.png";
 import processicon1 from '../../asserts/images/process-icon-1.png'
@@ -176,20 +187,32 @@ const EcommerseDevelopment = () => {
         title="ECOMMERCE "
         subtitle="Portfolio"
         para="Our Company has worked with thousands of businesses all across the world and has developed highly functional, responsive, and feature-rich applications. Check out some of our best works:"
-
+        image1={ecomemrsescreen1}
+        image2={ecomemrsescreen2}
+        image3={ecomemrsescreen3}
+        image4={ecomemrsescreen4}
+        image5={ecomemrsescreen5}
+        image6={mobileframe}
+        image7={carbuying}
+        image8={lllreptile}
+        image9={jeffwilson}
+        image10={privateastrology}
+        image11={Macbook}
         Mobile_Apps="Mobile Apps"
         Websites="Websites"
         classmobileapp="nav-link"
         classwebsite="nav-link"
+
       />
 
 
  
-<Driving_Exprience        titleclass2="color-darkBlue"
+        <Driving_Exprience       
+        titleclass2="color-darkBlue"
         titleclass="color-darkBlue"
         title="Why Choose Our  "
-        subtitle="    Ecommerce App "
-        title2="         Development Service
+        subtitle="Ecommerce App "
+        title2="Development Service
 "
         image={ecommersdoubleScreens}/>
 

@@ -16,6 +16,7 @@ import Process from '../../Components/Process';
 import tpblue from "../../asserts/images/t-p-blue.png";
 import Portfolio from '../../Components/Portfolio'
 import tpblack from "../../asserts/images/t-p-black.png";
+import webimg01 from "../../asserts/images/web-img-01.png";
 
 import donateWhite from "../../asserts/images/donate-white.png";
 import peramidicon from "../../asserts/images/peramid-icon.png";
@@ -79,6 +80,7 @@ const WebDevelopment = () => {
     <UserLayout>
 
       <HeroSection
+         innerbgclass={"inner-bgColor"}
         title={"We"}
         subtitle={"Design Websites"}
         title2={"That Make Businesses Shine Online"}
@@ -109,7 +111,7 @@ const WebDevelopment = () => {
         //    chaticon: chatIcon,
         //    chatenow: "Chat Now"
         //  }}
-        image={digitalmarketing01}
+        image={webimg01}
         // WordPress="10+ Years of Experience"
         // PHP="Team of 50+ Digital Marketing Experts"
         // Shopify="2k+ Satisfied Clients"
@@ -128,7 +130,7 @@ const WebDevelopment = () => {
 
 
       {/* <!-- Website --> */}
-      <section class="techVerse_webSolution">
+      {/* <section class="techVerse_webSolution">
         <img
           class="techVerse_webSolution_icon1 animation11"
           src={donateWhite}
@@ -190,7 +192,11 @@ const WebDevelopment = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+      
+   {/* MOBILE APP */}
+
+   <Elevateyourbusiness />
 
 
 
@@ -202,10 +208,7 @@ const WebDevelopment = () => {
       <TechnologiesUse />
 
 
-      {/* MOBILE APP */}
-
-      <Elevateyourbusiness />
-
+   
       {/* FAQ section */}
 
       <Frequentlyaskquestion />

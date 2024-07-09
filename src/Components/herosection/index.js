@@ -35,6 +35,7 @@ const HeroSection = (props) => {
                                 <p
                                     data-aos="fade-right"
                                     data-aos-offset="300"
+                                    // data-aos-offset="300"
                                     data-aos-duration="2000"
                                 >
                                     {props?.tagline}                                    </p>
