@@ -64,7 +64,18 @@ import appstore from '../../asserts/images/app-store.png';
 import healthcareimg1 from '../../asserts/images/health-care-img1.png';
 import healthcareimg2 from '../../asserts/images/health-care-img2.png';
 import healthcareimg3 from '../../asserts/images/health-care-img3.png';
- 
+import healthcareportfolio1 from '../../asserts/images/health-care-portfolio1.png';
+import healthcareportfolio2 from '../../asserts/images/health-care-portfolio2.png';
+import healthcareportfolio3 from '../../asserts/images/health-care-portfolio3.png';
+import healthcareportfolio4 from '../../asserts/images/health-care-portfolio4.png';
+import healthcareportfolio5 from '../../asserts/images/health-care-portfolio5.png';
+import mobileframe from "../../asserts/images/mobile-frame.webp";
+import jeffwilson from "../../asserts/images/jeff-wilson.png";
+import carbuying from "../../asserts/images/car-buying.png";
+import lllreptile from "../../asserts/images/lll-reptile.png";
+import privateastrology from "../../asserts/images/private-astrology.png";
+import Macbook from "../../asserts/images/Macbook.png";
+import eduhrportfolio1 from "../../asserts/images/edu-hr-portfolio-1.png";
 import App_store from '../App_store';
 import App_development_solutions from '../../Components/App_development_solutions';
 import Development_Process from '../../Components/Development_Process';
@@ -152,6 +163,11 @@ const Health_care = () => {
 
         playstore={playstore}
         appstore={appstore}
+        phoneicon={phoneicon}
+        chaticon={chaticon}
+        pinkcapsol={pinkCapsol}
+        greencube={greenCube}
+        donatorange={donatorange}
       />
       <App_development_solutions />
 
@@ -159,7 +175,9 @@ const Health_care = () => {
         para="We follow a streamlined approach to ensure customer satisfaction by delivering customized real estate mobile app development solutions.
 
 "
-        image={healthcareimg2} />
+        image={healthcareimg2} 
+        sportsclass={"health-care-img-2"}
+        />
 
       <Portfolios
         title="HEALTH & LIFE SCIENCE "
@@ -172,6 +190,19 @@ const Health_care = () => {
         Websites="Websites"
         classmobileapp="nav-link"
         classwebsite="nav-link"
+        
+        image1={healthcareportfolio1}
+        image2={healthcareportfolio2}
+        image3={healthcareportfolio3}
+        image4={healthcareportfolio4}
+        image5={healthcareportfolio5}
+        image6={mobileframe}
+        image7={carbuying}
+        image8={lllreptile}
+        image9={jeffwilson}
+        image10={privateastrology}
+        image11={Macbook}
+
       />
 
 
@@ -181,7 +212,9 @@ const Health_care = () => {
         title="Why Choose Our  "
         subtitle="    Media & Entertainment "
         title2="    App Development Service"
-        image={healthcareimg3} />
+        image={healthcareimg3} 
+        
+        />
 
 
 

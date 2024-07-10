@@ -62,6 +62,7 @@ import processicon5 from '../../asserts/images/process-icon-5.png'
 import processicon6 from '../../asserts/images/process-icon-6.png'
 import Ctnbutton from '../../Components/ctnbutton'
 import Aboutsection from '../../Components/aboutsection';
+import Process from '../../Components/Process';
 import Aos from "aos";
 import 'swiper/css';
 import Website from '../../Components/Website';
@@ -125,7 +126,7 @@ const EcommerseDevelopment = () => {
         title2={"Powerful Online Retail Solutions"}
         tagline={"At Techverse LLC, we specialize in creating tailored E-Commerce Development solutions that empower businesses to thrive in the digital marketplace. Whether you're starting a new online store or aiming to enhance an existing platform, our squad of skilled developers and designers is devoted to delivering scalable, secure, and feature-rich solutions perfectly suited to your business."}
         className={"ecommerceDev_hero_img"}
-
+        heroimage={Ecommercedevelopmenthero}
 
         CtnbuttonComponent={Ctnbutton}
         ctnButtonProps={{
@@ -136,8 +137,7 @@ const EcommerseDevelopment = () => {
           chatenow: "Chat Us",
           secondaryButtonClass: "btn_with_icon btn_secondary  "
 
-          // playstore: playstore,
-          // appstore: appstore
+        
         }}
         classheroimage={Ecommercedevelopmenthero}
 
@@ -204,20 +204,20 @@ const EcommerseDevelopment = () => {
 
 
 
+  {/* MOBILE APP */}
+
+  <Elevateyourbusiness />
 
 
 
-      <App_development_solutions />
-
-
-      <Development_Process title="Our " subtitle="Real Estate" title2="Mobile App Development Process"
+      {/* <Development_Process title="Our " subtitle="Real Estate" title2="Mobile App Development Process"
         para="We follow a streamlined approach to ensure customer satisfaction by delivering customized real estate mobile app development solutions."
         image={ecommersedesktopimg}
 
 
-      />
+      /> */}
 
-      <Portfolios
+      {/* <Portfolios
         title="ECOMMERCE "
         subtitle="Portfolio"
         para="Our Company has worked with thousands of businesses all across the world and has developed highly functional, responsive, and feature-rich applications. Check out some of our best works:"
@@ -237,10 +237,14 @@ const EcommerseDevelopment = () => {
         classmobileapp="nav-link"
         classwebsite="nav-link"
 
-      />
+      /> */}
 
 
- 
+        {/* process we use */}
+        
+        <Process />
+
+
         <Driving_Exprience       
         titleclass2="color-darkBlue"
         titleclass="color-darkBlue"

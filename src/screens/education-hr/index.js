@@ -15,6 +15,7 @@ import TrustedPartners from '../../Components/TrustedPartners'
 import ecommersedesktopimg from '../../asserts/images/ecommerse-desktop-img.png'
 import eduhrimg1 from '../../asserts/images/edu-hr-img-1.png'
 import eduhrimg2 from '../../asserts/images/edu-hr-img-2.png'
+import eduhrimg2gif from '../../asserts/images/edu-hr-img-2.gif'
 import truspilot from "../../asserts/images/trus-pilot.png";
 import donatorange from "../../asserts/images/donat-orange.png";
 import greencube from "../../asserts/images/green-cube.png";
@@ -66,6 +67,8 @@ import eduhrportfolio2 from "../../asserts/images/edu-hr-portfolio-2.png";
 import eduhrportfolio3 from "../../asserts/images/edu-hr-portfolio-3.png";
 import eduhrportfolio4 from "../../asserts/images/edu-hr-portfolio-4.png";
 import eduhrportfolio5 from "../../asserts/images/edu-hr-portfolio-5.png";
+import neweduhrimg1 from "../../asserts/images/new-edu-hr-img-1.png";
+import eduhrimg3 from "../../asserts/images/edu-hr-img-3.png";
 
 
 import Ctnbutton from '../../Components/ctnbutton'
@@ -163,18 +166,23 @@ title2=" Us?
 "
 
 
-        image={eduhrimg2}
+    
         // image={eduhrimg1}
-       
-
+        eduHR={"new_edu_HR_img"}
+        image={neweduhrimg1}
         playstore={playstore}
         appstore={appstore}
+        phoneicon={phoneicon}
+        chaticon={chaticon}
+        pinkcapsol={pinkCapsol}
+        greencube={greenCube}
+        donatorange={donatorange}
       />
       <App_development_solutions />
 
       <Development_Process title="Our " subtitle="Real Estate" title2="Mobile App Development Process"
         para="We follow a streamlined approach to ensure customer satisfaction by delivering customized real estate mobile app development solutions."
-        image={ecommersedesktopimg} />
+        image={eduhrimg2gif} />
 
       <Portfolios
         title="ECOMMERCE "
@@ -210,7 +218,9 @@ title2=" Us?
         title="Why Choose Our  "
         subtitle="  Ecommerce App "
         title2=" Development Service"
-        image={ecommersdoubleScreens} />
+        image={eduhrimg3}
+        hrimg={"eduHR-img3"}
+         />
 
 
 

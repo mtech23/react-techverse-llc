@@ -38,11 +38,17 @@ const Portfolio = (props) => {
                                     <div class="techVerse_about_laptop_img">
                                         <img
                                             src={props?.image}
-                                            class="about-laptopImg"
-                                            // class={`about-laptopImg ${props?.eduHR}`}
+                                            // class="about-laptopImg"
+                                            class={`about-laptopImg ${props?.eduHR}`}
                                             data-aos="fade-right"
                                             data-aos-offset="300"
                                             data-aos-duration="1000"
+                                        />
+                                          <img src={props?.travelimg}
+                                            class="travel-img-1-airplane"
+                                            data-aos="fade-left"
+                                            data-aos-offset="0"
+                                            data-aos-duration="1000" 
                                         />
                                     </div>
                                 </div>
@@ -57,7 +63,7 @@ const Portfolio = (props) => {
                                             data-aos-duration="1000"
                                         >
                                             {props?.title}
-                                            <span class="color-lightBlue2">{props?.subtitle} </span>
+                                            <span class="color-lightBlue2"> {props?.subtitle} </span>
                                             {props?.title2}
                                         </h2>
                                         <p className={`${props?.classpara} aos-init aos-animate`}

@@ -14,7 +14,7 @@ import donatorange from "../../asserts/images/donat-orange.png";
 const Development_Process = (props) => {
     return (
         <div>
-            <section class="techVerse_about techVerse_aboutServices2 ">
+            <section class={`techVerse_about techVerse_aboutServices2 ${props?.travelbgclass} `}>
                 <img
                     class="techVerse_about_icon1 animation11"
                     src={pinkcapsol}
@@ -39,7 +39,7 @@ const Development_Process = (props) => {
                                     <div class="techVerse_about_laptop_img realEstate-gif">
                                         <img
                                             src={props?.image}
-                                            class="about-laptopImg"
+                                            class={`about-laptopImg ${props.sportsclass}`}
                                             data-aos="fade-right"
                                             data-aos-offset="300"
                                             data-aos-duration="1000"

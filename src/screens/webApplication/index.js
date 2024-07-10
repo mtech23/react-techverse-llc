@@ -5,7 +5,7 @@ import chaticon from "../../asserts/images/chat-icon.png";
 import herophonemockupgroup from "../../asserts/images/hero-phone-mockup-group.png";
 import Website from '../../Components/Website';
 import Aboutsection from '../../Components/aboutsection';
-import webapplicationhero1 from '../../asserts/images/web-application-hero_1.png'
+// import webapplicationhero1 from '../../asserts/images/web-application-hero_1.png'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import pinkcapsolgtom from '../../asserts/images/pink-capsol.png'
 import { Parallax, Pagination, Navigation } from 'swiper/modules';
@@ -38,6 +38,7 @@ import fluttericon from "../../asserts/images/flutter-icon.png";
 import reacticon from "../../asserts/images/react-icon.png";
 import Ctnbutton from '../../Components/ctnbutton'
 import webaboutimg11 from "../../asserts/images/web-about-img11.png";
+import webapplicationhero1 from "../../asserts/images/web-application-hero_1.png";
 
 
 import Aos from "aos";
@@ -69,8 +70,9 @@ const WebApplication = () => {
 
         title2={"Cutting-Edge Web Apps"}
         tagline={"Whether you're looking to streamline operations, enhance customer engagement, or drive efficiency, our web applications are designed to empower your business for the future. From intuitive user interfaces to robust backend systems, we ensure your application not only meets but exceeds expectations."}
-        className={"inner_hero"}
-        heroimage={webapplicationhero}
+        // className={"inner_hero"}
+        className={"webApp_hero_img"}
+        heroimage={webapplicationhero1}
 
       />
       {/* TrustedPartners */}
