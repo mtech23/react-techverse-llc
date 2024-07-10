@@ -238,13 +238,13 @@ h2 {
   flex-wrap: wrap;
 }
 .btn_with_icon_img {
-  width: 20px;
+  width: 25px;
 }
 .btn_with_icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 12px 30px;
+  padding: 15px 40px;
   color: #000000;
   gap: 10px;
   font-size: 18px;
@@ -318,17 +318,16 @@ h2 {
 .sec_title .sec_title_head {
   /* color: #02577a; */
   /* font-size: 51px; */
-  /* font-size: 38px; */
-  font-size: 35px;
+  font-size: 38px;
   font-weight: 700;
   line-height: 1.2;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   text-transform: uppercase;
   text-transform: capitalize;
 }
 .sec_title p {
   line-height: 2;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .techVerse_about {
   position: relative;
@@ -1704,29 +1703,6 @@ canvas.particles-js-canvas-el {
   width: 100%;
   background: #001c36ab;
 }
-
-.inner_hero_content h1,
-.inner_hero_content p,
-.inner_hero_content .techVerse_hero_btns {
-  position: relative;
-  z-index: 2;
-}
-
-.btn_black {
-  color: #02a9f7;
-  background: #272727 !important;
-}
-.btn_black:hover {
-  color: #02a9f7;
-}
-.btn_white {
-  background: #fff;
-  color: #02a9f7;
-}
-.btn_white:hover {
-  color: #02a9f7;
-}
-
 .contactUS_hero .inner-bgColor {
   /* background-image: url("./asserts/images/contact-herobg.png"); */
   opacity: 0.8;
@@ -2654,7 +2630,7 @@ canvas.particles-js-canvas-el {
     font-size: 13px;
   }
   .techVerse_store_link {
-    max-width: 120px !important;
+    max-width: 120px;
   }
 
   .webDev_hero_img {
@@ -2671,6 +2647,9 @@ canvas.particles-js-canvas-el {
   }
   .width-1600 {
     padding: 0px 20px;
+  }
+  .techVerse_store_link {
+    max-width: 120px;
   }
 }
 @media (max-width: 991px) {
@@ -2894,13 +2873,6 @@ canvas.particles-js-canvas-el {
   }
   .contact-page-subhead {
     font-size: 20px;
-  }
-  .contactUSNew_hero .inner_hero_content {
-    margin-bottom: 30px;
-  }
-  .techVerse_store_links {
-    margin: 10px 0 !important;
-    /* gap: 150px; */
   }
 }
 @media (max-width: 800px) {
@@ -3454,13 +3426,6 @@ font-size: 11px !important;
   }
   .eduHR-img3 {
     transform: scale(1.2) !important;
-  }
-  .contactPage_form {
-    padding: 20px !important;
-    border: 2px solid #3dc1ff !important;
-  }
-  .contactPage_form .row {
-    gap: 0;
   }
 }
 

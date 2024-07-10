@@ -1,18 +1,18 @@
-import React, { useEffect } from 'react';
-import './style.css'
+import React, { useEffect } from "react";
+import "./style.css";
 import { UserLayout } from "../../Components/Layout/UserLayout";
 import phoneicon from "../../asserts/images/phone-icon.png";
 import chaticon from "../../asserts/images/chat-icon.png";
 import herophonemockupgroup from "../../asserts/images/hero-phone-mockup-group.png";
-import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
+import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { gsap } from "gsap";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import TrustPartners from '../../Components/TrustedPartners'
-import { Parallax, Pagination, Navigation } from 'swiper/modules';
+import { Swiper, SwiperSlide } from "swiper/react";
+import TrustPartners from "../../Components/TrustedPartners";
+import { Parallax, Pagination, Navigation } from "swiper/modules";
 import clutch from "../../asserts/images/clutch.png";
-import ecommersdoubleScreens from '../../asserts/images/ecommers-doubleScreens.png'
-import TrustedPartners from '../../Components/TrustedPartners'
-import ecommersedesktopimg from '../../asserts/images/ecommerse-desktop-img.png'
+import ecommersdoubleScreens from "../../asserts/images/ecommers-doubleScreens.png";
+import TrustedPartners from "../../Components/TrustedPartners";
+import ecommersedesktopimg from "../../asserts/images/ecommerse-desktop-img.png";
 import truspilot from "../../asserts/images/trus-pilot.png";
 import donatorange from "../../asserts/images/donat-orange.png";
 import greencube from "../../asserts/images/green-cube.png";
@@ -26,12 +26,12 @@ import greenCube from "../../asserts/images/green-cube.png";
 import pinkCapsol from "../../asserts/images/pink-capsol.png";
 // import donatorange from "../../asserts/images/donat-orange.png";
 import ecommerceimg01 from "../../asserts/images/ecommerce-img-01.png";
-import ecommerce from '../../asserts/images/ecommerse-gif.gif'
+import ecommerce from "../../asserts/images/ecommerse-gif.gif";
 import androidiconw from "../../asserts/images/android-icon-w.png";
 import angularicon from "../../asserts/images/angular-icon.png";
 import appleicon from "../../asserts/images/apple-icon.png";
 import ecommersedevhero from "../../../src/asserts/images/ecommersedevhero.png";
-import HeroSection from '../../Components/herosection/index'
+import HeroSection from "../../Components/herosection/index";
 import fluttericon from "../../asserts/images/flutter-icon.png";
 import tpblue from "../../asserts/images/t-p-blue.png";
 import tpblack from "../../asserts/images/t-p-black.png";
@@ -40,40 +40,37 @@ import reacticon from "../../../src/asserts/images/react-icon.png";
 import donateWhite from "../../asserts/images/donate-white.png";
 import peramidicon from "../../asserts/images/peramid-icon.png";
 
-import peramidleftangles from '../../asserts/images/peramid-left-angles.png';
+import peramidleftangles from "../../asserts/images/peramid-left-angles.png";
 import orangehalfcircle from "../../asserts/images/orange-half-circle.png";
-import processicon1 from '../../asserts/images/process-icon-1.png'
-import arrowicon from '../../asserts/images/arrow-icon.png'
-import processicon2 from '../../asserts/images/process-icon-2.png'
-import processicon3 from '../../asserts/images/process-icon-3.png'
-import processicon4 from '../../asserts/images/process-icon-4.png'
-import processicon5 from '../../asserts/images/process-icon-5.png'
-import processicon6 from '../../asserts/images/process-icon-6.png'
-import Ctnbutton from '../../Components/ctnbutton'
-import Aboutsection from '../../Components/aboutsection';
+import processicon1 from "../../asserts/images/process-icon-1.png";
+import arrowicon from "../../asserts/images/arrow-icon.png";
+import processicon2 from "../../asserts/images/process-icon-2.png";
+import processicon3 from "../../asserts/images/process-icon-3.png";
+import processicon4 from "../../asserts/images/process-icon-4.png";
+import processicon5 from "../../asserts/images/process-icon-5.png";
+import processicon6 from "../../asserts/images/process-icon-6.png";
+import Ctnbutton from "../../Components/ctnbutton";
+import Aboutsection from "../../Components/aboutsection";
 import Aos from "aos";
-import 'swiper/css';
-import Website from '../../Components/Website';
-import TechnologiesUse from '../../Components/technologiesuse';
-import Frequentlyaskquestion from '../../Components/frequentlyaskquestion';
-import Elevateyourbusiness from '../../Components/elevateyourbusiness';
-import Portfolio from '../../Components/Portfolio';
-import { playstore } from '../../asserts/images';
-import appstore from '../../asserts/images/app-store.png';
-import Ecommercedevelopmenthero from '../../asserts/images/Ecommerce-development-hero.png';
+import "swiper/css";
+import Website from "../../Components/Website";
+import TechnologiesUse from "../../Components/technologiesuse";
+import Frequentlyaskquestion from "../../Components/frequentlyaskquestion";
+import Elevateyourbusiness from "../../Components/elevateyourbusiness";
+import Portfolio from "../../Components/Portfolio";
+import { playstore } from "../../asserts/images";
+import appstore from "../../asserts/images/app-store.png";
+import Ecommercedevelopmenthero from "../../asserts/images/Ecommerce-development-hero.png";
 
-import App_store from '../App_store';
-import App_development_solutions from '../../Components/App_development_solutions';
-import Development_Process from '../../Components/Development_Process';
-import Portfolios from '../../Components/portfolios';
-import Driving_Exprience from '../../Components/Driving_experience';
-import Testimonials from '../../Components/Tetimonials';
+import App_store from "../App_store";
+import App_development_solutions from "../../Components/App_development_solutions";
+import Development_Process from "../../Components/Development_Process";
+import Portfolios from "../../Components/portfolios";
+import Driving_Exprience from "../../Components/Driving_experience";
+import Testimonials from "../../Components/Tetimonials";
 gsap.registerPlugin(MotionPathPlugin);
 const EcommerseDevelopment = () => {
-
-
   Aos.init();
-
 
   useEffect(() => {
     gsap.set(".road", { opacity: 1 });
@@ -102,20 +99,17 @@ const EcommerseDevelopment = () => {
 
   return (
     <UserLayout>
-
-
-
-
       <HeroSection
         innerbgclass={"inner-bgColor"}
         // classheroimage={"inner-ecommerce-bgColor"}
         title={"    Your Gateway"}
         subtitle={"To "}
         title2={"Powerful Online Retail Solutions"}
-        tagline={"At Techverse LLC, we specialize in creating tailored E-Commerce Development solutions that empower businesses to thrive in the digital marketplace. Whether you're starting a new online store or aiming to enhance an existing platform, our squad of skilled developers and designers is devoted to delivering scalable, secure, and feature-rich solutions perfectly suited to your business."}
+        tagline={
+          "At Techverse LLC, we specialize in creating tailored E-Commerce Development solutions that empower businesses to thrive in the digital marketplace. Whether you're starting a new online store or aiming to enhance an existing platform, our squad of skilled developers and designers is devoted to delivering scalable, secure, and feature-rich solutions perfectly suited to your business."
+        }
         className={"ecommerceDev_hero_img"}
-
-
+        heroimage={Ecommercedevelopmenthero}
         CtnbuttonComponent={Ctnbutton}
         ctnButtonProps={{
           phoneicon: phoneicon,
@@ -123,23 +117,19 @@ const EcommerseDevelopment = () => {
           primaryButtonClass: "btn_with_icon",
           chaticon: chaticon,
           chatenow: "Chat Us",
-          secondaryButtonClass: "btn_with_icon btn_secondary  "
+          secondaryButtonClass: "btn_with_icon btn_secondary  ",
 
           // playstore: playstore,
           // appstore: appstore
         }}
         classheroimage={Ecommercedevelopmenthero}
-
       />
-
-
 
       {/* <!-- Trusted Partners --> */}
 
       <TrustedPartners />
 
       {/* <!-- About Sec --> */}
-
 
       {/* <Aboutsection
         pinkcapsol={pinkcapsol}
@@ -164,12 +154,10 @@ const EcommerseDevelopment = () => {
       />
  */}
 
-
       <Aboutsection
         pinkcapsol={pinkcapsol}
         greencube={greencube}
         donatorange={donatorange}
-
         CtnbuttonComponent={Ctnbutton}
         ctnButtonProps={{
           phoneicon: phoneicon,
@@ -177,70 +165,53 @@ const EcommerseDevelopment = () => {
           primaryButtonClass: "btn_with_icon",
           chaticon: chaticon,
           chatenow: "Chat Us",
-          secondaryButtonClass: "btn_with_icon btn_secondary  "
+          secondaryButtonClass: "btn_with_icon btn_secondary  ",
 
           // playstore: playstore,
           // appstore: appstore
         }}
-        title="Drive Profitability" subtitle=" With " title2="Our Seamless E-Commerce Solutions.  "
+        title="Drive Profitability"
+        subtitle=" With "
+        title2="Our Seamless E-Commerce Solutions.  "
         para="Our expert team customizes every aspect of your website, from intuitive user interfaces to robust backend systems, ensuring seamless functionality and enhanced customer experiences. Whether you're launching a new venture or upgrading an existing platform, trust Techverse LLC to deliver scalable, secure, and visually stunning E-Commerce websites that maximize conversions and propel your business forward in the digital age."
-
-
-
         image={ecommerceabout1}
-
       />
-
-
-
-
-
 
       <App_development_solutions />
 
-
-      <Development_Process title="Our " subtitle="Real Estate" title2="Mobile App Development Process"
+      <Development_Process
+        title="Our "
+        subtitle="Real Estate"
+        title2="Mobile App Development Process"
         para="We follow a streamlined approach to ensure customer satisfaction by delivering customized real estate mobile app development solutions."
         image={ecommersedesktopimg}
-
-
       />
 
       <Portfolios
         title="ECOMMERCE "
         subtitle="Portfolio"
         para="Our Company has worked with thousands of businesses all across the world and has developed highly functional, responsive, and feature-rich applications. Check out some of our best works:"
-
         Mobile_Apps="Mobile Apps"
         Websites="Websites"
         classmobileapp="nav-link"
         classwebsite="nav-link"
       />
 
-
-
-      <Driving_Exprience titleclass2="color-darkBlue"
+      <Driving_Exprience
+        titleclass2="color-darkBlue"
         titleclass="color-darkBlue"
         title="Why Choose Our  "
         subtitle="    Ecommerce App "
         title2="         Development Service
 "
-        image={ecommersdoubleScreens} />
-
-
-
-
+        image={ecommersdoubleScreens}
+      />
 
       <TechnologiesUse />
       <Testimonials />
 
-
-
-
-
-
       <Frequentlyaskquestion />
     </UserLayout>
-  )
-}
-export default EcommerseDevelopment
+  );
+};
+export default EcommerseDevelopment;
