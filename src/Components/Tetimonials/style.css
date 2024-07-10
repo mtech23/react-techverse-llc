@@ -1,0 +1,209 @@
+
+/* Testimonials Start */
+/* .techVerse_testimonials .sec_title {
+  text-align: center;
+}
+.techVerse_testimonials {
+  padding: 60px 0;
+}
+.testimonail_box {
+  border: 1px solid #2c5871;
+  padding: 20px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.testimonail_box:before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 50%;
+  background: #02a9f7;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.start-quote {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.testimonail_name {
+  margin: 0;
+  color: #2c5871;
+  font-size: 18px;
+  font-weight: 600;
+}
+.testimonail_quote {
+  font-size: 16px;
+  line-height: 2;
+  color: #666666;
+}
+.testimonail_quote:before {
+  content: open-quote;
+}
+.testimonail_quote:after {
+  content: close-quote;
+} */
+
+.rc {
+  width: 400px;
+  height: 400px;
+  border-radius: 100%;
+  -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+  -webkit-transform: rotate(0.000001deg);
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+}
+
+body .rc h2 {
+  padding: 0px;
+  margin-bottom: 0 !important;
+}
+
+.testimonial h2 {
+  color: #0bacf7 !important;
+  margin-bottom: 0px;
+  line-height: 13px;
+}
+
+.testimonial p {
+  margin: 0px;
+  font-size: 14px;
+  line-height: 15px;
+}
+
+.techVerse_testimonialsContent {
+max-width: 1600px;
+margin: 0 auto;
+}
+
+.techVerse_testimonials {
+padding: 60px 0;
+}
+.testimonials_titleHead img {
+width: 285px;
+}
+.testimonials_titleHead span {
+color: #02a9f7;
+font-size: 16px;
+font-family: "Poppins", sans-serif;
+letter-spacing: 10px;
+}
+.testimonials_title {
+font-family: "Sora", sans-serif;
+font-weight: 700;
+font-size: 71px;
+}
+.techVerse_testimonialsTextSec-img {
+text-align: right;
+position: relative;
+height: 330px;
+margin-top: -50px;
+margin-right: 20px;
+}
+
+.face_1,
+.face_2,
+.face_3,
+.face_4,
+.face_5,
+.face_6,
+.face_7 {
+position: absolute;
+}
+.face_2 {
+right: 0;
+top: 10px;
+}
+.face_1 {
+right: 20%;
+}
+.face_5 {
+right: 13%;
+top: 120px;
+}
+.face_4 {
+right: 30%;
+top: 150px;
+}
+.face_3 {
+right: 40%;
+top: 100px;
+}
+.face_6 {
+right: 20%;
+top: 200px;
+}
+.face_7 {
+right: 0;
+top: 175px;
+}
+.techVerse_testimonialsTextSec-img img {
+margin-top: 0px;
+}
+
+.techVerse_testimonials .row {
+align-items: center;
+}
+.testimonial {
+border: 0px solid #02a9f7;
+padding: 80px;
+border-radius: 50%;
+height: 550px;
+width: 550px;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+margin: 0 auto;
+position: relative;
+}
+.testimonial .content p {
+display: -webkit-box;
+-webkit-line-clamp: 6;
+-webkit-box-orient: vertical;
+overflow: hidden;
+line-height: 2.5;
+}
+.play-icon {
+border: unset;
+color: #02a9f7;
+position: absolute;
+background: #fff;
+top: -50px;
+left: 50%;
+transform: translateX(-50%);
+padding: 40px 30px 0px 50px;
+}
+.play-icon:focus {
+border: unset;
+outline: none;
+}
+.play-icon i {
+font-size: 116px;
+cursor: pointer;
+}
+.testimonial-video iframe {
+  width: 100%;
+  height: 410px;
+}
+.testimoial_modal .modal-body {
+  background: #02577a;
+  position: relative;
+}
+.test_closeBtn {
+  color: #fff;
+  opacity: 1;
+  font-weight: 400;
+  font-size: 46px;
+  /* position: absolute; */
+  right: 20px;
+  top: 16px;
+}
+.test_closeBtn:hover{
+  color: #fff;
+  opacity: 1;
+  outline: none;
+  border: unset;
+}

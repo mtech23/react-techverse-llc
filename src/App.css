@@ -749,7 +749,7 @@ body .rc h2 {
   align-items: center;
 }
 .testimonial {
-  border: 1px solid #02a9f7;
+  /* border: 1px solid #02a9f7; */
   padding: 80px;
   border-radius: 50%;
   height: 550px;

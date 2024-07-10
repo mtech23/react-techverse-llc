@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import phoneicon from "../../../src/asserts/images/phone-icon.png";
 import chaticon from "../../../src/asserts/images/chat-icon.png";
 import androidiconw from "../../../src/asserts/images/android-icon-w.png";
@@ -10,12 +10,10 @@ import { loadSlim } from "tsparticles-slim";
 import { useCallback } from "react";
 import fluttericon from "../../../src/asserts/images/flutter-icon.png";
 import reacticon from "../../../src/asserts/images/react-icon.png";
-import Ctnbutton from '../../Components/ctnbutton'
+import Ctnbutton from "../../Components/ctnbutton";
 
 const Aboutsection = (props) => {
-
-
-    const { CtnbuttonComponent, ctnButtonProps } = props;
+  const { CtnbuttonComponent, ctnButtonProps } = props;
 
     return (
         <div>
@@ -62,45 +60,42 @@ const Aboutsection = (props) => {
                                         >
                                             {props?.para}
                                         </p> */}
-                                            <p
-                                                data-aos="fade-up"
-                                                data-aos-offset="0"
-                                                data-aos-duration="2000"
-                                            >
-                                                {props?.para}
-                                            </p>
-                                            <p
-                                                data-aos="fade-up"
-                                                data-aos-offset="0"
-                                                data-aos-duration="2000"
-                                            >
-                                                {props?.para2}
-                                            </p>
+                      <p
+                        data-aos="fade-up"
+                        data-aos-offset="0"
+                        data-aos-duration="2000"
+                      >
+                        {props?.para}
+                      </p>
+                      <p
+                        data-aos="fade-up"
+                        data-aos-offset="0"
+                        data-aos-duration="2000"
+                      >
+                        {props?.para2}
+                      </p>
 
-                                            <ul
-                                                className="body-unorder-list"
-                                                data-aos="fade-up"
-                                                data-aos-offset="0"
-                                                data-aos-duration="2000"
-                                            >
-                                                {props?.listItems?.map((item, index) => (
-                                                    <li key={index}>{item}</li>
-                                                ))}
-                                            </ul>
+                      <ul
+                        className="body-unorder-list"
+                        data-aos="fade-up"
+                        data-aos-offset="0"
+                        data-aos-duration="2000"
+                      >
+                        {props?.listItems?.map((item, index) => (
+                          <li key={index}>{item}</li>
+                        ))}
+                      </ul>
 
-
-
-                                            <ul
-                                                className="body-bullet-list"
-                                                data-aos="fade-up"
-                                                data-aos-offset="300"
-                                                data-aos-duration="2000"
-                                            >
-                                                {props?.bulletListItems?.map((item, index) => (
-                                                    <li key={index}>{item}</li>
-                                                ))}
-                                            </ul>
-
+                      <ul
+                        className="body-bullet-list"
+                        data-aos="fade-up"
+                        data-aos-offset="0"
+                        data-aos-duration="2000"
+                      >
+                        {props?.bulletListItems?.map((item, index) => (
+                          <li key={index}>{item}</li>
+                        ))}
+                      </ul>
 
                                         {CtnbuttonComponent && (
                                             <CtnbuttonComponent {...ctnButtonProps} />
@@ -133,4 +128,4 @@ const Aboutsection = (props) => {
     )
 }
 
-export default Aboutsection
+export default Aboutsection;

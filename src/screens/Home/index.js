@@ -1,39 +1,39 @@
-import React, { useEffect, } from 'react';
+import React, { useEffect } from "react";
 
 import { UserLayout } from "../../Components/Layout/UserLayout";
-import Portfolios from "../../Components/portfolios"
+import Portfolios from "../../Components/portfolios";
 import phoneicon from "../../asserts/images/phone-icon.png";
 import herophonemockupgroup from "../../asserts/images/hero-phone-mockup-group.png";
-import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
-import bluecubelarge from '../../asserts/images/blue-cube-large.png'
-import Particles from 'react-particles';
-import { loadFull } from 'tsparticles';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Parallax, Pagination, Navigation, Autoplay } from 'swiper/modules';
+import { MotionPathPlugin } from "gsap/MotionPathPlugin";
+import bluecubelarge from "../../asserts/images/blue-cube-large.png";
+import Particles from "react-particles";
+import { loadFull } from "tsparticles";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Parallax, Pagination, Navigation, Autoplay } from "swiper/modules";
 import { gsap } from "gsap";
 // peramidLeftAngles
 // path_to_peramidleftangles
 // import mobileAppImg from '../assets/images/mobileAppimg.png';
 
-import goodfirms from '../../asserts/images/good-firms.png';
-import partnersbbb from '../../asserts/images/partners-bbb.png';
-import partnerstruspilot from '../../asserts/images/partners-trus-pilot.png';
-import partnersclutch from '../../asserts/images/partners-clutch.png';
-import peramidleftangles from '../../asserts/images/peramid-left-angles.png';
-import pinkcapsol from '../../asserts/images/pink-capsol.png';
-import chaticonblues from '../../asserts/images/chat-icon-blue.png'
+import goodfirms from "../../asserts/images/good-firms.png";
+import partnersbbb from "../../asserts/images/partners-bbb.png";
+import partnerstruspilot from "../../asserts/images/partners-trus-pilot.png";
+import partnersclutch from "../../asserts/images/partners-clutch.png";
+import peramidleftangles from "../../asserts/images/peramid-left-angles.png";
+import pinkcapsol from "../../asserts/images/pink-capsol.png";
+import chaticonblues from "../../asserts/images/chat-icon-blue.png";
 
-import mobileAppimg from '../../asserts/images/mobileAppimg.png'
+import mobileAppimg from "../../asserts/images/mobileAppimg.png";
 // import 'path_to_your_css_file.css';
-import processicon1 from '../../asserts/images/process-icon-1.png'
-import arrowicon from '../../asserts/images/arrow-icon.png'
-import processicon2 from '../../asserts/images/process-icon-2.png'
-import processicon3 from '../../asserts/images/process-icon-3.png'
-import processicon4 from '../../asserts/images/process-icon-4.png'
-import processicon5 from '../../asserts/images/process-icon-5.png'
-import processicon6 from '../../asserts/images/process-icon-6.png'
+import processicon1 from "../../asserts/images/process-icon-1.png";
+import arrowicon from "../../asserts/images/arrow-icon.png";
+import processicon2 from "../../asserts/images/process-icon-2.png";
+import processicon3 from "../../asserts/images/process-icon-3.png";
+import processicon4 from "../../asserts/images/process-icon-4.png";
+import processicon5 from "../../asserts/images/process-icon-5.png";
+import processicon6 from "../../asserts/images/process-icon-6.png";
 
-import peramidleftangle from "../../asserts/images/peramid-left-angles.png"
+import peramidleftangle from "../../asserts/images/peramid-left-angles.png";
 import clutch from "../../asserts/images/clutch.png";
 import truspilot from "../../asserts/images/trus-pilot.png";
 import laptopFrame from "../../asserts/images/laptop-Frame.png";
@@ -87,10 +87,10 @@ import cms1 from "../../asserts/images/Cms-1.png";
 import cms2 from "../../asserts/images/CMS-2.png";
 import cms3 from "../../asserts/images/CMS-3.png";
 import Aos from "aos";
-import 'swiper/css/pagination';
-import 'swiper/css';
-import Process from '../../Components/Process';
-import Testimonials from '../../Components/Tetimonials';
+import "swiper/css/pagination";
+import "swiper/css";
+import Process from "../../Components/Process";
+import Testimonials from "../../Components/Tetimonials";
 gsap.registerPlugin(MotionPathPlugin);
 
 const Home = () => {
@@ -127,12 +127,11 @@ const Home = () => {
 
   return (
     <UserLayout>
-
-      <div className="relative" >
+      <div className="relative">
         <Swiper
           style={{
-            '--swiper-navigation-color': '#fff',
-            '--swiper-pagination-color': '#fff',
+            "--swiper-navigation-color": "#fff",
+            "--swiper-pagination-color": "#fff",
           }}
           speed={600}
           parallax={true}
@@ -153,10 +152,6 @@ const Home = () => {
             data-swiper-parallax="-23%"
           ></div>
           <SwiperSlide>
-
-
-
-
             <section class="techVerse_hero hoverEffectSec">
               <div class="techVerse_heroContent">
                 <div class="container-fluid">
@@ -177,8 +172,13 @@ const Home = () => {
                           data-aos-offset="300"
                           data-aos-duration="2000"
                         >
-                          At Techverse LLC, we are at the forefront of mobile app development, shaping the future with innovation and cutting-edge technology. Our team of expert developers,
-                          designers, and organizers work tirelessly to transform visionary ideas into dynamic mobile solutions that meet the needs of an ever-evolving digital landscape.
+                          At Techverse LLC, we are at the forefront of mobile
+                          app development, shaping the future with innovation
+                          and cutting-edge technology. Our team of expert
+                          developers, designers, and organizers work tirelessly
+                          to transform visionary ideas into dynamic mobile
+                          solutions that meet the needs of an ever-evolving
+                          digital landscape.
                         </p>
                         <div
                           class="techVerse_hero_btns"
@@ -209,15 +209,15 @@ const Home = () => {
                           data-aos-offset="300"
                           data-aos-duration="3000"
                         >
-                          <a href="#" class="hero_brands_img"
-                          ><img src={clutch} alt=""
-                            /></a>
-                          <a href="#" class="hero_brands_img"
-                          ><img src={truspilot} alt=""
-                            /></a>
-                          <a href="#" class="hero_brands_img"
-                          ><img src={bbb} alt=""
-                            /></a>
+                          <a href="#" class="hero_brands_img">
+                            <img src={clutch} alt="" />
+                          </a>
+                          <a href="#" class="hero_brands_img">
+                            <img src={truspilot} alt="" />
+                          </a>
+                          <a href="#" class="hero_brands_img">
+                            <img src={bbb} alt="" />
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -251,18 +251,9 @@ const Home = () => {
                 </div>
               </div>
             </section>
-
-
           </SwiperSlide>
-
-
-
 
           <SwiperSlide>
-
-
-
-
             <section class="techVerse_hero hoverEffectSec">
               <div class="techVerse_heroContent">
                 <div class="container-fluid">
@@ -283,8 +274,13 @@ const Home = () => {
                           data-aos-offset="300"
                           data-aos-duration="2000"
                         >
-                          At Techverse LLC, we are at the forefront of mobile app development, shaping the future with innovation and cutting-edge technology. Our team of expert developers,
-                          designers, and organizers work tirelessly to transform visionary ideas into dynamic mobile solutions that meet the needs of an ever-evolving digital landscape.
+                          At Techverse LLC, we are at the forefront of mobile
+                          app development, shaping the future with innovation
+                          and cutting-edge technology. Our team of expert
+                          developers, designers, and organizers work tirelessly
+                          to transform visionary ideas into dynamic mobile
+                          solutions that meet the needs of an ever-evolving
+                          digital landscape.
                         </p>
                         <div
                           class="techVerse_hero_btns"
@@ -315,15 +311,15 @@ const Home = () => {
                           data-aos-offset="300"
                           data-aos-duration="3000"
                         >
-                          <a href="#" class="hero_brands_img"
-                          ><img src={clutch} alt=""
-                            /></a>
-                          <a href="#" class="hero_brands_img"
-                          ><img src={truspilot} alt=""
-                            /></a>
-                          <a href="#" class="hero_brands_img"
-                          ><img src={bbb} alt=""
-                            /></a>
+                          <a href="#" class="hero_brands_img">
+                            <img src={clutch} alt="" />
+                          </a>
+                          <a href="#" class="hero_brands_img">
+                            <img src={truspilot} alt="" />
+                          </a>
+                          <a href="#" class="hero_brands_img">
+                            <img src={bbb} alt="" />
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -357,34 +353,11 @@ const Home = () => {
                 </div>
               </div>
             </section>
-
-
-
-
-
           </SwiperSlide>
-
         </Swiper>
-
       </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
       {/* 'backgroundImage: url(../../asserts/images/hero-bg.png);' */}
-
-
-
-
 
       {/* <!-- About Sec --> */}
       <section class="techVerse_about" id="particles-js1">
@@ -393,16 +366,8 @@ const Home = () => {
           src={pinkcapsol}
           alt=""
         />
-        <img
-          class="techVerse_about_icon2 animation33"
-          src={Pill}
-          alt=""
-        />
-        <img
-          class="techVerse_about_icon3 animation11"
-          src={greencube}
-          alt=""
-        />
+        <img class="techVerse_about_icon2 animation33" src={Pill} alt="" />
+        <img class="techVerse_about_icon3 animation11" src={greencube} alt="" />
         <img
           class="techVerse_about_icon4 animation11"
           src={donatorange}
@@ -450,18 +415,18 @@ const Home = () => {
                       data-aos-duration="2000"
                     >
                       We boast a team of dynamic and seasoned web developers
-                      committed to delivering top-notch quality. Our core focus is
-                      on providing exceptional services, and we take pride in
+                      committed to delivering top-notch quality. Our core focus
+                      is on providing exceptional services, and we take pride in
                       catering to the needs of our discerning clientele. While
                       many promise excellence, we believe in truly serving our
                       customers. Our dedication lies in crafting remarkable web
-                      designs that not only establish a distinctive brand identity
-                      but also ensure a prominent presence in the market. Equipped
-                      with the latest tools and innovative techniques, our
-                      professionals are poised to enhance your brand's visual
-                      appeal. We are dedicated to elevating your communication
-                      with potential clients, ensuring you always stand out in the
-                      market.
+                      designs that not only establish a distinctive brand
+                      identity but also ensure a prominent presence in the
+                      market. Equipped with the latest tools and innovative
+                      techniques, our professionals are poised to enhance your
+                      brand's visual appeal. We are dedicated to elevating your
+                      communication with potential clients, ensuring you always
+                      stand out in the market.
                     </p>
                     <div
                       class="techVerse_hero_btns"
@@ -478,11 +443,7 @@ const Home = () => {
                         <span class="btn_with_icon_text">Call Now</span>
                       </a>
                       <a href="#" class="btn_with_icon btn_secondary">
-                        <img
-                          class="btn_with_icon_img"
-                          src={chat_icon}
-                          alt=""
-                        />
+                        <img class="btn_with_icon_img" src={chat_icon} alt="" />
                         <span class="btn_with_icon_text">Chat Now</span>
                       </a>
                     </div>
@@ -518,17 +479,17 @@ const Home = () => {
                     data-aos-duration="1000"
                   >
                     Revolutionize Your Business Presence
-                    <span class="color-lightBlue2"> With    </span>
-                    A Custom Website Design
+                    <span class="color-lightBlue2"> With </span>A Custom Website
+                    Design
                   </h2>
                   <p
                     data-aos="fade-up"
                     data-aos-offset="300"
                     data-aos-duration="2000"
                   >
-                    Our expert team combines cutting-edge technology with creative finesse to craft custom websites that not only enhance user experience but also drive tangible results.
-
-
+                    Our expert team combines cutting-edge technology with
+                    creative finesse to craft custom websites that not only
+                    enhance user experience but also drive tangible results.
                   </p>
                   <div
                     class="techVerse_hero_btns"
@@ -559,7 +520,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
 
       {/* <!-- Services --> */}
       <section class="techVerse_services" id="particles-js2">
@@ -605,11 +565,11 @@ const Home = () => {
                 data-aos-offset="300"
                 data-aos-duration="2000"
               >
-                Techverse does not provide services only; we become a partner with
-                our clients to scale up their businesses with our wide range of
-                digital marketing services. We have helped hundreds of large
-                enterprises in the US to get new wings to fly higher on the
-                digital landscapes globally. Get a unique digital marketing
+                Techverse does not provide services only; we become a partner
+                with our clients to scale up their businesses with our wide
+                range of digital marketing services. We have helped hundreds of
+                large enterprises in the US to get new wings to fly higher on
+                the digital landscapes globally. Get a unique digital marketing
                 experience with the amalgamation of our proven strategies,
                 professional team, and the use of modern technology.
               </p>
@@ -631,8 +591,8 @@ const Home = () => {
                   <h3 class="service_box_title">Cross-Platform Development</h3>
                   <p class="service_box_p">
                     Elevate your mobile apps by overlaying virtual elements onto
-                    the real world, enhancing user interaction, entertainment, and
-                    practical experiences to instill a UX unlike any other.
+                    the real world, enhancing user interaction, entertainment,
+                    and practical experiences to instill a UX unlike any other.
                   </p>
                 </div>
               </div>
@@ -647,8 +607,8 @@ const Home = () => {
                   <h3 class="service_box_title">Cross-Platform Development</h3>
                   <p class="service_box_p">
                     Elevate your mobile apps by overlaying virtual elements onto
-                    the real world, enhancing user interaction, entertainment, and
-                    practical experiences to instill a UX unlike any other.
+                    the real world, enhancing user interaction, entertainment,
+                    and practical experiences to instill a UX unlike any other.
                   </p>
                 </div>
               </div>
@@ -663,8 +623,8 @@ const Home = () => {
                   <h3 class="service_box_title">Cross-Platform Development</h3>
                   <p class="service_box_p">
                     Elevate your mobile apps by overlaying virtual elements onto
-                    the real world, enhancing user interaction, entertainment, and
-                    practical experiences to instill a UX unlike any other.
+                    the real world, enhancing user interaction, entertainment,
+                    and practical experiences to instill a UX unlike any other.
                   </p>
                 </div>
               </div>
@@ -679,8 +639,8 @@ const Home = () => {
                   <h3 class="service_box_title">Cross-Platform Development</h3>
                   <p class="service_box_p">
                     Elevate your mobile apps by overlaying virtual elements onto
-                    the real world, enhancing user interaction, entertainment, and
-                    practical experiences to instill a UX unlike any other.
+                    the real world, enhancing user interaction, entertainment,
+                    and practical experiences to instill a UX unlike any other.
                   </p>
                 </div>
               </div>
@@ -695,8 +655,8 @@ const Home = () => {
                   <h3 class="service_box_title">Cross-Platform Development</h3>
                   <p class="service_box_p">
                     Elevate your mobile apps by overlaying virtual elements onto
-                    the real world, enhancing user interaction, entertainment, and
-                    practical experiences to instill a UX unlike any other.
+                    the real world, enhancing user interaction, entertainment,
+                    and practical experiences to instill a UX unlike any other.
                   </p>
                 </div>
               </div>
@@ -711,8 +671,8 @@ const Home = () => {
                   <h3 class="service_box_title">Cross-Platform Development</h3>
                   <p class="service_box_p">
                     Elevate your mobile apps by overlaying virtual elements onto
-                    the real world, enhancing user interaction, entertainment, and
-                    practical experiences to instill a UX unlike any other.
+                    the real world, enhancing user interaction, entertainment,
+                    and practical experiences to instill a UX unlike any other.
                   </p>
                 </div>
               </div>
@@ -734,7 +694,6 @@ const Home = () => {
 
       {/* <!-- Portfolio --> */}
       <Portfolios
-
         title="Our"
         subtitle="Portfolio"
         para="Our Company has worked with thousands of businesses 
@@ -766,27 +725,8 @@ const Home = () => {
       {/* process we use */}
       <Process />
 
-
       {/* MOBILE APP */}
       <Testimonials />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
       {/* <!-- Case Studies --> */}
       <section class="techVerse_caseStudies">
@@ -829,9 +769,10 @@ const Home = () => {
                     data-aos-offset="300"
                     data-aos-duration="2000"
                   >
-                    Our Company has worked with thousands of businesses all across
-                    the world and has developed highly functional, responsive, and
-                    feature-rich applications. Check out some of our best works:
+                    Our Company has worked with thousands of businesses all
+                    across the world and has developed highly functional,
+                    responsive, and feature-rich applications. Check out some of
+                    our best works:
                   </p>
                 </div>
               </div>
@@ -847,7 +788,11 @@ const Home = () => {
               </div>
               <div class="col-lg-4 col-md-6">
                 <div
-                  class="techVerse_caseStudy_img bgOrange" style={{ backgroundImage: "url(https://custom.mystagingserver.site/techversellc/images/p2-bg.png)" }}
+                  class="techVerse_caseStudy_img bgOrange"
+                  style={{
+                    backgroundImage:
+                      "url(https://custom.mystagingserver.site/techversellc/images/p2-bg.png)",
+                  }}
                   data-aos="fade-up"
                   data-aos-offset="300"
                   data-aos-duration="2000"
@@ -857,7 +802,11 @@ const Home = () => {
               </div>
               <div class="col-lg-4 col-md-6">
                 <div
-                  class="techVerse_caseStudy_img bgOrange" style={{ backgroundImage: "url(https://custom.mystagingserver.site/techversellc/images/p3-bg.png)" }}
+                  class="techVerse_caseStudy_img bgOrange"
+                  style={{
+                    backgroundImage:
+                      "url(https://custom.mystagingserver.site/techversellc/images/p3-bg.png)",
+                  }}
                   data-aos="fade-left"
                   data-aos-offset="300"
                   data-aos-duration="3000"
@@ -867,7 +816,11 @@ const Home = () => {
               </div>
               <div class="col-lg-4 col-md-6">
                 <div
-                  class="techVerse_caseStudy_img bgOrange" style={{ backgroundImage: "url(https://custom.mystagingserver.site/techversellc/images/p4-bg.png)" }}
+                  class="techVerse_caseStudy_img bgOrange"
+                  style={{
+                    backgroundImage:
+                      "url(https://custom.mystagingserver.site/techversellc/images/p4-bg.png)",
+                  }}
                   data-aos="fade-right"
                   data-aos-offset="300"
                   data-aos-duration="1000"
@@ -877,7 +830,11 @@ const Home = () => {
               </div>
               <div class="col-lg-4 col-md-6">
                 <div
-                  class="techVerse_caseStudy_img bgOrange " style={{ backgroundImage: "url(https://custom.mystagingserver.site/techversellc/images/p5-bg.png)" }}
+                  class="techVerse_caseStudy_img bgOrange "
+                  style={{
+                    backgroundImage:
+                      "url(https://custom.mystagingserver.site/techversellc/images/p5-bg.png)",
+                  }}
                   data-aos="fade-up"
                   data-aos-offset="300"
                   data-aos-duration="2000"
@@ -887,7 +844,11 @@ const Home = () => {
               </div>
               <div class="col-lg-4 col-md-6">
                 <div
-                  class="techVerse_caseStudy_img bgOrange " style={{ backgroundImage: "url(https://custom.mystagingserver.site/techversellc/images/p6-bg.png)" }}
+                  class="techVerse_caseStudy_img bgOrange "
+                  style={{
+                    backgroundImage:
+                      "url(https://custom.mystagingserver.site/techversellc/images/p6-bg.png)",
+                  }}
                   // class="techVerse_caseStudy_img bgOrange caseStudy_img_bg_one"
                   data-aos="fade-left"
                   data-aos-offset="300"
@@ -899,13 +860,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-
       </section>
-
-
-
-
     </UserLayout>
-  )
-}
-export default Home
+  );
+};
+export default Home;

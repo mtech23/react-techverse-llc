@@ -1,13 +1,13 @@
-import React from 'react'
+import React from "react";
 import pinkcapsol from "../../asserts/images/pink-capsol.png";
 
 import phoneicon from "../../asserts/images/phone-icon.png";
 import chaticon from "../../asserts/images/chat-icon.png";
-import devandmaintenenceicon from '../../asserts/images/dev-and-maintenence-icon.png'
-import qualityicon from '../../asserts/images/quality-icon.png'
-import designanddevicon from '../../asserts/images/design-and-dev-icon.png'
-import businessanalysisicon from '../../asserts/images/business-analysis-icon.png'
-import realestateimg2 from '../../asserts/images/real-estate-img2.gif'
+import devandmaintenenceicon from "../../asserts/images/dev-and-maintenence-icon.png";
+import qualityicon from "../../asserts/images/quality-icon.png";
+import designanddevicon from "../../asserts/images/design-and-dev-icon.png";
+import businessanalysisicon from "../../asserts/images/business-analysis-icon.png";
+import realestateimg2 from "../../asserts/images/real-estate-img2.gif";
 
 import greencube from "../../asserts/images/green-cube.png";
 import donatorange from "../../asserts/images/donat-orange.png";
@@ -133,4 +133,4 @@ const Development_Process = (props) => {
     )
 }
 
-export default Development_Process
+export default Development_Process;
