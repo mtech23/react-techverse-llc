@@ -200,7 +200,7 @@ const particlesLoaded = useCallback(async container => {
         const mouseY = event.clientY - rect.top;
         const centerX = rect.width / 2;
         const centerY = rect.height / 2;
-        const distX = (mouseX - centerX) * 0.1; // Adjust multiplier for desired effect
+        const distX = (mouseX - centerX) * 0.1;        
         const distY = (mouseY - centerY) * 0.1; // Adjust multiplier for desired effect
 
         gsap.to(container, {
