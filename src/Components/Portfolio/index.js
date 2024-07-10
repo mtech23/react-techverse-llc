@@ -45,7 +45,7 @@ const Portfolio = (props) => {
                                             data-aos-duration="1000"
                                         />
                                           <img src={props?.travelimg}
-                                            class="travel-img-1-airplane"
+                                            class={ props?.laptopFrame}
                                             data-aos="fade-left"
                                             data-aos-offset="0"
                                             data-aos-duration="1000" 

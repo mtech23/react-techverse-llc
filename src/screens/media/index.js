@@ -119,7 +119,7 @@ const Media = () => {
             <HeroSection
                 classheroimage={"media_bg_custom"}
                 title={"Creating Digital Waves "}
-                subtitle={"  In  "}
+                subtitle={"In"}
                 title2={"Media & Entertainment!"}
                 tagline={"At Techverse LLC, we specialize in revolutionizing the Media & Entertainment industry through innovative solutions. Our expertise in this dynamic niche allows us to craft strategies that captivate audiences, amplify brand presence, and drive engagement across various platforms."}
                 className={"ecommerceDev_hero_img"}

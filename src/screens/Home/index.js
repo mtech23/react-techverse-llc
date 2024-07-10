@@ -8,11 +8,12 @@ import bluecubelarge from '../../asserts/images/blue-cube-large.png'
 import Particles from 'react-particles';
 import { loadFull } from 'tsparticles';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Parallax, Pagination, Navigation, Autoplay } from 'swiper/modules';
+import { Parallax, Pagination, Navigation, Autoplay, EffectFade } from 'swiper/modules';
 import Portfolio from '../../Components/Portfolio'
 import { gsap } from "gsap";
 
 import pinkcapsol from "../../asserts/images/pink-capsol.png";
+import herowebmockupgroup22 from "../../asserts/images/hero-web-mockup-group22.png";
 
 
 import { loadSlim } from "tsparticles-slim";
@@ -57,6 +58,7 @@ import jeffwilson from "../../asserts/images/jeff-wilson.png";
 import carbuying from "../../asserts/images/car-buying.png";
 import lllreptile from "../../asserts/images/lll-reptile.png";
 import privateastrology from "../../asserts/images/private-astrology.png";
+import heroslidermockupimg3 from "../../asserts/images/hero-slider-mockup-img-3.png";
 import Macbook from "../../asserts/images/Macbook.png";
 // import peramidleftangles from "../../asserts/images/peramid-left-angles.png";
 import peramidangled from "../../asserts/images/peramid-angled.png";
@@ -66,11 +68,13 @@ import p3 from "../../asserts/images/p3.png";
 import p4 from "../../asserts/images/p4.png";
 import p5 from "../../asserts/images/p5.png";
 import p6 from "../../asserts/images/p6.png";
+import irvingsegalimg1 from "../../asserts/images/irving-segal-img-1.png";
 import cms1 from "../../asserts/images/Cms-1.png";
 import cms2 from "../../asserts/images/CMS-2.png";
 import cms3 from "../../asserts/images/CMS-3.png";
 import Aos from "aos";
 import "swiper/css/pagination";
+import 'swiper/css/effect-fade';
 import "swiper/css";
 import Process from "../../Components/Process";
 import Testimonials from "../../Components/Tetimonials";
@@ -235,12 +239,14 @@ const Home = () => {
             "--swiper-pagination-color": "#fff",
           }}
           speed={600}
-          parallax={true}
+          // parallax={true}
+          effect={'fade'}
+       
           pagination={{
             clickable: true,
           }}
           navigation={true}
-          modules={[Pagination]}
+          modules={[Pagination, EffectFade, Navigation ]}
           className="mySwiper"
         >
           <div
@@ -357,7 +363,7 @@ const Home = () => {
           </SwiperSlide>
 
           <SwiperSlide>
-            <section class="techVerse_hero hoverEffectSec">
+            <section class="techVerse_hero techVerse_hero_two hoverEffectSec">
               <div class="techVerse_heroContent">
                 <div class="container-fluid">
                   <div class="row">
@@ -444,7 +450,109 @@ const Home = () => {
                           alt=""
                         />
                         <img
-                          src={herophonemockupgroup}
+                          src={herowebmockupgroup22}
+                          data-aos="fade-left"
+                          data-aos-offset="300"
+                          data-aos-duration="3000"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <section class="techVerse_hero techVerse_hero_three hoverEffectSec">
+              <div class="techVerse_heroContent">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="techVerse_hero_content">
+                        <h1
+                          data-aos="fade-right"
+                          data-aos-offset="300"
+                          data-aos-duration="1000"
+                        >
+                          TECHVERSE LLC Pioneering
+                          <span class="color-lightBlue1"> The </span>
+                          Future Of Mobile Development Company In USA
+                        </h1>
+                        <p
+                          data-aos="fade-right"
+                          data-aos-offset="300"
+                          data-aos-duration="2000"
+                        >
+                          At Techverse LLC, we are at the forefront of mobile
+                          app development, shaping the future with innovation
+                          and cutting-edge technology. Our team of expert
+                          developers, designers, and organizers work tirelessly
+                          to transform visionary ideas into dynamic mobile
+                          solutions that meet the needs of an ever-evolving
+                          digital landscape.
+                        </p>
+                        <div
+                          class="techVerse_hero_btns"
+                          data-aos="fade-right"
+                          data-aos-offset="300"
+                          data-aos-duration="3000"
+                        >
+                          <a href="#" class="btn_with_icon">
+                            <img
+                              class="btn_with_icon_img"
+                              src={phoneicon}
+                              alt=""
+                            />
+                            <span class="btn_with_icon_text">Call Now</span>
+                          </a>
+                          <a href="#" class="btn_with_icon btn_secondary">
+                            <img
+                              class="btn_with_icon_img"
+                              src={chaticon}
+                              alt=""
+                            />
+                            <span class="btn_with_icon_text">Chat Now</span>
+                          </a>
+                        </div>
+                        <div
+                          class="hero_brands"
+                          data-aos="fade-right"
+                          data-aos-offset="300"
+                          data-aos-duration="3000"
+                        >
+                          <a href="#" class="hero_brands_img">
+                            <img src={clutch} alt="" />
+                          </a>
+                          <a href="#" class="hero_brands_img">
+                            <img src={truspilot} alt="" />
+                          </a>
+                          <a href="#" class="hero_brands_img">
+                            <img src={bbb} alt="" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="techVerse_hero_img">
+                        <img
+                          src={donatblue}
+                          class="techVerse_hero_icon1 animation11"
+                          alt=""
+                        />
+                        <img
+                          src={PillBlueGlossy}
+                          class="techVerse_hero_icon2 animation22"
+                          alt=""
+                        />
+                        <img
+                          src={ConeBlueGlossy}
+                          class="techVerse_hero_icon3 animation22"
+                          alt=""
+                        />
+                        <img
+                          src={heroslidermockupimg3}
                           data-aos="fade-left"
                           data-aos-offset="300"
                           data-aos-duration="3000"
@@ -471,7 +579,7 @@ const Home = () => {
 
         title="  Boost Your Brand's Visibility" subtitle="  With" title2="Techverse LLC's Expert Team Agency"
         para="    Upgrade your online presence with Techverse LLC, the top-rated design agency dedicated to transforming your vision into a dynamic digital reality. Our expert team combines innovative design, cutting-edge technology, and user-centered strategies to create stunning, functional mobile applications that captivate and engage users. At Techverse LLC, we prioritize your unique needs, delivering tailor-made solutions that boost your brand's visibility and get success in the competitive digital environment. Trust us to ignite your online presence and turn your ideas into an interactive, impactful experience."
-
+        laptopFrame={"laptop-Frame"}
         image={laptop}
         chaticon={chaticon}
         phoneicon={phoneicon}
@@ -816,7 +924,7 @@ const Home = () => {
                   data-aos-offset="300"
                   data-aos-duration="1000"
                 >
-                  <img src={p1} alt="" />
+                  <img src={irvingsegalimg1} alt="" />
                 </div>
               </div>
               <div class="col-lg-4 col-md-6">
@@ -824,7 +932,8 @@ const Home = () => {
                   class="techVerse_caseStudy_img bgOrange"
                   style={{
                     backgroundImage:
-                      "url(https://custom.mystagingserver.site/techversellc/images/p2-bg.png)",
+                      // "url(../../asserts/images/brain-carlisle-bg.png)",
+                      "url(https://techversellc.com/images/brain-carlisle-bg.png)",
                   }}
                   data-aos="fade-up"
                   data-aos-offset="300"
@@ -838,7 +947,7 @@ const Home = () => {
                   class="techVerse_caseStudy_img bgOrange"
                   style={{
                     backgroundImage:
-                      "url(https://custom.mystagingserver.site/techversellc/images/p3-bg.png)",
+                      "url(https://techversellc.com/images/angle-body-bg.png)",
                   }}
                   data-aos="fade-left"
                   data-aos-offset="300"
@@ -852,7 +961,7 @@ const Home = () => {
                   class="techVerse_caseStudy_img bgOrange"
                   style={{
                     backgroundImage:
-                      "url(https://custom.mystagingserver.site/techversellc/images/p4-bg.png)",
+                      "url(https://techversellc.com/images/p2-bg.png)",
                   }}
                   data-aos="fade-right"
                   data-aos-offset="300"
@@ -866,7 +975,7 @@ const Home = () => {
                   class="techVerse_caseStudy_img bgOrange "
                   style={{
                     backgroundImage:
-                      "url(https://custom.mystagingserver.site/techversellc/images/p5-bg.png)",
+                      "url(https://techversellc.com/images/p3-bg.png)",
                   }}
                   data-aos="fade-up"
                   data-aos-offset="300"
@@ -880,7 +989,7 @@ const Home = () => {
                   class="techVerse_caseStudy_img bgOrange "
                   style={{
                     backgroundImage:
-                      "url(https://custom.mystagingserver.site/techversellc/images/p6-bg.png)",
+                      "url(https://techversellc.com/images/p4-bg.png)",
                   }}
                   // class="techVerse_caseStudy_img bgOrange caseStudy_img_bg_one"
                   data-aos="fade-left"

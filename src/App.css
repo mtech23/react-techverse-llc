@@ -184,14 +184,24 @@ h2 {
 .techVerse_hero {
   /*height: 100vh;*/
   color: #fff;
-  /* background-image: url('./asserts/images/hero-bg.png'); */
+  background-image: url('./asserts/images/hero-bg.png');
   background-size: cover;
   background-position: center;
   padding: 70px 0 40px;
 }
+.techVerse_hero_two {
+
+  background-image: url(./asserts/images/hero-slider-bg-2.png);
+
+}
+.techVerse_hero_three {
+
+  background-image: url(./asserts/images/hero-slider-bg-3.png);
+ 
+}
 
 .parallax-bg{
-    background-image: url('./asserts/images/hero-bg.png');
+    /* background-image: url('./asserts/images/hero-bg.png'); */
     background-size: cover;
     background-position: center;
 }
@@ -305,7 +315,7 @@ h2 {
   right: 0;
   top: 6%;
   z-index: -1;
-  width: 440px;
+  width: 440px !important;
 }
 /* .techVerse_aboutContent {
   padding: 80px 0 0;
@@ -647,8 +657,34 @@ h2 {
 .testimonail_quote:after {
   content: close-quote;
 } */
- 
-
+.contactPage_form {
+  background-color: #fff;
+  padding: 40px;
+  border: 3px solid #3dc1ff;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.contactPage_form  .contact_formContent {
+  padding-left: 0;
+  padding-top: 0;
+  background-image: unset;
+}
+.contactUSNew_hero .box_icon img {
+  width: 55px;
+}
+.contactUSNew_hero .inner-bgColor:after{
+  content:"";
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: #001c36ab;
+}
+.contactUSNew_hero .box_icon img {
+  width: 55px;
+}
+.inner_hero.contactUSNew_hero{
+  /*background-image: url(../images/inner-hero-bg.gif);*/
+  background-image: url(./asserts/images/contact-hero-form-bg.png);
+}
 .rc {
     width: 400px;
     height: 400px;
@@ -964,10 +1000,11 @@ body .rc h2 {
 }
 
 .bgOrange {
-  background-image: url(https://custom.mystagingserver.site/techversellc/images/bgImage.png);
+  background-image: url(./asserts/images/irving-segal-bg.png);
   height: 560px;
   overflow: hidden;
   position: relative;
+  border-radius: 30px;
 }
 
 .bgOrange img {
@@ -1069,8 +1106,8 @@ body .rc h2 {
   font-family: "Sora", sans-serif;
   position: absolute;
   /*left: -36.1%;*/
-  left: -390px;
-  top: 46%;
+  left: -392px;
+  top: 44%;
   transform: rotate(90deg);
   width: 834px;
 }
@@ -2373,7 +2410,7 @@ canvas.particles-js-canvas-el {
     width: 100%;
   }
   .laptop-Frame {
-    width: 47%;
+    width: 47% !important;
   }
   .techVerse_heroContent {
     max-width: 1400px;
@@ -2728,6 +2765,14 @@ canvas.particles-js-canvas-el {
     }
 }
 @media (max-width: 991px) {
+
+.contactUSNew_hero  .inner_hero_content {
+    margin-bottom: 30px;
+}
+
+.contactUSNew_hero .inner_hero_content h1 br{
+  display: none;
+}
 
 .sports-img-2, .sports-img-3 {
     max-width: 450px !important;
@@ -3125,6 +3170,19 @@ canvas.particles-js-canvas-el {
 }
 
 @media (max-width: 736px) {
+  .contactUSNew_hero .row {
+    flex-direction: column !important;
+}
+.contactUSNew_hero  .inner_hero_content {
+    text-align: left;
+}
+.contactUSNew_hero  .inner_hero_content  .techVerse_store_links{
+    justify-content: start;
+}
+.contactUSNew_hero .inner_hero_content {
+        margin-bottom: 0;
+    }
+
   .sports-img-1 {
     max-width: 450px;
     margin: 0 auto !important;
@@ -3420,10 +3478,10 @@ font-size: 11px !important;
 .service_box_icon img {
   width: 52% !important;
 } */
-.laptop-Frame {
+/* .laptop-Frame {
 
   width: 306px !important;
-}
+} */
 }
 
 
@@ -3435,6 +3493,14 @@ font-size: 11px !important;
 
 
 @media (max-width: 480px) {
+  .contactPage_form {
+    padding: 20px;
+    border: 2px solid #3dc1ff;
+}
+/* .contactPage_form .row {
+    gap: 0;
+} */
+    
   .travel-img-1-airplane {
     max-width: 150px;
 }

@@ -163,6 +163,7 @@ const Travel = () => {
                 phoneicon={phoneicon}
                 playstore={playstore}
                 appstore={appstore}
+                laptopFrame={"travel-img-1-airplane"}
 
             />
 
