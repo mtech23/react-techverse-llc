@@ -2728,13 +2728,16 @@ canvas.particles-js-canvas-el {
 }
 @media (max-width: 991px) {
 
+.sports-img-2, .sports-img-3 {
+    max-width: 450px !important;
+}
+
 .sports-img-3{
     margin-top: 20px;
     margin-bottom: 20px;
 }
  
-
-  .finance-img2 {
+.finance-img2 {
     max-width: 450px !important;
     margin: 0 auto;
 }
@@ -2746,9 +2749,7 @@ canvas.particles-js-canvas-el {
     max-width: 450px !important;
     margin: 0 auto;
 }
-  .sports-img-2, .sports-img-3 {
-    max-width: 450px !important;
-}
+
   .travel-img-3 {
     margin: auto !important;
     max-width: 450px;

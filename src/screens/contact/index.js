@@ -31,7 +31,7 @@ const Contact = () => {
                   data-aos-duration="1000"
                 >
                   BOOK A FREE <br />
-                  <span class="color-lightBlue1">CONSULTATION</span>
+                  <span class="color-lightBlue1">CONSULTATION </span>
                 </h1>
                 <p
                   data-aos="fade-right"
@@ -183,7 +183,7 @@ const Contact = () => {
                         <div class="col-md-12 mb-5 contact-formCols">
                           <div class="budget-wrap">
                             <div class="budget-header">
-                              <span class="budget-title">Set Your Budget</span>
+                              <span class="budget-title"> Set Your Budget </span>
                               <span class="budget-value"> $500</span>
                             </div>
                             <div class="budget-content">
