@@ -246,16 +246,16 @@ h2 {
   flex-wrap: wrap;
 }
 .btn_with_icon_img {
-  width: 25px;
+  width: 21px;
 }
 .btn_with_icon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 15px 40px;
+    padding: 10px 30px;
     color: #000000;
     gap: 10px;
-    font-size: 18px;
+    font-size: 16px;
     border-radius: 30px;
     background-image: linear-gradient(45deg, #3dc1ff, #02a9f7);
     border: unset;
@@ -326,10 +326,10 @@ h2 {
 .sec_title .sec_title_head {
   /* color: #02577a; */
   /* font-size: 51px; */
-  font-size: 38px;
+  font-size: 35px;
   font-weight: 700;
   line-height: 1.2;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   text-transform: uppercase;
   text-transform: capitalize;
 }
@@ -392,6 +392,10 @@ h2 {
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
   position: relative;
+}
+.sports-img-1{
+  width: 90% !important;
+  margin-right: auto;
 }
 
 .service_box {
@@ -530,7 +534,7 @@ h2 {
   z-index: 99;
 }
 .our-slider-img img {
-  width: 21.1%;
+  width: 20.9%;
 }
 
 .our-slider-webframe {
@@ -546,7 +550,18 @@ h2 {
   z-index: 99;
 }
 .our-slider-webframe img {
-  width: 58.9% ;
+  width: 39.9% ;
+  /* width: 58.9% ; */
+}
+.sports-img-2, .sports-img-3 {
+  width: 75% !important;
+  margin-right: auto;
+}
+.travel-img-1-airplane {
+  position: absolute;
+  right: 4%;
+  max-width: 250px;
+  top: 24%;
 }
 /* Portfolio ENd */
 
@@ -734,7 +749,7 @@ body .rc h2 {
   align-items: center;
 }
 .testimonial {
-  border: 1px solid #02a9f7;
+  /* border: 1px solid #02a9f7; */
   padding: 80px;
   border-radius: 50%;
   height: 550px;
@@ -1332,7 +1347,7 @@ p.company_wishText {
   top: 10%;
 }
 .techVerse_about_icon1 {
-  left: 10%;
+  left: 0;
   top: 5%;
 }
 .techVerse_about_icon2 {
@@ -2099,6 +2114,8 @@ canvas.particles-js-canvas-el {
 
 .buildStore_sec_title {
   text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 /* Real Estate start */
@@ -2285,7 +2302,19 @@ canvas.particles-js-canvas-el {
   max-width: 1600px;
   margin: 0 auto;
 }
-
+.new_edu_HR_img{
+  position: absolute;
+    width: 100% !important;
+    left: 0;
+    top: -380px;
+    transform: scale(1.3) !important;
+    transform-origin: left;
+    z-index: 9;
+}
+.travel-img-2 {
+  width: 80% !important;
+  margin-right: auto;
+}
 .eduHR-img1 {
     transform: scale(1.8) !important;
     transform-origin: center;
@@ -2305,6 +2334,19 @@ canvas.particles-js-canvas-el {
 .media-abt1{
     background-color: #182139;
 }
+.travel-img-3 {
+  width: 80% !important;
+  margin-right: auto;
+}
+.travel-abt1{
+  background-color: #F6F2F2;
+}
+.travel-abt2 {
+  background-color: #F6FAFB;
+}
+.financesubtitle{
+  color: #02577a;
+}
 .media-img1 {
     transform: scale(1.3) !important;
 }
@@ -2322,6 +2364,10 @@ canvas.particles-js-canvas-el {
 
 /* Media Quries */
 @media (max-width: 1600px) {
+  /* .new_edu_HR_img {
+    top: -1400%;
+} */
+
   .about-laptopImg {
     width: 100%;
   }
@@ -2363,19 +2409,28 @@ canvas.particles-js-canvas-el {
     right: 0px;
   }
   .width-1600 {
-    max-width: 1400px;
+    max-width: 1200px;
     padding: 0 30px;
   }
 }
 @media (max-width: 1440px) {
+  .travel-img-1-airplane {
+    right: 0;
+    max-width: 230px;
+}
+  .new_edu_HR_img{
+    top: -306px;
+    transform: scale(1.7) !important;
+    transform-origin: center;
+  }
   .techVerse_mobileApp .sec_title .sec_title_head {
     font-size: 31px;
   }
-  .our-slider-img {
+  /* .our-slider-img {
     top: -7px;
-}
+} */
 .our-slider-img img {
-    width: 21.1%;
+    width: 20.1%;
 }
 
 
@@ -2467,8 +2522,18 @@ canvas.particles-js-canvas-el {
   
 }
 @media (max-width: 1024px) {
+  .sports-img-1, .sports-img-2, .sports-img-3 {
+    width: 100% !important;
+}
+  .travel-img-1-airplane {
+    max-width: 180px;
+}
+  .new_edu_HR_img{
+    top: -243px;
+
+  }
   .our-slider-img img {
-    width: 21%;
+    width: 20%;
   }
 
   .our-slider-img {
@@ -2662,6 +2727,41 @@ canvas.particles-js-canvas-el {
     }
 }
 @media (max-width: 991px) {
+
+.sports-img-2, .sports-img-3 {
+    max-width: 450px !important;
+}
+
+.sports-img-3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+ 
+.finance-img2 {
+    max-width: 450px !important;
+    margin: 0 auto;
+}
+.media-img-2 {
+  max-width: 450px;
+  margin: 0 auto -25px;
+}
+  .health-care-img-2 {
+    max-width: 450px !important;
+    margin: 0 auto;
+}
+
+  .travel-img-3 {
+    margin: auto !important;
+    max-width: 450px;
+}
+  .travel-img-2 {
+    margin: auto;
+    max-width: 450px;
+}
+  .realEstate-appSec_title {
+    text-align: center;
+    margin: 40px 0 20px;
+}
   .play-icon {
  
     padding: 20px 30px 20px 36px;
@@ -2691,7 +2791,7 @@ canvas.particles-js-canvas-el {
     padding: 10px 30px;
   }
   .our-slider-webframe img {
-    width: 55.9%;
+    width: 37.9%;
   }
   .services_offerContainer {
     max-width: unset;
@@ -2821,7 +2921,7 @@ canvas.particles-js-canvas-el {
     top: -4px;
   }
   .our-slider-img img {
-    width: 20%;
+    width: 19.8%;
   }
   .app_devBoxes {
     gap: 15px;
@@ -2884,6 +2984,14 @@ canvas.particles-js-canvas-el {
   
 }
 @media (max-width: 800px) {
+  .travel-img-1-airplane {
+    max-width: 140px;
+}
+  .new_edu_HR_img{
+    top: -200px;
+    transform: scale(2) !important;
+
+  }
   .get_discount {
     left: -38.2%;
   }
@@ -2958,6 +3066,16 @@ canvas.particles-js-canvas-el {
   
 }
 @media (max-width: 768px) {
+  .sports-img-3 {
+    max-width: 270px !important;
+}
+  .our-slider-img img {
+    width: 18.5%;
+}
+  .rc {
+    width: 356px !important;
+    height: 380px !important;
+}
   .testimonials_title{
     font-size: 45px !important;
   }
@@ -3006,6 +3124,19 @@ canvas.particles-js-canvas-el {
 }
 
 @media (max-width: 736px) {
+  .sports-img-1 {
+    max-width: 450px;
+    margin: 0 auto !important;
+    display: block;
+}
+  .travel-img-1-airplane {
+    max-width: 240px;
+}
+  .new_edu_HR_img{
+    position: unset;
+    transform: scale(1.9) !important;
+
+  }
   .techVerse_hero .row {
     flex-direction: column-reverse;
   }
@@ -3064,9 +3195,9 @@ canvas.particles-js-canvas-el {
   .our-slider-img {
     top: -4px;
   }
-  .our-slider-img img {
-    width: 17.6%;
-  }
+  /* .our-slider-img img {
+    width: 51.6%;
+  } */
   .get_discount {
     position: unset;
     transform: rotate(0);
@@ -3134,7 +3265,7 @@ canvas.particles-js-canvas-el {
     width: 110px;
   }
   .our-slider-webframe img {
-    width: 55.9%;
+    width: 121.9%;
   }
   .app_devBoxes {
     margin-bottom: unset;
@@ -3202,10 +3333,13 @@ canvas.particles-js-canvas-el {
 }
 
 @media (max-width: 600px) {
+  .our-slider-img img {
+    width: 51.6%;
+  }
   .techVerse_about_icon4 {
-
+    top: 0;
     width: 53px;
-    z-index: 9999;
+    /* z-index: 9999; */
 }
   .techVerse_about_content{
     margin-top: 30px;
@@ -3300,6 +3434,9 @@ font-size: 11px !important;
 
 
 @media (max-width: 480px) {
+  .travel-img-1-airplane {
+    max-width: 150px;
+}
   .body-bullet-list li{
     font-size: 12px;
   }
@@ -3359,26 +3496,29 @@ font-size: 11px !important;
   .news_letterInput button .btn_with_icon_img {
     width: 16px;
   }
-  /* .our-slider-img img {
-    width: 52%;
-  } */
+  .our-slider-img img {
+    width: 50%;
+  }
   .our-slider-img {
     top: -5px;
   }
-  .our-slider-img img {
+  /* .our-slider-img img {
     width: 18%;
-  }
+  } */
 
   .techVerse_testimonialsTextSec-img {
     height: 300px;
     margin: 0 auto;
   }
-  .our-slider-webframe {
+  /* .our-slider-webframe {
     top: 100px;
-  }
-  /* .our-slider-webframe img {
-    width: 119%;
   } */
+  .our-slider-webframe img {
+    width: 124%;
+  }
+  .our-slider-webframe {
+    top: 97px;
+}
   .techVerse_powerdby a {
     font-size: 13px;
   }
@@ -3490,9 +3630,22 @@ font-size: 11px !important;
         bottom: -75pc;
         right: -50px;
     }
+  .our-slider-webframe img {
+      width: 123%;
+  }
+  .our-slider-webframe{
+    top: 95px;
+  }
 }
 
+
 @media (max-width: 375px) {
+  .our-slider-webframe img{
+    width: 121%;
+  }
+  .our-slider-webframe {
+    top: 137px;
+}
   .inner_hero_content h1 {
 
     font-size: 20px;
@@ -3534,5 +3687,10 @@ font-size: 11px !important;
     top: -6px;
 
 }
+
+}
+
+.web-app-img11 {
+  transform: scale(1.3) !important;
 
 }

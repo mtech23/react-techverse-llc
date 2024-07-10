@@ -129,7 +129,13 @@
     position: relative;
     z-index: -1;
    }
-
+.travel-img-1-airplane{
+    position: absolute;
+    right: 0;
+    top: 6%;
+    z-index: -1;
+    width: 440px;
+}
 
 
 

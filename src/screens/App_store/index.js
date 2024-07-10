@@ -69,6 +69,7 @@ const App_store = () => {
         <UserLayout>
 
             <HeroSection
+               innerbgclass={"inner-bgColor"}
                 title={"FInnovate Today"}
                 subtitle={" With "}
                 title2={"Techverse App Store"}

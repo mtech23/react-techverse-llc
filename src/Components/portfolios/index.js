@@ -11,8 +11,8 @@ const Portfolios = (props) => {
         {/* new Portfolio swipper section */}
 
         <section class="techVerse_portfolio">
-        <div class="techVerse_portfolioContent">
-          <div class="container">
+        <div class="techVerse_portfolioContent width-1600">
+          <div class="container-fluid">
             <div class="row">
               <div class="col-md-12">
                 <div class="sec_title">
@@ -48,10 +48,10 @@ const Portfolios = (props) => {
                     <div class="mobile_app_carousel">
 
           <Swiper
-              slidesPerView={5}
+              slidesPerView={2.1}
               spaceBetween={20}
               // speed={2}
-              centeredSlides={false}
+              centeredSlides={true}
               loop= {true}
               autoplay={{
                 delay: 2000,
@@ -59,20 +59,20 @@ const Portfolios = (props) => {
               }}
             
             
-              // breakpoints={{
-              //   425: {
-              //     slidesPerView: 1,
-              //     spaceBetween: 20,
-              //   },
-              //   768: {
-              //     slidesPerView: 4,
-              //     spaceBetween: 40,
-              //   },
-              //   1024: {
-              //     slidesPerView: 5,
-              //     spaceBetween: 50,
-              //   },
-              // }}
+              breakpoints={{
+               640: {
+                  slidesPerView: 5,
+                  spaceBetween: 30,
+                },
+                // 768: {
+                //   slidesPerView: 4,
+                //   spaceBetween: 40,
+                // },
+                // 1024: {
+                //   slidesPerView: 5,
+                //   spaceBetween: 50,
+                // },
+              }}
               modules={[Pagination, Autoplay]}
               className="mySwiper"
           
@@ -105,7 +105,7 @@ const Portfolios = (props) => {
 
 
                     <Swiper
-                        slidesPerView={2}
+                        slidesPerView={1}
                         spaceBetween={30}
                         // speed={200}
                         centeredSlides={true}
@@ -117,8 +117,8 @@ const Portfolios = (props) => {
                         }}
                                             
                         breakpoints={ {
-                          640: {
-                            slidesPerView: 2.1,
+                          766: {
+                            slidesPerView: 3,
                             spaceBetween: 30,
                           }
                         }
@@ -154,7 +154,7 @@ const Portfolios = (props) => {
                   
 
                     <Swiper
-                        slidesPerView={2}
+                        slidesPerView={1}
                         spaceBetween={30}
                         // speed={200}
                         centeredSlides={true}
@@ -166,8 +166,8 @@ const Portfolios = (props) => {
                         }}
                                             
                         breakpoints={ {
-                          640: {
-                            slidesPerView: 2.1,
+                          766: {
+                            slidesPerView: 3,
                             spaceBetween: 30,
                           }
                         }
@@ -176,14 +176,12 @@ const Portfolios = (props) => {
                         modules={[Pagination, Autoplay]}
                         className="mySwiper "
                         >
-                           <SwiperSlide><img src={props?.image7} alt="" /></SwiperSlide>
-                          <SwiperSlide><img src={props?.image8} alt="" /></SwiperSlide>
-                          <SwiperSlide><img src={props?.image9} alt="" /></SwiperSlide>
-                          <SwiperSlide><img src={props?.image10} alt="" /></SwiperSlide>
-                          <SwiperSlide><img src={props?.image7} alt="" /></SwiperSlide>
-                          <SwiperSlide><img src={props?.image8} alt="" /></SwiperSlide>
-                          <SwiperSlide><img src={props?.image9} alt="" /></SwiperSlide>
-                          <SwiperSlide><img src={props?.image10} alt="" /></SwiperSlide>
+                           <SwiperSlide><img src={props?.image12} alt="" /></SwiperSlide>
+                          <SwiperSlide><img src={props?.image13} alt="" /></SwiperSlide>
+                          <SwiperSlide><img src={props?.image14} alt="" /></SwiperSlide>
+                         <SwiperSlide><img src={props?.image12} alt="" /></SwiperSlide>
+                          <SwiperSlide><img src={props?.image13} alt="" /></SwiperSlide>
+                          <SwiperSlide><img src={props?.image14} alt="" /></SwiperSlide>
                         </Swiper>
 
                       <div class="our-slider-webframe">

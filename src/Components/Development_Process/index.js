@@ -1,20 +1,20 @@
-import React from 'react'
+import React from "react";
 import pinkcapsol from "../../asserts/images/pink-capsol.png";
 
 import phoneicon from "../../asserts/images/phone-icon.png";
 import chaticon from "../../asserts/images/chat-icon.png";
-import devandmaintenenceicon from '../../asserts/images/dev-and-maintenence-icon.png'
-import qualityicon from '../../asserts/images/quality-icon.png'
-import designanddevicon from '../../asserts/images/design-and-dev-icon.png'
-import businessanalysisicon from '../../asserts/images/business-analysis-icon.png'
-import realestateimg2 from '../../asserts/images/real-estate-img2.gif'
+import devandmaintenenceicon from "../../asserts/images/dev-and-maintenence-icon.png";
+import qualityicon from "../../asserts/images/quality-icon.png";
+import designanddevicon from "../../asserts/images/design-and-dev-icon.png";
+import businessanalysisicon from "../../asserts/images/business-analysis-icon.png";
+import realestateimg2 from "../../asserts/images/real-estate-img2.gif";
 
 import greencube from "../../asserts/images/green-cube.png";
 import donatorange from "../../asserts/images/donat-orange.png";
 const Development_Process = (props) => {
     return (
         <div>
-            <section class="techVerse_about techVerse_aboutServices2">
+            <section class={`techVerse_about techVerse_aboutServices2 ${props?.travelbgclass} `}>
                 <img
                     class="techVerse_about_icon1 animation11"
                     src={pinkcapsol}
@@ -31,15 +31,15 @@ const Development_Process = (props) => {
                     src={donatorange}
                     alt=""
                 />
-                <div class="techVerse_aboutContent techVerse_aboutContentServices2">
-                    <div class="container">
+                <div class="techVerse_aboutContent techVerse_aboutContentServices2 width-1600">
+                    <div class="container-fluid">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-lg-6">
                                 <div class="techVerse_about_img">
                                     <div class="techVerse_about_laptop_img realEstate-gif">
                                         <img
                                             src={props?.image}
-                                            class="about-laptopImg"
+                                            class={`about-laptopImg ${props.sportsclass}`}
                                             data-aos="fade-right"
                                             data-aos-offset="300"
                                             data-aos-duration="1000"
@@ -57,7 +57,7 @@ const Development_Process = (props) => {
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-lg-6">
                                 <div class="techVerse_about_content services-abbout2">
                                     <div class="sec_title realEstate-appSec_title">
                                         <h2
@@ -133,4 +133,4 @@ const Development_Process = (props) => {
     )
 }
 
-export default Development_Process
+export default Development_Process;

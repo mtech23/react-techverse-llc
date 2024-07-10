@@ -30,18 +30,25 @@ const Portfolio = (props) => {
                     src={props?.donatorange}
                     alt=""
                 />
-                <div class="techVerse_aboutContent techVerse_aboutContentServices2">
-                    <div class="container">
+                <div class="techVerse_aboutContent techVerse_aboutContentServices2 width-1600">
+                    <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="techVerse_about_img">
                                     <div class="techVerse_about_laptop_img">
                                         <img
                                             src={props?.image}
-                                            class="about-laptopImg"
+                                            // class="about-laptopImg"
+                                            class={`about-laptopImg ${props?.eduHR}`}
                                             data-aos="fade-right"
                                             data-aos-offset="300"
                                             data-aos-duration="1000"
+                                        />
+                                          <img src={props?.travelimg}
+                                            class="travel-img-1-airplane"
+                                            data-aos="fade-left"
+                                            data-aos-offset="0"
+                                            data-aos-duration="1000" 
                                         />
                                     </div>
                                 </div>
@@ -56,7 +63,7 @@ const Portfolio = (props) => {
                                             data-aos-duration="1000"
                                         >
                                             {props?.title}
-                                            <span class="color-lightBlue2">{props?.subtitle} </span>
+                                            <span class="color-lightBlue2"> {props?.subtitle} </span>
                                             {props?.title2}
                                         </h2>
                                         <p className={`${props?.classpara} aos-init aos-animate`}

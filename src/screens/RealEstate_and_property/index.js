@@ -60,6 +60,9 @@ import ecommersedevhero from "../../asserts/images/ecommersedevhero.png";
 import HeroSection from '../../Components/herosection/index'
 import fluttericon from "../../asserts/images/flutter-icon.png";
 import reacticon from "../../asserts/images/react-icon.png";
+import cms1 from "../../asserts/images/Cms-1.png";
+import cms2 from "../../asserts/images/CMS-2.png";
+import cms3 from "../../asserts/images/CMS-3.png";
 
 
 import Aos from "aos";
@@ -145,13 +148,9 @@ const RealEstate_and_property = () => {
       <Development_Process
         image={realestateimg2}
         title="Our Mobile App Development Process At "
-        subtitle="   Techverse LLC"
+        subtitle="Techverse LLC"
         para="At Techverse LLC, we follow a meticulous mobile app development process designed to deliver exceptional results tailored to your business needs. Our approach encompasses the following key stages:"
       />
-
-
-
-
 
 
 
@@ -171,6 +170,9 @@ const RealEstate_and_property = () => {
         image9={lllreptile}
         image10={privateastrology}
         image11={Macbook}
+        image12={cms1}
+        image13={cms2}
+        image14={cms3}
         classmobileapp="nav-link"
         classwebsite="nav-link"
         classcms="nav-link"

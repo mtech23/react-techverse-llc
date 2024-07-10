@@ -32,8 +32,8 @@ const Driving_Exprience = (props) => {
                     src={greencube} alt="" />
                 <img class="techVerse_about_icon4 animation11"
                     src={donatorange} alt="" />
-                <div class="techVerse_aboutContent techVerse_aboutContentServices2">
-                    <div class="container">
+                <div class="techVerse_aboutContent techVerse_aboutContentServices2 width-1600">
+                    <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="sec_title buildStore_sec_title">
@@ -51,7 +51,7 @@ const Driving_Exprience = (props) => {
                                 <div class="techVerse_about_img">
                                     <div class="techVerse_about_laptop_img driving-2screen">
                                         <img src={props?.image}
-                                            class="about-laptopImg mobileApp_devSec_img"
+                                            class={`about-laptopImg mobileApp_devSec_img 4 ${props?.hrimg}`}
                                             data-aos="fade-right" data-aos-offset="0" data-aos-duration="1000" />
                                     </div>
                                 </div>

@@ -69,6 +69,11 @@ import privateastrology from '../../asserts/images/private-astrology.png'
 import Macbook from '../../asserts/images/Macbook.png'
 import mediaimg1 from '../../asserts/images/media-img-1.gif'
 import mediaimg2 from '../../asserts/images/media-img-2.png'
+import mediaportfolio1 from '../../asserts/images/media-portfolio-1.png'
+import mediaportfolio2 from '../../asserts/images/media-portfolio-2.png'
+import mediaportfolio3 from '../../asserts/images/media-portfolio-3.png'
+import mediaportfolio4 from '../../asserts/images/media-portfolio-4.png'
+import mediaportfolio5 from '../../asserts/images/media-portfolio-5.png'
 import Testimonials from '../../Components/Tetimonials';
  
 import mediaimg3 from '../../asserts/images/media-img-3.png'
@@ -173,6 +178,8 @@ const Media = () => {
 
             {/* <!-- Real Estate App Dev --> */}
             <Development_Process
+            sportsclass={"media-img-2"}
+            
                 image={mediaimg2}
                 title="App Development For The "
                 subtitle="Entertainment Industry"
@@ -194,11 +201,11 @@ const Media = () => {
                 para="With a deep understanding of industry trends and audience engagement, we offer a suite of services designed to raise your brand presence and amplify audience connection.
 
 "
-                image1={automotivescreen1}
-                image2={automotivescreen2}
-                image3={automotivescreen3}
-                image4={automotivescreen4}
-                image5={automotivescreen5}
+                image1={mediaportfolio1}
+                image2={mediaportfolio2}
+                image3={mediaportfolio3}
+                image4={mediaportfolio4}
+                image5={mediaportfolio5}
                 image6={mobileframe}
                 image7={carbuying}
                 image8={jeffwilson}
@@ -207,8 +214,8 @@ const Media = () => {
                 image11={Macbook}
                 classmobileapp="nav-link"
                 classwebsite="nav-link"
-                classcms="nav-link"
-                CMS="CMS"
+              
+              
                 Mobile_Apps="Mobile Apps"
                 Websites="Websites"
             />

@@ -10,7 +10,8 @@ const Ctnbutton = (props) => {
             <div
                 class="techVerse_hero_btns"
                 data-aos="fade-up"
-                data-aos-offset="300"
+                data-aos-offset="00"
+                // data-aos-offset="300"
                 data-aos-duration="3000"
             >
               

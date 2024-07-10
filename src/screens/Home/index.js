@@ -1,8 +1,6 @@
 import React, { useEffect, useRef } from 'react';
-
-
 import { UserLayout } from "../../Components/Layout/UserLayout";
-import Portfolios from "../../Components/portfolios"
+import Portfolios from "../../Components/portfolios";
 import phoneicon from "../../asserts/images/phone-icon.png";
 import herophonemockupgroup from "../../asserts/images/hero-phone-mockup-group.png";
 import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
@@ -11,29 +9,12 @@ import Particles from 'react-particles';
 import { loadFull } from 'tsparticles';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Parallax, Pagination, Navigation, Autoplay } from 'swiper/modules';
-import Portfolio from '../../Components/Portfolio/index'
+import Portfolio from '../../Components/Portfolio'
 import { gsap } from "gsap";
-// peramidLeftAngles
-// path_to_peramidleftangles
-// import mobileAppImg from '../assets/images/mobileAppimg.png';
 
-import goodfirms from '../../asserts/images/good-firms.png';
-import partnersbbb from '../../asserts/images/partners-bbb.png';
-import partnerstruspilot from '../../asserts/images/partners-trus-pilot.png';
-import partnersclutch from '../../asserts/images/partners-clutch.png';
-import peramidleftangles from '../../asserts/images/peramid-left-angles.png';
-import pinkcapsol from '../../asserts/images/pink-capsol.png';
-import chaticonblues from '../../asserts/images/chat-icon-blue.png'
+import pinkcapsol from "../../asserts/images/pink-capsol.png";
 
-import mobileAppimg from '../../asserts/images/mobileAppimg.png'
-// import 'path_to_your_css_file.css';
-import processicon1 from '../../asserts/images/process-icon-1.png'
-import arrowicon from '../../asserts/images/arrow-icon.png'
-import processicon2 from '../../asserts/images/process-icon-2.png'
-import processicon3 from '../../asserts/images/process-icon-3.png'
-import processicon4 from '../../asserts/images/process-icon-4.png'
-import processicon5 from '../../asserts/images/process-icon-5.png'
-import processicon6 from '../../asserts/images/process-icon-6.png'
+
 import { loadSlim } from "tsparticles-slim";
 import peramidleftangle from "../../asserts/images/peramid-left-angles.png"
 import clutch from "../../asserts/images/clutch.png";
@@ -85,11 +66,14 @@ import p3 from "../../asserts/images/p3.png";
 import p4 from "../../asserts/images/p4.png";
 import p5 from "../../asserts/images/p5.png";
 import p6 from "../../asserts/images/p6.png";
+import cms1 from "../../asserts/images/Cms-1.png";
+import cms2 from "../../asserts/images/CMS-2.png";
+import cms3 from "../../asserts/images/CMS-3.png";
 import Aos from "aos";
-import 'swiper/css/pagination';
-import 'swiper/css';
-import Process from '../../Components/Process';
-import Testimonials from '../../Components/Tetimonials';
+import "swiper/css/pagination";
+import "swiper/css";
+import Process from "../../Components/Process";
+import Testimonials from "../../Components/Tetimonials";
 gsap.registerPlugin(MotionPathPlugin);
 
 const Home = () => {
@@ -99,13 +83,13 @@ const Home = () => {
 
   const particlesInit = useCallback(async engine => {
     console.log(engine);
- 
-    await loadSlim(engine);
-}, []);
 
-const particlesLoaded = useCallback(async container => {
+    await loadSlim(engine);
+  }, []);
+
+  const particlesLoaded = useCallback(async container => {
     await console.log(container);
-}, []);
+  }, []);
 
 
 
@@ -139,10 +123,14 @@ const particlesLoaded = useCallback(async container => {
 
 
 
+
+
+
+
   // const sectionRef = useRef(null);
 
   // useEffect(() => {
-  //   const sections = sectionRef.current.querySelectorAll('.hoverEffectSec');
+  //   const sections = sectionRef?.current.querySelectorAll('.hoverEffectSec');
 
   //   sections.forEach((section) => {
   //     const container = section.querySelector('.techVerse_hero_img');
@@ -153,124 +141,7 @@ const particlesLoaded = useCallback(async container => {
   //       const mouseY = event.clientY - rect.top;
   //       const centerX = rect.width / 2;
   //       const centerY = rect.height / 2;
-  //       const distX = (mouseX - centerX) * 0.1; // Adjust multiplier for desired effect
-  //       const distY = (mouseY - centerY) * 0.1; // Adjust multiplier for desired effect
-
-  //       gsap.to(container, {
-  //         x: distX,
-  //         y: distY,
-  //         ease: 'power1.out',
-  //       });
-  //     };
-
-  //     const handleMouseLeave = () => {
-  //       gsap.to(container, {
-
-  //         // x: 0,
-  //         // y: 0,
-  //         ease: 'power1.out',
-  //       });
-  //     };
-
-  //     section.addEventListener('mousemove', handleMouseMove);
-  //     section.addEventListener('mouseleave', handleMouseLeave);
-
-  //     return () => {
-  //       section.removeEventListener('mousemove', handleMouseMove);
-  //       section.removeEventListener('mouseleave', handleMouseLeave);
-  //     };
-  //   });
-  // }, []);
-
-
-
-
-
-  const sectionRef = useRef(null);
-
-  useEffect(() => {
-    const sections = sectionRef?.current.querySelectorAll('.hoverEffectSec');
-
-    sections.forEach((section) => {
-      const container = section.querySelector('.techVerse_hero_img');
-
-      const handleMouseMove = (event) => {
-        const rect = section.getBoundingClientRect();
-        const mouseX = event.clientX - rect.left;
-        const mouseY = event.clientY - rect.top;
-        const centerX = rect.width / 2;
-        const centerY = rect.height / 2;
-        const distX = (mouseX - centerX) * 0.1;        
-        const distY = (mouseY - centerY) * 0.1; // Adjust multiplier for desired effect
-
-        gsap.to(container, {
-          x: distX,
-          y: distY,
-          ease: 'power1.out',
-        });
-      };
-
-      const handleMouseLeave = () => {
-        gsap.to(container, {
-          x: 0,
-          y: 0,
-          ease: 'power1.out',
-        });
-      };
-
-      section.addEventListener('mousemove', handleMouseMove);
-      section.addEventListener('mouseleave', handleMouseLeave);
-
-      return () => {
-        section.removeEventListener('mousemove', handleMouseMove);
-        section.removeEventListener('mouseleave', handleMouseLeave);
-      };
-    });
-  }, []);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  // const sec2 = useRef(null);
-
-  // useEffect(() => {
-  //   const sections = sec2.current.querySelectorAll('.sec2');
-
-  //   sections.forEach((section) => {
-  //     const container = section.querySelector('.sec2_icons');
-
-  //     const handleMouseMove = (event) => {
-  //       const rect = section.getBoundingClientRect();
-  //       const mouseX = event.clientX - rect.left;
-  //       const mouseY = event.clientY - rect.top;
-  //       const centerX = rect.width / 2;
-  //       const centerY = rect.height / 2;
-  //       const distX = (mouseX - centerX) * 0.1; // Adjust multiplier for desired effect
+  //       const distX = (mouseX - centerX) * 0.1;
   //       const distY = (mouseY - centerY) * 0.1; // Adjust multiplier for desired effect
 
   //       gsap.to(container, {
@@ -299,62 +170,12 @@ const particlesLoaded = useCallback(async container => {
   // }, []);
 
 
-  const sec2 = useRef(null);
-
-  useEffect(() => {
-    const sections = sec2?.current.querySelectorAll('.sec2');
-
-    sections.forEach((section) => {
-      const container = section.querySelector('.sec2_icons');
-
-      const handleMouseMove = (event) => {
-        const rect = section.getBoundingClientRect();
-        const mouseX = event.clientX - rect.left;
-        const mouseY = event.clientY - rect.top;
-        const centerX = rect.width / 2;
-        const centerY = rect.height / 2;
-        const distX = (mouseX - centerX) * 0.1; // Adjust multiplier for desired effect
-        const distY = (mouseY - centerY) * 0.1; // Adjust multiplier for desired effect
-
-        gsap.to(container, {
-          x: distX,
-          y: distY,
-          zIndex: 10, // Bring to front
-          ease: 'power1.out',
-        });
-      };
-
-      const handleMouseLeave = () => {
-        gsap.to(container, {
-          x: 0,
-          y: 0,
-          zIndex: 1, // Reset to default
-          ease: 'power1.out',
-          clearProps: 'all' // Reset transformations to their initial state
-        });
-      };
-
-      section.addEventListener('mousemove', handleMouseMove);
-      section.addEventListener('mouseleave', handleMouseLeave);
-
-      return () => {
-        section.removeEventListener('mousemove', handleMouseMove);
-        section.removeEventListener('mouseleave', handleMouseLeave);
-      };
-    });
-  }, []);
-
-
-
-
-
-
 
 
   // const sec2 = useRef(null);
 
   // useEffect(() => {
-  //   const sections = sec2.current.querySelectorAll('.sec2');
+  //   const sections = sec2?.current.querySelectorAll('.sec2');
 
   //   sections.forEach((section) => {
   //     const container = section.querySelector('.sec2_icons');
@@ -371,16 +192,18 @@ const particlesLoaded = useCallback(async container => {
   //       gsap.to(container, {
   //         x: distX,
   //         y: distY,
+  //         zIndex: 10, // Bring to front
   //         ease: 'power1.out',
   //       });
   //     };
 
   //     const handleMouseLeave = () => {
   //       gsap.to(container, {
-
-  //         // x: 0,
-  //         // y: 0,
+  //         x: 0,
+  //         y: 0,
+  //         zIndex: 1, // Reset to default
   //         ease: 'power1.out',
+  //         clearProps: 'all'
   //       });
   //     };
 
@@ -402,133 +225,14 @@ const particlesLoaded = useCallback(async container => {
 
 
 
-
-
-  const particlesOptions = {
-    particles: {
-      number: {
-        value: 80,
-        density: {
-          enable: true,
-          value_area: 800,
-        },
-      },
-      color: {
-        value: "#02a9f7",
-      },
-      shape: {
-        type: "circle",
-        stroke: {
-          width: 0,
-          color: "#02a9f7",
-        },
-        polygon: {
-          nb_sides: 5,
-        },
-      },
-      opacity: {
-        value: 0.5,
-        random: false,
-        anim: {
-          enable: false,
-          speed: 1,
-          opacity_min: 0.1,
-          sync: false,
-        },
-      },
-      size: {
-        value: 5,
-        random: true,
-        anim: {
-          enable: false,
-          speed: 40,
-          size_min: 0.1,
-          sync: false,
-        },
-      },
-      line_linked: {
-        enable: true,
-        distance: 150,
-        color: "#02a9f7",
-        opacity: 0.4,
-        width: 1,
-      },
-      move: {
-        enable: true,
-        speed: 6,
-        direction: "none",
-        random: false,
-        straight: false,
-        out_mode: "out",
-        attract: {
-          enable: false,
-          rotateX: 600,
-          rotateY: 1200,
-        },
-      },
-    },
-    interactivity: {
-      detect_on: "canvas",
-      events: {
-        onhover: {
-          enable: true,
-          mode: "repulse",
-        },
-        onclick: {
-          enable: true,
-          mode: "push",
-        },
-        resize: true,
-      },
-      modes: {
-        grab: {
-          distance: 400,
-          line_linked: {
-            opacity: 1,
-          },
-        },
-        bubble: {
-          distance: 400,
-          size: 40,
-          duration: 2,
-          opacity: 8,
-          speed: 3,
-        },
-        repulse: {
-          distance: 200,
-        },
-        push: {
-          particles_nb: 4,
-        },
-        remove: {
-          particles_nb: 2,
-        },
-      },
-    },
-    retina_detect: true,
-    background: {
-      color: "#b61924",
-      image: "",
-      position: "50% 50%",
-      repeat: "no-repeat",
-      size: "cover",
-    },
-  };
-
-
- 
-
-
-
-
   return (
     <UserLayout>
 
-      <div className="relative" ref={sectionRef}>
+      <div className="relative"  >
         <Swiper
           style={{
-            '--swiper-navigation-color': '#fff',
-            '--swiper-pagination-color': '#fff',
+            "--swiper-navigation-color": "#fff",
+            "--swiper-pagination-color": "#fff",
           }}
           speed={600}
           parallax={true}
@@ -542,10 +246,6 @@ const particlesLoaded = useCallback(async container => {
           <div
             slot="container-start"
             className="parallax-bg pagination_custom"
-            // style={{
-            //   'background-image':
-            //     'url(./asserts/images/hero-bg.png)',
-            // }}
             data-swiper-parallax="-23%"
           ></div>
           <SwiperSlide>
@@ -573,8 +273,13 @@ const particlesLoaded = useCallback(async container => {
                           data-aos-offset="300"
                           data-aos-duration="2000"
                         >
-                          At Techverse LLC, we are at the forefront of mobile app development, shaping the future with innovation and cutting-edge technology. Our team of expert developers,
-                          designers, and organizers work tirelessly to transform visionary ideas into dynamic mobile solutions that meet the needs of an ever-evolving digital landscape.
+                          At Techverse LLC, we are at the forefront of mobile
+                          app development, shaping the future with innovation
+                          and cutting-edge technology. Our team of expert
+                          developers, designers, and organizers work tirelessly
+                          to transform visionary ideas into dynamic mobile
+                          solutions that meet the needs of an ever-evolving
+                          digital landscape.
                         </p>
                         <div
                           class="techVerse_hero_btns"
@@ -605,15 +310,15 @@ const particlesLoaded = useCallback(async container => {
                           data-aos-offset="300"
                           data-aos-duration="3000"
                         >
-                          <a href="#" class="hero_brands_img"
-                          ><img src={clutch} alt=""
-                            /></a>
-                          <a href="#" class="hero_brands_img"
-                          ><img src={truspilot} alt=""
-                            /></a>
-                          <a href="#" class="hero_brands_img"
-                          ><img src={bbb} alt=""
-                            /></a>
+                          <a href="#" class="hero_brands_img">
+                            <img src={clutch} alt="" />
+                          </a>
+                          <a href="#" class="hero_brands_img">
+                            <img src={truspilot} alt="" />
+                          </a>
+                          <a href="#" class="hero_brands_img">
+                            <img src={bbb} alt="" />
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -649,18 +354,9 @@ const particlesLoaded = useCallback(async container => {
                 </div>
               </div>
             </section>
-
-
           </SwiperSlide>
 
-
-
-
           <SwiperSlide>
-
-
-
-
             <section class="techVerse_hero hoverEffectSec">
               <div class="techVerse_heroContent">
                 <div class="container-fluid">
@@ -681,8 +377,13 @@ const particlesLoaded = useCallback(async container => {
                           data-aos-offset="300"
                           data-aos-duration="2000"
                         >
-                          At Techverse LLC, we are at the forefront of mobile app development, shaping the future with innovation and cutting-edge technology. Our team of expert developers,
-                          designers, and organizers work tirelessly to transform visionary ideas into dynamic mobile solutions that meet the needs of an ever-evolving digital landscape.
+                          At Techverse LLC, we are at the forefront of mobile
+                          app development, shaping the future with innovation
+                          and cutting-edge technology. Our team of expert
+                          developers, designers, and organizers work tirelessly
+                          to transform visionary ideas into dynamic mobile
+                          solutions that meet the needs of an ever-evolving
+                          digital landscape.
                         </p>
                         <div
                           class="techVerse_hero_btns"
@@ -713,15 +414,15 @@ const particlesLoaded = useCallback(async container => {
                           data-aos-offset="300"
                           data-aos-duration="3000"
                         >
-                          <a href="#" class="hero_brands_img"
-                          ><img src={clutch} alt=""
-                            /></a>
-                          <a href="#" class="hero_brands_img"
-                          ><img src={truspilot} alt=""
-                            /></a>
-                          <a href="#" class="hero_brands_img"
-                          ><img src={bbb} alt=""
-                            /></a>
+                          <a href="#" class="hero_brands_img">
+                            <img src={clutch} alt="" />
+                          </a>
+                          <a href="#" class="hero_brands_img">
+                            <img src={truspilot} alt="" />
+                          </a>
+                          <a href="#" class="hero_brands_img">
+                            <img src={bbb} alt="" />
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -755,221 +456,33 @@ const particlesLoaded = useCallback(async container => {
                 </div>
               </div>
             </section>
-
-
-
-
-
           </SwiperSlide>
-
         </Swiper>
-
       </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
       {/* 'backgroundImage: url(../../asserts/images/hero-bg.png);' */}
-
-
-
-
 
       {/* <!-- About Sec --> */}
 
 
+      <Portfolio pinkcapsol={pinkcapsol}
+        greencube={greencube}
+        donatorange={donatorange}
+
+        title="  Boost Your Brand's Visibility" subtitle="  With" title2="Techverse LLC's Expert Team Agency"
+        para="    Upgrade your online presence with Techverse LLC, the top-rated design agency dedicated to transforming your vision into a dynamic digital reality. Our expert team combines innovative design, cutting-edge technology, and user-centered strategies to create stunning, functional mobile applications that captivate and engage users. At Techverse LLC, we prioritize your unique needs, delivering tailor-made solutions that boost your brand's visibility and get success in the competitive digital environment. Trust us to ignite your online presence and turn your ideas into an interactive, impactful experience."
+
+        image={laptop}
+        chaticon={chaticon}
+        phoneicon={phoneicon}
+        travelimg={laptopFrame}
+
+      />
 
 
 
 
-
-      <section  className="techVerse_about" id="particles-js1" ref={sec2}>
-      <div id="custom_partilce"  >
-      <Particles
-className=' h-20'
-            id=" "
-            init={particlesInit}
-            loaded={particlesLoaded}
-            options={{
-                background: {
-                    color: {
-                        value: "#b6194",
-                    },
-                },
-                fpsLimit: 120,
-                interactivity: {
-                    events: {
-                        onClick: {
-                            enable: true,
-                            mode: "push",
-                        },
-                        onHover: {
-                            enable: true,
-                            mode: "repulse",
-                        },
-                        resize: true,
-                    },
-                    modes: {
-                        push: {
-                            quantity: 4,
-                        },
-                        repulse: {
-                            distance: 200,
-                            duration: 0.9,
-                        },
-                    },
-                },
-                particles: {
-                    color: {
-                        value: "#02a9f7",
-                    },
-                    links: {
-                        color: "#02a9f7",
-                        distance: 150,
-                        enable: true,
-                        opacity: 0.5,
-                        width: 1,
-                    },
-                    move: {
-                        direction: "none",
-                        enable: true,
-                        outModes: {
-                            default: "bounce",
-                        },
-                        random: false,
-                        speed: 6,
-                        straight: false,
-                    },
-                    number: {
-                        density: {
-                            enable: true,
-                            area: 800,
-                        },
-                        value: 80,
-                    },
-                    opacity: {
-                        value: 0.5,
-                    },
-                    shape: {
-                        type: "circle",
-                    },
-                    size: {
-                        value: { min: 1, max: 2 },
-                    },
-                },
-                detectRetina: true,
-            }}
-        />
-        </div>
-        <div className="sec2">
-          <div className="sec2_icons">
-            <img
-              className="techVerse_about_icon1 animation11"
-              src={pinkcapsol}
-              alt=""
-            />
-            <img
-              className="techVerse_about_icon2 animation33"
-              src={Pill}
-              alt=""
-            />
-            <img
-              className="techVerse_about_icon3 animation11"
-              src={greencube}
-              alt=""
-            />
-            <img
-              className="techVerse_about_icon4 animation11"
-              src={donatorange}
-              alt=""
-            />
-          </div>
-          <div className="techVerse_aboutContent">
-            <div className="container-fluid">
-              <div className="row">
-                <div className="col-md-6">
-                  <div className="techVerse_about_img">
-                    <div className="techVerse_about_laptop_img">
-                      <img
-                        src={laptop}
-                        className="about-laptopImg"
-                        data-aos="fade-right"
-                        data-aos-offset="300"
-                        data-aos-duration="1000"
-                        alt=""
-                      />
-                      <img
-                        src={laptopFrame}
-                        className="laptop-Frame"
-                        data-aos="fade-left"
-                        data-aos-offset="300"
-                        data-aos-duration="1000"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="custom_partilces col-md-6">
-                  <div className="techVerse_about_content">
-                    <div className="sec_title">
-                      <h2
-                        className="sec_title_head color-darkBlue"
-                        data-aos="fade-up"
-                        data-aos-offset="300"
-                        data-aos-duration="1000"
-                      >
-                        Boost Your Brand's Visibility
-                        <span className="color-lightBlue2"> With </span> Techverse LLC's Expert Team Agency
-                      </h2>
-                      <p
-                        data-aos="fade-up"
-                        data-aos-offset="300"
-                        data-aos-duration="2000"
-                      >
-                        Upgrade your online presence with Techverse LLC, the top-rated design agency dedicated to transforming your vision into a dynamic digital reality. Our expert team combines innovative design, cutting-edge technology, and user-centered strategies to create stunning, functional mobile applications that captivate and engage users. At Techverse LLC, we prioritize your unique needs, delivering tailor-made solutions that boost your brand's visibility and get success in the competitive digital environment. Trust us to ignite your online presence and turn your ideas into an interactive, impactful experience.
-                      </p>
-                      <div
-                        className="techVerse_hero_btns"
-                        data-aos="fade-up"
-                        data-aos-offset="300"
-                        data-aos-duration="3000"
-                      >
-                        <a href="#" className="btn_with_icon">
-                          <img
-                            className="btn_with_icon_img"
-                            src={phone_icon}
-                            alt=""
-                          />
-                          <span className="btn_with_icon_text">Call Now</span>
-                        </a>
-                        <a href="#" className="btn_with_icon btn_secondary">
-                          <img
-                            className="btn_with_icon_img"
-                            src={chat_icon}
-                            alt=""
-                          />
-                          <span className="btn_with_icon_text">Chat Now</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
+      
 
 
 
@@ -999,17 +512,17 @@ className=' h-20'
                     data-aos-duration="1000"
                   >
                     Revolutionize Your Business Presence
-                    <span class="color-lightBlue2"> With    </span>
-                    A Custom Website Design
+                    <span class="color-lightBlue2"> With </span>A Custom Website
+                    Design
                   </h2>
                   <p
                     data-aos="fade-up"
                     data-aos-offset="300"
                     data-aos-duration="2000"
                   >
-                    Our expert team combines cutting-edge technology with creative finesse to craft custom websites that not only enhance user experience but also drive tangible results.
-
-
+                    Our expert team combines cutting-edge technology with
+                    creative finesse to craft custom websites that not only
+                    enhance user experience but also drive tangible results.
                   </p>
                   <div
                     class="techVerse_hero_btns"
@@ -1040,7 +553,6 @@ className=' h-20'
           </div>
         </div>
       </section>
-
 
       {/* <!-- Services --> */}
       <section class="techVerse_services" id="particles-js2">
@@ -1086,11 +598,11 @@ className=' h-20'
                 data-aos-offset="300"
                 data-aos-duration="2000"
               >
-                Techverse does not provide services only; we become a partner with
-                our clients to scale up their businesses with our wide range of
-                digital marketing services. We have helped hundreds of large
-                enterprises in the US to get new wings to fly higher on the
-                digital landscapes globally. Get a unique digital marketing
+                Techverse does not provide services only; we become a partner
+                with our clients to scale up their businesses with our wide
+                range of digital marketing services. We have helped hundreds of
+                large enterprises in the US to get new wings to fly higher on
+                the digital landscapes globally. Get a unique digital marketing
                 experience with the amalgamation of our proven strategies,
                 professional team, and the use of modern technology.
               </p>
@@ -1112,8 +624,8 @@ className=' h-20'
                   <h3 class="service_box_title">Cross-Platform Development</h3>
                   <p class="service_box_p">
                     Elevate your mobile apps by overlaying virtual elements onto
-                    the real world, enhancing user interaction, entertainment, and
-                    practical experiences to instill a UX unlike any other.
+                    the real world, enhancing user interaction, entertainment,
+                    and practical experiences to instill a UX unlike any other.
                   </p>
                 </div>
               </div>
@@ -1128,8 +640,8 @@ className=' h-20'
                   <h3 class="service_box_title">Cross-Platform Development</h3>
                   <p class="service_box_p">
                     Elevate your mobile apps by overlaying virtual elements onto
-                    the real world, enhancing user interaction, entertainment, and
-                    practical experiences to instill a UX unlike any other.
+                    the real world, enhancing user interaction, entertainment,
+                    and practical experiences to instill a UX unlike any other.
                   </p>
                 </div>
               </div>
@@ -1144,8 +656,8 @@ className=' h-20'
                   <h3 class="service_box_title">Cross-Platform Development</h3>
                   <p class="service_box_p">
                     Elevate your mobile apps by overlaying virtual elements onto
-                    the real world, enhancing user interaction, entertainment, and
-                    practical experiences to instill a UX unlike any other.
+                    the real world, enhancing user interaction, entertainment,
+                    and practical experiences to instill a UX unlike any other.
                   </p>
                 </div>
               </div>
@@ -1160,8 +672,8 @@ className=' h-20'
                   <h3 class="service_box_title">Cross-Platform Development</h3>
                   <p class="service_box_p">
                     Elevate your mobile apps by overlaying virtual elements onto
-                    the real world, enhancing user interaction, entertainment, and
-                    practical experiences to instill a UX unlike any other.
+                    the real world, enhancing user interaction, entertainment,
+                    and practical experiences to instill a UX unlike any other.
                   </p>
                 </div>
               </div>
@@ -1176,8 +688,8 @@ className=' h-20'
                   <h3 class="service_box_title">Cross-Platform Development</h3>
                   <p class="service_box_p">
                     Elevate your mobile apps by overlaying virtual elements onto
-                    the real world, enhancing user interaction, entertainment, and
-                    practical experiences to instill a UX unlike any other.
+                    the real world, enhancing user interaction, entertainment,
+                    and practical experiences to instill a UX unlike any other.
                   </p>
                 </div>
               </div>
@@ -1192,8 +704,8 @@ className=' h-20'
                   <h3 class="service_box_title">Cross-Platform Development</h3>
                   <p class="service_box_p">
                     Elevate your mobile apps by overlaying virtual elements onto
-                    the real world, enhancing user interaction, entertainment, and
-                    practical experiences to instill a UX unlike any other.
+                    the real world, enhancing user interaction, entertainment,
+                    and practical experiences to instill a UX unlike any other.
                   </p>
                 </div>
               </div>
@@ -1215,7 +727,6 @@ className=' h-20'
 
       {/* <!-- Portfolio --> */}
       <Portfolios
-
         title="Our"
         subtitle="Portfolio"
         para="Our Company has worked with thousands of businesses 
@@ -1231,7 +742,15 @@ className=' h-20'
         image9={jeffwilson}
         image10={privateastrology}
         image11={Macbook}
-
+        image12={cms1}
+        image13={cms2}
+        image14={cms3}
+        classmobileapp="nav-link"
+        classwebsite="nav-link"
+        classcms="nav-link"
+        CMS="CMS"
+        Mobile_Apps="Mobile Apps"
+        Websites="Websites"
       />
 
 
@@ -1239,27 +758,8 @@ className=' h-20'
       {/* process we use */}
       <Process />
 
-
       {/* MOBILE APP */}
       <Testimonials />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
       {/* <!-- Case Studies --> */}
       <section class="techVerse_caseStudies">
@@ -1302,9 +802,10 @@ className=' h-20'
                     data-aos-offset="300"
                     data-aos-duration="2000"
                   >
-                    Our Company has worked with thousands of businesses all across
-                    the world and has developed highly functional, responsive, and
-                    feature-rich applications. Check out some of our best works:
+                    Our Company has worked with thousands of businesses all
+                    across the world and has developed highly functional,
+                    responsive, and feature-rich applications. Check out some of
+                    our best works:
                   </p>
                 </div>
               </div>
@@ -1320,7 +821,11 @@ className=' h-20'
               </div>
               <div class="col-lg-4 col-md-6">
                 <div
-                  class="techVerse_caseStudy_img bgOrange" style={{ backgroundImage: "url(https://custom.mystagingserver.site/techversellc/images/p2-bg.png)" }}
+                  class="techVerse_caseStudy_img bgOrange"
+                  style={{
+                    backgroundImage:
+                      "url(https://custom.mystagingserver.site/techversellc/images/p2-bg.png)",
+                  }}
                   data-aos="fade-up"
                   data-aos-offset="300"
                   data-aos-duration="2000"
@@ -1330,7 +835,11 @@ className=' h-20'
               </div>
               <div class="col-lg-4 col-md-6">
                 <div
-                  class="techVerse_caseStudy_img bgOrange" style={{ backgroundImage: "url(https://custom.mystagingserver.site/techversellc/images/p3-bg.png)" }}
+                  class="techVerse_caseStudy_img bgOrange"
+                  style={{
+                    backgroundImage:
+                      "url(https://custom.mystagingserver.site/techversellc/images/p3-bg.png)",
+                  }}
                   data-aos="fade-left"
                   data-aos-offset="300"
                   data-aos-duration="3000"
@@ -1340,7 +849,11 @@ className=' h-20'
               </div>
               <div class="col-lg-4 col-md-6">
                 <div
-                  class="techVerse_caseStudy_img bgOrange" style={{ backgroundImage: "url(https://custom.mystagingserver.site/techversellc/images/p4-bg.png)" }}
+                  class="techVerse_caseStudy_img bgOrange"
+                  style={{
+                    backgroundImage:
+                      "url(https://custom.mystagingserver.site/techversellc/images/p4-bg.png)",
+                  }}
                   data-aos="fade-right"
                   data-aos-offset="300"
                   data-aos-duration="1000"
@@ -1350,7 +863,11 @@ className=' h-20'
               </div>
               <div class="col-lg-4 col-md-6">
                 <div
-                  class="techVerse_caseStudy_img bgOrange " style={{ backgroundImage: "url(https://custom.mystagingserver.site/techversellc/images/p5-bg.png)" }}
+                  class="techVerse_caseStudy_img bgOrange "
+                  style={{
+                    backgroundImage:
+                      "url(https://custom.mystagingserver.site/techversellc/images/p5-bg.png)",
+                  }}
                   data-aos="fade-up"
                   data-aos-offset="300"
                   data-aos-duration="2000"
@@ -1360,7 +877,11 @@ className=' h-20'
               </div>
               <div class="col-lg-4 col-md-6">
                 <div
-                  class="techVerse_caseStudy_img bgOrange " style={{ backgroundImage: "url(https://custom.mystagingserver.site/techversellc/images/p6-bg.png)" }}
+                  class="techVerse_caseStudy_img bgOrange "
+                  style={{
+                    backgroundImage:
+                      "url(https://custom.mystagingserver.site/techversellc/images/p6-bg.png)",
+                  }}
                   // class="techVerse_caseStudy_img bgOrange caseStudy_img_bg_one"
                   data-aos="fade-left"
                   data-aos-offset="300"
@@ -1372,13 +893,8 @@ className=' h-20'
             </div>
           </div>
         </div>
-
       </section>
-
-
-
-
     </UserLayout>
-  )
-}
-export default Home
+  );
+};
+export default Home;

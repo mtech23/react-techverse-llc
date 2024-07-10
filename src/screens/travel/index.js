@@ -60,6 +60,7 @@ import lllreptile from '../../asserts/images/lll-reptile.png'
 import privateastrology from '../../asserts/images/private-astrology.png'
 import sportsimg111 from '../../asserts/images/sports-img-111.png'
 import sportsimg3 from '../../asserts/images/sports-img-3.png'
+import travelimg1airplane from '../../asserts/images/travel-img-1-airplane.png'
 
 import Macbook from '../../asserts/images/Macbook.png'
 import mediaimg1 from '../../asserts/images/media-img-1.gif'
@@ -71,6 +72,11 @@ import sportsimg2 from '../../asserts/images/sports-img-2.png'
 import travelimg2 from '../../asserts/images/travel-img-2.png'
 import travelimg1 from '../../asserts/images/travel-img-1.gif'
 import travelimg3 from '../../asserts/images/travel-img-3.png'
+import travelportfolio1 from '../../asserts/images/travel-portfolio-1.png'
+import travelportfolio2 from '../../asserts/images/travel-portfolio-2.png'
+import travelportfolio3 from '../../asserts/images/travel-portfolio-3.png'
+import travelportfolio4 from '../../asserts/images/travel-portfolio-4.png'
+import travelportfolio5 from '../../asserts/images/travel-portfolio-5.png'
  
 gsap.registerPlugin(MotionPathPlugin);
 
@@ -112,7 +118,7 @@ const Travel = () => {
 
 
             <HeroSection
-                classheroimage={"media_bg_custom"}
+                classheroimage={"travel_bg_custom"}
                 title={"Redefining Travelling Experience For Your Clients"}
                 // subtitle={"  In  "}
                 // title2={"Media & Entertainment!"}
@@ -144,14 +150,14 @@ const Travel = () => {
             <Portfolio
                 pinkcapsol={pinkcapsol}
                 classtitle={" color-darkBlue   "}
-                // newClass={"media-abt1"}
+                newClass={"travel-abt1"}
                 greencube={greencube}
                 donatorange={donatorange}
 
                 title="Perfectly Curated Mobile Applications For The" subtitle="     Entertainment Industry  "
 
                 para="We offer cutting-edge mobile app development solutions to transform the media and entertainment industry. Our team of experts creates unique, high-performance mobile apps that provide a seamless user experience to your audience."
-
+                travelimg={travelimg1airplane}
                 image={travelimg1}
                 chaticon={chaticon}
                 phoneicon={phoneicon}
@@ -172,6 +178,8 @@ const Travel = () => {
 
             {/* <!-- Real Estate App Dev --> */}
             <Development_Process
+            travelbgclass={"travel-abt2"}
+            sportsclass={"travel-img-2"}
                 image={travelimg2}
                 title="App Development For The "
                 subtitle="Entertainment Industry"
@@ -191,11 +199,11 @@ const Travel = () => {
                 title="TRAVEL  "
                 subtitle=" PORTFOLIO"
                 para="Our Company has worked with thousands of businesses all across the world and has developed highly functional, responsive, and feature-rich applications. Check out some of our best works:"
-                image1={automotivescreen1}
-                image2={automotivescreen2}
-                image3={automotivescreen3}
-                image4={automotivescreen4}
-                image5={automotivescreen5}
+                image1={travelportfolio1}
+                image2={travelportfolio2}
+                image3={travelportfolio3}
+                image4={travelportfolio4}
+                image5={travelportfolio5}
                 image6={mobileframe}
                 image7={carbuying}
                 image8={jeffwilson}
@@ -220,7 +228,9 @@ const Travel = () => {
                 subtitle="    Media & Entertainment  "
                 title2=" App Development Service  "
                 para="When you choose Blitz Mobile Apps for your media and entertainment mobile app development needs, you can expect:"
-                image={travelimg3 } />
+                image={travelimg3 } 
+                hrimg={"travel-img-3"}
+                />
 
 
 

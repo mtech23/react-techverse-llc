@@ -194,8 +194,6 @@ const Automotive = () => {
                 image11={Macbook}
                 classmobileapp="nav-link"
                 classwebsite="nav-link"
-                classcms="nav-link"
-
                 Mobile_Apps="Mobile Apps"
                 Websites="Websites"
             />

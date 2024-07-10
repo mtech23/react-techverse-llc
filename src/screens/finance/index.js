@@ -63,6 +63,11 @@ import ecommersedevhero from "../../asserts/images/ecommersedevhero.png";
 import HeroSection from '../../Components/herosection/index'
 import fluttericon from "../../asserts/images/flutter-icon.png";
 import reacticon from "../../asserts/images/react-icon.png";
+import financeportfolio1 from "../../asserts/images/finance-portfolio-1.png";
+import financeportfolio2 from "../../asserts/images/finance-portfolio-2.png";
+import financeportfolio3 from "../../asserts/images/finance-portfolio-3.png";
+import financeportfolio4 from "../../asserts/images/finance-portfolio-4.png";
+import financeportfolio5 from "../../asserts/images/finance-portfolio-5.png";
 
 
 import Aos from "aos";
@@ -114,7 +119,7 @@ const Finance = () => {
       {/* ecommerce section */}
 
 
-
+{/* 
       <Portfolio pinkcapsol={pinkcapsol}
         greencube={greencube}
         donatorange={donatorange}
@@ -128,7 +133,44 @@ const Finance = () => {
         image={financeimg1}
         chaticon={chaticon}
         phoneicon={phoneicon}
-        webaboutimg1={webaboutimg1} />
+        webaboutimg1={webaboutimg1} /> */}
+             <Portfolio pinkcapsol={pinkcapsol}
+
+            // classtitle={" color-white  "}
+
+            newClass={"finance-abt1"}
+            greencube={greencube}
+            donatorange={donatorange}
+            // classpara="color-white"
+            classtitle={"financesubtitle"}
+          subtitle="  Finance"
+            title2="App Development Services"
+            para="At Techverse LLC, we understand the unique dynamics and fast-paced nature of the media and entertainment industry. Our services of this niche, ensuring your brand stands out in a crowded market. Here's why Techverse LLC should be your go-to partner:"
+
+            image={financeimg1}
+            chaticon={chaticon}
+            phoneicon={phoneicon}
+            playstore={playstore}
+            appstore={appstore}
+
+            />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <App_development_solutions />
 
 
@@ -140,6 +182,7 @@ const Finance = () => {
       {/* <!-- Real Estate App Dev --> */}
       <Development_Process
         image={financeimg2}
+        sportsclass={"finance-img2 "}
         title="App Development Process At"
         subtitle="TECHVERSE LLC  "
         para="We follow a streamlined approach to ensure customer satisfaction by delivering customized real estate mobile app development solutions."
@@ -156,11 +199,11 @@ const Finance = () => {
         para="Our Company has worked with thousands of businesses all across the world and has developed highly functional, responsive, and feature-rich applications. Check out some of our best works:
 
 "
-        image1={realEstateportfolioimg1}
-        image2={realEstateportfolioimg2}
-        image3={realEstateportfolioimg3}
-        image4={realEstateportfolioimg4}
-        image5={realEstateportfolioimg5}
+        image1={financeportfolio1}
+        image2={financeportfolio2}
+        image3={financeportfolio3}
+        image4={financeportfolio4}
+        image5={financeportfolio5}
         image6={mobileframe}
         image7={carbuying}
         image8={jeffwilson}
@@ -183,9 +226,12 @@ const Finance = () => {
         title="    Feel The Power Of Innovative  "
         subtitle="    Finance Apps   "
         title2="    With Techverse LLC"
-        image={financeimg3} />
+        image={financeimg3} 
+        hrimg={"finance-img3"}
+        />
 
       <TechnologiesUse />
+
       <Testimonials />
 
 

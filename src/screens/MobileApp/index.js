@@ -134,6 +134,7 @@ const MobileApp = () => {
           // playstore: playstore,
           // appstore: appstore
         }}
+        
         title="RAPID APPLICATION DEVELOPMENT USING" subtitle="  CUTTING-EDGE" title2="TECHNOLOGIES  "
         para="Techverse offers top-notch mobile app solutions that improve the performance of businesses by increasing revenues 
                                 and amplifying the online presence of the brand. We create applications for businesses of all sizes and provide them with an exceptional custom app

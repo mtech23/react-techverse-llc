@@ -60,6 +60,11 @@ import lllreptile from '../../asserts/images/lll-reptile.png'
 import privateastrology from '../../asserts/images/private-astrology.png'
 import sportsimg111 from '../../asserts/images/sports-img-111.png'
 import sportsimg3 from '../../asserts/images/sports-img-3.png'
+import sportsportfolio1 from '../../asserts/images/sports-portfolio-1.png'
+import sportsportfolio2 from '../../asserts/images/sports-portfolio-2.png'
+import sportsportfolio3 from '../../asserts/images/sports-portfolio-3.png'
+import sportsportfolio4 from '../../asserts/images/sports-portfolio-4.png'
+import sportsportfolio5 from '../../asserts/images/sports-portfolio-5.png'
 
 import Macbook from '../../asserts/images/Macbook.png'
 import mediaimg1 from '../../asserts/images/media-img-1.gif'
@@ -109,7 +114,7 @@ const Sports = () => {
 
 
             <HeroSection
-                classheroimage={"media_bg_custom"}
+                classheroimage={"sports_bg_custom"}
                 title={"     Revolutionizing Sports Mobile App Development "}
                 // subtitle={"  In  "}
                 // title2={"Media & Entertainment!"}
@@ -121,14 +126,9 @@ const Sports = () => {
                     phoneicon: phoneicon,
                     calltext: "Call Us",
                     primaryButtonClass: "btn_with_icon",
-                    chaticon: chaticon,
-                    chatenow: "Chat Us",
-                    secondaryButtonClass: "btn_with_icon btn_secondary  "
-
-                    // playstore: playstore,
-                    // appstore: appstore
+                    playstore: playstore,
+                    appstore: appstore
                 }}
-
 
 
             // secondaryButtonClass="btn_with_icon btn_secondary"
@@ -155,6 +155,7 @@ const Sports = () => {
 "
 
                 image={sportsimg111}
+                eduHR={"sports-img-1"}
                 chaticon={chaticon}
                 phoneicon={phoneicon}
                 playstore={playstore}
@@ -174,6 +175,7 @@ const Sports = () => {
 
             {/* <!-- Real Estate App Dev --> */}
             <Development_Process
+                sportsclass={"sports-img-2"}
                 image={sportsimg2}
                 title="App Development For The "
                 subtitle="Entertainment Industry"
@@ -193,11 +195,11 @@ const Sports = () => {
                 title="SPORTS "
                 subtitle=" Portfolio"
                 para="Our Company has worked with thousands of businesses all across the world and has developed highly functional, responsive, and feature-rich applications. Check out some of our best works:"
-                image1={automotivescreen1}
-                image2={automotivescreen2}
-                image3={automotivescreen3}
-                image4={automotivescreen4}
-                image5={automotivescreen5}
+                image1={sportsportfolio1}
+                image2={sportsportfolio2}
+                image3={sportsportfolio3}
+                image4={sportsportfolio4}
+                image5={sportsportfolio5}
                 image6={mobileframe}
                 image7={carbuying}
                 image8={jeffwilson}
@@ -206,8 +208,6 @@ const Sports = () => {
                 image11={Macbook}
                 classmobileapp="nav-link"
                 classwebsite="nav-link"
-                classcms="nav-link"
-                CMS="CMS"
                 Mobile_Apps="Mobile Apps"
                 Websites="Websites"
             />
@@ -222,7 +222,9 @@ const Sports = () => {
                 subtitle="    Media & Entertainment  "
                 title2=" App Development Service  "
                 para="When you choose Blitz Mobile Apps for your media and entertainment mobile app development needs, you can expect:"
-                image={sportsimg3} />
+                image={sportsimg3}
+                hrimg={"sports-img-3"}
+                />
 
 
 
