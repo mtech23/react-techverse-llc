@@ -1,4 +1,5 @@
-import React, { useEffect, } from 'react';
+import React, { useEffect, useRef } from 'react';
+
 
 import { UserLayout } from "../../Components/Layout/UserLayout";
 import Portfolios from "../../Components/portfolios"
@@ -10,6 +11,7 @@ import Particles from 'react-particles';
 import { loadFull } from 'tsparticles';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Parallax, Pagination, Navigation, Autoplay } from 'swiper/modules';
+import Portfolio from '../../Components/Portfolio/index'
 import { gsap } from "gsap";
 // peramidLeftAngles
 // path_to_peramidleftangles
@@ -32,7 +34,7 @@ import processicon3 from '../../asserts/images/process-icon-3.png'
 import processicon4 from '../../asserts/images/process-icon-4.png'
 import processicon5 from '../../asserts/images/process-icon-5.png'
 import processicon6 from '../../asserts/images/process-icon-6.png'
-
+import { loadSlim } from "tsparticles-slim";
 import peramidleftangle from "../../asserts/images/peramid-left-angles.png"
 import clutch from "../../asserts/images/clutch.png";
 import truspilot from "../../asserts/images/trus-pilot.png";
@@ -43,7 +45,7 @@ import greencube from "../../asserts/images/green-cube.png";
 // import pinkcapsol from "../../asserts/images/pink-capsol.png";
 import Pill from "../../asserts/images/Pill.png";
 import bbb from "../../asserts/images/bbb.png";
-
+import { useCallback } from "react";
 import donatblue from "../../asserts/images/donat-blue.png";
 import chaticon from "../../asserts/images/chat-icon.png";
 import chat_icon from "../../asserts/images/chat-icon.png";
@@ -91,9 +93,22 @@ import Testimonials from '../../Components/Tetimonials';
 gsap.registerPlugin(MotionPathPlugin);
 
 const Home = () => {
-  const particlesInit = async (main) => {
-    await loadFull(main);
-  };
+
+
+
+
+  const particlesInit = useCallback(async engine => {
+    console.log(engine);
+ 
+    await loadSlim(engine);
+}, []);
+
+const particlesLoaded = useCallback(async container => {
+    await console.log(container);
+}, []);
+
+
+
 
   Aos.init();
 
@@ -122,10 +137,394 @@ const Home = () => {
     });
   }, []);
 
+
+
+  // const sectionRef = useRef(null);
+
+  // useEffect(() => {
+  //   const sections = sectionRef.current.querySelectorAll('.hoverEffectSec');
+
+  //   sections.forEach((section) => {
+  //     const container = section.querySelector('.techVerse_hero_img');
+
+  //     const handleMouseMove = (event) => {
+  //       const rect = section.getBoundingClientRect();
+  //       const mouseX = event.clientX - rect.left;
+  //       const mouseY = event.clientY - rect.top;
+  //       const centerX = rect.width / 2;
+  //       const centerY = rect.height / 2;
+  //       const distX = (mouseX - centerX) * 0.1; // Adjust multiplier for desired effect
+  //       const distY = (mouseY - centerY) * 0.1; // Adjust multiplier for desired effect
+
+  //       gsap.to(container, {
+  //         x: distX,
+  //         y: distY,
+  //         ease: 'power1.out',
+  //       });
+  //     };
+
+  //     const handleMouseLeave = () => {
+  //       gsap.to(container, {
+
+  //         // x: 0,
+  //         // y: 0,
+  //         ease: 'power1.out',
+  //       });
+  //     };
+
+  //     section.addEventListener('mousemove', handleMouseMove);
+  //     section.addEventListener('mouseleave', handleMouseLeave);
+
+  //     return () => {
+  //       section.removeEventListener('mousemove', handleMouseMove);
+  //       section.removeEventListener('mouseleave', handleMouseLeave);
+  //     };
+  //   });
+  // }, []);
+
+
+
+
+
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const sections = sectionRef?.current.querySelectorAll('.hoverEffectSec');
+
+    sections.forEach((section) => {
+      const container = section.querySelector('.techVerse_hero_img');
+
+      const handleMouseMove = (event) => {
+        const rect = section.getBoundingClientRect();
+        const mouseX = event.clientX - rect.left;
+        const mouseY = event.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const distX = (mouseX - centerX) * 0.1; // Adjust multiplier for desired effect
+        const distY = (mouseY - centerY) * 0.1; // Adjust multiplier for desired effect
+
+        gsap.to(container, {
+          x: distX,
+          y: distY,
+          ease: 'power1.out',
+        });
+      };
+
+      const handleMouseLeave = () => {
+        gsap.to(container, {
+          x: 0,
+          y: 0,
+          ease: 'power1.out',
+        });
+      };
+
+      section.addEventListener('mousemove', handleMouseMove);
+      section.addEventListener('mouseleave', handleMouseLeave);
+
+      return () => {
+        section.removeEventListener('mousemove', handleMouseMove);
+        section.removeEventListener('mouseleave', handleMouseLeave);
+      };
+    });
+  }, []);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // const sec2 = useRef(null);
+
+  // useEffect(() => {
+  //   const sections = sec2.current.querySelectorAll('.sec2');
+
+  //   sections.forEach((section) => {
+  //     const container = section.querySelector('.sec2_icons');
+
+  //     const handleMouseMove = (event) => {
+  //       const rect = section.getBoundingClientRect();
+  //       const mouseX = event.clientX - rect.left;
+  //       const mouseY = event.clientY - rect.top;
+  //       const centerX = rect.width / 2;
+  //       const centerY = rect.height / 2;
+  //       const distX = (mouseX - centerX) * 0.1; // Adjust multiplier for desired effect
+  //       const distY = (mouseY - centerY) * 0.1; // Adjust multiplier for desired effect
+
+  //       gsap.to(container, {
+  //         x: distX,
+  //         y: distY,
+  //         ease: 'power1.out',
+  //       });
+  //     };
+
+  //     const handleMouseLeave = () => {
+  //       gsap.to(container, {
+  //         x: 0,
+  //         y: 0,
+  //         ease: 'power1.out',
+  //       });
+  //     };
+
+  //     section.addEventListener('mousemove', handleMouseMove);
+  //     section.addEventListener('mouseleave', handleMouseLeave);
+
+  //     return () => {
+  //       section.removeEventListener('mousemove', handleMouseMove);
+  //       section.removeEventListener('mouseleave', handleMouseLeave);
+  //     };
+  //   });
+  // }, []);
+
+
+  const sec2 = useRef(null);
+
+  useEffect(() => {
+    const sections = sec2?.current.querySelectorAll('.sec2');
+
+    sections.forEach((section) => {
+      const container = section.querySelector('.sec2_icons');
+
+      const handleMouseMove = (event) => {
+        const rect = section.getBoundingClientRect();
+        const mouseX = event.clientX - rect.left;
+        const mouseY = event.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const distX = (mouseX - centerX) * 0.1; // Adjust multiplier for desired effect
+        const distY = (mouseY - centerY) * 0.1; // Adjust multiplier for desired effect
+
+        gsap.to(container, {
+          x: distX,
+          y: distY,
+          zIndex: 10, // Bring to front
+          ease: 'power1.out',
+        });
+      };
+
+      const handleMouseLeave = () => {
+        gsap.to(container, {
+          x: 0,
+          y: 0,
+          zIndex: 1, // Reset to default
+          ease: 'power1.out',
+          clearProps: 'all' // Reset transformations to their initial state
+        });
+      };
+
+      section.addEventListener('mousemove', handleMouseMove);
+      section.addEventListener('mouseleave', handleMouseLeave);
+
+      return () => {
+        section.removeEventListener('mousemove', handleMouseMove);
+        section.removeEventListener('mouseleave', handleMouseLeave);
+      };
+    });
+  }, []);
+
+
+
+
+
+
+
+
+  // const sec2 = useRef(null);
+
+  // useEffect(() => {
+  //   const sections = sec2.current.querySelectorAll('.sec2');
+
+  //   sections.forEach((section) => {
+  //     const container = section.querySelector('.sec2_icons');
+
+  //     const handleMouseMove = (event) => {
+  //       const rect = section.getBoundingClientRect();
+  //       const mouseX = event.clientX - rect.left;
+  //       const mouseY = event.clientY - rect.top;
+  //       const centerX = rect.width / 2;
+  //       const centerY = rect.height / 2;
+  //       const distX = (mouseX - centerX) * 0.1; // Adjust multiplier for desired effect
+  //       const distY = (mouseY - centerY) * 0.1; // Adjust multiplier for desired effect
+
+  //       gsap.to(container, {
+  //         x: distX,
+  //         y: distY,
+  //         ease: 'power1.out',
+  //       });
+  //     };
+
+  //     const handleMouseLeave = () => {
+  //       gsap.to(container, {
+
+  //         // x: 0,
+  //         // y: 0,
+  //         ease: 'power1.out',
+  //       });
+  //     };
+
+  //     section.addEventListener('mousemove', handleMouseMove);
+  //     section.addEventListener('mouseleave', handleMouseLeave);
+
+  //     return () => {
+  //       section.removeEventListener('mousemove', handleMouseMove);
+  //       section.removeEventListener('mouseleave', handleMouseLeave);
+  //     };
+  //   });
+  // }, []);
+
+
+
+
+
+
+
+
+
+
+
+  const particlesOptions = {
+    particles: {
+      number: {
+        value: 80,
+        density: {
+          enable: true,
+          value_area: 800,
+        },
+      },
+      color: {
+        value: "#02a9f7",
+      },
+      shape: {
+        type: "circle",
+        stroke: {
+          width: 0,
+          color: "#02a9f7",
+        },
+        polygon: {
+          nb_sides: 5,
+        },
+      },
+      opacity: {
+        value: 0.5,
+        random: false,
+        anim: {
+          enable: false,
+          speed: 1,
+          opacity_min: 0.1,
+          sync: false,
+        },
+      },
+      size: {
+        value: 5,
+        random: true,
+        anim: {
+          enable: false,
+          speed: 40,
+          size_min: 0.1,
+          sync: false,
+        },
+      },
+      line_linked: {
+        enable: true,
+        distance: 150,
+        color: "#02a9f7",
+        opacity: 0.4,
+        width: 1,
+      },
+      move: {
+        enable: true,
+        speed: 6,
+        direction: "none",
+        random: false,
+        straight: false,
+        out_mode: "out",
+        attract: {
+          enable: false,
+          rotateX: 600,
+          rotateY: 1200,
+        },
+      },
+    },
+    interactivity: {
+      detect_on: "canvas",
+      events: {
+        onhover: {
+          enable: true,
+          mode: "repulse",
+        },
+        onclick: {
+          enable: true,
+          mode: "push",
+        },
+        resize: true,
+      },
+      modes: {
+        grab: {
+          distance: 400,
+          line_linked: {
+            opacity: 1,
+          },
+        },
+        bubble: {
+          distance: 400,
+          size: 40,
+          duration: 2,
+          opacity: 8,
+          speed: 3,
+        },
+        repulse: {
+          distance: 200,
+        },
+        push: {
+          particles_nb: 4,
+        },
+        remove: {
+          particles_nb: 2,
+        },
+      },
+    },
+    retina_detect: true,
+    background: {
+      color: "#b61924",
+      image: "",
+      position: "50% 50%",
+      repeat: "no-repeat",
+      size: "cover",
+    },
+  };
+
+
+ 
+
+
+
+
   return (
     <UserLayout>
 
-      <div className="relative" >
+      <div className="relative" ref={sectionRef}>
         <Swiper
           style={{
             '--swiper-navigation-color': '#fff',
@@ -154,11 +553,11 @@ const Home = () => {
 
 
 
-            <section class="techVerse_hero hoverEffectSec">
+            <section class="techVerse_hero hoverEffectSec "  >
               <div class="techVerse_heroContent">
                 <div class="container-fluid">
                   <div class="row">
-                    <div class="col-md-6">
+                    <div class="innersec col-md-6">
                       <div class="techVerse_hero_content">
                         <h1
                           data-aos="fade-right"
@@ -220,21 +619,23 @@ const Home = () => {
                     </div>
                     <div class="col-md-6">
                       <div class="techVerse_hero_img">
-                        <img
-                          src={donatblue}
-                          class="techVerse_hero_icon1 animation11"
-                          alt=""
-                        />
-                        <img
-                          src={PillBlueGlossy}
-                          class="techVerse_hero_icon2 animation22"
-                          alt=""
-                        />
-                        <img
-                          src={ConeBlueGlossy}
-                          class="techVerse_hero_icon3 animation22"
-                          alt=""
-                        />
+                        <div className='inner_images '>
+                          <img
+                            src={donatblue}
+                            class="techVerse_hero_icon1 animation11"
+                            alt=""
+                          />
+                          <img
+                            src={PillBlueGlossy}
+                            class="techVerse_hero_icon2 animation22"
+                            alt=""
+                          />
+                          <img
+                            src={ConeBlueGlossy}
+                            class="techVerse_hero_icon3 animation22"
+                            alt=""
+                          />
+                        </div>
                         <img
                           src={herophonemockupgroup}
                           data-aos="fade-left"
@@ -384,104 +785,181 @@ const Home = () => {
 
 
       {/* <!-- About Sec --> */}
-      <section class="techVerse_about" id="particles-js1">
-        <img
-          class="techVerse_about_icon1 animation11"
-          src={pinkcapsol}
-          alt=""
+
+
+
+
+
+
+
+      <section  className="techVerse_about" id="particles-js1" ref={sec2}>
+      <div id="custom_partilce"  >
+      <Particles
+className=' h-20'
+            id=" "
+            init={particlesInit}
+            loaded={particlesLoaded}
+            options={{
+                background: {
+                    color: {
+                        value: "#b6194",
+                    },
+                },
+                fpsLimit: 120,
+                interactivity: {
+                    events: {
+                        onClick: {
+                            enable: true,
+                            mode: "push",
+                        },
+                        onHover: {
+                            enable: true,
+                            mode: "repulse",
+                        },
+                        resize: true,
+                    },
+                    modes: {
+                        push: {
+                            quantity: 4,
+                        },
+                        repulse: {
+                            distance: 200,
+                            duration: 0.9,
+                        },
+                    },
+                },
+                particles: {
+                    color: {
+                        value: "#02a9f7",
+                    },
+                    links: {
+                        color: "#02a9f7",
+                        distance: 150,
+                        enable: true,
+                        opacity: 0.5,
+                        width: 1,
+                    },
+                    move: {
+                        direction: "none",
+                        enable: true,
+                        outModes: {
+                            default: "bounce",
+                        },
+                        random: false,
+                        speed: 6,
+                        straight: false,
+                    },
+                    number: {
+                        density: {
+                            enable: true,
+                            area: 800,
+                        },
+                        value: 80,
+                    },
+                    opacity: {
+                        value: 0.5,
+                    },
+                    shape: {
+                        type: "circle",
+                    },
+                    size: {
+                        value: { min: 1, max: 2 },
+                    },
+                },
+                detectRetina: true,
+            }}
         />
-        <img
-          class="techVerse_about_icon2 animation33"
-          src={Pill}
-          alt=""
-        />
-        <img
-          class="techVerse_about_icon3 animation11"
-          src={greencube}
-          alt=""
-        />
-        <img
-          class="techVerse_about_icon4 animation11"
-          src={donatorange}
-          alt=""
-        />
-        <div class="techVerse_aboutContent">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="techVerse_about_img">
-                  <div class="techVerse_about_laptop_img">
-                    <img
-                      src={laptop}
-                      class="about-laptopImg"
-                      data-aos="fade-right"
-                      data-aos-offset="300"
-                      data-aos-duration="1000"
-                    />
-                    <img
-                      src={laptopFrame}
-                      class="laptop-Frame"
-                      data-aos="fade-left"
-                      data-aos-offset="300"
-                      data-aos-duration="1000"
-                    />
+        </div>
+        <div className="sec2">
+          <div className="sec2_icons">
+            <img
+              className="techVerse_about_icon1 animation11"
+              src={pinkcapsol}
+              alt=""
+            />
+            <img
+              className="techVerse_about_icon2 animation33"
+              src={Pill}
+              alt=""
+            />
+            <img
+              className="techVerse_about_icon3 animation11"
+              src={greencube}
+              alt=""
+            />
+            <img
+              className="techVerse_about_icon4 animation11"
+              src={donatorange}
+              alt=""
+            />
+          </div>
+          <div className="techVerse_aboutContent">
+            <div className="container-fluid">
+              <div className="row">
+                <div className="col-md-6">
+                  <div className="techVerse_about_img">
+                    <div className="techVerse_about_laptop_img">
+                      <img
+                        src={laptop}
+                        className="about-laptopImg"
+                        data-aos="fade-right"
+                        data-aos-offset="300"
+                        data-aos-duration="1000"
+                        alt=""
+                      />
+                      <img
+                        src={laptopFrame}
+                        className="laptop-Frame"
+                        data-aos="fade-left"
+                        data-aos-offset="300"
+                        data-aos-duration="1000"
+                        alt=""
+                      />
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div class="techVerse_about_content">
-                  <div class="sec_title">
-                    <h2
-                      class="sec_title_head color-darkBlue"
-                      data-aos="fade-up"
-                      data-aos-offset="300"
-                      data-aos-duration="1000"
-                    >
-                      Ignite your online presence with the
-                      <span class="color-lightBlue2"> top rated </span> design
-                      agency
-                    </h2>
-                    <p
-                      data-aos="fade-up"
-                      data-aos-offset="300"
-                      data-aos-duration="2000"
-                    >
-                      We boast a team of dynamic and seasoned web developers
-                      committed to delivering top-notch quality. Our core focus is
-                      on providing exceptional services, and we take pride in
-                      catering to the needs of our discerning clientele. While
-                      many promise excellence, we believe in truly serving our
-                      customers. Our dedication lies in crafting remarkable web
-                      designs that not only establish a distinctive brand identity
-                      but also ensure a prominent presence in the market. Equipped
-                      with the latest tools and innovative techniques, our
-                      professionals are poised to enhance your brand's visual
-                      appeal. We are dedicated to elevating your communication
-                      with potential clients, ensuring you always stand out in the
-                      market.
-                    </p>
-                    <div
-                      class="techVerse_hero_btns"
-                      data-aos="fade-up"
-                      data-aos-offset="300"
-                      data-aos-duration="3000"
-                    >
-                      <a href="#" class="btn_with_icon">
-                        <img
-                          class="btn_with_icon_img"
-                          src={phone_icon}
-                          alt=""
-                        />
-                        <span class="btn_with_icon_text">Call Now</span>
-                      </a>
-                      <a href="#" class="btn_with_icon btn_secondary">
-                        <img
-                          class="btn_with_icon_img"
-                          src={chat_icon}
-                          alt=""
-                        />
-                        <span class="btn_with_icon_text">Chat Now</span>
-                      </a>
+                <div className="custom_partilces col-md-6">
+                  <div className="techVerse_about_content">
+                    <div className="sec_title">
+                      <h2
+                        className="sec_title_head color-darkBlue"
+                        data-aos="fade-up"
+                        data-aos-offset="300"
+                        data-aos-duration="1000"
+                      >
+                        Boost Your Brand's Visibility
+                        <span className="color-lightBlue2"> With </span> Techverse LLC's Expert Team Agency
+                      </h2>
+                      <p
+                        data-aos="fade-up"
+                        data-aos-offset="300"
+                        data-aos-duration="2000"
+                      >
+                        Upgrade your online presence with Techverse LLC, the top-rated design agency dedicated to transforming your vision into a dynamic digital reality. Our expert team combines innovative design, cutting-edge technology, and user-centered strategies to create stunning, functional mobile applications that captivate and engage users. At Techverse LLC, we prioritize your unique needs, delivering tailor-made solutions that boost your brand's visibility and get success in the competitive digital environment. Trust us to ignite your online presence and turn your ideas into an interactive, impactful experience.
+                      </p>
+                      <div
+                        className="techVerse_hero_btns"
+                        data-aos="fade-up"
+                        data-aos-offset="300"
+                        data-aos-duration="3000"
+                      >
+                        <a href="#" className="btn_with_icon">
+                          <img
+                            className="btn_with_icon_img"
+                            src={phone_icon}
+                            alt=""
+                          />
+                          <span className="btn_with_icon_text">Call Now</span>
+                        </a>
+                        <a href="#" className="btn_with_icon btn_secondary">
+                          <img
+                            className="btn_with_icon_img"
+                            src={chat_icon}
+                            alt=""
+                          />
+                          <span className="btn_with_icon_text">Chat Now</span>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -490,6 +968,12 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+
+
+
+
+
 
       {/* <!-- Website --> */}
       <section class="techVerse_webSolution">

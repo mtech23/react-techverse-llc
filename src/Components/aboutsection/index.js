@@ -63,14 +63,14 @@ const Aboutsection = (props) => {
                                                 data-aos-offset="0"
                                                 data-aos-duration="2000"
                                             >
-                                                {props?.para}
+                                              {props?.para}
                                             </p>
                                             <p
                                                 data-aos="fade-up"
                                                 data-aos-offset="0"
                                                 data-aos-duration="2000"
                                             >
-                                                {props?.para2}
+      {props?.para2}
                                             </p>
 
                                             <ul

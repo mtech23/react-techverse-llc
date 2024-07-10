@@ -20,7 +20,7 @@ import Sports from "../screens/sports";
 import Travel from "../screens/travel";
 import About_us from "../screens/About_us";
 import Contact from "../screens/contact";
-import Case_study from "../screens/Case_study";
+import Case_study from "../screens/About_us copy";
  
 const Router = () => {
   return (
