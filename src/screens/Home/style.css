@@ -104,6 +104,20 @@
 
 
 
+.inner_images{
+          position: relative;
+    
+}
+
+
+
+
+
+
+#custom_partilce{
+    position: relative;
+    z-index: -1;
+   }
 
 
 
@@ -111,12 +125,17 @@
 
 
 
-
-
-
-
-
-
+   .custom_partilces{
+    position: relative;
+    z-index: -1;
+   }
+.travel-img-1-airplane{
+    position: absolute;
+    right: 0;
+    top: 6%;
+    z-index: -1;
+    width: 440px;
+}
 
 
 
