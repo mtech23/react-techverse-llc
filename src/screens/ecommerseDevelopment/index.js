@@ -52,17 +52,17 @@ import carbuying from "../../asserts/images/car-buying.png";
 import lllreptile from "../../asserts/images/lll-reptile.png";
 import privateastrology from "../../asserts/images/private-astrology.png";
 import Macbook from "../../asserts/images/Macbook.png";
-import peramidleftangles from '../../asserts/images/peramid-left-angles.png';
+import peramidleftangles from "../../asserts/images/peramid-left-angles.png";
 import orangehalfcircle from "../../asserts/images/orange-half-circle.png";
-import processicon1 from '../../asserts/images/process-icon-1.png'
-import arrowicon from '../../asserts/images/arrow-icon.png'
-import processicon2 from '../../asserts/images/process-icon-2.png'
-import processicon3 from '../../asserts/images/process-icon-3.png'
-import processicon4 from '../../asserts/images/process-icon-4.png'
-import processicon5 from '../../asserts/images/process-icon-5.png'
-import processicon6 from '../../asserts/images/process-icon-6.png'
-import Ctnbutton from '../../Components/ctnbutton'
-import Aboutsection from '../../Components/aboutsection';
+import processicon1 from "../../asserts/images/process-icon-1.png";
+import arrowicon from "../../asserts/images/arrow-icon.png";
+import processicon2 from "../../asserts/images/process-icon-2.png";
+import processicon3 from "../../asserts/images/process-icon-3.png";
+import processicon4 from "../../asserts/images/process-icon-4.png";
+import processicon5 from "../../asserts/images/process-icon-5.png";
+import processicon6 from "../../asserts/images/process-icon-6.png";
+import Ctnbutton from "../../Components/ctnbutton";
+import Aboutsection from "../../Components/aboutsection";
 import Aos from "aos";
 import "swiper/css";
 import Website from "../../Components/Website";
@@ -122,7 +122,6 @@ const EcommerseDevelopment = () => {
         }
         className={"ecommerceDev_hero_img"}
         heroimage={Ecommercedevelopmenthero}
-
         CtnbuttonComponent={Ctnbutton}
         ctnButtonProps={{
           phoneicon: phoneicon,
@@ -131,8 +130,6 @@ const EcommerseDevelopment = () => {
           chaticon: chaticon,
           chatenow: "Chat Us",
           secondaryButtonClass: "btn_with_icon btn_secondary  ",
-
-        
         }}
         classheroimage={Ecommercedevelopmenthero}
       />
@@ -187,15 +184,12 @@ const EcommerseDevelopment = () => {
         title2="Our Seamless E-Commerce Solutions.  "
         para="Our expert team customizes every aspect of your website, from intuitive user interfaces to robust backend systems, ensuring seamless functionality and enhanced customer experiences. Whether you're launching a new venture or upgrading an existing platform, trust Techverse LLC to deliver scalable, secure, and visually stunning E-Commerce websites that maximize conversions and propel your business forward in the digital age."
         image={ecommerceabout1}
+        abtImgClass="ecom-dev-img-1"
       />
 
+      {/* MOBILE APP */}
 
-
-  {/* MOBILE APP */}
-
-  <Elevateyourbusiness />
-
-
+      <Elevateyourbusiness />
 
       {/* <Development_Process title="Our " subtitle="Real Estate" title2="Mobile App Development Process"
         para="We follow a streamlined approach to ensure customer satisfaction by delivering customized real estate mobile app development solutions."
@@ -226,13 +220,11 @@ const EcommerseDevelopment = () => {
 
       /> */}
 
+      {/* process we use */}
 
-        {/* process we use */}
-        
-        <Process />
+      <Process />
 
-
-        <Driving_Exprience       
+      <Driving_Exprience
         titleclass2="color-darkBlue"
         titleclass="color-darkBlue"
         title="Why Choose Our  "

@@ -1,4 +1,3 @@
-
 /* Testimonials Start */
 /* .techVerse_testimonials .sec_title {
   text-align: center;
@@ -47,13 +46,19 @@
 } */
 
 .rc {
-  width: 400px;
-  height: 400px;
+  /* width: 400px; */
+  /* height: 400px; */
+  width: 500px;
+  height: 500px;
   border-radius: 100%;
   -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
   -webkit-transform: rotate(0.000001deg);
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
+}
+.rc video {
+  /* width: 100%; */
+  height: 100%;
 }
 
 body .rc h2 {
@@ -65,6 +70,7 @@ body .rc h2 {
   color: #0bacf7 !important;
   margin-bottom: 0px;
   line-height: 13px;
+  margin: 15px 0;
 }
 
 .testimonial p {
@@ -74,33 +80,34 @@ body .rc h2 {
 }
 
 .techVerse_testimonialsContent {
-max-width: 1600px;
-margin: 0 auto;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .techVerse_testimonials {
-padding: 60px 0;
+  padding: 60px 0;
 }
 .testimonials_titleHead img {
-width: 285px;
+  width: 285px;
 }
 .testimonials_titleHead span {
-color: #02a9f7;
-font-size: 16px;
-font-family: "Poppins", sans-serif;
-letter-spacing: 10px;
+  color: #02a9f7;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 10px;
 }
 .testimonials_title {
-font-family: "Sora", sans-serif;
-font-weight: 700;
-font-size: 71px;
+  font-family: "Sora", sans-serif;
+  font-weight: 700;
+  font-size: 81px;
+  line-height: 1;
 }
 .techVerse_testimonialsTextSec-img {
-text-align: right;
-position: relative;
-height: 330px;
-margin-top: -50px;
-margin-right: 20px;
+  text-align: right;
+  position: relative;
+  height: 330px;
+  margin-top: -50px;
+  margin-right: 20px;
 }
 
 .face_1,
@@ -110,79 +117,79 @@ margin-right: 20px;
 .face_5,
 .face_6,
 .face_7 {
-position: absolute;
+  position: absolute;
 }
 .face_2 {
-right: 0;
-top: 10px;
+  right: 0;
+  top: 10px;
 }
 .face_1 {
-right: 20%;
+  right: 20%;
 }
 .face_5 {
-right: 13%;
-top: 120px;
+  right: 13%;
+  top: 120px;
 }
 .face_4 {
-right: 30%;
-top: 150px;
+  right: 30%;
+  top: 150px;
 }
 .face_3 {
-right: 40%;
-top: 100px;
+  right: 40%;
+  top: 100px;
 }
 .face_6 {
-right: 20%;
-top: 200px;
+  right: 20%;
+  top: 200px;
 }
 .face_7 {
-right: 0;
-top: 175px;
+  right: 0;
+  top: 175px;
 }
 .techVerse_testimonialsTextSec-img img {
-margin-top: 0px;
+  margin-top: 0px;
 }
 
 .techVerse_testimonials .row {
-align-items: center;
+  align-items: center;
 }
 .testimonial {
-border: 0px solid #02a9f7;
-padding: 80px;
-border-radius: 50%;
-height: 550px;
-width: 550px;
-display: flex;
-justify-content: center;
-align-items: center;
-text-align: center;
-margin: 0 auto;
-position: relative;
+  border: 0px solid #02a9f7;
+  padding: 80px;
+  border-radius: 50%;
+  height: 550px;
+  width: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
 }
 .testimonial .content p {
-display: -webkit-box;
--webkit-line-clamp: 6;
--webkit-box-orient: vertical;
-overflow: hidden;
-line-height: 2.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 2.5;
 }
 .play-icon {
-border: unset;
-color: #02a9f7;
-position: absolute;
-background: #fff;
-top: -50px;
-left: 50%;
-transform: translateX(-50%);
-padding: 40px 30px 0px 50px;
+  border: unset;
+  color: #02a9f7;
+  position: absolute;
+  background: #fff;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 40px 30px 0px 50px;
 }
 .play-icon:focus {
-border: unset;
-outline: none;
+  border: unset;
+  outline: none;
 }
 .play-icon i {
-font-size: 116px;
-cursor: pointer;
+  font-size: 116px;
+  cursor: pointer;
 }
 .testimonial-video iframe {
   width: 100%;
@@ -201,9 +208,157 @@ cursor: pointer;
   right: 20px;
   top: 16px;
 }
-.test_closeBtn:hover{
+.test_closeBtn:hover {
   color: #fff;
   opacity: 1;
   outline: none;
   border: unset;
+}
+
+@media (max-width: 1440px) {
+  .testimonials_title {
+    font-size: 67px;
+  }
+}
+@media (max-width: 1024px) {
+  .testimonials_title {
+    font-size: 59px;
+  }
+  .rc {
+    width: 420px;
+    height: 420px;
+  }
+  .face_1 {
+    right: 23%;
+  }
+  .face_3 {
+    right: 44%;
+    top: 120px;
+  }
+  .face_6 {
+    right: 25%;
+    top: 210px;
+  }
+  .testimonials_titleHead span {
+    font-size: 15px;
+    letter-spacing: 7px;
+  }
+  .testimonials_titleHead img {
+    width: 233px;
+  }
+  .testimonial {
+    padding: 80px;
+    height: 440px;
+    width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .testimonials_title {
+    font-size: 47px;
+  }
+}
+
+@media (max-width: 800px) {
+  .rc {
+    width: 350px;
+    height: 350px;
+  }
+  .face_1 {
+    right: 30%;
+  }
+  .face_3 {
+    right: 50%;
+    top: 130px;
+  }
+  .face_6 {
+    right: 30%;
+    top: 210px;
+  }
+}
+
+@media (max-width: 736px) {
+  .testimonials_title {
+    font-size: 55px !important;
+    max-width: 515px;
+  }
+  .face_1 {
+    right: 20%;
+  }
+  .face_3 {
+    right: 30%;
+    top: 130px;
+  }
+  .face_4 {
+    right: 21%;
+    top: 150px;
+  }
+  .face_5 {
+    right: 10%;
+    top: 120px;
+  }
+  .face_6 {
+    right: 20%;
+    top: 210px;
+  }
+
+  .bgOrange {
+    height: 370px;
+    max-width: 430px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+  .bgOrange img {
+    transform: scale(0.7) rotate(36deg) translateY(65pc);
+    bottom: -94pc;
+    right: 20px;
+  }
+  .testimonial {
+    width: unset !important;
+    height: unset !important;
+    padding: 50px 50px !important;
+  }
+  .techVerse_testimonials {
+    padding: 30px 0;
+  }
+}
+@media (max-width: 480px) {
+  .testimonials_title {
+    font-size: 33px !important;
+  }
+  .techVerse_testimonialsTextSec-img {
+    height: 300px;
+    margin: 0 auto;
+  }
+  .face_1 {
+    right: 23%;
+  }
+  .face_3 {
+    right: 40%;
+  }
+  .face_4 {
+    right: 25%;
+  }
+  .face_6 {
+    right: 24%;
+  }
+}
+
+@media (max-width: 428px) {
+  .bgOrange img {
+    transform: scale(0.7) rotate(36deg) translateY(75pc);
+    bottom: -75pc;
+    right: -50px;
+  }
+  .face_1 {
+    right: 28%;
+  }
+  .face_3 {
+    right: 45%;
+  }
+  .face_4 {
+    right: 28%;
+  }
+  .face_6 {
+    right: 27%;
+  }
 }
