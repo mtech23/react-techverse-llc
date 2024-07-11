@@ -6,7 +6,7 @@ import herophonemockupgroup from "../../asserts/images/hero-phone-mockup-group.p
 import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
 import bluecubelarge from '../../asserts/images/blue-cube-large.png'
 import Particles from 'react-particles';
-import { loadFull } from 'tsparticles';
+ 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Parallax, Pagination, Navigation, Autoplay, EffectFade } from 'swiper/modules';
 import Portfolio from '../../Components/Portfolio'

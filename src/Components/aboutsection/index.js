@@ -6,7 +6,7 @@ import angularicon from "../../../src/asserts/images/angular-icon.png";
 import appleicon from "../../../src/asserts/images/apple-icon.png";
 import ecommersedevhero from "../../../src/asserts/images/ecommersedevhero.png";
 import Particles from "react-particles";
-import { loadSlim } from "tsparticles-slim";
+ 
 import { useCallback } from "react";
 import fluttericon from "../../../src/asserts/images/flutter-icon.png";
 import reacticon from "../../../src/asserts/images/react-icon.png";

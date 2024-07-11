@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import { UserLayout } from "../../Components/Layout/UserLayout";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 
-import { loadFull } from "tsparticles";
+ 
 import { gsap } from "gsap";
 import pinkcapsol from "../../asserts/images/pink-capsol.png";
 
@@ -33,10 +33,7 @@ import Contact_Footer from "../../Components/contact_Footer";
 gsap.registerPlugin(MotionPathPlugin);
 
 const Case_study = () => {
-  const particlesInit = async (main) => {
-    await loadFull(main);
-  };
-
+ 
   Aos.init();
 
   useEffect(() => {

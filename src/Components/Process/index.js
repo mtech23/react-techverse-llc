@@ -11,7 +11,7 @@ import ecommersedevhero from "../../../src/asserts/images/ecommersedevhero.png";
 import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
 import bluecubelarge from '../../asserts/images/blue-cube-large.png'
 import Particles from 'react-particles';
-import { loadFull } from 'tsparticles';
+// import { loadFull } from 'tsparticles';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { gsap } from "gsap";
 

@@ -3,7 +3,7 @@ import React, { useEffect, } from 'react';
 import { UserLayout } from "../../Components/Layout/UserLayout";
 import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
 
-import { loadFull } from 'tsparticles';
+ 
 import { gsap } from "gsap";
 import pinkcapsol from '../../asserts/images/pink-capsol.png';
  
@@ -25,10 +25,7 @@ import TrustedPartners from '../../Components/TrustedPartners';
 gsap.registerPlugin(MotionPathPlugin);
 
 const About_us = () => {
-  const particlesInit = async (main) => {
-    await loadFull(main);
-  };
-
+ 
   Aos.init();
 
   useEffect(() => {
