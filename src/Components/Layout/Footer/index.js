@@ -1,4 +1,6 @@
+
 import { useLocation } from "react-router-dom";
+
 import { Link } from "react-router-dom";
 import Particles from "react-particles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,14 +14,15 @@ import partnerstruspilot from '../../../asserts/images/partners-trus-pilot.png';
 
 import contactUslaptop from '../../../asserts/images/contactUs-laptop.png';
 import SuperToroidOrangeGlossy from '../../../asserts/images/SuperToroid-Orange-Glossy.png';
-import { useCallback } from "react";
+import { useCallback, useState, useEffect } from "react";
 // import Particles from "react-particles";
 // import type { Container, Engine } from "tsparticles-engine";
 // import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "tsparticles-slim";
 
 
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 // mainSiteLogo
 
@@ -30,7 +33,33 @@ import "./style.css";
 
 
 export const Footer = (props) => {
+  const [ipInfo, setIpInfo] = useState({ ip: '', country: '' });
+
+  console.log("ipInfo", ipInfo)
+
+
+
+  useEffect(() => {
+    function getCountryByIP() {
+      fetch("https://ipinfo.io?token=ab03b394f4fb7c")
+        .then((response) => response.json())
+        .then((data) => {
+          console.log(data);
+          setIpInfo({ ip: data.ip, country: data.country });
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+        });
+    }
+
+    getCountryByIP();
+  }, []);
+
+
+
   const location = useLocation();
+  const [budget, setBudget] = useState(500);
+
 
   const particlesInit = useCallback(async engine => {
     console.log(engine);
@@ -44,27 +73,62 @@ export const Footer = (props) => {
 
 
 
-  return (
+  const notify = () => toast.success("Thank You");
+  const [formdata, setFormData] = useState("")
 
+  const handlechange = (e) => {
+    const { name, value } = e.target
+    if (name == "budget") {
+      setBudget(value);
 
+    }
+    setFormData((prevdata) => ({
+      ...prevdata,
+      [name]: value
+    }))
+  }
 
-    <>
 
  
+  const handlesubmit = async (event) => {
+    event.preventDefault();
+    const formDataMethod = new FormData();
+    for (const key in formdata) {
+      formDataMethod.append(key, formdata[key]);
+    }
 
+    formDataMethod.append("ip", ipInfo?.ip);
+    formDataMethod.append("country", ipInfo?.country);
+    const url = process.env.REACT_APP_BASE_URL;
 
+    try {
+      const contact_api = await fetch(url, {
+        method: "POST",
+        // No need to set headers for FormData
+        body: formDataMethod
+      });
 
+      if (!contact_api.ok) {
+        throw new Error('Network response was not ok ' + contact_api.statusText);
+      }
 
+      const response = await contact_api.json();
+      if (response?.status == true) {
+        notify()
+      }
+      console.log('Success:', response);
+      // Handle successful response
+      return response;
+    } catch (error) {
+      console.error("Error in adding:", error);
+      // Handle error response
+      throw error;
+    }
+  }
 
-
-
-
-
-
-
-
-
-
+ 
+  return (
+    <>
 
       {/* <!-- Contact --> */}
       <section class="techVerse_contact">
@@ -102,11 +166,14 @@ export const Footer = (props) => {
                           <span class="color-darkBlue">Us</span>
                         </h2>
                       </div>
-                      <form>
+                      <form onSubmit={handlesubmit}>
                         <div class="row">
                           <div class="col-md-5 mb-5 contact-formCols">
                             <div class="form-group">
                               <input
+                                required
+                                onChange={handlechange}
+                                name="firstname"
                                 type="text"
                                 placeholder="First Name"
                                 class="inputForm"
@@ -116,6 +183,9 @@ export const Footer = (props) => {
                           <div class="col-md-5 mb-5 contact-formCols">
                             <div class="form-group">
                               <input
+                                required
+                                onChange={handlechange}
+                                name="lastname"
                                 type="text"
                                 placeholder="Last Name"
                                 class="inputForm"
@@ -125,6 +195,9 @@ export const Footer = (props) => {
                           <div class="col-md-5 mb-5 contact-formCols">
                             <div class="form-group">
                               <input
+                                required
+                                onChange={handlechange}
+                                name="phone"
                                 type="text"
                                 placeholder="Phone Number"
                                 class="inputForm"
@@ -134,6 +207,9 @@ export const Footer = (props) => {
                           <div class="col-md-5 mb-5 contact-formCols">
                             <div class="form-group">
                               <input
+                                required
+                                onChange={handlechange}
+                                name="email"
                                 type="email"
                                 placeholder="Your Email"
                                 class="inputForm"
@@ -143,6 +219,9 @@ export const Footer = (props) => {
                           <div class="col-md-10 mb-5 contact-formCols">
                             <div class="form-group">
                               <textarea
+                                required
+                                onChange={handlechange}
+                                name="message"
                                 rows="8"
                                 class="inputForm"
                                 placeholder="Message"
@@ -153,26 +232,41 @@ export const Footer = (props) => {
                             <div class="budget-wrap">
                               <div class="budget-header">
                                 <span class="budget-title">Set Your Budget</span>
-                                <span class="budget-value"> $500</span>
+                                <span class="budget-value"> ${budget}</span>
                               </div>
                               <div class="budget-content">
                                 <input
+                                  onChange={handlechange}
+                                  name="budget"
                                   type="range"
-
+                                  // value={budget}
+                                  // setBudget={value}
                                   min="500"
                                   max="5000"
                                   class="budget-slider"
                                   id="budgetRange"
                                 />
+
+
+                                {/* <input
+                                  onChange={handlechange}
+                                  name="budget"
+                                  type="range"
+                                  min="500"
+                                  max="5000"
+                                  className="budget-slider"
+                                  id="budgetRange"
+                                  value={budget}
+                                /> */}
                               </div>
                             </div>
                           </div>
                           <div class="col-md-10 mb-5 contact-formCols">
                             <div class="form-group">
                               <div class="techVerse_hero_btns">
-                                <a href="#" class="btn_with_icon w-100">
+                                <button type="submit" class="btn_with_icon w-100">
                                   <span class="btn_with_icon_text">SUBMIT</span>
-                                </a>
+                                </button>
                               </div>
                             </div>
                           </div>
@@ -639,6 +733,8 @@ export const Footer = (props) => {
 
 
       </footer>
+
+      <ToastContainer />
     </>
 
   );

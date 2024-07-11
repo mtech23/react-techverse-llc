@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { UserLayout } from "../../Components/Layout/UserLayout";
 import { Header } from "../../Components/Layout/Header";
 import { Footer } from "../../Components/Layout/Footer";
@@ -11,6 +11,9 @@ import contacttrust from "../../asserts/images/contact-trust.png";
 import contactbbb from "../../asserts/images/contact-bbb.png";
 import "./style.css";
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -18,6 +21,100 @@ const Contact = () => {
   useEffect(() => {
     AOS.init();
   }, []);
+
+
+
+  const [ipInfo, setIpInfo] = useState({ ip: '', country: '' });
+
+  console.log("ipInfo", ipInfo)
+
+
+
+  useEffect(() => {
+    function getCountryByIP() {
+      fetch("https://ipinfo.io?token=ab03b394f4fb7c")
+        .then((response) => response.json())
+        .then((data) => {
+          console.log(data);
+          setIpInfo({ ip: data.ip, country: data.country });
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+        });
+    }
+
+    getCountryByIP();
+  }, []);
+
+  const [budget, setBudget] = useState(500);
+
+
+  const notify = () => toast.success("Thank You");
+  const [formdata, setFormData] = useState({
+    firstname: '',
+  })
+
+  const handlechange = (e) => {
+    const { name, value } = e.target
+    if (name == "budget") {
+      setBudget(value);
+
+    }
+    setFormData((prevdata) => ({
+      ...prevdata,
+      [name]: value
+    }))
+  }
+
+
+
+  const handlesubmit = async (event) => {
+    event.preventDefault();
+    const formDataMethod = new FormData();
+    for (const key in formdata) {
+      formDataMethod.append(key, formdata[key]);
+    }
+
+    formDataMethod.append("ip", ipInfo?.ip);
+    formDataMethod.append("country", ipInfo?.country);
+    const url = process.env.REACT_APP_BASE_URL;
+
+    try {
+      const contact_api = await fetch(url, {
+        method: "POST",
+
+        body: formDataMethod
+      });
+
+      if (!contact_api.ok) {
+        throw new Error('Network response was not ok ' + contact_api.statusText);
+      }
+
+      const response = await contact_api.json();
+      if (response?.status == true) {
+        notify();
+
+        setFormData({
+          firstname: '',
+          lastname: '',
+          phone: " ",
+          email: " ",
+          message: " ",
+          budget: " ",
+          country: " ",
+
+        });
+      }
+      console.log('Success:', response);
+      // Handle successful response
+      return response;
+    } catch (error) {
+      console.error("Error in adding:", error);
+      // Handle error response
+      throw error;
+    }
+  }
+
   return (
     <div>
       <Header />
@@ -121,7 +218,7 @@ const Contact = () => {
                 >
                   <div class="contact_form">
                     <div class="contact_formContent">
-                      <form method="POST" id="leadForm" action="">
+                      <form onSubmit={handlesubmit} id="leadForm" action="">
                         <div class="row">
                           <div class="col-md-12 mb-3 contact-formCols">
                             <div class="form-group">
@@ -140,10 +237,12 @@ const Contact = () => {
                           <div class="col-md-6 mb-3 contact-formCols">
                             <div class="form-group">
                               <input
+                                value={formdata.firstname}
                                 type="text"
                                 placeholder="First Name"
                                 class="inputForm"
                                 name="firstname"
+                                onChange={handlechange}
                                 required
                               />
                             </div>
@@ -151,39 +250,47 @@ const Contact = () => {
                           <div class="col-md-6 mb-3 contact-formCols">
                             <div class="form-group">
                               <input
+                                 value={formdata.lastname}
                                 type="text"
                                 placeholder="Last Name"
                                 class="inputForm"
                                 name="lastname"
                                 required
+                                onChange={handlechange}
                               />
                             </div>
                           </div>
                           <div class="col-md-6 mb-3 contact-formCols">
                             <div class="form-group">
                               <input
+                                  value={formdata.phone}
                                 type="text"
                                 placeholder="Phone Number"
                                 class="inputForm"
                                 name="phone"
                                 required
+                                onChange={handlechange}
                               />
                             </div>
                           </div>
                           <div class="col-md-6 mb-3 contact-formCols">
                             <div class="form-group">
                               <input
+                                 value={formdata.email}
                                 type="email"
                                 placeholder="Your Email"
                                 class="inputForm"
                                 name="email"
                                 required
+                                onChange={handlechange}
                               />
                             </div>
                           </div>
                           <div class="col-md-12 mb-3 contact-formCols">
                             <div class="form-group">
                               <textarea
+                                value={formdata.message}
+                                onChange={handlechange}
                                 rows="4"
                                 class="inputForm"
                                 placeholder="Please describe your project requirements"
@@ -197,17 +304,19 @@ const Contact = () => {
                                 <span class="budget-title">
                                   Set Your Budget
                                 </span>
-                                <span class="budget-value"> $500</span>
+                                <span class="budget-value"> ${budget}</span>
                               </div>
                               <div class="budget-content">
                                 <input
+                                  onChange={handlechange}
                                   type="range"
                                   min="500"
                                   max="5000"
-                                  value="50"
+                                  // value="50"
                                   class="budget-slider"
                                   id="budgetRange"
                                   name="budget"
+
                                 />
                               </div>
                             </div>
@@ -244,7 +353,9 @@ const Contact = () => {
         </div>
       </section>
       <Contact_Footer />
+      <ToastContainer />
     </div>
+
   );
 };
 
