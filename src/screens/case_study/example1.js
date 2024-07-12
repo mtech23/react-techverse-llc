@@ -26,7 +26,7 @@
         <h2
           className="sec_title_head color-lightBlue2"
           data-aos="fade-up"
-          data-aos-offset="300"
+          data-aos-offset="0"
           data-aos-duration="1000"
         >
           Our
@@ -36,7 +36,7 @@
         </h2>
         <p
           data-aos="fade-up"
-          data-aos-offset="300"
+          data-aos-offset="0"
           data-aos-duration="2000"
         >
           We nurture creativity in our skilled teams by harnessing fresh
@@ -72,7 +72,7 @@
         id="myTab"
         role="tablist"
         data-aos="fade-up"
-        data-aos-offset="300"
+        data-aos-offset="0"
         data-aos-duration="3000"
       >
         <a

@@ -3,7 +3,6 @@ import React, { useEffect } from "react";
 import { UserLayout } from "../../Components/Layout/UserLayout";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 
- 
 import { gsap } from "gsap";
 import pinkcapsol from "../../asserts/images/pink-capsol.png";
 
@@ -33,7 +32,6 @@ import Contact_Footer from "../../Components/contact_Footer";
 gsap.registerPlugin(MotionPathPlugin);
 
 const Case_study = () => {
- 
   Aos.init();
 
   useEffect(() => {
@@ -169,7 +167,7 @@ const Case_study = () => {
                       data-aos-offset="0"
                       data-aos-duration="3000"
                     >
-                      <a href="#" class="btn_with_icon btn_black">
+                      <a href="#" class="btn_with_icon btn_secondary">
                         <img
                           class="btn_with_icon_img"
                           src={phoneiconblue}
@@ -233,7 +231,7 @@ const Case_study = () => {
                       data-aos-offset="0"
                       data-aos-duration="3000"
                     >
-                      <a href="#" class="btn_with_icon btn_white">
+                      <a href="#" class="btn_with_icon btn_secondary">
                         <img
                           class="btn_with_icon_img"
                           src={phoneiconblue}
@@ -298,7 +296,7 @@ const Case_study = () => {
                       data-aos-offset="0"
                       data-aos-duration="3000"
                     >
-                      <a href="#" class="btn_with_icon btn_black">
+                      <a href="#" class="btn_with_icon btn_secondary">
                         <img
                           class="btn_with_icon_img"
                           src={phoneiconblue}
@@ -357,7 +355,7 @@ const Case_study = () => {
                       data-aos-offset="0"
                       data-aos-duration="3000"
                     >
-                      <a href="#" class="btn_with_icon btn_black">
+                      <a href="#" class="btn_with_icon btn_secondary">
                         <img
                           class="btn_with_icon_img"
                           src={phoneiconblue}
@@ -416,7 +414,7 @@ const Case_study = () => {
                       data-aos-offset="0"
                       data-aos-duration="3000"
                     >
-                      <a href="#" class="btn_with_icon btn_black">
+                      <a href="#" class="btn_with_icon btn_secondary">
                         <img
                           class="btn_with_icon_img"
                           src={phoneiconblue}
@@ -474,7 +472,7 @@ const Case_study = () => {
                       data-aos-offset="0"
                       data-aos-duration="3000"
                     >
-                      <a href="#" class="btn_with_icon btn_black">
+                      <a href="#" class="btn_with_icon btn_secondary">
                         <img
                           class="btn_with_icon_img"
                           src={phoneiconblue}

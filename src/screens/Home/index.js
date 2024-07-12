@@ -1,26 +1,32 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from "react";
 import { UserLayout } from "../../Components/Layout/UserLayout";
 import Portfolios from "../../Components/portfolios";
 import phoneicon from "../../asserts/images/phone-icon.png";
 import herophonemockupgroup from "../../asserts/images/hero-phone-mockup-group.png";
-import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
-import bluecubelarge from '../../asserts/images/blue-cube-large.png'
-import Particles from 'react-particles';
- 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Parallax, Pagination, Navigation, Autoplay, EffectFade } from 'swiper/modules';
-import Portfolio from '../../Components/Portfolio'
+import { MotionPathPlugin } from "gsap/MotionPathPlugin";
+import bluecubelarge from "../../asserts/images/blue-cube-large.png";
+import Particles from "react-particles";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import {
+  Parallax,
+  Pagination,
+  Navigation,
+  Autoplay,
+  EffectFade,
+} from "swiper/modules";
+import Portfolio from "../../Components/Portfolio";
 import { gsap } from "gsap";
 
 import pinkcapsol from "../../asserts/images/pink-capsol.png";
 import herowebmockupgroup22 from "../../asserts/images/hero-web-mockup-group22.png";
 
-
 import { loadSlim } from "tsparticles-slim";
-import peramidleftangle from "../../asserts/images/peramid-left-angles.png"
+import peramidleftangle from "../../asserts/images/peramid-left-angles.png";
 import clutch from "../../asserts/images/clutch.png";
 import truspilot from "../../asserts/images/trus-pilot.png";
 import laptopFrame from "../../asserts/images/laptop-Frame.png";
+// import laptop from "../../asserts/images/laptop.png";
 import laptop from "../../asserts/images/laptop.png";
 import donatorange from "../../asserts/images/donat-orange.png";
 import greencube from "../../asserts/images/green-cube.png";
@@ -54,10 +60,10 @@ import portfoliomockup5 from "../../asserts/images/portfolio-mockup-5.png";
 import portfoliomockup2 from "../../asserts/images/portfolio-mockup-2.png";
 import portfoliomockup3 from "../../asserts/images/portfolio-mockup-3.png";
 import portfoliomockup4 from "../../asserts/images/portfolio-mockup-4.png";
-import jeffwilson from "../../asserts/images/jeff-wilson.png";
-import carbuying from "../../asserts/images/car-buying.png";
-import lllreptile from "../../asserts/images/lll-reptile.png";
-import privateastrology from "../../asserts/images/private-astrology.png";
+import website1 from "../../asserts/images/website-1.png";
+import website2 from "../../asserts/images/website-2.png";
+import website3 from "../../asserts/images/website-3.png";
+import website4 from "../../asserts/images/website-4.png";
 import heroslidermockupimg3 from "../../asserts/images/hero-slider-mockup-img-3.png";
 import Macbook from "../../asserts/images/Macbook.png";
 // import peramidleftangles from "../../asserts/images/peramid-left-angles.png";
@@ -68,35 +74,35 @@ import p3 from "../../asserts/images/p3.png";
 import p4 from "../../asserts/images/p4.png";
 import p5 from "../../asserts/images/p5.png";
 import p6 from "../../asserts/images/p6.png";
-import irvingsegalimg1 from "../../asserts/images/irving-segal-img-1.png";
 import cms1 from "../../asserts/images/Cms-1.png";
 import cms2 from "../../asserts/images/CMS-2.png";
 import cms3 from "../../asserts/images/CMS-3.png";
+import cms4 from "../../asserts/images/CMS-4.png";
+import irvingsegalbg from "../../asserts/images/irving-segal-bg.png";
+import irvingsegalimg from "../../asserts/images/irving-segal-img-1.png";
+import braincarlislebg from "../../asserts/images/brain-carlisle-bg.png";
+import braincarlisleimg from "../../asserts/images/brain-carlisle-img-1.png";
+import anglebodybg from "../../asserts/images/angle-body-bg.png";
+import anglebodyimg from "../../asserts/images/angle-body-img.png";
 import Aos from "aos";
 import "swiper/css/pagination";
-import 'swiper/css/effect-fade';
+import "swiper/css/effect-fade";
 import "swiper/css";
 import Process from "../../Components/Process";
 import Testimonials from "../../Components/Tetimonials";
+import Elevateyourbusiness from "../../Components/elevateyourbusiness";
 gsap.registerPlugin(MotionPathPlugin);
 
 const Home = () => {
-
-
-
-
-  const particlesInit = useCallback(async engine => {
+  const particlesInit = useCallback(async (engine) => {
     console.log(engine);
 
     await loadSlim(engine);
   }, []);
 
-  const particlesLoaded = useCallback(async container => {
+  const particlesLoaded = useCallback(async (container) => {
     await console.log(container);
   }, []);
-
-
-
 
   Aos.init();
 
@@ -124,12 +130,6 @@ const Home = () => {
       );
     });
   }, []);
-
-
-
-
-
-
 
   // const sectionRef = useRef(null);
 
@@ -172,9 +172,6 @@ const Home = () => {
   //     };
   //   });
   // }, []);
-
-
-
 
   // const sec2 = useRef(null);
 
@@ -221,18 +218,9 @@ const Home = () => {
   //   });
   // }, []);
 
-
-
-
-
-
-
-
-
   return (
     <UserLayout>
-
-      <div className="relative"  >
+      <div className="relative">
         <Swiper
           style={{
             "--swiper-navigation-color": "#fff",
@@ -240,13 +228,13 @@ const Home = () => {
           }}
           speed={600}
           // parallax={true}
-          effect={'fade'}
-       
+          loop={"true"}
+          effect={"fade"}
           pagination={{
             clickable: true,
           }}
           navigation={true}
-          modules={[Pagination, EffectFade, Navigation ]}
+          modules={[Pagination, EffectFade, Navigation]}
           className="mySwiper"
         >
           <div
@@ -255,11 +243,7 @@ const Home = () => {
             data-swiper-parallax="-23%"
           ></div>
           <SwiperSlide>
-
-
-
-
-            <section class="techVerse_hero hoverEffectSec "  >
+            <section class="techVerse_hero hoverEffectSec ">
               <div class="techVerse_heroContent">
                 <div class="container-fluid">
                   <div class="row">
@@ -267,7 +251,7 @@ const Home = () => {
                       <div class="techVerse_hero_content">
                         <h1
                           data-aos="fade-right"
-                          data-aos-offset="300"
+                          data-aos-offset="0"
                           data-aos-duration="1000"
                         >
                           TECHVERSE LLC Pioneering
@@ -276,7 +260,7 @@ const Home = () => {
                         </h1>
                         <p
                           data-aos="fade-right"
-                          data-aos-offset="300"
+                          data-aos-offset="0"
                           data-aos-duration="2000"
                         >
                           At Techverse LLC, we are at the forefront of mobile
@@ -290,7 +274,7 @@ const Home = () => {
                         <div
                           class="techVerse_hero_btns"
                           data-aos="fade-right"
-                          data-aos-offset="300"
+                          data-aos-offset="0"
                           data-aos-duration="3000"
                         >
                           <a href="#" class="btn_with_icon">
@@ -313,7 +297,7 @@ const Home = () => {
                         <div
                           class="hero_brands"
                           data-aos="fade-right"
-                          data-aos-offset="300"
+                          data-aos-offset="0"
                           data-aos-duration="3000"
                         >
                           <a href="#" class="hero_brands_img">
@@ -330,7 +314,7 @@ const Home = () => {
                     </div>
                     <div class="col-md-6">
                       <div class="techVerse_hero_img">
-                        <div className='inner_images '>
+                        <div className="inner_images ">
                           <img
                             src={donatblue}
                             class="techVerse_hero_icon1 animation11"
@@ -350,7 +334,7 @@ const Home = () => {
                         <img
                           src={herophonemockupgroup}
                           data-aos="fade-left"
-                          data-aos-offset="300"
+                          data-aos-offset="0"
                           data-aos-duration="3000"
                           alt=""
                         />
@@ -371,7 +355,7 @@ const Home = () => {
                       <div class="techVerse_hero_content">
                         <h1
                           data-aos="fade-right"
-                          data-aos-offset="300"
+                          data-aos-offset="0"
                           data-aos-duration="1000"
                         >
                           TECHVERSE LLC Pioneering
@@ -380,7 +364,7 @@ const Home = () => {
                         </h1>
                         <p
                           data-aos="fade-right"
-                          data-aos-offset="300"
+                          data-aos-offset="0"
                           data-aos-duration="2000"
                         >
                           At Techverse LLC, we are at the forefront of mobile
@@ -394,7 +378,7 @@ const Home = () => {
                         <div
                           class="techVerse_hero_btns"
                           data-aos="fade-right"
-                          data-aos-offset="300"
+                          data-aos-offset="0"
                           data-aos-duration="3000"
                         >
                           <a href="#" class="btn_with_icon">
@@ -417,7 +401,7 @@ const Home = () => {
                         <div
                           class="hero_brands"
                           data-aos="fade-right"
-                          data-aos-offset="300"
+                          data-aos-offset="0"
                           data-aos-duration="3000"
                         >
                           <a href="#" class="hero_brands_img">
@@ -452,7 +436,7 @@ const Home = () => {
                         <img
                           src={herowebmockupgroup22}
                           data-aos="fade-left"
-                          data-aos-offset="300"
+                          data-aos-offset="0"
                           data-aos-duration="3000"
                           alt=""
                         />
@@ -473,7 +457,7 @@ const Home = () => {
                       <div class="techVerse_hero_content">
                         <h1
                           data-aos="fade-right"
-                          data-aos-offset="300"
+                          data-aos-offset="0"
                           data-aos-duration="1000"
                         >
                           TECHVERSE LLC Pioneering
@@ -482,7 +466,7 @@ const Home = () => {
                         </h1>
                         <p
                           data-aos="fade-right"
-                          data-aos-offset="300"
+                          data-aos-offset="0"
                           data-aos-duration="2000"
                         >
                           At Techverse LLC, we are at the forefront of mobile
@@ -496,7 +480,7 @@ const Home = () => {
                         <div
                           class="techVerse_hero_btns"
                           data-aos="fade-right"
-                          data-aos-offset="300"
+                          data-aos-offset="0"
                           data-aos-duration="3000"
                         >
                           <a href="#" class="btn_with_icon">
@@ -519,7 +503,7 @@ const Home = () => {
                         <div
                           class="hero_brands"
                           data-aos="fade-right"
-                          data-aos-offset="300"
+                          data-aos-offset="0"
                           data-aos-duration="3000"
                         >
                           <a href="#" class="hero_brands_img">
@@ -554,7 +538,7 @@ const Home = () => {
                         <img
                           src={heroslidermockupimg3}
                           data-aos="fade-left"
-                          data-aos-offset="300"
+                          data-aos-offset="0"
                           data-aos-duration="3000"
                           alt=""
                         />
@@ -572,29 +556,21 @@ const Home = () => {
 
       {/* <!-- About Sec --> */}
 
-
-      <Portfolio pinkcapsol={pinkcapsol}
+      <Portfolio
+        pinkcapsol={pinkcapsol}
         greencube={greencube}
         donatorange={donatorange}
-
-        title="  Boost Your Brand's Visibility" subtitle="  With" title2="Techverse LLC's Expert Team Agency"
-        para="    Upgrade your online presence with Techverse LLC, the top-rated design agency dedicated to transforming your vision into a dynamic digital reality. Our expert team combines innovative design, cutting-edge technology, and user-centered strategies to create stunning, functional mobile applications that captivate and engage users. At Techverse LLC, we prioritize your unique needs, delivering tailor-made solutions that boost your brand's visibility and get success in the competitive digital environment. Trust us to ignite your online presence and turn your ideas into an interactive, impactful experience."
+        title="  Boost Your Brand's Visibility"
+        subtitle="  With"
+        title2="Techverse LLC's Expert Team Agency"
+        para="Upgrade your online presence with Techverse LLC, the top-rated design agency dedicated to transforming your vision into a dynamic digital reality. Our expert team combines innovative design, cutting-edge technology, and user-centered strategies to create stunning, functional mobile applications that captivate and engage users. At Techverse LLC, we prioritize your unique needs, delivering tailor-made solutions that boost your brand's visibility and get success in the competitive digital environment. Trust us to ignite your online presence and turn your ideas into an interactive, impactful experience."
         laptopFrame={"laptop-Frame"}
+        classtitle="color-darkBlue"
         image={laptop}
         chaticon={chaticon}
         phoneicon={phoneicon}
         travelimg={laptopFrame}
-
       />
-
-
-
-
-      
-
-
-
-
 
       {/* <!-- Website --> */}
       <section class="techVerse_webSolution">
@@ -616,7 +592,7 @@ const Home = () => {
                   <h2
                     class="sec_title_head color-lightBlue1"
                     data-aos="fade-up"
-                    data-aos-offset="300"
+                    data-aos-offset="0"
                     data-aos-duration="1000"
                   >
                     Revolutionize Your Business Presence
@@ -625,7 +601,7 @@ const Home = () => {
                   </h2>
                   <p
                     data-aos="fade-up"
-                    data-aos-offset="300"
+                    data-aos-offset="0"
                     data-aos-duration="2000"
                   >
                     Our expert team combines cutting-edge technology with
@@ -635,7 +611,7 @@ const Home = () => {
                   <div
                     class="techVerse_hero_btns"
                     data-aos="fade-up"
-                    data-aos-offset="300"
+                    data-aos-offset="0"
                     data-aos-duration="3000"
                   >
                     <a href="tel:+(1) 23456-7890" class="btn_with_icon">
@@ -695,7 +671,7 @@ const Home = () => {
               <h2
                 class="sec_title_head color-lightBlue2"
                 data-aos="fade-up"
-                data-aos-offset="300"
+                data-aos-offset="0"
                 data-aos-duration="1000"
               >
                 Services
@@ -703,7 +679,7 @@ const Home = () => {
               </h2>
               <p
                 data-aos="fade-up"
-                data-aos-offset="300"
+                data-aos-offset="0"
                 data-aos-duration="2000"
               >
                 Techverse does not provide services only; we become a partner
@@ -823,7 +799,7 @@ const Home = () => {
                 href="#"
                 class="btn_with_icon"
                 data-aos="fade-right"
-                data-aos-offset="300"
+                data-aos-offset="0"
                 data-aos-duration="2000"
               >
                 <span class="btn_with_icon_text">START YOUR PROJECT NOW!</span>
@@ -845,14 +821,15 @@ const Home = () => {
         image4={portfoliomockup4}
         image5={portfoliomockup5}
         image6={mobileframe}
-        image7={carbuying}
-        image8={lllreptile}
-        image9={jeffwilson}
-        image10={privateastrology}
+        image7={website1}
+        image8={website2}
+        image9={website3}
+        image10={website4}
         image11={Macbook}
         image12={cms1}
         image13={cms2}
         image14={cms3}
+        image15={cms4}
         classmobileapp="nav-link"
         classwebsite="nav-link"
         classcms="nav-link"
@@ -861,13 +838,11 @@ const Home = () => {
         Websites="Websites"
       />
 
-
-
       {/* process we use */}
       <Process />
 
       {/* MOBILE APP */}
-      <Testimonials />
+      <Elevateyourbusiness />
 
       {/* <!-- Case Studies --> */}
       <section class="techVerse_caseStudies">
@@ -899,7 +874,7 @@ const Home = () => {
                   <h2
                     class="sec_title_head color-lightBlue2"
                     data-aos="fade-up"
-                    data-aos-offset="300"
+                    data-aos-offset="0"
                     data-aos-duration="1000"
                   >
                     Our
@@ -907,7 +882,7 @@ const Home = () => {
                   </h2>
                   <p
                     data-aos="fade-up"
-                    data-aos-offset="300"
+                    data-aos-offset="0"
                     data-aos-duration="2000"
                   >
                     Our Company has worked with thousands of businesses all
@@ -921,39 +896,39 @@ const Home = () => {
                 <div
                   class="techVerse_caseStudy_img bgOrange"
                   data-aos="fade-right"
-                  data-aos-offset="300"
+                  data-aos-offset="0"
                   data-aos-duration="1000"
+                  style={{
+                    backgroundImage: `url(${irvingsegalbg})`,
+                  }}
                 >
-                  <img src={irvingsegalimg1} alt="" />
+                  <img src={irvingsegalimg} alt="" />
                 </div>
               </div>
               <div class="col-lg-4 col-md-6">
                 <div
                   class="techVerse_caseStudy_img bgOrange"
                   style={{
-                    backgroundImage:
-                      // "url(../../asserts/images/brain-carlisle-bg.png)",
-                      "url(https://techversellc.com/images/brain-carlisle-bg.png)",
+                    backgroundImage: `url(${braincarlislebg})`,
                   }}
                   data-aos="fade-up"
-                  data-aos-offset="300"
+                  data-aos-offset="0"
                   data-aos-duration="2000"
                 >
-                  <img src={p2} alt="" />
+                  <img src={braincarlisleimg} alt="" />
                 </div>
               </div>
               <div class="col-lg-4 col-md-6">
                 <div
                   class="techVerse_caseStudy_img bgOrange"
                   style={{
-                    backgroundImage:
-                      "url(https://techversellc.com/images/angle-body-bg.png)",
+                    backgroundImage: `url(${anglebodybg})`,
                   }}
                   data-aos="fade-left"
-                  data-aos-offset="300"
+                  data-aos-offset="0"
                   data-aos-duration="3000"
                 >
-                  <img src={p3} alt="" />
+                  <img src={anglebodyimg} alt="" />
                 </div>
               </div>
               <div class="col-lg-4 col-md-6">
@@ -964,7 +939,7 @@ const Home = () => {
                       "url(https://techversellc.com/images/p2-bg.png)",
                   }}
                   data-aos="fade-right"
-                  data-aos-offset="300"
+                  data-aos-offset="0"
                   data-aos-duration="1000"
                 >
                   <img src={p4} alt="" />
@@ -978,7 +953,7 @@ const Home = () => {
                       "url(https://techversellc.com/images/p3-bg.png)",
                   }}
                   data-aos="fade-up"
-                  data-aos-offset="300"
+                  data-aos-offset="0"
                   data-aos-duration="2000"
                 >
                   <img src={p5} alt="" />
@@ -993,7 +968,7 @@ const Home = () => {
                   }}
                   // class="techVerse_caseStudy_img bgOrange caseStudy_img_bg_one"
                   data-aos="fade-left"
-                  data-aos-offset="300"
+                  data-aos-offset="0"
                   data-aos-duration="3000"
                 >
                   <img src={p6} alt="" />
@@ -1003,6 +978,9 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Testimonials */}
+      <Testimonials />
     </UserLayout>
   );
 };

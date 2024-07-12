@@ -116,7 +116,7 @@ className="mySwiper"
             <div class="techVerse_hero_content">
               <h1
                 data-aos="fade-right"
-                data-aos-offset="300"
+                data-aos-offset="0"
                 data-aos-duration="1000"
               >
                 Award-Winning Mobile App
@@ -125,7 +125,7 @@ className="mySwiper"
               </h1>
               <p
                 data-aos="fade-right"
-                data-aos-offset="300"
+                data-aos-offset="0"
                 data-aos-duration="2000"
               >
                 Lorem Ipsum is simply dummy text of the printing and
@@ -136,7 +136,7 @@ className="mySwiper"
               <div
                 class="techVerse_hero_btns"
                 data-aos="fade-right"
-                data-aos-offset="300"
+                data-aos-offset="0"
                 data-aos-duration="3000"
               >
                 <a href="#" class="btn_with_icon">
@@ -159,7 +159,7 @@ className="mySwiper"
               <div
                 class="hero_brands"
                 data-aos="fade-right"
-                data-aos-offset="300"
+                data-aos-offset="0"
                 data-aos-duration="3000"
               >
                 <a href="#" class="hero_brands_img"
@@ -194,7 +194,7 @@ className="mySwiper"
               <img
                 src={herophonemockupgroup}
                 data-aos="fade-left"
-                data-aos-offset="300"
+                data-aos-offset="0"
                 data-aos-duration="3000"
                 alt=""
               />
@@ -223,7 +223,7 @@ className="mySwiper"
             <div class="techVerse_hero_content">
               <h1
                 data-aos="fade-right"
-                data-aos-offset="300"
+                data-aos-offset="0"
                 data-aos-duration="1000"
               >
                 Award-Winning Mobile App
@@ -232,7 +232,7 @@ className="mySwiper"
               </h1>
               <p
                 data-aos="fade-right"
-                data-aos-offset="300"
+                data-aos-offset="0"
                 data-aos-duration="2000"
               >
                 Lorem Ipsum is simply dummy text of the printing and
@@ -243,7 +243,7 @@ className="mySwiper"
               <div
                 class="techVerse_hero_btns"
                 data-aos="fade-right"
-                data-aos-offset="300"
+                data-aos-offset="0"
                 data-aos-duration="3000"
               >
                 <a href="#" class="btn_with_icon">
@@ -266,7 +266,7 @@ className="mySwiper"
               <div
                 class="hero_brands"
                 data-aos="fade-right"
-                data-aos-offset="300"
+                data-aos-offset="0"
                 data-aos-duration="3000"
               >
                 <a href="#" class="hero_brands_img"
@@ -301,7 +301,7 @@ className="mySwiper"
               <img
                 src={herophonemockupgroup}
                 data-aos="fade-left"
-                data-aos-offset="300"
+                data-aos-offset="0"
                 data-aos-duration="3000"
                 alt=""
               />
