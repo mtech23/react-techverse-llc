@@ -1,0 +1,17 @@
+/* Toaster */
+.toast-success {
+    background-color: #02a9f7 !important; /* Your desired background color */
+    color: #fff !important; /* Text color */
+  }
+   
+  /* Terms And Condition */
+  .terms-and-condition {
+    padding: 60px 0;
+  }
+  .terms-and-condition .faqs_ul {
+    margin: 20px 0;
+  }
+  .terms-and-condition .faqs_ul li {
+    margin-bottom: 5px;
+    line-height: 1.5;
+  }
