@@ -1,4 +1,4 @@
-import React , {useEffect , useRef} from "react";
+import React, { useEffect, useRef } from "react";
 import pinkcapsol from "../../asserts/images/pink-capsol.png";
 import { gsap } from "gsap";
 import phoneicon from "../../asserts/images/phone-icon.png";
@@ -67,19 +67,19 @@ const Development_Process = (props) => {
         class={`techVerse_about techVerse_aboutServices2 ${props?.travelbgclass} `}
       >
         <div className="inner_images">
-        <img
-          class="techVerse_about_icon1 animation11"
-          src={pinkcapsol}
-          alt=""
-        />
+          <img
+            class="techVerse_about_icon1 animation11"
+            src={pinkcapsol}
+            alt=""
+          />
 
-        <img class="techVerse_about_icon3 animation11" src={greencube} alt="" />
-        <img
-          class="techVerse_about_icon4 animation11"
-          src={donatorange}
-          alt=""
-        />
-</div>
+          <img class="techVerse_about_icon3 animation11" src={greencube} alt="" />
+          <img
+            class="techVerse_about_icon4 animation11"
+            src={donatorange}
+            alt=""
+          />
+        </div>
 
         <div class="techVerse_aboutContent techVerse_aboutContentServices2 width-1600">
           <div class="container-fluid">
@@ -150,7 +150,7 @@ const Development_Process = (props) => {
                       </div>
                       <h4>Business Analysis</h4>
                       <p>
-                      Thoroughly analyze business requirements and user needs to define project scope and objectives, ensuring alignment with strategic goals and optimal solution planning.
+                        Thoroughly analyze business requirements and user needs to define project scope and objectives, ensuring alignment with strategic goals and optimal solution planning.
                       </p>
                     </div>
                   </div>
@@ -166,7 +166,7 @@ const Development_Process = (props) => {
                       </div>
                       <h4>Design & Development</h4>
                       <p>
-                      Craft visually appealing and functional designs while implementing robust development strategies to create customized solutions that meet client specifications and exceed expectations.
+                        Craft visually appealing and functional designs while implementing robust development strategies to create customized solutions that meet client specifications and exceed expectations.
                       </p>
                     </div>
                   </div>
@@ -182,7 +182,7 @@ const Development_Process = (props) => {
                       </div>
                       <h4>Quality Assurance</h4>
                       <p>
-                      Conduct rigorous testing and quality checks throughout the development lifecycle to ensure high performance, reliability, and adherence to industry standards for seamless user experiences.
+                        Conduct rigorous testing and quality checks throughout the development lifecycle to ensure high performance, reliability, and adherence to industry standards for seamless user experiences.
                       </p>
                     </div>
                   </div>
@@ -198,7 +198,7 @@ const Development_Process = (props) => {
                       </div>
                       <h4>Deployment and Maintenance</h4>
                       <p>
-                      Efficiently deploy applications while providing ongoing support and maintenance services to ensure smooth operations, continuous improvements, and client satisfaction post-launch.
+                        Efficiently deploy applications while providing ongoing support and maintenance services to ensure smooth operations, continuous improvements, and client satisfaction post-launch.
                       </p>
                     </div>
                   </div>
