@@ -91,6 +91,7 @@ import "swiper/css";
 import Process from "../../Components/Process";
 import Testimonials from "../../Components/Tetimonials";
 import Elevateyourbusiness from "../../Components/elevateyourbusiness";
+import ServiceParticle from "../../Components/ServiceParticle/ServiceParticle";
 gsap.registerPlugin(MotionPathPlugin);
 
 const Home = () => {
@@ -640,6 +641,8 @@ const Home = () => {
 
       {/* <!-- Services --> */}
       <section class="techVerse_services" id="particles-js2">
+      <ServiceParticle/>
+
         <img
           class="techVerse_services_icon1 animation11"
           src={pinkcapsol}

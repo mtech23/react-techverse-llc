@@ -1,4 +1,3 @@
-
 import { useLocation } from "react-router-dom";
 
 import { Link } from "react-router-dom";
@@ -19,28 +18,95 @@ import partnersclutch from "../../../asserts/images/partners-clutch.png";
 import bluecubelarge from "../../../asserts/images/blue-cube-large.png";
 import partnerstruspilot from "../../../asserts/images/partners-trus-pilot.png";
 
-import contactUslaptop from '../../../asserts/images/contactUs-laptop.png';
-import SuperToroidOrangeGlossy from '../../../asserts/images/SuperToroid-Orange-Glossy.png';
+import contactUslaptop from "../../../asserts/images/contactUs-laptop.png";
+import SuperToroidOrangeGlossy from "../../../asserts/images/SuperToroid-Orange-Glossy.png";
 import { useCallback, useState, useEffect } from "react";
 // import Particles from "react-particles";
 // import type { Container, Engine } from "tsparticles-engine";
 // import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "tsparticles-slim";
 
-
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 // mainSiteLogo
 
 import "./style.css";
+import ParticlesComponent from "../../particleComponent/ParticlesComponent";
 
 export const Footer = (props) => {
-  const [ipInfo, setIpInfo] = useState({ ip: '', country: '' });
+  useEffect(() => {
+    window.particlesJS("particles-js", {
+      particles: {
+        number: { value: 150, density: { enable: true, value_area: 800 } },
+        color: { value: "#ffffff" },
+        shape: {
+          type: "circle",
+          stroke: { width: 2, color: "#000000" },
+          polygon: { nb_sides: 5 },
+          image: { src: "img/github.svg", width: 100, height: 100 },
+        },
+        opacity: {
+          value: 0.5,
+          random: false,
+          anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
+        },
+        size: {
+          value: 3,
+          random: true,
+          anim: { enable: false, speed: 40, size_min: 0.1, sync: false },
+        },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#ffffff",
+          opacity: 0.4,
+          width: 1,
+        },
+        move: {
+          enable: true,
+          speed: 6,
+          direction: "none",
+          random: false,
+          straight: false,
+          out_mode: "out",
+          bounce: false,
+          attract: { enable: false, rotateX: 600, rotateY: 1200 },
+        },
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: true, mode: "repulse" },
+          onclick: { enable: true, mode: "push" },
+          resize: true,
+        },
+        modes: {
+          grab: { distance: 400, line_linked: { opacity: 1 } },
+          bubble: {
+            distance: 400,
+            size: 40,
+            duration: 2,
+            opacity: 8,
+            speed: 3,
+          },
+          repulse: { distance: 200, duration: 0.4 },
+          push: { particles_nb: 4 },
+          remove: { particles_nb: 2 },
+        },
+      },
+      retina_detect: true,
+    });
 
-  console.log("ipInfo", ipInfo)
+    // Clean up
+    return () => {
+      window.pJSDom && window.pJSDom[0].pJS.fn.vendors.destroypJS();
+      window.pJSDom = [];
+    };
+  }, []);
+  const [ipInfo, setIpInfo] = useState({ ip: "", country: "" });
 
-
+  console.log("ipInfo", ipInfo);
 
   useEffect(() => {
     function getCountryByIP() {
@@ -58,11 +124,7 @@ export const Footer = (props) => {
     getCountryByIP();
   }, []);
 
-
-
-
   const [budget, setBudget] = useState(500);
-
 
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);
@@ -75,25 +137,24 @@ export const Footer = (props) => {
   }, []);
 
   // const notify = () => toast.success("Thank You");
-  const [formdata, setFormData] = useState("")
+  const [formdata, setFormData] = useState("");
 
   const handlechange = (e) => {
-    const { name, value } = e.target
+    const { name, value } = e.target;
     if (name == "budget") {
       setBudget(value);
-
     }
     setFormData((prevdata) => ({
       ...prevdata,
-      [name]: value
-    }))
-  }
+      [name]: value,
+    }));
+  };
 
   const url = process.env.REACT_APP_BASE_URL;
-  console.log("url", url)
+  console.log("url", url);
 
   const handlesubmit = async (event) => {
-    event.preventDefault()
+    event.preventDefault();
     const formDataMethod = new FormData();
     for (const key in formdata) {
       formDataMethod.append(key, formdata[key]);
@@ -106,23 +167,25 @@ export const Footer = (props) => {
       const contact_api = await fetch(url, {
         method: "POST",
         headers: {
-          'Access-Control-Allow-Headers': '*',
-          'Access-Control-Allow-Origin': '*',
-          'Access-Control-Allow-Methods': 'POST, GET, OPTIONS, PUT, DELETE'
+          "Access-Control-Allow-Headers": "*",
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "POST, GET, OPTIONS, PUT, DELETE",
         },
         // No need to set headers for FormData
-        body: formDataMethod
+        body: formDataMethod,
       });
 
       if (!contact_api.ok) {
-        throw new Error('Network response was not ok ' + contact_api.statusText);
+        throw new Error(
+          "Network response was not ok " + contact_api.statusText
+        );
       }
 
       const response = await contact_api.json();
       if (response?.status == true) {
         // notify()
       }
-      console.log('Success:', response);
+      console.log("Success:", response);
       // Handle successful response
       return response;
     } catch (error) {
@@ -130,12 +193,10 @@ export const Footer = (props) => {
       // Handle error response
       throw error;
     }
-  }
-
+  };
 
   return (
     <>
-
       {/* <!-- Contact --> */}
       <section class="techVerse_contact">
         <div class="container-fluid">
@@ -233,7 +294,9 @@ export const Footer = (props) => {
                           <div class="col-md-10 mb-5 contact-formCols">
                             <div class="budget-wrap">
                               <div class="budget-header">
-                                <span class="budget-title">Set Your Budget</span>
+                                <span class="budget-title">
+                                  Set Your Budget
+                                </span>
                                 <span class="budget-value"> ${budget}</span>
                               </div>
                               <div class="budget-content">
@@ -248,7 +311,6 @@ export const Footer = (props) => {
                                   class="budget-slider"
                                   id="budgetRange"
                                 />
-
 
                                 {/* <input
                                   onChange={handlechange}
@@ -266,7 +328,10 @@ export const Footer = (props) => {
                           <div class="col-md-10 mb-5 contact-formCols">
                             <div class="form-group">
                               <div class="techVerse_hero_btns">
-                                <button type="submit" class="btn_with_icon w-100">
+                                <button
+                                  type="submit"
+                                  class="btn_with_icon w-100"
+                                >
                                   <span class="btn_with_icon_text">SUBMIT</span>
                                 </button>
                               </div>
@@ -632,9 +697,11 @@ export const Footer = (props) => {
               </div>
             </div>
           </div>
-          <div id="tsparticlesss">
+          {/* <div id="particles-js">
             <Particles
-              id="tsparticlesss"
+              style={{ position: "absolute" , top:"200px"}}
+              id="particles-js"
+              className="customClass"
               canvasClassName="abc"
               init={particlesInit}
               loaded={particlesLoaded}
@@ -643,7 +710,6 @@ export const Footer = (props) => {
                   color: {
                     value: "",
                   },
-                  height: 20,
                 },
                 fpsLimit: 120,
                 interactivity: {
@@ -670,10 +736,10 @@ export const Footer = (props) => {
                 },
                 particles: {
                   color: {
-                    value: "#ffffff",
+                    value: "ff0000",
                   },
                   links: {
-                    color: "#ffffff",
+                    color: "ff0000",
                     distance: 150,
                     enable: true,
                     opacity: 0.5,
@@ -709,7 +775,8 @@ export const Footer = (props) => {
                 detectRetina: true,
               }}
             />
-          </div>
+          </div> */}
+           <div id="particles-js" style={{ maxWidth: "" }}></div>
         </section>
       </footer>
 

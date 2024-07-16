@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Particles from "react-particles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Logo, mainSiteLogo, dmca, dmcacomplaint, footerCertificate, playstore } from "../../asserts/images";
+import {
+  Logo,
+  mainSiteLogo,
+  dmca,
+  dmcacomplaint,
+  footerCertificate,
+  playstore,
+} from "../../asserts/images";
 // import partnersbbb from '../../../asserts/images/partners-bbb.png';
 // import arrowicon from '../../../asserts/images/arrow-icon.png'
 // import goodfirms from '../../../asserts/images/good-firms.png';
@@ -22,23 +29,16 @@ import { loadSlim } from "tsparticles-slim";
 const Contact_Footer = () => {
   const location = useLocation();
 
-  const particlesInit = useCallback(async engine => {
- 
-
+  const particlesInit = useCallback(async (engine) => {
     await loadSlim(engine);
   }, []);
 
-  const particlesLoaded = useCallback(async container => {
- 
-  }, []);
+  const particlesLoaded = useCallback(async (container) => {}, []);
 
   return (
     <div>
-
       <footer id="custom_partilce">
-
-
-        <section class="techVerse_footer" >
+        <section class="techVerse_footer">
           <div class="techVerse_footerContent">
             <div class="container-fluid">
               <div class="row footer_row">
@@ -47,7 +47,9 @@ const Contact_Footer = () => {
                     <div class="col-md-4">
                       <div class="footer_about">
                         <div class="footer_logo_img_box">
-                          <a href="#"><img src={mainSiteLogo} alt="" /></a>
+                          <a href="#">
+                            <img src={mainSiteLogo} alt="" />
+                          </a>
                         </div>
                       </div>
                       <ul class="icon_list_items footer__links footer_contactUS">
@@ -56,9 +58,9 @@ const Contact_Footer = () => {
                             <span class="icon_list_icon">
                               <i class="fa-solid fa-phone"></i>
                             </span>
-                            <span class="icon_list_text"
-                            >For Sales: (866) 123-4567</span
-                            >
+                            <span class="icon_list_text">
+                              For Sales: (866) 123-4567
+                            </span>
                           </a>
                         </li>
                         <li class="icon_list_item footer__link">
@@ -66,9 +68,9 @@ const Contact_Footer = () => {
                             <span class="icon_list_icon">
                               <i class="fa-solid fa-phone"></i>
                             </span>
-                            <span class="icon_list_text"
-                            >For Billing: +1 234-567-890</span
-                            >
+                            <span class="icon_list_text">
+                              For Billing: +1 234-567-890
+                            </span>
                           </a>
                         </li>
                         <li class="icon_list_item footer__link">
@@ -89,37 +91,41 @@ const Contact_Footer = () => {
                         </li>
                       </ul>
                       <div class="social_links">
-                        <a href="#" class="social_link"
-                        ><i class="fa-brands fa-facebook"></i
-                        ></a>
-                        <a href="#" class="social_link"
-                        ><i class="fa-brands fa-youtube"></i
-                        ></a>
-                        <a href="#" class="social_link"
-                        ><i class="fa-brands fa-linkedin"></i
-                        ></a>
-                        <a href="#" class="social_link"
-                        ><i class="fa-brands fa-instagram"></i
-                        ></a>
-                        <a href="#" class="social_link"
-                        ><i class="fa-brands fa-square-pinterest"></i
-                        ></a>
-                        <a href="#" class="social_link"
-                        ><i class="fa-solid fa-star"></i
-                        ></a>
+                        <a href="#" class="social_link">
+                          <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social_link">
+                          <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social_link">
+                          <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social_link">
+                          <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social_link">
+                          <i class="fa-brands fa-square-pinterest"></i>
+                        </a>
+                        <a href="#" class="social_link">
+                          <i class="fa-solid fa-star"></i>
+                        </a>
                       </div>
                       <div class="footer_bbb">
-                        <a href="#"><img src="images/b-icon.png" alt="" /></a>
-                        <a href="#"><img src="images/start-icon.png" alt="" /></a>
+                        <a href="#">
+                          <img src="images/b-icon.png" alt="" />
+                        </a>
+                        <a href="#">
+                          <img src="images/start-icon.png" alt="" />
+                        </a>
                       </div>
-                      <p class="company_wishText">A Company oF More Wish Digital</p>
+                      <p class="company_wishText">
+                        A Company oF More Wish Digital
+                      </p>
                     </div>
                     <div class="col-md-3">
                       <div class="footer__quick-links">
                         <h3 class="foooter__subhead">Quick Links</h3>
-                        <ul
-                          class="icon_list_items footer__links footer__categories_links"
-                        >
+                        <ul class="icon_list_items footer__links footer__categories_links">
                           <li class="footer__link">
                             <a href="#">Business Development</a>
                           </li>
@@ -153,9 +159,7 @@ const Contact_Footer = () => {
                     <div class="col-md-3">
                       <div class="footer__quick-links">
                         <h3 class="foooter__subhead">Industries</h3>
-                        <ul
-                          class="icon_list_items footer__links footer__categories_links"
-                        >
+                        <ul class="icon_list_items footer__links footer__categories_links">
                           <li class="footer__link">
                             <a href="#">Advertising</a>
                           </li>
@@ -189,9 +193,7 @@ const Contact_Footer = () => {
                     <div class="col-md-2">
                       <div class="footer__quick-links">
                         <h3 class="foooter__subhead">About</h3>
-                        <ul
-                          class="icon_list_items footer__links footer__categories_links"
-                        >
+                        <ul class="icon_list_items footer__links footer__categories_links">
                           <li class="footer__link">
                             <a href="#">Pricing</a>
                           </li>
@@ -227,21 +229,24 @@ const Contact_Footer = () => {
                       </div>
                       <div class="col-md-12">
                         <div class="techVerse_disclaimer">
-                          <h4 class="techVerse_disclaimer_title">DISCLAIMER:</h4>
+                          <h4 class="techVerse_disclaimer_title">
+                            DISCLAIMER:
+                          </h4>
                           <p>
-                            App, portfolio, images and content are the sole property
-                            of Techverse. All third party company names, brand
-                            names, trademarks displayed on this website are the
-                            property of their respective owners. Furthermore,
-                            Techverse . has no influence over the third party
-                            material that is being displayed on the website.
-                            Therefore, we are also not responsible for any
-                            resemblance with any other material on the web. These
-                            portfolios and case studies are actual but exemplary
-                            (for better understanding); the actual names, designs,
-                            functionality, content and stats/facts may differ from
-                            the actual apps that have been published. This is due to
-                            the strict NDA policy that Techverse. adheres to.
+                            App, portfolio, images and content are the sole
+                            property of Techverse. All third party company
+                            names, brand names, trademarks displayed on this
+                            website are the property of their respective owners.
+                            Furthermore, Techverse . has no influence over the
+                            third party material that is being displayed on the
+                            website. Therefore, we are also not responsible for
+                            any resemblance with any other material on the web.
+                            These portfolios and case studies are actual but
+                            exemplary (for better understanding); the actual
+                            names, designs, functionality, content and
+                            stats/facts may differ from the actual apps that
+                            have been published. This is due to the strict NDA
+                            policy that Techverse. adheres to.
                           </p>
                         </div>
                       </div>
@@ -270,15 +275,15 @@ const Contact_Footer = () => {
                           </form>
                         </div>
                         <div class="hero_brands">
-                          <a href="#" class="hero_brands_img"
-                          ><img src={dmca} alt=""
-                            /></a>
-                          <a href="#" class="hero_brands_img"
-                          ><img src={dmcacomplaint} alt=""
-                            /></a>
-                          <a href="#" class="hero_brands_img"
-                          ><img src={playstore} alt=""
-                            /></a>
+                          <a href="#" class="hero_brands_img">
+                            <img src={dmca} alt="" />
+                          </a>
+                          <a href="#" class="hero_brands_img">
+                            <img src={dmcacomplaint} alt="" />
+                          </a>
+                          <a href="#" class="hero_brands_img">
+                            <img src={playstore} alt="" />
+                          </a>
                         </div>
                         <div class="footer_certicate">
                           <img src={footerCertificate} alt="" />
@@ -369,19 +374,9 @@ const Contact_Footer = () => {
             />
           </div>
         </section>
-
-
-
-
-
-
-
-
-
-
       </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Contact_Footer
+export default Contact_Footer;
