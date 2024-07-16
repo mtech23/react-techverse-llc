@@ -134,10 +134,10 @@ const Education_hr = () => {
 
       <HeroSection
         classheroimage={"inner-educationHR-bgColor"}
-        title={"Alter Your HR And Education Systems"}
-        subtitle={"With "}
-        title2={"Techverse"}
-        tagline={"In today's fast-paced digital world, adapting to innovative solutions is crucial for staying ahead. At Techverse LLC, we specialize in transforming HR and education systems with cutting-edge technology to enhance efficiency, engagement, and effectiveness."}
+        title={"Transforming"}
+        subtitle={"HR And Education"}
+        title2={"Systems With Techverse"}
+        tagline={"In today's digital era, Techverse LLC specializes in transforming education and HR sectors through cutting-edge technology. We improve operational efficiency, engagement, and effectiveness to help you lead in your industry."}
         className={"ecommerceDev_hero_img"}
 
 
@@ -162,17 +162,18 @@ const Education_hr = () => {
       <TrustedPartners />
 
 
-      <Portfolio title="Why "
+      <Portfolio title="
+What Sets Us"
 
-        title2=" Us?
+// title2=" Us?"
+        subtitle="Apart?"
+         classtitle="color-darkBlue"
+        para="We excel in digital solutions designed for the Education and HR sectors, leveraging deep industry expertise to deliver strategies that meet unique challenges and goals. Stay compliant and effective with our targeted campaigns, ensuring your organization stays ahead.
+
 "
-        subtitle="Choose "
-        para="We specialize in digital marketing for the Education and HR sectors, leveraging our deep industry expertise to deliver tailored strategies that address the unique challenges and opportunities of these fields. Our team stays ahead of trends and regulations to ensure compliance and effectiveness, creating customized campaigns that resonate with your target audience.
-
-"
 
 
-
+    
         // image={eduhrimg1}
         eduHR={"new_edu_HR_img"}
         image={neweduhrimg1}
@@ -184,14 +185,37 @@ const Education_hr = () => {
         greencube={greenCube}
         donatorange={donatorange}
       />
-      <App_development_solutions />
+        {/* <!-- App Development Sec --> */}
+        <App_development_solutions 
+      title="Techverse Builds Apps To Fit Your"
+      subtitle="Business Needs. "
+      // title2="That Exceed Expectations "
+      para="Use Techverse LLC's extensive app development services to grow your company. With our customized solutions, you may improve engagement, streamline operations, and enter new markets."
+      para1="Gain actionable insights into performance and user behavior with advanced analytics and reporting tools. Drive informed decisions, optimize strategies, and achieve growth and efficiency in your operations."
+      para2="We create intuitive interfaces that enhance user experience and drive engagement. 
+      Our designs blend aesthetics with functionality, ensuring seamless navigation and boosting user satisfaction across educational and HR platforms."
+      para3=" From initial concept to deployment, our developers craft scalable and secure apps designed to meet the unique demands of the education and HR sectors. Harness the latest technologies to achieve your organizational goals effectively and efficiently."
+      
+      para4="Ensure reliability and security through rigorous testing across platforms. Our QA processes guarantee flawless performance, maintaining high standards of functionality and user satisfaction in educational and HR app deployments."
+      
+      
+      />
 
-      <Development_Process title="Our " subtitle="Real Estate" title2="Mobile App Development Process"
-        para="We follow a streamlined approach to ensure customer satisfaction by delivering customized real estate mobile app development solutions."
-        image={eduhrimg2gif} />
+      <Development_Process title=" App Development Process At " subtitle="TECHVERSE LLC" 
+      // title2="Mobile App Development Process"
+        para="Follow our streamlined approach to ensure customer satisfaction with customized real estate mobile app development solutions:"
+        image={eduhrimg2gif}
+        para1="Conduct comprehensive analysis to understand project objectives, target audience, and market trends for effective planning and strategy alignment."
+        para2="Expertly craft intuitive UI/UX interfaces and develop robust solutions that meet industry standards and exceed user expectations."
+        para3="Implement rigorous testing protocols to ensure app stability, security, and adherence to quality standards, guaranteeing a seamless user experience."
+        para4="Facilitate smooth app rollout across multiple platforms and provide ongoing support to optimize performance and meet evolving user needs."
+         quality="Quality Assurance"
+        
+        
+        />
 
       <Portfolios
-        title="ECOMMERCE "
+        title="EDUCATION & HR"
         subtitle="Portfolio"
         para="Our Company has worked with thousands of businesses all across the world and has developed highly functional, responsive, and feature-rich applications. Check out some of our best works:"
 
@@ -209,12 +233,12 @@ const Education_hr = () => {
         image11={Macbook}
         classmobileapp="nav-link"
         classwebsite="nav-link"
-
-
+    
+       
         Mobile_Apps="Mobile Apps"
         Websites="Websites"
-
-
+   
+   
       />
 
 

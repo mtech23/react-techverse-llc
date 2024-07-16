@@ -5,7 +5,6 @@ import { Navigate, useNavigate } from "react-router-dom";
 import logo from "../../../asserts/images/logo.png";
 import sportsimg3 from "../../../asserts/images/sports-img-3.webp";
 import usaflag from "../../../asserts/images/usa-flag.png";
-
 import "./style.css";
 
 
@@ -36,7 +35,6 @@ import {
   BestSellingBook9,
   BestSellingBook10,
   BestSellingBook11,
-
   BestSellingBook12,
 } from "./../../../asserts/images/";
 import { Link } from "react-router-dom";
@@ -203,7 +201,6 @@ export const Header = (props) => {
               <div class="" aria-labelledby="navbarDropdown">
               </div>
             </li>
-
             <li class="nav-item">
               <Link class="nav-link" to={"/case-study"}>Case study</Link>
             </li>

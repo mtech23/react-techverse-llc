@@ -6,7 +6,9 @@ import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 
 import { gsap } from "gsap";
 import pinkcapsol from "../../asserts/images/pink-capsol.png";
-
+import Ctnbutton from "../../Components/ctnbutton/index";
+import phoneicon from "../../asserts/images/phone-icon.png";
+import chaticon from "../../asserts/images/chat-icon.png";
 import donatblue from "../../asserts/images/donat-blue.png";
 import donatorange from "../../asserts/images/donat-orange.png";
 import greencube from "../../asserts/images/green-cube.png";
@@ -106,12 +108,27 @@ const About_us = () => {
       </section>
       <TrustedPartners />
       <Aboutsection
+       pinkcapsol={pinkcapsol}
+       greencube={greencube}
+       donatorange={donatorange}
         title="What Sets Us"
         subtitle="Apart?"
         para="At Techverse LLC, we pride ourselves on our ability to transform businesses through meticulously crafted digital solutions. What truly distinguishes us is our holistic approach to web design and development. We begin each project with a deep dive into understanding your business objectives, target audience, and market dynamics. This foundational knowledge allows us to create bespoke websites that not only look stunning but also function seamlessly across all devices. Our team of seasoned designers and developers brings years of industry experience, ensuring that every aspect of your website—from user interface design to backend functionality—is optimized for performance and user experience."
         para2="We believe in continuous collaboration, keeping you involved at every stage of the process to ensure our solutions align perfectly with your vision. Moreover, our commitment doesn't end at launch. We provide comprehensive support and maintenance services to ensure your website remains secure, up-to-date, and responsive to evolving industry trends. Whether you're looking to establish a robust online presence, drive conversions, or enhance customer engagement, Techverse LLC is your trusted partner for achieving digital success."
         image={aboutimg1}
         abtImgClass={"about-page-img1"}
+        CtnbuttonComponent={Ctnbutton}
+        ctnButtonProps={{
+          phoneicon: phoneicon,
+          calltext: "Call Now",
+          primaryButtonClass: "btn_with_icon",
+          chaticon: chaticon,
+          chatenow: "Chat Now",
+          secondaryButtonClass: "btn_with_icon btn_secondary ",
+
+          // playstore: playstore,
+          // appstore: appstore
+        }}
       />
 
       <Website />
@@ -152,7 +169,7 @@ const About_us = () => {
                       data-aos-duration="1000"
                     >
                       Customer
-                      <span class="color-lightBlue2">Gratification</span>
+                      <span class="color-lightBlue2"> Gratification </span>
                     </h2>
                     <p
                       data-aos="fade-up"
@@ -172,7 +189,7 @@ const About_us = () => {
                       data-aos-offset="0"
                       data-aos-duration="1000"
                     >
-                      <span class="color-lightBlue2">Innovation</span> &
+                      <span class="color-lightBlue2"> Innovation </span> &
                       Creativity
                     </h2>
                     <p
@@ -196,7 +213,7 @@ const About_us = () => {
                       data-aos-offset="0"
                       data-aos-duration="1000"
                     >
-                      Mission &<span class="color-lightBlue2">Vision</span>
+                      Mission & <span class="color-lightBlue2"> Vision </span>
                     </h2>
                     <p
                       data-aos="fade-up"
@@ -235,7 +252,10 @@ const About_us = () => {
         </div>
       </section>
 
-      <Process />
+      <Process
+      para="We proceed to meticulous planning, where we outline the app's features, user interface design, and functionality. Our expert team of developers then takes over, using cutting-edge technologies to build a robust and scalable application tailored to your specifications."
+      
+      />
 
       <Testimonials />
 

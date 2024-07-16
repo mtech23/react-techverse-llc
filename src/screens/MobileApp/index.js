@@ -94,17 +94,17 @@ const MobileApp = () => {
         subtitle={"Techverse Apps!"}
         // title2={"Services for Online Businesses"}
         tagline={
-          "Improve your brand awareness and maximize ROI through a responsive mobile application"
+          "Our Mobile Application Development service is tailored to propel your business forward in the digital landscape. Our expert team crafts bespoke mobile solutions that resonate with your audience and drive results."
         }
         className={"mobileApp_hero_img"}
         heroimage={Mobileapphero}
         CtnbuttonComponent={Ctnbutton}
         ctnButtonProps={{
           phoneicon: phoneicon,
-          calltext: "Call Us",
+          calltext: "Call Now",
           primaryButtonClass: "btn_with_icon",
           chaticon: chaticon,
-          chatenow: "Chat Us",
+          chatenow: "Chat Now",
           secondaryButtonClass: "btn_with_icon btn_secondary  ",
 
           // playstore: playstore,
@@ -124,23 +124,19 @@ const MobileApp = () => {
         CtnbuttonComponent={Ctnbutton}
         ctnButtonProps={{
           phoneicon: phoneicon,
-          calltext: "Call Us",
+          calltext: "Call Now",
           primaryButtonClass: "btn_with_icon",
           chaticon: chaticon,
-          chatenow: "Chat Us",
-          secondaryButtonClass: "btn_with_icon btn_secondary  ",
+          chatenow: "Chat Now",
+          secondaryButtonClass: "btn_with_icon btn_secondary ",
 
           // playstore: playstore,
           // appstore: appstore
         }}
-        title="RAPID APPLICATION DEVELOPMENT USING"
-        subtitle="  CUTTING-EDGE"
-        title2="TECHNOLOGIES  "
-        para="Techverse offers top-notch mobile app solutions that improve the performance of businesses by increasing revenues 
-                                and amplifying the online presence of the brand. We create applications for businesses of all sizes and provide them with an exceptional custom app
-                                 design experience that builds for them a loyal customer base and has a competitive advantage.
-
-                We help businesses delight their users with impressive native iOS/Android, Cross-Platform, and web application development, leveraging our extensive expertise in working with major app technologies."
+        title="Leading"
+        subtitle="The"
+        title2="Charge In Rapid Mobile App Innovation "
+        para="Experience the forefront of mobile application development with Techverse LLC, where we excel in rapid application deployment driven by cutting-edge technologies. Our approach blends agile methodologies with the latest advancements in AI, IoT, and blockchain, ensuring that your app not only meets but exceeds industry standards. Whether you require a robust iOS solution, an adaptable Android platform, or a versatile cross-platform app, our seasoned developers are adept at crafting bespoke applications that resonate with your target audience. From initial ideation and meticulous prototyping to seamless deployment and ongoing support, we prioritize collaboration and innovation to deliver solutions that propel your business forward. Trust Techverse LLC to transform your vision into a dynamic and scalable mobile application that stands out in today's competitive digital landscape."
         image={rapidappimg}
         abtImgClass="mobile-img-1"
       />
@@ -149,17 +145,17 @@ const MobileApp = () => {
         pinkcapsol={pinkcapsol}
         greencube={greencube}
         donatorange={donatorange}
-        title="HIGH-END MOBILE APP SOLUTIONS FOR"
-        subtitle="  BUSINESSES"
-        para=" For startups to enterprise-level businesses, we offer a full cycle of app development, design, integration, and management services. From ideation to the delivery of the final application to the ongoing support, our company leads the whole process.
-
-We help businesses delight their users with impressive native iOS/Android, Cross-Platform, and web application development, leveraging our extensive expertise in working with major app technologies."
+        classtitle={"color-darkBlue"}
+        title="Scalable Mobile Solutions "
+        title2="Every Business Need. "
+        subtitle=" For "
+        para=" At Techverse LLC, we specialize in crafting high-end mobile app solutions tailored to raise businesses across diverse industries. Our Mobile Application Development service is meticulously designed to transform your ideas into intuitive, scalable, and robust mobile applications that resonate with your target audience. Whether you're aiming to streamline internal processes, enhance customer engagement, or launch a cutting-edge product, our expert team of developers, designers, and strategists is dedicated to delivering excellence. From initial concept and UI/UX design to seamless integration and ongoing support, we prioritize innovation and functionality every step of the way. Partner with Techverse LLC and get the potential in today's digital landscape."
         image={highendimg}
         chaticon={chaticon}
         phoneicon={phoneicon}
       />
       {/* <!-- Website --> */}
-      <section class="techVerse_webSolution">
+      {/* <section class="techVerse_webSolution">
         <img
           class="techVerse_webSolution_icon1 animation11"
           src={donateWhite}
@@ -221,19 +217,23 @@ We help businesses delight their users with impressive native iOS/Android, Cross
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+      {/* MOBILE APP */}
+
+      <Elevateyourbusiness />
 
       {/* new Portfolio swipper section */}
 
       {/* process we use */}
-      <Process />
+      <Process
+      para="We proceed to meticulous planning, where we outline the app's features, user interface design, and functionality. Our expert team of developers then takes over, using cutting-edge technologies to build a robust and scalable application tailored to your specifications."
+      
+      />
 
       {/* <!-- Technologies --> */}
       <TechnologiesUse />
 
-      {/* MOBILE APP */}
-
-      <Elevateyourbusiness />
+      
 
       {/* FAQ section */}
 

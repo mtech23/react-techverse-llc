@@ -128,10 +128,10 @@ const Health_care = () => {
 
       <HeroSection
         classheroimage={"inner-health-bgColor"}
-        title={"Premium "}
-        subtitle={"Mobile App "}
-        title2={"Development Solutions For Healthcare Agencies"}
-        tagline={"Enhance patient care and optimize operations with our state-of-the-art healthcare mobile apps."}
+        title={"Techverse Optimizes"}
+        subtitle={"Healthcare"}
+        title2={"Delivery For Patients & Professionals."}
+        tagline={"Techverse empowers both patients and healthcare professionals through innovative mobile applications. Our secure and user-friendly apps streamline workflows, improve patient interaction, and guarantee adherence to healthcare regulations. We craft specialized solutions that boost patient outcomes and optimize healthcare delivery, all while prioritizing strong data security measures. Partner with Techverse to revolutionize the way healthcare is delivered."}
         className={"ecommerceDev_hero_img"}
 
 
@@ -156,11 +156,12 @@ const Health_care = () => {
       <TrustedPartners />
 
 
-      <Portfolio title="Perfectly Curated Mobile Applications For The  "
-
+      <Portfolio title="From Patient Engagement To Research, Techverse Develops"
+        classtitle="color-darkBlue"
+        newClass="health-care-abt1"
         // title2=" Entertainment Industry"
-        subtitle="Entertainment Industry "
-        para="We specialize in digital marketing for the Education and HR sectors, leveraging our deep industry expertise to deliver tailored strategies that address the unique challenges and opportunities of these fields. Our team stays ahead of trends and regulations to ensure compliance and effectiveness, creating customized campaigns that resonate with your target audience.
+        subtitle="Healthcare Solutions"
+        para="Techverse is an expert in creating all-inclusive medical solutions. Our customized apps improve patient care, speed up procedures, and guarantee that industry norms are followed. By emphasizing efficiency and creativity, we enable healthcare providers to provide better services and increase patient outcomes.
 
 "
 
@@ -175,20 +176,43 @@ const Health_care = () => {
         greencube={greenCube}
         donatorange={donatorange}
       />
-      <App_development_solutions />
-
-      <Development_Process title="App Development For The " subtitle="  Entertainment Industry"
-        para="We follow a streamlined approach to ensure customer satisfaction by delivering customized real estate mobile app development solutions.
-
-"
-        image={healthcareimg2}
-        sportsclass={"health-care-img-2"}
+        {/* <!-- App Development Sec --> */}
+        <App_development_solutions 
+      title="Techverse Offer Secure And Effective"
+      subtitle="Healthcare Apps"
+      // title2="That Exceed Expectations "
+      para="At Techverse LLC, we're experts at developing innovative healthcare applications that improve workflows, improve patient outcomes, and guarantee regulatory compliance in that sector.
+       Join forces with us to create cutting-edge mobile apps."
+      para1="Utilize advanced analytics to interpret healthcare data, enabling informed decision-making and strategic planning for healthcare providers and administrators."
+      para2="Craft user-centric interfaces that optimize usability and accessibility, enhancing engagement and satisfaction among healthcare professionals and patients."
+      para3="Create scalable and innovative healthcare applications designed to improve patient care delivery, operational efficiency, and healthcare service management.
+      "
+      para4="Implement comprehensive testing strategies to validate the functionality, security, and regulatory compliance of healthcare apps, ensuring reliability and user safety."
+      
+      
       />
 
+      <Development_Process title2=" On The Move Techverse Apps Empower Professional Patients " subtitle= "Healthcare "  
+        para="Techverse apps empower healthcare professionals and patients with innovative solutions. From increased patient care to streamlined operations, our apps ensure mobility and efficiency in delivering healthcare services.
+
+"
+        image={healthcareimg2} 
+        sportsclass={"health-care-img-2"}
+        para1="Conduct in-depth evaluations to align healthcare app development with organizational strategies and user requirements, ensuring solutions that effectively address industry challenges and boost operational workflows."
+        para2="Leveraging the latest technological advancements, create innovative interfaces and robust healthcare solutions designed to optimize patient interaction and streamline administrative processes."
+        para3="Implement stringent testing protocols to validate the functionality, security, and regulatory compliance of healthcare apps, ensuring seamless performance and user satisfaction."
+        para4="Facilitate smooth app deployment and provide ongoing maintenance and updates to ensure optimal performance, security, and scalability, effectively meeting evolving healthcare needs."
+ quality="Quality Assurance"
+
+
+
+
+        />
+
       <Portfolios
-        title="HEALTH & LIFE SCIENCE "
+        title=" HEALTH & LIFE SCIENCE "
         subtitle="PORTFOLIO"
-        para="Our Company has worked with thousands of businesses all across the world and has developed highly functional, responsive, and feature-rich applications. Check out some of our best works:
+        para="Our Health & Life Science portfolio showcases innovative mobile apps and responsive websites that improve healthcare delivery, patient engagement, and operational efficiency worldwide.
 
 "
 
@@ -196,7 +220,7 @@ const Health_care = () => {
         Websites="Websites"
         classmobileapp="nav-link"
         classwebsite="nav-link"
-
+        
         image1={healthcareportfolio1}
         image2={healthcareportfolio2}
         image3={healthcareportfolio3}

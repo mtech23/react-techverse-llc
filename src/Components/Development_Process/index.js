@@ -150,7 +150,7 @@ const Development_Process = (props) => {
                       </div>
                       <h4>Business Analysis</h4>
                       <p>
-                        Thoroughly analyze business requirements and user needs to define project scope and objectives, ensuring alignment with strategic goals and optimal solution planning.
+                      {props?.para1}
                       </p>
                     </div>
                   </div>
@@ -166,7 +166,7 @@ const Development_Process = (props) => {
                       </div>
                       <h4>Design & Development</h4>
                       <p>
-                        Craft visually appealing and functional designs while implementing robust development strategies to create customized solutions that meet client specifications and exceed expectations.
+                      {props?.para2}
                       </p>
                     </div>
                   </div>
@@ -180,9 +180,9 @@ const Development_Process = (props) => {
                       <div class="reApp_box_icon">
                         <img src={qualityicon} alt="" />
                       </div>
-                      <h4>Quality Assurance</h4>
+                      <h4>  {props?.quality} </h4>
                       <p>
-                        Conduct rigorous testing and quality checks throughout the development lifecycle to ensure high performance, reliability, and adherence to industry standards for seamless user experiences.
+                      {props?.para3}
                       </p>
                     </div>
                   </div>
@@ -198,7 +198,7 @@ const Development_Process = (props) => {
                       </div>
                       <h4>Deployment and Maintenance</h4>
                       <p>
-                        Efficiently deploy applications while providing ongoing support and maintenance services to ensure smooth operations, continuous improvements, and client satisfaction post-launch.
+                      {props?.para4}
                       </p>
                     </div>
                   </div>

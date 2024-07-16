@@ -5,7 +5,7 @@ import androidiconw from "../../../src/asserts/images/android-icon-w.png";
 import angularicon from "../../../src/asserts/images/angular-icon.png";
 import appleicon from "../../../src/asserts/images/apple-icon.png";
 import ecommersedevhero from "../../../src/asserts/images/ecommersedevhero.png";
-
+import chaticons from "../../../src/asserts/images/chat-icon-blue.webp";
 import fluttericon from "../../../src/asserts/images/flutter-icon.png";
 import reacticon from "../../../src/asserts/images/react-icon.png";
 import phoneicongreen from "../../../src/asserts/images/phone-icon-green.png";
@@ -56,7 +56,7 @@ const Elevateyourbusiness = (props) => {
                       <a href="#" class="btn_with_icon btn_secondary">
                         <img
                           class="btn_with_icon_img"
-                          src={chaticonblue}
+                          src={chaticons}
                           alt=""
                         />
                         <span class="btn_with_icon_text">

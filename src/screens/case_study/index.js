@@ -36,6 +36,7 @@ const Case_study = () => {
   Aos.init();
 
   useEffect(() => {
+    
     gsap.set(".road", { opacity: 1 });
     const circles = gsap.utils.toArray(".ani_cnt .icc");
     const tl2 = gsap.timeline({ repeat: 20 });
@@ -531,7 +532,7 @@ const Case_study = () => {
 
 
 
-        <div class="modal fade bd-example-modal-lg popup_modal" id="popup_modal_id" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal fade bd-example-modal-lg popup_modal" id="popup_modal_id" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="false">
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 {/* <!-- <div class="modal-header">

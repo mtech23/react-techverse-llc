@@ -30,7 +30,7 @@ import Website from '../../Components/Website';
 import Testimonials from '../../Components/Tetimonials';
 import Frequentlyaskquestion from '../../Components/frequentlyaskquestion';
 import TrustedPartners from '../../Components/TrustedPartners';
-
+import { Helmet } from 'react-helmet';
 gsap.registerPlugin(MotionPathPlugin);
 
 const App_store = () => {
@@ -86,10 +86,10 @@ const App_store = () => {
                 CtnbuttonComponent={Ctnbutton}
                 ctnButtonProps={{
                     phoneicon: phoneicon,
-                    calltext: "Call Us",
+                    calltext: "Call Now",
                     primaryButtonClass: "btn_with_icon",
                     chaticon: chaticon,
-                    chatenow: "Chat Us",
+                    chatenow: "Chat Now",
                     secondaryButtonClass: "btn_with_icon btn_secondary  "
 
                     // playstore: playstore,
@@ -120,10 +120,10 @@ const App_store = () => {
                 CtnbuttonComponent={Ctnbutton}
                 ctnButtonProps={{
                     phoneicon: phoneicon,
-                    calltext: "Call Us",
+                    calltext: "Call Now",
                     primaryButtonClass: "btn_with_icon",
                     chaticon: chaticon,
-                    chatenow: "Chat Us",
+                    chatenow: "Chat Now",
                     secondaryButtonClass: "btn_with_icon btn_secondary  "
 
                     // playstore: playstore,
@@ -140,12 +140,15 @@ const App_store = () => {
 
 
 
-
-            <Website />
-            <Process />
+            <Elevateyourbusiness />
+            {/* <Website /> */}
+            <Process
+            para="Our App Store Optimization (ASO) process is meticulously crafted to uplift your app's visibility and downloads. We begin with a thorough assessment of your app's current performance and market positioning, followed by in-depth keyword research to identify optimal search terms. 
+            Crafting compelling app titles, descriptions, and visually appealing icons and screenshots is integral to our strategy."
+            />
             <TechnologiesUse />
 
-            <Elevateyourbusiness />
+           
             <Testimonials />
             <Frequentlyaskquestion />
 

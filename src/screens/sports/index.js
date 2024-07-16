@@ -120,10 +120,10 @@ const Sports = () => {
 
             <HeroSection
                 classheroimage={"sports_bg_custom"}
-                title={"     Revolutionizing Sports Mobile App Development "}
-                // subtitle={"  In  "}
-                // title2={"Media & Entertainment!"}
-                tagline={"Providing cutting-edge mobile app solutions for the sports industry."}
+                title={" Techverse "}
+                subtitle={" Sports "}
+                title2={"Apps Game-Changing Solutions For Teams & Organizations"}
+                tagline={"Customized mobile app solutions for sports clubs and organizations are offered by Techverse LLC. Our cutting-edge tools boost productivity, expedite administrative duties, and promote team communication. Our solutions are designed to meet the unique requirements of coaches, players, and staff, with features ranging from user-friendly interfaces to powerful tools like scheduling and performance statistics. Increase the potential of your sports team and reach new heights of achievement both on and off the field by collaborating with Techverse."}
                 className={"ecommerceDev_hero_img"}
 
                 CtnbuttonComponent={Ctnbutton}
@@ -147,16 +147,16 @@ const Sports = () => {
 
 
             <Portfolio
+                newClass="health-care-abt1"
                 pinkcapsol={pinkcapsol}
                 classtitle={" color-darkBlue   "}
                 // newClass={"media-abt1"}
                 greencube={greencube}
                 donatorange={donatorange}
 
-                title="Perfectly Curated Mobile Applications For The " subtitle="   Entertainment Industry  "
-
-                para="We offer cutting-edge mobile app development solutions to transform the media and entertainment industry. Our team of experts creates unique, high-performance mobile apps that provide a seamless user experience to your audience.
-
+                title="From Huddle To High-Five Techverse Apps" subtitle="   Connect Teams  "
+                title2="For Victory"
+                para="Our apps improve communication both on and off the field, promote team cohesion, and expedite game planning. Techverse ensures teams stay coordinated and focused on reaching their goals with features meant for coaches and athletes alike, such as real-time updates and performance tracking. With Techverse, your team may achieve unmatched athletic success.
 "
 
                 image={sportsimg111}
@@ -176,18 +176,37 @@ const Sports = () => {
 
 
             {/* <!-- App Development Sec --> */}
-            <App_development_solutions />
+            <App_development_solutions
+                title="Techverse Delivers Secure And Efficient"
+                subtitle=" Sports "
+                title2="Management Apps"
+                para="We excel in creating applications that boost team workflows, improve player outcomes, and ensure regulatory compliance within the sports industry. Partner with us to develop advanced mobile apps designed to your team’s unique needs."
+                para1="Gain insights into team performance and strategic metrics to optimize game strategies and decision-making for sports teams and leagues."
+                para2="Create user-friendly interfaces that boost engagement and ease navigation, ensuring seamless experiences for athletes and staff with sports apps."
+                para3="Develop robust and designed applications for sports teams and leagues, integrating essential features for efficient management and performance.
+      "
+                para4="Implement rigorous testing protocols to ensure reliability, security, and performance across sports apps, guaranteeing seamless functionality and user satisfaction."
+
+
+            />
 
             {/* <!-- Real Estate App Dev --> */}
             <Development_Process
                 sportsclass={"sports-img-2"}
                 image={sportsimg2}
-                title="App Development For The "
-                subtitle="Entertainment Industry"
-                para="We follow a streamlined approach to ensure customer satisfaction by delivering customized real estate mobile app development solutions.
+                title=" Techverse Leads The Way In "
+                title2=" Technology "
+                subtitle="Sports"
+                para="Our approach to app development in the sports sector focuses on creating scalable, secure applications designed to meet the needs of teams and sports professionals. We integrate modern technology into our solutions to boost operational efficiency and service delivery.
 
 "
-            //   title2="   Mobile App Development Process"
+                para1="We conduct thorough analyses to align sports app development with organizational goals and player needs, ensuring effective solutions from inception to deployment."
+                para2="Our team designs intuitive interfaces and develops robust sports solutions, leveraging advanced technologies to boost player engagement and operational efficiency."
+
+                para3="We perform comprehensive testing to ensure that our sports apps meet the highest standards for security, performance, and regulatory compliance and provide reliable and safe user experiences."
+                para4="We oversee smooth deployment and provide ongoing maintenance to ensure sports apps remain secure, efficient, and adaptable to evolving needs."
+                //   title2="   Mobile App Development Process"
+                quality="Seamless Deployment and Maintenance"
 
             />
 
@@ -197,9 +216,9 @@ const Sports = () => {
 
 
             <Portfolios
-                title="SPORTS "
+                title="SPORTS TEAM MANAGEMENT"
                 subtitle=" Portfolio"
-                para="Our Company has worked with thousands of businesses all across the world and has developed highly functional, responsive, and feature-rich applications. Check out some of our best works:"
+                para="Our Sports Team Management portfolio highlights innovative mobile apps and responsive websites that improve team management, player engagement, and operational efficiency worldwide."
                 image1={sportsportfolio1}
                 image2={sportsportfolio2}
                 image3={sportsportfolio3}
@@ -231,14 +250,14 @@ const Sports = () => {
                 hrimg={"sports-img-3"}
 
 h1="Customized Solutions"
-h2="Improved Efficiency"
-h3="Interfaces that are easy to use"
-h4="Advanced Analytics"
-h5="Secure Data Handling"
-h6="Expertise in the Sports Industry"
-h7="Scalable Solutions"
-h8="Proven Track Record"
-
+                h2="Improved Efficiency"
+                h3="Interfaces that are easy to use"
+                h4="Advanced Analytics"
+                h5="Secure Data Handling"
+                h6="Expertise in the Sports Industry"
+                h7="Scalable Solutions"
+                h8="Proven Track Record"
+                
 
 
                 />

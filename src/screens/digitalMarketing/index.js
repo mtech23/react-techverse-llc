@@ -83,10 +83,10 @@ const DigitalMarketing = () => {
         CtnbuttonComponent={Ctnbutton}
         ctnButtonProps={{
           phoneicon: phoneicon,
-          calltext: "Call Us",
+          calltext: "Call Now",
           primaryButtonClass: "btn_with_icon",
           chaticon: chaticon,
-          chatenow: "Chat Us",
+          chatenow: "Chat Now",
           secondaryButtonClass: "btn_with_icon btn_secondary  ",
 
           // playstore: playstore,
@@ -112,14 +112,16 @@ const DigitalMarketing = () => {
         CtnbuttonComponent={Ctnbutton}
         ctnButtonProps={{
           phoneicon: phoneicon,
-          calltext: "Call Us",
+          calltext: "Call Now",
+          primaryButtonClass: "btn_with_icon",
           chaticon: chaticon,
           chatenow: "Chat Now",
+          secondaryButtonClass: "btn_with_icon btn_secondary  ",
         }}
         image={digitalmarketing01}
         bulletListItems={[
           "10+ Years of Experience",
-          "Team of 50+ Digital Marketing Experts",
+          "A Team of 50+ Digital Marketing Experts",
           "2k+ Satisfied Clients",
           "150+ Ongoing Projects",
           "Up to 43% Increase in ROI  ",
@@ -130,10 +132,12 @@ const DigitalMarketing = () => {
         pinkcapsol={pinkcapsol}
         greencube={greencube}
         donatorange={donatorange}
-        title="We Build"
-        subtitle=" Brands "
-        para="Great brands start with consumer demands and marketplace gaps, not corporate strengths, which may seem paradoxical. That's why we start our brand development process by going deep
-                 – really deep – into research to find ways to make your brand genuine to who you are, different in the market, and memorable."
+        classtitle="color-darkBlue"
+        title="Excellent Digital Solutions "
+        title2="Your Brand's Growth."
+        subtitle=" For "
+        para="We excel in crafting compelling digital marketing strategies that resonate with your audience and lift your brand's online presence. Through expert SEO techniques, targeted social media campaigns, and innovative content strategies, we ensure that your brand not only stands out but thrives in the digital landscape. Whether you're looking to boost your website's visibility, engage with your community on social platforms, or drive conversions through effective digital advertising, our team is dedicated to building your brand's success story. 
+        Trust Techverse LLC to navigate the complexities of digital marketing so you can focus on what you do best – delivering exceptional value to your customers."
         image={digitalmarketing02}
         chaticon={chaticon}
         phoneicon={phoneicon}
@@ -203,15 +207,20 @@ const DigitalMarketing = () => {
         </div>
       </section> */}
 
+
+      
+      {/* MOBILE APP */}
+
+      <Elevateyourbusiness />
+
       {/* process we use */}
-      <Process />
+      <Process
+      para="Our service is designed to propel your business forward through strategic online campaigns personalized to your unique goals. We begin by conducting a comprehensive analysis of your current digital footprint and market landscape, identifying key opportunities and challenges"
+      />
 
       {/* <!-- Technologies --> */}
       <TechnologiesUse />
 
-      {/* MOBILE APP */}
-
-      <Elevateyourbusiness />
 
       {/* FAQ section */}
 

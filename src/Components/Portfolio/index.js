@@ -80,7 +80,6 @@ const Portfolio = (props) => {
           src={props?.donatorange}
           alt=""
         />
-        
         </div>
         <div class="techVerse_aboutContent techVerse_aboutContentServices2 width-1600">
           <div class="container-fluid">

@@ -162,7 +162,22 @@ const Automotive = () => {
 
 
             {/* <!-- App Development Sec --> */}
-            <App_development_solutions />
+            <App_development_solutions
+            
+            title="Engage Customers With Unique  "
+      subtitle="Transportation "
+      title2="App Solutions"
+      para="Improve your transportation and automotive business with personalized app solutions. With our customized app development services, you may increase productivity, increase consumer engagement, and simplify operations."
+      para1="Unlock valuable insights in the automotive and transport industry with our analytics and reporting services. Monitor fleet performance, customer behavior, and operational efficiency to 
+      make informed decisions and drive growth."
+      para2="boost user experience with our specialized UI/UX design services for the automotive and transport sectors. We create intuitive, visually appealing interfaces that improve customer engagement and satisfaction."
+      para3="Transform your automotive and transport business with our custom app development solutions. Our apps streamline operations, boost productivity, and boost customer service, ensuring your business stays ahead of the competition.
+      "
+      para4="Ensure the highest quality for your automotive and transport applications with our rigorous testing and QA services. We identify and fix issues to deliver reliable, efficient, and user-friendly solutions."
+      
+            
+            
+            />
 
 
             {/* <!-- Real Estate App Dev --> */}
@@ -176,7 +191,16 @@ const Automotive = () => {
                 title2="Mobile App Development Process"
                 image={automotivedesktop}
                 para="We follow a streamlined approach to ensure customer satisfaction by delivering customized real estate mobile app development solutions."
-            />
+
+                para1="We kick off every project with a detailed business analysis phase. This involves understanding your business objectives, target audience, and market landscape. Through collaborative workshops and in-depth research, we define the project scope, requirements,
+                 and technical specifications to ensure alignment with your goals."
+                 para2="With insights gathered from the analysis phase, our skilled team of designers and developers begins crafting your app. We focus on creating intuitive user interfaces (UI) and engaging user experiences (UX) that resonate with your audience. Leveraging the latest technologies and agile methodologies, we build scalable, robust solutions that meet industry standards and 
+                 exceed user expectations."
+                 para3="Quality is paramount in our development process. Before deployment, our QA specialists conduct rigorous testing across multiple devices and environments. We perform comprehensive functional testing, usability testing, performance testing, and security testing to identify and rectify any issues early on. This ensures your app is stable, secure, and ready to deliver a
+                  seamless user experience."
+                  para4="Launching your app is just the beginning of our partnership. We handle the complexities of deploying your app across platforms, managing app store submissions, and ensuring a smooth rollout. Post-launch, we provide ongoing maintenance and support services to keep your app optimized, secure, and up-to-date with evolving technologies and user needs."
+                     quality="Quality Assurance"
+          />
 
 
 
@@ -225,7 +249,7 @@ const Automotive = () => {
             {/* <!-- Mobile App Dev --> */}
 
             <Driving_Exprience
-                class_innerBG="drivingSec_innerBG"
+            class_innerBG="drivingSec_innerBG"
                 classheroimage="drivingSec"
                 titleclass="color-white "
                 titleclass2=" color-white "
@@ -249,7 +273,6 @@ h7="Smart Diagnostics
 h8="Effortless Maintenance
 "
             />
-
 
 
 

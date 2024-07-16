@@ -6,13 +6,16 @@ import angularicon from "../../../src/asserts/images/angular-icon.png";
 import appleicon from "../../../src/asserts/images/apple-icon.png";
 import ecommersedevhero from "../../../src/asserts/images/ecommersedevhero.png";
 import Particles from "react-particles";
-
+import { gsap } from "gsap";
 import { useCallback } from "react";
 import fluttericon from "../../../src/asserts/images/flutter-icon.png";
 import reacticon from "../../../src/asserts/images/react-icon.png";
 import Ctnbutton from "../../Components/ctnbutton";
-import { gsap } from "gsap";
+
 const Aboutsection = (props) => {
+
+
+
 
   const { CtnbuttonComponent, ctnButtonProps } = props;
 
@@ -63,15 +66,12 @@ const Aboutsection = (props) => {
   }, []);
 
 
-
-
   return (
     <div ref={sectionRef}>
       <section
         class="techVerse_about techVerse_aboutServices1"
         id="particles-js1"
       >
-
         <div className=" inner_images">
           <img
             class="techVerse_about_icon1 animation11"
@@ -89,10 +89,9 @@ const Aboutsection = (props) => {
             src={props?.donatorange}
             alt=""
           />
-          </div>
-
-        <div class="techVerse_aboutContent techVerse_aboutContentServices1">
-          <div className=" techVerse_heroContent">
+        </div>
+        <div class="techVerse_aboutContent techVerse_aboutContentServices1 width-1600">
+          <div className=" ">
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-6">

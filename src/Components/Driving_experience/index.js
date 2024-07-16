@@ -80,16 +80,16 @@ const Driving_Exprience = (props) => {
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="sec_title buildStore_sec_title">
-                                    <h2 class={`sec_title_head color-lightBlue2 ${props?.title_text_class}`}
-                                        data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000">
+                                    <h2 class={`sec_title_head color-lightBlue2 ${props?.title_text_class}`} 
+                                    data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000">
                                         <span class={props?.titleclass}>{props?.title}</span> {props?.subtitle} <span class={props?.titleclass2}> {props?.title2}    </span>
                                     </h2>
 
 
                                     <p data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000">
-                                        {props?.para}
-                                    </p>
-                                </div>
+                                 {props?.para}
+            </p>
+                                                        </div>
                             </div>
                             <div class="col-lg-5">
                                 <div class="techVerse_about_img">

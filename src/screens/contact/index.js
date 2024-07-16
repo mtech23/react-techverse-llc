@@ -259,7 +259,7 @@ const Contact = () => {
                           <div class="col-md-6 mb-3 contact-formCols">
                             <div class="form-group">
                               <input
-                                value={formdata.lastname}
+                                 value={formdata.lastname}
                                 type="text"
                                 placeholder="Last Name"
                                 class="inputForm"
@@ -272,7 +272,7 @@ const Contact = () => {
                           <div class="col-md-6 mb-3 contact-formCols">
                             <div class="form-group">
                               <input
-                                value={formdata.phone}
+                                  value={formdata.phone}
                                 type="text"
                                 placeholder="Phone Number"
                                 class="inputForm"
@@ -285,7 +285,7 @@ const Contact = () => {
                           <div class="col-md-6 mb-3 contact-formCols">
                             <div class="form-group">
                               <input
-                                value={formdata.email}
+                                 value={formdata.email}
                                 type="email"
                                 placeholder="Your Email"
                                 class="inputForm"

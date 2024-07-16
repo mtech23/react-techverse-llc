@@ -3,7 +3,7 @@ import testingandqaicon from "../../asserts/images/testing-and-qa-icon.png";
 import appdevicon from "../../asserts/images/app-dev-icon.png";
 import uiixicon from "../../asserts/images/ui-ix-icon.png";
 import analysisresporticon from "../../asserts/images/analysis-resport-icon.png";
-const App_development_solutions = () => {
+const App_development_solutions = (props) => {
   return (
     <div>
       <section class="app_devSec services-abbout1">
@@ -16,15 +16,15 @@ const App_development_solutions = () => {
                 data-aos-offset="0"
                 data-aos-duration="1000"
               >
-                Techverse Develops Custom Apps
-                <span class="color-darkBlue1"> That </span> Exceed Expectations
+                {props?.title}
+                <span class="color-darkBlue1"> {props?.subtitle} </span> {props?.title2}
               </h2>
               <p
                 data-aos="fade-up"
                 data-aos-offset="0"
                 data-aos-duration="2000"
               >
-                Custom app development to meet your specific company requirements. Techverse LLC is an expert in developing personalized mobile apps that precisely match your demands. You can rely on us to provide clear-cut, efficient solutions that advance your company from conception to implementation.
+               {props?.para}
               </p>
             </div>
           </div>
@@ -41,7 +41,7 @@ const App_development_solutions = () => {
             </div>
             <h4>Analytics & Reporting </h4>
             <p>
-            Gain valuable insights with our robust analytics solutions, built to track and optimize user engagement and performance metrics, ensuring informed decision-making for your business. 
+            {props?.para1} 
             </p>
           </div>
           <div class="app_devBoxe">
@@ -50,7 +50,7 @@ const App_development_solutions = () => {
             </div>
             <h4>UI/UX Design </h4>
             <p>
-            Create intuitive and captivating user experiences with our expert UI/UX design services, focusing on aesthetics and usability to boost customer satisfaction and retention. 
+            {props?.para2} 
             </p>
           </div>
           <div class="app_devBoxe">
@@ -59,7 +59,7 @@ const App_development_solutions = () => {
             </div>
             <h4>App Development</h4>
             <p>
-            From concept to launch, our skilled team delivers scalable and feature-rich mobile applications that meet your business goals, ensuring seamless functionality across platforms. 
+            {props?.para3} 
             </p>
           </div>
           <div class="app_devBoxe">
@@ -68,7 +68,7 @@ const App_development_solutions = () => {
             </div>
             <h4>Testing & QA</h4>
             <p>
-            Ensure high performance and reliability with our rigorous testing and quality assurance processes. We carefully check every aspect of your application to deliver a flawless user experience. 
+            {props?.para4} 
             </p>
           </div>
         </div>

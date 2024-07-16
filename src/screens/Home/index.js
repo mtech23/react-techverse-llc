@@ -20,7 +20,12 @@ import { gsap } from "gsap";
 
 import pinkcapsol from "../../asserts/images/pink-capsol.png";
 import herowebmockupgroup22 from "../../asserts/images/hero-web-mockup-group22.png";
-
+import elevengb from "../../asserts/images/1-eleven-gb.webp";
+import framewithphotobg from "../../asserts/images/frame-with-photo-bg.webp";
+import ryderzvanbg from "../../asserts/images/ryderz-van-bg.webp";
+import elevenimg from "../../asserts/images/1-eleven-img.webp";
+import framewithphotoimg from "../../asserts/images/frame-with-photo-img.webp";
+import ryderzvanimg from "../../asserts/images/ryderz-van-img.webp";
 import { loadSlim } from "tsparticles-slim";
 import peramidleftangle from "../../asserts/images/peramid-left-angles.png";
 import clutch from "../../asserts/images/clutch.png";
@@ -244,7 +249,7 @@ const Home = () => {
 
 
 
-  
+
   const caseStudies = useRef(null);
 
   useEffect(() => {
@@ -951,141 +956,141 @@ const Home = () => {
       <Elevateyourbusiness />
 
       {/* <!-- Case Studies --> */}
-      <section  ref={caseStudies} class="techVerse_caseStudies">
+      <section class="techVerse_caseStudies" ref={caseStudies}>
         <div className="caseStudies_hover">
-        <div className="caseStudies_inner_images">
-          <img
-            class="techVerse_caseStudies_icon1 animation22"
-            src={peramidangled}
-            alt=""
-          />
-          <img
-            class="techVerse_caseStudies_icon2 animation11"
-            src={greencube}
-            alt=""
-          />
-          <img
-            class="techVerse_caseStudies_icon3 animation22"
-            src={donatewhitesmall}
-            alt=""
-          />
-          <img
-            class="techVerse_caseStudies_icon4 animation33"
-            src={orangecircle}
-            alt=""
-          />
-        </div>
-        <div class="techVerse_caseStudies-Content">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="sec_title">
-                  <h2
-                    class="sec_title_head color-lightBlue2"
-                    data-aos="fade-up"
+          <div className="caseStudies_inner_images">
+            <img
+              class="techVerse_caseStudies_icon1 animation22"
+              src={peramidangled}
+              alt=""
+            />
+            <img
+              class="techVerse_caseStudies_icon2 animation11"
+              src={greencube}
+              alt=""
+            />
+            <img
+              class="techVerse_caseStudies_icon3 animation22"
+              src={donatewhitesmall}
+              alt=""
+            />
+            <img
+              class="techVerse_caseStudies_icon4 animation33"
+              src={orangecircle}
+              alt=""
+            /></div>
+          <div class="techVerse_caseStudies-Content">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="sec_title">
+                    <h2
+                      class="sec_title_head color-lightBlue2"
+                      data-aos="fade-up"
+                      data-aos-offset="0"
+                      data-aos-duration="1000"
+                    >
+                      Our
+                      <span class="color-darkBlue"> CASE STUDIES </span>
+                    </h2>
+                    <p
+                      data-aos="fade-up"
+                      data-aos-offset="0"
+                      data-aos-duration="2000"
+                    >
+                      Techverse LLC has collaborated with numerous businesses worldwide, delivering advanced, responsive, and feature-rich applications.
+                      Explore some of our standout projects:
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div
+                    class="techVerse_caseStudy_img bgOrange"
+                    data-aos="fade-right"
                     data-aos-offset="0"
                     data-aos-duration="1000"
+                    style={{
+                      backgroundImage: `url(${irvingsegalbg})`,
+                    }}
                   >
-                    Our
-                    <span class="color-darkBlue"> CASE STUDIES </span>
-                  </h2>
-                  <p
+                    <img src={irvingsegalimg} alt="" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div
+                    class="techVerse_caseStudy_img bgOrange"
+                    style={{
+                      backgroundImage: `url(${braincarlislebg})`,
+                    }}
                     data-aos="fade-up"
                     data-aos-offset="0"
                     data-aos-duration="2000"
                   >
-                    Techverse LLC has collaborated with numerous businesses worldwide, delivering advanced, responsive, and feature-rich applications.
-                    Explore some of our standout projects:
-                  </p>
+                    <img src={braincarlisleimg} alt="" />
+                  </div>
                 </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div
-                  class="techVerse_caseStudy_img bgOrange"
-                  data-aos="fade-right"
-                  data-aos-offset="0"
-                  data-aos-duration="1000"
-                  style={{
-                    backgroundImage: `url(${irvingsegalbg})`,
-                  }}
-                >
-                  <img src={irvingsegalimg} alt="" />
+                <div class="col-lg-4 col-md-6">
+                  <div
+                    class="techVerse_caseStudy_img bgOrange"
+                    style={{
+                      backgroundImage: `url(${anglebodybg})`,
+                    }}
+                    data-aos="fade-left"
+                    data-aos-offset="0"
+                    data-aos-duration="3000"
+                  >
+                    <img src={anglebodyimg} alt="" />
+                  </div>
                 </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div
-                  class="techVerse_caseStudy_img bgOrange"
-                  style={{
-                    backgroundImage: `url(${braincarlislebg})`,
-                  }}
-                  data-aos="fade-up"
-                  data-aos-offset="0"
-                  data-aos-duration="2000"
-                >
-                  <img src={braincarlisleimg} alt="" />
+                <div class="col-lg-4 col-md-6">
+                  <div
+                    class="techVerse_caseStudy_img bgOrange"
+                    style={{
+                      backgroundImage:
+                        `url(${elevengb})`,
+                    }}
+                    data-aos="fade-right"
+                    data-aos-offset="0"
+                    data-aos-duration="1000"
+                  >
+                    <img src={elevenimg} alt="" />
+                  </div>
                 </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div
-                  class="techVerse_caseStudy_img bgOrange"
-                  style={{
-                    backgroundImage: `url(${anglebodybg})`,
-                  }}
-                  data-aos="fade-left"
-                  data-aos-offset="0"
-                  data-aos-duration="3000"
-                >
-                  <img src={anglebodyimg} alt="" />
+                <div class="col-lg-4 col-md-6">
+                  <div
+                    class="techVerse_caseStudy_img bgOrange "
+                    style={{
+                      backgroundImage:
+                        `url(${framewithphotobg})`,
+                    }}
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="2000"
+                  >
+                    <img src={framewithphotoimg} alt="" />
+                  </div>
                 </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div
-                  class="techVerse_caseStudy_img bgOrange"
-                  style={{
-                    backgroundImage:
-                      "url(https://techversellc.com/images/p2-bg.png)",
-                  }}
-                  data-aos="fade-right"
-                  data-aos-offset="0"
-                  data-aos-duration="1000"
-                >
-                  <img src={p4} alt="" />
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div
-                  class="techVerse_caseStudy_img bgOrange "
-                  style={{
-                    backgroundImage:
-                      "url(https://techversellc.com/images/p3-bg.png)",
-                  }}
-                  data-aos="fade-up"
-                  data-aos-offset="0"
-                  data-aos-duration="2000"
-                >
-                  <img src={p5} alt="" />
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div
-                  class="techVerse_caseStudy_img bgOrange "
-                  style={{
-                    backgroundImage:
-                      "url(https://techversellc.com/images/p4-bg.png)",
-                  }}
-                  // class="techVerse_caseStudy_img bgOrange caseStudy_img_bg_one"
-                  data-aos="fade-left"
-                  data-aos-offset="0"
-                  data-aos-duration="3000"
-                >
-                  <img src={p6} alt="" />
+                <div class="col-lg-4 col-md-6">
+                  <div
+                    class="techVerse_caseStudy_img bgOrange "
+                    style={{
+                      backgroundImage:
+                        `url(${ryderzvanbg})`,
+                    }}
+                    // class="techVerse_caseStudy_img bgOrange caseStudy_img_bg_one"
+                    data-aos="fade-left"
+                    data-aos-offset="0"
+                    data-aos-duration="3000"
+                  >
+                    <img src={ryderzvanimg} alt="" />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        </div>
       </section>
+
 
 
       {/* <!-- Trusted Partners --> */}

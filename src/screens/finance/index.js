@@ -141,44 +141,60 @@ const Finance = () => {
         chaticon={chaticon}
         phoneicon={phoneicon}
         webaboutimg1={webaboutimg1} /> */}
-      <Portfolio pinkcapsol={pinkcapsol}
+             <Portfolio pinkcapsol={pinkcapsol}
 
-        // classtitle={" color-white  "}
+            // classtitle={" color-white  "}
 
-        newClass={"finance-abt1"}
-        greencube={greencube}
-        donatorange={donatorange}
-        // classpara="color-white"
-        classtitle={"financesubtitle"}
-        subtitle="  Finance"
-        title2="App Development Services"
-        para="At Techverse LLC, we understand the unique dynamics and fast-paced nature of the media and entertainment industry. Our services of this niche, ensuring your brand stands out in a crowded market. Here's why Techverse LLC should be your go-to partner:"
+            newClass={"finance-abt1"}
+            greencube={greencube}
+            donatorange={donatorange}
+            // classpara="color-white"
+            classtitle={"financesubtitle"}
+          subtitle="  Financial"
+           
+            title="Increasing Client Engagement And"
+             title2="Management With Techverse Solutions"
+            para="Techverse products improve customer satisfaction and simplify financial management procedures. Our revolutionary options enhance client interactions and use cutting-edge analytics for well-informed decision-making. We guarantee data integrity and regulatory compliance via scalable systems and robust security mechanisms. Put your trust in Techverse to develop the financial services industry sustainably, increase customer satisfaction, and streamline financial operations."
 
-        image={financeimg1}
-        chaticon={chaticon}
-        phoneicon={phoneicon}
-        playstore={playstore}
-        appstore={appstore}
+            image={financeimg1}
+            chaticon={chaticon}
+            phoneicon={phoneicon}
+            playstore={playstore}
+            appstore={appstore}
 
+            />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     {/* <!-- App Development Sec --> */}
+     <App_development_solutions 
+      title="Secure And Efficient"
+      subtitle="Financial"
+      title2="Apps By Techverse"
+      para="At Techverse LLC, we excel in creating innovative applications that improve workflows, boost client outcomes, and ensure regulatory compliance within the financial industry. 
+      Partner with us to develop advanced mobile apps designed to your needs."
+      para1="Utilize advanced data analytics to provide actionable insights, enhancing financial decision-making processes."
+      para2="Create user-centric interfaces that optimize usability and engagement, improving the overall experience for financial professionals and clients."
+      para3="Build customized finance applications that streamline operations and boost service delivery efficiency.
+      "
+      para4="Conduct comprehensive quality assurance processes to ensure robustness, security, and compliance with financial regulations, guaranteeing seamless performance across platforms."
+      
+      
       />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <App_development_solutions />
 
 
 
@@ -190,10 +206,16 @@ const Finance = () => {
       <Development_Process
         image={financeimg2}
         sportsclass={"finance-img2 "}
-        title="App Development Process At"
-        subtitle="TECHVERSE LLC  "
-        para="We follow a streamlined approach to ensure customer satisfaction by delivering customized real estate mobile app development solutions."
+        title="Techverse Paves The Way For A Connected"
+        subtitle=" Financial Future "
+        para="Techverse LLC's app development for the financial sector focuses on creating scalable, secure applications designed for the unique needs of clients and financial professionals. We integrate cutting-edge technology into our solutions to boost operational efficiency and service delivery."
+        para1="We conduct comprehensive analyses to align financial app development with organizational goals and client needs, ensuring effective solutions from start to finish."
+        para2="Our team designs intuitive interfaces and develops robust financial solutions, leveraging advanced technologies to boost client services and operational efficiency."
+        para3="We implement thorough testing to ensure our financial apps meet the highest standards for security, performance, and regulatory compliance and provide reliable and safe user experiences.
 
+"
+        para4="We manage seamless deployment and offer ongoing maintenance to ensure financial apps remain secure, efficient, and adaptable to changing demands."
+         quality="Quality Assurance"
       />
 
 
@@ -201,9 +223,9 @@ const Finance = () => {
 
 
       <Portfolios
-        title="EDUCATION   "
+        title="FINANCE APP DEVELOPMENT"
         subtitle="PORTFOLIO   "
-        para="Our Company has worked with thousands of businesses all across the world and has developed highly functional, responsive, and feature-rich applications. Check out some of our best works:
+        para="Our Finance App Development portfolio showcases innovative mobile apps and responsive websites that improve financial service delivery, client engagement, and operational efficiency worldwide.
 
 "
         image1={financeportfolio1}

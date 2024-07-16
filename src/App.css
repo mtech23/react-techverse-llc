@@ -336,7 +336,7 @@ h2 {
 }
 .sec_title .sec_title_head {
 
-  font-size: 35px !important;
+  font-size: 32px !important;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 15px;
@@ -1090,7 +1090,9 @@ body .rc h2 {
   font-size: 18px;
   font-weight: 600;
 }
-
+.techVerse_mobileApp .sec_title .sec_title_head {
+  font-size: 43px !important;
+}
 .budget-value {
   border: 1px solid #02a9f7;
   padding: 5px 10px;
@@ -1110,7 +1112,7 @@ body .rc h2 {
   position: absolute;
   /* left: -36.1%; */
   left: -392px;
-  top: 43.6%;
+  top: 43.4%;
   transform: rotate(90deg);
   width: 834px;
 }
@@ -2635,7 +2637,7 @@ p.company_wishText {
     transform-origin: center;
   }
   .techVerse_mobileApp .sec_title .sec_title_head {
-    font-size: 31px;
+    font-size: 31px !important;
   }
 
   .our-slider-img img {
@@ -3225,6 +3227,24 @@ p.company_wishText {
     } */
 }
 @media (max-width: 800px) {
+  .techVerse_hero_icon1 {
+    position: absolute;
+    top: 30px !important;
+ 
+  }
+ 
+  .techVerse_hero_icon3 {
+    right: 30%;
+    top: 80%;
+    position: absolute;
+    top: 250px !important;
+}
+  .techVerse_hero_icon2 {
+    right: 1%;
+    top: 50%;
+    position: absolute;
+    top: 191px !important;
+}
   .travel-img-1-airplane {
     max-width: 140px;
   }
@@ -3959,7 +3979,7 @@ font-size: 11px !important;
     width: 340px;
   }
   .techVerse_mobileApp .sec_title .sec_title_head {
-    font-size: 27px;
+    font-size: 27px !important;
   }
   .testimonials_title {
     font-size: 45px;

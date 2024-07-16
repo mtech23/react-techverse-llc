@@ -172,12 +172,14 @@ const Ecommerse = () => {
 
       <Portfolio title="Techverse Revolutionizes"
 
-        classtitle="color-darkBlue"
+       classtitle="color-darkBlue"
         subtitle="Industries"
         title2="Through Digital Power"
-        para="Techverse provides top-notch e-commerce mobile app development services for clients worldwide. We help your organization scale better, increase cash flow and retain customers."
+        para="Welcome to Techverse, where our knowledge and your vision combine to build a better tomorrow. Enter a future where technology is defining the way things happen. Our specialty at Techverse is turning concepts into innovative solutions. We're here to innovate and improve, whether it's app development, digital strategy, or improving your online visibility. Our group is passionate about pushing the envelope and creating outcomes that revolutionize industries. Come along on this exploration and digital revolution adventure with us."
 
-
+        pinkcapsol={pinkcapsol}
+        greencube={greencube}
+        donatorange={donatorange}
         image={ecommerce}
         phoneicon={phoneicon}
         chaticon={chaticon}
@@ -190,17 +192,39 @@ const Ecommerse = () => {
 
 
 
-      <App_development_solutions />
+    
+      {/* <!-- App Development Sec --> */}
+      <App_development_solutions 
+      title="Techverse For Personalized"
+      subtitle="Retail & E-Commerce "
+      title2="Apps Today!"
+      para="Personalized app solutions to improve your retail and e-commerce operations. With our customized development services,
+       you may increase revenue, improve client engagement, and streamline processes."
+      para1="Gain actionable insights into customer behavior and business performance to drive informed decisions and optimize strategies for growth."
+      para2="Create intuitive interfaces that boost user experience and foster engagement, ensuring seamless navigation and compelling visuals."
+      para3="Build robust, scalable applications designed to meet the unique demands of retail and e-commerce environments, integrating cutting-edge features for boosted functionality.
+      "
+      para4="Conduct rigorous testing across platforms to ensure performance, security, and reliability, delivering a flawless user experience and maintaining operational excellence."
+      
+      
+      />
 
 
-      <Development_Process title="Our " subtitle="Real Estate" title2="Mobile App Development Process"
-        para="We follow a streamlined approach to ensure customer satisfaction by delivering customized real estate mobile app development solutions."
-        image={ecommersedesktopimg} />
+      <Development_Process title=" Techverse Delivers Flawless " subtitle=" E-Commerce & Retail " title2="Mobile Apps."
+        para="Our E-commerce & Retail Mobile App Development Process begins with thorough discovery and planning, where we align business goals with user expectations. We then design intuitive UI/UX interfaces, develop robust applications with scalable features, and ensure quality through rigorous testing before seamless deployment."
+        image={ecommersedesktopimg}
+        para1="Gain deep insights into market trends and customer preferences to align app development with business goals and boost user satisfaction."
+        para2="Create intuitive interfaces and robust solutions that optimize shopping experiences, integrating innovative features to drive engagement and sales."
+        para3="Implement rigorous testing to ensure seamless functionality, security, and performance, maintaining high standards for user trust and satisfaction."
+        para4="Efficiently deploy apps across platforms and provide ongoing support, ensuring scalability, reliability, and continuous improvement to meet evolving business needs."
+        quality="Quality Assurance"
+        
+        />
 
       <Portfolios
         title="ECOMMERCE "
         subtitle="Portfolio"
-        para="Our Company has worked with thousands of businesses all across the world and has developed highly functional, responsive, and feature-rich applications. Check out some of our best works:"
+        para="Explore our diverse eCommerce portfolio, which showcases successful app solutions. Each project highlights our expertise in enhancing user experience, driving sales, and optimizing operational efficiency for diverse business needs."
 
         Mobile_Apps="Mobile Apps"
         Websites="Websites"

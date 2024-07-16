@@ -77,7 +77,19 @@ const WebApplication = () => {
         tagline={"Whether you're looking to streamline operations, enhance customer engagement, or drive efficiency, our web applications are designed to empower your business for the future. From intuitive user interfaces to robust backend systems, we ensure your application not only meets but exceeds expectations."}
         // className={"inner_hero"}
         className={"webApp_hero_img"}
-        heroimage={webapplicationhero1}
+        heroimage={webapplicationhero1}  
+        CtnbuttonComponent={Ctnbutton}
+        ctnButtonProps={{
+          phoneicon: phoneicon,
+          calltext: "Call Now",
+          primaryButtonClass: "btn_with_icon",
+          chaticon: chaticon,
+          chatenow: "Chat Now",
+          secondaryButtonClass: "btn_with_icon btn_secondary  ",
+
+          // playstore: playstore,
+          // appstore: appstore
+        }}
 
       />
       {/* TrustedPartners */}
@@ -117,8 +129,8 @@ const WebApplication = () => {
       <Portfolio pinkcapsol={pinkcapsol}
         greencube={greencube}
         donatorange={donatorange}
-
-        title=" Empower Your Enterprise" subtitle="With   ."
+        classtitle="color-darkBlue"
+        title="Empower Your Enterprise " subtitle="With"
         title2="Techverse LLC's Scalable Web Development."
         para="Discover limitless possibilities with Techverse LLC's Web Application Development services. Our team of seasoned developers and designers harness cutting-edge technologies to craft robust, scalable web applications that cater precisely to your needs. Whether you're launching a startup or scaling an enterprise, our commitment to innovative design and seamless functionality ensures your web application not only meets but exceeds expectations. Modify your online presence with Techverse LLC and get on a journey toward digital transformation today."
         image={webaboutimg1es}
@@ -127,7 +139,11 @@ const WebApplication = () => {
         webaboutimg1={webaboutimg1es}
       />
       <Elevateyourbusiness />
-      <Process />
+      <Process
+      
+      para="Our web application development process is tailored to deliver exceptional results. We start by carefully understanding your business goals and technical requirements and shaping a detailed plan. Our design phase focuses on creating intuitive interfaces and prototypes that align with your brand."
+      
+      />
       <TechnologiesUse />
 
       <Testimonials />

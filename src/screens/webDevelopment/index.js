@@ -85,10 +85,10 @@ const WebDevelopment = () => {
         CtnbuttonComponent={Ctnbutton}
         ctnButtonProps={{
           phoneicon: phoneicon,
-          calltext: "Call Us",
+          calltext: "Call Now",
           primaryButtonClass: "btn_with_icon",
           chaticon: chaticon,
-          chatenow: "Chat Us",
+          chatenow: "Chat Now",
           secondaryButtonClass: "btn_with_icon btn_secondary  ",
 
           // playstore: playstore,
@@ -195,7 +195,12 @@ const WebDevelopment = () => {
       <Elevateyourbusiness />
 
       {/* process we use */}
-      <Process />
+      <Process
+      para="At Techverse LLC, we believe in making dynamic and effective web solutions tailored to meet your unique business needs. Our web development process integrates cutting-edge technology with creative design, ensuring your digital presence stands out in the competitive landscape."
+      
+      
+      
+      />
 
       {/* <!-- Technologies --> */}
       <TechnologiesUse />

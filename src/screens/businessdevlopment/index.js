@@ -87,10 +87,10 @@ const Businessdevlopment = () => {
         CtnbuttonComponent={Ctnbutton}
         ctnButtonProps={{
           phoneicon: phoneicon,
-          calltext: "Call Us",
+          calltext: "Call Now",
           primaryButtonClass: "btn_with_icon",
           chaticon: chaticon,
-          chatenow: "Chat Us",
+          chatenow: "Chat Now",
           secondaryButtonClass: "btn_with_icon btn_secondary  ",
 
           // playstore: playstore,
@@ -160,10 +160,10 @@ const Businessdevlopment = () => {
         CtnbuttonComponent={Ctnbutton}
         ctnButtonProps={{
           phoneicon: phoneicon,
-          calltext: "Call Us",
+          calltext: "Call Now",
           primaryButtonClass: "btn_with_icon",
           chaticon: chaticon,
-          chatenow: "Chat Us",
+          chatenow: "Chat Now",
           secondaryButtonClass: "btn_with_icon btn_secondary  ",
 
           // playstore: playstore,
@@ -176,8 +176,12 @@ const Businessdevlopment = () => {
         image={businessimg01}
       />
 
+
+   {/* MOBILE APP */}
+
+   <Elevateyourbusiness />
       {/* <!-- Website --> */}
-      <section class="techVerse_webSolution">
+      {/* <section class="techVerse_webSolution">
         <img
           class="techVerse_webSolution_icon1 animation11"
           src={donateWhite}
@@ -239,17 +243,18 @@ const Businessdevlopment = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* process we use */}
-      <Process />
+      <Process
+      para="At Techverse LLC, we specialize in transforming your innovative ideas into robust Minimum Viable Products (MVPs) that resonate with your target audience. Our streamlined process ensures that every stage of development is meticulously planned and executed, focusing on agility, functionality, and user-centric design."
+      
+      />
 
       {/* <!-- Technologies --> */}
       <TechnologiesUse />
 
-      {/* MOBILE APP */}
-
-      <Elevateyourbusiness />
+   
 
       {/* FAQ section */}
 

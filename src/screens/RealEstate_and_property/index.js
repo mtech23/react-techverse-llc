@@ -147,7 +147,19 @@ const RealEstate_and_property = () => {
 
 
       {/* <!-- App Development Sec --> */}
-      <App_development_solutions />
+      <App_development_solutions 
+      title="Techverse Develops"
+      subtitle="Custom Apps "
+      title2="That Exceed Expectations "
+      para="Custom app development to meet your specific company requirements. Techverse LLC is an expert in developing personalized mobile apps that precisely match your demands. You can rely on us to provide clear-cut, efficient solutions that advance your company from conception to implementation."
+      para1="Gain valuable insights with our robust analytics solutions, built to track and optimize user engagement and performance metrics, ensuring informed decision-making for your business."
+      para2="Create intuitive and captivating user experiences with our expert UI/UX design services, focusing on aesthetics and usability to boost customer satisfaction and retention."
+      para3="From concept to launch, our skilled team delivers scalable and feature-rich mobile applications that meet your business goals, ensuring seamless functionality across platforms.
+      "
+      para4="Ensure high performance and reliability with our rigorous testing and quality assurance processes. We carefully check every aspect of your application to deliver a flawless user experience."
+      
+      
+      />
 
       {/* <!-- Real Estate App Dev --> */}
       <Development_Process
@@ -156,6 +168,12 @@ const RealEstate_and_property = () => {
         subtitle="Custom Mobile Apps."
         // title2="Custom Mobile Apps."
         para="From conception to implementation, we follow a thorough approach that includes careful planning, creative design, agile development, stringent testing, and smooth implementation. Delivering reliable, user-focused mobile solutions that go above and beyond for clients is our mission. "
+        para1="Thoroughly analyze business requirements and user needs to define project scope and objectives, ensuring alignment with strategic goals and optimal solution planning."
+      para2="Craft visually appealing and functional designs while implementing robust development strategies to create customized solutions that meet client specifications and exceed expectations."
+      para3="Conduct rigorous testing and quality checks throughout the development lifecycle to ensure high performance, reliability, and adherence to industry standards for seamless user experiences."
+      para4="Efficiently deploy applications while providing ongoing support and maintenance services to ensure smooth operations, continuous improvements, and client satisfaction post-launch."
+      quality="Quality Assurance"
+      
       />
 
 
@@ -176,11 +194,11 @@ const RealEstate_and_property = () => {
         image9={lllreptile}
         image10={privateastrology}
         image11={Macbook}
-
+     
         classmobileapp="nav-link"
         classwebsite="nav-link"
-
-
+       
+     
         Mobile_Apps="Mobile Apps"
         Websites="Websites"
       />

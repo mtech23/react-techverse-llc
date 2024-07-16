@@ -123,10 +123,10 @@ const Media = () => {
 
             <HeroSection
                 classheroimage={"media_bg_custom"}
-                title={"Creating Digital Waves "}
-                subtitle={"In"}
-                title2={"Media & Entertainment!"}
-                tagline={"At Techverse LLC, we specialize in revolutionizing the Media & Entertainment industry through innovative solutions. Our expertise in this dynamic niche allows us to craft strategies that captivate audiences, amplify brand presence, and drive engagement across various platforms."}
+                title={"Techverse Redefines"}
+                subtitle={"Media & Entertainment"}
+                title2={"With Innovative Apps"}
+                tagline={"Techverse LLC offers premier mobile app development solutions for media and entertainment agencies aimed at boosting audience engagement and streamlining operations. Our state-of-the-art apps boost user interaction, improve workflows, and ensure compliance with industry regulations. With customized solutions featuring intuitive interfaces and robust security measures, we improve user experiences and optimize media delivery."}
                 className={"ecommerceDev_hero_img"}
 
 
@@ -159,9 +159,9 @@ const Media = () => {
                 greencube={greencube}
                 donatorange={donatorange}
                 classpara="color-white"
-                title="Why " subtitle="   Choose  "
-                title2="Us?"
-                para="At Techverse LLC, we understand the unique dynamics and fast-paced nature of the media and entertainment industry. Our services of this niche, ensuring your brand stands out in a crowded market. Here's why Techverse LLC should be your go-to partner:"
+                title="Enhancing" subtitle="  Content And Audience Interaction  "
+                title2="With Techverse Solutions"
+                para="Techverse LLC specializes in creating mobile applications designed for the media and entertainment sector. Our advanced app development services boost audience engagement, streamline content management, and support efficient media operations. We focus on delivering apps that prioritize efficiency and adhere to industry standards, providing user-friendly interfaces and secure data management."
 
                 image={mediaimg1}
                 chaticon={chaticon}
@@ -179,19 +179,38 @@ const Media = () => {
 
 
             {/* <!-- App Development Sec --> */}
-            <App_development_solutions />
+           {/* <!-- App Development Sec --> */}
+      <App_development_solutions 
+      title="Secure And Efficient"
+      subtitle="Media "
+      title2="Apps By Techverse"
+      para="At Techverse LLC, we are experts in developing innovative applications that boost workflows, improve user experiences, and ensure regulatory compliance in the media industry. 
+      Collaborate with us to create advanced mobile apps customized for your specific needs."
+      para1="Gain valuable insights into media metrics and audience behavior to make informed decisions and boost operational efficiency."
+      para2="Design user-friendly interfaces that boost the user experience, making navigation easy and engaging for media professionals and audiences."
+      para3="From initial concept to deployment, we create robust and secure media applications that streamline workflows and boost content delivery.
+      "
+      para4="Conduct rigorous testing to ensure reliability, security, and compliance with industry standards, guaranteeing smooth functionality across platforms."
+      
+      
+      />
 
             {/* <!-- Real Estate App Dev --> */}
             <Development_Process
-                sportsclass={"media-img-2"}
-
+            sportsclass={"media-img-2"}
+            
                 image={mediaimg2}
-                title="App Development For The "
-                subtitle="Entertainment Industry"
-                para="We follow a streamlined approach to ensure customer satisfaction by delivering customized real estate mobile app development solutions.
+                title="Techverse Paves The Way For The Future Of"
+                subtitle="Entertainment"
+                para="Techverse LLC's app development for the media and entertainment sector focuses on creating scalable, secure applications designed to meet the needs of audiences and media professionals. We integrate cutting-edge technology into our solutions to boost operational efficiency and service delivery.
 
 "
+                para1="We perform detailed analyses to align media app development with organizational goals and audience needs, ensuring effective solutions from start to finish."
+                para2="Our team designs intuitive interfaces and develops robust media solutions, leveraging advanced technologies to boost audience engagement and operational efficiency."
+                para3="We implement thorough testing to ensure our media apps meet high standards for security, performance, and regulatory compliance, providing reliable and safe user experiences."
+                para4="We manage seamless deployment and provide ongoing maintenance to ensure media apps remain secure, efficient, and adaptable to changing demands."
             //   title2="   Mobile App Development Process"
+             quality="Quality Assurance"
 
             />
 
@@ -201,9 +220,9 @@ const Media = () => {
 
 
             <Portfolios
-                title="Our Media & Entertainment  "
+                title=" Media & Entertainment "
                 subtitle=" Portfolio"
-                para="With a deep understanding of industry trends and audience engagement, we offer a suite of services designed to raise your brand presence and amplify audience connection.
+                para="Our Media & Entertainment portfolio showcases innovative mobile apps and responsive websites that boost media delivery, audience engagement, and operational efficiency worldwide.
 
 "
                 image1={mediaportfolio1}
@@ -219,8 +238,8 @@ const Media = () => {
                 image11={Macbook}
                 classmobileapp="nav-link"
                 classwebsite="nav-link"
-
-
+              
+              
                 Mobile_Apps="Mobile Apps"
                 Websites="Websites"
             />

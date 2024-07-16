@@ -167,8 +167,7 @@ const Process = (props) => {
                   data-aos-offset="0"
                   data-aos-duration="2000"
                 >
-                  We proceed to meticulous planning, where we outline the app's features, user interface design, and functionality.
-                   Our expert team of developers then takes over, using cutting-edge technologies to build a robust and scalable application tailored to your specifications.
+                 {props?.para}
                 </p>
               </div>
             </div>
