@@ -135,8 +135,8 @@ export const Footer = (props) => {
 
   return (
     <>
-
-      {/* <!-- Contact --> */}
+ 
+  {/* <!-- Contact --> */}
       <section class="techVerse_contact">
         <div class="container-fluid">
           <div class="row">
@@ -248,8 +248,8 @@ export const Footer = (props) => {
                                   class="budget-slider"
                                   id="budgetRange"
                                 />
-
-
+ 
+ 
                                 {/* <input
                                   onChange={handlechange}
                                   name="budget"
@@ -274,9 +274,9 @@ export const Footer = (props) => {
                           </div>
                         </div>
                       </form>
-                      <div class="get_discount">GET DISCOUNT</div>
+                      <div class="get_discount_one">GET DISCOUNT</div>
                     </div>
-                    <div class="newLetterBox">
+                    {/* <div class="newLetterBox">
                       <div class="contentBox">
                         <h3
                           class="newLetterBox_strokeTxt"
@@ -299,7 +299,7 @@ export const Footer = (props) => {
                           data-aos-duration="2000"
                         >
                          Stay updated with the latest trends and insights in mobile innovation.
-                          Subscribe to our newsletter for exclusive updates, industry news, and tips to boost your digital strategy. 
+                          Subscribe to our newsletter for exclusive updates, industry news, and tips to boost your digital strategy.
                         </p>
                         <form
                           data-aos="fade-up"
@@ -322,7 +322,7 @@ export const Footer = (props) => {
                           </div>
                         </form>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -330,6 +330,8 @@ export const Footer = (props) => {
           </div>
         </div>
       </section>
+ 
+ 
 
       {/* <!-- Partners --> */}
 

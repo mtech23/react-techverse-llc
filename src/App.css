@@ -1028,31 +1028,12 @@ body .rc h2 {
 /* 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 */
 
 /* Contact Start */
 .contactLaptop-outer {
   position: relative;
-  margin-top: 90px;
+  /* margin-top: 90px; */
 }
 .techVerse-contact-imgIcon {
   position: absolute;
@@ -1116,6 +1097,25 @@ body .rc h2 {
   transform: rotate(90deg);
   width: 834px;
 }
+
+
+.get_discount_one {
+  background: #c71e2c;
+  color: #fff;
+  padding: 10px 10px;
+  text-align: center;
+  letter-spacing: 7px;
+  font-size: 20px;
+  word-spacing: 20px;
+  text-transform: uppercase;
+  font-family: "Sora", sans-serif;
+  position: absolute;
+  height: 100%;
+  writing-mode: vertical-rl;
+  top: 0;
+  left: 10px;
+}
+
 .newLetterBox_strokeTxt {
   letter-spacing: 39px;
   line-height: 1;
@@ -1382,7 +1382,7 @@ p.company_wishText {
   right: 30%;
   top: 80%;
   position: absolute;
-  top: 490px !important;
+  top: 585px !important;
 }
 
 .techVerse_about_icon1,
@@ -3391,6 +3391,10 @@ p.company_wishText {
 }
 
 @media (max-width: 736px) {
+  .get_discount_one {
+    position: unset;
+    writing-mode: unset;
+  }
   .mobile-app-22 {
     width: 70%;
     margin: 10px auto -30px;
@@ -3938,6 +3942,11 @@ font-size: 11px !important;
 }
 
 @media (max-width: 375px) {
+  
+  .techVerse_hero_icon3 {
+  
+    top: 215px !important;
+}
   .popup_modal-close {
     width: 35px;
     height: 34px;

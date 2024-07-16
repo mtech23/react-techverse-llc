@@ -71,7 +71,7 @@ import TechnologiesUse from '../../Components/technologiesuse';
 import Process from '../../Components/Process';
 import Frequentlyaskquestion from '../../Components/frequentlyaskquestion';
 import Elevateyourbusiness from '../../Components/elevateyourbusiness';
-import Testimonials from '../../Components/Tetimonials';
+import Testimonials from '../../Components/Testimonials';
 import Portfolios from '../../Components/portfolios';
 import App_development_solutions from '../../Components/App_development_solutions';
 import Development_Process from '../../Components/Development_Process';

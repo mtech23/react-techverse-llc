@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect , useState  } from "react";
 
 import { UserLayout } from "../../Components/Layout/UserLayout";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
@@ -23,7 +23,7 @@ import appStore from "../../asserts/images/app-store.png";
 import phoneiconblue from "../../asserts/images/phone-icon-blue.png";
 import phoneicon from "../../asserts/images/phone-icon.png";
 import chaticon from "../../asserts/images/chat-icon.png";
-import Testimonials from "../../Components/Tetimonials";
+import Testimonials from "../../Components/Testimonials";
 import Frequentlyaskquestion from "../../Components/frequentlyaskquestion";
 import Website from "../../Components/Website";
 import Aboutsection from "../../Components/aboutsection";
@@ -34,10 +34,17 @@ gsap.registerPlugin(MotionPathPlugin);
 
 const Case_study = () => {
   Aos.init();
+ 
+    const [showModal, setShowModal] = useState(false);
+
+    useEffect(() => {
+        // Set showModal to true when component mounts
+        setShowModal(true);
+    }, []); // Empty dependency array means this effect runs only once, like componentDidMount
+
 
   useEffect(() => {
-    
-    gsap.set(".road", { opacity: 1 });
+     gsap.set(".road", { opacity: 1 });
     const circles = gsap.utils.toArray(".ani_cnt .icc");
     const tl2 = gsap.timeline({ repeat: 20 });
 
@@ -531,73 +538,55 @@ const Case_study = () => {
 
 
 
-
-        <div class="modal fade bd-example-modal-lg popup_modal" id="popup_modal_id" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="false">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                {/* <!-- <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div> --> */}
-                <div class="modal-body">
-                    <button type="button" class="close popup_modal-close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <div class="container-fluid">
-                        <div class="row align-items-center">
-                            <div class="col-md-6">
-                                <div class="popUp_img"><img src={sportsimg3} alt="" /></div>
+        {/* <div className={`modal fade bd-example-modal-lg ${modalOpen ? 'show' : ''}`} id="popup_modal_id" tabIndex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden={!modalOpen}> */}
+        {showModal && (
+                <div className="modal show" tabIndex="-1" style={{ display: 'block' }}>
+                    <div className="modal-dialog modal-lg modal-dialog-centered">
+                        <div className="modal-content">
+                            <div className="modal-header">
+                                <button type="button" className="btn-close" aria-label="Close" onClick={() => setShowModal(false)}></button>
                             </div>
-                            <div class="col-md-6">
-                                <div class="popUp_content">
-                                    <div class="popUp_title">
-                                        <h2 class="popUp_title_head color-white">
-                                            Sign Up Now To Get A Free Quote! Upto 50% Off For Limited Time
-                                            {/* <!-- <span class="color-lightBlue2">Choose</span> Us? --> */}
-                                        </h2>
-                                    </div>
-                                    <div class="popUp_form">
-                                        <form>
-                                            <div class="input-group mb-3">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text" id="inputGroup-sizing-default"><i class="fa fa-user" aria-hidden="true"></i></span>
+                            <div className="modal-body">
+                                <div className="container-fluid">
+                                    <div className="row align-items-center">
+                                        <div className="col-md-6">
+                                            <div className="popUp_img"><img src={sportsimg3} alt="Sports" /></div>
+                                        </div>
+                                        <div className="col-md-6">
+                                            <div className="popUp_content">
+                                                <div className="popUp_title">
+                                                    <h2 className="popUp_title_head color-white">
+                                                        Sign Up Now To Get A Free Quote! Upto 50% Off For Limited Time
+                                                    </h2>
                                                 </div>
-                                                <input type="text" class="form-control" placeholder="Name" />
-                                            </div>
-                                            <div class="input-group mb-3">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text" id="inputGroup-sizing-default"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                                                <div className="popUp_form">
+                                                    <form>
+                                                        <div className="mb-3">
+                                                            <input type="text" className="form-control" placeholder="Name" />
+                                                        </div>
+                                                        <div className="mb-3">
+                                                            <input type="email" className="form-control" placeholder="Email" />
+                                                        </div>
+                                                        <div className="mb-3">
+                                                            <input type="text" className="form-control" placeholder="Phone Number" />
+                                                        </div>
+                                                        <div className="mb-3">
+                                                            <textarea className="form-control" placeholder="Message"></textarea>
+                                                        </div>
+                                                        <button type="button" className="btn btn-primary">
+                                                            Request A Quote
+                                                        </button>
+                                                    </form>
                                                 </div>
-                                                <input type="email" class="form-control" placeholder="Email Here"/>
                                             </div>
-                                            <div class="input-group mb-3">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text" id="inputGroup-sizing-default"><i class="fa fa-phone" aria-hidden="true"></i></span>
-                                                </div>
-                                                <input type="email" class="form-control" placeholder="Phone Number" />
-                                            </div>
-                                            <div class="input-group">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text"><i class="fa fa-comment" aria-hidden="true"></i></span>
-                                                </div>
-                                                <textarea class="form-control" aria-label="With textarea" placeholder="Message"></textarea>
-                                            </div>
-                                            <button type="button" class="btn_with_icon popUp_form_btn" >
-                                                {/* <!-- <img class="btn_with_icon_img" src="images/phone-icon.png" alt=""> --> */}
-                                                <span class="btn_with_icon_text">Request A Quote</span>
-                                            </button>
-                                        </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-
+            )}
 
 
 

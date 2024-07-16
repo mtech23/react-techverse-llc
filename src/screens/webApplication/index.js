@@ -47,7 +47,7 @@ import TechnologiesUse from '../../Components/technologiesuse';
 import Process from '../../Components/Process';
 import Frequentlyaskquestion from '../../Components/frequentlyaskquestion';
 import Elevateyourbusiness from '../../Components/elevateyourbusiness';
-import Testimonials from '../../Components/Tetimonials';
+import Testimonials from '../../Components/Testimonials';
 import Development_Process from '../../Components/Development_Process';
 import {Helmet} from 'react-helmet'
 const WebApplication = () => {

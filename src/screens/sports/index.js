@@ -69,7 +69,7 @@ import sportsportfolio5 from '../../asserts/images/sports-portfolio-5.png'
 import Macbook from '../../asserts/images/Macbook.png'
 import mediaimg1 from '../../asserts/images/media-img-1.gif'
 import mediaimg2 from '../../asserts/images/media-img-2.png'
-import Testimonials from '../../Components/Tetimonials';
+import Testimonials from '../../Components/Testimonials';
 
 import mediaimg3 from '../../asserts/images/media-img-3.png'
 import sportsimg2 from '../../asserts/images/sports-img-2.png'

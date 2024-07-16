@@ -96,7 +96,7 @@ import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import "swiper/css";
 import Process from "../../Components/Process";
-import Testimonials from "../../Components/Tetimonials";
+import Testimonials from "../../Components/Testimonials";
 import Elevateyourbusiness from "../../Components/elevateyourbusiness";
 
 gsap.registerPlugin(MotionPathPlugin);

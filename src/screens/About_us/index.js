@@ -19,7 +19,7 @@ import Process from "../../Components/Process";
 
 import aboutimg1 from "../../asserts/images/about-img1.png";
 import aboutimg2 from "../../asserts/images/about-img2.png";
-import Testimonials from "../../Components/Tetimonials";
+import Testimonials from "../../Components/Testimonials";
 import Frequentlyaskquestion from "../../Components/frequentlyaskquestion";
 import Website from "../../Components/Website";
 import Aboutsection from "../../Components/aboutsection";

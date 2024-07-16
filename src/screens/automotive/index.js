@@ -67,7 +67,7 @@ import privateastrology from '../../asserts/images/private-astrology.png'
 import Macbook from '../../asserts/images/Macbook.png'
 import App_development_solutions from '../../Components/App_development_solutions';
 import Development_Process from '../../Components/Development_Process';
-import Testimonials from '../../Components/Tetimonials';
+import Testimonials from '../../Components/Testimonials';
 import { Helmet } from "react-helmet";
 
 gsap.registerPlugin(MotionPathPlugin);

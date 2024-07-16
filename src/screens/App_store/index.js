@@ -27,7 +27,7 @@ import Elevateyourbusiness from '../../Components/elevateyourbusiness';
 import Process from '../../Components/Process';
 import TechnologiesUse from '../../Components/technologiesuse';
 import Website from '../../Components/Website';
-import Testimonials from '../../Components/Tetimonials';
+import Testimonials from '../../Components/Testimonials';
 import Frequentlyaskquestion from '../../Components/frequentlyaskquestion';
 import TrustedPartners from '../../Components/TrustedPartners';
 import { Helmet } from 'react-helmet';

@@ -74,7 +74,7 @@ import mediaportfolio2 from '../../asserts/images/media-portfolio-2.png'
 import mediaportfolio3 from '../../asserts/images/media-portfolio-3.png'
 import mediaportfolio4 from '../../asserts/images/media-portfolio-4.png'
 import mediaportfolio5 from '../../asserts/images/media-portfolio-5.png'
-import Testimonials from '../../Components/Tetimonials';
+import Testimonials from '../../Components/Testimonials';
 import { Helmet } from 'react-helmet'
 import mediaimg3 from '../../asserts/images/media-img-3.png'
 gsap.registerPlugin(MotionPathPlugin);

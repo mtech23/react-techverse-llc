@@ -75,7 +75,7 @@ import App_development_solutions from '../../Components/App_development_solution
 import Development_Process from '../../Components/Development_Process';
 import Portfolios from '../../Components/portfolios';
 import Driving_Exprience from '../../Components/Driving_experience';
-import Testimonials from '../../Components/Tetimonials';
+import Testimonials from '../../Components/Testimonials';
 import { Helmet } from 'react-helmet'
 gsap.registerPlugin(MotionPathPlugin);
 const Ecommerse = () => {
