@@ -68,7 +68,7 @@ import Macbook from '../../asserts/images/Macbook.png'
 import App_development_solutions from '../../Components/App_development_solutions';
 import Development_Process from '../../Components/Development_Process';
 import Testimonials from '../../Components/Tetimonials';
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 
 gsap.registerPlugin(MotionPathPlugin);
 
@@ -233,7 +233,23 @@ const Automotive = () => {
                 subtitle=" Driving "
                 title2="Experiences"
                 image={drivingsecsecreen}
+                h1="
+Seamless Connectivity"
+h2="Advanced Navigation
+"
+h3="Personalized Settings
+"
+h4="Real-Time Updates
+"
+h5="Improve Safety
+"
+h6="Voice Control"
+h7="Smart Diagnostics
+"
+h8="Effortless Maintenance
+"
             />
+
 
 
 

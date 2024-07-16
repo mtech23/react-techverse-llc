@@ -75,7 +75,7 @@ import mediaportfolio3 from '../../asserts/images/media-portfolio-3.png'
 import mediaportfolio4 from '../../asserts/images/media-portfolio-4.png'
 import mediaportfolio5 from '../../asserts/images/media-portfolio-5.png'
 import Testimonials from '../../Components/Tetimonials';
-import {Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet'
 import mediaimg3 from '../../asserts/images/media-img-3.png'
 gsap.registerPlugin(MotionPathPlugin);
 
@@ -235,8 +235,27 @@ const Media = () => {
                 subtitle="    Media & Entertainment  "
                 title2=" App Development Service  "
                 para="When you choose Blitz Mobile Apps for your media and entertainment mobile app development needs, you can expect:"
-                image={mediaimg3} />
+                image={mediaimg3}
+                h1="Immersive user experiences"
 
+
+            h2="Enhanced content distribution"
+            h3="Real-time audience engagement"
+            h4="Scalable streaming solutions"
+            h5="Personalized content recommendations"
+            h6="Secure digital rights management"
+            h7="Monetization opportunities"
+            h8="Integration with social media platforms"
+
+
+
+
+
+
+
+
+            />
+            
 
 
 

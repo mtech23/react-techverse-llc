@@ -226,6 +226,18 @@ const Education_hr = () => {
         title2=" Development Service"
         image={eduhrimg3}
         hrimg={"eduHR-img3"}
+        h1="Industry Expertise"
+        h2="  Customized Solutions"
+        h3="User-Centric Design"
+        h4="Scalable Architecture
+" h5="Compliance Assurance
+"
+h6="Robust Security
+"
+h7="Ongoing Support
+"
+h8="Innovative Technologies
+"
       />
 
 

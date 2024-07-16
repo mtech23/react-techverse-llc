@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect , useRef } from "react";
 
 import phoneicon from "../../../src/asserts/images/phone-icon.png";
 import chaticon from "../../../src/asserts/images/chat-icon.png";
@@ -62,9 +62,72 @@ const Process = (props) => {
     });
   }, []);
 
+
+
+
+
+
+
+
+
+
+
+
+
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const sections = sectionRef?.current.querySelectorAll('.techVerse_process');
+
+    sections.forEach((section) => {
+      const container = section.querySelector('.inneri_images');
+
+      const handleMouseMove = (event) => {
+        const rect = section.getBoundingClientRect();
+        const mouseX = event.clientX - rect.left;
+        const mouseY = event.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const distX = (mouseX - centerX) * 0.1;
+        const distY = (mouseY - centerY) * 0.1;
+
+        gsap.to(container, {
+          x: distX,
+          y: distY,
+          ease: 'power1.out',
+        });
+      };
+
+      const handleMouseLeave = () => {
+        gsap.to(container, {
+          x: 0,
+          y: 0,
+          ease: 'power1.out',
+        });
+      };
+
+      section.addEventListener('mousemove', handleMouseMove);
+      section.addEventListener('mouseleave', handleMouseLeave);
+
+      return () => {
+        section.removeEventListener('mousemove', handleMouseMove);
+        section.removeEventListener('mouseleave', handleMouseLeave);
+      };
+    });
+  }, []);
+
+
+
+
+
+
+
+
+
   return (
-    <div>
+    <div ref={sectionRef}>
       <section className="techVerse_process">
+        <div className="inneri_images">
         <img
           className="techVerse_process_icon1 animation22"
           src={peramidleftangles}
@@ -85,6 +148,7 @@ const Process = (props) => {
           src={peramidleftangles}
           alt=""
         />
+        </div>
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-12">

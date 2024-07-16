@@ -76,7 +76,7 @@ import Development_Process from '../../Components/Development_Process';
 import Portfolios from '../../Components/portfolios';
 import Driving_Exprience from '../../Components/Driving_experience';
 import Testimonials from '../../Components/Tetimonials';
-import {Helmet} from 'react-helmet'
+import { Helmet } from 'react-helmet'
 gsap.registerPlugin(MotionPathPlugin);
 const Ecommerse = () => {
 
@@ -113,11 +113,11 @@ const Ecommerse = () => {
     <UserLayout>
 
 
-<Helmet>
-                <meta charSet="utf-8" />
-                <title> E-Commerce & Retails Record Control System at Techverse LLC  </title>
-                <meta name="Our skilled team revolutionized Apps for retail like never before, Techverse LLC for E-Commerce & Retails application software development. " />
-            </Helmet>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title> E-Commerce & Retails Record Control System at Techverse LLC  </title>
+        <meta name="Our skilled team revolutionized Apps for retail like never before, Techverse LLC for E-Commerce & Retails application software development. " />
+      </Helmet>
 
       <HeroSection
         classheroimage={"inner-ecommerce-bgColor"}
@@ -172,7 +172,7 @@ const Ecommerse = () => {
 
       <Portfolio title="Techverse Revolutionizes"
 
-       classtitle="color-darkBlue"
+        classtitle="color-darkBlue"
         subtitle="Industries"
         title2="Through Digital Power"
         para="Techverse provides top-notch e-commerce mobile app development services for clients worldwide. We help your organization scale better, increase cash flow and retain customers."
@@ -227,7 +227,25 @@ const Ecommerse = () => {
         subtitle="    Ecommerce App "
         title2="         Development Service
 "
-        image={ecommersdoubleScreens} />
+        image={ecommersdoubleScreens}
+
+
+        h1="Expertise in UX/UI
+"
+        h2="Robust Security Measures
+"
+        h3="Scalable Solutions"
+        h4="Increase Customer Engagement
+"
+        h5="Customized Features"
+        h6="Seamless Integration "
+h7="Proven Track Record
+" h8="Ongoing Support
+"
+
+
+
+      />
 
 
 

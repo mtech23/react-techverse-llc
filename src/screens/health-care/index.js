@@ -220,6 +220,17 @@ const Health_care = () => {
         title2="    App Development Service"
         image={healthcareimg3}
 
+
+        h1="Advanced Research Capabilities"
+        h2="Streamlined Clinical Workflows"
+        h3="Interoperability Solutions"
+        h4="Telehealth Integration"
+        h5="Compliance with Emerging Technologies"
+        h6="Personalized Medicine Initiatives"
+        h7="Continuous Support and Maintenance"
+        h8="Data Privacy Assurance"
+
+
       />
 
 

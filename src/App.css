@@ -1367,14 +1367,20 @@ p.company_wishText {
 .techVerse_hero_icon1 {
   left: 3%;
   top: 25%;
+  position: absolute;
+  top: 124px !important;
 }
 .techVerse_hero_icon2 {
   right: 1%;
   top: 50%;
+  position: absolute;
+  top: 340px !important;
 }
 .techVerse_hero_icon3 {
   right: 30%;
   top: 80%;
+  position: absolute;
+  top: 490px !important;
 }
 
 .techVerse_about_icon1,
@@ -1399,6 +1405,8 @@ p.company_wishText {
 .techVerse_about_icon3 {
   left: 5%;
   bottom: 15%;
+  position: absolute;
+  top: 513px!important;
 }
 
 .techVerse_webSolution_icon1,
@@ -1430,10 +1438,14 @@ p.company_wishText {
 .techVerse_services_icon2 {
   top: 35%;
   left: -20px;
+  position: absolute;
+  top:300px!important;
 }
 .techVerse_services_icon3 {
   bottom: 12%;
   left: 2%;
+  position: absolute;
+     top: 760px!important;
 }
 .techVerse_services_icon4 {
   right: 0;
@@ -1442,6 +1454,9 @@ p.company_wishText {
 .techVerse_services_icon5 {
   right: 0;
   bottom: 18%;
+  position: absolute;
+  top: 704px!important;
+
 }
 
 .blue-cube1,
@@ -1469,14 +1484,21 @@ p.company_wishText {
 }
 .techVerse_process_icon2 {
   top: 54%;
+
+position: absolute;
+top: 401px!important;
 }
 .techVerse_process_icon3 {
   top: 40%;
+  position: absolute;
+  top: 254px !important;
   right: 0;
 }
 .techVerse_process_icon4 {
   top: 60%;
   right: 15%;
+  position: absolute;
+  top: 411px!important;
 }
 
 .techVerse_caseStudies_icon1,
@@ -1491,6 +1513,9 @@ p.company_wishText {
 .techVerse_caseStudies_icon2 {
   left: -1%;
   top: 50%;
+  position: absolute;
+  top: 578px!important;
+
 }
 .techVerse_caseStudies_icon3 {
   right: 0%;
@@ -1499,6 +1524,8 @@ p.company_wishText {
 .techVerse_caseStudies_icon4 {
   right: 1%;
   bottom: 30%;
+  position: absolute;
+    top: 829px;
 }
 
 .techVerse_partners_icon1,
@@ -3426,6 +3453,8 @@ p.company_wishText {
   .techVerse_about_icon3 {
     left: 0%;
     bottom: 6%;
+    position: absolute;
+    top: 513px!important;
   }
   .techVerse_services_icon1 {
     left: -2%;

@@ -229,6 +229,18 @@ const Sports = () => {
                 para="When you choose Blitz Mobile Apps for your media and entertainment mobile app development needs, you can expect:"
                 image={sportsimg3}
                 hrimg={"sports-img-3"}
+
+h1="Customized Solutions"
+h2="Improved Efficiency"
+h3="Interfaces that are easy to use"
+h4="Advanced Analytics"
+h5="Secure Data Handling"
+h6="Expertise in the Sports Industry"
+h7="Scalable Solutions"
+h8="Proven Track Record"
+
+
+
                 />
             
 

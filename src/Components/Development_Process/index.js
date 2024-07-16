@@ -1,6 +1,6 @@
-import React from "react";
+import React , {useEffect , useRef} from "react";
 import pinkcapsol from "../../asserts/images/pink-capsol.png";
-
+import { gsap } from "gsap";
 import phoneicon from "../../asserts/images/phone-icon.png";
 import chaticon from "../../asserts/images/chat-icon.png";
 import devandmaintenenceicon from "../../asserts/images/dev-and-maintenence-icon.png";
@@ -11,12 +11,62 @@ import realestateimg2 from "../../asserts/images/real-estate-img2.gif";
 
 import greencube from "../../asserts/images/green-cube.png";
 import donatorange from "../../asserts/images/donat-orange.png";
+
+
+
 const Development_Process = (props) => {
+
+
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const sections = sectionRef?.current.querySelectorAll('.techVerse_about');
+
+    sections.forEach((section) => {
+      const container = section.querySelector('.inner_images');
+
+      const handleMouseMove = (event) => {
+        const rect = section.getBoundingClientRect();
+        const mouseX = event.clientX - rect.left;
+        const mouseY = event.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const distX = (mouseX - centerX) * 0.1;
+        const distY = (mouseY - centerY) * 0.1;
+
+        gsap.to(container, {
+          x: distX,
+          y: distY,
+          ease: 'power1.out',
+        });
+      };
+
+      const handleMouseLeave = () => {
+        gsap.to(container, {
+          x: 0,
+          y: 0,
+          ease: 'power1.out',
+        });
+      };
+
+      section.addEventListener('mousemove', handleMouseMove);
+      section.addEventListener('mouseleave', handleMouseLeave);
+
+      return () => {
+        section.removeEventListener('mousemove', handleMouseMove);
+        section.removeEventListener('mouseleave', handleMouseLeave);
+      };
+    });
+  }, []);
+
+
   return (
-    <div>
+
+    <div ref={sectionRef}>
       <section
         class={`techVerse_about techVerse_aboutServices2 ${props?.travelbgclass} `}
       >
+        <div className="inner_images">
         <img
           class="techVerse_about_icon1 animation11"
           src={pinkcapsol}
@@ -29,6 +79,8 @@ const Development_Process = (props) => {
           src={donatorange}
           alt=""
         />
+</div>
+
         <div class="techVerse_aboutContent techVerse_aboutContentServices2 width-1600">
           <div class="container-fluid">
             <div class="row">

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import phoneicon from "../../../src/asserts/images/phone-icon.png";
 import chaticon from "../../../src/asserts/images/chat-icon.png";
 import androidiconw from "../../../src/asserts/images/android-icon-w.png";
@@ -11,32 +11,85 @@ import { useCallback } from "react";
 import fluttericon from "../../../src/asserts/images/flutter-icon.png";
 import reacticon from "../../../src/asserts/images/react-icon.png";
 import Ctnbutton from "../../Components/ctnbutton";
-
+import { gsap } from "gsap";
 const Aboutsection = (props) => {
+
   const { CtnbuttonComponent, ctnButtonProps } = props;
 
+
+
+
+
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const sections = sectionRef?.current.querySelectorAll('.techVerse_about');
+
+    sections.forEach((section) => {
+      const container = section.querySelector('.inner_images');
+
+      const handleMouseMove = (event) => {
+        const rect = section.getBoundingClientRect();
+        const mouseX = event.clientX - rect.left;
+        const mouseY = event.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const distX = (mouseX - centerX) * 0.1;
+        const distY = (mouseY - centerY) * 0.1;
+
+        gsap.to(container, {
+          x: distX,
+          y: distY,
+          ease: 'power1.out',
+        });
+      };
+
+      const handleMouseLeave = () => {
+        gsap.to(container, {
+          x: 0,
+          y: 0,
+          ease: 'power1.out',
+        });
+      };
+
+      section.addEventListener('mousemove', handleMouseMove);
+      section.addEventListener('mouseleave', handleMouseLeave);
+
+      return () => {
+        section.removeEventListener('mousemove', handleMouseMove);
+        section.removeEventListener('mouseleave', handleMouseLeave);
+      };
+    });
+  }, []);
+
+
+
+
   return (
-    <div>
+    <div ref={sectionRef}>
       <section
         class="techVerse_about techVerse_aboutServices1"
         id="particles-js1"
       >
-        <img
-          class="techVerse_about_icon1 animation11"
-          src={props?.pinkcapsol}
-          alt=""
-        />
 
-        <img
-          class="techVerse_about_icon3 animation11"
-          src={props?.greencube}
-          alt=""
-        />
-        <img
-          class="techVerse_about_icon4 animation11"
-          src={props?.donatorange}
-          alt=""
-        />
+        <div className=" inner_images">
+          <img
+            class="techVerse_about_icon1 animation11"
+            src={props?.pinkcapsol}
+            alt=""
+          />
+
+          <img
+            class="techVerse_about_icon3 animation11"
+            src={props?.greencube}
+            alt=""
+          />
+          <img
+            class="techVerse_about_icon4 animation11"
+            src={props?.donatorange}
+            alt=""
+          />
+          </div>
 
         <div class="techVerse_aboutContent techVerse_aboutContentServices1">
           <div className=" techVerse_heroContent">

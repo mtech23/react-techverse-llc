@@ -76,7 +76,7 @@ import Portfolios from '../../Components/portfolios';
 import App_development_solutions from '../../Components/App_development_solutions';
 import Development_Process from '../../Components/Development_Process';
 import Driving_Exprience from '../../Components/Driving_experience';
-import {Helmet} from 'react-helmet'
+import { Helmet } from 'react-helmet'
 const RealEstate_and_property = () => {
 
 
@@ -195,7 +195,14 @@ const RealEstate_and_property = () => {
         title2=" Mobile App Development Stand Out? "
         image={realestateimg}
         hrimg="mobile-app-22"
-
+        h1="Specialized Expertise"
+        h2="Customized Solutions"
+        h3="Innovative Technology"
+        h4="Intuitive Design"
+        h5="Robust Performance"
+        h6="Client Satisfaction"
+        h7="Reliable Support"
+        h8="Market Insight"
       />
 
 

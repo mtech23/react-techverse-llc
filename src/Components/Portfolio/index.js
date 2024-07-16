@@ -1,20 +1,69 @@
-import React from "react";
+import React , {useRef , useEffect} from "react";
 import phoneicon from "../../../src/asserts/images/phone-icon.png";
 import chaticon from "../../../src/asserts/images/chat-icon.png";
 import androidiconw from "../../../src/asserts/images/android-icon-w.png";
 import angularicon from "../../../src/asserts/images/angular-icon.png";
 import appleicon from "../../../src/asserts/images/apple-icon.png";
 import ecommersedevhero from "../../../src/asserts/images/ecommersedevhero.png";
+import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 
 import fluttericon from "../../../src/asserts/images/flutter-icon.png";
 import reacticon from "../../../src/asserts/images/react-icon.png";
-
+import { gsap } from "gsap";
+gsap.registerPlugin(MotionPathPlugin);
 const Portfolio = (props) => {
+
+  const sec2 = useRef(null);
+
+  useEffect(() => {
+    const sections = sec2?.current.querySelectorAll('.inner_hover');
+
+    sections.forEach((section) => {
+      const container = section.querySelector('.inner_images');
+
+      const handleMouseMove = (event) => {
+        const rect = section.getBoundingClientRect();
+        const mouseX = event.clientX - rect.left;
+        const mouseY = event.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const distX = (mouseX - centerX) * 0.1; // Adjust multiplier for desired effect
+        const distY = (mouseY - centerY) * 0.1; // Adjust multiplier for desired effect
+
+        gsap.to(container, {
+          x: distX,
+          y: distY,
+          zIndex: 10, // Bring to front
+          ease: 'power1.out',
+        });
+      };
+
+      const handleMouseLeave = () => {
+        gsap.to(container, {
+          x: 0,
+          y: 0,
+          zIndex: 1, // Reset to default
+          ease: 'power1.out',
+          clearProps: 'all'
+        });
+      };
+
+      section.addEventListener('mousemove', handleMouseMove);
+      section.addEventListener('mouseleave', handleMouseLeave);
+
+      return () => {
+        section.removeEventListener('mousemove', handleMouseMove);
+        section.removeEventListener('mouseleave', handleMouseLeave);
+      };
+    });
+  }, []);
   return (
     <div>
-      <section
+      <section ref={sec2}
         class={`techVerse_about techVerse_aboutServices2 ${props?.newClass}`}
       >
+        <div className="inner_hover">
+                  <div className="inner_images">
         <img
           class="techVerse_about_icon1 animation11"
           src={props?.pinkcapsol}
@@ -31,6 +80,8 @@ const Portfolio = (props) => {
           src={props?.donatorange}
           alt=""
         />
+        
+        </div>
         <div class="techVerse_aboutContent techVerse_aboutContentServices2 width-1600">
           <div class="container-fluid">
             <div class="row">
@@ -120,6 +171,7 @@ const Portfolio = (props) => {
               </div>
             </div>
           </div>
+        </div>
         </div>
       </section>
     </div>

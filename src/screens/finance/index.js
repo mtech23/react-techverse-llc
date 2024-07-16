@@ -235,7 +235,26 @@ const Finance = () => {
         title2="    With Techverse LLC"
         image={financeimg3}
         hrimg={"finance-img3"}
+      
+      
+      
+      
+      
+      
+      h1="Fast financial transactions."
+      h2="Risk management"
+      h3="Seamless system integration"
+      h4="Personalized user interfaces"
+      h5="Advanced security measures"
+      h6="Regulatory compliance ensured"
+      h7="Mobile accessibility is guaranteed"
+      h8="Automated task efficiency"
+      
+      
+      
       />
+
+
 
       <TechnologiesUse />
 

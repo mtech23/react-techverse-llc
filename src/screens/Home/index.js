@@ -93,6 +93,7 @@ import "swiper/css";
 import Process from "../../Components/Process";
 import Testimonials from "../../Components/Tetimonials";
 import Elevateyourbusiness from "../../Components/elevateyourbusiness";
+
 gsap.registerPlugin(MotionPathPlugin);
 const videos = [
   {
@@ -156,7 +157,7 @@ const Home = () => {
     const sections = sectionRef?.current.querySelectorAll('.hoverEffectSec');
 
     sections.forEach((section) => {
-      const container = section.querySelector('.techVerse_hero_img');
+      const container = section.querySelector('.inner_images');
 
       const handleMouseMove = (event) => {
         const rect = section.getBoundingClientRect();
@@ -165,7 +166,7 @@ const Home = () => {
         const centerX = rect.width / 2;
         const centerY = rect.height / 2;
         const distX = (mouseX - centerX) * 0.1;
-        const distY = (mouseY - centerY) * 0.1; // Adjust multiplier for desired effect
+        const distY = (mouseY - centerY) * 0.1;
 
         gsap.to(container, {
           x: distX,
@@ -195,13 +196,107 @@ const Home = () => {
 
 
 
-  //   const sec2 = useRef(null);
+
+  const sec2 = useRef(null);
+
+  useEffect(() => {
+    const sections = sec2?.current.querySelectorAll('.sevices_hover');
+
+    sections.forEach((section) => {
+      const container = section.querySelector('.services_inner_images');
+
+      const handleMouseMove = (event) => {
+        const rect = section.getBoundingClientRect();
+        const mouseX = event.clientX - rect.left;
+        const mouseY = event.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const distX = (mouseX - centerX) * 0.1;
+        const distY = (mouseY - centerY) * 0.1;
+
+        gsap.to(container, {
+          x: distX,
+          y: distY,
+          ease: 'power1.out',
+        });
+      };
+
+      const handleMouseLeave = () => {
+        gsap.to(container, {
+          x: 0,
+          y: 0,
+          ease: 'power1.out',
+        });
+      };
+
+      section.addEventListener('mousemove', handleMouseMove);
+      section.addEventListener('mouseleave', handleMouseLeave);
+
+      return () => {
+        section.removeEventListener('mousemove', handleMouseMove);
+        section.removeEventListener('mouseleave', handleMouseLeave);
+      };
+    });
+  }, []);
+
+
+
+
+
+
+  
+  const caseStudies = useRef(null);
+
+  useEffect(() => {
+    const sections = caseStudies?.current.querySelectorAll('.caseStudies_hover');
+
+    sections.forEach((section) => {
+      const container = section.querySelector('.caseStudies_inner_images');
+
+      const handleMouseMove = (event) => {
+        const rect = section.getBoundingClientRect();
+        const mouseX = event.clientX - rect.left;
+        const mouseY = event.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const distX = (mouseX - centerX) * 0.1;
+        const distY = (mouseY - centerY) * 0.1;
+
+        gsap.to(container, {
+          x: distX,
+          y: distY,
+          ease: 'power1.out',
+        });
+      };
+
+      const handleMouseLeave = () => {
+        gsap.to(container, {
+          x: 0,
+          y: 0,
+          ease: 'power1.out',
+        });
+      };
+
+      section.addEventListener('mousemove', handleMouseMove);
+      section.addEventListener('mouseleave', handleMouseLeave);
+
+      return () => {
+        section.removeEventListener('mousemove', handleMouseMove);
+        section.removeEventListener('mouseleave', handleMouseLeave);
+      };
+    });
+  }, []);
+
+
+
+
+  // const sec2 = useRef(null);
 
   // useEffect(() => {
-  //   const sections = sec2?.current.querySelectorAll('.sec2');
+  //   const sections = sec2?.current.querySelectorAll('.sevices_hover');
 
   //   sections.forEach((section) => {
-  //     const container = section.querySelector('.sec2_icons');
+  //     const container = section.querySelector('.services_inner_images');
 
   //     const handleMouseMove = (event) => {
   //       const rect = section.getBoundingClientRect();
@@ -334,8 +429,8 @@ const Home = () => {
                       </div>
                     </div>
                     <div class="col-md-6">
-                      <div class="techVerse_hero_img">
-                        <div className="inner_images ">
+                      <div class="techVerse_hero_img image_hover">
+                        <div className="inner_images  ">
                           <img
                             src={donatblue}
                             class="techVerse_hero_icon1 animation11"
@@ -434,21 +529,23 @@ const Home = () => {
                     </div>
                     <div class="col-md-6">
                       <div class="techVerse_hero_img">
-                        <img
-                          src={donatblue}
-                          class="techVerse_hero_icon1 animation11"
-                          alt=""
-                        />
-                        <img
-                          src={PillBlueGlossy}
-                          class="techVerse_hero_icon2 animation22"
-                          alt=""
-                        />
-                        <img
-                          src={ConeBlueGlossy}
-                          class="techVerse_hero_icon3 animation22"
-                          alt=""
-                        />
+                        <div className="inner_images">
+                          <img
+                            src={donatblue}
+                            class="techVerse_hero_icon1 animation11"
+                            alt=""
+                          />
+                          <img
+                            src={PillBlueGlossy}
+                            class="techVerse_hero_icon2 animation22"
+                            alt=""
+                          />
+                          <img
+                            src={ConeBlueGlossy}
+                            class="techVerse_hero_icon3 animation22"
+                            alt=""
+                          />
+                        </div>
                         <img
                           src={herowebmockupgroup22}
                           data-aos="fade-left"
@@ -456,6 +553,7 @@ const Home = () => {
                           data-aos-duration="3000"
                           alt=""
                         />
+
                       </div>
                     </div>
                   </div>
@@ -531,21 +629,24 @@ const Home = () => {
                     </div>
                     <div class="col-md-6">
                       <div class="techVerse_hero_img">
-                        <img
-                          src={donatblue}
-                          class="techVerse_hero_icon1 animation11"
-                          alt=""
-                        />
-                        <img
-                          src={PillBlueGlossy}
-                          class="techVerse_hero_icon2 animation22"
-                          alt=""
-                        />
-                        <img
-                          src={ConeBlueGlossy}
-                          class="techVerse_hero_icon3 animation22"
-                          alt=""
-                        />
+                        <div className="inner_images">
+                          <img
+                            src={donatblue}
+                            class="techVerse_hero_icon1 animation11"
+                            alt=""
+                          />
+                          <img
+                            src={PillBlueGlossy}
+                            class="techVerse_hero_icon2 animation22"
+                            alt=""
+                          />
+                          <img
+                            src={ConeBlueGlossy}
+                            class="techVerse_hero_icon3 animation22"
+                            alt=""
+                          />
+
+                        </div>
                         <img
                           src={heroslidermockupimg3}
                           data-aos="fade-left"
@@ -650,163 +751,168 @@ const Home = () => {
       </section>
 
       {/* <!-- Services --> */}
-      <section class="techVerse_services" id="particles-js2">
-        <img
-          class="techVerse_services_icon1 animation11"
-          src={pinkcapsol}
-          alt=""
-        />
-        <img
-          class="techVerse_services_icon2 animation11"
-          src={greencube}
-          alt=""
-        />
-        <img
-          class="techVerse_services_icon3 animation33"
-          src={orangecircle}
-          alt=""
-        />
-        <img
-          class="techVerse_services_icon4 animation22"
-          src={donatewhitesmall}
-          alt=""
-        />
-        <img
-          class="techVerse_services_icon5 animation33"
-          src={orangehalfcircle}
-          alt=""
-        />
-        <div class="container services_offerContainer">
-          <div class="row">
-            <div class="sec_title">
-              <h2
-                class="sec_title_head color-lightBlue2"
-                data-aos="fade-up"
-                data-aos-offset="0"
-                data-aos-duration="1000"
-              >
-                Services
-                <span class="color-darkBlue"> We Offer </span>
-              </h2>
-              <p
-                data-aos="fade-up"
-                data-aos-offset="0"
-                data-aos-duration="2000"
-              >
-                At Techverse LLC, we pride ourselves on delivering cutting-edge solutions tailored to meet your digital needs.
-                Discover our range of solutions designed to raise your business:
-              </p>
-            </div>
-            <div class="techVerse_services_content">
-              <img src={bluecube} class="blue-cube1 animation11" alt="" />
-              <img src={bluecube} class="blue-cube2 animation11" alt="" />
-              <div class="service_box_1"></div>
-              <div class="service_box_2"></div>
-              <div class="service_box_3"></div>
-              <div class="service_box">
-                <div class="service_box_before">
-                  <div class="service_box_icon">
-                    <img src={iosicon} alt="" />
+      <section ref={sec2} class="techVerse_services" id="particles-js2">
+        <div className="sevices_hover">
+          <div className="services_inner_images">
+            <img
+              class="techVerse_services_icon1 animation11"
+              src={pinkcapsol}
+              alt=""
+            />
+            <img
+              class="techVerse_services_icon2 animation11"
+              src={greencube}
+              alt=""
+            />
+            <img
+              class="techVerse_services_icon3 animation33"
+              src={orangecircle}
+              alt=""
+            />
+            <img
+              class="techVerse_services_icon4 animation22"
+              src={donatewhitesmall}
+              alt=""
+            />
+            <img
+              class="techVerse_services_icon5 animation33"
+              src={orangehalfcircle}
+              alt=""
+            />
+          </div>
+          <div class="container services_offerContainer">
+            <div class="row">
+              <div class="sec_title">
+                <h2
+                  class="sec_title_head color-lightBlue2"
+                  data-aos="fade-up"
+                  data-aos-offset="0"
+                  data-aos-duration="1000"
+                >
+                  Services
+                  <span class="color-darkBlue"> We Offer </span>
+                </h2>
+                <p
+                  data-aos="fade-up"
+                  data-aos-offset="0"
+                  data-aos-duration="2000"
+                >
+                  At Techverse LLC, we pride ourselves on delivering cutting-edge solutions tailored to meet your digital needs.
+                  Discover our range of solutions designed to raise your business:
+                </p>
+              </div>
+              <div class="techVerse_services_content">
+                <img src={bluecube} class="blue-cube1 animation11" alt="" />
+                <img src={bluecube} class="blue-cube2 animation11" alt="" />
+                <div class="service_box_1"></div>
+                <div class="service_box_2"></div>
+                <div class="service_box_3"></div>
+                <div class="service_box">
+                  <div class="service_box_before">
+                    <div class="service_box_icon">
+                      <img src={iosicon} alt="" />
+                    </div>
+                    <h3 class="service_box_title">IOS Development</h3>
                   </div>
-                  <h3 class="service_box_title">IOS Development</h3>
+                  <div class="service_box_after">
+                    <h3 class="service_box_title">Cross-Platform Development</h3>
+                    <p class="service_box_p">
+                      Harness the power of Apple's ecosystem with our iOS development services.
+                      Whether you're introducing a new app or improving an existing one, our team ensures seamless integration and intuitive user experiences.
+                    </p>
+                  </div>
                 </div>
-                <div class="service_box_after">
-                  <h3 class="service_box_title">Cross-Platform Development</h3>
-                  <p class="service_box_p">
-                    Harness the power of Apple's ecosystem with our iOS development services.
-                    Whether you're introducing a new app or improving an existing one, our team ensures seamless integration and intuitive user experiences.
-                  </p>
+                <div class="service_box">
+                  <div class="service_box_before">
+                    <div class="service_box_icon">
+                      <img src={smartcontracticon} alt="" />
+                    </div>
+                    <h3 class="service_box_title">Smart Contract Development</h3>
+                  </div>
+                  <div class="service_box_after">
+                    <h3 class="service_box_title">Smart Contract Development</h3>
+                    <p class="service_box_p">
+                      Get the potential of blockchain technology with our brilliant contract development expertise.
+                      From initial concept to deployment, we specialize in creating secure and efficient intelligent contracts tailored to your specific requirements.
+                    </p>
+                  </div>
+                </div>
+                <div class="service_box">
+                  <div class="service_box_before">
+                    <div class="service_box_icon">
+                      <img src={andriodicon} alt="" />
+                    </div>
+                    <h3 class="service_box_title">Android Development</h3>
+                  </div>
+                  <div class="service_box_after">
+                    <h3 class="service_box_title">Android Development</h3>
+                    <p class="service_box_p">
+                      Reach the vast Android user base with our Android development services.
+                      We craft scalable and engaging applications that leverage the latest features of the Android platform, ensuring optimal performance across devices.
+                    </p>
+                  </div>
+                </div>
+                <div class="service_box">
+                  <div class="service_box_before">
+                    <div class="service_box_icon">
+                      <img src={customappicon} alt="" />
+                    </div>
+                    <h3 class="service_box_title">Custom App Development</h3>
+                  </div>
+                  <div class="service_box_after">
+                    <h3 class="service_box_title">Custom App Development</h3>
+                    <p class="service_box_p">
+                      Tailor-made solutions for unique business challenges.
+                      Our service is designed to align perfectly with your strategic objectives, delivering functionality and innovation that set you apart in the digital landscape.
+                    </p>
+                  </div>
+                </div>
+                <div class="service_box">
+                  <div class="service_box_before">
+                    <div class="service_box_icon">
+                      <img src={enterprizeicon} alt="" />
+                    </div>
+                    <h3 class="service_box_title">Enterprise App Development</h3>
+                  </div>
+                  <div class="service_box_after">
+                    <h3 class="service_box_title">Enterprise App Development</h3>
+                    <p class="service_box_p">
+                      Empower your enterprise with robust, scalable applications.
+                      Our enterprise app development team combines industry best practices with deep technical expertise to deliver solutions that streamline operations and drive growth.
+                    </p>
+                  </div>
+                </div>
+                <div class="service_box">
+                  <div class="service_box_before">
+                    <div class="service_box_icon">
+                      <img src={crossplatform} alt="" />
+                    </div>
+                    <h3 class="service_box_title">Cross-Platform Development</h3>
+                  </div>
+                  <div class="service_box_after">
+                    <h3 class="service_box_title">Cross-Platform Development</h3>
+                    <p class="service_box_p">
+                      Maximize your reach with cross-platform development solutions.
+                      We utilize leading frameworks to build apps that operate seamlessly across multiple platforms, minimizing development time and maximizing user engagement.
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div class="service_box">
-                <div class="service_box_before">
-                  <div class="service_box_icon">
-                    <img src={smartcontracticon} alt="" />
-                  </div>
-                  <h3 class="service_box_title">Smart Contract Development</h3>
-                </div>
-                <div class="service_box_after">
-                  <h3 class="service_box_title">Smart Contract Development</h3>
-                  <p class="service_box_p">
-                    Get the potential of blockchain technology with our brilliant contract development expertise.
-                    From initial concept to deployment, we specialize in creating secure and efficient intelligent contracts tailored to your specific requirements.
-                  </p>
-                </div>
+              <div class="col-md-12 text-center mt-5">
+                <a
+                  href="#"
+                  class="btn_with_icon"
+                  data-aos="fade-right"
+                  data-aos-offset="0"
+                  data-aos-duration="2000"
+                >
+                  <span class="btn_with_icon_text">START YOUR PROJECT NOW!</span>
+                </a>
               </div>
-              <div class="service_box">
-                <div class="service_box_before">
-                  <div class="service_box_icon">
-                    <img src={andriodicon} alt="" />
-                  </div>
-                  <h3 class="service_box_title">Android Development</h3>
-                </div>
-                <div class="service_box_after">
-                  <h3 class="service_box_title">Android Development</h3>
-                  <p class="service_box_p">
-                    Reach the vast Android user base with our Android development services.
-                    We craft scalable and engaging applications that leverage the latest features of the Android platform, ensuring optimal performance across devices.
-                  </p>
-                </div>
-              </div>
-              <div class="service_box">
-                <div class="service_box_before">
-                  <div class="service_box_icon">
-                    <img src={customappicon} alt="" />
-                  </div>
-                  <h3 class="service_box_title">Custom App Development</h3>
-                </div>
-                <div class="service_box_after">
-                  <h3 class="service_box_title">Custom App Development</h3>
-                  <p class="service_box_p">
-                    Tailor-made solutions for unique business challenges.
-                    Our service is designed to align perfectly with your strategic objectives, delivering functionality and innovation that set you apart in the digital landscape.
-                  </p>
-                </div>
-              </div>
-              <div class="service_box">
-                <div class="service_box_before">
-                  <div class="service_box_icon">
-                    <img src={enterprizeicon} alt="" />
-                  </div>
-                  <h3 class="service_box_title">Enterprise App Development</h3>
-                </div>
-                <div class="service_box_after">
-                  <h3 class="service_box_title">Enterprise App Development</h3>
-                  <p class="service_box_p">
-                    Empower your enterprise with robust, scalable applications.
-                    Our enterprise app development team combines industry best practices with deep technical expertise to deliver solutions that streamline operations and drive growth.
-                  </p>
-                </div>
-              </div>
-              <div class="service_box">
-                <div class="service_box_before">
-                  <div class="service_box_icon">
-                    <img src={crossplatform} alt="" />
-                  </div>
-                  <h3 class="service_box_title">Cross-Platform Development</h3>
-                </div>
-                <div class="service_box_after">
-                  <h3 class="service_box_title">Cross-Platform Development</h3>
-                  <p class="service_box_p">
-                    Maximize your reach with cross-platform development solutions.
-                    We utilize leading frameworks to build apps that operate seamlessly across multiple platforms, minimizing development time and maximizing user engagement.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-12 text-center mt-5">
-              <a
-                href="#"
-                class="btn_with_icon"
-                data-aos="fade-right"
-                data-aos-offset="0"
-                data-aos-duration="2000"
-              >
-                <span class="btn_with_icon_text">START YOUR PROJECT NOW!</span>
-              </a>
             </div>
           </div>
         </div>
+
       </section>
 
       {/* <!-- Portfolio --> */}
@@ -845,27 +951,30 @@ const Home = () => {
       <Elevateyourbusiness />
 
       {/* <!-- Case Studies --> */}
-      <section class="techVerse_caseStudies">
-        <img
-          class="techVerse_caseStudies_icon1 animation22"
-          src={peramidangled}
-          alt=""
-        />
-        <img
-          class="techVerse_caseStudies_icon2 animation11"
-          src={greencube}
-          alt=""
-        />
-        <img
-          class="techVerse_caseStudies_icon3 animation22"
-          src={donatewhitesmall}
-          alt=""
-        />
-        <img
-          class="techVerse_caseStudies_icon4 animation33"
-          src={orangecircle}
-          alt=""
-        />
+      <section  ref={caseStudies} class="techVerse_caseStudies">
+        <div className="caseStudies_hover">
+        <div className="caseStudies_inner_images">
+          <img
+            class="techVerse_caseStudies_icon1 animation22"
+            src={peramidangled}
+            alt=""
+          />
+          <img
+            class="techVerse_caseStudies_icon2 animation11"
+            src={greencube}
+            alt=""
+          />
+          <img
+            class="techVerse_caseStudies_icon3 animation22"
+            src={donatewhitesmall}
+            alt=""
+          />
+          <img
+            class="techVerse_caseStudies_icon4 animation33"
+            src={orangecircle}
+            alt=""
+          />
+        </div>
         <div class="techVerse_caseStudies-Content">
           <div class="container-fluid">
             <div class="row">
@@ -974,6 +1083,7 @@ const Home = () => {
               </div>
             </div>
           </div>
+        </div>
         </div>
       </section>
 

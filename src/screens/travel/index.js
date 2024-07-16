@@ -236,18 +236,26 @@ const Travel = () => {
                 para="When you choose Blitz Mobile Apps for your media and entertainment mobile app development needs, you can expect:"
                 image={travelimg3 } 
                 hrimg={"travel-im-"}
+                
+                
+                h1="Innovative Solutions"
+                h2="Real-Time Property Listings"
+                h3="Secure Payment Integration"
+                h4="Virtual Property Tours"
+                h5="Secure Data Handling"
+                h6="Scalable Architecture"
+                h7="Expert Development Team"
+                h8="Proven Industry Experience"
+                
+                
+                
+                
+                
+                
                 />
             
 
-
-
-
-
-
-
-
-
-
+ 
 
 
 
@@ -263,24 +271,7 @@ const Travel = () => {
 
             <Frequentlyaskquestion />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 
