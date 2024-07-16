@@ -539,7 +539,7 @@ const Case_study = () => {
 
 
         {/* <div className={`modal fade bd-example-modal-lg ${modalOpen ? 'show' : ''}`} id="popup_modal_id" tabIndex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden={!modalOpen}> */}
-        {showModal && (
+        {/* {showModal && (
                 <div className="modal show" tabIndex="-1" style={{ display: 'block' }}>
                     <div className="modal-dialog modal-lg modal-dialog-centered">
                         <div className="modal-content">
@@ -586,7 +586,7 @@ const Case_study = () => {
                         </div>
                     </div>
                 </div>
-            )}
+            )} */}
 
 
 
