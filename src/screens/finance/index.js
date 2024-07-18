@@ -84,7 +84,7 @@ import Driving_Exprience from '../../Components/Driving_experience';
 import Ctnbutton from '../../Components/ctnbutton'
 import { playstore } from '../../asserts/images';
 import appstore from '../../asserts/images/app-store.png';
-import {Helmet} from 'react-helmet'
+import { Helmet } from 'react-helmet'
 const Finance = () => {
   Aos.init();
   return (
@@ -114,10 +114,10 @@ const Finance = () => {
 
 
         classheroimage="finance-hero"
-        title={" Transform Your Financial Future With Techverse LLC"}
-        // subtitle={"App Store  "}
-
-        tagline={"Discover the power of high-end technology with Techverse customized finance app solutions designed to transform the way you do business."}
+        title={"From Budgets To Boost Business Techverse Apps Power Up"}
+        subtitle={"Financial    "}
+        title2="Services"
+        tagline={"From optimizing budgets to catalyzing business growth, Techverse apps empower financial services with cutting-edge solutions. Our applications improve efficiency, ensure compliance, and improve customer experiences. We integrate advanced analytics, secure transactions, and scalable architectures to meet the dynamic needs of modern finance. Trust Techverse for innovative fintech solutions that drive profitability and operational excellence."}
       // heroimage={webapplicationhero}
 
       />
@@ -141,30 +141,28 @@ const Finance = () => {
         chaticon={chaticon}
         phoneicon={phoneicon}
         webaboutimg1={webaboutimg1} /> */}
-             <Portfolio pinkcapsol={pinkcapsol}
+      <Portfolio pinkcapsol={pinkcapsol}
 
-            // classtitle={" color-white  "}
+        // classtitle={" color-white  "}
 
-            newClass={"finance-abt1"}
-            greencube={greencube}
-            donatorange={donatorange}
-            // classpara="color-white"
-            classtitle={"financesubtitle"}
-          subtitle="  Financial"
-           
-            title="Increasing Client Engagement And"
-             title2="Management With Techverse Solutions"
-            para="Techverse products improve customer satisfaction and simplify financial management procedures. Our revolutionary options enhance client interactions and use cutting-edge analytics for well-informed decision-making. We guarantee data integrity and regulatory compliance via scalable systems and robust security mechanisms. Put your trust in Techverse to develop the financial services industry sustainably, increase customer satisfaction, and streamline financial operations."
+        newClass={"finance-abt1"}
+        greencube={greencube}
+        donatorange={donatorange}
+        // classpara="color-white"
+        classtitle={"financesubtitle"}
+        subtitle="  Financial"
 
-            image={financeimg1}
-            chaticon={chaticon}
-            phoneicon={phoneicon}
-            playstore={playstore}
-            appstore={appstore}
+        title="Increasing Client Engagement And"
+        title2="Management With Techverse Solutions"
+        para="Techverse products improve customer satisfaction and simplify financial management procedures. Our revolutionary options enhance client interactions and use cutting-edge analytics for well-informed decision-making. We guarantee data integrity and regulatory compliance via scalable systems and robust security mechanisms. Put your trust in Techverse to develop the financial services industry sustainably, increase customer satisfaction, and streamline financial operations."
 
-            />
+        image={financeimg1}
+        chaticon={chaticon}
+        phoneicon={phoneicon}
+        playstore={playstore}
+        appstore={appstore}
 
-
+      />
 
 
 
@@ -180,20 +178,22 @@ const Finance = () => {
 
 
 
-     {/* <!-- App Development Sec --> */}
-     <App_development_solutions 
-      title="Secure And Efficient"
-      subtitle="Financial"
-      title2="Apps By Techverse"
-      para="At Techverse LLC, we excel in creating innovative applications that improve workflows, boost client outcomes, and ensure regulatory compliance within the financial industry. 
+
+
+      {/* <!-- App Development Sec --> */}
+      <App_development_solutions
+        title="Secure And Efficient"
+        subtitle="Financial"
+        title2="Apps By Techverse"
+        para="At Techverse LLC, we excel in creating innovative applications that improve workflows, boost client outcomes, and ensure regulatory compliance within the financial industry. 
       Partner with us to develop advanced mobile apps designed to your needs."
-      para1="Utilize advanced data analytics to provide actionable insights, enhancing financial decision-making processes."
-      para2="Create user-centric interfaces that optimize usability and engagement, improving the overall experience for financial professionals and clients."
-      para3="Build customized finance applications that streamline operations and boost service delivery efficiency.
+        para1="Utilize advanced data analytics to provide actionable insights, enhancing financial decision-making processes."
+        para2="Create user-centric interfaces that optimize usability and engagement, improving the overall experience for financial professionals and clients."
+        para3="Build customized finance applications that streamline operations and boost service delivery efficiency.
       "
-      para4="Conduct comprehensive quality assurance processes to ensure robustness, security, and compliance with financial regulations, guaranteeing seamless performance across platforms."
-      
-      
+        para4="Conduct comprehensive quality assurance processes to ensure robustness, security, and compliance with financial regulations, guaranteeing seamless performance across platforms."
+
+
       />
 
 
@@ -215,7 +215,7 @@ const Finance = () => {
 
 "
         para4="We manage seamless deployment and offer ongoing maintenance to ensure financial apps remain secure, efficient, and adaptable to changing demands."
-         quality="Quality Assurance"
+        quality="Quality Assurance"
       />
 
 
@@ -257,23 +257,23 @@ const Finance = () => {
         title2="    With Techverse LLC"
         image={financeimg3}
         hrimg={"finance-img3"}
-      
-      
-      
-      
-      
-      
-      h1="Fast financial transactions."
-      h2="Risk management"
-      h3="Seamless system integration"
-      h4="Personalized user interfaces"
-      h5="Advanced security measures"
-      h6="Regulatory compliance ensured"
-      h7="Mobile accessibility is guaranteed"
-      h8="Automated task efficiency"
-      
-      
-      
+
+
+
+
+
+
+        h1="Fast financial transactions."
+        h2="Risk management"
+        h3="Seamless system integration"
+        h4="Personalized user interfaces"
+        h5="Advanced security measures"
+        h6="Regulatory compliance ensured"
+        h7="Mobile accessibility is guaranteed"
+        h8="Automated task efficiency"
+
+
+
       />
 
 

@@ -42,30 +42,30 @@ gsap.registerPlugin(MotionPathPlugin);
 const Businessdevlopment = () => {
   Aos.init();
 
-  useEffect(() => {
-    gsap.set(".road", { opacity: 1 });
-    const circles = gsap.utils.toArray(".ani_cnt .icc");
-    const tl2 = gsap.timeline({ repeat: 20 });
+  // useEffect(() => {
+  //   gsap.set(".road", { opacity: 1 });
+  //   const circles = gsap.utils.toArray(".ani_cnt .icc");
+  //   const tl2 = gsap.timeline({ repeat: 20 });
 
-    circles.forEach((circle, i) => {
-      let start = i / circles.length; // secret sauce for circles
-      tl2.to(
-        circle,
-        {
-          motionPath: {
-            path: ".mypath",
-            align: ".mypath",
-            alignOrigin: [0.5, 0.4],
-            start: start,
-            end: start + 1,
-          },
-          ease: "none",
-          duration: 40,
-        },
-        0
-      );
-    });
-  }, []);
+  //   circles.forEach((circle, i) => {
+  //     let start = i / circles.length; // secret sauce for circles
+  //     tl2.to(
+  //       circle,
+  //       {
+  //         motionPath: {
+  //           path: ".mypath",
+  //           align: ".mypath",
+  //           alignOrigin: [0.5, 0.4],
+  //           start: start,
+  //           end: start + 1,
+  //         },
+  //         ease: "none",
+  //         duration: 40,
+  //       },
+  //       0
+  //     );
+  //   });
+  // }, []);
 
   return (
     <UserLayout>
@@ -76,26 +76,26 @@ const Businessdevlopment = () => {
       </Helmet>
       <HeroSection
         innerbgclass={"inner-bgColor"}
-        title={"We"}
-        subtitle={"Design Websites"}
-        title2={"That Make Businesses Shine Online"}
+        title={"Accelerate Your Product Launch   "}
+        subtitle={"  With"}
+        title2={"With"}
         tagline={
-          "Grow your business’s online presence and witness an increase in conversions with Techverse."
+          "At Techverse LLC, we specialize in MVP Development Services designed to fast-track your product from concept to market success. Our approach focuses on building Minimum Viable Products (MVPs) strategically crafted to validate your idea, engage early adopters, and gather crucial feedback—all while minimizing time to market and development costs."
         }
-        className={"web-development_hero_img"}
-        heroimage={businessdevelopmenthero}
-        CtnbuttonComponent={Ctnbutton}
-        ctnButtonProps={{
-          phoneicon: phoneicon,
-          calltext: "Call Now",
-          primaryButtonClass: "btn_with_icon",
-          chaticon: chaticon,
-          chatenow: "Chat Now",
-          secondaryButtonClass: "btn_with_icon btn_secondary  ",
+      className={"web-development_hero_img"}
+      heroimage={businessdevelopmenthero}
+      CtnbuttonComponent={Ctnbutton}
+      ctnButtonProps={{
+        phoneicon: phoneicon,
+        calltext: "Call Now",
+        primaryButtonClass: "btn_with_icon",
+        chaticon: chaticon,
+        chatenow: "Chat Now",
+        secondaryButtonClass: "btn_with_icon btn_secondary  ",
 
-          // playstore: playstore,
-          // appstore: appstore
-        }}
+        // playstore: playstore,
+        // appstore: appstore
+      }}
       />
       {/* <!-- Trusted Partners --> */}
       <section class="techVerse_trustedPartners techVerse_trustedPartnersServices">
@@ -177,9 +177,9 @@ const Businessdevlopment = () => {
       />
 
 
-   {/* MOBILE APP */}
+      {/* MOBILE APP */}
 
-   <Elevateyourbusiness />
+      <Elevateyourbusiness />
       {/* <!-- Website --> */}
       {/* <section class="techVerse_webSolution">
         <img
@@ -247,14 +247,14 @@ const Businessdevlopment = () => {
 
       {/* process we use */}
       <Process
-      para="At Techverse LLC, we specialize in transforming your innovative ideas into robust Minimum Viable Products (MVPs) that resonate with your target audience. Our streamlined process ensures that every stage of development is meticulously planned and executed, focusing on agility, functionality, and user-centric design."
-      
+        para="At Techverse LLC, we specialize in transforming your innovative ideas into robust Minimum Viable Products (MVPs) that resonate with your target audience. Our streamlined process ensures that every stage of development is meticulously planned and executed, focusing on agility, functionality, and user-centric design."
+
       />
 
       {/* <!-- Technologies --> */}
       <TechnologiesUse />
 
-   
+
 
       {/* FAQ section */}
 

@@ -15,3 +15,19 @@
     margin-bottom: 5px;
     line-height: 1.5;
   }
+
+
+  
+/* Terms And Condition */
+ 
+
+/* Media Quries */
+@media (max-width: 1600px) {
+  .case-study-sec1,
+  .case-study-sec2,
+  .case-study-sec3,
+  .case-study-sec4,
+  .case-study-sec5,
+  .case-study-sec6 {
+    padding: 310px 0;
+  }}

@@ -1,4 +1,4 @@
-import React, { useEffect , useState  } from "react";
+import React, { useEffect, useState } from "react";
 
 import { UserLayout } from "../../Components/Layout/UserLayout";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
@@ -34,39 +34,39 @@ gsap.registerPlugin(MotionPathPlugin);
 
 const Case_study = () => {
   Aos.init();
- 
-    const [showModal, setShowModal] = useState(false);
 
-    useEffect(() => {
-        // Set showModal to true when component mounts
-        setShowModal(true);
-    }, []); // Empty dependency array means this effect runs only once, like componentDidMount
-
+  const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
-     gsap.set(".road", { opacity: 1 });
-    const circles = gsap.utils.toArray(".ani_cnt .icc");
-    const tl2 = gsap.timeline({ repeat: 20 });
+    // Set showModal to true when component mounts
+    setShowModal(true);
+  }, []); // Empty dependency array means this effect runs only once, like componentDidMount
 
-    circles.forEach((circle, i) => {
-      let start = i / circles.length; // secret sauce for circles
-      tl2.to(
-        circle,
-        {
-          motionPath: {
-            path: ".mypath",
-            align: ".mypath",
-            alignOrigin: [0.5, 0.4],
-            start: start,
-            end: start + 1,
-          },
-          ease: "none",
-          duration: 40,
-        },
-        0
-      );
-    });
-  }, []);
+
+  // useEffect(() => {
+  //   gsap.set(".road", { opacity: 1 });
+  //   const circles = gsap.utils.toArray(".ani_cnt .icc");
+  //   const tl2 = gsap.timeline({ repeat: 20 });
+
+  //   circles.forEach((circle, i) => {
+  //     let start = i / circles.length; // secret sauce for circles
+  //     tl2.to(
+  //       circle,
+  //       {
+  //         motionPath: {
+  //           path: ".mypath",
+  //           align: ".mypath",
+  //           alignOrigin: [0.5, 0.4],
+  //           start: start,
+  //           end: start + 1,
+  //         },
+  //         ease: "none",
+  //         duration: 40,
+  //       },
+  //       0
+  //     );
+  //   });
+  // }, []);
 
   return (
     <>
@@ -91,11 +91,9 @@ const Case_study = () => {
                     data-aos-offset="0"
                     data-aos-duration="2000"
                   >
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries,
+                    We pride ourselves on delivering innovative solutions that drive business growth and enhance digital presence. Our case studies exemplify our commitment to excellence and showcase how we have helped businesses across various industries achieve their goals through personalized technological solutions.
+
+
                   </p>
                   <div
                     class="techVerse_hero_btns justify-content-center"
@@ -154,6 +152,12 @@ const Case_study = () => {
               <div class="col-md-6">
                 <div class="casestudy-content">
                   <div class="sec_title">
+                    <div className="d-flex gx-2  my-3 g-2">
+                      <img src={playstore} className="rounded" />
+                      <img className="ml-4 rounded" src={appStore} />
+                    </div>
+
+
                     <h2
                       class="sec_title_head"
                       data-aos="fade-up"
@@ -167,8 +171,9 @@ const Case_study = () => {
                       data-aos-offset="0"
                       data-aos-duration="2000"
                     >
-                      Creating a seamless and personalized experience for
-                      travelers with our innovative travel mobile app solutions.
+                      Techverse LLC partnered with a leading clothing retailer aiming to enhance its digital presence and customer engagement through a bespoke e-commerce app.
+
+
                     </p>
                     <div
                       class="techVerse_hero_btns "
@@ -192,10 +197,10 @@ const Case_study = () => {
                           <img src={appStore} alt="" />
                         </a>
                       </div> */}
-                       <button class="btn_with_icon btn_white" data-toggle="modal" data-target=".bd-example-modal-lg">
-                      {/* <!-- <img class="btn_with_icon_img" src="images/phone-icon-blue.png" alt=""> --> */}
-                      <span class="btn_with_icon_text">Request A Quote</span>
-                    </button>
+                      <button class="btn_with_icon btn_white" data-toggle="modal" data-target=".bd-example-modal-lg">
+                        {/* <!-- <img class="btn_with_icon_img" src="images/phone-icon-blue.png" alt=""> --> */}
+                        <span class="btn_with_icon_text">Request A Quote</span>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -235,8 +240,9 @@ const Case_study = () => {
                       data-aos-offset="0"
                       data-aos-duration="2000"
                     >
-                      Creating a seamless and personalized experience for
-                      travelers with our innovative travel mobile app solutions.
+                      Techverse LLC partnered with a leading clothing retailer aiming to enhance its digital presence and customer engagement through a bespoke e-commerce app.
+
+
                     </p>
                     <div
                       class="techVerse_hero_btns "
@@ -261,10 +267,10 @@ const Case_study = () => {
                         </a>
                       </div> */}
 
-                    <button class="btn_with_icon btn_white" data-toggle="modal" data-target=".bd-example-modal-lg">
-                      {/* <!-- <img class="btn_with_icon_img" src="images/phone-icon-blue.png" alt=""> --> */}
-                      <span class="btn_with_icon_text">Request A Quote</span>
-                    </button>
+                      <button class="btn_with_icon btn_white" data-toggle="modal" data-target=".bd-example-modal-lg">
+                        {/* <!-- <img class="btn_with_icon_img" src="images/phone-icon-blue.png" alt=""> --> */}
+                        <span class="btn_with_icon_text">Request A Quote</span>
+                      </button>
 
                     </div>
                   </div>
@@ -299,15 +305,17 @@ const Case_study = () => {
                       data-aos-offset="0"
                       data-aos-duration="1000"
                     >
-                      Brian Carlisle - Book Author App
+                      Ryderz Van - E-Commerce App
+
                     </h2>
                     <p
                       data-aos="fade-up"
                       data-aos-offset="0"
                       data-aos-duration="2000"
                     >
-                      Creating a seamless and personalized experience for
-                      travelers with our innovative travel mobile app solutions.
+                      Techverse LLC partnered with a leading clothing retailer aiming to enhance its digital presence and customer engagement through a bespoke e-commerce app.
+
+
                     </p>
                     <div
                       class="techVerse_hero_btns "
@@ -331,10 +339,10 @@ const Case_study = () => {
                           <img src={appStore} alt="" />
                         </a>
                       </div> */}
-                       <button class="btn_with_icon btn_white" data-toggle="modal" data-target=".bd-example-modal-lg">
-                      {/* <!-- <img class="btn_with_icon_img" src="images/phone-icon-blue.png" alt=""> --> */}
-                      <span class="btn_with_icon_text">Request A Quote</span>
-                    </button>
+                      <button class="btn_with_icon btn_white" data-toggle="modal" data-target=".bd-example-modal-lg">
+                        {/* <!-- <img class="btn_with_icon_img" src="images/phone-icon-blue.png" alt=""> --> */}
+                        <span class="btn_with_icon_text">Request A Quote</span>
+                      </button>
 
                     </div>
                   </div>
@@ -363,15 +371,17 @@ const Case_study = () => {
                       data-aos-offset="0"
                       data-aos-duration="1000"
                     >
-                      Brian Carlisle - Book Author App
+                    Irving Segal - E-Book App
+
                     </h2>
                     <p
                       data-aos="fade-up"
                       data-aos-offset="0"
                       data-aos-duration="2000"
                     >
-                      Creating a seamless and personalized experience for
-                      travelers with our innovative travel mobile app solutions.
+                      Techverse LLC partnered with a leading clothing retailer aiming to enhance its digital presence and customer engagement through a bespoke e-commerce app.
+
+
                     </p>
                     <div
                       class="techVerse_hero_btns "
@@ -395,10 +405,10 @@ const Case_study = () => {
                           <img src={appStore} alt="" />
                         </a>
                       </div> */}
-                       <button class="btn_with_icon btn_white" data-toggle="modal" data-target=".bd-example-modal-lg">
-                      {/* <!-- <img class="btn_with_icon_img" src="images/phone-icon-blue.png" alt=""> --> */}
-                      <span class="btn_with_icon_text">Request A Quote</span>
-                    </button>
+                      <button class="btn_with_icon btn_white" data-toggle="modal" data-target=".bd-example-modal-lg">
+                        {/* <!-- <img class="btn_with_icon_img" src="images/phone-icon-blue.png" alt=""> --> */}
+                        <span class="btn_with_icon_text">Request A Quote</span>
+                      </button>
 
                     </div>
                   </div>
@@ -460,10 +470,10 @@ const Case_study = () => {
                         </a>
                       </div> */}
 
-                    <button class="btn_with_icon btn_white" data-toggle="modal" data-target=".bd-example-modal-lg">
-                      {/* <!-- <img class="btn_with_icon_img" src="images/phone-icon-blue.png" alt=""> --> */}
-                      <span class="btn_with_icon_text">Request A Quote</span>
-                    </button>
+                      <button class="btn_with_icon btn_white" data-toggle="modal" data-target=".bd-example-modal-lg">
+                        {/* <!-- <img class="btn_with_icon_img" src="images/phone-icon-blue.png" alt=""> --> */}
+                        <span class="btn_with_icon_text">Request A Quote</span>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -524,10 +534,10 @@ const Case_study = () => {
                       </div> */}
 
 
-                    <button class="btn_with_icon btn_white" data-toggle="modal" data-target=".bd-example-modal-lg">
-                      {/* <!-- <img class="btn_with_icon_img" src="images/phone-icon-blue.png" alt=""> --> */}
-                      <span class="btn_with_icon_text">Request A Quote</span>
-                    </button>
+                      <button class="btn_with_icon btn_white" data-toggle="modal" data-target=".bd-example-modal-lg">
+                        {/* <!-- <img class="btn_with_icon_img" src="images/phone-icon-blue.png" alt=""> --> */}
+                        <span class="btn_with_icon_text">Request A Quote</span>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -539,55 +549,78 @@ const Case_study = () => {
 
 
         {/* <div className={`modal fade bd-example-modal-lg ${modalOpen ? 'show' : ''}`} id="popup_modal_id" tabIndex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden={!modalOpen}> */}
-        {/* {showModal && (
-                <div className="modal show" tabIndex="-1" style={{ display: 'block' }}>
-                    <div className="modal-dialog modal-lg modal-dialog-centered">
-                        <div className="modal-content">
-                            <div className="modal-header">
-                                <button type="button" className="btn-close" aria-label="Close" onClick={() => setShowModal(false)}></button>
-                            </div>
-                            <div className="modal-body">
-                                <div className="container-fluid">
-                                    <div className="row align-items-center">
-                                        <div className="col-md-6">
-                                            <div className="popUp_img"><img src={sportsimg3} alt="Sports" /></div>
-                                        </div>
-                                        <div className="col-md-6">
-                                            <div className="popUp_content">
-                                                <div className="popUp_title">
-                                                    <h2 className="popUp_title_head color-white">
-                                                        Sign Up Now To Get A Free Quote! Upto 50% Off For Limited Time
-                                                    </h2>
-                                                </div>
-                                                <div className="popUp_form">
-                                                    <form>
-                                                        <div className="mb-3">
-                                                            <input type="text" className="form-control" placeholder="Name" />
-                                                        </div>
-                                                        <div className="mb-3">
-                                                            <input type="email" className="form-control" placeholder="Email" />
-                                                        </div>
-                                                        <div className="mb-3">
-                                                            <input type="text" className="form-control" placeholder="Phone Number" />
-                                                        </div>
-                                                        <div className="mb-3">
-                                                            <textarea className="form-control" placeholder="Message"></textarea>
-                                                        </div>
-                                                        <button type="button" className="btn btn-primary">
-                                                            Request A Quote
-                                                        </button>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            )} */}
+        {/* // <div  style={{ display: 'block' }} className="modal fade bd-example-modal-lg " id="popup_modal_id" tabIndex="-1" role="dialog" aria-labelledby="myLargeModalLabel"  > 
+        // <div className="modal show" tabIndex="-1" style={{ display: 'block' }}   id="popup_modal_id"> */}
 
+
+
+
+
+        <div class="modal fade bd-example-modal-lg popup_modal" id="popup_modal_id" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="false">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+              {/* <!-- <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div> --> */}
+              <div class="modal-body">
+                <button type="button" class="close popup_modal-close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="container-fluid">
+                  <div class="row align-items-center">
+                    <div class="col-md-6">
+                      <div class="popUp_img"><img src={sportsimg3} alt="" /></div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="popUp_content">
+                        <div class="popUp_title">
+                          <h2 class="popUp_title_head color-white">
+                            Sign Up Now To Get A Free Quote! Upto 50% Off For Limited Time
+                            {/* <!-- <span class="color-lightBlue2">Choose</span> Us? --> */}
+                          </h2>
+                        </div>
+                        <div class="popUp_form">
+                          <form>
+                            <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing-default"><i class="fa fa-user" aria-hidden="true"></i></span>
+                              </div>
+                              <input type="text" class="form-control" placeholder="Name" />
+                            </div>
+                            <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing-default"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                              </div>
+                              <input type="email" class="form-control" placeholder="Email Here" />
+                            </div>
+                            <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing-default"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                              </div>
+                              <input type="email" class="form-control" placeholder="Phone Number" />
+                            </div>
+                            <div class="input-group">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-comment" aria-hidden="true"></i></span>
+                              </div>
+                              <textarea class="form-control" aria-label="With textarea" placeholder="Message"></textarea>
+                            </div>
+                            <button type="button" class="btn_with_icon popUp_form_btn" >
+                              {/* <!-- <img class="btn_with_icon_img" src="images/phone-icon.png" alt=""> --> */}
+                              <span class="btn_with_icon_text">Request A Quote</span>
+                            </button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
 
 
@@ -602,7 +635,7 @@ const Case_study = () => {
 
 
 
-      
+
 
 
       <Contact_Footer />

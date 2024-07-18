@@ -77,7 +77,7 @@ import travelportfolio2 from '../../asserts/images/travel-portfolio-2.png'
 import travelportfolio3 from '../../asserts/images/travel-portfolio-3.png'
 import travelportfolio4 from '../../asserts/images/travel-portfolio-4.png'
 import travelportfolio5 from '../../asserts/images/travel-portfolio-5.png'
- 
+
 gsap.registerPlugin(MotionPathPlugin);
 
 const Travel = () => {
@@ -86,30 +86,30 @@ const Travel = () => {
     Aos.init();
 
 
-    useEffect(() => {
-        gsap.set(".road", { opacity: 1 });
-        const circles = gsap.utils.toArray(".ani_cnt .icc");
-        const tl2 = gsap.timeline({ repeat: 20 });
+    // useEffect(() => {
+    //     gsap.set(".road", { opacity: 1 });
+    //     const circles = gsap.utils.toArray(".ani_cnt .icc");
+    //     const tl2 = gsap.timeline({ repeat: 20 });
 
-        circles.forEach((circle, i) => {
-            let start = i / circles.length; // secret sauce for circles
-            tl2.to(
-                circle,
-                {
-                    motionPath: {
-                        path: ".mypath",
-                        align: ".mypath",
-                        alignOrigin: [0.5, 0.4],
-                        start: start,
-                        end: start + 1,
-                    },
-                    ease: "none",
-                    duration: 40,
-                },
-                0
-            );
-        });
-    }, []);
+    //     circles.forEach((circle, i) => {
+    //         let start = i / circles.length; // secret sauce for circles
+    //         tl2.to(
+    //             circle,
+    //             {
+    //                 motionPath: {
+    //                     path: ".mypath",
+    //                     align: ".mypath",
+    //                     alignOrigin: [0.5, 0.4],
+    //                     start: start,
+    //                     end: start + 1,
+    //                 },
+    //                 ease: "none",
+    //                 duration: 40,
+    //             },
+    //             0
+    //         );
+    //     });
+    // }, []);
 
 
     return (
@@ -155,7 +155,7 @@ const Travel = () => {
                 donatorange={donatorange}
 
                 title="From Guest Engagement To Operations, Techverse Develops" subtitle="     Hospitality "
-                title2="Solutions" 
+                title2="Solutions"
                 para="Techverse LLC is an expert in creating mobile apps specifically for the lodging sector. Our products promote effective service delivery, optimize operations, and improve visitor engagement. We place a high priority on efficacy and adherence to industry standards to guarantee user-friendly interfaces and secure data handling. Join Techverse to take advantage of cutting-edge app development services that improve visitor pleasure and streamline your hotel operations. With Techverse, discover the hospitality of the future."
                 travelimg={travelimg1airplane}
                 image={travelimg1}
@@ -174,26 +174,26 @@ const Travel = () => {
 
 
 
-         {/* <!-- App Development Sec --> */}
-      <App_development_solutions 
-      title="Techverse Offers Secure And Effective"
-      subtitle="Hospitality"
-      title2="Apps"
-      para="Techverse LLC provides secure, efficient 
+            {/* <!-- App Development Sec --> */}
+            <App_development_solutions
+                title="Techverse Offers Secure And Effective"
+                subtitle="Hospitality"
+                title2="Apps"
+                para="Techverse LLC provides secure, efficient 
       hospitality apps that boost guest experiences and streamline operations. Our advanced solutions ensure compliance and optimize service delivery for the hospitality industry."
-      para1="Gain valuable insights into guest behaviors and operational metrics to drive informed decisions and improve efficiency within your travel and hospitality business."
-      para2="Create intuitive and visually appealing interfaces that boost user experience, ensuring easy navigation and increased engagement for both guests and staff."
-      para3="From initial concept to final deployment, develop robust and secure travel and hospitality applications that streamline workflows and increase service delivery.
+                para1="Gain valuable insights into guest behaviors and operational metrics to drive informed decisions and improve efficiency within your travel and hospitality business."
+                para2="Create intuitive and visually appealing interfaces that boost user experience, ensuring easy navigation and increased engagement for both guests and staff."
+                para3="From initial concept to final deployment, develop robust and secure travel and hospitality applications that streamline workflows and increase service delivery.
       "
-      para4="Implement comprehensive testing protocols to ensure reliability, security, and compliance with industry standards, guaranteeing seamless functionality across all platforms."
-      
-      
-      />
+                para4="Implement comprehensive testing protocols to ensure reliability, security, and compliance with industry standards, guaranteeing seamless functionality across all platforms."
+
+
+            />
 
             {/* <!-- Real Estate App Dev --> */}
             <Development_Process
-            travelbgclass={"travel-abt2"}
-            sportsclass={"travel-img-2"}
+                travelbgclass={"travel-abt2"}
+                sportsclass={"travel-img-2"}
                 image={travelimg2}
                 title="Techverse Builds Scalable Apps For "
                 subtitle="Guests & Businesses"
@@ -207,7 +207,7 @@ const Travel = () => {
                 para3="Implement comprehensive testing to meet high standards of security, performance, and regulatory compliance, ensuring reliable and safe user experiences."
                 para4="Manage seamless app deployment and provide ongoing maintenance to keep your travel and hospitality apps secure, efficient, and adaptable to evolving needs."
 
-            quality="Quality Assurance"
+                quality="Quality Assurance"
 
             //   title2="   Mobile App Development Process"
 
@@ -251,9 +251,18 @@ const Travel = () => {
                 subtitle="  TRAVEL & HOSPITALITY "
                 title2=" App Development Services "
                 para="With extensive experience in app development for the travel and hospitality sector, we help boost guest experiences and operational efficiency."
-                image={travelimg3 } 
+                image={travelimg3}
                 hrimg={"travel-img-3"}
-                />
+                h1="Innovative Solutions"
+                h2="Real-Time Property Listings
+"
+h3="Secure Payment Integration"
+h4="Virtual Property Tours"
+h5="Secure Data Handling"
+h6="Scalable Architecture"
+h7="Expert Development Team"
+h8="Proven Industry Experience"
+            />
 
 
 

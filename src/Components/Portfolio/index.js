@@ -9,6 +9,7 @@ import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 
 import fluttericon from "../../../src/asserts/images/flutter-icon.png";
 import reacticon from "../../../src/asserts/images/react-icon.png";
+import ParticlesBackground from '../../Components/ParticleBg/ParticlesBackground'
 import { gsap } from "gsap";
 gsap.registerPlugin(MotionPathPlugin);
 const Portfolio = (props) => {
@@ -59,6 +60,7 @@ const Portfolio = (props) => {
   }, []);
   return (
     <div>
+            <ParticlesBackground/>
       <section ref={sec2}
         class={`techVerse_about techVerse_aboutServices2 ${props?.newClass}`}
       >

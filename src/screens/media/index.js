@@ -90,30 +90,30 @@ const Media = () => {
     Aos.init();
 
 
-    useEffect(() => {
-        gsap.set(".road", { opacity: 1 });
-        const circles = gsap.utils.toArray(".ani_cnt .icc");
-        const tl2 = gsap.timeline({ repeat: 20 });
+    // useEffect(() => {
+    //     gsap.set(".road", { opacity: 1 });
+    //     const circles = gsap.utils.toArray(".ani_cnt .icc");
+    //     const tl2 = gsap.timeline({ repeat: 20 });
 
-        circles.forEach((circle, i) => {
-            let start = i / circles.length; // secret sauce for circles
-            tl2.to(
-                circle,
-                {
-                    motionPath: {
-                        path: ".mypath",
-                        align: ".mypath",
-                        alignOrigin: [0.5, 0.4],
-                        start: start,
-                        end: start + 1,
-                    },
-                    ease: "none",
-                    duration: 40,
-                },
-                0
-            );
-        });
-    }, []);
+    //     circles.forEach((circle, i) => {
+    //         let start = i / circles.length; // secret sauce for circles
+    //         tl2.to(
+    //             circle,
+    //             {
+    //                 motionPath: {
+    //                     path: ".mypath",
+    //                     align: ".mypath",
+    //                     alignOrigin: [0.5, 0.4],
+    //                     start: start,
+    //                     end: start + 1,
+    //                 },
+    //                 ease: "none",
+    //                 duration: 40,
+    //             },
+    //             0
+    //         );
+    //     });
+    // }, []);
 
 
     return (

@@ -32,66 +32,66 @@ import highendimg from "../../asserts/images/high-end-img.png";
 import digitalmarketinghero from "../../asserts/images/digital-marketing-hero.png";
 import digitalmarketing01 from "../../asserts/images/digital-marketing-01.png";
 import digitalmarketing02 from "../../asserts/images/digital-marketing-02.png";
-import {Helmet}from 'react-helmet'
+import { Helmet } from 'react-helmet'
 gsap.registerPlugin(MotionPathPlugin);
 
 const DigitalMarketing = () => {
   Aos.init();
 
-  useEffect(() => {
-    gsap.set(".road", { opacity: 1 });
-    const circles = gsap.utils.toArray(".ani_cnt .icc");
-    const tl2 = gsap.timeline({ repeat: 20 });
+  // useEffect(() => {
+  //   gsap.set(".road", { opacity: 1 });
+  //   const circles = gsap.utils.toArray(".ani_cnt .icc");
+  //   const tl2 = gsap.timeline({ repeat: 20 });
 
-    circles.forEach((circle, i) => {
-      let start = i / circles.length; // secret sauce for circles
-      tl2.to(
-        circle,
-        {
-          motionPath: {
-            path: ".mypath",
-            align: ".mypath",
-            alignOrigin: [0.5, 0.4],
-            start: start,
-            end: start + 1,
-          },
-          ease: "none",
-          duration: 40,
-        },
-        0
-      );
-    });
-  }, []);
+  //   circles.forEach((circle, i) => {
+  //     let start = i / circles.length; // secret sauce for circles
+  //     tl2.to(
+  //       circle,
+  //       {
+  //         motionPath: {
+  //           path: ".mypath",
+  //           align: ".mypath",
+  //           alignOrigin: [0.5, 0.4],
+  //           start: start,
+  //           end: start + 1,
+  //         },
+  //         ease: "none",
+  //         duration: 40,
+  //       },
+  //       0
+  //     );
+  //   });
+  // }, []);
 
   return (
     <UserLayout>
-         <Helmet>
-                <meta charSet="utf-8" />
-                <title>Techverse LLC Digital Marketing Like an Army to Reach Goals   </title>
-                <meta name="Digital Marketing that can change business position with new customers every day. Techverse LLC skills in digital marketing are remarkable! " />
-            </Helmet>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Techverse LLC Digital Marketing Like an Army to Reach Goals   </title>
+        <meta name="Digital Marketing that can change business position with new customers every day. Techverse LLC skills in digital marketing are remarkable! " />
+      </Helmet>
       <HeroSection
         innerbgclass={"inner-bgColor"}
-        title={"Best Digital Marketing Agency For"}
-        subtitle={"Online Growth"}
-        // title2={"Services for Online Businesses"}
+        title={"Innovative Digital Marketing Strategies"}
+        subtitle={"  For "}
+        title2={"  Modern Success    "}
         tagline={
-          "Grow your business’s online presence and witness an increase in conversions with Techverse."
-        }
-        className={"digital-marketing-hero"}
-        heroimage={digitalmarketinghero}
-        CtnbuttonComponent={Ctnbutton}
-        ctnButtonProps={{
-          phoneicon: phoneicon,
-          calltext: "Call Now",
-          primaryButtonClass: "btn_with_icon",
-          chaticon: chaticon,
-          chatenow: "Chat Now",
-          secondaryButtonClass: "btn_with_icon btn_secondary  ",
+          "In today's rapidly evolving digital landscape, harnessing the power of innovative marketing strategies is crucial for achieving sustained business growth and market success. At Techverse LLC, we specialize in making tailored digital marketing solutions that propel brands forward in the digital sphere."
+      }
+      className={"digital-marketing-hero"}
+      heroimage={digitalmarketinghero}
+      CtnbuttonComponent={Ctnbutton}
+      ctnButtonProps={{
+        phoneicon: phoneicon,
+        calltext: "Call Now",
+        primaryButtonClass: "btn_with_icon",
+        chaticon: chaticon,
+        chatenow: "Chat Now",
+        secondaryButtonClass: "btn_with_icon btn_secondary  ",
 
-          // playstore: playstore,
-          // appstore: appstore
-        }}
+        // playstore: playstore,
+        // appstore: appstore
+      }}
       />
       {/* <!-- Trusted Partners --> */}
 
@@ -208,14 +208,14 @@ const DigitalMarketing = () => {
       </section> */}
 
 
-      
+
       {/* MOBILE APP */}
 
       <Elevateyourbusiness />
 
       {/* process we use */}
       <Process
-      para="Our service is designed to propel your business forward through strategic online campaigns personalized to your unique goals. We begin by conducting a comprehensive analysis of your current digital footprint and market landscape, identifying key opportunities and challenges"
+        para="Our service is designed to propel your business forward through strategic online campaigns personalized to your unique goals. We begin by conducting a comprehensive analysis of your current digital footprint and market landscape, identifying key opportunities and challenges"
       />
 
       {/* <!-- Technologies --> */}

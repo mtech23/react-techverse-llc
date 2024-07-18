@@ -1,0 +1,18 @@
+/* src/components/ParticleComponent.css */
+
+/* ---- reset ---- */
+body {
+  margin: 0;
+}
+
+canvas {
+  display: block;
+  z-index: 9 !important;
+}
+
+/* ---- particles.js container ---- */
+#service-particle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}

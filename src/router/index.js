@@ -23,10 +23,11 @@ import Contact from "../screens/contact";
 import Case_study from "../screens/case_study";
 import Privacy_Policy from "../screens/Privacy_Policy";
 import Terms_condition from "../screens/Terms_condition";
- 
+ import ScrollTop from '../Components/Scrolltop/ScrollTop'
 const Router = () => {
   return (
-    <BrowserRouter basename="project-name">
+    <BrowserRouter basename="techverseLLC">
+      <ScrollTop />
       <Routes>
         <Route path="/" element={<Home />} />
 
@@ -51,8 +52,9 @@ const Router = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/case-study" element={<Case_study />} />
         <Route path="/privacy-policy" element={<Privacy_Policy />} />
-        <Route path="/terms-condition" element={<Terms_condition />} />
-         
+        <Route path="/terms-conditions" element={<Terms_condition />} />
+                {/* <Route path="/Blogs" "Blogs"} /> */}
+        Blogs
       </Routes>
     </BrowserRouter>
   );

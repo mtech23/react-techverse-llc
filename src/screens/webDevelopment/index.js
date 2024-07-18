@@ -34,66 +34,66 @@ import digitalmarketing01 from "../../asserts/images/digital-marketing-01.png";
 import digitalmarketing02 from "../../asserts/images/digital-marketing-02.png";
 import webdevelopmenthero from "../../asserts/images/web-development-hero.png";
 import TrustedPartners from "../../Components/TrustedPartners";
-import {Helmet} from 'react-helmet'
+import { Helmet } from 'react-helmet'
 gsap.registerPlugin(MotionPathPlugin);
 
 const WebDevelopment = () => {
   Aos.init();
 
-  useEffect(() => {
-    gsap.set(".road", { opacity: 1 });
-    const circles = gsap.utils.toArray(".ani_cnt .icc");
-    const tl2 = gsap.timeline({ repeat: 20 });
+  // useEffect(() => {
+  //   gsap.set(".road", { opacity: 1 });
+  //   const circles = gsap.utils.toArray(".ani_cnt .icc");
+  //   const tl2 = gsap.timeline({ repeat: 20 });
 
-    circles.forEach((circle, i) => {
-      let start = i / circles.length; // secret sauce for circles
-      tl2.to(
-        circle,
-        {
-          motionPath: {
-            path: ".mypath",
-            align: ".mypath",
-            alignOrigin: [0.5, 0.4],
-            start: start,
-            end: start + 1,
-          },
-          ease: "none",
-          duration: 40,
-        },
-        0
-      );
-    });
-  }, []);
+  //   circles.forEach((circle, i) => {
+  //     let start = i / circles.length; // secret sauce for circles
+  //     tl2.to(
+  //       circle,
+  //       {
+  //         motionPath: {
+  //           path: ".mypath",
+  //           align: ".mypath",
+  //           alignOrigin: [0.5, 0.4],
+  //           start: start,
+  //           end: start + 1,
+  //         },
+  //         ease: "none",
+  //         duration: 40,
+  //       },
+  //       0
+  //     );
+  //   });
+  // }, []);
 
   return (
     <UserLayout>
-             <Helmet>
-                <meta charSet="utf-8" />
-                <title>Build First Impression with Techverse LLC Web Development  </title>
-                <meta name="  Web development is a necessity in today’s digital age to perform better among competitors. We build the perfect website for solid business. " />
-            </Helmet>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Build First Impression with Techverse LLC Web Development  </title>
+        <meta name="  Web development is a necessity in today’s digital age to perform better among competitors. We build the perfect website for solid business. " />
+      </Helmet>
       <HeroSection
         innerbgclass={"inner-bgColor"}
-        title={"We"}
-        subtitle={"Design Websites"}
-        title2={"That Make Businesses Shine Online"}
+        title={"Building Websites That Reflect Your Vision"}
+        subtitle={"  And "}
+        title2={"Goals"}
         tagline={
-          "Grow your business’s online presence and witness an increase in conversions with Techverse."
-        }
-        className={"web-development_hero_img"}
-        heroimage={webdevelopmenthero}
-        CtnbuttonComponent={Ctnbutton}
-        ctnButtonProps={{
-          phoneicon: phoneicon,
-          calltext: "Call Now",
-          primaryButtonClass: "btn_with_icon",
-          chaticon: chaticon,
-          chatenow: "Chat Now",
-          secondaryButtonClass: "btn_with_icon btn_secondary  ",
+          "We specialize in creating websites that mirror your unique vision and propel your business goals forward. Our expert team of developers understands that your website is more than just an online presence—it's a reflection of your brand's identity and aspirations. Discover the power of personalized web development with Techverse LLC, where your vision comes to life in every pixel"
+      }
+      className={"web-development_hero_img"}
+      heroimage={webdevelopmenthero}
+      CtnbuttonComponent={Ctnbutton}
+      ctnButtonProps={{
+        phoneicon: phoneicon,
+        calltext: "Call Now",
+        primaryButtonClass: "btn_with_icon",
+        chaticon: chaticon,
+        chatenow: "Chat Now",
+        secondaryButtonClass: "btn_with_icon btn_secondary  ",
 
-          // playstore: playstore,
-          // appstore: appstore
-        }}
+        // playstore: playstore,
+        // appstore: appstore
+      }}
       />
       {/* <!-- Trusted Partners --> */}
       <TrustedPartners />
@@ -196,10 +196,10 @@ const WebDevelopment = () => {
 
       {/* process we use */}
       <Process
-      para="At Techverse LLC, we believe in making dynamic and effective web solutions tailored to meet your unique business needs. Our web development process integrates cutting-edge technology with creative design, ensuring your digital presence stands out in the competitive landscape."
-      
-      
-      
+        para="At Techverse LLC, we believe in making dynamic and effective web solutions tailored to meet your unique business needs. Our web development process integrates cutting-edge technology with creative design, ensuring your digital presence stands out in the competitive landscape."
+
+
+
       />
 
       {/* <!-- Technologies --> */}

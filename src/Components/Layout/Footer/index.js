@@ -1,7 +1,8 @@
 
 import { useLocation } from "react-router-dom";
-
+import bicon from '../../../asserts/images/b-icon.png'
 import { Link } from "react-router-dom";
+import starticon from '../../../asserts/images/start-icon.png'
 import Particles from "react-particles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -61,7 +62,7 @@ export const Footer = (props) => {
 
 
 
-  const [budget, setBudget] = useState(500);
+  const [budget, setBudget] = useState(0);
 
 
   const particlesInit = useCallback(async (engine) => {
@@ -74,7 +75,7 @@ export const Footer = (props) => {
     await console.log(container);
   }, []);
 
-  // const notify = () => toast.success("Thank You");
+  const notify = () => toast.success("Thank You");
   const [formdata, setFormData] = useState("")
 
   const handlechange = (e) => {
@@ -112,31 +113,102 @@ export const Footer = (props) => {
         },
         // No need to set headers for FormData
         body: formDataMethod
+        
       });
-
-      if (!contact_api.ok) {
-        throw new Error('Network response was not ok ' + contact_api.statusText);
-      }
+      notify();
+      // if (!contact_api.ok) {
+      //   // throw new Error('Network response was not ok ' + contact_api.statusText);
+      //   notify();
+      // }
 
       const response = await contact_api.json();
-      if (response?.status == true) {
-        // notify()
-      }
+      // if (response?.status == true) {
+      //   notify()
+      // }
       console.log('Success:', response);
       // Handle successful response
-      return response;
+      // return response;
     } catch (error) {
+      notify();
       console.error("Error in adding:", error);
       // Handle error response
-      throw error;
+      // throw error;
     }
   }
+  useEffect(() => {
+    window.particlesJS("particles-js", {
+      particles: {
+        number: { value: 100, density: { enable: true, value_area: 800 } },
+        color: { value: "#ffffff" },
+        shape: {
+          type: "circle",
+          stroke: { width: 2, color: "#000000" },
+          polygon: { nb_sides: 5 },
+          image: { src: "img/github.svg", width: 100, height: 100 },
+        },
+        opacity: {
+          value: 0.5,
+          random: false,
+          anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
+        },
+        size: {
+          value: 5,
+          random: true,
+          anim: { enable: false, speed: 40, size_min: 5, sync: false },
+        },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#ffffff",
+          opacity: 0.4,
+          width: 1,
+        },
+        move: {
+          enable: true,
+          speed: 6,
+          direction: "none",
+          random: false,
+          straight: false,
+          out_mode: "out",
+          bounce: false,
+          attract: { enable: false, rotateX: 600, rotateY: 1200 },
+        },
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: true, mode: "repulse" },
+          onclick: { enable: true, mode: "push" },
+          resize: true,
+        },
+        modes: {
+          grab: { distance: 400, line_linked: { opacity: 1 } },
+          bubble: {
+            distance: 400,
+            size: 40,
+            duration: 2,
+            opacity: 8,
+            speed: 3,
+          },
+          repulse: { distance: 200, duration: 0.4 },
+          push: { particles_nb: 4 },
+          remove: { particles_nb: 2 },
+        },
+      },
+      retina_detect: true,
+    });
 
+    // Clean up
+    return () => {
+      window.pJSDom && window?.pJSDom[0]?.pJS?.fn.vendors.destroypJS();
+      window.pJSDom = [];
+    };
+  }, []);
 
   return (
     <>
- 
-  {/* <!-- Contact --> */}
+
+      {/* <!-- Contact --> */}
       <section class="techVerse_contact">
         <div class="container-fluid">
           <div class="row">
@@ -243,13 +315,13 @@ export const Footer = (props) => {
                                   type="range"
                                   // value={budget}
                                   // setBudget={value}
-                                  min="500"
-                                  max="5000"
+                                  min={0}
+                                  max={50000}
                                   class="budget-slider"
                                   id="budgetRange"
                                 />
- 
- 
+
+
                                 {/* <input
                                   onChange={handlechange}
                                   name="budget"
@@ -330,8 +402,8 @@ export const Footer = (props) => {
           </div>
         </div>
       </section>
- 
- 
+
+
 
       {/* <!-- Partners --> */}
 
@@ -384,76 +456,76 @@ export const Footer = (props) => {
                     <div class="col-md-4">
                       <div class="footer_about">
                         <div class="footer_logo_img_box">
-                          <a href="#">
+                          <Link to={"/"}>
                             <img src={mainSiteLogo} alt="" />
-                          </a>
+                          </Link>
                         </div>
                       </div>
                       <ul class="icon_list_items footer__links footer_contactUS">
-                        <li class="icon_list_item footer__link">
-                          <a href="tel:(866) 123-4567">
+                        {/* <li class="icon_list_item footer__link">
+                          <Link href="tel:(866) 123-4567">
                             <span class="icon_list_icon">
                               <i class="fa-solid fa-phone"></i>
                             </span>
                             <span class="icon_list_text">
                               For Sales: (866) 123-4567
                             </span>
-                          </a>
-                        </li>
-                        <li class="icon_list_item footer__link">
-                          <a href="tel:+1 234-567-890">
+                          </Link>
+                        </li> */}
+                        {/* <li class="icon_list_item footer__link">
+                          <Link href="tel:+1 234-567-890">
                             <span class="icon_list_icon">
                               <i class="fa-solid fa-phone"></i>
                             </span>
                             <span class="icon_list_text">
                               For Billing: +1 234-567-890
                             </span>
-                          </a>
-                        </li>
+                          </Link>
+                        </li> */}
                         <li class="icon_list_item footer__link">
-                          <a href="mailto:info@example.com">
+                          <Link href="mailto:info@example.com">
                             <span class="icon_list_icon">
                               <i class="fa-solid fa-envelope"></i>
                             </span>
                             <span class="icon_list_text">info@example.com</span>
-                          </a>
+                          </Link>
                         </li>
                         <li class="icon_list_item footer__link">
-                          <a href="#">
+                          <Link to={"/"}>
                             <span class="icon_list_icon">
                               <i class="fa-solid fa-location-dot"></i>
                             </span>
                             <span class="icon_list_text">USA</span>
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                       <div class="social_links">
-                        <a href="#" class="social_link">
+                        <Link to={"/"} class="social_link">
                           <i class="fa-brands fa-facebook"></i>
-                        </a>
-                        <a href="#" class="social_link">
+                        </Link>
+                        <Link to={"/"} class="social_link">
                           <i class="fa-brands fa-youtube"></i>
-                        </a>
-                        <a href="#" class="social_link">
+                        </Link>
+                        <Link to={"/"} class="social_link">
                           <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                        <a href="#" class="social_link">
+                        </Link>
+                        <Link to={"/"} class="social_link">
                           <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="#" class="social_link">
+                        </Link>
+                        <Link to={"/"} class="social_link">
                           <i class="fa-brands fa-square-pinterest"></i>
-                        </a>
-                        <a href="#" class="social_link">
+                        </Link>
+                        <Link to={"/"} class="social_link">
                           <i class="fa-solid fa-star"></i>
-                        </a>
+                        </Link>
                       </div>
                       <div class="footer_bbb">
-                        <a href="#">
-                          <img src="images/b-icon.png" alt="" />
-                        </a>
-                        <a href="#">
-                          <img src="images/start-icon.png" alt="" />
-                        </a>
+                        <Link to={"/"}>
+                          <img src={bicon} alt="" />
+                        </Link>
+                        <Link to={"/"}>
+                          <img src={starticon} alt="" />
+                        </Link>
                       </div>
                       <p class="company_wishText">
                         A Company oF More Wish Digital
@@ -461,34 +533,34 @@ export const Footer = (props) => {
                     </div>
                     <div class="col-md-3">
                       <div class="footer__quick-links">
-                        <h3 class="foooter__subhead">Quick Links</h3>
+                        <h3 class="foooter__subhead">  Services</h3>
                         <ul class="icon_list_items footer__links footer__categories_links">
                           <li class="footer__link">
-                            <a href="#">Business Development</a>
+                            <Link to={"/business-devlopment"} as={"link"}>Business Development</Link>
                           </li>
                           <li class="footer__link">
-                            <a href="#">Development</a>
+                            <Link to={"/"}>Development</Link>
                           </li>
                           <li class="footer__link">
-                            <a href="#">Mobile Application Development</a>
+                            <Link to={"/"}>Mobile Application Development</Link>
                           </li>
                           <li class="footer__link">
-                            <a href="#">Ecommerce Development</a>
+                            <Link to={"/ecommerse-development"}>Ecommerce Development</Link>
+                          </li>
+                          {/* <li class="footer__link">
+                            <Link to={"/"}>Game Development</Link>
+                          </li> */}
+                          <li class="footer__link">
+                            <Link to={"/web-development"}>Web Development</Link>
                           </li>
                           <li class="footer__link">
-                            <a href="#">Game Development</a>
+                            <Link to={"/"}>Android App Development</Link>
                           </li>
                           <li class="footer__link">
-                            <a href="#">Web Development</a>
+                            <Link to={"/"}>iOS App Development</Link>
                           </li>
                           <li class="footer__link">
-                            <a href="#">Android App Development</a>
-                          </li>
-                          <li class="footer__link">
-                            <a href="#">iOS App Development</a>
-                          </li>
-                          <li class="footer__link">
-                            <a href="#">Smart Contract Development</a>
+                            <Link to={"/"}>Smart Contract Development</Link>
                           </li>
                         </ul>
                       </div>
@@ -498,51 +570,49 @@ export const Footer = (props) => {
                         <h3 class="foooter__subhead">Industries</h3>
                         <ul class="icon_list_items footer__links footer__categories_links">
                           <li class="footer__link">
-                            <a href="#">Advertising</a>
+                            <Link to={"/"}>Advertising</Link>
                           </li>
                           <li class="footer__link">
-                            <a href="#">Gaming & leisure</a>
+                            <Link to={"/"}>Gaming & leisure</Link>
                           </li>
                           <li class="footer__link">
-                            <a href="#">E-commerce & Retails</a>
+                            <Link to={"/ecommerse"}>E-commerce & Retails</Link>
                           </li>
                           <li class="footer__link">
-                            <a href="#">Media & Entertainment</a>
+                            <Link to={"/"}>Media & Entertainment</Link>
                           </li>
                           <li class="footer__link">
-                            <a href="#">Real Estate & Property</a>
+                            <Link to={"/realEstate-and-property"}>Real Estate & Property</Link>
                           </li>
                           <li class="footer__link">
-                            <a href="#">Software & High Tech</a>
+                            <Link to={"/"}>Software & High Tech</Link>
                           </li>
                           <li class="footer__link">
-                            <a href="#">Sports Teams & Leagues</a>
+                            <Link to={"/sports"}>Sports Teams & Leagues</Link>
                           </li>
                           <li class="footer__link">
-                            <a href="#">Health & Life Sciences</a>
+                            <Link to={"/health-care"}>Health & Life Sciences</Link>
                           </li>
                           <li class="footer__link">
-                            <a href="#">Travel & Hospitality</a>
+                            <Link to={"/travel"}>Travel & Hospitality</Link>
                           </li>
                         </ul>
                       </div>
                     </div>
                     <div class="col-md-2">
                       <div class="footer__quick-links">
-                        <h3 class="foooter__subhead">About</h3>
+                        <h3 class="foooter__subhead">qUIC Link</h3>
                         <ul class="icon_list_items footer__links footer__categories_links">
                           <li class="footer__link">
-                            <a href="#">Pricing</a>
+                            <Link to={"/"}>About</Link>
                           </li>
                           <li class="footer__link">
-                            <a href="#">Contact us</a>
+                            <Link to={"/contact"}>  Blogs</Link>
                           </li>
                           <li class="footer__link">
-                            <a href="#">Podcast</a>
+                            <Link to={"/"}>Contact</Link>
                           </li>
-                          <li class="footer__link">
-                            <a href="#">Guest Posts</a>
-                          </li>
+                         
                         </ul>
                       </div>
                     </div>
@@ -557,12 +627,12 @@ export const Footer = (props) => {
                       </div>
                       <div class="col-lg-8">
                         <div class="techVerse_powerdby">
-                          {/* <a href="#">Corporate Profile</a>
-                          <a href="#">Our Creations</a>
-                          <a href="#">Podcast</a>
-                          <a href="#">Blog</a> */}
-                          <Link to={"/privacy-policy"} >Privacy Policy</Link>
-                          <Link to={"/terms-condition"} >Terms & Conditions</Link>
+                          {/* <Link to={"/"}>Corporate Profile</Link>
+                          <Link to={"/"}>Our Creations</Link>
+                          <Link to={"/"}>Podcast</Link>
+                          <Link to={"/"}>Blog</Link> */}
+                          <Link to={"/privacy-policy"}>Privacy Policy</Link>
+                          <Link to={"/terms-conditions"}>Terms & Conditions</Link>
                         </div>
                       </div>
                       <div class="col-md-12">
@@ -613,15 +683,15 @@ export const Footer = (props) => {
                           </form>
                         </div>
                         <div class="hero_brands">
-                          <a href="#" class="hero_brands_img">
+                          <Link to={"/"} class="hero_brands_img">
                             <img src={dmca} alt="" />
-                          </a>
-                          <a href="#" class="hero_brands_img">
+                          </Link>
+                          <Link to={"/"} class="hero_brands_img">
                             <img src={dmcacomplaint} alt="" />
-                          </a>
-                          <a href="#" class="hero_brands_img">
+                          </Link>
+                          {/* <Link to={"/"} class="hero_brands_img">
                             <img src={playstore} alt="" />
-                          </a>
+                          </Link> */}
                         </div>
                         <div class="footer_certicate">
                           <img src={footerCertificate} alt="" />
@@ -633,9 +703,11 @@ export const Footer = (props) => {
               </div>
             </div>
           </div>
-          <div id="tsparticlesss">
+          {/* <div id="particles-js">
             <Particles
-              id="tsparticlesss"
+              style={{ position: "absolute" , top:"200px"}}
+              id="particles-js"
+              className="customClass"
               canvasClassName="abc"
               init={particlesInit}
               loaded={particlesLoaded}
@@ -644,7 +716,6 @@ export const Footer = (props) => {
                   color: {
                     value: "",
                   },
-                  height: 20,
                 },
                 fpsLimit: 120,
                 interactivity: {
@@ -671,10 +742,10 @@ export const Footer = (props) => {
                 },
                 particles: {
                   color: {
-                    value: "#ffffff",
+                    value: "ff0000",
                   },
                   links: {
-                    color: "#ffffff",
+                    color: "ff0000",
                     distance: 150,
                     enable: true,
                     opacity: 0.5,
@@ -710,7 +781,8 @@ export const Footer = (props) => {
                 detectRetina: true,
               }}
             />
-          </div>
+          </div> */}
+          <div id="particles-js" style={{ maxWidth: "" }}></div>
         </section>
       </footer>
 

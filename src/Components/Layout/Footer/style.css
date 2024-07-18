@@ -2,13 +2,6 @@
   background-image: linear-gradient(322deg, #002025, #000000) !important;
   padding: 80px 0 30px;
 }
-<<<<<<< HEAD
-=======
-.techVerse_footer a {
-  z-index: 999999;
-  position: relative;
-}
->>>>>>> 31be2fcfa14809246778d7fe6714cc16540593b3
 .footer_logo_img_box {
   margin: 0 0 20px;
   max-width: 170px;
@@ -169,15 +162,6 @@ p.company_wishText {
     margin: 0 auto;
   } */
 
-#particles-js {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
 /* canvas.particles-js-canvas-el {
   width: 100%;
   height: 100% !important;
@@ -206,11 +190,12 @@ p.company_wishText {
 } */
 #custom_partilce {
   position: relative;
-  z-index: -1;
 }
+
 @media (max-width: 736px) {
   .techVerse_footer .foooter__subhead {
     margin: 20px 0 10px;
     font-size: 20px;
   }
 }
+

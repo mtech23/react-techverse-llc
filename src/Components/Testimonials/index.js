@@ -20,7 +20,7 @@ import video7 from "../../asserts/images/video7.mp4"
 import video8 from "../../asserts/images/video8.mp4"
 import testLine from "../../asserts/images/test-Line.png";
 const videos = [
-   {
+  {
     id: 1,
     thumbnail: face1,
     videoSrc: video1
@@ -48,7 +48,7 @@ const videos = [
   {
     id: 6,
     thumbnail: face6,
-    videoSrc: video6
+    videoSrc: video7
   },
   {
     id: 7,
@@ -64,19 +64,19 @@ const videos = [
 ];
 
 
- 
+
 const Testimonials = () => {
-  const [selectedVideo , setSelectedVideo] = useState(videos[0]);;
+  const [selectedVideo, setSelectedVideo] = useState(1);
 
+  console.log("selectedVideo", selectedVideo);
 
-
- 
-  console.log("selectedVideo" , selectedVideo)
   const handleThumbnailClick = (video) => {
-    console.log("video"  , video)
- 
-    setSelectedVideo(video);
+    console.log("video", video?.id);
+    setSelectedVideo(video); // Update state with the clicked video
   };
+
+  console.log("selecttedid", selectedVideo)
+
   return (
     <>
       <section class="techVerse_testimonials">
@@ -119,13 +119,26 @@ const Testimonials = () => {
                     {/* {videos?.map((video) => (
                       <img src={video.thumbnail} class="face_2" data-alt="tab2" key={video.id} onClick={() => handleThumbnailClick(video)} />
                     ))} */}
-                    {videos?.map((video) => (
+                    {/* {videos?.map((video) => (
                       <img
                         src={video.thumbnail}
                         className={`face_${video?.id}  ${selectedVideo.id === video.id ? 'active' : ''}`}
                         data-alt="tab2"
                         key={video.id}
                         onClick={() => handleThumbnailClick(video)}
+                        alt={`Thumbnail ${video.id}`}
+                      />
+                    ))} */}
+
+
+
+                    {videos?.map((video) => (
+                      <img
+                        src={video.thumbnail}
+                        className={`face_${video?.id}  ${selectedVideo == video.id ? 'active' : ''}`}
+                        data-alt="tab2"
+                        key={video.id}
+                        onClick={() => handleThumbnailClick(video?.id)}
                         alt={`Thumbnail ${video.id}`}
                       />
                     ))}
@@ -147,8 +160,8 @@ const Testimonials = () => {
                   data-aos-duration="3000"
                 >
                   <div class="content active" id="tab1">
-                    {selectedVideo && (
-                      <div class="rc">
+                    {videos?.map((items, index) => (
+                      < div key={index} class={ items?.id == selectedVideo ? "d-block rc" : " rc d-none"}>
                         <video
                           id="testimonialvideo"
                           autoPlay
@@ -157,15 +170,18 @@ const Testimonials = () => {
                           playsInline
                           preload="auto"
                         >
-                          <source src={selectedVideo?.videoSrc} type="video/mp4" />
+                          <source src={items?.videoSrc || videos[0].videoSrc} type="video/mp4" />
                           Your browser does not support the video tag.
                         </video>
+                        </div >
+
+                        ))
+
+                    }
+                        <h2>David Ruffer</h2>
+                        <p>Lorem Ipsum is simply dummy</p>
                       </div>
-                       )} 
-                    <h2>David Ruffer</h2>
-                    <p>Lorem Ipsum is simply dummy</p>
-                  </div>
-                  {/* <div class="content" id="tab2">
+                {/* <div class="content" id="tab2">
                     <div class="rc">
                       <video
                         id="testimonialvideo"
@@ -182,25 +198,25 @@ const Testimonials = () => {
                     <h2>David Ruffer</h2>
                     <p>Lorem Ipsum is simply dummy</p>
                   </div> */}
-                  <div class="content" id="tab3">
-                    <button
-                      class="play-icon"
-                      data-toggle="modal"
-                      data-target="#exampleModal"
-                    >
-                      <i class="fa-solid fa-play"></i>
-                    </button>
-                    <p>
-                      There are many variations of passages of Lorem Ipsum
-                      available, but the majority have suffered alteration in
-                      some form, by injected humour, or randomised words which
-                      don't look even slightly believable. If you are going to
-                      use a passage of Lorem Ipsum, you need to be sure there
-                      isn't anything embarrassing hidden in the middle of text.
-                      All the.
-                    </p>
-                    <p>Tab 3</p>
-                  </div>
+                      <div div class= "content" id = "tab3" >
+                  <button
+                    class="play-icon"
+                    data-toggle="modal"
+                    data-target="#exampleModal"
+                  >
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                  <p>
+                    There are many variations of passages of Lorem Ipsum
+                    available, but the majority have suffered alteration in
+                    some form, by injected humour, or randomised words which
+                    don't look even slightly believable. If you are going to
+                    use a passage of Lorem Ipsum, you need to be sure there
+                    isn't anything embarrassing hidden in the middle of text.
+                    All the.
+                  </p>
+                  <p>Tab 3</p>
+                </div>
                   <div class="content" id="tab4">
                     <button
                       class="play-icon"
@@ -282,7 +298,7 @@ const Testimonials = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section >
       <div
         class="modal fade testimoial_modal"
         id="exampleModal"

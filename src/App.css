@@ -54,7 +54,7 @@ h2 {
 }
 .techVerse_navbar .nav-link {
   color: #fff;
-  font-size: 17px;
+  font-size: 15px;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
 }
@@ -1037,9 +1037,10 @@ body .rc h2 {
 }
 .techVerse-contact-imgIcon {
   position: absolute;
-  bottom: -70px;
-  left: 36%;
+  /* bottom: -70px; */
+  left: 73%;
   width: 170px;
+  top: 10px;
 }
 .contact-laptopBG {
   background-image: url(./asserts//images/contact-laptopBG.png);
@@ -1153,6 +1154,7 @@ body .rc h2 {
   border: unset;
 }
 .budget-content {
+  z-index: 999!important;
   width: 100%;
 }
 .budget-slider {
@@ -1639,14 +1641,14 @@ top: 401px!important;
 
 /* ---- particles.js container ---- */
 
-#particles-js {
+/* #particles-js {
   width: 100%;
   height: 100%;
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   position: relative;
-}
+} */
 #particles-js1 {
   width: 100%;
   height: 100%;
@@ -4020,3 +4022,39 @@ font-size: 11px !important;
     top: -6px;
   }
 }
+
+
+ 
+.popup_modal .modal-body {
+  background-color: #182139;
+  padding: 25px;
+  border-radius: 15px;
+}
+ 
+ 
+.popup_modal-close {
+  color: #fff;
+  opacity: 1;
+  font-weight: 400;
+  /* background: red !important; */
+  background-image: linear-gradient(45deg, #3dc1ff, #02a9f7);
+  padding: 10px !important;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -20px;
+  top: -20px;
+}
+ 
+ 
+  .popup_modal-close {
+    width: 35px;
+    height: 34px;
+    right: -7px;
+    top: -17px;
+}
+ 

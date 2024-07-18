@@ -6,6 +6,7 @@ import herophonemockupgroup from "../../asserts/images/hero-phone-mockup-group.p
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import bluecubelarge from "../../asserts/images/blue-cube-large.png";
 import Particles from "react-particles";
+import ServiceParticle from '../../Components/ServiceParticle/ServiceParticle'
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
@@ -130,30 +131,30 @@ const Home = () => {
 
   Aos.init();
 
-  useEffect(() => {
-    gsap.set(".road", { opacity: 1 });
-    const circles = gsap.utils.toArray(".ani_cnt .icc");
-    const tl2 = gsap.timeline({ repeat: 20 });
+  // useEffect(() => {
+  //   gsap.set(".road", { opacity: 1 });
+  //   const circles = gsap.utils.toArray(".ani_cnt .icc");
+  //   const tl2 = gsap.timeline({ repeat: 20 });
 
-    circles.forEach((circle, i) => {
-      let start = i / circles.length; // secret sauce for circles
-      tl2.to(
-        circle,
-        {
-          motionPath: {
-            path: ".mypath",
-            align: ".mypath",
-            alignOrigin: [0.5, 0.4],
-            start: start,
-            end: start + 1,
-          },
-          ease: "none",
-          duration: 40,
-        },
-        0
-      );
-    });
-  }, []);
+  //   circles.forEach((circle, i) => {
+  //     let start = i / circles.length; // secret sauce for circles
+  //     tl2.to(
+  //       circle,
+  //       {
+  //         motionPath: {
+  //           path: ".mypath",
+  //          ,
+  //           alignOrigin: [0.5, 0.4],
+  //           start: start,
+  //           end: start + 1,
+  //         },
+  //         ease: "none",
+  //         duration: 40,
+  //       },
+
+  //     );
+  //   });
+  // }, []);
 
 
   const sectionRef = useRef(null);
@@ -295,50 +296,50 @@ const Home = () => {
 
 
 
-  // const sec2 = useRef(null);
+  const website = useRef(null);
 
-  // useEffect(() => {
-  //   const sections = sec2?.current.querySelectorAll('.sevices_hover');
+  useEffect(() => {
+    const sections = website?.current.querySelectorAll('.techVerse_webSolution');
 
-  //   sections.forEach((section) => {
-  //     const container = section.querySelector('.services_inner_images');
+    sections.forEach((section) => {
+      const container = section.querySelector('.techVerse_webSolution_hover');
 
-  //     const handleMouseMove = (event) => {
-  //       const rect = section.getBoundingClientRect();
-  //       const mouseX = event.clientX - rect.left;
-  //       const mouseY = event.clientY - rect.top;
-  //       const centerX = rect.width / 2;
-  //       const centerY = rect.height / 2;
-  //       const distX = (mouseX - centerX) * 0.1; // Adjust multiplier for desired effect
-  //       const distY = (mouseY - centerY) * 0.1; // Adjust multiplier for desired effect
+      const handleMouseMove = (event) => {
+        const rect = section.getBoundingClientRect();
+        const mouseX = event.clientX - rect.left;
+        const mouseY = event.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const distX = (mouseX - centerX) * 0.1; // Adjust multiplier for desired effect
+        const distY = (mouseY - centerY) * 0.1; // Adjust multiplier for desired effect
 
-  //       gsap.to(container, {
-  //         x: distX,
-  //         y: distY,
-  //         zIndex: 10, // Bring to front
-  //         ease: 'power1.out',
-  //       });
-  //     };
+        gsap.to(container, {
+          x: distX,
+          y: distY,
+          zIndex: 10, // Bring to front
+          ease: 'power1.out',
+        });
+      };
 
-  //     const handleMouseLeave = () => {
-  //       gsap.to(container, {
-  //         x: 0,
-  //         y: 0,
-  //         zIndex: 1, // Reset to default
-  //         ease: 'power1.out',
-  //         clearProps: 'all'
-  //       });
-  //     };
+      const handleMouseLeave = () => {
+        gsap.to(container, {
+          x: 0,
+          y: 0,
+          zIndex: 1, // Reset to default
+          ease: 'power1.out',
+          clearProps: 'all'
+        });
+      };
 
-  //     section.addEventListener('mousemove', handleMouseMove);
-  //     section.addEventListener('mouseleave', handleMouseLeave);
+      section.addEventListener('mousemove', handleMouseMove);
+      section.addEventListener('mouseleave', handleMouseLeave);
 
-  //     return () => {
-  //       section.removeEventListener('mousemove', handleMouseMove);
-  //       section.removeEventListener('mouseleave', handleMouseLeave);
-  //     };
-  //   });
-  // }, []);
+      return () => {
+        section.removeEventListener('mousemove', handleMouseMove);
+        section.removeEventListener('mouseleave', handleMouseLeave);
+      };
+    });
+  }, []);
   return (
     <UserLayout>
       <div className="relative" ref={sectionRef}>
@@ -690,73 +691,77 @@ const Home = () => {
       />
 
       {/* <!-- Website --> */}
-      <section class="techVerse_webSolution">
-        <img
-          class="techVerse_webSolution_icon1 animation11"
-          src={donateWhite}
-          alt=""
-        />
-        <img
-          class="techVerse_webSolution_icon2 animation22"
-          src={peramidicon}
-          alt=""
-        />
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="techVerse_webSolution_content">
-                <div class="sec_title">
-                  <h2
-                    class="sec_title_head color-lightBlue1"
-                    data-aos="fade-up"
-                    data-aos-offset="0"
-                    data-aos-duration="1000"
-                  >
-                    Revolutionize Your Business Presence
-                    <span class="color-lightBlue2"> With </span>A Custom Website
-                    Design
-                  </h2>
-                  <p
-                    data-aos="fade-up"
-                    data-aos-offset="0"
-                    data-aos-duration="2000"
-                  >
-                    Our expert team combines cutting-edge technology with
-                    creative finesse to craft custom websites that not only
-                    enhance user experience but also drive tangible results.
-                  </p>
-                  <div
-                    class="techVerse_hero_btns"
-                    data-aos="fade-up"
-                    data-aos-offset="0"
-                    data-aos-duration="3000"
-                  >
-                    <a href="tel:+(1) 23456-7890" class="btn_with_icon">
-                      <img
-                        class="btn_with_icon_img"
-                        src={phoneicongreen}
-                        alt=""
-                      />
-                      <span class="btn_with_icon_text">+(1) 23456-7890</span>
-                    </a>
-                    <a href="#" class="btn_with_icon btn_secondary">
-                      <img
-                        class="btn_with_icon_img"
-                        src={chaticonblue}
-                        alt=""
-                      />
-                      <span class="btn_with_icon_text">Start A Live Chat</span>
-                    </a>
+      <div ref={website} >
+        <section   class="techVerse_webSolution ">
+          <div className="techVerse_webSolution_hover">
+            <img
+              class="techVerse_webSolution_icon1 animation11"
+              src={donateWhite}
+              alt=""
+            />
+            <img
+              class="techVerse_webSolution_icon2 animation22"
+              src={peramidicon}
+              alt=""
+            />
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="techVerse_webSolution_content">
+                  <div class="sec_title">
+                    <h2
+                      class="sec_title_head color-lightBlue1"
+                      data-aos="fade-up"
+                      data-aos-offset="0"
+                      data-aos-duration="1000"
+                    >
+                      Revolutionize Your Business Presence
+                      <span class="color-lightBlue2"> With </span>A Custom Website
+                      Design
+                    </h2>
+                    <p
+                      data-aos="fade-up"
+                      data-aos-offset="0"
+                      data-aos-duration="2000"
+                    >
+                      Our expert team combines cutting-edge technology with
+                      creative finesse to craft custom websites that not only
+                      enhance user experience but also drive tangible results.
+                    </p>
+                    <div
+                      class="techVerse_hero_btns"
+                      data-aos="fade-up"
+                      data-aos-offset="0"
+                      data-aos-duration="3000"
+                    >
+                      <a href="tel:+(1) 23456-7890" class="btn_with_icon">
+                        <img
+                          class="btn_with_icon_img"
+                          src={phoneicongreen}
+                          alt=""
+                        />
+                        <span class="btn_with_icon_text">+(1) 23456-7890</span>
+                      </a>
+                      <a href="#" class="btn_with_icon btn_secondary">
+                        <img
+                          class="btn_with_icon_img"
+                          src={chaticonblue}
+                          alt=""
+                        />
+                        <span class="btn_with_icon_text">Start A Live Chat</span>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
+        </section>
+      </div>
       {/* <!-- Services --> */}
       <section ref={sec2} class="techVerse_services" id="particles-js2">
+        <ServiceParticle />
         <div className="sevices_hover">
           <div className="services_inner_images">
             <img

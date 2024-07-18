@@ -1,0 +1,17 @@
+/* src/components/ParticlesBackground.css */
+
+/* ---- reset ---- */
+body {
+  margin: 0;
+}
+
+canvas {
+  display: block;
+}
+
+/* ---- particles.js container ---- */
+#particles-container {
+  position: absolute;
+  width: 350px;
+  height: 80%;
+}

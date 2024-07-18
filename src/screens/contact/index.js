@@ -47,7 +47,7 @@ const Contact = () => {
     getCountryByIP();
   }, []);
 
-  const [budget, setBudget] = useState(500);
+  const [budget, setBudget] = useState(0);
 
 
   const notify = () => toast.success("Thank You");
@@ -88,7 +88,8 @@ const Contact = () => {
       });
 
       if (!contact_api.ok) {
-        throw new Error('Network response was not ok ' + contact_api.statusText);
+        notify();
+        // throw new Error('Network response was not ok ' + contact_api.statusText);
       }
 
       const response = await contact_api.json();
@@ -110,9 +111,10 @@ const Contact = () => {
       // Handle successful response
       return response;
     } catch (error) {
+      notify();
       console.error("Error in adding:", error);
       // Handle error response
-      throw error;
+      // throw error;
     }
   }
 
@@ -319,8 +321,8 @@ const Contact = () => {
                                 <input
                                   onChange={handlechange}
                                   type="range"
-                                  min="500"
-                                  max="5000"
+                                  min="0"
+                                  max={50000}
                                   // value="50"
                                   class="budget-slider"
                                   id="budgetRange"

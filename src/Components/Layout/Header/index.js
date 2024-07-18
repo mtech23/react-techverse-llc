@@ -204,6 +204,10 @@ export const Header = (props) => {
             <li class="nav-item">
               <Link class="nav-link" to={"/case-study"}>Case study</Link>
             </li>
+            <li className="nav-item">
+              <a className="nav-link" href="https://techversellc.com/blogs/">Blogs</a>
+            </li>
+
             <li class="nav-item">
               <Link class="nav-link" to={"/contact"}>Contact</Link>
             </li>
@@ -264,25 +268,25 @@ export const Header = (props) => {
                       <li>
                         <Link to={"/mobile-app"} class="dropdown_linkBox">
                           <h4>Mobile Application Development</h4>
-                          <p>Custom Mobile App Development.</p>
+                          <p>Custom Mobile App Development</p>
                         </Link>
                       </li>
                       <li>
                         <Link to={"/ecommerse-development"} class="dropdown_linkBox">
                           <h4>E-Commerce Development</h4>
-                          <p>Custom Mobile App Development.</p>
+                          <p>Top-Of-The-Line Ecommerce Solutions</p>
                         </Link>
                       </li>
                       <li>
                         <Link to={"/app-store"} class="dropdown_linkBox">
                           <h4>App Store</h4>
-                          <p>Custom Mobile App Development.</p>
+                          <p>Optimization Development Company</p>
                         </Link>
                       </li>
                       <li>
                         <Link to={"/business-devlopment"} class="dropdown_linkBox">
                           <h4>Business Development</h4>
-                          <p>Custom Mobile App Development.</p>
+                          <p>Optimization Development Company</p>
                         </Link>
                       </li>
                     </ul>
@@ -293,19 +297,19 @@ export const Header = (props) => {
                       <li>
                         <Link to={"/web-development"} class="dropdown_linkBox">
                           <h4>Web Development</h4>
-                          <p>Custom Mobile App Development.</p>
+                          <p>Optimization Development Company</p>
                         </Link>
                       </li>
                       <li>
                         <Link to={"/digital-marketing"} class="dropdown_linkBox">
                           <h4>Digital Marketing</h4>
-                          <p>Custom Mobile App Development.</p>
+                          <p>Digital Marketing Agency USA</p>
                         </Link>
                       </li>
                       <li>
                         <Link to={"/web-application"} class="dropdown_linkBox">
                           <h4>Web Application</h4>
-                          <p>Custom Mobile App Development.</p>
+                          <p>Web Application</p>
                         </Link>
                       </li>
 
@@ -337,7 +341,7 @@ export const Header = (props) => {
                 <li>
                   <Link to={"/"} class="dropdown_linkBox">
                     <h4>Testing</h4>
-                    <p>Rigorous Testing & QA</p>
+                    <p>Agile Working Methodologies.</p>
                   </Link>
                 </li>
                 <li>
@@ -411,7 +415,7 @@ export const Header = (props) => {
                       <li>
                         <Link to={"/education-hr"} class="dropdown_linkBox">
                           <h4>Education & HR </h4>
-                          <p>Educational App Development.</p>
+                          <p>Advertising Apps Development.</p>
                         </Link>
                       </li>
                       <li>
@@ -423,13 +427,15 @@ export const Header = (props) => {
                       <li>
                         <Link to={"/"} class="dropdown_linkBox">
                           <h4>Software & High Tech</h4>
-                          <p>Custom Software Apps.</p>
+                          <p>Seamless Healthcare App.</p>
                         </Link>
                       </li>
                       <li>
                         <Link to={"/finance"} class="dropdown_linkBox">
                           <h4>Finance</h4>
-                          <p>Fintech Software Developers.</p>
+                          <p>Fintech Software Developers.
+
+</p>
                         </Link>
                       </li>
                     </ul>
@@ -441,19 +447,25 @@ export const Header = (props) => {
                       <li>
                         <Link to={"/media"} class="dropdown_linkBox">
                           <h4>Media & Entertainment </h4>
-                          <p>Application Development Services.</p>
+                          <p>Application Development Services.
+
+</p>
                         </Link>
                       </li>
                       <li>
                         <Link to={"/sports"} class="dropdown_linkBox">
                           <h4>Sports Teams & Leagues </h4>
-                          <p>Sports Teams Management Apps.</p>
+                          <p>Application Development Services.
+
+</p>
                         </Link>
                       </li>
                       <li>
                         <Link to={"/travel"} class="dropdown_linkBox">
                           <h4>Travel & Hospitality</h4>
-                          <p>Application Development Services.</p>
+                          <p>Application Development Services.
+
+</p>
                         </Link>
                       </li>
                     </ul>

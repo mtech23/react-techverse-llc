@@ -39,30 +39,30 @@ const App_store = () => {
     Aos.init();
 
 
-    useEffect(() => {
-        gsap.set(".road", { opacity: 1 });
-        const circles = gsap.utils.toArray(".ani_cnt .icc");
-        const tl2 = gsap.timeline({ repeat: 20 });
+    // useEffect(() => {
+    //     gsap.set(".road", { opacity: 1 });
+    //     const circles = gsap.utils.toArray(".ani_cnt .icc");
+    //     const tl2 = gsap.timeline({ repeat: 20 });
 
-        circles.forEach((circle, i) => {
-            let start = i / circles.length; // secret sauce for circles
-            tl2.to(
-                circle,
-                {
-                    motionPath: {
-                        path: ".mypath",
-                        align: ".mypath",
-                        alignOrigin: [0.5, 0.4],
-                        start: start,
-                        end: start + 1,
-                    },
-                    ease: "none",
-                    duration: 40,
-                },
-                0
-            );
-        });
-    }, []);
+    //     circles.forEach((circle, i) => {
+    //         let start = i / circles.length; // secret sauce for circles
+    //         tl2.to(
+    //             circle,
+    //             {
+    //                 motionPath: {
+    //                     path: ".mypath",
+    //                     align: ".mypath",
+    //                     alignOrigin: [0.5, 0.4],
+    //                     start: start,
+    //                     end: start + 1,
+    //                 },
+    //                 ease: "none",
+    //                 duration: 40,
+    //             },
+    //             0
+    //         );
+    //     });
+    // }, []);
 
 
     return (
@@ -77,7 +77,7 @@ const App_store = () => {
             </Helmet>
             <HeroSection
                 innerbgclass={"inner-bgColor"}
-                title={"FInnovate Today"}
+                title={"Innovate Today"}
                 subtitle={" With "}
                 title2={"Techverse App Store"}
                 tagline={"Whether you're an aspiring entrepreneur or a seasoned developer, our App Store is your gateway to reaching millions of users worldwide. With our robust platform, you can harness the power of cutting-edge technology and provide a seamless user experience. From app discovery to deployment, we provide supreme support and resources to raise your app's visibility and success"}
