@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { UserLayout } from "../../Components/Layout/UserLayout";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { gsap } from "gsap";
-import { Helmet } from 'react-helmet'
+import { Helmet } from "react-helmet";
 import Aboutsection from "../../Components/aboutsection";
 
 import Aos from "aos";
@@ -48,6 +48,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import Testimonials from "../../Components/Testimonials";
 
 // import required modules
 // import { Pagination,  Autoplay } from 'swiper/modules';
@@ -85,7 +86,10 @@ const MobileApp = () => {
     <UserLayout>
       <Helmet>
         <meta charSet="utf-8" />
-        <title> Special Variety of Mobile Application Development Available  </title>
+        <title>
+          {" "}
+          Special Variety of Mobile Application Development Available{" "}
+        </title>
         <meta name="Providing the services of mobile application development at Techverse LLC. We craft the solutions for all the software you are looking for  " />
       </Helmet>
       <HeroSection
@@ -225,18 +229,15 @@ const MobileApp = () => {
       {/* new Portfolio swipper section */}
 
       {/* process we use */}
-      <Process
-      para="We proceed to meticulous planning, where we outline the app's features, user interface design, and functionality. Our expert team of developers then takes over, using cutting-edge technologies to build a robust and scalable application tailored to your specifications."
-      
-      />
+      <Process para="We proceed to meticulous planning, where we outline the app's features, user interface design, and functionality. Our expert team of developers then takes over, using cutting-edge technologies to build a robust and scalable application tailored to your specifications." />
 
       {/* <!-- Technologies --> */}
       <TechnologiesUse />
 
-      
+      {/* Testimonials */}
+      <Testimonials />
 
       {/* FAQ section */}
-
       <Frequentlyaskquestion />
     </UserLayout>
   );

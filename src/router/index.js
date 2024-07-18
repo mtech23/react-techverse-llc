@@ -26,7 +26,7 @@ import Terms_condition from "../screens/Terms_condition";
  import ScrollTop from '../Components/Scrolltop/ScrollTop'
 const Router = () => {
   return (
-    <BrowserRouter basename="techverseLLC">
+    <BrowserRouter basename="/">
       <ScrollTop />
       <Routes>
         <Route path="/" element={<Home />} />

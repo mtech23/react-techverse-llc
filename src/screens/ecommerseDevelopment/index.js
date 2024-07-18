@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import "./style.css";
 import { UserLayout } from "../../Components/Layout/UserLayout";
 import phoneicon from "../../asserts/images/phone-icon.png";
 import chaticon from "../../asserts/images/chat-icon.png";
-import { Helmet } from 'react-helmet'
+import { Helmet } from "react-helmet";
 import herophonemockupgroup from "../../asserts/images/hero-phone-mockup-group.png";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { gsap } from "gsap";
@@ -85,6 +85,48 @@ gsap.registerPlugin(MotionPathPlugin);
 const EcommerseDevelopment = () => {
   Aos.init();
 
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const sections = sectionRef?.current.querySelectorAll(".revEcomDevHover");
+
+    sections.forEach((section) => {
+      const container = section.querySelector(".revEcomDevIconContainer");
+
+      const handleMouseMove = (event) => {
+        const rect = section.getBoundingClientRect();
+        const mouseX = event.clientX - rect.left;
+        const mouseY = event.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const distX = (mouseX - centerX) * 0.1;
+        const distY = (mouseY - centerY) * 0.1;
+
+        gsap.to(container, {
+          x: distX,
+          y: distY,
+          ease: "power1.out",
+        });
+      };
+
+      const handleMouseLeave = () => {
+        gsap.to(container, {
+          x: 0,
+          y: 0,
+          ease: "power1.out",
+        });
+      };
+
+      section.addEventListener("mousemove", handleMouseMove);
+      section.addEventListener("mouseleave", handleMouseLeave);
+
+      return () => {
+        section.removeEventListener("mousemove", handleMouseMove);
+        section.removeEventListener("mouseleave", handleMouseLeave);
+      };
+    });
+  }, []);
+
   // useEffect(() => {
   //   gsap.set(".road", { opacity: 1 });
   //   const circles = gsap.utils.toArray(".ani_cnt .icc");
@@ -114,7 +156,9 @@ const EcommerseDevelopment = () => {
     <UserLayout>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>eCommerce Development with Remarkable ROI at Techverse LLC   </title>
+        <title>
+          eCommerce Development with Remarkable ROI at Techverse LLC{" "}
+        </title>
         <meta name=": Techverse LLC brings excellent eCommerce development services at a very affordable rate. A great option for startups with low-cost budgets.  " />
       </Helmet>
       <HeroSection
@@ -227,53 +271,64 @@ const EcommerseDevelopment = () => {
       /> */}
 
       {/* Revamp Your Online Presence Section*/}
-      <section class="techVerse_about techVerse_aboutServices2 hoverEffectSec">
-        <div class="icon-container-hover">
-        <img
-          class="techVerse_about_icon1 animation11"
-          src={pinkcapsol}
-          alt=""
-        />
-        {/* <!-- <img
+      <div ref={sectionRef}>
+        <section class="techVerse_about techVerse_aboutServices2 revEcomDevHover hoverEffectSec">
+          <div class="icon-container-hover revEcomDevIconContainer">
+            <img
+              class="techVerse_about_icon1 animation11"
+              src={pinkcapsol}
+              alt=""
+            />
+            {/* <!-- <img
           class="techVerse_about_icon2 animation33"
           src="images/Pill.png"
           alt=""
         /> --> */}
-        <img
-          class="techVerse_about_icon3 animation11"
-          src={greencube}
-          alt=""
-        />
-        <img
-          class="techVerse_about_icon4 animation11"
-          src={donatorange}
-          alt=""
-        />
-        </div>
-        <div class="techVerse_aboutContent techVerse_aboutContentServices2 width-1600">
-          <div class="container-fluid">
-            <div class="row">
+            <img
+              class="techVerse_about_icon3 animation11"
+              src={greencube}
+              alt=""
+            />
+            <img
+              class="techVerse_about_icon4 animation11"
+              src={donatorange}
+              alt=""
+            />
+          </div>
+          <div class="techVerse_aboutContent techVerse_aboutContentServices2 width-1600">
+            <div class="container-fluid">
+              <div class="row">
                 <div class="col-md-12">
-                    <div class="sec_title buildStore_sec_title">
-                      <h2
-                        class="sec_title_head color-lightBlue2"
-                        data-aos="fade-up"
-                        data-aos-offset="0"
-                        data-aos-duration="1000"
-                      >
-                      Revamp Your Online Presence  
-                        <span class="color-darkBlue" > With </span> Creative E-Commerce Solutions
-                      </h2>
-                      <p
-                        data-aos="fade-up"
-                        data-aos-offset="0"
-                        data-aos-duration="2000"
-                      >
-                      we specialize in crafting dynamic e-commerce solutions tailored to increase your business. Whether you're starting from scratch or seeking to revamp your online presence, our expert team is here to build, optimize, and launch your e-store with precision and creativity. From seamless user experience design to robust backend development, trust us to transform your vision into a thriving online business. Hold the future of digital commerce with Techverse LLC – where innovation meets e-commerce excellence.
-                      </p>
-                    </div>
+                  <div class="sec_title buildStore_sec_title">
+                    <h2
+                      class="sec_title_head color-lightBlue2"
+                      data-aos="fade-up"
+                      data-aos-offset="0"
+                      data-aos-duration="1000"
+                    >
+                      Revamp Your Online Presence
+                      <span class="color-darkBlue"> With </span> Creative
+                      E-Commerce Solutions
+                    </h2>
+                    <p
+                      data-aos="fade-up"
+                      data-aos-offset="0"
+                      data-aos-duration="2000"
+                    >
+                      we specialize in crafting dynamic e-commerce solutions
+                      tailored to increase your business. Whether you're
+                      starting from scratch or seeking to revamp your online
+                      presence, our expert team is here to build, optimize, and
+                      launch your e-store with precision and creativity. From
+                      seamless user experience design to robust backend
+                      development, trust us to transform your vision into a
+                      thriving online business. Hold the future of digital
+                      commerce with Techverse LLC – where innovation meets
+                      e-commerce excellence.
+                    </p>
                   </div>
-              <div class="col-md-6">
+                </div>
+                <div class="col-md-6">
                   <div class="techVerse_about_img">
                     <div class="techVerse_about_laptop_img">
                       <img
@@ -286,76 +341,86 @@ const EcommerseDevelopment = () => {
                     </div>
                   </div>
                 </div>
-              <div class="col-md-6">
-                <div class="techVerse_about_content services-abbout2">
-                  <div class="sec_title">
-                    <h2
-                      class="sec_title_head color-darkBlue"
-                      data-aos="fade-up"
-                      data-aos-offset="0"
-                      data-aos-duration="1000"
-                    >
-                    <span class="color-lightBlue2"> Shopify </span>
-                    </h2>
-                    <p
-                      data-aos="fade-up"
-                      data-aos-offset="0"
-                      data-aos-duration="2000"
-                    >
-                    Empower your online business with our Shopify E-Commerce Development services at Techverse LLC. We specialize in crafting tailored Shopify solutions that lift your digital storefront. From seamless integration of custom themes and apps to optimizing user experience and payment gateways, we make sure your Shopify store sets apart in the competitive e-commerce landscape. 
-                    </p>
-                    <h2
-                      class="sec_title_head color-darkBlue"
-                      data-aos="fade-up"
-                      data-aos-offset="0"
-                      data-aos-duration="1000"
-                    >
-                    <span class="color-lightBlue2"> WooCommerce </span>
-                    </h2>
-                    <p
-                      data-aos="fade-up"
-                      data-aos-offset="0"
-                      data-aos-duration="2000"
-                    >
-                    At Techverse LLC, we specialize in WooCommerce E-Commerce Development, providing you with a powerful platform tailored to your business needs. Our team excels in building scalable and customizable WooCommerce stores that maximize your online presence. From implementing responsive design and intuitive navigation to integrating essential plugins and ensuring secure payment gateways, we ensure your WooCommerce store is optimized for success. 
-                    </p>
-                    <h2
-                      class="sec_title_head color-darkBlue"
-                      data-aos="fade-up"
-                      data-aos-offset="0"
-                      data-aos-duration="1000"
-                    >
-                    <span class="color-lightBlue2"> Magento </span>
-                    </h2>
-                    <p
-                      data-aos="fade-up"
-                      data-aos-offset="0"
-                      data-aos-duration="2000"
-                    >
-                    Transform your online business with Techverse LLC's Magento E-Commerce Development services. As Magento specialists, we offer comprehensive solutions to create high-performing e-commerce stores that drive growth and profitability. Our expertise spans from custom Magento theme development and extension integration to optimizing performance and enhancing user experience. 
-                    </p>
-                    
+                <div class="col-md-6">
+                  <div class="techVerse_about_content services-abbout2">
+                    <div class="sec_title">
+                      <h2
+                        class="sec_title_head color-darkBlue"
+                        data-aos="fade-up"
+                        data-aos-offset="0"
+                        data-aos-duration="1000"
+                      >
+                        <span class="color-lightBlue2"> Shopify </span>
+                      </h2>
+                      <p
+                        data-aos="fade-up"
+                        data-aos-offset="0"
+                        data-aos-duration="2000"
+                      >
+                        Empower your online business with our Shopify E-Commerce
+                        Development services at Techverse LLC. We specialize in
+                        crafting tailored Shopify solutions that lift your
+                        digital storefront. From seamless integration of custom
+                        themes and apps to optimizing user experience and
+                        payment gateways, we make sure your Shopify store sets
+                        apart in the competitive e-commerce landscape.
+                      </p>
+                      <h2
+                        class="sec_title_head color-darkBlue"
+                        data-aos="fade-up"
+                        data-aos-offset="0"
+                        data-aos-duration="1000"
+                      >
+                        <span class="color-lightBlue2"> WooCommerce </span>
+                      </h2>
+                      <p
+                        data-aos="fade-up"
+                        data-aos-offset="0"
+                        data-aos-duration="2000"
+                      >
+                        At Techverse LLC, we specialize in WooCommerce
+                        E-Commerce Development, providing you with a powerful
+                        platform tailored to your business needs. Our team
+                        excels in building scalable and customizable WooCommerce
+                        stores that maximize your online presence. From
+                        implementing responsive design and intuitive navigation
+                        to integrating essential plugins and ensuring secure
+                        payment gateways, we ensure your WooCommerce store is
+                        optimized for success.
+                      </p>
+                      <h2
+                        class="sec_title_head color-darkBlue"
+                        data-aos="fade-up"
+                        data-aos-offset="0"
+                        data-aos-duration="1000"
+                      >
+                        <span class="color-lightBlue2"> Magento </span>
+                      </h2>
+                      <p
+                        data-aos="fade-up"
+                        data-aos-offset="0"
+                        data-aos-duration="2000"
+                      >
+                        Transform your online business with Techverse LLC's
+                        Magento E-Commerce Development services. As Magento
+                        specialists, we offer comprehensive solutions to create
+                        high-performing e-commerce stores that drive growth and
+                        profitability. Our expertise spans from custom Magento
+                        theme development and extension integration to
+                        optimizing performance and enhancing user experience.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
-              
             </div>
           </div>
-        </div>
-        </div>
-      </section>
-
-
-
-
+        </section>
+      </div>
 
       {/* process we use */}
 
-      <Process 
-      para="We specialize in transforming your business vision into a robust online presence through our streamlined E-Commerce Development process. We make creativity, technical expertise, and strategic insights to provide personalized services according to your unique business needs and goals."
-      
-      
-      
-      />
+      <Process para="We specialize in transforming your business vision into a robust online presence through our streamlined E-Commerce Development process. We make creativity, technical expertise, and strategic insights to provide personalized services according to your unique business needs and goals." />
 
       {/* <Driving_Exprience
         titleclass2="color-darkBlue"

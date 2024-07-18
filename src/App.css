@@ -335,7 +335,6 @@ h2 {
   height: 80% !important;
 }
 .sec_title .sec_title_head {
-
   font-size: 32px !important;
   font-weight: 700;
   line-height: 1.2;
@@ -914,14 +913,39 @@ body .rc h2 {
 .techVerse_trustedPartners {
   padding: 60px 0;
 }
+.trusted-partnerContainer {
+  height: 100px !important;
+}
 .trustedPartner {
   width: 200px;
   border: 1px solid #02a9f7;
-  padding: 20px 10px;
+  padding: 10px 10px;
   text-align: center;
   background-image: linear-gradient(to right, #e8e8e8, #ffffff);
   border-radius: 5px;
 }
+.trustedPartner img {
+  width: 140px;
+  height: 70px;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* .trusted-partnerContainer {
+  height: 112px !important;
+}
+.trustedPartner {
+  width: 200px;
+  border: 1px solid #02a9f7;
+  padding: 10px 10px;
+  text-align: center;
+  background-image: linear-gradient(to right, #e8e8e8, #ffffff);
+  border-radius: 5px;
+}
+.trustedPartner img {
+  width: 120px;
+} */
+
 .trustedPartners {
   display: flex;
   gap: 10px;
@@ -1035,11 +1059,17 @@ body .rc h2 {
   position: relative;
   /* margin-top: 90px; */
 }
+.contactinner_images {
+  position: absolute;
+  top: 70px;
+  right: 25%;
+  width: 110px;
+}
 .techVerse-contact-imgIcon {
   position: absolute;
   /* bottom: -70px; */
   left: 73%;
-  width: 170px;
+  width: 110px;
   top: 10px;
 }
 .contact-laptopBG {
@@ -1099,7 +1129,6 @@ body .rc h2 {
   width: 834px;
 }
 
-
 .get_discount_one {
   background: #c71e2c;
   color: #fff;
@@ -1154,7 +1183,7 @@ body .rc h2 {
   border: unset;
 }
 .budget-content {
-  z-index: 999!important;
+  z-index: 999 !important;
   width: 100%;
 }
 .budget-slider {
@@ -1410,7 +1439,7 @@ p.company_wishText {
   left: 5%;
   bottom: 15%;
   position: absolute;
-  top: 513px!important;
+  top: 513px !important;
 }
 
 .techVerse_webSolution_icon1,
@@ -1443,13 +1472,13 @@ p.company_wishText {
   top: 35%;
   left: -20px;
   position: absolute;
-  top:300px!important;
+  top: 300px !important;
 }
 .techVerse_services_icon3 {
   bottom: 12%;
   left: 2%;
   position: absolute;
-     top: 760px!important;
+  top: 760px !important;
 }
 .techVerse_services_icon4 {
   right: 0;
@@ -1459,8 +1488,7 @@ p.company_wishText {
   right: 0;
   bottom: 18%;
   position: absolute;
-  top: 704px!important;
-
+  top: 704px !important;
 }
 
 .blue-cube1,
@@ -1489,8 +1517,8 @@ p.company_wishText {
 .techVerse_process_icon2 {
   top: 54%;
 
-position: absolute;
-top: 401px!important;
+  position: absolute;
+  top: 401px !important;
 }
 .techVerse_process_icon3 {
   top: 40%;
@@ -1502,7 +1530,7 @@ top: 401px!important;
   top: 60%;
   right: 15%;
   position: absolute;
-  top: 411px!important;
+  top: 411px !important;
 }
 
 .techVerse_caseStudies_icon1,
@@ -1518,8 +1546,7 @@ top: 401px!important;
   left: -1%;
   top: 50%;
   position: absolute;
-  top: 578px!important;
-
+  top: 578px !important;
 }
 .techVerse_caseStudies_icon3 {
   right: 0%;
@@ -1529,7 +1556,7 @@ top: 401px!important;
   right: 1%;
   bottom: 30%;
   position: absolute;
-    top: 829px;
+  top: 829px;
 }
 
 .techVerse_partners_icon1,
@@ -2112,9 +2139,9 @@ canvas.particles-js-canvas-el {
   height: 150px;
   overflow-x: hidden;
 }
-.additional_classes{
-  overflow-x : auto;
-   gap: 15px;
+.additional_classes {
+  overflow-x: auto;
+  gap: 15px;
 }
 .marquee {
   position: absolute;
@@ -2135,10 +2162,6 @@ canvas.particles-js-canvas-el {
 .all_logos {
   display: flex;
   gap: 25px;
-}
-
-.trusted-partnerContainer {
-  height: 80px !important;
 }
 
 @keyframes marquee {
@@ -2571,11 +2594,8 @@ p.company_wishText {
 }
 /* PopUp Modal End */
 
-
-
 /* Media Quries */
 @media (max-width: 1600px) {
-
   .mobile-app-22 {
     width: 80% !important;
   }
@@ -2658,7 +2678,6 @@ p.company_wishText {
     background-size: cover;
   }
 
-
   .mobileApp_hero_img {
     transform: scale(1.2) translateX(-10%) !important;
   }
@@ -2672,8 +2691,7 @@ p.company_wishText {
   }
   .get_discount {
     top: 43.3%;
-}
-
+  }
 
   .first-dropdown-menu,
   .second-dropdown-menu {
@@ -2683,10 +2701,9 @@ p.company_wishText {
   }
 }
 @media (max-width: 1280px) {
-
   .contentBox p {
     padding: 0px 12px;
-}
+  }
   .techVerse_mobileApp_content .sec_title p {
     font-size: 15px;
   }
@@ -2814,7 +2831,6 @@ p.company_wishText {
   .contact_formContent {
     padding-left: 70px;
     padding-top: 39px;
-  
   }
 
   .contentBox h3 {
@@ -3060,11 +3076,10 @@ p.company_wishText {
     left: -29.9%;
     width: 632px;
     top: 46%;
-}
+  }
   /* .newLetterBox {
     margin-top: 7px;
 } */
-
 
   .techVerse_hero .row {
     height: unset;
@@ -3232,21 +3247,20 @@ p.company_wishText {
   .techVerse_hero_icon1 {
     position: absolute;
     top: 30px !important;
- 
   }
- 
+
   .techVerse_hero_icon3 {
     right: 30%;
     top: 80%;
     position: absolute;
     top: 250px !important;
-}
+  }
   .techVerse_hero_icon2 {
     right: 1%;
     top: 50%;
     position: absolute;
     top: 191px !important;
-}
+  }
   .travel-img-1-airplane {
     max-width: 140px;
   }
@@ -3258,7 +3272,7 @@ p.company_wishText {
     width: 633px;
     left: -291px;
     top: 46%;
-}
+  }
   /* .get_discount {
     left: -38.2%;
   } */
@@ -3413,7 +3427,6 @@ p.company_wishText {
     padding: 30px 10px;
   }
 
-
   .contactUSNew_hero .row {
     flex-direction: column !important;
   }
@@ -3480,7 +3493,7 @@ p.company_wishText {
     left: 0%;
     bottom: 6%;
     position: absolute;
-    top: 513px!important;
+    top: 513px !important;
   }
   .techVerse_services_icon1 {
     left: -2%;
@@ -3944,31 +3957,28 @@ font-size: 11px !important;
 }
 
 @media (max-width: 375px) {
-  
   .techVerse_hero_icon3 {
-  
     top: 215px !important;
-}
+  }
   .popup_modal-close {
     width: 35px;
     height: 34px;
     right: -7px;
     top: -17px;
-}
+  }
   .news_letterInput {
     width: 90%;
-
-}
-.news_letterInput input {
-  font-size: 12px;
-}
-.news_letterInput button {
-  font-size: 12px;
-}
+  }
+  .news_letterInput input {
+    font-size: 12px;
+  }
+  .news_letterInput button {
+    font-size: 12px;
+  }
   .contentBox p {
     font-size: 12px;
     padding: 0px 20px;
-}
+  }
   .custom_tab_height {
     height: 129px;
   }
@@ -4023,15 +4033,12 @@ font-size: 11px !important;
   }
 }
 
-
- 
 .popup_modal .modal-body {
   background-color: #182139;
   padding: 25px;
   border-radius: 15px;
 }
- 
- 
+
 .popup_modal-close {
   color: #fff;
   opacity: 1;
@@ -4049,12 +4056,10 @@ font-size: 11px !important;
   right: -20px;
   top: -20px;
 }
- 
- 
-  .popup_modal-close {
-    width: 35px;
-    height: 34px;
-    right: -7px;
-    top: -17px;
+
+.popup_modal-close {
+  width: 35px;
+  height: 34px;
+  right: -7px;
+  top: -17px;
 }
- 

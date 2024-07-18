@@ -12,8 +12,8 @@ import contactbbb from "../../asserts/images/contact-bbb.png";
 import "./style.css";
 
 import { Helmet } from "react-helmet";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -23,13 +23,9 @@ const Contact = () => {
     AOS.init();
   }, []);
 
+  const [ipInfo, setIpInfo] = useState({ ip: "", country: "" });
 
-
-  const [ipInfo, setIpInfo] = useState({ ip: '', country: '' });
-
-  console.log("ipInfo", ipInfo)
-
-
+  console.log("ipInfo", ipInfo);
 
   useEffect(() => {
     function getCountryByIP() {
@@ -49,25 +45,21 @@ const Contact = () => {
 
   const [budget, setBudget] = useState(0);
 
-
   const notify = () => toast.success("Thank You");
   const [formdata, setFormData] = useState({
-    firstname: '',
-  })
+    firstname: "",
+  });
 
   const handlechange = (e) => {
-    const { name, value } = e.target
+    const { name, value } = e.target;
     if (name == "budget") {
       setBudget(value);
-
     }
     setFormData((prevdata) => ({
       ...prevdata,
-      [name]: value
-    }))
-  }
-
-
+      [name]: value,
+    }));
+  };
 
   const handlesubmit = async (event) => {
     event.preventDefault();
@@ -75,6 +67,8 @@ const Contact = () => {
     for (const key in formdata) {
       formDataMethod.append(key, formdata[key]);
     }
+    formDataMethod.append("industry", selectedIndustry);
+    formDataMethod.append("website_url", "https://techversellc.com/");
 
     formDataMethod.append("ip", ipInfo?.ip);
     formDataMethod.append("country", ipInfo?.country);
@@ -84,7 +78,7 @@ const Contact = () => {
       const contact_api = await fetch(url, {
         method: "POST",
 
-        body: formDataMethod
+        body: formDataMethod,
       });
 
       if (!contact_api.ok) {
@@ -93,39 +87,67 @@ const Contact = () => {
       }
 
       const response = await contact_api.json();
+
+      setFormData({
+        firstname: "",
+        lastname: "",
+        phone: " ",
+        email: " ",
+        message: " ",
+        budget: " ",
+        country: " ",
+      });
       if (response?.status == true) {
         notify();
 
         setFormData({
-          firstname: '',
-          lastname: '',
+          firstname: "",
+          lastname: "",
           phone: " ",
           email: " ",
           message: " ",
           budget: " ",
           country: " ",
-
         });
       }
-      console.log('Success:', response);
+      console.log("Success:", response);
       // Handle successful response
       return response;
     } catch (error) {
-      notify();
+      // notify();
       console.error("Error in adding:", error);
       // Handle error response
       // throw error;
     }
-  }
+  };
+
+  const industries = [
+    { key: "Real-estate-and-property", name: "Real Estate & Property" },
+    { key: "automotive-and-transport", name: "Automotive and Transport" },
+    { key: "eCommerse-and-retail", name: "E-commerce & Retails" },
+    { key: "advertizing", name: "Advertising" },
+    { key: "Education Hr", name: "Education & HR" },
+    { key: "health-science", name: "Health and Life Sciences" },
+    { key: "software-tech", name: "Software & High Tech" },
+    { key: "finance", name: "Finance" },
+    { key: "media-entertainment", name: "Media & Entertainment" },
+    { key: "sports-leagues", name: "Sports Teams & Leagues" },
+    { key: "travel-hospitality", name: "Travel & Hospitality" },
+  ];
+
+  const [selectedIndustry, setSelectedIndustry] = useState("");
+
+  const handleChange = (event) => {
+    setSelectedIndustry(event.target.value);
+  };
 
   return (
     <div>
-
-
-
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Contact Techverse LLC for Software Development & Solutions  </title>
+        <title>
+          Contact Techverse LLC for Software Development & Solutions{" "}
+        </title>
         <meta name=" Looking for business software development & solutions? We also develop mobile apps; contact Techverse LLC for all the business solutions !!" />
       </Helmet>
       <Header />
@@ -232,16 +254,25 @@ const Contact = () => {
                       <form onSubmit={handlesubmit} id="leadForm" action="">
                         <div class="row">
                           <div class="col-md-12 mb-3 contact-formCols">
-                            <div class="form-group">
+                            <div className="form-group">
                               <select
-                                class="inputForm"
+                                className="inputForm"
                                 name="industry"
+                                value={selectedIndustry}
+                                onChange={handleChange}
                                 required
                               >
-                                <option>Select your industry</option>
-                                <option>Industry 1</option>
-                                <option>Industry 2</option>
-                                <option>Industry 3</option>
+                                <option value="" disabled>
+                                  Select your industry
+                                </option>
+                                {industries.map((industry) => (
+                                  <option
+                                    key={industry.key}
+                                    value={industry.key}
+                                  >
+                                    {industry.name}
+                                  </option>
+                                ))}
                               </select>
                             </div>
                           </div>
@@ -261,7 +292,7 @@ const Contact = () => {
                           <div class="col-md-6 mb-3 contact-formCols">
                             <div class="form-group">
                               <input
-                                 value={formdata.lastname}
+                                value={formdata.lastname}
                                 type="text"
                                 placeholder="Last Name"
                                 class="inputForm"
@@ -274,7 +305,7 @@ const Contact = () => {
                           <div class="col-md-6 mb-3 contact-formCols">
                             <div class="form-group">
                               <input
-                                  value={formdata.phone}
+                                value={formdata.phone}
                                 type="text"
                                 placeholder="Phone Number"
                                 class="inputForm"
@@ -287,7 +318,7 @@ const Contact = () => {
                           <div class="col-md-6 mb-3 contact-formCols">
                             <div class="form-group">
                               <input
-                                 value={formdata.email}
+                                value={formdata.email}
                                 type="email"
                                 placeholder="Your Email"
                                 class="inputForm"
@@ -327,7 +358,6 @@ const Contact = () => {
                                   class="budget-slider"
                                   id="budgetRange"
                                   name="budget"
-
                                 />
                               </div>
                             </div>
@@ -366,7 +396,6 @@ const Contact = () => {
       <Contact_Footer />
       <ToastContainer />
     </div>
-
   );
 };
 

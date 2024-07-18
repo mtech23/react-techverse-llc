@@ -74,6 +74,10 @@ import jeffwilson from "../../asserts/images/jeff-wilson.png";
 import carbuying from "../../asserts/images/car-buying.png";
 import lllreptile from "../../asserts/images/lll-reptile.png";
 import privateastrology from "../../asserts/images/private-astrology.png";
+import website1 from "../../asserts/images/website-1.png";
+import website2 from "../../asserts/images/website-2.png";
+import website3 from "../../asserts/images/website-3.png";
+import website4 from "../../asserts/images/website-4.png";
 import Macbook from "../../asserts/images/Macbook.png";
 import eduhrportfolio1 from "../../asserts/images/edu-hr-portfolio-1.png";
 import App_store from '../App_store';
@@ -227,10 +231,10 @@ const Health_care = () => {
         image4={healthcareportfolio4}
         image5={healthcareportfolio5}
         image6={mobileframe}
-        image7={carbuying}
-        image8={lllreptile}
-        image9={jeffwilson}
-        image10={privateastrology}
+        image7={website1}
+        image8={website2}
+        image9={website3}
+        image10={website4}
         image11={Macbook}
 
       />

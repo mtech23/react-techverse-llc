@@ -1,44 +1,44 @@
-import React from 'react';
-import './style.css'
+import React from "react";
+import "./style.css";
 import { UserLayout } from "../../Components/Layout/UserLayout";
 import phoneicon from "../../asserts/images/phone-icon.png";
 import chaticon from "../../asserts/images/chat-icon.png";
-import realestateimg from '../../asserts/images/realEstate-img-3.png'
-import realEstateportfolioimg1 from '../../asserts/images/realEstate-portfolio-img1.png'
-import realEstateportfolioimg2 from '../../asserts/images/realEstate-portfolio-img2.png'
-import realEstateportfolioimg3 from '../../asserts/images/realEstate-portfolio-img3.png'
-import realEstateportfolioimg4 from '../../asserts/images/realEstate-portfolio-img4.png'
-import realEstateportfolioimg5 from '../../asserts/images/realEstate-portfolio-img5.png'
-import mobileframe from '../../asserts/images/mobile-frame.webp'
-import carbuying from '../../asserts/images/car-buying.png'
-import jeffwilson from '../../asserts/images/jeff-wilson.png'
-import lllreptile from '../../asserts/images/lll-reptile.png'
-import privateastrology from '../../asserts/images/private-astrology.png'
-import Macbook from '../../asserts/images/Macbook.png'
-import Ctnbutton from '../../Components/ctnbutton'
+import realestateimg from "../../asserts/images/realEstate-img-3.png";
+import realEstateportfolioimg1 from "../../asserts/images/realEstate-portfolio-img1.png";
+import realEstateportfolioimg2 from "../../asserts/images/realEstate-portfolio-img2.png";
+import realEstateportfolioimg3 from "../../asserts/images/realEstate-portfolio-img3.png";
+import realEstateportfolioimg4 from "../../asserts/images/realEstate-portfolio-img4.png";
+import realEstateportfolioimg5 from "../../asserts/images/realEstate-portfolio-img5.png";
+import mobileframe from "../../asserts/images/mobile-frame.webp";
+import carbuying from "../../asserts/images/car-buying.png";
+import jeffwilson from "../../asserts/images/jeff-wilson.png";
+import lllreptile from "../../asserts/images/lll-reptile.png";
+import privateastrology from "../../asserts/images/private-astrology.png";
+import Macbook from "../../asserts/images/Macbook.png";
+import Ctnbutton from "../../Components/ctnbutton";
 import herophonemockupgroup from "../../asserts/images/hero-phone-mockup-group.png";
 // import { Swiper, SwiperSlide } from 'swiper/react';
 // import { Parallax, Pagination, Navigation } from 'swiper/modules';
-import { Parallax, Pagination, Navigation } from 'swiper/modules';
+import { Parallax, Pagination, Navigation } from "swiper/modules";
 
-import devandmaintenenceicon from '../../asserts/images/dev-and-maintenence-icon.png'
-import qualityicon from '../../asserts/images/quality-icon.png'
-import designanddevicon from '../../asserts/images/design-and-dev-icon.png'
-import businessanalysisicon from '../../asserts/images/business-analysis-icon.png'
-import realestateimg2 from '../../asserts/images/real-estate-img2.gif'
-import Website from '../../Components/Website';
-import Aboutsection from '../../Components/aboutsection';
-import webapplicationhero from '../../asserts/images/web-application-hero.png'
-import { Swiper, SwiperSlide } from 'swiper/react';
-import realestateimg1 from '../../asserts/images/real-estate-img1.png'
-import pinkcapsolgtom from '../../asserts/images/pink-capsol.png'
+import devandmaintenenceicon from "../../asserts/images/dev-and-maintenence-icon.png";
+import qualityicon from "../../asserts/images/quality-icon.png";
+import designanddevicon from "../../asserts/images/design-and-dev-icon.png";
+import businessanalysisicon from "../../asserts/images/business-analysis-icon.png";
+import realestateimg2 from "../../asserts/images/real-estate-img2.gif";
+import Website from "../../Components/Website";
+import Aboutsection from "../../Components/aboutsection";
+import webapplicationhero from "../../asserts/images/web-application-hero.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+import realestateimg1 from "../../asserts/images/real-estate-img1.png";
+import pinkcapsolgtom from "../../asserts/images/pink-capsol.png";
 
-import Portfolio from '../../Components/Portfolio'
+import Portfolio from "../../Components/Portfolio";
 import webaboutimg1 from "../../asserts/images/web-about-img1.png";
 import clutch from "../../asserts/images/clutch.png";
-import TrustedPartners from '../../Components/TrustedPartners'
+import TrustedPartners from "../../Components/TrustedPartners";
 import truspilot from "../../asserts/images/trus-pilot.png";
-import digitalmarketing01 from '../../asserts/images/digital-marketing-01.png'
+import digitalmarketing01 from "../../asserts/images/digital-marketing-01.png";
 
 import donatorange from "../../asserts/images/donat-orange.png";
 import greencube from "../../asserts/images/green-cube.png";
@@ -57,40 +57,41 @@ import androidiconw from "../../asserts/images/android-icon-w.png";
 import angularicon from "../../asserts/images/angular-icon.png";
 import appleicon from "../../asserts/images/apple-icon.png";
 import ecommersedevhero from "../../asserts/images/ecommersedevhero.png";
-import HeroSection from '../../Components/herosection/index'
+import HeroSection from "../../Components/herosection/index";
 import fluttericon from "../../asserts/images/flutter-icon.png";
 import reacticon from "../../asserts/images/react-icon.png";
 import cms1 from "../../asserts/images/Cms-1.png";
 import cms2 from "../../asserts/images/CMS-2.png";
 import cms3 from "../../asserts/images/CMS-3.png";
 
+import website1 from "../../asserts/images/website-1.png";
+import website2 from "../../asserts/images/website-2.png";
+import website3 from "../../asserts/images/website-3.png";
+import website4 from "../../asserts/images/website-4.png";
 
 import Aos from "aos";
-import 'swiper/css';
-import TechnologiesUse from '../../Components/technologiesuse';
-import Process from '../../Components/Process';
-import Frequentlyaskquestion from '../../Components/frequentlyaskquestion';
-import Elevateyourbusiness from '../../Components/elevateyourbusiness';
-import Testimonials from '../../Components/Testimonials';
-import Portfolios from '../../Components/portfolios';
-import App_development_solutions from '../../Components/App_development_solutions';
-import Development_Process from '../../Components/Development_Process';
-import Driving_Exprience from '../../Components/Driving_experience';
-import { Helmet } from 'react-helmet'
+import "swiper/css";
+import TechnologiesUse from "../../Components/technologiesuse";
+import Process from "../../Components/Process";
+import Frequentlyaskquestion from "../../Components/frequentlyaskquestion";
+import Elevateyourbusiness from "../../Components/elevateyourbusiness";
+import Testimonials from "../../Components/Testimonials";
+import Portfolios from "../../Components/portfolios";
+import App_development_solutions from "../../Components/App_development_solutions";
+import Development_Process from "../../Components/Development_Process";
+import Driving_Exprience from "../../Components/Driving_experience";
+import { Helmet } from "react-helmet";
 const RealEstate_and_property = () => {
-
-
   Aos.init();
-
-
-
 
   return (
     <UserLayout>
-
       <Helmet>
         <meta charSet="utf-8" />
-        <title> Software Solutions Development for Real Estate & Property  </title>
+        <title>
+          {" "}
+          Software Solutions Development for Real Estate & Property{" "}
+        </title>
         <meta name="Real Estate & Property services obligatory expert software to perform actions efficiently. Techverse LLC custom-built Real Estate Solutions. " />
       </Helmet>
       {/* <!-- Inner Hero --> */}
@@ -99,9 +100,10 @@ const RealEstate_and_property = () => {
         classheroimage={"inner-realEstate-bgColor"}
         title={"Revolutionize Your Real Estate Strategy"}
         subtitle={"With"}
-
         title2={"  Cutting-Edge Tech "}
-        tagline={" Use Techverse LLC's advanced digital technologies to transform your real estate strategy. We revolutionize client connections and operational efficiency with our user-friendly property management applications and captivating virtual tours. Our cutting-edge solutions increase client engagement, streamline transactions, and improve listing exposure. Whether you work as a property manager, developer, or realtor, you can rely on us to improve your online visibility and spur business in the cutthroat real estate sector. Join together with Techverse LLC to get revolutionary solutions customized to your sector's requirements. "}
+        tagline={
+          " Use Techverse LLC's advanced digital technologies to transform your real estate strategy. We revolutionize client connections and operational efficiency with our user-friendly property management applications and captivating virtual tours. Our cutting-edge solutions increase client engagement, streamline transactions, and improve listing exposure. Whether you work as a property manager, developer, or realtor, you can rely on us to improve your online visibility and spur business in the cutthroat real estate sector. Join together with Techverse LLC to get revolutionary solutions customized to your sector's requirements. "
+        }
         // heroimage={webapplicationhero}
         CtnbuttonComponent={Ctnbutton}
         ctnButtonProps={{
@@ -110,7 +112,7 @@ const RealEstate_and_property = () => {
           primaryButtonClass: "btn_with_icon",
           chaticon: chaticon,
           chatenow: "Chat Us",
-          secondaryButtonClass: "btn_with_icon btn_secondary  "
+          secondaryButtonClass: "btn_with_icon btn_secondary  ",
 
           // playstore: playstore,
           // appstore: appstore
@@ -131,34 +133,29 @@ const RealEstate_and_property = () => {
           primaryButtonClass: "btn_with_icon",
           chaticon: chaticon,
           chatenow: "Chat Us",
-          secondaryButtonClass: "btn_with_icon btn_secondary  "
+          secondaryButtonClass: "btn_with_icon btn_secondary  ",
 
           // playstore: playstore,
           // appstore: appstore
         }}
         // title2="Client Engagement "
-        title="Techverse Powers Your Operations & " subtitle="  Client Engagement "
+        title="Techverse Powers Your Operations & "
+        subtitle="  Client Engagement "
         para="Together with us, create an innovative route to real estate success. Techverse LLC provides cutting-edge digital solutions designed specifically for real estate agents. With state-of-the-art technology and knowledge, we enable you to maximize operations, improve client engagement, and accomplish your business objectives—from efficient property administration to exciting virtual tours. "
         image={realestateimg1}
-
       />
 
-
-
-
       {/* <!-- App Development Sec --> */}
-      <App_development_solutions 
-      title="Techverse Develops"
-      subtitle="Custom Apps "
-      title2="That Exceed Expectations "
-      para="Custom app development to meet your specific company requirements. Techverse LLC is an expert in developing personalized mobile apps that precisely match your demands. You can rely on us to provide clear-cut, efficient solutions that advance your company from conception to implementation."
-      para1="Gain valuable insights with our robust analytics solutions, built to track and optimize user engagement and performance metrics, ensuring informed decision-making for your business."
-      para2="Create intuitive and captivating user experiences with our expert UI/UX design services, focusing on aesthetics and usability to boost customer satisfaction and retention."
-      para3="From concept to launch, our skilled team delivers scalable and feature-rich mobile applications that meet your business goals, ensuring seamless functionality across platforms.
+      <App_development_solutions
+        title="Techverse Develops"
+        subtitle="Custom Apps "
+        title2="That Exceed Expectations "
+        para="Custom app development to meet your specific company requirements. Techverse LLC is an expert in developing personalized mobile apps that precisely match your demands. You can rely on us to provide clear-cut, efficient solutions that advance your company from conception to implementation."
+        para1="Gain valuable insights with our robust analytics solutions, built to track and optimize user engagement and performance metrics, ensuring informed decision-making for your business."
+        para2="Create intuitive and captivating user experiences with our expert UI/UX design services, focusing on aesthetics and usability to boost customer satisfaction and retention."
+        para3="From concept to launch, our skilled team delivers scalable and feature-rich mobile applications that meet your business goals, ensuring seamless functionality across platforms.
       "
-      para4="Ensure high performance and reliability with our rigorous testing and quality assurance processes. We carefully check every aspect of your application to deliver a flawless user experience."
-      
-      
+        para4="Ensure high performance and reliability with our rigorous testing and quality assurance processes. We carefully check every aspect of your application to deliver a flawless user experience."
       />
 
       {/* <!-- Real Estate App Dev --> */}
@@ -169,15 +166,11 @@ const RealEstate_and_property = () => {
         // title2="Custom Mobile Apps."
         para="From conception to implementation, we follow a thorough approach that includes careful planning, creative design, agile development, stringent testing, and smooth implementation. Delivering reliable, user-focused mobile solutions that go above and beyond for clients is our mission. "
         para1="Thoroughly analyze business requirements and user needs to define project scope and objectives, ensuring alignment with strategic goals and optimal solution planning."
-      para2="Craft visually appealing and functional designs while implementing robust development strategies to create customized solutions that meet client specifications and exceed expectations."
-      para3="Conduct rigorous testing and quality checks throughout the development lifecycle to ensure high performance, reliability, and adherence to industry standards for seamless user experiences."
-      para4="Efficiently deploy applications while providing ongoing support and maintenance services to ensure smooth operations, continuous improvements, and client satisfaction post-launch."
-      quality="Quality Assurance"
-      
+        para2="Craft visually appealing and functional designs while implementing robust development strategies to create customized solutions that meet client specifications and exceed expectations."
+        para3="Conduct rigorous testing and quality checks throughout the development lifecycle to ensure high performance, reliability, and adherence to industry standards for seamless user experiences."
+        para4="Efficiently deploy applications while providing ongoing support and maintenance services to ensure smooth operations, continuous improvements, and client satisfaction post-launch."
+        quality="Quality Assurance"
       />
-
-
-
 
       <Portfolios
         title="REAL ESTATE "
@@ -189,23 +182,22 @@ const RealEstate_and_property = () => {
         image4={realEstateportfolioimg4}
         image5={realEstateportfolioimg5}
         image6={mobileframe}
-        image7={carbuying}
-        image8={jeffwilson}
-        image9={lllreptile}
-        image10={privateastrology}
+        // image7={carbuying}
+        // image8={jeffwilson}
+        // image9={lllreptile}
+        // image10={privateastrology}
+        image7={website1}
+        image8={website2}
+        image9={website3}
+        image10={website4}
         image11={Macbook}
-     
         classmobileapp="nav-link"
         classwebsite="nav-link"
-       
-     
         Mobile_Apps="Mobile Apps"
         Websites="Websites"
       />
 
-
       <Driving_Exprience
-
         titleclass2="color-darkBlue"
         titleclass="color-darkBlue"
         title=" What Makes Our "
@@ -223,22 +215,12 @@ const RealEstate_and_property = () => {
         h8="Market Insight"
       />
 
-
       <TechnologiesUse />
 
       <Testimonials />
 
-
-
-
-
-
-
       <Frequentlyaskquestion />
-
-
-
     </UserLayout>
-  )
-}
-export default RealEstate_and_property
+  );
+};
+export default RealEstate_and_property;

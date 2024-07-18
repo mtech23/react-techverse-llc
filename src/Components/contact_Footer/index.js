@@ -1,4 +1,4 @@
-import React from 'react'
+import React , {useState} from 'react'
 import bicon from '../../asserts/images/b-icon.png'
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
@@ -23,6 +23,31 @@ import { useCallback } from "react";
 import { loadSlim } from "tsparticles-slim";
 
 const Contact_Footer = () => {
+
+
+
+  
+const industries = [
+  { key: 'real-estate-and-property', name: 'Real Estate & Property' },
+  { key: 'automotive-and-transport', name: 'Automotive and Transport' },
+  { key: 'eCommerse-and-retail', name: 'E-commerce & Retails' },
+  { key: 'advertizing', name: 'Advertising' },
+  { key: 'edu-hr', name: 'Education & HR' },
+  { key: 'health-science', name: 'Health and Life Sciences' },
+  { key: 'software-tech', name: 'Software & High Tech' },
+  { key: 'finance', name: 'Finance' },
+  { key: 'media-entertainment', name: 'Media & Entertainment' },
+  { key: 'sports-leagues', name: 'Sports Teams & Leagues' },
+  { key: 'travel-hospitality', name: 'Travel & Hospitality' }
+];
+
+
+const [selectedIndustry, setSelectedIndustry] = useState('');
+
+const handleChange = (event) => {
+  setSelectedIndustry(event.target.value);
+};  
+
   const location = useLocation();
 
   const particlesInit = useCallback(async engine => {

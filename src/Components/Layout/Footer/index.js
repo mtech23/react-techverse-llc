@@ -1,8 +1,7 @@
-
 import { useLocation } from "react-router-dom";
-import bicon from '../../../asserts/images/b-icon.png'
+import bicon from "../../../asserts/images/b-icon.png";
 import { Link } from "react-router-dom";
-import starticon from '../../../asserts/images/start-icon.png'
+import starticon from "../../../asserts/images/start-icon.png";
 import Particles from "react-particles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -20,28 +19,68 @@ import partnersclutch from "../../../asserts/images/partners-clutch.png";
 import bluecubelarge from "../../../asserts/images/blue-cube-large.png";
 import partnerstruspilot from "../../../asserts/images/partners-trus-pilot.png";
 
-import contactUslaptop from '../../../asserts/images/contactUs-laptop.png';
-import SuperToroidOrangeGlossy from '../../../asserts/images/SuperToroid-Orange-Glossy.png';
-import { useCallback, useState, useEffect } from "react";
+import contactUslaptop from "../../../asserts/images/contactUs-laptop.png";
+import SuperToroidOrangeGlossy from "../../../asserts/images/SuperToroid-Orange-Glossy.png";
+import { useCallback, useState, useEffect, useRef } from "react";
+import { gsap } from "gsap";
 // import Particles from "react-particles";
 // import type { Container, Engine } from "tsparticles-engine";
 // import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "tsparticles-slim";
 
-
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 // mainSiteLogo
 
 import "./style.css";
 
 export const Footer = (props) => {
-  const [ipInfo, setIpInfo] = useState({ ip: '', country: '' });
+  const sectionRef = useRef(null);
 
-  console.log("ipInfo", ipInfo)
+  useEffect(() => {
+    const sections = sectionRef?.current.querySelectorAll(".techVerse_contact");
 
+    sections.forEach((section) => {
+      const container = section.querySelector(".contactinner_images");
 
+      const handleMouseMove = (event) => {
+        const rect = section.getBoundingClientRect();
+        const mouseX = event.clientX - rect.left;
+        const mouseY = event.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const distX = (mouseX - centerX) * 0.1;
+        const distY = (mouseY - centerY) * 0.1;
+
+        gsap.to(container, {
+          x: distX,
+          y: distY,
+          ease: "power1.out",
+        });
+      };
+
+      const handleMouseLeave = () => {
+        gsap.to(container, {
+          x: 0,
+          y: 0,
+          ease: "power1.out",
+        });
+      };
+
+      section.addEventListener("mousemove", handleMouseMove);
+      section.addEventListener("mouseleave", handleMouseLeave);
+
+      return () => {
+        section.removeEventListener("mousemove", handleMouseMove);
+        section.removeEventListener("mouseleave", handleMouseLeave);
+      };
+    });
+  }, []);
+
+  const [ipInfo, setIpInfo] = useState({ ip: "", country: "" });
+
+  console.log("ipInfo", ipInfo);
 
   useEffect(() => {
     function getCountryByIP() {
@@ -59,11 +98,7 @@ export const Footer = (props) => {
     getCountryByIP();
   }, []);
 
-
-
-
   const [budget, setBudget] = useState(0);
-
 
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);
@@ -76,65 +111,66 @@ export const Footer = (props) => {
   }, []);
 
   const notify = () => toast.success("Thank You");
-  const [formdata, setFormData] = useState("")
+  const [formdata, setFormData] = useState("");
 
   const handlechange = (e) => {
-    const { name, value } = e.target
+    const { name, value } = e.target;
     if (name == "budget") {
       setBudget(value);
-
     }
     setFormData((prevdata) => ({
       ...prevdata,
-      [name]: value
-    }))
-  }
+      [name]: value,
+    }));
+  };
 
   const url = process.env.REACT_APP_BASE_URL;
-  console.log("url", url)
+  console.log("url", url);
 
   const handlesubmit = async (event) => {
-    event.preventDefault()
+    event.preventDefault();
     const formDataMethod = new FormData();
     for (const key in formdata) {
       formDataMethod.append(key, formdata[key]);
     }
-
+ 
+    formDataMethod.append("website_url", "https://techversellc.com/");
     formDataMethod.append("ip", ipInfo?.ip);
+
     formDataMethod.append("country", ipInfo?.country);
+    formDataMethod.append("industry", selectedIndustry);
 
     try {
       const contact_api = await fetch(url, {
         method: "POST",
         headers: {
-          'Access-Control-Allow-Headers': '*',
-          'Access-Control-Allow-Origin': '*',
-          'Access-Control-Allow-Methods': 'POST, GET, OPTIONS, PUT, DELETE'
+          "Access-Control-Allow-Headers": "*",
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "POST, GET, OPTIONS, PUT, DELETE",
         },
         // No need to set headers for FormData
-        body: formDataMethod
-        
+        body: formDataMethod,
       });
-      notify();
-      // if (!contact_api.ok) {
-      //   // throw new Error('Network response was not ok ' + contact_api.statusText);
-      //   notify();
-      // }
+      // notify();
+      if (!contact_api.ok) {
+        // throw new Error('Network response was not ok ' + contact_api.statusText);
+        notify();
+      }
 
       const response = await contact_api.json();
-      // if (response?.status == true) {
-      //   notify()
-      // }
-      console.log('Success:', response);
+      if (response?.status == true) {
+        notify();
+      }
+      // console.log("Success:", response);
       // Handle successful response
       // return response;
     } catch (error) {
-      notify();
+      // notify();
       console.error("Error in adding:", error);
       // Handle error response
       // throw error;
     }
-  }
+  };
   useEffect(() => {
     window.particlesJS("particles-js", {
       particles: {
@@ -205,205 +241,260 @@ export const Footer = (props) => {
     };
   }, []);
 
+  const industries = [
+    { key: "real-estate-and-property", name: "Real Estate & Property" },
+    { key: "automotive-and-transport", name: "Automotive and Transport" },
+    { key: "eCommerse-and-retail", name: "E-commerce & Retails" },
+    { key: "advertizing", name: "Advertising" },
+    { key: "edu-hr", name: "Education & HR" },
+    { key: "health-science", name: "Health and Life Sciences" },
+    { key: "software-tech", name: "Software & High Tech" },
+    { key: "finance", name: "Finance" },
+    { key: "media-entertainment", name: "Media & Entertainment" },
+    { key: "sports-leagues", name: "Sports Teams & Leagues" },
+    { key: "travel-hospitality", name: "Travel & Hospitality" },
+  ];
+
+  const [selectedIndustry, setSelectedIndustry] = useState("");
+
+  const handleChange = (event) => {
+    setSelectedIndustry(event.target.value);
+  };
+
+  console.log("selectedIndustry", selectedIndustry);
+
   return (
     <>
-
       {/* <!-- Contact --> */}
-      <section class="techVerse_contact">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-5 contact-laptopBG">
-              <div class="contactLaptop-outer">
-                <div
-                  class="techVerse-contact-img"
-                  data-aos="fade-right"
-                  data-aos-offset="0"
-                  data-aos-duration="2000"
-                >
-                  <img src={contactUslaptop} class="contactUs-laptop" alt="" />
+      <div ref={sectionRef}>
+        <section class="techVerse_contact">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-5 contact-laptopBG">
+                <div class="contactLaptop-outer">
+                  <div
+                    class="techVerse-contact-img"
+                    data-aos="fade-right"
+                    data-aos-offset="0"
+                    data-aos-duration="2000"
+                  >
+                    <img
+                      src={contactUslaptop}
+                      class="contactUs-laptop"
+                      alt=""
+                    />
+                  </div>
+                  <div className="contactinner_images">
+                    <img
+                      src={SuperToroidOrangeGlossy}
+                      class="techVerse-contact-imgIcon animation11"
+                      alt=""
+                    />
+                  </div>
                 </div>
-                <img
-                  src={SuperToroidOrangeGlossy}
-                  class="techVerse-contact-imgIcon animation11"
-                  alt=""
-                />
               </div>
-            </div>
-            <div class="col-lg-7">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="contact_form">
-                    <div class="contact_formContent">
-                      <div class="sec_title">
-                        <h2 class="sec_title_head color-lightBlue2">
-                          CONTACT
-                          <span class="color-darkBlue">Us</span>
-                        </h2>
-                      </div>
-                      <form onSubmit={handlesubmit}>
-                        <div class="row">
-                          <div class="col-md-5 mb-5 contact-formCols">
-                            <div class="form-group">
-                              <input
-                                required
-                                onChange={handlechange}
-                                name="firstname"
-                                type="text"
-                                placeholder="First Name"
-                                class="inputForm"
-                              />
-                            </div>
-                          </div>
-                          <div class="col-md-5 mb-5 contact-formCols">
-                            <div class="form-group">
-                              <input
-                                required
-                                onChange={handlechange}
-                                name="lastname"
-                                type="text"
-                                placeholder="Last Name"
-                                class="inputForm"
-                              />
-                            </div>
-                          </div>
-                          <div class="col-md-5 mb-5 contact-formCols">
-                            <div class="form-group">
-                              <input
-                                required
-                                onChange={handlechange}
-                                name="phone"
-                                type="text"
-                                placeholder="Phone Number"
-                                class="inputForm"
-                              />
-                            </div>
-                          </div>
-                          <div class="col-md-5 mb-5 contact-formCols">
-                            <div class="form-group">
-                              <input
-                                required
-                                onChange={handlechange}
-                                name="email"
-                                type="email"
-                                placeholder="Your Email"
-                                class="inputForm"
-                              />
-                            </div>
-                          </div>
-                          <div class="col-md-10 mb-5 contact-formCols">
-                            <div class="form-group">
-                              <textarea
-                                required
-                                onChange={handlechange}
-                                name="message"
-                                rows="8"
-                                class="inputForm"
-                                placeholder="Message"
-                              ></textarea>
-                            </div>
-                          </div>
-                          <div class="col-md-10 mb-5 contact-formCols">
-                            <div class="budget-wrap">
-                              <div class="budget-header">
-                                <span class="budget-title">Set Your Budget</span>
-                                <span class="budget-value"> ${budget}</span>
-                              </div>
-                              <div class="budget-content">
-                                <input
-                                  onChange={handlechange}
-                                  name="budget"
-                                  type="range"
-                                  // value={budget}
-                                  // setBudget={value}
-                                  min={0}
-                                  max={50000}
-                                  class="budget-slider"
-                                  id="budgetRange"
-                                />
-
-
-                                {/* <input
-                                  onChange={handlechange}
-                                  name="budget"
-                                  type="range"
-                                  min="500"
-                                  max="5000"
-                                  className="budget-slider"
-                                  id="budgetRange"
-                                  value={budget}
-                                /> */}
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-10 mb-5 contact-formCols">
-                            <div class="form-group">
-                              <div class="techVerse_hero_btns">
-                                <button type="submit" class="btn_with_icon w-100">
-                                  <span class="btn_with_icon_text">SUBMIT</span>
-                                </button>
-                              </div>
-                            </div>
-                          </div>
+              <div class="col-lg-7">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="contact_form">
+                      <div class="contact_formContent">
+                        <div class="sec_title">
+                          <h2 class="sec_title_head color-lightBlue2">
+                            CONTACT
+                            <span class="color-darkBlue"> Us </span>
+                          </h2>
                         </div>
-                      </form>
-                      <div class="get_discount_one">GET DISCOUNT</div>
-                    </div>
-                    {/* <div class="newLetterBox">
-                      <div class="contentBox">
-                        <h3
-                          class="newLetterBox_strokeTxt"
-                          data-aos="fade-up"
-                          data-aos-offset="0"
-                          data-aos-duration="1000"
-                        >
-                          NEWSLETTER
-                        </h3>
-                        <h3
-                          data-aos="fade-up"
-                          data-aos-offset="0"
-                          data-aos-duration="2000"
-                        >
-                          subscribe our newsletter
-                        </h3>
-                        <p
-                          data-aos="fade-up"
-                          data-aos-offset="0"
-                          data-aos-duration="2000"
-                        >
-                         Stay updated with the latest trends and insights in mobile innovation.
-                          Subscribe to our newsletter for exclusive updates, industry news, and tips to boost your digital strategy.
-                        </p>
-                        <form
-                          data-aos="fade-up"
-                          data-aos-offset="0"
-                          data-aos-duration="3000"
-                        >
-                          <div class="formGroup news_letterInput">
-                            <input
-                              type="email"
-                              placeholder="Enter Your Email...."
-                            />
-                            <button type="submit">
-                              Subscribe Now
-                              <img
-                                class="btn_with_icon_img"
-                                src={arrowicon}
-                                alt=""
-                              />
-                            </button>
+                        <form onSubmit={handlesubmit}>
+                          <div class="row">
+                            <div class="col-md-10 mb-3 contact-formCols">
+                              <div className="form-group">
+                                <select
+                                  className="inputForm"
+                                  name="industry"
+                                  value={selectedIndustry}
+                                  onChange={handleChange}
+                                  required
+                                >
+                                  <option value="" disabled>
+                                    Select your industry
+                                  </option>
+                                  {industries.map((industry) => (
+                                    <option
+                                      key={industry.key}
+                                      value={industry.key}
+                                    >
+                                      {industry.name}
+                                    </option>
+                                  ))}
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-md-5 mb-5 contact-formCols">
+                              <div class="form-group">
+                                <input
+                                  required
+                                  onChange={handlechange}
+                                  name="firstname"
+                                  type="text"
+                                  placeholder="First Name"
+                                  class="inputForm"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-5 mb-5 contact-formCols">
+                              <div class="form-group">
+                                <input
+                                  required
+                                  onChange={handlechange}
+                                  name="lastname"
+                                  type="text"
+                                  placeholder="Last Name"
+                                  class="inputForm"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-5 mb-5 contact-formCols">
+                              <div class="form-group">
+                                <input
+                                  required
+                                  onChange={handlechange}
+                                  name="phone"
+                                  type="text"
+                                  placeholder="Phone Number"
+                                  class="inputForm"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-5 mb-5 contact-formCols">
+                              <div class="form-group">
+                                <input
+                                  required
+                                  onChange={handlechange}
+                                  name="email"
+                                  type="email"
+                                  placeholder="Your Email"
+                                  class="inputForm"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-10 mb-5 contact-formCols">
+                              <div class="form-group">
+                                <textarea
+                                  required
+                                  onChange={handlechange}
+                                  name="message"
+                                  rows="8"
+                                  class="inputForm"
+                                  placeholder="Message"
+                                ></textarea>
+                              </div>
+                            </div>
+                            <div class="col-md-10 mb-5 contact-formCols">
+                              <div class="budget-wrap">
+                                <div class="budget-header">
+                                  <span class="budget-title">
+                                    Set Your Budget
+                                  </span>
+                                  <span class="budget-value"> ${budget}</span>
+                                </div>
+                                <div class="budget-content">
+                                  <input
+                                    onChange={handlechange}
+                                    name="budget"
+                                    type="range"
+                                    // value={budget}
+                                    // setBudget={value}
+                                    min={0}
+                                    max={50000}
+                                    class="budget-slider"
+                                    id="budgetRange"
+                                  />
+                                  {/* <input
+                                    onChange={handlechange}
+                                    name="budget"
+                                    type="range"
+                                    min="500"
+                                    max="5000"
+                                    className="budget-slider"
+                                    id="budgetRange"
+                                    value={budget}
+                                  /> */}
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-10 mb-5 contact-formCols">
+                              <div class="form-group">
+                                <div class="techVerse_hero_btns">
+                                  <button
+                                    type="submit"
+                                    class="btn_with_icon w-100"
+                                  >
+                                    <span class="btn_with_icon_text">
+                                      SUBMIT
+                                    </span>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </form>
+                        <div class="get_discount_one">GET DISCOUNT</div>
                       </div>
-                    </div> */}
+                      {/* <div class="newLetterBox">
+                        <div class="contentBox">
+                          <h3
+                            class="newLetterBox_strokeTxt"
+                            data-aos="fade-up"
+                            data-aos-offset="0"
+                            data-aos-duration="1000"
+                          >
+                            NEWSLETTER
+                          </h3>
+                          <h3
+                            data-aos="fade-up"
+                            data-aos-offset="0"
+                            data-aos-duration="2000"
+                          >
+                            subscribe our newsletter
+                          </h3>
+                          <p
+                            data-aos="fade-up"
+                            data-aos-offset="0"
+                            data-aos-duration="2000"
+                          >
+                           Stay updated with the latest trends and insights in mobile innovation.
+                            Subscribe to our newsletter for exclusive updates, industry news, and tips to boost your digital strategy.
+                          </p>
+                          <form
+                            data-aos="fade-up"
+                            data-aos-offset="0"
+                            data-aos-duration="3000"
+                          >
+                            <div class="formGroup news_letterInput">
+                              <input
+                                type="email"
+                                placeholder="Enter Your Email...."
+                              />
+                              <button type="submit">
+                                Subscribe Now
+                                <img
+                                  class="btn_with_icon_img"
+                                  src={arrowicon}
+                                  alt=""
+                                />
+                              </button>
+                            </div>
+                          </form>
+                        </div>
+                      </div> */}
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-
+        </section>
+      </div>
 
       {/* <!-- Partners --> */}
 
@@ -533,10 +624,12 @@ export const Footer = (props) => {
                     </div>
                     <div class="col-md-3">
                       <div class="footer__quick-links">
-                        <h3 class="foooter__subhead">  Services</h3>
+                        <h3 class="foooter__subhead"> Services</h3>
                         <ul class="icon_list_items footer__links footer__categories_links">
                           <li class="footer__link">
-                            <Link to={"/business-devlopment"} as={"link"}>Business Development</Link>
+                            <Link to={"/business-devlopment"} as={"link"}>
+                              Business Development
+                            </Link>
                           </li>
                           <li class="footer__link">
                             <Link to={"/"}>Development</Link>
@@ -545,7 +638,9 @@ export const Footer = (props) => {
                             <Link to={"/"}>Mobile Application Development</Link>
                           </li>
                           <li class="footer__link">
-                            <Link to={"/ecommerse-development"}>Ecommerce Development</Link>
+                            <Link to={"/ecommerse-development"}>
+                              Ecommerce Development
+                            </Link>
                           </li>
                           {/* <li class="footer__link">
                             <Link to={"/"}>Game Development</Link>
@@ -582,7 +677,9 @@ export const Footer = (props) => {
                             <Link to={"/"}>Media & Entertainment</Link>
                           </li>
                           <li class="footer__link">
-                            <Link to={"/realEstate-and-property"}>Real Estate & Property</Link>
+                            <Link to={"/realEstate-and-property"}>
+                              Real Estate & Property
+                            </Link>
                           </li>
                           <li class="footer__link">
                             <Link to={"/"}>Software & High Tech</Link>
@@ -591,7 +688,9 @@ export const Footer = (props) => {
                             <Link to={"/sports"}>Sports Teams & Leagues</Link>
                           </li>
                           <li class="footer__link">
-                            <Link to={"/health-care"}>Health & Life Sciences</Link>
+                            <Link to={"/health-care"}>
+                              Health & Life Sciences
+                            </Link>
                           </li>
                           <li class="footer__link">
                             <Link to={"/travel"}>Travel & Hospitality</Link>
@@ -607,12 +706,11 @@ export const Footer = (props) => {
                             <Link to={"/"}>About</Link>
                           </li>
                           <li class="footer__link">
-                            <Link to={"/contact"}>  Blogs</Link>
+                            <Link to={"/contact"}> Blogs</Link>
                           </li>
                           <li class="footer__link">
                             <Link to={"/"}>Contact</Link>
                           </li>
-                         
                         </ul>
                       </div>
                     </div>
@@ -632,7 +730,9 @@ export const Footer = (props) => {
                           <Link to={"/"}>Podcast</Link>
                           <Link to={"/"}>Blog</Link> */}
                           <Link to={"/privacy-policy"}>Privacy Policy</Link>
-                          <Link to={"/terms-conditions"}>Terms & Conditions</Link>
+                          <Link to={"/terms-conditions"}>
+                            Terms & Conditions
+                          </Link>
                         </div>
                       </div>
                       <div class="col-md-12">

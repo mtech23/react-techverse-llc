@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { Helmet } from "react-helmet";
 
 import { UserLayout } from "../../Components/Layout/UserLayout";
@@ -28,6 +28,91 @@ gsap.registerPlugin(MotionPathPlugin);
 
 const About_us = () => {
   Aos.init();
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const sections = sectionRef?.current.querySelectorAll(".aboutUS_hero");
+
+    sections.forEach((section) => {
+      const container = section.querySelector(".centerTitleIcon");
+
+      const handleMouseMove = (event) => {
+        const rect = section.getBoundingClientRect();
+        const mouseX = event.clientX - rect.left;
+        const mouseY = event.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const distX = (mouseX - centerX) * 0.1;
+        const distY = (mouseY - centerY) * 0.1;
+
+        gsap.to(container, {
+          x: distX,
+          y: distY,
+          ease: "power1.out",
+        });
+      };
+
+      const handleMouseLeave = () => {
+        gsap.to(container, {
+          x: 0,
+          y: 0,
+          ease: "power1.out",
+        });
+      };
+
+      section.addEventListener("mousemove", handleMouseMove);
+      section.addEventListener("mouseleave", handleMouseLeave);
+
+      return () => {
+        section.removeEventListener("mousemove", handleMouseMove);
+        section.removeEventListener("mouseleave", handleMouseLeave);
+      };
+    });
+  }, []);
+
+  const sectionRef1 = useRef(null);
+
+  useEffect(() => {
+    const sections1 = sectionRef1?.current.querySelectorAll(
+      ".customer_gratificationSec"
+    );
+
+    sections1.forEach((section) => {
+      const container = section.querySelector(".cgsIconContainer");
+
+      const handleMouseMove = (event) => {
+        const rect = section.getBoundingClientRect();
+        const mouseX = event.clientX - rect.left;
+        const mouseY = event.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const distX = (mouseX - centerX) * 0.1;
+        const distY = (mouseY - centerY) * 0.1;
+
+        gsap.to(container, {
+          x: distX,
+          y: distY,
+          ease: "power1.out",
+        });
+      };
+
+      const handleMouseLeave = () => {
+        gsap.to(container, {
+          x: 0,
+          y: 0,
+          ease: "power1.out",
+        });
+      };
+
+      section.addEventListener("mousemove", handleMouseMove);
+      section.addEventListener("mouseleave", handleMouseLeave);
+
+      return () => {
+        section.removeEventListener("mousemove", handleMouseMove);
+        section.removeEventListener("mouseleave", handleMouseLeave);
+      };
+    });
+  }, []);
 
   // useEffect(() => {
   //   gsap.set(".road", { opacity: 1 });
@@ -56,61 +141,70 @@ const About_us = () => {
 
   return (
     <UserLayout>
-
       <Helmet>
         <meta charSet="utf-8" />
-        <title> Welcome to Techverse LLC About us Details and Descriptions   </title>
-        <meta name="Find the information about the company Techverse LLC about us. The quality place of software applications development for web and mobile.  " content="Nested component" />
+        <title>
+          {" "}
+          Welcome to Techverse LLC About us Details and Descriptions{" "}
+        </title>
+        <meta
+          name="Find the information about the company Techverse LLC about us. The quality place of software applications development for web and mobile.  "
+          content="Nested component"
+        />
       </Helmet>
-      <section class="inner_hero aboutUS_hero hoverEffectSec">
-        <div class="inner-bgColor"></div>
-        <div class="width-1600">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="inner_hero_content centered-text">
-                  <h1
-                    data-aos="fade-right"
-                    data-aos-offset="0"
-                    data-aos-duration="1000"
-                  >
-                    Tech Solutions
-                    <span class="color-lightBlue1"> For</span> A Connected World
-                  </h1>
-                  <p
-                    data-aos="fade-right"
-                    data-aos-offset="0"
-                    data-aos-duration="2000"
-                  >
-                    At Techverse LLC, we are committed to empowering businesses
-                    and individuals with cutting-edge tech solutions that bridge
-                    the gap between innovation and everyday life. Our mission is
-                    to provide robust, scalable, and future-proof solutions that
-                    cater to our clients' diverse needs.
-                  </p>
-                  <div class="icon-container-hover">
-                    <img
-                      class="center_donatOrange animation11"
-                      src={donatorange}
-                      alt=""
-                    />
-                    <img
-                      class="center_donatBlue animation11"
-                      src={donatblue}
-                      alt=""
-                    />
+      <div ref={sectionRef}>
+        <section class="inner_hero aboutUS_hero hoverEffectSec">
+          <div class="inner-bgColor"></div>
+          <div class="width-1600">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="inner_hero_content centered-text">
+                    <h1
+                      data-aos="fade-right"
+                      data-aos-offset="0"
+                      data-aos-duration="1000"
+                    >
+                      Tech Solutions
+                      <span class="color-lightBlue1"> For</span> A Connected
+                      World
+                    </h1>
+                    <p
+                      data-aos="fade-right"
+                      data-aos-offset="0"
+                      data-aos-duration="2000"
+                    >
+                      At Techverse LLC, we are committed to empowering
+                      businesses and individuals with cutting-edge tech
+                      solutions that bridge the gap between innovation and
+                      everyday life. Our mission is to provide robust, scalable,
+                      and future-proof solutions that cater to our clients'
+                      diverse needs.
+                    </p>
+                    <div class="icon-container-hover centerTitleIcon">
+                      <img
+                        class="center_donatOrange animation11"
+                        src={donatorange}
+                        alt=""
+                      />
+                      <img
+                        class="center_donatBlue animation11"
+                        src={donatblue}
+                        alt=""
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
       <TrustedPartners />
       <Aboutsection
-       pinkcapsol={pinkcapsol}
-       greencube={greencube}
-       donatorange={donatorange}
+        pinkcapsol={pinkcapsol}
+        greencube={greencube}
+        donatorange={donatorange}
         title="What Sets Us"
         subtitle="Apart?"
         para="At Techverse LLC, we pride ourselves on our ability to transform businesses through meticulously crafted digital solutions. What truly distinguishes us is our holistic approach to web design and development. We begin each project with a deep dive into understanding your business objectives, target audience, and market dynamics. This foundational knowledge allows us to create bespoke websites that not only look stunning but also function seamlessly across all devices. Our team of seasoned designers and developers brings years of industry experience, ensuring that every aspect of your website—from user interface design to backend functionality—is optimized for performance and user experience."
@@ -133,129 +227,129 @@ const About_us = () => {
 
       <Website />
 
-      <section class="techVerse_about techVerse_aboutServices2 hoverEffectSec column-reverse-991">
-        <div class="icon-container-hover">
-          <img
-            class="techVerse_about_icon1 animation11"
-            src={pinkcapsol}
-            alt=""
-          />
-          {/* <!-- <img
+      <div ref={sectionRef1}>
+        <section class="techVerse_about techVerse_aboutServices2 customer_gratificationSec hoverEffectSec column-reverse-991">
+          <div class="icon-container-hover cgsIconContainer">
+            <img
+              class="techVerse_about_icon1 animation11"
+              src={pinkcapsol}
+              alt=""
+            />
+            {/* <!-- <img
             class="techVerse_about_icon2 animation33"
             src="images/Pill.png"
             alt=""
           /> --> */}
-          <img
-            class="techVerse_about_icon3 animation11"
-            src={greencube}
-            alt=""
-          />
-          <img
-            class="techVerse_about_icon4 animation11"
-            src={donatorange}
-            alt=""
-          />
-        </div>
-        <div class="techVerse_aboutContent techVerse_aboutContentServices2 customer_gratification width-1600">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="techVerse_about_content services-abbout2">
-                  <div class="sec_title">
-                    <h2
-                      class="sec_title_head color-darkBlue"
-                      data-aos="fade-up"
-                      data-aos-offset="0"
-                      data-aos-duration="1000"
-                    >
-                      Customer
-                      <span class="color-lightBlue2"> Gratification </span>
-                    </h2>
-                    <p
-                      data-aos="fade-up"
-                      data-aos-offset="0"
-                      data-aos-duration="2000"
-                    >
-                      At Techverse LLC, customer gratification is at the heart
-                      of everything we do. We believe in not just meeting but
-                      exceeding our client's expectations. From concept to
-                      execution, we prioritize clear communication, reliability,
-                      and a customer-centric approach that builds long-lasting
-                      partnerships.
-                    </p>
-                    <h2
-                      class="sec_title_head color-darkBlue"
-                      data-aos="fade-up"
-                      data-aos-offset="0"
-                      data-aos-duration="1000"
-                    >
-                      <span class="color-lightBlue2"> Innovation </span> &
-                      Creativity
-                    </h2>
-                    <p
-                      data-aos="fade-up"
-                      data-aos-offset="0"
-                      data-aos-duration="2000"
-                    >
-                      Innovation and creativity drive the core of Techverse LLC.
-                      We thrive on pushing boundaries, exploring new ideas, and
-                      transforming visions into reality. Our team of experts is
-                      constantly innovating, leveraging the latest skills and
-                      creative plans to deliver cutting-edge solutions tailored
-                      to your unique requirements. Whether it's developing
-                      groundbreaking apps, designing captivating websites, or
-                      implementing customized software solutions, we infuse
-                      innovation and creativity into every project we undertake.
-                    </p>
-                    <h2
-                      class="sec_title_head color-darkBlue"
-                      data-aos="fade-up"
-                      data-aos-offset="0"
-                      data-aos-duration="1000"
-                    >
-                      Mission & <span class="color-lightBlue2"> Vision </span>
-                    </h2>
-                    <p
-                      data-aos="fade-up"
-                      data-aos-offset="0"
-                      data-aos-duration="2000"
-                    >
-                      At Techverse LLC, our mission is to revolutionize
-                      businesses through technology solutions that empower
-                      growth and efficiency. We envision a future where
-                      innovation meets practicality, where every company can
-                      harness the power of technology to achieve its full
-                      potential. With a focus on integrity, collaboration, and
-                      excellence, we strive to be the preferred partner for
-                      businesses seeking transformative digital solutions. Our
-                      mission and vision guide us in delivering exceptional
-                      value and sustainable success for our clients worldwide.
-                    </p>
+            <img
+              class="techVerse_about_icon3 animation11"
+              src={greencube}
+              alt=""
+            />
+            <img
+              class="techVerse_about_icon4 animation11"
+              src={donatorange}
+              alt=""
+            />
+          </div>
+          <div class="techVerse_aboutContent techVerse_aboutContentServices2 customer_gratification width-1600">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="techVerse_about_content services-abbout2">
+                    <div class="sec_title">
+                      <h2
+                        class="sec_title_head color-darkBlue"
+                        data-aos="fade-up"
+                        data-aos-offset="0"
+                        data-aos-duration="1000"
+                      >
+                        Customer
+                        <span class="color-lightBlue2"> Gratification </span>
+                      </h2>
+                      <p
+                        data-aos="fade-up"
+                        data-aos-offset="0"
+                        data-aos-duration="2000"
+                      >
+                        At Techverse LLC, customer gratification is at the heart
+                        of everything we do. We believe in not just meeting but
+                        exceeding our client's expectations. From concept to
+                        execution, we prioritize clear communication,
+                        reliability, and a customer-centric approach that builds
+                        long-lasting partnerships.
+                      </p>
+                      <h2
+                        class="sec_title_head color-darkBlue"
+                        data-aos="fade-up"
+                        data-aos-offset="0"
+                        data-aos-duration="1000"
+                      >
+                        <span class="color-lightBlue2"> Innovation </span> &
+                        Creativity
+                      </h2>
+                      <p
+                        data-aos="fade-up"
+                        data-aos-offset="0"
+                        data-aos-duration="2000"
+                      >
+                        Innovation and creativity drive the core of Techverse
+                        LLC. We thrive on pushing boundaries, exploring new
+                        ideas, and transforming visions into reality. Our team
+                        of experts is constantly innovating, leveraging the
+                        latest skills and creative plans to deliver cutting-edge
+                        solutions tailored to your unique requirements. Whether
+                        it's developing groundbreaking apps, designing
+                        captivating websites, or implementing customized
+                        software solutions, we infuse innovation and creativity
+                        into every project we undertake.
+                      </p>
+                      <h2
+                        class="sec_title_head color-darkBlue"
+                        data-aos="fade-up"
+                        data-aos-offset="0"
+                        data-aos-duration="1000"
+                      >
+                        Mission & <span class="color-lightBlue2"> Vision </span>
+                      </h2>
+                      <p
+                        data-aos="fade-up"
+                        data-aos-offset="0"
+                        data-aos-duration="2000"
+                      >
+                        At Techverse LLC, our mission is to revolutionize
+                        businesses through technology solutions that empower
+                        growth and efficiency. We envision a future where
+                        innovation meets practicality, where every company can
+                        harness the power of technology to achieve its full
+                        potential. With a focus on integrity, collaboration, and
+                        excellence, we strive to be the preferred partner for
+                        businesses seeking transformative digital solutions. Our
+                        mission and vision guide us in delivering exceptional
+                        value and sustainable success for our clients worldwide.
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="techVerse_about_img">
-                  <div class="techVerse_about_laptop_img">
-                    <img
-                      src={aboutimg2}
-                      class="about-laptopImg about-page-img2"
-                      data-aos="fade-right"
-                      data-aos-offset="0"
-                      data-aos-duration="1000"
-                    />
+                <div class="col-lg-6">
+                  <div class="techVerse_about_img">
+                    <div class="techVerse_about_laptop_img">
+                      <img
+                        src={aboutimg2}
+                        class="about-laptopImg about-page-img2"
+                        data-aos="fade-right"
+                        data-aos-offset="0"
+                        data-aos-duration="1000"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
-      <Process
-      para="We proceed to meticulous planning, where we outline the app's features, user interface design, and functionality. Our expert team of developers then takes over, using cutting-edge technologies to build a robust and scalable application tailored to your specifications."
-      
-      />
+      <Process para="We proceed to meticulous planning, where we outline the app's features, user interface design, and functionality. Our expert team of developers then takes over, using cutting-edge technologies to build a robust and scalable application tailored to your specifications." />
 
       <Testimonials />
 

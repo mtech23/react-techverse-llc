@@ -16,6 +16,10 @@ import carbuying from '../../asserts/images/car-buying.png'
 import jeffwilson from '../../asserts/images/jeff-wilson.png'
 import lllreptile from '../../asserts/images/lll-reptile.png'
 import privateastrology from '../../asserts/images/private-astrology.png'
+import website1 from "../../asserts/images/website-1.png";
+import website2 from "../../asserts/images/website-2.png";
+import website3 from "../../asserts/images/website-3.png";
+import website4 from "../../asserts/images/website-4.png";
 import Macbook from '../../asserts/images/Macbook.png'
 import financeimg2 from '../../asserts/images/finance-img2.png'
 
@@ -234,10 +238,10 @@ const Finance = () => {
         image4={financeportfolio4}
         image5={financeportfolio5}
         image6={mobileframe}
-        image7={carbuying}
-        image8={jeffwilson}
-        image9={lllreptile}
-        image10={privateastrology}
+        image7={website1}
+        image8={website2}
+        image9={website3}
+        image10={website4}
         image11={Macbook}
         classmobileapp="nav-link"
         classwebsite="nav-link"

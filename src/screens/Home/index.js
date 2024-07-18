@@ -6,7 +6,7 @@ import herophonemockupgroup from "../../asserts/images/hero-phone-mockup-group.p
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import bluecubelarge from "../../asserts/images/blue-cube-large.png";
 import Particles from "react-particles";
-import ServiceParticle from '../../Components/ServiceParticle/ServiceParticle'
+import ServiceParticle from "../../Components/ServiceParticle/ServiceParticle";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
@@ -87,11 +87,47 @@ import cms2 from "../../asserts/images/CMS-2.png";
 import cms3 from "../../asserts/images/CMS-3.png";
 import cms4 from "../../asserts/images/CMS-4.png";
 import irvingsegalbg from "../../asserts/images/irving-segal-bg.png";
-import irvingsegalimg from "../../asserts/images/irving-segal-img-1.png";
+import irvingsegalimg from "../../asserts/images/irving-segal-img-1.webp";
 import braincarlislebg from "../../asserts/images/brain-carlisle-bg.png";
-import braincarlisleimg from "../../asserts/images/brain-carlisle-img-1.png";
+import braincarlisleimg from "../../asserts/images/brain-carlisle-img-1.webp";
 import anglebodybg from "../../asserts/images/angle-body-bg.png";
-import anglebodyimg from "../../asserts/images/angle-body-img.png";
+import anglebodyimg from "../../asserts/images/angle-body-img.webp";
+
+// import partnerImg1 from "../../asserts/images/partner-img-1.png";
+// import partnerImg2 from "../../asserts/images/partner-img-2.png";
+// import partnerImg3 from "../../asserts/images/partner-img-3.png";
+// import partnerImg4 from "../../asserts/images/partner-img-4.png";
+// import partnerImg5 from "../../asserts/images/partner-img-5.png";
+// import partnerImg6 from "../../asserts/images/partner-img-6.png";
+// import partnerImg7 from "../../asserts/images/partner-img-7.png";
+// import partnerImg8 from "../../asserts/images/partner-img-8.png";
+// import partnerImg9 from "../../asserts/images/partner-img-9.png";
+// import partnerImg10 from "../../asserts/images/partner-img-10.png";
+// import partnerImg11 from "../../asserts/images/partner-img-11.png";
+// import partnerImg12 from "../../asserts/images/partner-img-12.png";
+// import partnerImg13 from "../../asserts/images/partner-img-13.png";
+// import partnerImg14 from "../../asserts/images/partner-img-14.png";
+// import partnerImg15 from "../../asserts/images/partner-img-15.png";
+// import partnerImg16 from "../../asserts/images/partner-img-16.png";
+
+import partnerImg1 from "../../asserts/images/partner-img-1.svg";
+import partnerImg2 from "../../asserts/images/partner-img-2.svg";
+import partnerImg3 from "../../asserts/images/partner-img-3.svg";
+import partnerImg4 from "../../asserts/images/partner-img-4.svg";
+import partnerImg5 from "../../asserts/images/partner-img-5.svg";
+import partnerImg6 from "../../asserts/images/partner-img-6.svg";
+import partnerImg7 from "../../asserts/images/partner-img-7.svg";
+import partnerImg8 from "../../asserts/images/partner-img-8.svg";
+import partnerImg9 from "../../asserts/images/partner-img-9.svg";
+import partnerImg10 from "../../asserts/images/partner-img-10.svg";
+import partnerImg11 from "../../asserts/images/partner-img-11.svg";
+import partnerImg12 from "../../asserts/images/partner-img-12.svg";
+import partnerImg13 from "../../asserts/images/partner-img-13.svg";
+import partnerImg14 from "../../asserts/images/partner-img-14.svg";
+import partnerImg15 from "../../asserts/images/partner-img-15.svg";
+import { Helmet } from 'react-helmet';
+import partnerImg16 from "../../asserts/images/partner-img-16.svg";
+
 import Aos from "aos";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
@@ -105,20 +141,16 @@ const videos = [
   {
     id: 1,
     thumbnail: "path/to/thumbnail1.jpg",
-    videoSrc: "path/to/video1.mp4"
+    videoSrc: "path/to/video1.mp4",
   },
   {
     id: 2,
     thumbnail: "path/to/thumbnail2.jpg",
-    videoSrc: "path/to/video2.mp4"
+    videoSrc: "path/to/video2.mp4",
   },
-
-
 ];
 
 const Home = () => {
-
-
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);
 
@@ -156,14 +188,13 @@ const Home = () => {
   //   });
   // }, []);
 
-
   const sectionRef = useRef(null);
 
   useEffect(() => {
-    const sections = sectionRef?.current.querySelectorAll('.hoverEffectSec');
+    const sections = sectionRef?.current.querySelectorAll(".hoverEffectSec");
 
     sections.forEach((section) => {
-      const container = section.querySelector('.inner_images');
+      const container = section.querySelector(".inner_images");
 
       const handleMouseMove = (event) => {
         const rect = section.getBoundingClientRect();
@@ -177,7 +208,7 @@ const Home = () => {
         gsap.to(container, {
           x: distX,
           y: distY,
-          ease: 'power1.out',
+          ease: "power1.out",
         });
       };
 
@@ -185,31 +216,27 @@ const Home = () => {
         gsap.to(container, {
           x: 0,
           y: 0,
-          ease: 'power1.out',
+          ease: "power1.out",
         });
       };
 
-      section.addEventListener('mousemove', handleMouseMove);
-      section.addEventListener('mouseleave', handleMouseLeave);
+      section.addEventListener("mousemove", handleMouseMove);
+      section.addEventListener("mouseleave", handleMouseLeave);
 
       return () => {
-        section.removeEventListener('mousemove', handleMouseMove);
-        section.removeEventListener('mouseleave', handleMouseLeave);
+        section.removeEventListener("mousemove", handleMouseMove);
+        section.removeEventListener("mouseleave", handleMouseLeave);
       };
     });
   }, []);
-
-
-
-
 
   const sec2 = useRef(null);
 
   useEffect(() => {
-    const sections = sec2?.current.querySelectorAll('.sevices_hover');
+    const sections = sec2?.current.querySelectorAll(".sevices_hover");
 
     sections.forEach((section) => {
-      const container = section.querySelector('.services_inner_images');
+      const container = section.querySelector(".services_inner_images");
 
       const handleMouseMove = (event) => {
         const rect = section.getBoundingClientRect();
@@ -223,7 +250,7 @@ const Home = () => {
         gsap.to(container, {
           x: distX,
           y: distY,
-          ease: 'power1.out',
+          ease: "power1.out",
         });
       };
 
@@ -231,33 +258,28 @@ const Home = () => {
         gsap.to(container, {
           x: 0,
           y: 0,
-          ease: 'power1.out',
+          ease: "power1.out",
         });
       };
 
-      section.addEventListener('mousemove', handleMouseMove);
-      section.addEventListener('mouseleave', handleMouseLeave);
+      section.addEventListener("mousemove", handleMouseMove);
+      section.addEventListener("mouseleave", handleMouseLeave);
 
       return () => {
-        section.removeEventListener('mousemove', handleMouseMove);
-        section.removeEventListener('mouseleave', handleMouseLeave);
+        section.removeEventListener("mousemove", handleMouseMove);
+        section.removeEventListener("mouseleave", handleMouseLeave);
       };
     });
   }, []);
-
-
-
-
-
-
 
   const caseStudies = useRef(null);
 
   useEffect(() => {
-    const sections = caseStudies?.current.querySelectorAll('.caseStudies_hover');
+    const sections =
+      caseStudies?.current.querySelectorAll(".caseStudies_hover");
 
     sections.forEach((section) => {
-      const container = section.querySelector('.caseStudies_inner_images');
+      const container = section.querySelector(".caseStudies_inner_images");
 
       const handleMouseMove = (event) => {
         const rect = section.getBoundingClientRect();
@@ -271,7 +293,7 @@ const Home = () => {
         gsap.to(container, {
           x: distX,
           y: distY,
-          ease: 'power1.out',
+          ease: "power1.out",
         });
       };
 
@@ -279,30 +301,29 @@ const Home = () => {
         gsap.to(container, {
           x: 0,
           y: 0,
-          ease: 'power1.out',
+          ease: "power1.out",
         });
       };
 
-      section.addEventListener('mousemove', handleMouseMove);
-      section.addEventListener('mouseleave', handleMouseLeave);
+      section.addEventListener("mousemove", handleMouseMove);
+      section.addEventListener("mouseleave", handleMouseLeave);
 
       return () => {
-        section.removeEventListener('mousemove', handleMouseMove);
-        section.removeEventListener('mouseleave', handleMouseLeave);
+        section.removeEventListener("mousemove", handleMouseMove);
+        section.removeEventListener("mouseleave", handleMouseLeave);
       };
     });
   }, []);
 
-
-
-
   const website = useRef(null);
 
   useEffect(() => {
-    const sections = website?.current.querySelectorAll('.techVerse_webSolution');
+    const sections = website?.current.querySelectorAll(
+      ".techVerse_webSolution"
+    );
 
     sections.forEach((section) => {
-      const container = section.querySelector('.techVerse_webSolution_hover');
+      const container = section.querySelector(".techVerse_webSolution_hover");
 
       const handleMouseMove = (event) => {
         const rect = section.getBoundingClientRect();
@@ -317,7 +338,7 @@ const Home = () => {
           x: distX,
           y: distY,
           zIndex: 10, // Bring to front
-          ease: 'power1.out',
+          ease: "power1.out",
         });
       };
 
@@ -326,22 +347,29 @@ const Home = () => {
           x: 0,
           y: 0,
           zIndex: 1, // Reset to default
-          ease: 'power1.out',
-          clearProps: 'all'
+          ease: "power1.out",
+          clearProps: "all",
         });
       };
 
-      section.addEventListener('mousemove', handleMouseMove);
-      section.addEventListener('mouseleave', handleMouseLeave);
+      section.addEventListener("mousemove", handleMouseMove);
+      section.addEventListener("mouseleave", handleMouseLeave);
 
       return () => {
-        section.removeEventListener('mousemove', handleMouseMove);
-        section.removeEventListener('mouseleave', handleMouseLeave);
+        section.removeEventListener("mousemove", handleMouseMove);
+        section.removeEventListener("mouseleave", handleMouseLeave);
       };
     });
   }, []);
   return (
     <UserLayout>
+      
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Welcome to Techverse LLC</title>
+        <meta name="Need a professional mobile app development agency? Our expert team offers top-notch web and mobile solutions, including app development, CMS platforms, and innovative tech solutions. Hire us to elevate your business with cutting-edge technology." />
+      </Helmet>
+
       <div className="relative" ref={sectionRef}>
         <Swiper
           style={{
@@ -481,7 +509,10 @@ const Home = () => {
                           data-aos-duration="1000"
                         >
                           Creating
-                          <span class="color-lightBlue1"> Custom Solutions </span>
+                          <span class="color-lightBlue1">
+                            {" "}
+                            Custom Solutions{" "}
+                          </span>
                           For A Digital Age With Techverse LLC
                         </h1>
                         <p
@@ -489,8 +520,12 @@ const Home = () => {
                           data-aos-offset="0"
                           data-aos-duration="2000"
                         >
-                          In the rapidly evolving digital landscape, staying ahead requires innovative and personalized solutions that cater to unique business needs.
-                          At Techverse LLC, we specialize in creating custom digital solutions designed to transform and raise your business presence.
+                          In the rapidly evolving digital landscape, staying
+                          ahead requires innovative and personalized solutions
+                          that cater to unique business needs. At Techverse LLC,
+                          we specialize in creating custom digital solutions
+                          designed to transform and raise your business
+                          presence.
                         </p>
                         <div
                           class="techVerse_hero_btns"
@@ -559,7 +594,6 @@ const Home = () => {
                           data-aos-duration="3000"
                           alt=""
                         />
-
                       </div>
                     </div>
                   </div>
@@ -589,8 +623,13 @@ const Home = () => {
                           data-aos-offset="0"
                           data-aos-duration="2000"
                         >
-                          We are dedicated to revolutionizing your digital presence through bespoke website designs, intuitive mobile apps, and robust software solutions personalized to your
-                          unique business needs. Our team of passionate innovators harnesses the latest technology trends to propel your brand forward in the digital landscape.
+                          We are dedicated to revolutionizing your digital
+                          presence through bespoke website designs, intuitive
+                          mobile apps, and robust software solutions
+                          personalized to your unique business needs. Our team
+                          of passionate innovators harnesses the latest
+                          technology trends to propel your brand forward in the
+                          digital landscape.
                         </p>
                         <div
                           class="techVerse_hero_btns"
@@ -651,7 +690,6 @@ const Home = () => {
                             class="techVerse_hero_icon3 animation22"
                             alt=""
                           />
-
                         </div>
                         <img
                           src={heroslidermockupimg3}
@@ -691,8 +729,8 @@ const Home = () => {
       />
 
       {/* <!-- Website --> */}
-      <div ref={website} >
-        <section   class="techVerse_webSolution ">
+      <div ref={website}>
+        <section class="techVerse_webSolution ">
           <div className="techVerse_webSolution_hover">
             <img
               class="techVerse_webSolution_icon1 animation11"
@@ -717,8 +755,8 @@ const Home = () => {
                       data-aos-duration="1000"
                     >
                       Revolutionize Your Business Presence
-                      <span class="color-lightBlue2"> With </span>A Custom Website
-                      Design
+                      <span class="color-lightBlue2"> With </span>A Custom
+                      Website Design
                     </h2>
                     <p
                       data-aos="fade-up"
@@ -749,7 +787,9 @@ const Home = () => {
                           src={chaticonblue}
                           alt=""
                         />
-                        <span class="btn_with_icon_text">Start A Live Chat</span>
+                        <span class="btn_with_icon_text">
+                          Start A Live Chat
+                        </span>
                       </a>
                     </div>
                   </div>
@@ -807,8 +847,10 @@ const Home = () => {
                   data-aos-offset="0"
                   data-aos-duration="2000"
                 >
-                  At Techverse LLC, we pride ourselves on delivering cutting-edge solutions tailored to meet your digital needs.
-                  Discover our range of solutions designed to raise your business:
+                  At Techverse LLC, we pride ourselves on delivering
+                  cutting-edge solutions tailored to meet your digital needs.
+                  Discover our range of solutions designed to raise your
+                  business:
                 </p>
               </div>
               <div class="techVerse_services_content">
@@ -825,10 +867,14 @@ const Home = () => {
                     <h3 class="service_box_title">IOS Development</h3>
                   </div>
                   <div class="service_box_after">
-                    <h3 class="service_box_title">Cross-Platform Development</h3>
+                    <h3 class="service_box_title">
+                      Cross-Platform Development
+                    </h3>
                     <p class="service_box_p">
-                      Harness the power of Apple's ecosystem with our iOS development services.
-                      Whether you're introducing a new app or improving an existing one, our team ensures seamless integration and intuitive user experiences.
+                      Harness the power of Apple's ecosystem with our iOS
+                      development services. Whether you're introducing a new app
+                      or improving an existing one, our team ensures seamless
+                      integration and intuitive user experiences.
                     </p>
                   </div>
                 </div>
@@ -837,13 +883,20 @@ const Home = () => {
                     <div class="service_box_icon">
                       <img src={smartcontracticon} alt="" />
                     </div>
-                    <h3 class="service_box_title">Smart Contract Development</h3>
+                    <h3 class="service_box_title">
+                      Smart Contract Development
+                    </h3>
                   </div>
                   <div class="service_box_after">
-                    <h3 class="service_box_title">Smart Contract Development</h3>
+                    <h3 class="service_box_title">
+                      Smart Contract Development
+                    </h3>
                     <p class="service_box_p">
-                      Get the potential of blockchain technology with our brilliant contract development expertise.
-                      From initial concept to deployment, we specialize in creating secure and efficient intelligent contracts tailored to your specific requirements.
+                      Get the potential of blockchain technology with our
+                      brilliant contract development expertise. From initial
+                      concept to deployment, we specialize in creating secure
+                      and efficient intelligent contracts tailored to your
+                      specific requirements.
                     </p>
                   </div>
                 </div>
@@ -857,8 +910,11 @@ const Home = () => {
                   <div class="service_box_after">
                     <h3 class="service_box_title">Android Development</h3>
                     <p class="service_box_p">
-                      Reach the vast Android user base with our Android development services.
-                      We craft scalable and engaging applications that leverage the latest features of the Android platform, ensuring optimal performance across devices.
+                      Reach the vast Android user base with our Android
+                      development services. We craft scalable and engaging
+                      applications that leverage the latest features of the
+                      Android platform, ensuring optimal performance across
+                      devices.
                     </p>
                   </div>
                 </div>
@@ -872,8 +928,10 @@ const Home = () => {
                   <div class="service_box_after">
                     <h3 class="service_box_title">Custom App Development</h3>
                     <p class="service_box_p">
-                      Tailor-made solutions for unique business challenges.
-                      Our service is designed to align perfectly with your strategic objectives, delivering functionality and innovation that set you apart in the digital landscape.
+                      Tailor-made solutions for unique business challenges. Our
+                      service is designed to align perfectly with your strategic
+                      objectives, delivering functionality and innovation that
+                      set you apart in the digital landscape.
                     </p>
                   </div>
                 </div>
@@ -882,13 +940,20 @@ const Home = () => {
                     <div class="service_box_icon">
                       <img src={enterprizeicon} alt="" />
                     </div>
-                    <h3 class="service_box_title">Enterprise App Development</h3>
+                    <h3 class="service_box_title">
+                      Enterprise App Development
+                    </h3>
                   </div>
                   <div class="service_box_after">
-                    <h3 class="service_box_title">Enterprise App Development</h3>
+                    <h3 class="service_box_title">
+                      Enterprise App Development
+                    </h3>
                     <p class="service_box_p">
-                      Empower your enterprise with robust, scalable applications.
-                      Our enterprise app development team combines industry best practices with deep technical expertise to deliver solutions that streamline operations and drive growth.
+                      Empower your enterprise with robust, scalable
+                      applications. Our enterprise app development team combines
+                      industry best practices with deep technical expertise to
+                      deliver solutions that streamline operations and drive
+                      growth.
                     </p>
                   </div>
                 </div>
@@ -897,13 +962,20 @@ const Home = () => {
                     <div class="service_box_icon">
                       <img src={crossplatform} alt="" />
                     </div>
-                    <h3 class="service_box_title">Cross-Platform Development</h3>
+                    <h3 class="service_box_title">
+                      Cross-Platform Development
+                    </h3>
                   </div>
                   <div class="service_box_after">
-                    <h3 class="service_box_title">Cross-Platform Development</h3>
+                    <h3 class="service_box_title">
+                      Cross-Platform Development
+                    </h3>
                     <p class="service_box_p">
-                      Maximize your reach with cross-platform development solutions.
-                      We utilize leading frameworks to build apps that operate seamlessly across multiple platforms, minimizing development time and maximizing user engagement.
+                      Maximize your reach with cross-platform development
+                      solutions. We utilize leading frameworks to build apps
+                      that operate seamlessly across multiple platforms,
+                      minimizing development time and maximizing user
+                      engagement.
                     </p>
                   </div>
                 </div>
@@ -916,13 +988,14 @@ const Home = () => {
                   data-aos-offset="0"
                   data-aos-duration="2000"
                 >
-                  <span class="btn_with_icon_text">START YOUR PROJECT NOW!</span>
+                  <span class="btn_with_icon_text">
+                    START YOUR PROJECT NOW!
+                  </span>
                 </a>
               </div>
             </div>
           </div>
         </div>
-
       </section>
 
       {/* <!-- Portfolio --> */}
@@ -955,7 +1028,7 @@ const Home = () => {
       />
 
       {/* process we use */}
-      <Process />
+      <Process para="We proceed to meticulous planning, where we outline the app's features, user interface design, and functionality. Our expert team of developers then takes over, using cutting-edge technologies to build a robust and scalable application tailored to your specifications." />
 
       {/* MOBILE APP */}
       <Elevateyourbusiness />
@@ -983,7 +1056,8 @@ const Home = () => {
               class="techVerse_caseStudies_icon4 animation33"
               src={orangecircle}
               alt=""
-            /></div>
+            />
+          </div>
           <div class="techVerse_caseStudies-Content">
             <div class="container-fluid">
               <div class="row">
@@ -1003,8 +1077,10 @@ const Home = () => {
                       data-aos-offset="0"
                       data-aos-duration="2000"
                     >
-                      Techverse LLC has collaborated with numerous businesses worldwide, delivering advanced, responsive, and feature-rich applications.
-                      Explore some of our standout projects:
+                      Techverse LLC has collaborated with numerous businesses
+                      worldwide, delivering advanced, responsive, and
+                      feature-rich applications. Explore some of our standout
+                      projects:
                     </p>
                   </div>
                 </div>
@@ -1051,8 +1127,7 @@ const Home = () => {
                   <div
                     class="techVerse_caseStudy_img bgOrange"
                     style={{
-                      backgroundImage:
-                        `url(${elevengb})`,
+                      backgroundImage: `url(${elevengb})`,
                     }}
                     data-aos="fade-right"
                     data-aos-offset="0"
@@ -1065,8 +1140,7 @@ const Home = () => {
                   <div
                     class="techVerse_caseStudy_img bgOrange "
                     style={{
-                      backgroundImage:
-                        `url(${framewithphotobg})`,
+                      backgroundImage: `url(${framewithphotobg})`,
                     }}
                     data-aos="fade-up"
                     data-aos-offset="0"
@@ -1079,8 +1153,7 @@ const Home = () => {
                   <div
                     class="techVerse_caseStudy_img bgOrange "
                     style={{
-                      backgroundImage:
-                        `url(${ryderzvanbg})`,
+                      backgroundImage: `url(${ryderzvanbg})`,
                     }}
                     // class="techVerse_caseStudy_img bgOrange caseStudy_img_bg_one"
                     data-aos="fade-left"
@@ -1096,158 +1169,197 @@ const Home = () => {
         </div>
       </section>
 
-
-
       {/* <!-- Trusted Partners --> */}
       <section class="techVerse_trustedPartners">
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-12">
               <div class="sec_title">
-                <h2 class="sec_title_head color-lightBlue2" data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000">
+                <h2
+                  class="sec_title_head color-lightBlue2"
+                  data-aos="fade-up"
+                  data-aos-offset="0"
+                  data-aos-duration="1000"
+                >
                   Our
                   <span class="color-darkBlue"> TRUSTED PARTNERS</span>
                 </h2>
               </div>
             </div>
             <div class="col-md-12">
-              <div class="row flex-nowrap gap-4 mb-3 additional_classes" >
+              <div class="row flex-nowrap gap-4 mb-3 additional_classes">
                 {/* <div class="row flex-nowrap gap-4 mb-3 additional_classes" style={{overflow-x: 'auto' , gap: '15px'}} > */}
                 <div class="marquee-container trusted-partnerContainer">
                   <div class="marquee">
+                    {/* <div class="trustedPartners">
+                      <div class="trustedPartner col">
+                        <img src={tpblue} alt="" />
+                      </div>
+                      <div class="trustedPartner col">
+                        <img src={tpblack} alt="" />
+                      </div>
+                      <div class="trustedPartner col">
+                        <img src={tpblue} alt="" />
+                      </div>
+                      <div class="trustedPartner col">
+                        <img src={tpblack} alt="" />
+                      </div>
+                      <div class="trustedPartner col">
+                        <img src={tpblue} alt="" />
+                      </div>
+                      <div class="trustedPartner col">
+                        <img src={tpblack} alt="" />
+                      </div>
+                      <div class="trustedPartner col">
+                        <img src={tpblue} alt="" />
+                      </div>
+                      <div class="trustedPartner col">
+                        <img src={tpblack} alt="" />
+                      </div>
+                      <div class="trustedPartner col">
+                        <img src={tpblue} alt="" />
+                      </div>
+                      <div class="trustedPartner col">
+                        <img src={tpblack} alt="" />
+                      </div>
+                      <div class="trustedPartner col">
+                        <img src={tpblue} alt="" />
+                      </div>
+                      <div class="trustedPartner col">
+                        <img src={tpblack} alt="" />
+                      </div>
+                      <div class="trustedPartner col">
+                        <img src={tpblue} alt="" />
+                      </div>
+                      <div class="trustedPartner col">
+                        <img src={tpblack} alt="" />
+                      </div>
+                      <div class="trustedPartner col">
+                        <img src={tpblue} alt="" />
+                      </div>
+                      <div class="trustedPartner col">
+                        <img src={tpblack} alt="" />
+                      </div>
+                      <div class="trustedPartner col">
+                        <img src={tpblue} alt="" />
+                      </div>
+                      <div class="trustedPartner col">
+                        <img src={tpblack} alt="" />
+                      </div>
+                      <div class="trustedPartner col">
+                        <img src={tpblue} alt="" />
+                      </div>
+                      <div class="trustedPartner col">
+                        <img src={tpblack} alt="" />
+                      </div>
+                    </div> */}
                     <div class="trustedPartners">
                       <div class="trustedPartner col">
-                        <img src={tpblue} alt="" />
+                        <img src={partnerImg1} alt="" />
                       </div>
                       <div class="trustedPartner col">
-                        <img src={tpblack} alt="" />
+                        <img src={partnerImg2} alt="" />
                       </div>
                       <div class="trustedPartner col">
-                        <img src={tpblue} alt="" />
+                        <img src={partnerImg3} alt="" />
                       </div>
                       <div class="trustedPartner col">
-                        <img src={tpblack} alt="" />
+                        <img src={partnerImg4} alt="" />
                       </div>
                       <div class="trustedPartner col">
-                        <img src={tpblue} alt="" />
+                        <img src={partnerImg5} alt="" />
                       </div>
                       <div class="trustedPartner col">
-                        <img src={tpblack} alt="" />
+                        <img src={partnerImg6} alt="" />
                       </div>
                       <div class="trustedPartner col">
-                        <img src={tpblue} alt="" />
+                        <img src={partnerImg7} alt="" />
                       </div>
                       <div class="trustedPartner col">
-                        <img src={tpblack} alt="" />
+                        <img src={partnerImg8} alt="" />
                       </div>
                       <div class="trustedPartner col">
-                        <img src={tpblue} alt="" />
+                        <img src={partnerImg1} alt="" />
                       </div>
                       <div class="trustedPartner col">
-                        <img src={tpblack} alt="" />
+                        <img src={partnerImg2} alt="" />
                       </div>
                       <div class="trustedPartner col">
-                        <img src={tpblue} alt="" />
+                        <img src={partnerImg3} alt="" />
                       </div>
                       <div class="trustedPartner col">
-                        <img src={tpblack} alt="" />
+                        <img src={partnerImg4} alt="" />
                       </div>
                       <div class="trustedPartner col">
-                        <img src={tpblue} alt="" />
+                        <img src={partnerImg5} alt="" />
                       </div>
                       <div class="trustedPartner col">
-                        <img src={tpblack} alt="" />
+                        <img src={partnerImg6} alt="" />
                       </div>
                       <div class="trustedPartner col">
-                        <img src={tpblue} alt="" />
+                        <img src={partnerImg7} alt="" />
                       </div>
                       <div class="trustedPartner col">
-                        <img src={tpblack} alt="" />
-                      </div>
-                      <div class="trustedPartner col">
-                        <img src={tpblue} alt="" />
-                      </div>
-                      <div class="trustedPartner col">
-                        <img src={tpblack} alt="" />
-                      </div>
-                      <div class="trustedPartner col">
-                        <img src={tpblue} alt="" />
-                      </div>
-                      <div class="trustedPartner col">
-                        <img src={tpblack} alt="" />
+                        <img src={partnerImg8} alt="" />
                       </div>
                     </div>
-
                   </div>
                 </div>
               </div>
 
-              <div class="row flex-nowrap gap-4 mb-3 additional_classes" >
+              <div class="row flex-nowrap gap-4 mb-3 additional_classes">
                 <div class="marquee-container trusted-partnerContainer">
                   <div class="marquee1">
                     <div class="trustedPartners">
                       <div class="trustedPartner col">
-                        <img src={tpblue} alt="" />
+                        <img src={partnerImg9} alt="" />
                       </div>
                       <div class="trustedPartner col">
-                        <img src={tpblack} alt="" />
+                        <img src={partnerImg10} alt="" />
                       </div>
                       <div class="trustedPartner col">
-                        <img src={tpblue} alt="" />
+                        <img src={partnerImg11} alt="" />
                       </div>
                       <div class="trustedPartner col">
-                        <img src={tpblack} alt="" />
+                        <img src={partnerImg12} alt="" />
                       </div>
                       <div class="trustedPartner col">
-                        <img src={tpblue} alt="" />
+                        <img src={partnerImg13} alt="" />
                       </div>
                       <div class="trustedPartner col">
-                        <img src={tpblack} alt="" />
+                        <img src={partnerImg14} alt="" />
                       </div>
                       <div class="trustedPartner col">
-                        <img src={tpblue} alt="" />
+                        <img src={partnerImg15} alt="" />
                       </div>
                       <div class="trustedPartner col">
-                        <img src={tpblack} alt="" />
+                        <img src={partnerImg16} alt="" />
                       </div>
                       <div class="trustedPartner col">
-                        <img src={tpblue} alt="" />
+                        <img src={partnerImg9} alt="" />
                       </div>
                       <div class="trustedPartner col">
-                        <img src={tpblack} alt="" />
+                        <img src={partnerImg10} alt="" />
                       </div>
                       <div class="trustedPartner col">
-                        <img src={tpblue} alt="" />
+                        <img src={partnerImg11} alt="" />
                       </div>
                       <div class="trustedPartner col">
-                        <img src={tpblack} alt="" />
+                        <img src={partnerImg12} alt="" />
                       </div>
                       <div class="trustedPartner col">
-                        <img ssrc={tpblue} alt="" />
+                        <img src={partnerImg13} alt="" />
                       </div>
                       <div class="trustedPartner col">
-                        <img src={tpblack} alt="" />
+                        <img src={partnerImg14} alt="" />
                       </div>
                       <div class="trustedPartner col">
-                        <img src={tpblue} alt="" />
+                        <img src={partnerImg15} alt="" />
                       </div>
                       <div class="trustedPartner col">
-                        <img src={tpblack} alt="" />
-                      </div>
-                      <div class="trustedPartner col">
-                        <img src={tpblue} alt="" />
-                      </div>
-                      <div class="trustedPartner col">
-                        <img src={tpblack} alt="" />
-                      </div>
-                      <div class="trustedPartner col">
-                        <img src={tpblue} alt="" />
-                      </div>
-                      <div class="trustedPartner col">
-                        <img src={tpblack} alt="" />
+                        <img src={partnerImg16} alt="" />
                       </div>
                     </div>
-
                   </div>
                 </div>
               </div>
@@ -1255,8 +1367,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-
 
       {/* Testimonials */}
       <Testimonials />
