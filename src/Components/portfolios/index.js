@@ -34,44 +34,44 @@ const Portfolios = (props) => {
                 </div>
               </div>
               <div class="col-md-12">
-               <div  className="custom_tab_height">
-               <div
-                  class="portfolio_tabs nav nav-tabs"
-                  id="myTab"
-                  role="tablist"
-                  data-aos="fade-up"
-                  data-aos-offset="0"
-                  data-aos-duration="3000"
-                >
-                  <a
-                    class="nav-link active"
-                    id="mobile_apps"
-                    data-toggle="tab"
-                    href="#mobile-app"
-                    role="tab"
+                <div className="custom_tab_height">
+                  <div
+                    class="portfolio_tabs nav nav-tabs"
+                    id="myTab"
+                    role="tablist"
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="3000"
                   >
-                    Mobile Apps
-                  </a>
-                  <a
-                    class="nav-link"
-                    id="websites_tab"
-                    data-toggle="tab"
-                    href="#website-tab"
-                    role="tab"
-                  >
-                    Websites
-                  </a>
-                  <a
-                    class={props?.classcms}
-                    id="cms_tab"
-                    data-toggle="tab"
-                    href="#cms-tab"
-                    role="tab"
-                  >
-                    {props?.CMS}
-                  </a>
+                    <a
+                      class="nav-link active"
+                      id="mobile_apps"
+                      data-toggle="tab"
+                      href="#mobile-app"
+                      role="tab"
+                    >
+                      Mobile Apps
+                    </a>
+                    <a
+                      class="nav-link"
+                      id="websites_tab"
+                      data-toggle="tab"
+                      href="#website-tab"
+                      role="tab"
+                    >
+                      Websites
+                    </a>
+                    <a
+                      class={props?.classcms}
+                      id="cms_tab"
+                      data-toggle="tab"
+                      href="#cms-tab"
+                      role="tab"
+                    >
+                      {props?.CMS}
+                    </a>
+                  </div>
                 </div>
-               </div>
                 <div class="tab-content" id="portfolioTabs">
                   <div
                     class="tab-pane fade show active"

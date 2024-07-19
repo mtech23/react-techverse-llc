@@ -165,19 +165,19 @@
                   <img src={portfoliomockup2} alt="" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="images/portfolio-mockup-3.png" alt="" />
+                  <img src="images/portfolio-mockup-3.webp" alt="" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="images/portfolio-mockup-4.png" alt="" />
+                  <img src="images/portfolio-mockup-4.webp" alt="" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="images/portfolio-mockup-5.png" alt="" />
+                  <img src="images/portfolio-mockup-5.webp" alt="" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="images/portfolio-mockup-1.png" alt="" />
+                  <img src="images/portfolio-mockup-1.webp" alt="" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="images/portfolio-mockup-2.png" alt="" />
+                  <img src="images/portfolio-mockup-2.webp" alt="" />
                 </div>
               </div> */}
             {/* </div> */}
@@ -243,28 +243,28 @@
             {/* <div class="swiper webAppCarousel">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img src="images/car-buying.png" alt="" />
+                  <img src="images/car-buying.webp" alt="" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="images/jeff-wilson.png" alt="" />
+                  <img src="images/jeff-wilson.webp" alt="" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="images/lll-reptile.png" alt="" />
+                  <img src="images/lll-reptile.webp" alt="" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="images/private-astrology.png" alt="" />
+                  <img src="images/private-astrology.webp" alt="" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="images/car-buying.png" alt="" />
+                  <img src="images/car-buying.webp" alt="" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="images/jeff-wilson.png" alt="" />
+                  <img src="images/jeff-wilson.webp" alt="" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="images/lll-reptile.png" alt="" />
+                  <img src="images/lll-reptile.webp" alt="" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="images/private-astrology.png" alt="" />
+                  <img src="images/private-astrology.webp" alt="" />
                 </div>
               </div> */}
             {/* </div> */}

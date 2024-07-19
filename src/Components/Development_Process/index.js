@@ -1,29 +1,24 @@
 import React, { useEffect, useRef } from "react";
-import pinkcapsol from "../../asserts/images/pink-capsol.png";
+import pinkcapsol from "../../asserts/images/pink-capsol.webp";
 import { gsap } from "gsap";
-import phoneicon from "../../asserts/images/phone-icon.png";
-import chaticon from "../../asserts/images/chat-icon.png";
-import devandmaintenenceicon from "../../asserts/images/dev-and-maintenence-icon.png";
-import qualityicon from "../../asserts/images/quality-icon.png";
-import designanddevicon from "../../asserts/images/design-and-dev-icon.png";
-import businessanalysisicon from "../../asserts/images/business-analysis-icon.png";
-import realestateimg2 from "../../asserts/images/real-estate-img2.gif";
+import phoneicon from "../../asserts/images/phone-icon.webp";
+import chaticon from "../../asserts/images/chat-icon.webp";
+import devandmaintenenceicon from "../../asserts/images/dev-and-maintenence-icon.webp";
+import qualityicon from "../../asserts/images/quality-icon.webp";
+import designanddevicon from "../../asserts/images/design-and-dev-icon.webp";
+import businessanalysisicon from "../../asserts/images/business-analysis-icon.webp";
 
-import greencube from "../../asserts/images/green-cube.png";
-import donatorange from "../../asserts/images/donat-orange.png";
-
-
+import greencube from "../../asserts/images/green-cube.webp";
+import donatorange from "../../asserts/images/donat-orange.webp";
 
 const Development_Process = (props) => {
-
-
   const sectionRef = useRef(null);
 
   useEffect(() => {
-    const sections = sectionRef?.current.querySelectorAll('.techVerse_about');
+    const sections = sectionRef?.current.querySelectorAll(".techVerse_about");
 
     sections.forEach((section) => {
-      const container = section.querySelector('.inner_images');
+      const container = section.querySelector(".inner_images");
 
       const handleMouseMove = (event) => {
         const rect = section.getBoundingClientRect();
@@ -37,7 +32,7 @@ const Development_Process = (props) => {
         gsap.to(container, {
           x: distX,
           y: distY,
-          ease: 'power1.out',
+          ease: "power1.out",
         });
       };
 
@@ -45,23 +40,21 @@ const Development_Process = (props) => {
         gsap.to(container, {
           x: 0,
           y: 0,
-          ease: 'power1.out',
+          ease: "power1.out",
         });
       };
 
-      section.addEventListener('mousemove', handleMouseMove);
-      section.addEventListener('mouseleave', handleMouseLeave);
+      section.addEventListener("mousemove", handleMouseMove);
+      section.addEventListener("mouseleave", handleMouseLeave);
 
       return () => {
-        section.removeEventListener('mousemove', handleMouseMove);
-        section.removeEventListener('mouseleave', handleMouseLeave);
+        section.removeEventListener("mousemove", handleMouseMove);
+        section.removeEventListener("mouseleave", handleMouseLeave);
       };
     });
   }, []);
 
-
   return (
-
     <div ref={sectionRef}>
       <section
         class={`techVerse_about techVerse_aboutServices2 ${props?.travelbgclass} `}
@@ -73,7 +66,11 @@ const Development_Process = (props) => {
             alt=""
           />
 
-          <img class="techVerse_about_icon3 animation11" src={greencube} alt="" />
+          <img
+            class="techVerse_about_icon3 animation11"
+            src={greencube}
+            alt=""
+          />
           <img
             class="techVerse_about_icon4 animation11"
             src={donatorange}
@@ -149,9 +146,7 @@ const Development_Process = (props) => {
                         <img src={businessanalysisicon} alt="" />
                       </div>
                       <h4>Business Analysis</h4>
-                      <p>
-                      {props?.para1}
-                      </p>
+                      <p>{props?.para1}</p>
                     </div>
                   </div>
                   <div class="col-md-6">
@@ -165,9 +160,7 @@ const Development_Process = (props) => {
                         <img src={designanddevicon} alt="" />
                       </div>
                       <h4>Design & Development</h4>
-                      <p>
-                      {props?.para2}
-                      </p>
+                      <p>{props?.para2}</p>
                     </div>
                   </div>
                   <div class="col-md-6">
@@ -180,10 +173,8 @@ const Development_Process = (props) => {
                       <div class="reApp_box_icon">
                         <img src={qualityicon} alt="" />
                       </div>
-                      <h4>  {props?.quality} </h4>
-                      <p>
-                      {props?.para3}
-                      </p>
+                      <h4> {props?.quality} </h4>
+                      <p>{props?.para3}</p>
                     </div>
                   </div>
                   <div class="col-md-6">
@@ -197,9 +188,7 @@ const Development_Process = (props) => {
                         <img src={devandmaintenenceicon} alt="" />
                       </div>
                       <h4>Deployment and Maintenance</h4>
-                      <p>
-                      {props?.para4}
-                      </p>
+                      <p>{props?.para4}</p>
                     </div>
                   </div>
                 </div>

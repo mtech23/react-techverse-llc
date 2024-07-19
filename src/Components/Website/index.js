@@ -1,16 +1,9 @@
 import React from "react";
-import phoneicon from "../../../src/asserts/images/phone-icon.png";
-import chaticon from "../../../src/asserts/images/chat-icon.png";
-import androidiconw from "../../../src/asserts/images/android-icon-w.png";
-import angularicon from "../../../src/asserts/images/angular-icon.png";
-import appleicon from "../../../src/asserts/images/apple-icon.png";
-import ecommersedevhero from "../../../src/asserts/images/ecommersedevhero.png";
-import donateWhite from "../../../src/asserts/images/donate-white.png";
-import peramidicon from "../../../src/asserts/images/peramid-icon.png";
-import phoneicongreen from "../../../src/asserts/images/phone-icon-green.png";
-import chaticonblue from "../../../src/asserts/images/chat-icon-blue.png";
-import fluttericon from "../../../src/asserts/images/flutter-icon.png";
-import reacticon from "../../../src/asserts/images/react-icon.png";
+
+import donateWhite from "../../../src/asserts/images/donate-white.webp";
+import peramidicon from "../../../src/asserts/images/peramid-icon.webp";
+import phoneicongreen from "../../../src/asserts/images/phone-icon-green.webp";
+import chaticonblue from "../../../src/asserts/images/chat-icon-blue.webp";
 
 const Website = (props) => {
   return (

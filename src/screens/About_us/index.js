@@ -5,20 +5,20 @@ import { UserLayout } from "../../Components/Layout/UserLayout";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 
 import { gsap } from "gsap";
-import pinkcapsol from "../../asserts/images/pink-capsol.png";
+import pinkcapsol from "../../asserts/images/pink-capsol.webp";
 import Ctnbutton from "../../Components/ctnbutton/index";
-import phoneicon from "../../asserts/images/phone-icon.png";
-import chaticon from "../../asserts/images/chat-icon.png";
-import donatblue from "../../asserts/images/donat-blue.png";
-import donatorange from "../../asserts/images/donat-orange.png";
-import greencube from "../../asserts/images/green-cube.png";
+import phoneicon from "../../asserts/images/phone-icon.webp";
+import chaticon from "../../asserts/images/chat-icon.webp";
+import donatblue from "../../asserts/images/donat-blue.webp";
+import donatorange from "../../asserts/images/donat-orange.webp";
+import greencube from "../../asserts/images/green-cube.webp";
 import Aos from "aos";
 import "swiper/css/pagination";
 import "swiper/css";
 import Process from "../../Components/Process";
 
-import aboutimg1 from "../../asserts/images/about-img1.png";
-import aboutimg2 from "../../asserts/images/about-img2.png";
+import aboutimg1 from "../../asserts/images/about-img1.webp";
+import aboutimg2 from "../../asserts/images/about-img2.webp";
 import Testimonials from "../../Components/Testimonials";
 import Frequentlyaskquestion from "../../Components/frequentlyaskquestion";
 import Website from "../../Components/Website";
@@ -113,31 +113,6 @@ const About_us = () => {
       };
     });
   }, []);
-
-  // useEffect(() => {
-  //   gsap.set(".road", { opacity: 1 });
-  //   const circles = gsap.utils.toArray(".ani_cnt .icc");
-  //   const tl2 = gsap.timeline({ repeat: 20 });
-
-  //   circles.forEach((circle, i) => {
-  //     let start = i / circles.length; // secret sauce for circles
-  //     tl2.to(
-  //       circle,
-  //       {
-  //         motionPath: {
-  //           path: ".mypath",
-  //           align: ".mypath",
-  //           alignOrigin: [0.5, 0.4],
-  //           start: start,
-  //           end: start + 1,
-  //         },
-  //         ease: "none",
-  //         duration: 40,
-  //       },
-  //       0
-  //     );
-  //   });
-  // }, []);
 
   return (
     <UserLayout>
@@ -235,11 +210,7 @@ const About_us = () => {
               src={pinkcapsol}
               alt=""
             />
-            {/* <!-- <img
-            class="techVerse_about_icon2 animation33"
-            src="images/Pill.png"
-            alt=""
-          /> --> */}
+
             <img
               class="techVerse_about_icon3 animation11"
               src={greencube}

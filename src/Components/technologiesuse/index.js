@@ -1,29 +1,20 @@
 import React from "react";
-import phoneicon from "../../../src/asserts/images/phone-icon.png";
-import chaticon from "../../../src/asserts/images/chat-icon.png";
-import androidiconw from "../../../src/asserts/images/android-icon-w.png";
-import angularicon from "../../../src/asserts/images/angular-icon.png";
-import appleicon from "../../../src/asserts/images/apple-icon.png";
-import ecommersedevhero from "../../../src/asserts/images/ecommersedevhero.png";
 
-import fluttericon from "../../../src/asserts/images/flutter-icon.png";
-import reacticon from "../../../src/asserts/images/react-icon.png";
-
-import techimg15 from "../../../src/asserts/images/tech-img-15.png";
-import techimg14 from "../../../src/asserts/images/tech-img-14.png";
-import techimg13 from "../../../src/asserts/images/tech-img-13.png";
-import techimg12 from "../../../src/asserts/images/tech-img-12.png";
-import techimg11 from "../../../src/asserts/images/tech-img-11.png";
-import techimg10 from "../../../src/asserts/images/tech-img-10.png";
-import techimg09 from "../../../src/asserts/images/tech-img-09.png";
-import techimg08 from "../../../src/asserts/images/tech-img-08.png";
-import techimg07 from "../../../src/asserts/images/tech-img-07.png";
-import techimg06 from "../../../src/asserts/images/tech-img-06.png";
-import techimg05 from "../../../src/asserts/images/tech-img-05.png";
-import techimg04 from "../../../src/asserts/images/tech-img-04.png";
-import techimg03 from "../../../src/asserts/images/tech-img-03.png";
-import techimg02 from "../../../src/asserts/images/tech-img-02.png";
-import techimg01 from "../../../src/asserts/images/tech-img-01.png";
+import techimg15 from "../../../src/asserts/images/tech-img-15.webp";
+import techimg14 from "../../../src/asserts/images/tech-img-14.webp";
+import techimg13 from "../../../src/asserts/images/tech-img-13.webp";
+import techimg12 from "../../../src/asserts/images/tech-img-12.webp";
+import techimg11 from "../../../src/asserts/images/tech-img-11.webp";
+import techimg10 from "../../../src/asserts/images/tech-img-10.webp";
+import techimg09 from "../../../src/asserts/images/tech-img-09.webp";
+import techimg08 from "../../../src/asserts/images/tech-img-08.webp";
+import techimg07 from "../../../src/asserts/images/tech-img-07.webp";
+import techimg06 from "../../../src/asserts/images/tech-img-06.webp";
+import techimg05 from "../../../src/asserts/images/tech-img-05.webp";
+import techimg04 from "../../../src/asserts/images/tech-img-04.webp";
+import techimg03 from "../../../src/asserts/images/tech-img-03.webp";
+import techimg02 from "../../../src/asserts/images/tech-img-02.webp";
+import techimg01 from "../../../src/asserts/images/tech-img-01.webp";
 const TechnologiesUse = (props) => {
   return (
     <div>

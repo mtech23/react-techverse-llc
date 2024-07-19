@@ -1,6 +1,6 @@
 .case-study-hero .inner-bgColor {
-  /* background-image: url(./images/case-study-hero-bg.png); */
-  background-image: url(../../asserts/images/case-study-hero-bg.png);
+  /* background-image: url(./images/case-study-hero-bg.webp); */
+  background-image: url(../../asserts/images/case-study-hero-bg.webp);
   opacity: 0.8;
   background-position: top center;
   background-size: cover;
@@ -47,26 +47,26 @@
   overflow: hidden;
 }
 .case-study-sec1 {
-  background-image: url(../../asserts/images/case-study-sec111-bg.png);
+  background-image: url(../../asserts/images/case-study-sec111-bg.webp);
 }
 .case-study-sec2 {
-  background-image: url(../../asserts/images/case-study-sec222-bg.png);
+  background-image: url(../../asserts/images/case-study-sec222-bg.webp);
 }
 .case-study-sec3 {
-  background-image: url(../../asserts/images/case-study-sec3-bg.png);
+  background-image: url(../../asserts/images/case-study-sec3-bg.webp);
 }
 .case-study-sec4 {
-  background-image: url(../../asserts/images/case-study-sec4-bg.png);
+  background-image: url(../../asserts/images/case-study-sec4-bg.webp);
 }
 .case-study-sec5 {
-  background-image: url(../../asserts/images/case-study-sec5-bg.png);
+  background-image: url(../../asserts/images/case-study-sec5-bg.webp);
 }
 .case-study-sec6 {
-  background-image: url(../../asserts/images/case-study-sec666-bg.png);
+  background-image: url(../../asserts/images/case-study-sec666-bg.webp);
 }
 
 /* .sec5 {
-  background-image: url("./images/case-study-sec5-bg.png"); 
+  background-image: url("./images/case-study-sec5-bg.webp"); 
   background-size: cover; 
   background-position: center; 
   height: 100vh; 

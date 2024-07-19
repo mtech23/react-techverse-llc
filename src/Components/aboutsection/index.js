@@ -1,35 +1,16 @@
 import React, { useEffect, useRef } from "react";
-import phoneicon from "../../../src/asserts/images/phone-icon.png";
-import chaticon from "../../../src/asserts/images/chat-icon.png";
-import androidiconw from "../../../src/asserts/images/android-icon-w.png";
-import angularicon from "../../../src/asserts/images/angular-icon.png";
-import appleicon from "../../../src/asserts/images/apple-icon.png";
-import ecommersedevhero from "../../../src/asserts/images/ecommersedevhero.png";
-import Particles from "react-particles";
 import { gsap } from "gsap";
-import { useCallback } from "react";
-import fluttericon from "../../../src/asserts/images/flutter-icon.png";
-import reacticon from "../../../src/asserts/images/react-icon.png";
-import Ctnbutton from "../../Components/ctnbutton";
 
 const Aboutsection = (props) => {
-
-
-
-
   const { CtnbuttonComponent, ctnButtonProps } = props;
-
-
-
-
 
   const sectionRef = useRef(null);
 
   useEffect(() => {
-    const sections = sectionRef?.current.querySelectorAll('.techVerse_about');
+    const sections = sectionRef?.current.querySelectorAll(".techVerse_about");
 
     sections.forEach((section) => {
-      const container = section.querySelector('.inner_images');
+      const container = section.querySelector(".inner_images");
 
       const handleMouseMove = (event) => {
         const rect = section.getBoundingClientRect();
@@ -43,7 +24,7 @@ const Aboutsection = (props) => {
         gsap.to(container, {
           x: distX,
           y: distY,
-          ease: 'power1.out',
+          ease: "power1.out",
         });
       };
 
@@ -51,20 +32,19 @@ const Aboutsection = (props) => {
         gsap.to(container, {
           x: 0,
           y: 0,
-          ease: 'power1.out',
+          ease: "power1.out",
         });
       };
 
-      section.addEventListener('mousemove', handleMouseMove);
-      section.addEventListener('mouseleave', handleMouseLeave);
+      section.addEventListener("mousemove", handleMouseMove);
+      section.addEventListener("mouseleave", handleMouseLeave);
 
       return () => {
-        section.removeEventListener('mousemove', handleMouseMove);
-        section.removeEventListener('mouseleave', handleMouseLeave);
+        section.removeEventListener("mousemove", handleMouseMove);
+        section.removeEventListener("mouseleave", handleMouseLeave);
       };
     });
   }, []);
-
 
   return (
     <div ref={sectionRef}>

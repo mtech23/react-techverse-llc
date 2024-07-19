@@ -1,8 +1,8 @@
 import React from "react";
-import testingandqaicon from "../../asserts/images/testing-and-qa-icon.png";
-import appdevicon from "../../asserts/images/app-dev-icon.png";
-import uiixicon from "../../asserts/images/ui-ix-icon.png";
-import analysisresporticon from "../../asserts/images/analysis-resport-icon.png";
+import testingandqaicon from "../../asserts/images/testing-and-qa-icon.webp";
+import appdevicon from "../../asserts/images/app-dev-icon.webp";
+import uiixicon from "../../asserts/images/ui-ix-icon.webp";
+import analysisresporticon from "../../asserts/images/analysis-resport-icon.webp";
 const App_development_solutions = (props) => {
   return (
     <div>
@@ -17,14 +17,15 @@ const App_development_solutions = (props) => {
                 data-aos-duration="1000"
               >
                 {props?.title}
-                <span class="color-darkBlue1"> {props?.subtitle} </span> {props?.title2}
+                <span class="color-darkBlue1"> {props?.subtitle} </span>{" "}
+                {props?.title2}
               </h2>
               <p
                 data-aos="fade-up"
                 data-aos-offset="0"
                 data-aos-duration="2000"
               >
-               {props?.para}
+                {props?.para}
               </p>
             </div>
           </div>
@@ -40,36 +41,28 @@ const App_development_solutions = (props) => {
               <img src={analysisresporticon} alt="" />
             </div>
             <h4>Analytics & Reporting </h4>
-            <p>
-            {props?.para1} 
-            </p>
+            <p>{props?.para1}</p>
           </div>
           <div class="app_devBoxe">
             <div class="app_devBoxeIcon">
               <img src={uiixicon} alt="" />
             </div>
             <h4>UI/UX Design </h4>
-            <p>
-            {props?.para2} 
-            </p>
+            <p>{props?.para2}</p>
           </div>
           <div class="app_devBoxe">
             <div class="app_devBoxeIcon">
               <img src={appdevicon} alt="" />
             </div>
             <h4>App Development</h4>
-            <p>
-            {props?.para3} 
-            </p>
+            <p>{props?.para3}</p>
           </div>
           <div class="app_devBoxe">
             <div class="app_devBoxeIcon">
               <img src={testingandqaicon} alt="" />
             </div>
             <h4>Testing & QA</h4>
-            <p>
-            {props?.para4} 
-            </p>
+            <p>{props?.para4}</p>
           </div>
         </div>
       </section>

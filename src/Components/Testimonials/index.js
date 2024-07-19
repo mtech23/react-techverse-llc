@@ -1,69 +1,64 @@
 import React, { useState } from "react";
 import "./style.css";
-import testimonial from "../../asserts/images/testimonial.mp4";
-import vid1 from "../../asserts/images/vid-1.mp4";
-import face1 from "../../asserts/images/face-1.png";
-import face2 from "../../asserts/images/face-2.png";
-import face3 from "../../asserts/images/face-3.png";
-import face4 from "../../asserts/images/face-4.png";
-import face5 from "../../asserts/images/face-5.png";
-import face6 from "../../asserts/images/face-6.png";
-import face7 from "../../asserts/images/face-7.png";
-import video1 from "../../asserts/images/video1.mp4"
+import face1 from "../../asserts/images/face-1.webp";
+import face2 from "../../asserts/images/face-2.webp";
+import face3 from "../../asserts/images/face-3.webp";
+import face4 from "../../asserts/images/face-4.webp";
+import face5 from "../../asserts/images/face-5.webp";
+import face6 from "../../asserts/images/face-6.webp";
+import face7 from "../../asserts/images/face-7.webp";
 
-import video2 from "../../asserts/images/video2.mp4"
-import video3 from "../../asserts/images/video3.mp4"
-import video4 from "../../asserts/images/video4.mp4"
-import video5 from "../../asserts/images/video5.mp4"
-import video6 from "../../asserts/images/video6.mp4"
-import video7 from "../../asserts/images/video7.mp4"
-import video8 from "../../asserts/images/video8.mp4"
-import testLine from "../../asserts/images/test-Line.png";
+import video1 from "../../asserts/images/video1.mp4";
+import video2 from "../../asserts/images/video2.mp4";
+import video3 from "../../asserts/images/video3.mp4";
+import video4 from "../../asserts/images/video4.mp4";
+import video5 from "../../asserts/images/video1.mp4";
+import video6 from "../../asserts/images/video2.mp4";
+import video7 from "../../asserts/images/video3.mp4";
+
+import testLine from "../../asserts/images/test-Line.webp";
 const videos = [
   {
     id: 1,
     thumbnail: face1,
-    videoSrc: video1
+    videoSrc: video1,
   },
   {
     id: 2,
     thumbnail: face2,
-    videoSrc: video2
+    videoSrc: video2,
   },
   {
     id: 3,
     thumbnail: face3,
-    videoSrc: video3
+    videoSrc: video3,
   },
   {
     id: 4,
     thumbnail: face4,
-    videoSrc: video4
+    videoSrc: video4,
   },
   {
     id: 5,
     thumbnail: face5,
-    videoSrc: video5
+    videoSrc: video5,
   },
   {
     id: 6,
     thumbnail: face6,
-    videoSrc: video7
+    videoSrc: video6,
   },
   {
     id: 7,
     thumbnail: face7,
-    videoSrc: video7
+    videoSrc: video7,
   },
   // {
   //   id: 7,
   //   thumbnail: face7,
-  //   videoSrc: video7
+  //   videoSrc: video1
   // },
-
 ];
-
-
 
 const Testimonials = () => {
   const [selectedVideo, setSelectedVideo] = useState(1);
@@ -75,7 +70,7 @@ const Testimonials = () => {
     setSelectedVideo(video); // Update state with the clicked video
   };
 
-  console.log("selecttedid", selectedVideo)
+  console.log("selecttedid", selectedVideo);
 
   return (
     <>
@@ -116,39 +111,18 @@ const Testimonials = () => {
                     data-aos-offset="0"
                     data-aos-duration="3000"
                   >
-                    {/* {videos?.map((video) => (
-                      <img src={video.thumbnail} class="face_2" data-alt="tab2" key={video.id} onClick={() => handleThumbnailClick(video)} />
-                    ))} */}
-                    {/* {videos?.map((video) => (
-                      <img
-                        src={video.thumbnail}
-                        className={`face_${video?.id}  ${selectedVideo.id === video.id ? 'active' : ''}`}
-                        data-alt="tab2"
-                        key={video.id}
-                        onClick={() => handleThumbnailClick(video)}
-                        alt={`Thumbnail ${video.id}`}
-                      />
-                    ))} */}
-
-
-
                     {videos?.map((video) => (
                       <img
                         src={video.thumbnail}
-                        className={`face_${video?.id}  ${selectedVideo == video.id ? 'active' : ''}`}
+                        className={`face_${video?.id}  ${
+                          selectedVideo == video.id ? "active" : ""
+                        }`}
                         data-alt="tab2"
                         key={video.id}
                         onClick={() => handleThumbnailClick(video?.id)}
                         alt={`Thumbnail ${video.id}`}
                       />
                     ))}
-                    {/* <img src={face1} class="face_1 active" data-alt="tab1" />
-                    <img src={face2} class="face_2" data-alt="tab2" />
-                    <img src={face3} class="face_3" data-alt="tab3" />
-                    <img src={face4} class="face_4" data-alt="tab4" />
-                    <img src={face5} class="face_5" data-alt="tab5" />
-                    <img src={face6} class="face_6" data-alt="tab6" />
-                    <img src={face7} class="face_7" data-alt="tab7" /> */}
                   </div>
                 </div>
               </div>
@@ -161,7 +135,14 @@ const Testimonials = () => {
                 >
                   <div class="content active" id="tab1">
                     {videos?.map((items, index) => (
-                      < div key={index} class={ items?.id == selectedVideo ? "d-block rc" : " rc d-none"}>
+                      <div
+                        key={index}
+                        class={
+                          items?.id == selectedVideo
+                            ? "d-block rc"
+                            : " rc d-none"
+                        }
+                      >
                         <video
                           id="testimonialvideo"
                           autoPlay
@@ -170,172 +151,23 @@ const Testimonials = () => {
                           playsInline
                           preload="auto"
                         >
-                          <source src={items?.videoSrc || videos[0].videoSrc} type="video/mp4" />
+                          <source
+                            src={items?.videoSrc || videos[0].videoSrc}
+                            type="video/mp4"
+                          />
                           Your browser does not support the video tag.
                         </video>
-                        </div >
-
-                        ))
-
-                    }
-                        <h2>David Ruffer</h2>
-                        <p>Lorem Ipsum is simply dummy</p>
                       </div>
-                {/* <div class="content" id="tab2">
-                    <div class="rc">
-                      <video
-                        id="testimonialvideo"
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        preload
-                      >
-                        <source src={vid1} type="video/mp4" />
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
+                    ))}
                     <h2>David Ruffer</h2>
                     <p>Lorem Ipsum is simply dummy</p>
-                  </div> */}
-                      <div div class= "content" id = "tab3" >
-                  <button
-                    class="play-icon"
-                    data-toggle="modal"
-                    data-target="#exampleModal"
-                  >
-                    <i class="fa-solid fa-play"></i>
-                  </button>
-                  <p>
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in
-                    some form, by injected humour, or randomised words which
-                    don't look even slightly believable. If you are going to
-                    use a passage of Lorem Ipsum, you need to be sure there
-                    isn't anything embarrassing hidden in the middle of text.
-                    All the.
-                  </p>
-                  <p>Tab 3</p>
-                </div>
-                  <div class="content" id="tab4">
-                    <button
-                      class="play-icon"
-                      data-toggle="modal"
-                      data-target="#exampleModal"
-                    >
-                      <i class="fa-solid fa-play"></i>
-                    </button>
-                    <p>
-                      There are many variations of passages of Lorem Ipsum
-                      available, but the majority have suffered alteration in
-                      some form, by injected humour, or randomised words which
-                      don't look even slightly believable. If you are going to
-                      use a passage of Lorem Ipsum, you need to be sure there
-                      isn't anything embarrassing hidden in the middle of text.
-                      All the.
-                    </p>
-                    <p>Tab 4</p>
-                  </div>
-                  <div class="content" id="tab5">
-                    <button
-                      class="play-icon"
-                      data-toggle="modal"
-                      data-target="#exampleModal"
-                    >
-                      <i class="fa-solid fa-play"></i>
-                    </button>
-                    <p>
-                      There are many variations of passages of Lorem Ipsum
-                      available, but the majority have suffered alteration in
-                      some form, by injected humour, or randomised words which
-                      don't look even slightly believable. If you are going to
-                      use a passage of Lorem Ipsum, you need to be sure there
-                      isn't anything embarrassing hidden in the middle of text.
-                      All the.
-                    </p>
-                    <p>Tab 5</p>
-                  </div>
-                  <div class="content" id="tab6">
-                    <button
-                      class="play-icon"
-                      data-toggle="modal"
-                      data-target="#exampleModal"
-                    >
-                      <i class="fa-solid fa-play"></i>
-                    </button>
-                    <p>
-                      There are many variations of passages of Lorem Ipsum
-                      available, but the majority have suffered alteration in
-                      some form, by injected humour, or randomised words which
-                      don't look even slightly believable. If you are going to
-                      use a passage of Lorem Ipsum, you need to be sure there
-                      isn't anything embarrassing hidden in the middle of text.
-                      All the.
-                    </p>
-                    <p>Tab 6</p>
-                  </div>
-                  <div class="content" id="tab7">
-                    <button
-                      class="play-icon"
-                      data-toggle="modal"
-                      data-target="#exampleModal"
-                    >
-                      <i class="fa-solid fa-play"></i>
-                    </button>
-                    <p>
-                      There are many variations of passages of Lorem Ipsum
-                      available, but the majority have suffered alteration in
-                      some form, by injected humour, or randomised words which
-                      don't look even slightly believable. If you are going to
-                      use a passage of Lorem Ipsum, you need to be sure there
-                      isn't anything embarrassing hidden in the middle of text.
-                      All the.
-                    </p>
-                    <p>Tab 7</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section >
-      <div
-        class="modal fade testimoial_modal"
-        id="exampleModal"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div
-          class="modal-dialog modal-dialog-centered modal-lg"
-          role="document"
-        >
-          <div class="modal-content">
-            <div class="modal-body testimonial-video">
-              <button
-                type="button"
-                class="close test_closeBtn"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-              <iframe
-                src="https://www.youtube.com/embed/Jw7s42Op2ao?si=3R5KdKYRpyhcQsdy"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; 
-                autoplay; clipboard-write; 
-                encrypted-media; gyroscope; 
-                picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
     </>
   );
 };

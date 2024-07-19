@@ -1,7 +1,7 @@
 import { useLocation } from "react-router-dom";
-import bicon from "../../../asserts/images/b-icon.png";
+import bicon from "../../../asserts/images/b-icon.webp";
 import { Link } from "react-router-dom";
-import starticon from "../../../asserts/images/start-icon.png";
+import starticon from "../../../asserts/images/start-icon.webp";
 import Particles from "react-particles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -12,15 +12,15 @@ import {
   footerCertificate,
   playstore,
 } from "../../../asserts/images";
-import partnersbbb from "../../../asserts/images/partners-bbb.png";
-import arrowicon from "../../../asserts/images/arrow-icon.png";
-import goodfirms from "../../../asserts/images/good-firms.png";
-import partnersclutch from "../../../asserts/images/partners-clutch.png";
-import bluecubelarge from "../../../asserts/images/blue-cube-large.png";
-import partnerstruspilot from "../../../asserts/images/partners-trus-pilot.png";
+import partnersbbb from "../../../asserts/images/partners-bbb.webp";
+import arrowicon from "../../../asserts/images/arrow-icon.webp";
+import goodfirms from "../../../asserts/images/good-firms.webp";
+import partnersclutch from "../../../asserts/images/partners-clutch.webp";
+import bluecubelarge from "../../../asserts/images/blue-cube-large.webp";
+import partnerstruspilot from "../../../asserts/images/partners-trus-pilot.webp";
 
-import contactUslaptop from "../../../asserts/images/contactUs-laptop.png";
-import SuperToroidOrangeGlossy from "../../../asserts/images/SuperToroid-Orange-Glossy.png";
+import contactUslaptop from "../../../asserts/images/contactUs-laptop.webp";
+import SuperToroidOrangeGlossy from "../../../asserts/images/SuperToroid-Orange-Glossy.webp";
 import { useCallback, useState, useEffect, useRef } from "react";
 import { gsap } from "gsap";
 // import Particles from "react-particles";
@@ -133,7 +133,7 @@ export const Footer = (props) => {
     for (const key in formdata) {
       formDataMethod.append(key, formdata[key]);
     }
- 
+
     formDataMethod.append("website_url", "https://techversellc.com/");
     formDataMethod.append("ip", ipInfo?.ip);
 

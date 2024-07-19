@@ -1,35 +1,25 @@
 import React, { useEffect, useRef, useState } from "react";
 
-import { UserLayout } from "../../Components/Layout/UserLayout";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 
 import { gsap } from "gsap";
-import pinkcapsol from "../../asserts/images/pink-capsol.png";
 import sportsimg3 from "../../asserts/images/sports-img-3.webp";
 
-import donatblue from "../../asserts/images/donat-blue.png";
-import donatorange from "../../asserts/images/donat-orange.png";
+import donatblue from "../../asserts/images/donat-blue.webp";
+import donatorange from "../../asserts/images/donat-orange.webp";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import greencube from "../../asserts/images/green-cube.png";
 import Aos from "aos";
 import "swiper/css/pagination";
 import "swiper/css";
 import "./style.css";
-import Process from "../../Components/Process";
 
-import aboutimg1 from "../../asserts/images/about-img1.png";
-import aboutimg2 from "../../asserts/images/about-img2.png";
-import playstore from "../../asserts/images/playstore.png";
-import appStore from "../../asserts/images/app-store.png";
-import phoneiconblue from "../../asserts/images/phone-icon-blue.png";
-import phoneicon from "../../asserts/images/phone-icon.png";
-import chaticon from "../../asserts/images/chat-icon.png";
-import Testimonials from "../../Components/Testimonials";
-import Frequentlyaskquestion from "../../Components/frequentlyaskquestion";
-import Website from "../../Components/Website";
-import Aboutsection from "../../Components/aboutsection";
-import TrustedPartners from "../../Components/TrustedPartners";
+import playstore from "../../asserts/images/playstore.webp";
+import appStore from "../../asserts/images/app-store.webp";
+import phoneiconblue from "../../asserts/images/phone-icon-blue.webp";
+import phoneicon from "../../asserts/images/phone-icon.webp";
+import chaticon from "../../asserts/images/chat-icon.webp";
+
 import { Header } from "../../Components/Layout/Header";
 import Contact_Footer from "../../Components/contact_Footer";
 gsap.registerPlugin(MotionPathPlugin);
@@ -85,53 +75,6 @@ const Case_study = () => {
     setShowModal(true);
   }, []); // Empty dependency array means this effect runs only once, like componentDidMount
 
-  // useEffect(() => {
-  //   gsap.set(".road", { opacity: 1 });
-  //   const circles = gsap.utils.toArray(".ani_cnt .icc");
-  //   const tl2 = gsap.timeline({ repeat: 20 });
-
-  //   circles.forEach((circle, i) => {
-  //     let start = i / circles.length; // secret sauce for circles
-  //     tl2.to(
-  //       circle,
-  //       {
-  //         motionPath: {
-  //           path: ".mypath",
-  //           align: ".mypath",
-  //           alignOrigin: [0.5, 0.4],
-  //           start: start,
-  //           end: start + 1,
-  //         },
-  //         ease: "none",
-  //         duration: 40,
-  //       },
-  //       0
-  //     );
-  //   });
-  // }, []);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   const [ipInfo, setIpInfo] = useState({ ip: "", country: "" });
 
   console.log("ipInfo", ipInfo);
@@ -154,9 +97,6 @@ const Case_study = () => {
 
   const [budget, setBudget] = useState(0);
 
- 
-
- 
   const notify = () => toast.success("Thank You");
   const [formdata, setFormData] = useState("");
 
@@ -184,7 +124,6 @@ const Case_study = () => {
     formDataMethod.append("ip", ipInfo?.ip);
     formDataMethod.append("website_url", "https://techversellc.com/");
     formDataMethod.append("country", ipInfo?.country);
- 
 
     try {
       const contact_api = await fetch(url, {
@@ -205,7 +144,7 @@ const Case_study = () => {
 
       const response = await contact_api.json();
       if (response?.status == true) {
-        notify()
+        notify();
       }
       // console.log("Success:", response);
       // Handle successful response
@@ -216,13 +155,7 @@ const Case_study = () => {
       // Handle error response
       // throw error;
     }
-  }
-
-
-
-
-
-
+  };
 
   return (
     <>
@@ -284,18 +217,6 @@ const Case_study = () => {
                     </div>
                   </div>
                 </div>
-                {/* <!--<div class="col-md-6 inner-hero_rightCol">-->
-                  <!--  <div class="inner_hero_img">-->
-                    <!--    <img-->
-                      <!--        src="images/Ecommerce-development-hero.png"-->
-                      <!--        data-aos="fade-left"-->
-                      <!--        data-aos-offset="0"-->
-                      <!--        data-aos-duration="3000"-->
-                      <!--        class="ecommerceDev_hero_img"-->
-                      <!--        alt=""-->
-                      <!--      />-->
-                      <!--  </div>-->
-                  <!--</div>--> */}
               </div>
             </div>
           </div>
@@ -304,9 +225,6 @@ const Case_study = () => {
 
       {/* <!-- Case Study Sec 1 --> */}
       <section class="sec1 case-study-sec case-study-sec1">
-        {/* <!--<div class="case-study-bg-img">-->
-          <!--    <img src="images/case-study-sec1-bg.png" alt=""/>-->
-            <!--</div>--> */}
         <div class="width-1600">
           <div class="container-fluid">
             <div class="row align-items-center">
@@ -324,7 +242,7 @@ const Case_study = () => {
                       data-aos-offset="0"
                       data-aos-duration="1000"
                     >
-                      ANGEL BODY - ECOMMERCE APP
+                      ANGEL BODY - E-Commerce App
                     </h2>
                     <p
                       data-aos="fade-up"
@@ -349,55 +267,44 @@ const Case_study = () => {
                         />
                         <span class="btn_with_icon_text">Call Now</span>
                       </a>
-                      {/* <div class="techVerse_store_links">
-                        <a href="#" class="techVerse_store_link">
-                          <img src={playstore} alt="" />
-                        </a>
-                        <a href="#" class="techVerse_store_link">
-                          <img src={appStore} alt="" />
-                        </a>
-                      </div> */}
-                      <button 
+
+                      <button
                         class="btn_with_icon btn_white"
                         data-toggle="modal"
                         data-target=".bd-example-modal-lg"
                       >
-                        {/* <!-- <img class="btn_with_icon_img" src="images/phone-icon-blue.png" alt=""> --> */}
+                        {/* <!-- <img class="btn_with_icon_img" src="images/phone-icon-blue.webp" alt=""> --> */}
                         <span class="btn_with_icon_text">Request A Quote</span>
                       </button>
                     </div>
                   </div>
                 </div>
               </div>
-              {/* <!--<div class="col-md-6">-->
-                <!--    <div class="casestudy-img">-->
-                  <!--        <img src="images/case-study-img111.png" class="case-study-img1" />-->
-                  <!--    </div>-->
-                <!--</div>--> */}
             </div>
           </div>
         </div>
       </section>
 
       {/* <!-- Case Study Sec 2 --> */}
-      {/* style="background-image: url(images/case-study-sec222-bg.png);" */}
+      {/* style="background-image: url(images/case-study-sec222-bg.webp);" */}
       <section class="sec2 case-study-sec case-study-sec2">
-        {/*     <!--<div class="case-study-bg-img">-->
-          <!--    <img src="images/case-study-sec1-bg.png" alt=""/>-->
-            <!--</div>--> */}
         <div class="width-1600">
           <div class="container-fluid">
             <div class="row align-items-center">
               <div class="col-md-6">
                 <div class="casestudy-content">
                   <div class="sec_title">
+                    <div className="d-flex gx-2  my-3 g-2">
+                      <img src={playstore} className="rounded" />
+                      <img className="ml-4 rounded" src={appStore} />
+                    </div>
                     <h2
                       class="sec_title_head"
                       data-aos="fade-up"
                       data-aos-offset="0"
                       data-aos-duration="1000"
                     >
-                      Brian Carlisle - Book Author App
+                      Brian Carlisle - E-Book App
                     </h2>
                     <p
                       data-aos="fade-up"
@@ -436,18 +343,13 @@ const Case_study = () => {
                         data-toggle="modal"
                         data-target=".bd-example-modal-lg"
                       >
-                        {/* <!-- <img class="btn_with_icon_img" src="images/phone-icon-blue.png" alt=""> --> */}
+                        {/* <!-- <img class="btn_with_icon_img" src="images/phone-icon-blue.webp" alt=""> --> */}
                         <span class="btn_with_icon_text">Request A Quote</span>
                       </button>
                     </div>
                   </div>
                 </div>
               </div>
-              {/* <!--<div class="col-md-6">-->
-                <!--    <div class="casestudy-img">-->
-                  <!--        <img src="images/case-study-img222.png" class="case-study-img2" />-->
-                  <!--    </div>-->
-                <!--</div>--> */}
             </div>
           </div>
         </div>
@@ -455,17 +357,18 @@ const Case_study = () => {
 
       {/* <!-- Case Study Sec 3 --> */}
 
-      {/*  style="background-image: url(images/case-study-sec3-bg.png);" */}
+      {/*  style="background-image: url(images/case-study-sec3-bg.webp);" */}
       <section class="sec3 case-study-sec case-study-sec3">
-        {/*     <!--<div class="case-study-bg-img">-->
-          <!--    <img src="images/case-study-sec1-bg.png" alt=""/>-->
-            <!--</div>--> */}
         <div class="width-1600">
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-6">
                 <div class="casestudy-content">
                   <div class="sec_title">
+                    <div className="d-flex gx-2  my-3 g-2">
+                      <img src={playstore} className="rounded" />
+                      <img className="ml-4 rounded" src={appStore} />
+                    </div>
                     <h2
                       class="sec_title_head"
                       data-aos="fade-up"
@@ -510,7 +413,7 @@ const Case_study = () => {
                         data-toggle="modal"
                         data-target=".bd-example-modal-lg"
                       >
-                        {/* <!-- <img class="btn_with_icon_img" src="images/phone-icon-blue.png" alt=""> --> */}
+                        {/* <!-- <img class="btn_with_icon_img" src="images/phone-icon-blue.webp" alt=""> --> */}
                         <span class="btn_with_icon_text">Request A Quote</span>
                       </button>
                     </div>
@@ -523,11 +426,8 @@ const Case_study = () => {
       </section>
 
       {/* <!-- Case Study Sec 4 --> */}
-      {/* style="background-image: url(images/case-study-sec4-bg.png);" */}
+      {/* style="background-image: url(images/case-study-sec4-bg.webp);" */}
       <section class="sec4 case-study-sec case-study-sec4">
-        {/* <!--<div class="case-study-bg-img">--> */}
-        {/* <!--    <img src="images/case-study-sec1-bg.png" alt=""/>--> */}
-        {/* <!--</div>-->  */}
         <div class="width-1600">
           <div class="container-fluid">
             <div class="row">
@@ -578,7 +478,7 @@ const Case_study = () => {
                         data-toggle="modal"
                         data-target=".bd-example-modal-lg"
                       >
-                        {/* <!-- <img class="btn_with_icon_img" src="images/phone-icon-blue.png" alt=""> --> */}
+                        {/* <!-- <img class="btn_with_icon_img" src="images/phone-icon-blue.webp" alt=""> --> */}
                         <span class="btn_with_icon_text">Request A Quote</span>
                       </button>
                     </div>
@@ -591,24 +491,25 @@ const Case_study = () => {
       </section>
 
       {/* <!-- Case Study Sec 5 --> */}
-      {/* style={"background-image: url(images/case-study-sec5-bg.png);"} */}
+      {/* style={"background-image: url(images/case-study-sec5-bg.webp);"} */}
       <section class="sec5 case-study-sec case-study-sec5">
-        {/* <!--<div class="case-study-bg-img">-->
-          <!--    <img src="images/case-study-sec1-bg.png" alt=""/>-->
-            <!--</div>--> */}
         <div class="width-1600">
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-6">
                 <div class="casestudy-content">
                   <div class="sec_title">
+                    <div className="d-flex gx-2  my-3 g-2">
+                      <img src={playstore} className="rounded" />
+                      <img className="ml-4 rounded" src={appStore} />
+                    </div>
                     <h2
                       class="sec_title_head"
                       data-aos="fade-up"
                       data-aos-offset="0"
                       data-aos-duration="1000"
                     >
-                      ANGEL BODY - ECOMMERCE APP
+                      Frame With Photos - E-Commerce App
                     </h2>
                     <p
                       data-aos="fade-up"
@@ -646,7 +547,7 @@ const Case_study = () => {
                         data-toggle="modal"
                         data-target=".bd-example-modal-lg"
                       >
-                        {/* <!-- <img class="btn_with_icon_img" src="images/phone-icon-blue.png" alt=""> --> */}
+                        {/* <!-- <img class="btn_with_icon_img" src="images/phone-icon-blue.webp" alt=""> --> */}
                         <span class="btn_with_icon_text">Request A Quote</span>
                       </button>
                     </div>
@@ -660,22 +561,23 @@ const Case_study = () => {
 
       {/* <!-- Case Study Sec 6 --> */}
       <section class="sec5 case-study-sec case-study-sec6">
-        {/* <!--<div class="case-study-bg-img">-->
-          <!--    <img src="images/case-study-sec1-bg.png" alt=""/>-->
-            <!--</div>--> */}
         <div class="width-1600">
           <div class="container-fluid">
             <div class="row align-items-center">
               <div class="col-md-6">
                 <div class="casestudy-content">
                   <div class="sec_title">
+                    <div className="d-flex gx-2  my-3 g-2">
+                      <img src={playstore} className="rounded" />
+                      <img className="ml-4 rounded" src={appStore} />
+                    </div>
                     <h2
                       class="sec_title_head"
                       data-aos="fade-up"
                       data-aos-offset="0"
                       data-aos-duration="1000"
                     >
-                      ANGEL BODY - ECOMMERCE APP
+                      1-Eleven - Booking Service
                     </h2>
                     <p
                       data-aos="fade-up"
@@ -713,7 +615,7 @@ const Case_study = () => {
                         data-toggle="modal"
                         data-target=".bd-example-modal-lg"
                       >
-                        {/* <!-- <img class="btn_with_icon_img" src="images/phone-icon-blue.png" alt=""> --> */}
+                        {/* <!-- <img class="btn_with_icon_img" src="images/phone-icon-blue.webp" alt=""> --> */}
                         <span class="btn_with_icon_text">Request A Quote</span>
                       </button>
                     </div>
@@ -817,7 +719,7 @@ const Case_study = () => {
                                 </span>
                               </div>
                               <input
-                              name="phone"
+                                name="phone"
                                 type="text"
                                 onChange={handlechange}
                                 class="form-control"
@@ -834,8 +736,8 @@ const Case_study = () => {
                                 </span>
                               </div>
                               <textarea
-                               onChange={handlechange}
-                               name="message"
+                                onChange={handlechange}
+                                name="message"
                                 class="form-control"
                                 aria-label="With textarea"
                                 placeholder="Message"
@@ -845,7 +747,7 @@ const Case_study = () => {
                               type="submit"
                               class="btn_with_icon popUp_form_btn"
                             >
-                              {/* <!-- <img class="btn_with_icon_img" src="images/phone-icon.png" alt=""> --> */}
+                              {/* <!-- <img class="btn_with_icon_img" src="images/phone-icon.webp" alt=""> --> */}
                               <span class="btn_with_icon_text">
                                 Request A Quote
                               </span>

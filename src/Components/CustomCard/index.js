@@ -9,7 +9,7 @@ const CustomCard = (props) => {
       <div className="author__poduct">
         <div className="add_to_card"></div>
         <div className="position-relative">
-          <img src={props?.image} className={props?.className}/>
+          <img src={props?.image} className={props?.className} />
           <div className="cart_overlay">
             <div className="cart__box">
               <div className="cart__icons">
@@ -33,11 +33,13 @@ const CustomCard = (props) => {
         </div>
         <div className="product__titled-div">
           {/* <h3 className="author__poduct_title jost-font">{props?.title , slice(0 , 13)}</h3> */}
-          <h3 className="author__product_title jost-font">{props.title && props.title.slice(0, 13)}</h3>
+          <h3 className="author__product_title jost-font">
+            {props.title && props.title.slice(0, 13)}
+          </h3>
 
           <div class="product__icon">
             {/* <FontAwesomeIcon icon={props?.icon2} className="primaryColor" /> */}
-            
+
             <img src={props?.iconimage} />
           </div>
         </div>
@@ -48,7 +50,6 @@ const CustomCard = (props) => {
           </span>
         </div>
       </div>
- 
     </>
   );
 };

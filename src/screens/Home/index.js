@@ -1,26 +1,20 @@
 import React, { useEffect, useRef } from "react";
 import { UserLayout } from "../../Components/Layout/UserLayout";
 import Portfolios from "../../Components/portfolios";
-import phoneicon from "../../asserts/images/phone-icon.png";
-import herophonemockupgroup from "../../asserts/images/hero-phone-mockup-group.png";
+import phoneicon from "../../asserts/images/phone-icon.webp";
+import herophonemockupgroup from "../../asserts/images/hero-phone-mockup-group.webp";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
-import bluecubelarge from "../../asserts/images/blue-cube-large.png";
+import bluecubelarge from "../../asserts/images/blue-cube-large.webp";
 import Particles from "react-particles";
 import ServiceParticle from "../../Components/ServiceParticle/ServiceParticle";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import {
-  Parallax,
-  Pagination,
-  Navigation,
-  Autoplay,
-  EffectFade,
-} from "swiper/modules";
+import { Pagination, Navigation, EffectFade } from "swiper/modules";
 import Portfolio from "../../Components/Portfolio";
 import { gsap } from "gsap";
 
-import pinkcapsol from "../../asserts/images/pink-capsol.png";
-import herowebmockupgroup22 from "../../asserts/images/hero-web-mockup-group22.png";
+import pinkcapsol from "../../asserts/images/pink-capsol.webp";
+import herowebmockupgroup22 from "../../asserts/images/hero-web-mockup-group22.webp";
 import elevengb from "../../asserts/images/1-eleven-gb.webp";
 import framewithphotobg from "../../asserts/images/frame-with-photo-bg.webp";
 import ryderzvanbg from "../../asserts/images/ryderz-van-bg.webp";
@@ -28,87 +22,55 @@ import elevenimg from "../../asserts/images/1-eleven-img.webp";
 import framewithphotoimg from "../../asserts/images/frame-with-photo-img.webp";
 import ryderzvanimg from "../../asserts/images/ryderz-van-img.webp";
 import { loadSlim } from "tsparticles-slim";
-import peramidleftangle from "../../asserts/images/peramid-left-angles.png";
-import clutch from "../../asserts/images/clutch.png";
-import tpblue from "../../asserts/images/t-p-blue.png";
-import tpblack from "../../asserts/images/t-p-black.png";
-import truspilot from "../../asserts/images/trus-pilot.png";
-import laptopFrame from "../../asserts/images/laptop-Frame.png";
-// import laptop from "../../asserts/images/laptop.png";
-import laptop from "../../asserts/images/laptop.png";
-import donatorange from "../../asserts/images/donat-orange.png";
-import greencube from "../../asserts/images/green-cube.png";
-// import pinkcapsol from "../../asserts/images/pink-capsol.png";
-import Pill from "../../asserts/images/Pill.png";
-import bbb from "../../asserts/images/bbb.png";
+import clutch from "../../asserts/images/clutch.webp";
+import truspilot from "../../asserts/images/trus-pilot.webp";
+import laptopFrame from "../../asserts/images/laptop-Frame.webp";
+import laptop from "../../asserts/images/laptop.webp";
+import donatorange from "../../asserts/images/donat-orange.webp";
+import greencube from "../../asserts/images/green-cube.webp";
+import bbb from "../../asserts/images/bbb.webp";
 import { useCallback } from "react";
-import donatblue from "../../asserts/images/donat-blue.png";
-import chaticon from "../../asserts/images/chat-icon.png";
-import chat_icon from "../../asserts/images/chat-icon.png";
-import phone_icon from "../../asserts/images/phone-icon.png";
-import ConeBlueGlossy from "../../asserts/images/Cone-Blue-Glossy.png";
-import PillBlueGlossy from "../../asserts/images/Pill-Blue-Glossy.png";
-import donateWhite from "../../asserts/images/donate-white.png";
-import peramidicon from "../../asserts/images/peramid-icon.png";
-import phoneicongreen from "../../asserts/images/phone-icon-green.png";
-import chaticonblue from "../../asserts/images/phone-icon-green.png";
-import orangecircle from "../../asserts/images/orange-circle.png";
-import donatewhitesmall from "../../asserts/images/donate-white-small.png";
-import orangehalfcircle from "../../asserts/images/orange-half-circle.png";
-import bluecube from "../../asserts/images/blue-cube.png";
-import iosicon from "../../asserts/images/ios-icon.png";
-import smartcontracticon from "../../asserts/images/smart-contract-icon.png";
-import andriodicon from "../../asserts/images/andriod-icon.png";
-import customappicon from "../../asserts/images/custom-app-icon.png";
-import enterprizeicon from "../../asserts/images/enter-prize-icon.png";
-import crossplatform from "../../asserts/images/cross-platform.png";
-import portfoliomockup1 from "../../asserts/images/portfolio-mockup-1.png";
+import donatblue from "../../asserts/images/donat-blue.webp";
+import chaticon from "../../asserts/images/chat-icon.webp";
+import ConeBlueGlossy from "../../asserts/images/Cone-Blue-Glossy.webp";
+import PillBlueGlossy from "../../asserts/images/Pill-Blue-Glossy.webp";
+import donateWhite from "../../asserts/images/donate-white.webp";
+import peramidicon from "../../asserts/images/peramid-icon.webp";
+import phoneicongreen from "../../asserts/images/phone-icon-green.webp";
+import chaticonblue from "../../asserts/images/phone-icon-green.webp";
+import orangecircle from "../../asserts/images/orange-circle.webp";
+import donatewhitesmall from "../../asserts/images/donate-white-small.webp";
+import orangehalfcircle from "../../asserts/images/orange-half-circle.webp";
+import bluecube from "../../asserts/images/blue-cube.webp";
+import iosicon from "../../asserts/images/ios-icon.webp";
+import smartcontracticon from "../../asserts/images/smart-contract-icon.webp";
+import andriodicon from "../../asserts/images/andriod-icon.webp";
+import customappicon from "../../asserts/images/custom-app-icon.webp";
+import enterprizeicon from "../../asserts/images/enter-prize-icon.webp";
+import crossplatform from "../../asserts/images/cross-platform.webp";
+import portfoliomockup1 from "../../asserts/images/portfolio-mockup-1.webp";
 import mobileframe from "../../asserts/images/mobile-frame.webp";
-import portfoliomockup5 from "../../asserts/images/portfolio-mockup-5.png";
-import portfoliomockup2 from "../../asserts/images/portfolio-mockup-2.png";
-import portfoliomockup3 from "../../asserts/images/portfolio-mockup-3.png";
-import portfoliomockup4 from "../../asserts/images/portfolio-mockup-4.png";
-import website1 from "../../asserts/images/website-1.png";
-import website2 from "../../asserts/images/website-2.png";
-import website3 from "../../asserts/images/website-3.png";
-import website4 from "../../asserts/images/website-4.png";
-import heroslidermockupimg3 from "../../asserts/images/hero-slider-mockup-img-3.png";
-import Macbook from "../../asserts/images/Macbook.png";
-// import peramidleftangles from "../../asserts/images/peramid-left-angles.png";
-import peramidangled from "../../asserts/images/peramid-angled.png";
-import p2 from "../../asserts/images/p2.png";
-import p1 from "../../asserts/images/p1.png";
-import p3 from "../../asserts/images/p3.png";
-import p4 from "../../asserts/images/p4.png";
-import p5 from "../../asserts/images/p5.png";
-import p6 from "../../asserts/images/p6.png";
-import cms1 from "../../asserts/images/Cms-1.png";
-import cms2 from "../../asserts/images/CMS-2.png";
-import cms3 from "../../asserts/images/CMS-3.png";
-import cms4 from "../../asserts/images/CMS-4.png";
-import irvingsegalbg from "../../asserts/images/irving-segal-bg.png";
-import irvingsegalimg from "../../asserts/images/irving-segal-img-1.webp";
-import braincarlislebg from "../../asserts/images/brain-carlisle-bg.png";
-import braincarlisleimg from "../../asserts/images/brain-carlisle-img-1.webp";
-import anglebodybg from "../../asserts/images/angle-body-bg.png";
+import portfoliomockup5 from "../../asserts/images/portfolio-mockup-5.webp";
+import portfoliomockup2 from "../../asserts/images/portfolio-mockup-2.webp";
+import portfoliomockup3 from "../../asserts/images/portfolio-mockup-3.webp";
+import portfoliomockup4 from "../../asserts/images/portfolio-mockup-4.webp";
+import website1 from "../../asserts/images/website-1.webp";
+import website2 from "../../asserts/images/website-2.webp";
+import website3 from "../../asserts/images/website-3.webp";
+import website4 from "../../asserts/images/website-4.webp";
+import heroslidermockupimg3 from "../../asserts/images/hero-slider-mockup-img-3.webp";
+import Macbook from "../../asserts/images/Macbook.webp";
+import peramidangled from "../../asserts/images/peramid-angled.webp";
+import cms1 from "../../asserts/images/Cms-1.webp";
+import cms2 from "../../asserts/images/CMS-2.webp";
+import cms3 from "../../asserts/images/CMS-3.webp";
+import cms4 from "../../asserts/images/CMS-4.webp";
+import irvingsegalbg from "../../asserts/images/irving-segal-bg.webp";
+import irvingsegalimg from "../../asserts/images/irving-segal-img.webp";
+import braincarlislebg from "../../asserts/images/brain-carlisle-bg.webp";
+import braincarlisleimg from "../../asserts/images/brain-carlisle-img.webp";
+import anglebodybg from "../../asserts/images/angle-body-bg.webp";
 import anglebodyimg from "../../asserts/images/angle-body-img.webp";
-
-// import partnerImg1 from "../../asserts/images/partner-img-1.png";
-// import partnerImg2 from "../../asserts/images/partner-img-2.png";
-// import partnerImg3 from "../../asserts/images/partner-img-3.png";
-// import partnerImg4 from "../../asserts/images/partner-img-4.png";
-// import partnerImg5 from "../../asserts/images/partner-img-5.png";
-// import partnerImg6 from "../../asserts/images/partner-img-6.png";
-// import partnerImg7 from "../../asserts/images/partner-img-7.png";
-// import partnerImg8 from "../../asserts/images/partner-img-8.png";
-// import partnerImg9 from "../../asserts/images/partner-img-9.png";
-// import partnerImg10 from "../../asserts/images/partner-img-10.png";
-// import partnerImg11 from "../../asserts/images/partner-img-11.png";
-// import partnerImg12 from "../../asserts/images/partner-img-12.png";
-// import partnerImg13 from "../../asserts/images/partner-img-13.png";
-// import partnerImg14 from "../../asserts/images/partner-img-14.png";
-// import partnerImg15 from "../../asserts/images/partner-img-15.png";
-// import partnerImg16 from "../../asserts/images/partner-img-16.png";
 
 import partnerImg1 from "../../asserts/images/partner-img-1.svg";
 import partnerImg2 from "../../asserts/images/partner-img-2.svg";
@@ -125,7 +87,7 @@ import partnerImg12 from "../../asserts/images/partner-img-12.svg";
 import partnerImg13 from "../../asserts/images/partner-img-13.svg";
 import partnerImg14 from "../../asserts/images/partner-img-14.svg";
 import partnerImg15 from "../../asserts/images/partner-img-15.svg";
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet";
 import partnerImg16 from "../../asserts/images/partner-img-16.svg";
 
 import Aos from "aos";
@@ -162,31 +124,6 @@ const Home = () => {
   }, []);
 
   Aos.init();
-
-  // useEffect(() => {
-  //   gsap.set(".road", { opacity: 1 });
-  //   const circles = gsap.utils.toArray(".ani_cnt .icc");
-  //   const tl2 = gsap.timeline({ repeat: 20 });
-
-  //   circles.forEach((circle, i) => {
-  //     let start = i / circles.length; // secret sauce for circles
-  //     tl2.to(
-  //       circle,
-  //       {
-  //         motionPath: {
-  //           path: ".mypath",
-  //          ,
-  //           alignOrigin: [0.5, 0.4],
-  //           start: start,
-  //           end: start + 1,
-  //         },
-  //         ease: "none",
-  //         duration: 40,
-  //       },
-
-  //     );
-  //   });
-  // }, []);
 
   const sectionRef = useRef(null);
 
@@ -363,7 +300,6 @@ const Home = () => {
   }, []);
   return (
     <UserLayout>
-      
       <Helmet>
         <meta charSet="utf-8" />
         <title>Welcome to Techverse LLC</title>
@@ -708,7 +644,7 @@ const Home = () => {
         </Swiper>
       </div>
 
-      {/* 'backgroundImage: url(../../asserts/images/hero-bg.png);' */}
+      {/* 'backgroundImage: url(../../asserts/images/hero-bg.webp);' */}
 
       {/* <!-- About Sec --> */}
 
@@ -1191,68 +1127,6 @@ const Home = () => {
                 {/* <div class="row flex-nowrap gap-4 mb-3 additional_classes" style={{overflow-x: 'auto' , gap: '15px'}} > */}
                 <div class="marquee-container trusted-partnerContainer">
                   <div class="marquee">
-                    {/* <div class="trustedPartners">
-                      <div class="trustedPartner col">
-                        <img src={tpblue} alt="" />
-                      </div>
-                      <div class="trustedPartner col">
-                        <img src={tpblack} alt="" />
-                      </div>
-                      <div class="trustedPartner col">
-                        <img src={tpblue} alt="" />
-                      </div>
-                      <div class="trustedPartner col">
-                        <img src={tpblack} alt="" />
-                      </div>
-                      <div class="trustedPartner col">
-                        <img src={tpblue} alt="" />
-                      </div>
-                      <div class="trustedPartner col">
-                        <img src={tpblack} alt="" />
-                      </div>
-                      <div class="trustedPartner col">
-                        <img src={tpblue} alt="" />
-                      </div>
-                      <div class="trustedPartner col">
-                        <img src={tpblack} alt="" />
-                      </div>
-                      <div class="trustedPartner col">
-                        <img src={tpblue} alt="" />
-                      </div>
-                      <div class="trustedPartner col">
-                        <img src={tpblack} alt="" />
-                      </div>
-                      <div class="trustedPartner col">
-                        <img src={tpblue} alt="" />
-                      </div>
-                      <div class="trustedPartner col">
-                        <img src={tpblack} alt="" />
-                      </div>
-                      <div class="trustedPartner col">
-                        <img src={tpblue} alt="" />
-                      </div>
-                      <div class="trustedPartner col">
-                        <img src={tpblack} alt="" />
-                      </div>
-                      <div class="trustedPartner col">
-                        <img src={tpblue} alt="" />
-                      </div>
-                      <div class="trustedPartner col">
-                        <img src={tpblack} alt="" />
-                      </div>
-                      <div class="trustedPartner col">
-                        <img src={tpblue} alt="" />
-                      </div>
-                      <div class="trustedPartner col">
-                        <img src={tpblack} alt="" />
-                      </div>
-                      <div class="trustedPartner col">
-                        <img src={tpblue} alt="" />
-                      </div>
-                      <div class="trustedPartner col">
-                        <img src={tpblack} alt="" />
-                      </div>
-                    </div> */}
                     <div class="trustedPartners">
                       <div class="trustedPartner col">
                         <img src={partnerImg1} alt="" />

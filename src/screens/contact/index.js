@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { UserLayout } from "../../Components/Layout/UserLayout";
 import { Header } from "../../Components/Layout/Header";
-import { Footer } from "../../Components/Layout/Footer";
 import Contact_Footer from "../../Components/contact_Footer";
-import contactlisticon1 from "../../asserts/images/contact-list-icon1.png";
-import contactlisticon2 from "../../asserts/images/contact-list-icon2.png";
-import contactlisticon3 from "../../asserts/images/contact-list-icon3.png";
-import contactclutch from "../../asserts/images/contact-clutch.png";
-import contacttrust from "../../asserts/images/contact-trust.png";
-import contactbbb from "../../asserts/images/contact-bbb.png";
+import contactlisticon1 from "../../asserts/images/contact-list-icon1.webp";
+import contactlisticon2 from "../../asserts/images/contact-list-icon2.webp";
+import contactlisticon3 from "../../asserts/images/contact-list-icon3.webp";
+import contactclutch from "../../asserts/images/contact-clutch.webp";
+import contacttrust from "../../asserts/images/contact-trust.webp";
+import contactbbb from "../../asserts/images/contact-bbb.webp";
 import "./style.css";
 
 import { Helmet } from "react-helmet";

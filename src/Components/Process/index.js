@@ -1,40 +1,17 @@
-import React, { useEffect , useRef } from "react";
+import React, { useEffect, useRef } from "react";
 
-import phoneicon from "../../../src/asserts/images/phone-icon.png";
-import chaticon from "../../../src/asserts/images/chat-icon.png";
-import androidiconw from "../../../src/asserts/images/android-icon-w.png";
-import angularicon from "../../../src/asserts/images/angular-icon.png";
-import appleicon from "../../../src/asserts/images/apple-icon.png";
-import ecommersedevhero from "../../../src/asserts/images/ecommersedevhero.png";
-
-import { MotionPathPlugin } from "gsap/MotionPathPlugin";
-import bluecubelarge from "../../asserts/images/blue-cube-large.png";
-import Particles from "react-particles";
-// import { loadFull } from 'tsparticles';
-import { Swiper, SwiperSlide } from "swiper/react";
 import { gsap } from "gsap";
 
-import fluttericon from "../../../src/asserts/images/flutter-icon.png";
-import reacticon from "../../../src/asserts/images/react-icon.png";
-// import donatewhitesmall from "../../../src/asserts/images/donate-white-small.png";
-import orangehalfcircle from "../../../src/asserts/images/orange-half-circle.png";
-import processicon1 from "../../../src/asserts/images/process-icon-1.png";
-import arrowicon from "../../../src/asserts/images/arrow-icon.png";
-import processicon2 from "../../../src/asserts/images/process-icon-2.png";
-import processicon3 from "../../../src/asserts/images/process-icon-3.png";
-import processicon4 from "../../../src/asserts/images/process-icon-4.png";
-import processicon5 from "../../../src/asserts/images/process-icon-5.png";
-import processicon6 from "../../../src/asserts/images/process-icon-6.png";
+import orangehalfcircle from "../../../src/asserts/images/orange-half-circle.webp";
+import processicon1 from "../../../src/asserts/images/process-icon-1.webp";
+import processicon2 from "../../../src/asserts/images/process-icon-2.webp";
+import processicon3 from "../../../src/asserts/images/process-icon-3.webp";
+import processicon4 from "../../../src/asserts/images/process-icon-4.webp";
+import processicon5 from "../../../src/asserts/images/process-icon-5.webp";
+import processicon6 from "../../../src/asserts/images/process-icon-6.webp";
 
-import goodfirms from "../../../src/asserts/images/good-firms.png";
-import partnersbbb from "../../../src/asserts/images/partners-bbb.png";
-import partnerstruspilot from "../../../src/asserts/images/partners-trus-pilot.png";
-import partnersclutch from "../../../src/asserts/images/partners-clutch.png";
-import peramidleftangles from "../../../src/asserts/images/peramid-left-angles.png";
-import pinkcapsol from "../../../src/asserts/images/pink-capsol.png";
-import chaticonblues from "../../../src/asserts/images/chat-icon-blue.png";
-// import orangehalfcircle from 'path_to_orangehalfcircle';
-import mobileAppimg from "../../../src/asserts/images/mobileAppimg.png";
+import peramidleftangles from "../../../src/asserts/images/peramid-left-angles.webp";
+import pinkcapsol from "../../../src/asserts/images/pink-capsol.webp";
 
 const Process = (props) => {
   useEffect(() => {
@@ -62,25 +39,13 @@ const Process = (props) => {
     });
   }, []);
 
-
-
-
-
-
-
-
-
-
-
-
-
   const sectionRef = useRef(null);
 
   useEffect(() => {
-    const sections = sectionRef?.current.querySelectorAll('.techVerse_process');
+    const sections = sectionRef?.current.querySelectorAll(".techVerse_process");
 
     sections.forEach((section) => {
-      const container = section.querySelector('.inneri_images');
+      const container = section.querySelector(".inneri_images");
 
       const handleMouseMove = (event) => {
         const rect = section.getBoundingClientRect();
@@ -94,7 +59,7 @@ const Process = (props) => {
         gsap.to(container, {
           x: distX,
           y: distY,
-          ease: 'power1.out',
+          ease: "power1.out",
         });
       };
 
@@ -102,52 +67,44 @@ const Process = (props) => {
         gsap.to(container, {
           x: 0,
           y: 0,
-          ease: 'power1.out',
+          ease: "power1.out",
         });
       };
 
-      section.addEventListener('mousemove', handleMouseMove);
-      section.addEventListener('mouseleave', handleMouseLeave);
+      section.addEventListener("mousemove", handleMouseMove);
+      section.addEventListener("mouseleave", handleMouseLeave);
 
       return () => {
-        section.removeEventListener('mousemove', handleMouseMove);
-        section.removeEventListener('mouseleave', handleMouseLeave);
+        section.removeEventListener("mousemove", handleMouseMove);
+        section.removeEventListener("mouseleave", handleMouseLeave);
       };
     });
   }, []);
-
-
-
-
-
-
-
-
 
   return (
     <div ref={sectionRef}>
       <section className="techVerse_process">
         <div className="inneri_images">
-        <img
-          className="techVerse_process_icon1 animation22"
-          src={peramidleftangles}
-          alt=""
-        />
-        <img
-          className="techVerse_process_icon2 animation11"
-          src={pinkcapsol}
-          alt=""
-        />
-        <img
-          className="techVerse_process_icon3 animation33"
-          src={orangehalfcircle}
-          alt=""
-        />
-        <img
-          className="techVerse_process_icon4 animation22"
-          src={peramidleftangles}
-          alt=""
-        />
+          <img
+            className="techVerse_process_icon1 animation22"
+            src={peramidleftangles}
+            alt=""
+          />
+          <img
+            className="techVerse_process_icon2 animation11"
+            src={pinkcapsol}
+            alt=""
+          />
+          <img
+            className="techVerse_process_icon3 animation33"
+            src={orangehalfcircle}
+            alt=""
+          />
+          <img
+            className="techVerse_process_icon4 animation22"
+            src={peramidleftangles}
+            alt=""
+          />
         </div>
         <div className="container-fluid">
           <div className="row">
@@ -167,7 +124,7 @@ const Process = (props) => {
                   data-aos-offset="0"
                   data-aos-duration="2000"
                 >
-                 {props?.para}
+                  {props?.para}
                 </p>
               </div>
             </div>
@@ -200,7 +157,6 @@ const Process = (props) => {
                   <img src={processicon1} alt="Bespoke-Designs" />
                   <p>Idea Conceptualization and Research</p>
                 </div>
-
 
                 <svg
                   viewBox="0 0 1916 479"

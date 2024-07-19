@@ -1,18 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { UserLayout } from "../../Components/Layout/UserLayout";
 import { Header } from "../../Components/Layout/Header";
-import { Footer } from "../../Components/Layout/Footer";
 import Contact_Footer from "../../Components/contact_Footer";
-import contactlisticon1 from "../../asserts/images/contact-list-icon1.png";
-import contactlisticon2 from "../../asserts/images/contact-list-icon2.png";
-import contactlisticon3 from "../../asserts/images/contact-list-icon3.png";
-import contactclutch from "../../asserts/images/contact-clutch.png";
-import contacttrust from "../../asserts/images/contact-trust.png";
-import contactbbb from "../../asserts/images/contact-bbb.png";
+
 import "./style.css";
 
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -22,13 +15,9 @@ const Terms_condition = () => {
     AOS.init();
   }, []);
 
+  const [ipInfo, setIpInfo] = useState({ ip: "", country: "" });
 
-
-  const [ipInfo, setIpInfo] = useState({ ip: '', country: '' });
-
-  console.log("ipInfo", ipInfo)
-
-
+  console.log("ipInfo", ipInfo);
 
   useEffect(() => {
     function getCountryByIP() {
@@ -48,25 +37,21 @@ const Terms_condition = () => {
 
   const [budget, setBudget] = useState(500);
 
-
   const notify = () => toast.success("Thank You");
   const [formdata, setFormData] = useState({
-    firstname: '',
-  })
+    firstname: "",
+  });
 
   const handlechange = (e) => {
-    const { name, value } = e.target
+    const { name, value } = e.target;
     if (name == "budget") {
       setBudget(value);
-
     }
     setFormData((prevdata) => ({
       ...prevdata,
-      [name]: value
-    }))
-  }
-
-
+      [name]: value,
+    }));
+  };
 
   const handlesubmit = async (event) => {
     event.preventDefault();
@@ -83,11 +68,13 @@ const Terms_condition = () => {
       const contact_api = await fetch(url, {
         method: "POST",
 
-        body: formDataMethod
+        body: formDataMethod,
       });
 
       if (!contact_api.ok) {
-        throw new Error('Network response was not ok ' + contact_api.statusText);
+        throw new Error(
+          "Network response was not ok " + contact_api.statusText
+        );
       }
 
       const response = await contact_api.json();
@@ -95,17 +82,16 @@ const Terms_condition = () => {
         notify();
 
         setFormData({
-          firstname: '',
-          lastname: '',
+          firstname: "",
+          lastname: "",
           phone: " ",
           email: " ",
           message: " ",
           budget: " ",
           country: " ",
-
         });
       }
-      console.log('Success:', response);
+      console.log("Success:", response);
       // Handle successful response
       return response;
     } catch (error) {
@@ -113,7 +99,7 @@ const Terms_condition = () => {
       // Handle error response
       throw error;
     }
-  }
+  };
 
   return (
     <div>
@@ -126,7 +112,11 @@ const Terms_condition = () => {
             <div class="row">
               <div class="col-md-12">
                 <div class="inner_hero_content centered-text">
-                  <h1 data-aos="fade-right" data-aos-offset="0" data-aos-duration="1000">
+                  <h1
+                    data-aos="fade-right"
+                    data-aos-offset="0"
+                    data-aos-duration="1000"
+                  >
                     Terms
                     <span class="color-lightBlue1"> And </span>
                     Conditions
@@ -151,20 +141,47 @@ const Terms_condition = () => {
             <div class="col-md-12">
               <div class="terms_condition_content">
                 <div class="sec_title">
-                  <h2 class="sec_title_head color-darkBlue" data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000">
+                  <h2
+                    class="sec_title_head color-darkBlue"
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="1000"
+                  >
                     {/* <!-- <span class="color-lightBlue2"></span> --> */}
                     Introduction
                   </h2>
-                  <p data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000">
-                    Welcome to Techverse LLC. These terms and conditions govern your use of our app development and marketing services. By accessing our services, you agree to comply with these terms.
+                  <p
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="2000"
+                  >
+                    Welcome to Techverse LLC. These terms and conditions govern
+                    your use of our app development and marketing services. By
+                    accessing our services, you agree to comply with these
+                    terms.
                   </p>
-                  <h2 class="sec_title_head color-darkBlue" data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000">
+                  <h2
+                    class="sec_title_head color-darkBlue"
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="1000"
+                  >
                     Services <span class="color-lightBlue2">Offered</span>
                   </h2>
-                  <p data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000">
-                    Techverse LLC provides app development and marketing services, including but not limited to:
+                  <p
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="2000"
+                  >
+                    Techverse LLC provides app development and marketing
+                    services, including but not limited to:
                   </p>
-                  <ul class="body-bullet-list" data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000">
+                  <ul
+                    class="body-bullet-list"
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="2000"
+                  >
                     <li>Mobile Application Development</li>
                     <li>E-commerce </li>
                     <li>App Store</li>
@@ -173,68 +190,179 @@ const Terms_condition = () => {
                     <li>Digital Marketing</li>
                     <li>Web Application</li>
                   </ul>
-                  <h2 class="sec_title_head color-darkBlue" data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000">
-                    Client <span class="color-lightBlue2">Responsibilities</span>
+                  <h2
+                    class="sec_title_head color-darkBlue"
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="1000"
+                  >
+                    Client{" "}
+                    <span class="color-lightBlue2">Responsibilities</span>
                   </h2>
-                  <ul class="body-bullet-list" data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000">
+                  <ul
+                    class="body-bullet-list"
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="2000"
+                  >
                     <li>Precise project requirements and objectives</li>
                     <li>Access to necessary resources and information</li>
                     <li>Timely feedback during project development phases</li>
                     <li>Payment as per the agreed terms and schedule</li>
                   </ul>
-                  <h2 class="sec_title_head color-darkBlue" data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000">
+                  <h2
+                    class="sec_title_head color-darkBlue"
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="1000"
+                  >
                     Project <span class="color-lightBlue2">Initiation</span>
                   </h2>
-                  <p data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000">
-                    Upon accepting a project proposal, Techverse LLC will commence work according to the agreed-upon timeline and scope outlined in the proposal or contract.
+                  <p
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="2000"
+                  >
+                    Upon accepting a project proposal, Techverse LLC will
+                    commence work according to the agreed-upon timeline and
+                    scope outlined in the proposal or contract.
                   </p>
-                  <h2 class="sec_title_head color-darkBlue" data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000">
+                  <h2
+                    class="sec_title_head color-darkBlue"
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="1000"
+                  >
                     Payment Terms
                   </h2>
-                  <p data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000">
-                    Payment terms will be outlined in the project proposal or contract. Clients agree to adhere to these terms to maintain project continuity.
+                  <p
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="2000"
+                  >
+                    Payment terms will be outlined in the project proposal or
+                    contract. Clients agree to adhere to these terms to maintain
+                    project continuity.
                   </p>
-                  <h2 class="sec_title_head color-darkBlue" data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000">
+                  <h2
+                    class="sec_title_head color-darkBlue"
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="1000"
+                  >
                     Intellectual <span class="color-lightBlue2">Property</span>
                   </h2>
-                  <p data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000">
-                    Upon full payment, the client will own all intellectual property rights associated with the developed applications and marketing strategies unless otherwise specified in the contract.
+                  <p
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="2000"
+                  >
+                    Upon full payment, the client will own all intellectual
+                    property rights associated with the developed applications
+                    and marketing strategies unless otherwise specified in the
+                    contract.
                   </p>
-                  <h2 class="sec_title_head color-darkBlue" data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000">
+                  <h2
+                    class="sec_title_head color-darkBlue"
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="1000"
+                  >
                     Confidentiality
                   </h2>
-                  <p data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000">
-                    Techverse LLC agrees to maintain confidentiality regarding all client information and project details disclosed during the term of engagement.
+                  <p
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="2000"
+                  >
+                    Techverse LLC agrees to maintain confidentiality regarding
+                    all client information and project details disclosed during
+                    the term of engagement.
                   </p>
-                  <h2 class="sec_title_head color-darkBlue" data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000">
+                  <h2
+                    class="sec_title_head color-darkBlue"
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="1000"
+                  >
                     Liability
                   </h2>
-                  <p data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000">
-                    Techverse LLC will not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to the services provided.
+                  <p
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="2000"
+                  >
+                    Techverse LLC will not be liable for any indirect,
+                    incidental, special, consequential, or punitive damages
+                    arising out of or related to the services provided.
                   </p>
-                  <h2 class="sec_title_head color-darkBlue" data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000">
+                  <h2
+                    class="sec_title_head color-darkBlue"
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="1000"
+                  >
                     Termination
                   </h2>
-                  <p data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000">
-                    Either party may terminate the engagement with a written notice. Clients agree to pay for completed work up to the termination date as per the agreed terms.
+                  <p
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="2000"
+                  >
+                    Either party may terminate the engagement with a written
+                    notice. Clients agree to pay for completed work up to the
+                    termination date as per the agreed terms.
                   </p>
-                  <h2 class="sec_title_head color-darkBlue" data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000">
+                  <h2
+                    class="sec_title_head color-darkBlue"
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="1000"
+                  >
                     Governing <span class="color-lightBlue2">Law</span>
                   </h2>
-                  <p data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000">
-                    These terms and conditions shall be governed by and construed in accordance with the laws of Jurisdiction without regard to its conflict of law provisions.
+                  <p
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="2000"
+                  >
+                    These terms and conditions shall be governed by and
+                    construed in accordance with the laws of Jurisdiction
+                    without regard to its conflict of law provisions.
                   </p>
-                  <h2 class="sec_title_head color-darkBlue" data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000">
+                  <h2
+                    class="sec_title_head color-darkBlue"
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="1000"
+                  >
                     Amendments
                   </h2>
-                  <p data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000">
-                    Techverse LLC reserves the right to amend these terms and conditions at any time. Clients will be notified of any changes, and continued use of services constitutes acceptance of the amended terms.
+                  <p
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="2000"
+                  >
+                    Techverse LLC reserves the right to amend these terms and
+                    conditions at any time. Clients will be notified of any
+                    changes, and continued use of services constitutes
+                    acceptance of the amended terms.
                   </p>
-                  <h2 class="sec_title_head color-darkBlue" data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000">
+                  <h2
+                    class="sec_title_head color-darkBlue"
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="1000"
+                  >
                     Contact Us
                   </h2>
-                  <p data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000">
-                    For questions or concerns regarding these terms and conditions, don't hesitate to get in touch with us.
+                  <p
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="2000"
+                  >
+                    For questions or concerns regarding these terms and
+                    conditions, don't hesitate to get in touch with us.
                   </p>
                 </div>
               </div>
@@ -245,7 +373,6 @@ const Terms_condition = () => {
       <Contact_Footer />
       <ToastContainer />
     </div>
-
   );
 };
 

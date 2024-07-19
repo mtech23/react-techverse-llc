@@ -1,178 +1,232 @@
-import React, { useEffect, useRef } from 'react'
-import pinkcapsol from "../../asserts/images/pink-capsol.png";
+import React, { useEffect, useRef } from "react";
+import pinkcapsol from "../../asserts/images/pink-capsol.webp";
 
-import drivingsecsecreen from '../../asserts/images/driving-sec-secreen.png'
-import reicon1 from '../../asserts/images/re-icon1.png'
-import reicon2 from '../../asserts/images/re-icon2.png'
-import reicon3 from '../../asserts/images/re-icon3.png'
-import reicon4 from '../../asserts/images/re-icon4.png'
-import reicon5 from '../../asserts/images/re-icon5.png'
-import reicon6 from '../../asserts/images/re-icon6.png'
-import reicon7 from '../../asserts/images/re-icon7.png'
-import reicon8 from '../../asserts/images/re-icon8.png'
-import greencube from "../../asserts/images/green-cube.png";
-import donatorange from "../../asserts/images/donat-orange.png";
+import drivingsecsecreen from "../../asserts/images/driving-sec-secreen.webp";
+import reicon1 from "../../asserts/images/re-icon1.webp";
+import reicon2 from "../../asserts/images/re-icon2.webp";
+import reicon3 from "../../asserts/images/re-icon3.webp";
+import reicon4 from "../../asserts/images/re-icon4.webp";
+import reicon5 from "../../asserts/images/re-icon5.webp";
+import reicon6 from "../../asserts/images/re-icon6.webp";
+import reicon7 from "../../asserts/images/re-icon7.webp";
+import reicon8 from "../../asserts/images/re-icon8.webp";
+import greencube from "../../asserts/images/green-cube.webp";
+import donatorange from "../../asserts/images/donat-orange.webp";
 import { gsap } from "gsap";
 
 const Driving_Exprience = (props) => {
-    const sectionRef = useRef(null);
+  const sectionRef = useRef(null);
 
-    useEffect(() => {
-        const sections = sectionRef?.current.querySelectorAll('.techVerse_about');
+  useEffect(() => {
+    const sections = sectionRef?.current.querySelectorAll(".techVerse_about");
 
-        sections.forEach((section) => {
-            const container = section.querySelector('.inner_images');
+    sections.forEach((section) => {
+      const container = section.querySelector(".inner_images");
 
-            const handleMouseMove = (event) => {
-                const rect = section.getBoundingClientRect();
-                const mouseX = event.clientX - rect.left;
-                const mouseY = event.clientY - rect.top;
-                const centerX = rect.width / 2;
-                const centerY = rect.height / 2;
-                const distX = (mouseX - centerX) * 0.1;
-                const distY = (mouseY - centerY) * 0.1;
+      const handleMouseMove = (event) => {
+        const rect = section.getBoundingClientRect();
+        const mouseX = event.clientX - rect.left;
+        const mouseY = event.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const distX = (mouseX - centerX) * 0.1;
+        const distY = (mouseY - centerY) * 0.1;
 
-                gsap.to(container, {
-                    x: distX,
-                    y: distY,
-                    ease: 'power1.out',
-                });
-            };
-
-            const handleMouseLeave = () => {
-                gsap.to(container, {
-                    x: 0,
-                    y: 0,
-                    ease: 'power1.out',
-                });
-            };
-
-            section.addEventListener('mousemove', handleMouseMove);
-            section.addEventListener('mouseleave', handleMouseLeave);
-
-            return () => {
-                section.removeEventListener('mousemove', handleMouseMove);
-                section.removeEventListener('mouseleave', handleMouseLeave);
-            };
+        gsap.to(container, {
+          x: distX,
+          y: distY,
+          ease: "power1.out",
         });
-    }, []);
+      };
 
+      const handleMouseLeave = () => {
+        gsap.to(container, {
+          x: 0,
+          y: 0,
+          ease: "power1.out",
+        });
+      };
 
-    return (
-        <div ref={sectionRef}>
-            <section
-                className={`techVerse_about techVerse_aboutServices2 ${props?.classheroimage}`}
-            >
-                <div class={props?.class_innerBG}>
+      section.addEventListener("mousemove", handleMouseMove);
+      section.addEventListener("mouseleave", handleMouseLeave);
 
-                </div>
-                <div className='inner_images'>
-                    <img class="techVerse_about_icon1 animation11"
-                        src={pinkcapsol} alt="" />
+      return () => {
+        section.removeEventListener("mousemove", handleMouseMove);
+        section.removeEventListener("mouseleave", handleMouseLeave);
+      };
+    });
+  }, []);
 
-                    <img class="techVerse_about_icon3 animation11"
-                        src={greencube} alt="" />
-                    <img class="techVerse_about_icon4 animation11"
-                        src={donatorange} alt="" />
-                </div>
-                <div class="techVerse_aboutContent techVerse_aboutContentServices2 width-1600">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="sec_title buildStore_sec_title">
-                                    <h2 class={`sec_title_head color-lightBlue2 ${props?.title_text_class}`} 
-                                    data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000">
-                                        <span class={props?.titleclass}>{props?.title}</span> {props?.subtitle} <span class={props?.titleclass2}> {props?.title2}    </span>
-                                    </h2>
+  return (
+    <div ref={sectionRef}>
+      <section
+        className={`techVerse_about techVerse_aboutServices2 ${props?.classheroimage}`}
+      >
+        <div class={props?.class_innerBG}></div>
+        <div className="inner_images">
+          <img
+            class="techVerse_about_icon1 animation11"
+            src={pinkcapsol}
+            alt=""
+          />
 
-
-                                    <p data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000">
-                                 {props?.para}
-            </p>
-                                                        </div>
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="techVerse_about_img">
-                                    <div class="techVerse_about_laptop_img driving-2screen">
-                                        <img src={props?.image}
-                                            class={`about-laptopImg mobileApp_devSec_img 4 ${props?.hrimg}`}
-                                            data-aos="fade-right" data-aos-offset="0" data-aos-duration="1000" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-7">
-                                <div class="techVerse_about_content services-abbout2">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="icon_box" data-aos="fade-up" data-aos-duration="1000">
-                                                <div class="box_icon">
-                                                    <img src={reicon1} alt="" />
-                                                </div>
-                                                <h4>{props?.h1}</h4>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="icon_box" data-aos="fade-up" data-aos-duration="1000">
-                                                <div class="box_icon">
-                                                    <img src={reicon2} alt="" />
-                                                </div>
-                                                <h4>{props?.h2}</h4>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="icon_box" data-aos="fade-up" data-aos-duration="1000">
-                                                <div class="box_icon">
-                                                    <img src={reicon3} alt="" /></div>
-                                                <h4>  {props?.h3}</h4>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="icon_box" data-aos="fade-up" data-aos-duration="1000">
-                                                <div class="box_icon">
-                                                    <img src={reicon4} alt="" /></div>
-                                                <h4>  {props?.h4}</h4>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="icon_box" data-aos="fade-up" data-aos-duration="1000">
-                                                <div class="box_icon">
-                                                    <img src={reicon5} alt="" /></div>
-                                                <h4>  {props?.h5}</h4>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="icon_box" data-aos="fade-up" data-aos-duration="1000">
-                                                <div class="box_icon">
-                                                    <img src={reicon6} alt="" /></div>
-                                                <h4>{props?.h6}  </h4>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="icon_box" data-aos="fade-up" data-aos-duration="1000">
-                                                <div class="box_icon">
-                                                    <img src={reicon7} alt="" />
-                                                </div>
-                                                <h4>{props?.h7}  </h4>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="icon_box" data-aos="fade-up" data-aos-duration="1000">
-                                                <div class="box_icon">
-                                                    <img src={reicon8} alt="" />
-                                                </div>
-                                                <h4>{props?.h8}  </h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+          <img
+            class="techVerse_about_icon3 animation11"
+            src={greencube}
+            alt=""
+          />
+          <img
+            class="techVerse_about_icon4 animation11"
+            src={donatorange}
+            alt=""
+          />
         </div>
-    )
-}
+        <div class="techVerse_aboutContent techVerse_aboutContentServices2 width-1600">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="sec_title buildStore_sec_title">
+                  <h2
+                    class={`sec_title_head color-lightBlue2 ${props?.title_text_class}`}
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="1000"
+                  >
+                    <span class={props?.titleclass}>{props?.title}</span>{" "}
+                    {props?.subtitle}{" "}
+                    <span class={props?.titleclass2}> {props?.title2} </span>
+                  </h2>
 
-export default Driving_Exprience
+                  <p
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="2000"
+                  >
+                    {props?.para}
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <div class="techVerse_about_img">
+                  <div class="techVerse_about_laptop_img driving-2screen">
+                    <img
+                      src={props?.image}
+                      class={`about-laptopImg mobileApp_devSec_img 4 ${props?.hrimg}`}
+                      data-aos="fade-right"
+                      data-aos-offset="0"
+                      data-aos-duration="1000"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="techVerse_about_content services-abbout2">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div
+                        class="icon_box"
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                      >
+                        <div class="box_icon">
+                          <img src={reicon1} alt="" />
+                        </div>
+                        <h4>{props?.h1}</h4>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div
+                        class="icon_box"
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                      >
+                        <div class="box_icon">
+                          <img src={reicon2} alt="" />
+                        </div>
+                        <h4>{props?.h2}</h4>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div
+                        class="icon_box"
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                      >
+                        <div class="box_icon">
+                          <img src={reicon3} alt="" />
+                        </div>
+                        <h4> {props?.h3}</h4>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div
+                        class="icon_box"
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                      >
+                        <div class="box_icon">
+                          <img src={reicon4} alt="" />
+                        </div>
+                        <h4> {props?.h4}</h4>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div
+                        class="icon_box"
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                      >
+                        <div class="box_icon">
+                          <img src={reicon5} alt="" />
+                        </div>
+                        <h4> {props?.h5}</h4>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div
+                        class="icon_box"
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                      >
+                        <div class="box_icon">
+                          <img src={reicon6} alt="" />
+                        </div>
+                        <h4>{props?.h6} </h4>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div
+                        class="icon_box"
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                      >
+                        <div class="box_icon">
+                          <img src={reicon7} alt="" />
+                        </div>
+                        <h4>{props?.h7} </h4>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div
+                        class="icon_box"
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                      >
+                        <div class="box_icon">
+                          <img src={reicon8} alt="" />
+                        </div>
+                        <h4>{props?.h8} </h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Driving_Exprience;

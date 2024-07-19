@@ -242,14 +242,14 @@
 <div className="mobile-menu">
   <div className="mobile-top">
     <div className="img-div">
-      <img src="/public/images/logo.png" className="img-fluid" alt="" />
+      <img src="/public/images/logo.webp" className="img-fluid" alt="" />
     </div>
     <div className="circle" id="navbar"><i className="fa fa-bars" aria-hidden="true"></i></div>
   </div>
   <div className="nveMenu text-left">
     <div className="mobile-cross close-btn-nav" id="navbar"><i className="fas fa-times" aria-hidden="true"></i></div>
     <div>
-      <a href="index.php"><img src="/public/images/logo.png" className="img-fluid" /></a>
+      <a href="index.php"><img src="/public/images/logo.webp" className="img-fluid" /></a>
     </div>
     <ul className="navlinks p-0 mt-4">
       <li><Link to="#" className="active">Home</Link></li>

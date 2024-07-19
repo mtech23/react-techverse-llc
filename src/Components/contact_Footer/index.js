@@ -1,76 +1,54 @@
-import React , {useState} from 'react'
-import bicon from '../../asserts/images/b-icon.png'
+import React, { useState } from "react";
+import bicon from "../../asserts/images/b-icon.webp";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
-import starticon from '../../asserts/images/start-icon.png'
-import Particles from "react-particles";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Logo, mainSiteLogo, dmca, dmcacomplaint, footerCertificate, playstore } from "../../asserts/images";
-import ContactParticle from '../contactParticle/contactParticle';
-// import partnersbbb from '../../../asserts/images/partners-bbb.png';
-// import arrowicon from '../../../asserts/images/arrow-icon.png'
-// import goodfirms from '../../../asserts/images/good-firms.png';
-// import partnersclutch from '../../../asserts/images/partners-clutch.png';
-// import bluecubelarge from '../../../asserts/images/blue-cube-large.png'
-// import partnerstruspilot from '../../../asserts/images/partners-trus-pilot.png';
+import starticon from "../../asserts/images/start-icon.webp";
+import {
+  Logo,
+  mainSiteLogo,
+  dmca,
+  dmcacomplaint,
+  footerCertificate,
+  playstore,
+} from "../../asserts/images";
+import ContactParticle from "../contactParticle/contactParticle";
 
-// import contactUslaptop from '../../../asserts/images/contactUs-laptop.png';
-// import SuperToroidOrangeGlossy from '../../../asserts/images/SuperToroid-Orange-Glossy.png';
 import { useCallback } from "react";
-// import Particles from "react-particles";
-// import type { Container, Engine } from "tsparticles-engine";
-// import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "tsparticles-slim";
 
 const Contact_Footer = () => {
+  const industries = [
+    { key: "real-estate-and-property", name: "Real Estate & Property" },
+    { key: "automotive-and-transport", name: "Automotive and Transport" },
+    { key: "eCommerse-and-retail", name: "E-commerce & Retails" },
+    { key: "advertizing", name: "Advertising" },
+    { key: "edu-hr", name: "Education & HR" },
+    { key: "health-science", name: "Health and Life Sciences" },
+    { key: "software-tech", name: "Software & High Tech" },
+    { key: "finance", name: "Finance" },
+    { key: "media-entertainment", name: "Media & Entertainment" },
+    { key: "sports-leagues", name: "Sports Teams & Leagues" },
+    { key: "travel-hospitality", name: "Travel & Hospitality" },
+  ];
 
+  const [selectedIndustry, setSelectedIndustry] = useState("");
 
-
-  
-const industries = [
-  { key: 'real-estate-and-property', name: 'Real Estate & Property' },
-  { key: 'automotive-and-transport', name: 'Automotive and Transport' },
-  { key: 'eCommerse-and-retail', name: 'E-commerce & Retails' },
-  { key: 'advertizing', name: 'Advertising' },
-  { key: 'edu-hr', name: 'Education & HR' },
-  { key: 'health-science', name: 'Health and Life Sciences' },
-  { key: 'software-tech', name: 'Software & High Tech' },
-  { key: 'finance', name: 'Finance' },
-  { key: 'media-entertainment', name: 'Media & Entertainment' },
-  { key: 'sports-leagues', name: 'Sports Teams & Leagues' },
-  { key: 'travel-hospitality', name: 'Travel & Hospitality' }
-];
-
-
-const [selectedIndustry, setSelectedIndustry] = useState('');
-
-const handleChange = (event) => {
-  setSelectedIndustry(event.target.value);
-};  
+  const handleChange = (event) => {
+    setSelectedIndustry(event.target.value);
+  };
 
   const location = useLocation();
 
-  const particlesInit = useCallback(async engine => {
- 
-
+  const particlesInit = useCallback(async (engine) => {
     await loadSlim(engine);
   }, []);
 
-  const particlesLoaded = useCallback(async container => {
- 
-  }, []);
+  const particlesLoaded = useCallback(async (container) => {}, []);
 
   return (
     <div>
-  
-
- 
-
-
-
-
       <footer id="custom_partilce">
-             <ContactParticle/>
+        <ContactParticle />
         <section class="techVerse_footer">
           <div class="techVerse_footerContent width-1600">
             <div class="container-fluid">
@@ -157,10 +135,12 @@ const handleChange = (event) => {
                     </div>
                     <div class="col-md-3">
                       <div class="footer__quick-links">
-                        <h3 class="foooter__subhead">  Services</h3>
+                        <h3 class="foooter__subhead"> Services</h3>
                         <ul class="icon_list_items footer__links footer__categories_links">
                           <li class="footer__link">
-                            <Link to={"/business-devlopment"} as={"link"}>Business Development</Link>
+                            <Link to={"/business-devlopment"} as={"link"}>
+                              Business Development
+                            </Link>
                           </li>
                           <li class="footer__link">
                             <Link to={"/"}>Development</Link>
@@ -169,7 +149,9 @@ const handleChange = (event) => {
                             <Link to={"/"}>Mobile Application Development</Link>
                           </li>
                           <li class="footer__link">
-                            <Link to={"/ecommerse-development"}>Ecommerce Development</Link>
+                            <Link to={"/ecommerse-development"}>
+                              Ecommerce Development
+                            </Link>
                           </li>
                           {/* <li class="footer__link">
                             <Link to={"/"}>Game Development</Link>
@@ -206,7 +188,9 @@ const handleChange = (event) => {
                             <Link to={"/"}>Media & Entertainment</Link>
                           </li>
                           <li class="footer__link">
-                            <Link to={"/realEstate-and-property"}>Real Estate & Property</Link>
+                            <Link to={"/realEstate-and-property"}>
+                              Real Estate & Property
+                            </Link>
                           </li>
                           <li class="footer__link">
                             <Link to={"/"}>Software & High Tech</Link>
@@ -215,7 +199,9 @@ const handleChange = (event) => {
                             <Link to={"/sports"}>Sports Teams & Leagues</Link>
                           </li>
                           <li class="footer__link">
-                            <Link to={"/health-care"}>Health & Life Sciences</Link>
+                            <Link to={"/health-care"}>
+                              Health & Life Sciences
+                            </Link>
                           </li>
                           <li class="footer__link">
                             <Link to={"/travel"}>Travel & Hospitality</Link>
@@ -231,12 +217,11 @@ const handleChange = (event) => {
                             <Link to={"/"}>About</Link>
                           </li>
                           <li class="footer__link">
-                            <Link to={"/contact"}>  Blogs</Link>
+                            <Link to={"/contact"}> Blogs</Link>
                           </li>
                           <li class="footer__link">
                             <Link to={"/"}>Contact</Link>
                           </li>
-                         
                         </ul>
                       </div>
                     </div>
@@ -256,7 +241,9 @@ const handleChange = (event) => {
                           <Link to={"/"}>Podcast</Link>
                           <Link to={"/"}>Blog</Link> */}
                           <Link to={"/privacy-policy"}>Privacy Policy</Link>
-                          <Link to={"/terms-conditions"}>Terms & Conditions</Link>
+                          <Link to={"/terms-conditions"}>
+                            Terms & Conditions
+                          </Link>
                         </div>
                       </div>
                       <div class="col-md-12">
@@ -410,7 +397,7 @@ const handleChange = (event) => {
         </section>
       </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Contact_Footer
+export default Contact_Footer;

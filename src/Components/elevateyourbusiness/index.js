@@ -1,16 +1,7 @@
 import React from "react";
-import phoneicon from "../../../src/asserts/images/phone-icon.png";
-import chaticon from "../../../src/asserts/images/chat-icon.png";
-import androidiconw from "../../../src/asserts/images/android-icon-w.png";
-import angularicon from "../../../src/asserts/images/angular-icon.png";
-import appleicon from "../../../src/asserts/images/apple-icon.png";
-import ecommersedevhero from "../../../src/asserts/images/ecommersedevhero.png";
 import chaticons from "../../../src/asserts/images/chat-icon-blue.webp";
-import fluttericon from "../../../src/asserts/images/flutter-icon.png";
-import reacticon from "../../../src/asserts/images/react-icon.png";
-import phoneicongreen from "../../../src/asserts/images/phone-icon-green.png";
-import mobileAppimg from "../../../src/asserts/images/mobileAppimg.png";
-import chaticonblue from "../../../src/asserts/images/phone-icon-green.png";
+import phoneicongreen from "../../../src/asserts/images/phone-icon-green.webp";
+import mobileAppimg from "../../../src/asserts/images/mobileAppimg.webp";
 
 const Elevateyourbusiness = (props) => {
   return (
@@ -28,7 +19,7 @@ const Elevateyourbusiness = (props) => {
                       data-aos-offset="0"
                       data-aos-duration="1000"
                     >
-                    Amplify Your Brand's Reach
+                      Amplify Your Brand's Reach
                       <span class="color-lightBlue2"> With </span>
                       Techverse LLC Mobile Innovation
                     </h2>
@@ -37,7 +28,9 @@ const Elevateyourbusiness = (props) => {
                       data-aos-offset="0"
                       data-aos-duration="2000"
                     >
-                      At Techverse LLC, we specialize in crafting customized mobile applications tailored to amplify your brand's visibility and functionality.
+                      At Techverse LLC, we specialize in crafting customized
+                      mobile applications tailored to amplify your brand's
+                      visibility and functionality.
                     </p>
                     <div
                       class="techVerse_hero_btns"
@@ -54,11 +47,7 @@ const Elevateyourbusiness = (props) => {
                         <span class="btn_with_icon_text">+(1) 23456-7890</span>
                       </a>
                       <a href="#" class="btn_with_icon btn_secondary">
-                        <img
-                          class="btn_with_icon_img"
-                          src={chaticons}
-                          alt=""
-                        />
+                        <img class="btn_with_icon_img" src={chaticons} alt="" />
                         <span class="btn_with_icon_text">
                           {" "}
                           Start A Live Chat

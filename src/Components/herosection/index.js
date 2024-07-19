@@ -1,13 +1,11 @@
 import React from "react";
-import phoneicon from "../../../src/asserts/images/phone-icon.png";
-import chaticon from "../../../src/asserts/images/chat-icon.png";
-import androidiconw from "../../../src/asserts/images/android-icon-w.png";
-import angularicon from "../../../src/asserts/images/angular-icon.png";
-import appleicon from "../../../src/asserts/images/apple-icon.png";
-import ecommersedevhero from "../../../src/asserts/images/ecommersedevhero.png";
 
-import fluttericon from "../../../src/asserts/images/flutter-icon.png";
-import reacticon from "../../../src/asserts/images/react-icon.png";
+import androidiconw from "../../../src/asserts/images/android-icon-w.webp";
+import angularicon from "../../../src/asserts/images/angular-icon.webp";
+import appleicon from "../../../src/asserts/images/apple-icon.webp";
+
+import fluttericon from "../../../src/asserts/images/flutter-icon.webp";
+import reacticon from "../../../src/asserts/images/react-icon.webp";
 
 const HeroSection = (props) => {
   const { CtnbuttonComponent, ctnButtonProps } = props;
