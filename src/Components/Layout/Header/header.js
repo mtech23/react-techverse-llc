@@ -448,9 +448,7 @@ import {
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faList, faSearch, faStar } from "@fortawesome/free-solid-svg-icons";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+
 import Aos from "aos";
 import "aos/dist/aos.css";
 

@@ -424,6 +424,7 @@ const Home = () => {
                         </div>
                         <img
                           src={herophonemockupgroup}
+                          width="100%"
                           data-aos="fade-left"
                           data-aos-offset="0"
                           data-aos-duration="3000"
@@ -530,6 +531,7 @@ const Home = () => {
                         </div>
                         <img
                           src={herowebmockupgroup22}
+                          width="100%"
                           data-aos="fade-left"
                           data-aos-offset="0"
                           data-aos-duration="3000"
@@ -634,6 +636,7 @@ const Home = () => {
                         </div>
                         <img
                           src={heroslidermockupimg3}
+                          width="100%"
                           data-aos="fade-left"
                           data-aos-offset="0"
                           data-aos-duration="3000"
