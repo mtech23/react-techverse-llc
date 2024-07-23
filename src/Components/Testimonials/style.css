@@ -44,7 +44,7 @@
 .testimonail_quote:after {
   content: close-quote;
 } */
- 
+
 .rc {
   /* width: 400px; */
   /* height: 400px; */
@@ -58,33 +58,34 @@
   background: #0bacf7;
 }
 .rc video {
-  /* width: 100%; */
+  width: 100%;
   height: 100%;
+  transform: scale(1.9);
 }
- 
+
 body .rc h2 {
   padding: 0px;
   margin-bottom: 0 !important;
 }
- 
+
 .testimonial h2 {
   color: #0bacf7 !important;
   margin-bottom: 0px;
   line-height: 13px;
   margin: 15px 0;
 }
- 
+
 .testimonial p {
   margin: 0px;
   font-size: 14px;
   line-height: 15px;
 }
- 
+
 .techVerse_testimonialsContent {
   max-width: 1600px;
   margin: 0 auto;
 }
- 
+
 .techVerse_testimonials {
   padding: 60px 0;
 }
@@ -110,7 +111,7 @@ body .rc h2 {
   margin-top: -50px;
   margin-right: 20px;
 }
- 
+
 .face_1,
 .face_2,
 .face_3,
@@ -125,23 +126,23 @@ body .rc h2 {
   top: 10px;
 }
 .face_1 {
-  right: 20%;
-}
-.face_5 {
-  right: 13%;
-  top: 120px;
-}
-.face_4 {
-  right: 30%;
-  top: 150px;
+  right: 15%;
 }
 .face_3 {
-  right: 40%;
-  top: 100px;
+  right: 25%;
+  top: 60px;
+}
+.face_5 {
+  right: 10%;
+  top: 110px;
 }
 .face_6 {
-  right: 20%;
+  right: 15%;
   top: 200px;
+}
+.face_4 {
+  right: 27%;
+  top: 150px;
 }
 .face_7 {
   right: 0;
@@ -149,8 +150,12 @@ body .rc h2 {
 }
 .techVerse_testimonialsTextSec-img img {
   margin-top: 0px;
+  height: 72px;
+  border: rounded;
+  border-radius: 50%;
+  width: 72px;
 }
- 
+
 .techVerse_testimonials .row {
   align-items: center;
 }
@@ -215,7 +220,7 @@ body .rc h2 {
   outline: none;
   border: unset;
 }
- 
+
 @media (max-width: 1440px) {
   .testimonials_title {
     font-size: 67px;
@@ -233,12 +238,16 @@ body .rc h2 {
     right: 23%;
   }
   .face_3 {
-    right: 44%;
-    top: 120px;
+    right: 37%;
+    top: 80px;
+  }
+  .face_4 {
+    right: 47%;
+    top: 160px;
   }
   .face_6 {
     right: 25%;
-    top: 210px;
+    top: 190px;
   }
   .testimonials_titleHead span {
     font-size: 15px;
@@ -258,7 +267,7 @@ body .rc h2 {
     font-size: 47px;
   }
 }
- 
+
 @media (max-width: 800px) {
   .rc {
     width: 304px;
@@ -269,14 +278,18 @@ body .rc h2 {
   }
   .face_3 {
     right: 50%;
-    top: 130px;
+    top: 80px;
   }
   .face_6 {
-    right: 30%;
+    right: 25%;
     top: 210px;
   }
+  .face_5 {
+    right: 20%;
+    top: 110px;
+  }
 }
- 
+
 @media (max-width: 736px) {
   .testimonials_title {
     font-size: 55px !important;
@@ -287,21 +300,21 @@ body .rc h2 {
   }
   .face_3 {
     right: 30%;
-    top: 130px;
+    top: 90px;
   }
   .face_4 {
-    right: 21%;
-    top: 150px;
+    right: 30%;
+    top: 190px;
   }
   .face_5 {
-    right: 10%;
-    top: 120px;
+    right: 15%;
+    top: 110px;
   }
   .face_6 {
-    right: 20%;
+    right: 13%;
     top: 210px;
   }
- 
+
   .bgOrange {
     height: 370px;
     max-width: 430px;
@@ -337,13 +350,13 @@ body .rc h2 {
     right: 40%;
   }
   .face_4 {
-    right: 25%;
+    right: 45%;
   }
   .face_6 {
     right: 24%;
   }
 }
- 
+
 @media (max-width: 428px) {
   .bgOrange img {
     transform: scale(0.7) rotate(36deg) translateY(75pc);
@@ -357,7 +370,7 @@ body .rc h2 {
     right: 45%;
   }
   .face_4 {
-    right: 28%;
+    right: 51%;
   }
   .face_6 {
     right: 27%;
@@ -366,9 +379,8 @@ body .rc h2 {
 @media (max-width: 375px) {
   .face_1 {
     right: 35%;
-}
-.face_7 {
-  right: -11px;
-}
- 
+  }
+  .face_7 {
+    right: -11px;
+  }
 }

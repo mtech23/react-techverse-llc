@@ -8,50 +8,57 @@ import face5 from "../../asserts/images/face-5.webp";
 import face6 from "../../asserts/images/face-6.webp";
 import face7 from "../../asserts/images/face-7.webp";
 
-import video1 from "../../asserts/images/video1.mp4";
-import video2 from "../../asserts/images/video2.mp4";
-import video3 from "../../asserts/images/video3.mp4";
-import video4 from "../../asserts/images/video4.mp4";
-import video5 from "../../asserts/images/video1.mp4";
-import video6 from "../../asserts/images/video2.mp4";
-import video7 from "../../asserts/images/video3.mp4";
+import video1 from "../../asserts/images/Video 1.mp4";
+import video2 from "../../asserts/images/Video 2.mp4";
+import video3 from "../../asserts/images/Video 3.mp4";
+import video4 from "../../asserts/images/Video 4.mp4";
+import Video5 from "../../asserts/images/Video5.mp4";
+import Video7 from "../../asserts/images/Video7.mp4";
+import image44 from "../../asserts/images/image444.png";
+import image443 from "../../asserts/images/image443.png";
+import image442 from "../../asserts/images/image442.png";
+import image441 from "../../asserts/images/image441.png";
+import image440 from "../../asserts/images/image440.png";
+import image439 from "../../asserts/images/image439.png";
+import image438 from "../../asserts/images/image438.png";
 
+import Video6 from "../../asserts/images/Video 6.mp4";
 import testLine from "../../asserts/images/test-Line.webp";
 const videos = [
   {
     id: 1,
-    thumbnail: face1,
+    thumbnail: image44,
     videoSrc: video1,
   },
   {
     id: 2,
-    thumbnail: face2,
+    thumbnail: image443,
     videoSrc: video2,
   },
   {
     id: 3,
-    thumbnail: face3,
+    thumbnail: image442,
     videoSrc: video3,
   },
   {
     id: 4,
-    thumbnail: face4,
+    thumbnail: image441,
     videoSrc: video4,
   },
   {
     id: 5,
-    thumbnail: face5,
-    videoSrc: video5,
+    thumbnail: image440,
+    videoSrc: Video5,
   },
   {
     id: 6,
-    thumbnail: face6,
-    videoSrc: video6,
+    thumbnail: image439,
+    videoSrc: Video6,
   },
   {
     id: 7,
-    thumbnail: face7,
-    videoSrc: video7,
+    thumbnail: image438,
+    videoSrc: Video7,
   },
   // {
   //   id: 7,

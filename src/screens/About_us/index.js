@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
 
 import { UserLayout } from "../../Components/Layout/UserLayout";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
@@ -24,6 +24,8 @@ import Frequentlyaskquestion from "../../Components/frequentlyaskquestion";
 import Website from "../../Components/Website";
 import Aboutsection from "../../Components/aboutsection";
 import TrustedPartners from "../../Components/TrustedPartners";
+import Helmet from "../../Components/Helmet";
+
 gsap.registerPlugin(MotionPathPlugin);
 
 const About_us = () => {
@@ -116,17 +118,18 @@ const About_us = () => {
 
   return (
     <UserLayout>
-      <Helmet>
+      <Helmet
+        title="Welcome to Techverse LLC About us Details and Descriptions"
+        description="Find the information about the company Techverse LLC about us. The quality place of software applications development for web and mobile."
+      />
+      {/* <Helmet>
         <meta charSet="utf-8" />
         <title>
           {" "}
           Welcome to Techverse LLC About us Details and Descriptions{" "}
         </title>
-        <meta
-          name="Find the information about the company Techverse LLC about us. The quality place of software applications development for web and mobile.  "
-          content="Nested component"
-        />
-      </Helmet>
+        <meta name="Find the information about the company Techverse LLC about us. The quality place of software applications development for web and mobile." />
+      </Helmet> */}
       <div ref={sectionRef}>
         <section class="inner_hero aboutUS_hero hoverEffectSec">
           <div class="inner-bgColor"></div>

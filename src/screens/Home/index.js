@@ -302,8 +302,13 @@ const Home = () => {
     <UserLayout>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Welcome to Techverse LLC</title>
-        <meta name="Need a professional mobile app development agency? Our expert team offers top-notch web and mobile solutions, including app development, CMS platforms, and innovative tech solutions. Hire us to elevate your business with cutting-edge technology." />
+        <title>
+          Hire Top Mobile App Development Agency | Expert Web & Tech Solutions
+        </title>
+        <meta
+          name="description"
+          content="Need a professional mobile app development agency? Our expert team offers top-notch web and mobile solutions, including app development, CMS platforms, and innovative tech solutions. Hire us to elevate your business with cutting-edge technology."
+        />
       </Helmet>
 
       <div className="relative" ref={sectionRef}>
