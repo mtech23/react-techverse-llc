@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+ 
 import "./style.css";
 import { UserLayout } from "../../Components/Layout/UserLayout";
 import phoneicon from "../../asserts/images/phone-icon.webp";
@@ -38,21 +38,23 @@ import Development_Process from "../../Components/Development_Process";
 import Portfolios from "../../Components/portfolios";
 import Driving_Exprience from "../../Components/Driving_experience";
 import Testimonials from "../../Components/Testimonials";
-import { Helmet } from "react-helmet";
+import Helmet from '../../Components/Helmet'
 gsap.registerPlugin(MotionPathPlugin);
 const Education_hr = () => {
   Aos.init();
 
   return (
     <UserLayout>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>
-          Records Become More Accurate with Our Education & HR Apps{" "}
-        </title>
-        <meta name="echverse LLC brings data accuracy for every academic record with education & HR educational app development. Contact us today for details!  " />
-      </Helmet>
 
+
+
+
+
+
+      <Helmet
+        title="    Records Become More Accurate with Our Education & HR Apps"
+        description="echverse LLC brings data accuracy for every academic record with education & HR educational app development. Contact us today for details! "
+      />
       <HeroSection
         classheroimage={"inner-educationHR-bgColor"}
         title={"Transforming"}
@@ -71,7 +73,7 @@ const Education_hr = () => {
           appstore: appstore,
         }}
 
-        // secondaryButtonClass="btn_with_icon btn_secondary"
+      // secondaryButtonClass="btn_with_icon btn_secondary"
       />
 
       {/* <!-- Trusted Partners --> */}

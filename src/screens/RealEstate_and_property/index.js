@@ -37,20 +37,21 @@ import Portfolios from "../../Components/portfolios";
 import App_development_solutions from "../../Components/App_development_solutions";
 import Development_Process from "../../Components/Development_Process";
 import Driving_Exprience from "../../Components/Driving_experience";
-import { Helmet } from "react-helmet";
+import Helmet from '../../Components/Helmet';
 const RealEstate_and_property = () => {
   Aos.init();
 
   return (
     <UserLayout>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>
-          {" "}
-          Software Solutions Development for Real Estate & Property{" "}
-        </title>
-        <meta name="Real Estate & Property services obligatory expert software to perform actions efficiently. Techverse LLC custom-built Real Estate Solutions. " />
-      </Helmet>
+       
+
+
+
+      
+<Helmet
+        title="  Software Solutions Development for Real Estate & Property"
+        description="Real Estate & Property services obligatory expert software to perform actions efficiently. Techverse LLC custom-built Real Estate Solutions."
+      />
       {/* <!-- Inner Hero --> */}
 
       <HeroSection

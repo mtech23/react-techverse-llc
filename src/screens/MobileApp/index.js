@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
+
 import { UserLayout } from "../../Components/Layout/UserLayout";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { gsap } from "gsap";
-import { Helmet } from "react-helmet";
+import Helmet from '../../Components/Helmet';
 import Aboutsection from "../../Components/aboutsection";
 
 import Aos from "aos";
@@ -41,14 +41,14 @@ const MobileApp = () => {
 
   return (
     <UserLayout>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>
-          {" "}
-          Special Variety of Mobile Application Development Available{" "}
-        </title>
-        <meta name="Providing the services of mobile application development at Techverse LLC. We craft the solutions for all the software you are looking for  " />
-      </Helmet>
+
+
+
+
+      <Helmet
+        title=" Special Variety of Mobile Application Development Available"
+        description="Providing the services of mobile application development at Techverse LLC. We craft the solutions for all the software you are looking for  "
+      />
       <HeroSection
         innerbgclass={"inner-bgColor"}
         title={"Innovate. Develop. Dominate With"}

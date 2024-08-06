@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+ 
 import { UserLayout } from "../../Components/Layout/UserLayout";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { gsap } from "gsap";
@@ -21,7 +21,7 @@ import TechnologiesUse from "../../Components/technologiesuse";
 import Testimonials from "../../Components/Testimonials";
 import Frequentlyaskquestion from "../../Components/frequentlyaskquestion";
 import TrustedPartners from "../../Components/TrustedPartners";
-// import { Helmet } from "react-helmet";
+ 
 import Helmet from "../../Components/Helmet";
 gsap.registerPlugin(MotionPathPlugin);
 
@@ -34,13 +34,7 @@ const App_store = () => {
         title="Techverse LLC Capable to Offer a Complete App Store Services"
         description="App Store services in order to initiate business optimization stronger. Techverse LLC enforces the technical abilities to reform business."
       />
-      {/* <Helmet>
-        <meta charSet="utf-8" />
-        <title>
-          Techverse LLC Capable to Offer a Complete App Store Services{" "}
-        </title>
-        <meta name=" App Store services in order to initiate business optimization stronger. Techverse LLC enforces the technical abilities to reform business.  " />
-      </Helmet> */}
+   
       <HeroSection
         innerbgclass={"inner-bgColor"}
         title={"Innovate Today"}

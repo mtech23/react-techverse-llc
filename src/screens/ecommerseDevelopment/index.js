@@ -3,7 +3,7 @@ import "./style.css";
 import { UserLayout } from "../../Components/Layout/UserLayout";
 import phoneicon from "../../asserts/images/phone-icon.webp";
 import chaticon from "../../asserts/images/chat-icon.webp";
-import { Helmet } from "react-helmet";
+ import Helmet from '../../Components/Helmet'
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { gsap } from "gsap";
 import TrustedPartners from "../../Components/TrustedPartners";
@@ -72,13 +72,14 @@ const EcommerseDevelopment = () => {
 
   return (
     <UserLayout>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>
-          eCommerce Development with Remarkable ROI at Techverse LLC{" "}
-        </title>
-        <meta name=": Techverse LLC brings excellent eCommerce development services at a very affordable rate. A great option for startups with low-cost budgets.  " />
-      </Helmet>
+   
+
+
+
+      <Helmet
+        title="  eCommerce Development with Remarkable ROI at Techverse LLC"
+        description="Techverse LLC brings excellent eCommerce development services at a very affordable rate. A great option for startups with low-cost budgets. "
+      />
       <HeroSection
         innerbgclass={"inner-bgColor"}
         // classheroimage={"inner-ecommerce-bgColor"}

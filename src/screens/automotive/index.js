@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+ 
 import { UserLayout } from "../../Components/Layout/UserLayout";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { gsap } from "gsap";
@@ -39,7 +39,7 @@ import Macbook from "../../asserts/images/Macbook.webp";
 import App_development_solutions from "../../Components/App_development_solutions";
 import Development_Process from "../../Components/Development_Process";
 import Testimonials from "../../Components/Testimonials";
-import { Helmet } from "react-helmet";
+ import Helmet from '../../Components/Helmet'
 
 gsap.registerPlugin(MotionPathPlugin);
 
@@ -48,14 +48,13 @@ const Automotive = () => {
 
   return (
     <UserLayout>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>
-          {" "}
-          The Techverse LLC Offers Automotive and Transport Solutions{" "}
-        </title>
-        <meta name="Techverse LLC is the place for developing the best automotive Apps. We can craft Automotive and Transport solutions with live navigations. " />
-      </Helmet>
+      
+
+
+      <Helmet
+        title="  The Techverse LLC Offers Automotive and Transport Solutions"
+        description="Techverse LLC is the place for developing the best automotive Apps. We can craft Automotive and Transport solutions with live navigations."
+      />
       <HeroSection
         classheroimage="inner-automotive-bgColor "
         title={"Leave The Competition In The Dust. Get Started With Techverse"}

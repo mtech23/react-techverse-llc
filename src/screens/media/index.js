@@ -40,21 +40,23 @@ import mediaportfolio3 from "../../asserts/images/media-portfolio-3.webp";
 import mediaportfolio4 from "../../asserts/images/media-portfolio-4.webp";
 import mediaportfolio5 from "../../asserts/images/media-portfolio-5.webp";
 import Testimonials from "../../Components/Testimonials";
-import { Helmet } from "react-helmet";
+import Helmet from '../../Components/Helmet';
 import mediaimg3 from "../../asserts/images/media-img-3.webp";
 gsap.registerPlugin(MotionPathPlugin);
 
 const Media = () => {
-  <Helmet>
-    <meta charSet="utf-8" />
-    <title>The Media & Entertainment Application Development Services </title>
-    <meta name="Techverse LLC provides a perfect graphical environment and user-friendly Media & Entertainment application development services. Learn" />
-  </Helmet>;
-
+ 
+ 
   Aos.init();
 
   return (
     <UserLayout>
+
+
+      <Helmet
+        title="The Media & Entertainment Application Development Services "
+        description="Techverse LLC provides a perfect graphical environment and user-friendly Media & Entertainment application development services. Learn"
+      />
       <HeroSection
         classheroimage={"media_bg_custom"}
         title={"Techverse Redefines"}
@@ -73,7 +75,7 @@ const Media = () => {
           appstore: appstore,
         }}
 
-        // secondaryButtonClass="btn_with_icon btn_secondary"
+      // secondaryButtonClass="btn_with_icon btn_secondary"
       />
       {/* <!-- Trusted Partners --> */}
 

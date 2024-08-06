@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+ 
 import "./style.css";
 import { UserLayout } from "../../Components/Layout/UserLayout";
 import phoneicon from "../../asserts/images/phone-icon.webp";
@@ -40,21 +40,21 @@ import Development_Process from "../../Components/Development_Process";
 import Portfolios from "../../Components/portfolios";
 import Driving_Exprience from "../../Components/Driving_experience";
 import Testimonials from "../../Components/Testimonials";
-import { Helmet } from "react-helmet";
+import Helmet from '../../Components/Helmet'
 gsap.registerPlugin(MotionPathPlugin);
 const Ecommerse = () => {
   Aos.init();
 
   return (
     <UserLayout>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>
-          {" "}
-          E-Commerce & Retails Record Control System at Techverse LLC{" "}
-        </title>
-        <meta name="Our skilled team revolutionized Apps for retail like never before, Techverse LLC for E-Commerce & Retails application software development. " />
-      </Helmet>
+  
+
+
+
+      <Helmet
+        title="   E-Commerce & Retails Record Control System at Techverse LLC"
+        description="Our skilled team revolutionized Apps for retail like never before, Techverse LLC for E-Commerce & Retails application software development. "
+      />
 
       <HeroSection
         classheroimage={"inner-ecommerce-bgColor"}

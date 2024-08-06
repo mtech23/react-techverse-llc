@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+
 import { UserLayout } from "../../Components/Layout/UserLayout";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { gsap } from "gsap";
@@ -45,9 +45,8 @@ import Macbook from "../../asserts/images/Macbook.webp";
 
 import Testimonials from "../../Components/Testimonials";
 
-import mediaimg3 from "../../asserts/images/media-img-3.webp";
 import sportsimg2 from "../../asserts/images/sports-img-2.webp";
-import { Helmet } from "react-helmet";
+import Helmet from '../../Components/Helmet';
 gsap.registerPlugin(MotionPathPlugin);
 
 const Sports = () => {
@@ -55,13 +54,15 @@ const Sports = () => {
 
   return (
     <UserLayout>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>
-          Sports Teams & Leagues Scorecards with Techverse LLC Apps{" "}
-        </title>
-        <meta name="Professional sports teams management apps with proper records and each player database. Techverse LLC offers sports teams & leagues apps. " />
-      </Helmet>
+  
+
+
+
+      <Helmet
+        title=" Sports Teams & Leagues Scorecards with Techverse LLC Apps"
+        description="Professional sports teams management apps with proper records and each player database. Techverse LLC offers sports teams & leagues apps. "
+      />
+
 
       <HeroSection
         classheroimage={"sports_bg_custom"}
@@ -81,7 +82,7 @@ const Sports = () => {
           appstore: appstore,
         }}
 
-        // secondaryButtonClass="btn_with_icon btn_secondary"
+      // secondaryButtonClass="btn_with_icon btn_secondary"
       />
       {/* <!-- Trusted Partners --> */}
 

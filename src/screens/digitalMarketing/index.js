@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+ 
 import { UserLayout } from "../../Components/Layout/UserLayout";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { gsap } from "gsap";
@@ -22,7 +22,7 @@ import chaticon from "../../asserts/images/chat-icon.webp";
 import digitalmarketinghero from "../../asserts/images/digital-marketing-hero.webp";
 import digitalmarketing01 from "../../asserts/images/digital-marketing-01.webp";
 import digitalmarketing02 from "../../asserts/images/digital-marketing-02.webp";
-import { Helmet } from "react-helmet";
+import Helmet from '../../Components/Helmet'
 gsap.registerPlugin(MotionPathPlugin);
 
 const DigitalMarketing = () => {
@@ -30,13 +30,12 @@ const DigitalMarketing = () => {
 
   return (
     <UserLayout>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>
-          Techverse LLC Digital Marketing Like an Army to Reach Goals{" "}
-        </title>
-        <meta name="Digital Marketing that can change business position with new customers every day. Techverse LLC skills in digital marketing are remarkable! " />
-      </Helmet>
+  
+
+      <Helmet
+        title="  Techverse LLC Digital Marketing Like an Army to Reach Goals"
+        description="Digital Marketing that can change business position with new customers every day. Techverse LLC skills in digital marketing are remarkable! "
+      />
       <HeroSection
         innerbgclass={"inner-bgColor"}
         title={"Innovative Digital Marketing Strategies"}

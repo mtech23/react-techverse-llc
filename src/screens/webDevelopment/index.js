@@ -22,7 +22,7 @@ import phoneicon from "../../asserts/images/phone-icon.webp";
 import chaticon from "../../asserts/images/chat-icon.webp";
 import webdevelopmenthero from "../../asserts/images/web-development-hero.webp";
 import TrustedPartners from "../../Components/TrustedPartners";
-import { Helmet } from "react-helmet";
+import Helmet from '../../Components/Helmet';
 gsap.registerPlugin(MotionPathPlugin);
 
 const WebDevelopment = () => {
@@ -30,13 +30,16 @@ const WebDevelopment = () => {
 
   return (
     <UserLayout>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>
-          Build First Impression with Techverse LLC Web Development{" "}
-        </title>
-        <meta name="  Web development is a necessity in today’s digital age to perform better among competitors. We build the perfect website for solid business. " />
-      </Helmet>
+
+
+
+
+
+
+      <Helmet
+        title="  Build First Impression with Techverse LLC Web Development"
+        description="  Web development is a necessity in today’s digital age to perform better among competitors. We build the perfect website for solid business. "
+      />
       <HeroSection
         innerbgclass={"inner-bgColor"}
         title={"Building Websites That Reflect Your Vision"}

@@ -87,7 +87,7 @@ import partnerImg12 from "../../asserts/images/partner-img-12.svg";
 import partnerImg13 from "../../asserts/images/partner-img-13.svg";
 import partnerImg14 from "../../asserts/images/partner-img-14.svg";
 import partnerImg15 from "../../asserts/images/partner-img-15.svg";
-import { Helmet } from "react-helmet";
+import Helmet from '../../Components/Helmet';
 import partnerImg16 from "../../asserts/images/partner-img-16.svg";
 
 import Aos from "aos";
@@ -300,16 +300,16 @@ const Home = () => {
   }, []);
   return (
     <UserLayout>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>
-          Hire Top Mobile App Development Agency | Expert Web & Tech Solutions
-        </title>
-        <meta
-          name="description"
-          content="Need a professional mobile app development agency? Our expert team offers top-notch web and mobile solutions, including app development, CMS platforms, and innovative tech solutions. Hire us to elevate your business with cutting-edge technology."
-        />
-      </Helmet>
+
+
+
+
+
+
+      <Helmet
+        title=" Hire Top Mobile App Development Agency | Expert Web & Tech Solutions"
+        description="Need a professional mobile app development agency? Our expert team offers top-notch web and mobile solutions, including app development, CMS platforms, and innovative tech solutions. Hire us to elevate your business with cutting-edge technology."
+      />
 
       <div className="relative" ref={sectionRef}>
         <Swiper

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+ 
 import { UserLayout } from "../../Components/Layout/UserLayout";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { gsap } from "gsap";
@@ -24,7 +24,7 @@ import chaticon from "../../asserts/images/chat-icon.webp";
 import businessimg01 from "../../asserts/images/business-img-01.webp";
 
 import businessdevelopmenthero from "../../asserts/images/business-development-hero.webp";
-import { Helmet } from "react-helmet";
+import Helmet from '../../Components/Helmet'
 gsap.registerPlugin(MotionPathPlugin);
 
 const Businessdevlopment = () => {
@@ -32,14 +32,13 @@ const Businessdevlopment = () => {
 
   return (
     <UserLayout>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>
-          {" "}
-          Techverse LLC Builds Business Development for Productivity{" "}
-        </title>
-        <meta name=" Business development is always a very professional aspect to strong future perspective of earning. Techverse LLC makes it easier for you! " />
-      </Helmet>
+
+
+
+      <Helmet
+        title="     Techverse LLC Builds Business Development for Productivity"
+        description="Business development is always a very professional aspect to strong future perspective of earning. Techverse LLC makes it easier for you! "
+      />
       <HeroSection
         innerbgclass={"inner-bgColor"}
         title={"Accelerate Your Product Launch   "}

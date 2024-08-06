@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+ 
 import "./style.css";
 import { UserLayout } from "../../Components/Layout/UserLayout";
 import phoneicon from "../../asserts/images/phone-icon.webp";
@@ -37,7 +37,7 @@ import Development_Process from "../../Components/Development_Process";
 import Portfolios from "../../Components/portfolios";
 import Driving_Exprience from "../../Components/Driving_experience";
 import Testimonials from "../../Components//Testimonials";
-import { Helmet } from "react-helmet";
+import Helmet from '../../Components/Helmet';
 gsap.registerPlugin(MotionPathPlugin);
 
 const Health_care = () => {
@@ -45,13 +45,18 @@ const Health_care = () => {
 
   return (
     <UserLayout>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>
-          Techverse LLC Health and Life Sciences Software Solutions{" "}
-        </title>
-        <meta name="Seamless healthcare Apps that can support medical centers & pharmacies. Techverse LLC offers health and life sciences software applications. " />
-      </Helmet>
+ 
+
+
+
+      <Helmet
+        title="    Techverse LLC Health and Life Sciences Software Solutions"
+        description="Seamless healthcare Apps that can support medical centers & pharmacies. Techverse LLC offers health and life sciences software applications. "
+      />
+
+
+
+ 
 
       <HeroSection
         classheroimage={"inner-health-bgColor"}

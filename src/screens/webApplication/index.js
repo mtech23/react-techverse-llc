@@ -27,20 +27,20 @@ import Process from "../../Components/Process";
 import Frequentlyaskquestion from "../../Components/frequentlyaskquestion";
 import Elevateyourbusiness from "../../Components/elevateyourbusiness";
 import Testimonials from "../../Components/Testimonials";
-import { Helmet } from "react-helmet";
+import Helmet from '../../Components/Helmet';
 const WebApplication = () => {
   Aos.init();
 
   return (
     <UserLayout>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>
-          {" "}
-          Producing Functional Web Application That Boosts Business{" "}
-        </title>
-        <meta name=" Online operational and functional web application develops according to the custom requirement at Techverse LLC. Expert service available! " />
-      </Helmet>
+      
+
+
+
+      <Helmet
+        title="   Producing Functional Web Application That Boosts Business"
+        description="Online operational and functional web application develops according to the custom requirement at Techverse LLC. Expert service available!  "
+      />
       {/* <!-- Inner Hero --> */}
 
       <HeroSection

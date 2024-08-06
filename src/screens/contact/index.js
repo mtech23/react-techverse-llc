@@ -9,7 +9,9 @@ import contacttrust from "../../asserts/images/contact-trust.webp";
 import contactbbb from "../../asserts/images/contact-bbb.webp";
 import "./style.css";
 
-import { Helmet } from "react-helmet";
+import Helmet from '../../Components/Helmet'
+
+
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -141,13 +143,13 @@ const Contact = () => {
 
   return (
     <div>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>
-          Contact Techverse LLC for Software Development & Solutions{" "}
-        </title>
-        <meta name=" Looking for business software development & solutions? We also develop mobile apps; contact Techverse LLC for all the business solutions !!" />
-      </Helmet>
+
+
+
+      <Helmet
+        title="          Contact Techverse LLC for Software Development & Solutions"
+        description=" Looking for business software development & solutions? We also develop mobile apps; contact Techverse LLC for all the business solutions !!"
+      />
       <Header />
 
       <section class="inner_hero contactUSNew_hero hoverEffectSec">

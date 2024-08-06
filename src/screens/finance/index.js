@@ -38,19 +38,17 @@ import Driving_Exprience from "../../Components/Driving_experience";
 import Ctnbutton from "../../Components/ctnbutton";
 import { playstore } from "../../asserts/images";
 import appstore from "../../asserts/images/app-store.webp";
-import { Helmet } from "react-helmet";
+import Helmet from '../../Components/Helmet';
+ 
 const Finance = () => {
   Aos.init();
   return (
     <UserLayout>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>
-          Financial Details Easy to Record with Our Finance Software{" "}
-        </title>
-        <meta name="Finance software solutions with appropriate records beyond bookkeeping. The Fintech Software Developers at Techverse LLC are Professionals.  " />
-      </Helmet>
-
+ 
+      <Helmet
+        title=" Financial Details Easy to Record with Our Finance Software"
+        description="Finance software solutions with appropriate records beyond bookkeeping. The Fintech Software Developers at Techverse LLC are Professionals.  "
+      />
       {/* <!-- Inner Hero --> */}
 
       <HeroSection

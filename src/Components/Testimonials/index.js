@@ -1,26 +1,19 @@
 import React, { useState } from "react";
 import "./style.css";
-import face1 from "../../asserts/images/face-1.webp";
-import face2 from "../../asserts/images/face-2.webp";
-import face3 from "../../asserts/images/face-3.webp";
-import face4 from "../../asserts/images/face-4.webp";
-import face5 from "../../asserts/images/face-5.webp";
-import face6 from "../../asserts/images/face-6.webp";
-import face7 from "../../asserts/images/face-7.webp";
-
+ 
 import video1 from "../../asserts/images/Video 1.mp4";
 import video2 from "../../asserts/images/Video 2.mp4";
 import video3 from "../../asserts/images/Video 3.mp4";
 import video4 from "../../asserts/images/Video 4.mp4";
 import Video5 from "../../asserts/images/Video5.mp4";
 import Video7 from "../../asserts/images/Video7.mp4";
-import image44 from "../../asserts/images/image444.png";
-import image443 from "../../asserts/images/image443.png";
-import image442 from "../../asserts/images/image442.png";
-import image441 from "../../asserts/images/image441.png";
-import image440 from "../../asserts/images/image440.png";
-import image439 from "../../asserts/images/image439.png";
-import image438 from "../../asserts/images/image438.png";
+import image44 from "../../asserts/images/image444.webp";
+import image443 from "../../asserts/images/image443.webp";
+import image442 from "../../asserts/images/image442.webp";
+import image441 from "../../asserts/images/image441.webp";
+import image440 from "../../asserts/images/image440.webp";
+import image439 from "../../asserts/images/image439.webp";
+import image438 from "../../asserts/images/image438.webp";
 
 import Video6 from "../../asserts/images/Video 6.mp4";
 import testLine from "../../asserts/images/test-Line.webp";
@@ -60,11 +53,7 @@ const videos = [
     thumbnail: image438,
     videoSrc: Video7,
   },
-  // {
-  //   id: 7,
-  //   thumbnail: face7,
-  //   videoSrc: video1
-  // },
+ 
 ];
 
 const Testimonials = () => {
