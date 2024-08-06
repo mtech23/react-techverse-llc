@@ -32,6 +32,11 @@ const HeroSection = (props) => {
                       {props?.subtitle}
                     </span>{" "}
                     {props?.title2}
+                    <span class="color-lightBlue1">
+                    
+                      {props?.subtitle2}
+                    </span>{" "}
+                    {props?.title3}
                   </h1>
                   <p
                     data-aos="fade-right"

@@ -49,7 +49,7 @@ const Aboutsection = (props) => {
   return (
     <div ref={sectionRef}>
       <section
-        class="techVerse_about techVerse_aboutServices1"
+        class={`techVerse_about techVerse_aboutServices1 ${props?.classSpace}`}
         id="particles-js1"
       >
         <div className=" inner_images">

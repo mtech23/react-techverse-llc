@@ -9,6 +9,7 @@ import Ecommerse from "../screens/ecommerse";
 import EcommerseDevelopment from "../screens/ecommerseDevelopment";
 
 import DigitalMarketing from "../screens/digitalMarketing";
+import Devops from "../screens/Devops";
 import Finance from "../screens/finance";
 import WebDevelopment from "../screens/webDevelopment";
 import Automotive from "../screens/automotive";
@@ -44,6 +45,7 @@ const Router = () => {
           element={<RealEstate_and_property />}
         ></Route>
         <Route path="/digital-marketing" element={<DigitalMarketing />}></Route>
+        <Route path="/Devops" element={<Devops />}></Route>
         <Route path="/web-Development" element={<WebDevelopment />}></Route>
         <Route path="/automotive" element={<Automotive />}></Route>
         <Route path="/media" element={<Media />}></Route>

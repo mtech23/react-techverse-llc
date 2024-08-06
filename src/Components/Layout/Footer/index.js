@@ -649,6 +649,9 @@ export const Footer = (props) => {
                             <Link to={"/web-development"}>Web Development</Link>
                           </li>
                           <li class="footer__link">
+                            <Link to={"/Devops"}>DevOps</Link>
+                          </li>
+                          <li class="footer__link">
                             <Link to={"/"}>Android App Development</Link>
                           </li>
                           <li class="footer__link">
@@ -657,6 +660,7 @@ export const Footer = (props) => {
                           <li class="footer__link">
                             <Link to={"/"}>Smart Contract Development</Link>
                           </li>
+                         
                         </ul>
                       </div>
                     </div>

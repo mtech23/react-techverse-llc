@@ -80,7 +80,7 @@ const Portfolio = (props) => {
               <div class="row">
                 <div class="col-md-6">
                   <div class="techVerse_about_img">
-                    <div class="techVerse_about_laptop_img">
+                    <div class={`techVerse_about_laptop_img ${props?.portfolioimg}`}>
                       <img
                         src={props?.image}
                         // class="about-laptopImg"

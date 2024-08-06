@@ -452,6 +452,19 @@ h2 {
   color: #3dc1ff;
   border: 1px solid #02a9f7;
 }
+.portfolio_img{
+  width: 80%;
+}
+.img_abt_devops{
+  width: 80% !important;
+  margin-left: auto !important;
+}
+/* .devOps_sec1{
+  padding: 0px
+} */
+ .devOps_sec1{
+  margin-bottom: -120px;
+ }
 .portfolio_tabs .nav-link.active {
   color: #000;
   opacity: 1;
@@ -979,6 +992,9 @@ body .rc h2 {
   background: #0faef9;
   cursor: pointer;
   border-radius: 20px;
+}
+.devopsimg{
+  width: 90% !important;
 }
 .budget-slider::-moz-range-thumb {
   width: 25px;
@@ -2287,8 +2303,14 @@ p.company_wishText {
     width: 100% !important;
     margin-left: auto !important;
   }
+  .devopsimg {
+    width: 100% !important;
+}
 }
 @media (max-width: 991px) {
+  .devOps_sec1 {
+    margin-bottom: -13px;
+}
   .mobile-app-22 {
     width: 50% !important;
     margin: 10px auto !important;
@@ -2668,6 +2690,9 @@ p.company_wishText {
     height: 350px !important;
     width: 350px !important;
   }
+  .devOps_sec2 .portfolio_img {
+    width: 100%;
+}
 }
 @media (max-width: 736px) {
   .get_discount_one {

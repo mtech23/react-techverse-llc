@@ -282,6 +282,12 @@ export const Header = (props) => {
                             </Link>
                             <p>Web Application</p>
                           </div>
+                          <div class="dropdown_linkBox">
+                            <Link to={"/Devops"}>
+                              <h4>DevOps</h4>
+                            </Link>
+                            <p>DevOps</p>
+                          </div>
                         </li>
                       </ul>
                     </div>
