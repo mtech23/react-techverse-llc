@@ -98,6 +98,7 @@ const Portfolio = (props) => {
                         data-aos-offset="0"
                         data-aos-duration="1000"
                       />
+                      {props?.imgAfter && <img src={props?.imgAfter} className={props?.imgAfterClass} alt="" />}
                     </div>
                   </div>
                 </div>

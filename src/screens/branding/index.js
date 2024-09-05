@@ -49,14 +49,16 @@ import donatewhitesmall from "../../asserts/images/donate-white-small.webp";
 import orangehalfcircle from "../../asserts/images/orange-half-circle.webp";
 import bluecube from "../../asserts/images/blue-cube.webp";
 
-import youtubeMarketingIcon from "../../asserts/images/youtube-icon.png";
-import socialMarketingIcon from "../../asserts/images/social-media-icon.png";
-import amazonMarketingIcon from "../../asserts/images/amazon-icon.png";
-import emailMarketingIcon from "../../asserts/images/email-marketing-icon.png";
-import smsMarketingIcon from "../../asserts/images/sms-marketing.png";
+import youtubeMarketingIcon from "../../asserts/images/business-logo-icon.png";
+import socialMarketingIcon from "../../asserts/images/custom-logo-icon.png";
+import amazonMarketingIcon from "../../asserts/images/graphic-design-icon.png";
+import emailMarketingIcon from "../../asserts/images/business-card-icon.png";
+import smsMarketingIcon from "../../asserts/images/enter-prize-icon.png";
 import crossplatform from "../../asserts/images/cross-platform.webp";
 
 import brandingbannerImg from "../../asserts/images/branding-banner-img.png";
+import logoDesignSecImg from "../../asserts/images/logo-design-sec-img.png";
+import PortfoliosTech from "../../Components/PortfoliosTech";
 
 gsap.registerPlugin(MotionPathPlugin);
 
@@ -104,9 +106,9 @@ const Branding = () => {
         pinkcapsol={pinkcapsol}
         greencube={greencube}
         donatorange={donatorange}
-        title2="Why"
-        title="Techverse LLC"
-        subtitle="  Is the Best Solution For Your Brand  "
+        title="Why "
+        subtitle="Techverse LLC "
+        title2="Is the Best Solution For Your Brand"
         para="Each logo designer on our team takes the time to learn about your company's mission and values and then uses that information to create a unique and instantly recognizable logo. A creative design logo emerges as creative ideas converge, igniting discussions and driving us toward perfection. When two or more ideas collide creatively, they don't just clash; they evolve and develop your logo until it fits your business perfectly."
         para2="Consider the creative design logo in USA, where Logo Design Creators work tirelessly to design a unique logo that captures the essence of your company and leaves an indelible impression on customers."
         CtnbuttonComponent={Ctnbutton}
@@ -146,7 +148,7 @@ const Branding = () => {
       {/* MOBILE APP */}
 
       {/* <Elevateyourbusiness /> */}
-      <section className="techVerse_mobileApp">
+      <section className="techVerse_mobileApp techVerse_mobileAppBranding">
         <div className="techVerse_mobileAppContent">
           <div className="container-fluid">
             <div className="row">
@@ -160,10 +162,7 @@ const Branding = () => {
                       data-aos-duration="1000"
                     >
                       Elevate your business presence with a our
-                      <span className="color-lightBlue2">
-                        {" "}
-                        Digital Marketing{" "}
-                      </span>
+                      <span className="color-lightBlue2"> Branding</span>
                       services
                     </h2>
                     <p
@@ -263,7 +262,7 @@ const Branding = () => {
                   data-aos-offset="0"
                   data-aos-duration="1000"
                 >
-                  Marketing Services
+                  branding Services
                   <span className="color-darkBlue"> We Offer </span>
                 </h2>
                 <p
@@ -292,15 +291,14 @@ const Branding = () => {
                     <div className="service_box_icon">
                       <img src={youtubeMarketingIcon} alt="" />
                     </div>
-                    <h3 className="service_box_title">Youtube Marketing</h3>
+                    <h3 className="service_box_title">Business Logo Design</h3>
                   </div>
                   <div className="service_box_after">
-                    <h3 className="service_box_title">Youtube Marketing</h3>
+                    <h3 className="service_box_title">Business Logo Design</h3>
                     <p className="service_box_p">
-                      We boast a team of dynamic and seasoned web developers
-                      committed to delivering top-notch quality. Our core focus
-                      is on providing exceptional services, and we take pride
-                      in.
+                      Depending on our client’s requirements, we can design from
+                      funky-looking cool postcards to professionally germane
+                      postcards.
                     </p>
                   </div>
                 </div>
@@ -309,19 +307,14 @@ const Branding = () => {
                     <div className="service_box_icon">
                       <img src={socialMarketingIcon} alt="" />
                     </div>
-                    <h3 className="service_box_title">
-                      Social Media Marketing
-                    </h3>
+                    <h3 className="service_box_title">Custom Logo Design</h3>
                   </div>
                   <div className="service_box_after">
-                    <h3 className="service_box_title">
-                      Social Media Marketing
-                    </h3>
+                    <h3 className="service_box_title">Custom Logo Design</h3>
                     <p className="service_box_p">
-                      We boast a team of dynamic and seasoned web developers
-                      committed to delivering top-notch quality. Our core focus
-                      is on providing exceptional services, and we take pride
-                      in.
+                      Depending on our client’s requirements, we can design from
+                      funky-looking cool postcards to professionally germane
+                      postcards.
                     </p>
                   </div>
                 </div>
@@ -330,15 +323,18 @@ const Branding = () => {
                     <div className="service_box_icon">
                       <img src={amazonMarketingIcon} alt="" />
                     </div>
-                    <h3 className="service_box_title">Amazon Marketing</h3>
+                    <h3 className="service_box_title">
+                      Graphic Design Sevices
+                    </h3>
                   </div>
                   <div className="service_box_after">
-                    <h3 className="service_box_title">Amazon Marketing</h3>
+                    <h3 className="service_box_title">
+                      Graphic Design Sevices
+                    </h3>
                     <p className="service_box_p">
-                      We boast a team of dynamic and seasoned web developers
-                      committed to delivering top-notch quality. Our core focus
-                      is on providing exceptional services, and we take pride
-                      in.
+                      Depending on our client’s requirements, we can design from
+                      funky-looking cool postcards to professionally germane
+                      postcards.
                     </p>
                   </div>
                 </div>
@@ -347,15 +343,14 @@ const Branding = () => {
                     <div className="service_box_icon">
                       <img src={emailMarketingIcon} alt="" />
                     </div>
-                    <h3 className="service_box_title">Email Marketing</h3>
+                    <h3 className="service_box_title">Business Card Design</h3>
                   </div>
                   <div className="service_box_after">
-                    <h3 className="service_box_title">Email Marketing</h3>
+                    <h3 className="service_box_title">Business Card Design</h3>
                     <p className="service_box_p">
-                      We boast a team of dynamic and seasoned web developers
-                      committed to delivering top-notch quality. Our core focus
-                      is on providing exceptional services, and we take pride
-                      in.
+                      Depending on our client’s requirements, we can design from
+                      funky-looking cool postcards to professionally germane
+                      postcards.
                     </p>
                   </div>
                 </div>
@@ -364,15 +359,18 @@ const Branding = () => {
                     <div className="service_box_icon">
                       <img src={smsMarketingIcon} alt="" />
                     </div>
-                    <h3 className="service_box_title">SMS Marketing</h3>
+                    <h3 className="service_box_title">
+                      Enterprise App Development
+                    </h3>
                   </div>
                   <div className="service_box_after">
-                    <h3 className="service_box_title">SMS Marketing</h3>
+                    <h3 className="service_box_title">
+                      Enterprise App Development
+                    </h3>
                     <p className="service_box_p">
-                      We boast a team of dynamic and seasoned web developers
-                      committed to delivering top-notch quality. Our core focus
-                      is on providing exceptional services, and we take pride
-                      in.
+                      Depending on our client’s requirements, we can design from
+                      funky-looking cool postcards to professionally germane
+                      postcards.
                     </p>
                   </div>
                 </div>
@@ -381,19 +379,14 @@ const Branding = () => {
                     <div className="service_box_icon">
                       <img src={crossplatform} alt="" />
                     </div>
-                    <h3 className="service_box_title">
-                      Search Enging Marketing
-                    </h3>
+                    <h3 className="service_box_title">Post Card Design</h3>
                   </div>
                   <div className="service_box_after">
-                    <h3 className="service_box_title">
-                      Search Enging Marketing
-                    </h3>
+                    <h3 className="service_box_title">Post Card Design</h3>
                     <p className="service_box_p">
-                      We boast a team of dynamic and seasoned web developers
-                      committed to delivering top-notch quality. Our core focus
-                      is on providing exceptional services, and we take pride
-                      in.
+                      Depending on our client’s requirements, we can design from
+                      funky-looking cool postcards to professionally germane
+                      postcards.
                     </p>
                   </div>
                 </div>
@@ -416,9 +409,82 @@ const Branding = () => {
         </div>
       </section>
 
+      <PortfoliosTech
+        title="Our "
+        subtitle="Portfolio"
+        para="Our Company has worked with thousands of businesses all across the world and has developed highly functional, responsive, and feature-rich applications. Check out some of our best works:"
+      />
+
+      <section className="logo_design_sec">
+        <div className="width-1600">
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col-lg-5">
+                <div className="logo_design_img">
+                  <img src={logoDesignSecImg} className="img-fluid" alt="" />
+                </div>
+              </div>
+              <div className="col-lg-7">
+                <div className="logo_design_content">
+                  <div className="sec_title">
+                    <h2
+                      className="sec_title_head color-lightBlue1"
+                      data-aos="fade-right"
+                      data-aos-offset="0"
+                      data-aos-duration="1000"
+                    >
+                      Elevate your business presence with a our
+                      <span className="color-lightBlue2"> Branding</span>
+                      services
+                    </h2>
+                    <p
+                      data-aos="fade-right"
+                      data-aos-offset="0"
+                      data-aos-duration="2000"
+                    >
+                      At Techverse LLC, we specialize in crafting customized
+                      mobile applications tailored to amplify your brand's
+                      visibility and functionality.
+                    </p>
+                    <div
+                      className="techVerse_hero_btns"
+                      data-aos="fade-right"
+                      data-aos-offset="0"
+                      data-aos-duration="3000"
+                    >
+                      <a href="tel:+(1) 23456-7890" className="btn_with_icon">
+                        <img
+                          className="btn_with_icon_img"
+                          src={phoneicongreen}
+                          alt=""
+                        />
+                        <span className="btn_with_icon_text">
+                          +(1) 23456-7890
+                        </span>
+                      </a>
+                      <a href="#" className="btn_with_icon btn_secondary">
+                        <img
+                          className="btn_with_icon_img"
+                          src={chaticons}
+                          alt=""
+                        />
+                        <span className="btn_with_icon_text">
+                          {" "}
+                          Start A Live Chat
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* <!-- Website --> */}
       {/* <div ref={website}> */}
-      <section className="techVerse_webSolution techVerse_webSolution_digital_M">
+      {/* <section className="techVerse_webSolution techVerse_webSolution_digital_M">
         <div className="techVerse_webSolution_hover">
           <img
             className="techVerse_webSolution_icon1 animation11"
@@ -493,7 +559,7 @@ const Branding = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* </div> */}
 
       {/* process we use */}
@@ -502,7 +568,7 @@ const Branding = () => {
       <Packages />
 
       {/* <!-- Technologies --> */}
-      <TechnologiesUse />
+      {/* <TechnologiesUse /> */}
 
       {/* FAQ section */}
 

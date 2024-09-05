@@ -412,6 +412,7 @@ h2 {
   top: 0;
 }
 .service_box_1,
+.service_box_4,
 .service_box_2,
 .service_box_3 {
   position: absolute;
@@ -1232,7 +1233,9 @@ body .rc h2 {
   top: 704px !important;
 }
 .blue-cube1,
-.blue-cube2 {
+.blue-cube2,
+.blue-cube3,
+.blue-cube4 {
   position: absolute;
   z-index: 9999;
 }
@@ -2312,6 +2315,94 @@ p.package_card_deliveryText {
   grid-template-columns: 1fr 1fr;
 }
 
+.techVerse_mobileAppBranding .techVerse_mobileApp_img img {
+  max-width: 500px;
+}
+.techVerse_mobileAppBranding .techVerse_mobileApp_img {
+  text-align: right;
+}
+.techVerse_mobileAppBookPublication .techVerse_mobileApp_img img {
+  max-width: 500px;
+}
+.techVerse_mobileAppBookPublication .techVerse_mobileApp_img {
+  text-align: right;
+}
+
+.techVerse_tech_New .single_logo_new {
+  background-image: unset;
+  display: block;
+  width: 200px;
+  min-width: 200px;
+}
+.techVerse_tech_New .single_logo_new img {
+  width: 100%;
+}
+
+.techVerse_tech_New .sec_title {
+  margin-bottom: 40px;
+}
+
+.logo_design_sec {
+  background: #000;
+}
+.logo_design_sec .row {
+  align-items: center;
+}
+.logo_design_content .sec_title p {
+  color: #fff;
+}
+
+img.imgAfterClass {
+  position: absolute;
+  bottom: -69%;
+  width: 130% !important;
+  z-index: -1;
+  left: -22%;
+}
+
+.connect_min_sec {
+  background: #000;
+}
+.connect_min_sec .sec_title {
+  text-align: center;
+}
+.connect_min_sec .sec_title p {
+  color: #fff;
+}
+
+.connect_min_sec .sec_title .techVerse_hero_btns {
+  justify-content: center;
+}
+.connect_min_img {
+  text-align: center;
+}
+
+.techVerse_services_content_digitalMarketing .service_box_1 {
+  width: 100%;
+  top: 33.3%;
+}
+.techVerse_services_content_digitalMarketing .service_box_4 {
+  width: 100%;
+  bottom: 33.3%;
+}
+.techVerse_services_content_digitalMarketing .blue-cube2 {
+  left: 32.1%;
+  top: 31.8%;
+}
+.techVerse_services_content_digitalMarketing .blue-cube1 {
+  left: 65.5%;
+  top: 31.8%;
+}
+
+.techVerse_services_content_digitalMarketing .blue-cube3 {
+  left: 32.1%;
+  bottom: 31.8%;
+}
+.techVerse_services_content_digitalMarketing .blue-cube4 {
+  left: 65.5%;
+  bottom: 31.8%;
+}
+
 @media (max-width: 1600px) {
   .techVerse_caseStudies-Content,
   .techVerse_heroContent,
@@ -2408,6 +2499,11 @@ p.package_card_deliveryText {
   }
   .web-development_hero_img {
     transform: scale(1) translateX(-2%) !important;
+  }
+  img.imgAfterClass {
+    bottom: -63%;
+    width: 120% !important;
+    left: -10%;
   }
 }
 @media (max-width: 1380px) {
@@ -2712,6 +2808,24 @@ p.package_card_deliveryText {
   }
 }
 @media (max-width: 991px) {
+  .branding-about-sec .body-bullet-list {
+    grid-template-columns: 1fr;
+  }
+  .logo_design_sec .logo_design_content .sec_title {
+    text-align: center;
+  }
+  .logo_design_sec .logo_design_content .techVerse_hero_btns {
+    justify-content: center;
+  }
+
+  .logo_design_img {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .logo_design_sec {
+    padding: 60px 0;
+  }
   .devOps_sec1 {
     margin-bottom: -13px;
   }
@@ -3037,6 +3151,16 @@ p.package_card_deliveryText {
   }
   .fullTime-resouce .techVerse_hero_btns {
     justify-content: center;
+  }
+  .techVerse_tech_New .single_logo_new {
+    width: 170px;
+    min-width: 170px;
+  }
+  .techVerse_tech_New .marquee-container {
+    height: 130px;
+  }
+  .connect_min_sec {
+    padding: 60px 0;
   }
 }
 @media (max-width: 800px) {
@@ -3481,7 +3605,10 @@ p.package_card_deliveryText {
   }
   .blue-cube1,
   .blue-cube2,
+  .blue-cube3,
+  .blue-cube4,
   .service_box_1,
+  .service_box_4,
   .service_box_2,
   .service_box_3 {
     display: none;

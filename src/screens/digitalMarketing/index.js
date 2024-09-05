@@ -276,12 +276,16 @@ const DigitalMarketing = () => {
                   technology.
                 </p>
               </div>
-              <div className="techVerse_services_content">
+              <div className="techVerse_services_content techVerse_services_content_digitalMarketing">
                 <img src={bluecube} className="blue-cube1 animation11" alt="" />
                 <img src={bluecube} className="blue-cube2 animation11" alt="" />
+                <img src={bluecube} className="blue-cube3 animation11" alt="" />
+                <img src={bluecube} className="blue-cube4 animation11" alt="" />
                 <div className="service_box_1"></div>
+                <div className="service_box_4"></div>
                 <div className="service_box_2"></div>
                 <div className="service_box_3"></div>
+
                 <div className="service_box">
                   <div className="service_box_before">
                     <div className="service_box_icon">
@@ -337,6 +341,7 @@ const DigitalMarketing = () => {
                     </p>
                   </div>
                 </div>
+
                 <div className="service_box">
                   <div className="service_box_before">
                     <div className="service_box_icon">
@@ -384,6 +389,62 @@ const DigitalMarketing = () => {
                     <h3 className="service_box_title">
                       Search Enging Marketing
                     </h3>
+                    <p className="service_box_p">
+                      We boast a team of dynamic and seasoned web developers
+                      committed to delivering top-notch quality. Our core focus
+                      is on providing exceptional services, and we take pride
+                      in.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="service_box">
+                  <div className="service_box_before">
+                    <div className="service_box_icon">
+                      <img src={youtubeMarketingIcon} alt="" />
+                    </div>
+                    <h3 className="service_box_title">Youtube Marketing</h3>
+                  </div>
+                  <div className="service_box_after">
+                    <h3 className="service_box_title">Youtube Marketing</h3>
+                    <p className="service_box_p">
+                      We boast a team of dynamic and seasoned web developers
+                      committed to delivering top-notch quality. Our core focus
+                      is on providing exceptional services, and we take pride
+                      in.
+                    </p>
+                  </div>
+                </div>
+                <div className="service_box">
+                  <div className="service_box_before">
+                    <div className="service_box_icon">
+                      <img src={socialMarketingIcon} alt="" />
+                    </div>
+                    <h3 className="service_box_title">
+                      Social Media Marketing
+                    </h3>
+                  </div>
+                  <div className="service_box_after">
+                    <h3 className="service_box_title">
+                      Social Media Marketing
+                    </h3>
+                    <p className="service_box_p">
+                      We boast a team of dynamic and seasoned web developers
+                      committed to delivering top-notch quality. Our core focus
+                      is on providing exceptional services, and we take pride
+                      in.
+                    </p>
+                  </div>
+                </div>
+                <div className="service_box">
+                  <div className="service_box_before">
+                    <div className="service_box_icon">
+                      <img src={amazonMarketingIcon} alt="" />
+                    </div>
+                    <h3 className="service_box_title">Amazon Marketing</h3>
+                  </div>
+                  <div className="service_box_after">
+                    <h3 className="service_box_title">Amazon Marketing</h3>
                     <p className="service_box_p">
                       We boast a team of dynamic and seasoned web developers
                       committed to delivering top-notch quality. Our core focus

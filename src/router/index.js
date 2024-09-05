@@ -27,6 +27,7 @@ import Privacy_Policy from "../screens/Privacy_Policy";
 import Terms_condition from "../screens/Terms_condition";
 import ScrollTop from "../Components/Scrolltop/ScrollTop";
 import Branding from "../screens/branding";
+import BookPublication from "../screens/book-publication";
 const Router = () => {
   return (
     <BrowserRouter basename="/">
@@ -48,6 +49,7 @@ const Router = () => {
         ></Route>
         <Route path="/digital-marketing" element={<DigitalMarketing />}></Route>
         <Route path="/branding" element={<Branding />}></Route>
+        <Route path="/book-publication" element={<BookPublication />}></Route>
         <Route path="/Devops" element={<Devops />}></Route>
         <Route path="/out-sourcing" element={<OutSourcing />}></Route>
         <Route path="/web-Development" element={<WebDevelopment />}></Route>
