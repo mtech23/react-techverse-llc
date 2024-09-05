@@ -30,7 +30,7 @@
           data-aos-duration="1000"
         >
           Our
-          <span class="color-darkBlue"> Portfolio </span>
+          <span className="color-darkBlue"> Portfolio </span>
           Process
           <span className="color-darkBlue">We Use</span>
         </h2>
@@ -66,9 +66,9 @@
             alt="Time-Bound-Professionals"
           />
           <p>Wireframing and Prototyping</p>
-    <div class="col-md-12">
+    <div className="col-md-12">
       <div
-        class="portfolio_tabs nav nav-tabs"
+        className="portfolio_tabs nav nav-tabs"
         id="myTab"
         role="tablist"
         data-aos="fade-up"
@@ -76,7 +76,7 @@
         data-aos-duration="3000"
       >
         <a
-          class="nav-link active"
+          className="nav-link active"
           id="mobile_apps"
           data-toggle="tab"
           href="#mobile-app"
@@ -84,7 +84,7 @@
           >Mobile Apps</a
         >
         <a
-          class="nav-link"
+          className="nav-link"
           id="websites_tab"
           data-toggle="tab"
           href="#website-tab"
@@ -92,7 +92,7 @@
           >Websites</a
         >
         <a
-          class="nav-link"
+          className="nav-link"
           id="cms_tab"
           data-toggle="tab"
           href="#cms-tab"
@@ -100,14 +100,14 @@
           >CMS</a
         >
       </div>
-      <div class="tab-content" id="portfolioTabs">
+      <div className="tab-content" id="portfolioTabs">
         <div
-          class="tab-pane fade show active"
+          className="tab-pane fade show active"
           id="mobile-app"
           role="tabpanel"
           aria-labelledby="mobile_apps"
         >
-          <div class="mobile_app_carousel"> 
+          <div className="mobile_app_carousel"> 
 
           <Swiper
 
@@ -155,44 +155,44 @@
    </SwiperSlide>
    </Swiper>
 
-            {/* <div class="swiper mobileAppCarousel">
-              <div class="swiper-wrapper">
+            {/* <div className="swiper mobileAppCarousel">
+              <div className="swiper-wrapper">
             
-                <div class="swiper-slide">
+                <div className="swiper-slide">
                   <img src={portfoliomockup1} alt="" />
                 </div>
-                <div class="swiper-slide">
+                <div className="swiper-slide">
                   <img src={portfoliomockup2} alt="" />
                 </div>
-                <div class="swiper-slide">
+                <div className="swiper-slide">
                   <img src="images/portfolio-mockup-3.webp" alt="" />
                 </div>
-                <div class="swiper-slide">
+                <div className="swiper-slide">
                   <img src="images/portfolio-mockup-4.webp" alt="" />
                 </div>
-                <div class="swiper-slide">
+                <div className="swiper-slide">
                   <img src="images/portfolio-mockup-5.webp" alt="" />
                 </div>
-                <div class="swiper-slide">
+                <div className="swiper-slide">
                   <img src="images/portfolio-mockup-1.webp" alt="" />
                 </div>
-                <div class="swiper-slide">
+                <div className="swiper-slide">
                   <img src="images/portfolio-mockup-2.webp" alt="" />
                 </div>
               </div> */}
             {/* </div> */}
-            <div class="our-slider-img">
+            <div className="our-slider-img">
               <img src={mobileframe} alt="" />
             </div>
           </div>
         </div>
         <div
-          class="tab-pane fade"
+          className="tab-pane fade"
           id="website-tab"
           role="tabpanel"
           aria-labelledby="websites_tab"
         >
-          <div class="web_app_carousel">
+          <div className="web_app_carousel">
 
 
           <Swiper
@@ -240,35 +240,35 @@
         
         </Swiper>
 
-            {/* <div class="swiper webAppCarousel">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
+            {/* <div className="swiper webAppCarousel">
+              <div className="swiper-wrapper">
+                <div className="swiper-slide">
                   <img src="images/car-buying.webp" alt="" />
                 </div>
-                <div class="swiper-slide">
+                <div className="swiper-slide">
                   <img src="images/jeff-wilson.webp" alt="" />
                 </div>
-                <div class="swiper-slide">
+                <div className="swiper-slide">
                   <img src="images/lll-reptile.webp" alt="" />
                 </div>
-                <div class="swiper-slide">
+                <div className="swiper-slide">
                   <img src="images/private-astrology.webp" alt="" />
                 </div>
-                <div class="swiper-slide">
+                <div className="swiper-slide">
                   <img src="images/car-buying.webp" alt="" />
                 </div>
-                <div class="swiper-slide">
+                <div className="swiper-slide">
                   <img src="images/jeff-wilson.webp" alt="" />
                 </div>
-                <div class="swiper-slide">
+                <div className="swiper-slide">
                   <img src="images/lll-reptile.webp" alt="" />
                 </div>
-                <div class="swiper-slide">
+                <div className="swiper-slide">
                   <img src="images/private-astrology.webp" alt="" />
                 </div>
               </div> */}
             {/* </div> */}
-            <div class="our-slider-webframe">
+            <div className="our-slider-webframe">
               <img src={Macbook} alt="" />
             </div>
           </div>

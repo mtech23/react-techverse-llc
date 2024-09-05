@@ -1,4 +1,3 @@
- 
 import "./style.css";
 import { UserLayout } from "../../Components/Layout/UserLayout";
 import phoneicon from "../../asserts/images/phone-icon.webp";
@@ -38,22 +37,17 @@ import Development_Process from "../../Components/Development_Process";
 import Portfolios from "../../Components/portfolios";
 import Driving_Exprience from "../../Components/Driving_experience";
 import Testimonials from "../../Components/Testimonials";
-import Helmet from '../../Components/Helmet'
+import Helmet from "../../Components/Helmet";
 gsap.registerPlugin(MotionPathPlugin);
 const Education_hr = () => {
   Aos.init();
 
   return (
     <UserLayout>
-
-
-
-
-
-
       <Helmet
-        title="    Records Become More Accurate with Our Education & HR Apps"
-        description="echverse LLC brings data accuracy for every academic record with education & HR educational app development. Contact us today for details! "
+        title="Best IT Services For Education and HR Industry | Techverse LLC"
+        description="Techverse LLC offers the best IT services for education and HR industries. Transform your organization with our innovative technology solutions!"
+        keywords="Education and HR"
       />
       <HeroSection
         classheroimage={"inner-educationHR-bgColor"}
@@ -73,7 +67,7 @@ const Education_hr = () => {
           appstore: appstore,
         }}
 
-      // secondaryButtonClass="btn_with_icon btn_secondary"
+        // secondaryButtonclassName="btn_with_icon btn_secondary"
       />
 
       {/* <!-- Trusted Partners --> */}
@@ -149,7 +143,7 @@ What Sets Us"
 
       <Driving_Exprience
         titleclass2="color-darkBlue"
-        titleclass="color-darkBlue"
+        titleclassName="color-darkBlue"
         title="Why Choose Our  "
         subtitle="  Ecommerce App "
         title2=" Development Service"

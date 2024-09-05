@@ -7,6 +7,7 @@ const index = (props) => {
       <meta charSet="utf-8" />
       <title>{props.title}</title>
       <meta name="description" content={props.description} />
+      <meta name="keywords" content={props.keywords} />
     </Helmet>
   );
 };

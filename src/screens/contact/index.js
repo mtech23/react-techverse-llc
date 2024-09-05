@@ -9,8 +9,7 @@ import contacttrust from "../../asserts/images/contact-trust.webp";
 import contactbbb from "../../asserts/images/contact-bbb.webp";
 import "./style.css";
 
-import Helmet from '../../Components/Helmet'
-
+import Helmet from "../../Components/Helmet";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -143,28 +142,26 @@ const Contact = () => {
 
   return (
     <div>
-
-
-
       <Helmet
-        title="          Contact Techverse LLC for Software Development & Solutions"
-        description=" Looking for business software development & solutions? We also develop mobile apps; contact Techverse LLC for all the business solutions !!"
+        title="Contact Us For Any Information and Queries | Techverse LLC"
+        description="Need assistance or have questions? Contact Techverse LLC! We're committed to helping you with all your information and tech queries. Reach out today!"
+        keywords="Contact"
       />
       <Header />
 
-      <section class="inner_hero contactUSNew_hero hoverEffectSec">
-        <div class="width-1600">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="inner_hero_content">
+      <section className="inner_hero contactUSNew_hero hoverEffectSec">
+        <div className="width-1600">
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col-lg-6">
+                <div className="inner_hero_content">
                   <h1
                     data-aos="fade-right"
                     data-aos-offset="0"
                     data-aos-duration="1000"
                   >
                     BOOK A FREE <br />
-                    <span class="color-lightBlue1">CONSULTATION</span>
+                    <span className="color-lightBlue1">CONSULTATION</span>
                   </h1>
                   <p
                     data-aos="fade-right"
@@ -175,12 +172,12 @@ const Contact = () => {
                   </p>
                   <br />
                   <div
-                    class="icon_box"
+                    className="icon_box"
                     data-aos="fade-up"
                     data-aos-duration="1000"
                     data-aos-offset="0"
                   >
-                    <div class="box_icon">
+                    <div className="box_icon">
                       <img src={contactlisticon1} alt="" />
                     </div>
                     <p>
@@ -189,12 +186,12 @@ const Contact = () => {
                     </p>
                   </div>
                   <div
-                    class="icon_box"
+                    className="icon_box"
                     data-aos="fade-up"
                     data-aos-duration="1000"
                     data-aos-offset="0"
                   >
-                    <div class="box_icon">
+                    <div className="box_icon">
                       <img src={contactlisticon2} alt="" />
                     </div>
                     <p>
@@ -203,11 +200,11 @@ const Contact = () => {
                     </p>
                   </div>
                   <div
-                    class="icon_box"
+                    className="icon_box"
                     data-aos="fade-up"
                     data-aos-duration="1000"
                   >
-                    <div class="box_icon">
+                    <div className="box_icon">
                       <img src={contactlisticon3} alt="" />
                     </div>
                     <p>
@@ -216,7 +213,7 @@ const Contact = () => {
                     </p>
                   </div>
                   <h3
-                    class="contact-page-subhead"
+                    className="contact-page-subhead"
                     data-aos="fade-up"
                     data-aos-duration="2000"
                     data-aos-offset="0"
@@ -225,35 +222,35 @@ const Contact = () => {
                     We are trusted on
                   </h3>
                   <div
-                    class="techVerse_store_links"
+                    className="techVerse_store_links"
                     data-aos="fade-up"
                     data-aos-duration="3000"
                     data-aos-offset="0"
                   >
-                    <a href="#" class="techVerse_store_link">
+                    <a href="#" className="techVerse_store_link">
                       <img src={contactclutch} alt="" />
                     </a>
-                    <a href="#" class="techVerse_store_link">
+                    <a href="#" className="techVerse_store_link">
                       <img src={contacttrust} alt="" />
                     </a>
-                    <a href="#" class="techVerse_store_link">
+                    <a href="#" className="techVerse_store_link">
                       <img src={contactbbb} alt="" />
                     </a>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-6">
+              <div className="col-lg-6">
                 <div
-                  class="contactPage_form"
+                  className="contactPage_form"
                   data-aos="fade-up"
                   data-aos-offset="0"
                   data-aos-duration="2000"
                 >
-                  <div class="contact_form">
-                    <div class="contact_formContent">
+                  <div className="contact_form">
+                    <div className="contact_formContent">
                       <form onSubmit={handlesubmit} id="leadForm" action="">
-                        <div class="row">
-                          <div class="col-md-12 mb-3 contact-formCols">
+                        <div className="row">
+                          <div className="col-md-12 mb-3 contact-formCols">
                             <div className="form-group">
                               <select
                                 className="inputForm"
@@ -276,109 +273,111 @@ const Contact = () => {
                               </select>
                             </div>
                           </div>
-                          <div class="col-md-6 mb-3 contact-formCols">
-                            <div class="form-group">
+                          <div className="col-md-6 mb-3 contact-formCols">
+                            <div className="form-group">
                               <input
                                 value={formdata.firstname}
                                 type="text"
                                 placeholder="First Name"
-                                class="inputForm"
+                                className="inputForm"
                                 name="firstname"
                                 onChange={handlechange}
                                 required
                               />
                             </div>
                           </div>
-                          <div class="col-md-6 mb-3 contact-formCols">
-                            <div class="form-group">
+                          <div className="col-md-6 mb-3 contact-formCols">
+                            <div className="form-group">
                               <input
                                 value={formdata.lastname}
                                 type="text"
                                 placeholder="Last Name"
-                                class="inputForm"
+                                className="inputForm"
                                 name="lastname"
                                 required
                                 onChange={handlechange}
                               />
                             </div>
                           </div>
-                          <div class="col-md-6 mb-3 contact-formCols">
-                            <div class="form-group">
+                          <div className="col-md-6 mb-3 contact-formCols">
+                            <div className="form-group">
                               <input
                                 value={formdata.phone}
                                 type="text"
                                 placeholder="Phone Number"
-                                class="inputForm"
+                                className="inputForm"
                                 name="phone"
                                 required
                                 onChange={handlechange}
                               />
                             </div>
                           </div>
-                          <div class="col-md-6 mb-3 contact-formCols">
-                            <div class="form-group">
+                          <div className="col-md-6 mb-3 contact-formCols">
+                            <div className="form-group">
                               <input
                                 value={formdata.email}
                                 type="email"
                                 placeholder="Your Email"
-                                class="inputForm"
+                                className="inputForm"
                                 name="email"
                                 required
                                 onChange={handlechange}
                               />
                             </div>
                           </div>
-                          <div class="col-md-12 mb-3 contact-formCols">
-                            <div class="form-group">
+                          <div className="col-md-12 mb-3 contact-formCols">
+                            <div className="form-group">
                               <textarea
                                 value={formdata.message}
                                 onChange={handlechange}
                                 rows="4"
-                                class="inputForm"
+                                className="inputForm"
                                 placeholder="Please describe your project requirements"
                                 name="message"
                               ></textarea>
                             </div>
                           </div>
-                          <div class="col-md-12 mb-5 contact-formCols">
-                            <div class="budget-wrap">
-                              <div class="budget-header">
-                                <span class="budget-title">
+                          <div className="col-md-12 mb-5 contact-formCols">
+                            <div className="budget-wrap">
+                              <div className="budget-header">
+                                <span className="budget-title">
                                   Set Your Budget
                                 </span>
-                                <span class="budget-value"> ${budget}</span>
+                                <span className="budget-value"> ${budget}</span>
                               </div>
-                              <div class="budget-content">
+                              <div className="budget-content">
                                 <input
                                   onChange={handlechange}
                                   type="range"
                                   min="0"
                                   max={50000}
                                   // value="50"
-                                  class="budget-slider"
+                                  className="budget-slider"
                                   id="budgetRange"
                                   name="budget"
                                 />
                               </div>
                             </div>
                           </div>
-                          <div class="confidentialData">
+                          <div className="confidentialData">
                             <input type="hidden" id="country" name="country" />
                             <input type="hidden" id="ip" name="ip" />
                             <input
                               type="hidden"
-                              class="locationLink"
+                              className="locationLink"
                               name="website_url"
                             />
                           </div>
-                          <div class="col-md-12 contact-formCols">
-                            <div class="form-group">
-                              <div class="techVerse_hero_btns">
+                          <div className="col-md-12 contact-formCols">
+                            <div className="form-group">
+                              <div className="techVerse_hero_btns">
                                 <button
                                   type="submit"
-                                  class="btn_with_icon w-100"
+                                  className="btn_with_icon w-100"
                                 >
-                                  <span class="btn_with_icon_text">SUBMIT</span>
+                                  <span className="btn_with_icon_text">
+                                    SUBMIT
+                                  </span>
                                 </button>
                               </div>
                             </div>

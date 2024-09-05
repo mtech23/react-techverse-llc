@@ -38,16 +38,16 @@ import Driving_Exprience from "../../Components/Driving_experience";
 import Ctnbutton from "../../Components/ctnbutton";
 import { playstore } from "../../asserts/images";
 import appstore from "../../asserts/images/app-store.webp";
-import Helmet from '../../Components/Helmet';
- 
+import Helmet from "../../Components/Helmet";
+
 const Finance = () => {
   Aos.init();
   return (
     <UserLayout>
- 
       <Helmet
-        title=" Financial Details Easy to Record with Our Finance Software"
-        description="Finance software solutions with appropriate records beyond bookkeeping. The Fintech Software Developers at Techverse LLC are Professionals.  "
+        title="Providing Top IT Solutions For Finance Industry | Techverse LLC"
+        description="Get the best IT solutions for the finance industry at Techverse LLC. Our expert services will help you streamline operations and drive success."
+        keywords="Finance"
       />
       {/* <!-- Inner Hero --> */}
 
@@ -77,7 +77,7 @@ const Finance = () => {
         pinkcapsol={pinkcapsol}
         // classtitle={" color-white  "}
 
-        newClass={"finance-abt1"}
+        newclassName={"finance-abt1"}
         greencube={greencube}
         donatorange={donatorange}
         // classpara="color-white"
@@ -112,7 +112,7 @@ const Finance = () => {
       {/* <!-- Real Estate App Dev --> */}
       <Development_Process
         image={financeimg2}
-        sportsclass={"finance-img2 "}
+        sportsclassName={"finance-img2 "}
         title="Techverse Paves The Way For A Connected"
         subtitle=" Financial Future "
         para="Techverse LLC's app development for the financial sector focuses on creating scalable, secure applications designed for the unique needs of clients and financial professionals. We integrate cutting-edge technology into our solutions to boost operational efficiency and service delivery."
@@ -150,7 +150,7 @@ const Finance = () => {
 
       <Driving_Exprience
         titleclass2="color-darkBlue"
-        titleclass="color-darkBlue"
+        titleclassName="color-darkBlue"
         title="    Feel The Power Of Innovative  "
         subtitle="    Finance Apps   "
         title2="    With Techverse LLC"

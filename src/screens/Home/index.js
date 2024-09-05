@@ -87,7 +87,7 @@ import partnerImg12 from "../../asserts/images/partner-img-12.svg";
 import partnerImg13 from "../../asserts/images/partner-img-13.svg";
 import partnerImg14 from "../../asserts/images/partner-img-14.svg";
 import partnerImg15 from "../../asserts/images/partner-img-15.svg";
-import Helmet from '../../Components/Helmet';
+import Helmet from "../../Components/Helmet";
 import partnerImg16 from "../../asserts/images/partner-img-16.svg";
 
 import Aos from "aos";
@@ -300,15 +300,10 @@ const Home = () => {
   }, []);
   return (
     <UserLayout>
-
-
-
-
-
-
       <Helmet
-        title=" Hire Top Mobile App Development Agency | Expert Web & Tech Solutions"
-        description="Need a professional mobile app development agency? Our expert team offers top-notch web and mobile solutions, including app development, CMS platforms, and innovative tech solutions. Hire us to elevate your business with cutting-edge technology."
+        title="Techverse LLC | #1 Mobile App Development Company in USA"
+        description="Techverse LLC is the #1 Mobile App Development Company in USA, offering innovative web and reliable app development services for businesses of all sizes."
+        keywords="Techverse"
       />
 
       <div className="relative" ref={sectionRef}>
@@ -334,19 +329,19 @@ const Home = () => {
             data-swiper-parallax="-23%"
           ></div>
           <SwiperSlide>
-            <section class="techVerse_hero hoverEffectSec ">
-              <div class="techVerse_heroContent">
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="innersec col-md-6">
-                      <div class="techVerse_hero_content">
+            <section className="techVerse_hero hoverEffectSec ">
+              <div className="techVerse_heroContent">
+                <div className="container-fluid">
+                  <div className="row">
+                    <div className="innersec col-md-6">
+                      <div className="techVerse_hero_content">
                         <h1
                           data-aos="fade-right"
                           data-aos-offset="0"
                           data-aos-duration="1000"
                         >
                           TECHVERSE LLC Pioneering
-                          <span class="color-lightBlue1"> The Future </span>
+                          <span className="color-lightBlue1"> The Future </span>
                           Of Mobile Development Company In USA
                         </h1>
                         <p
@@ -363,62 +358,62 @@ const Home = () => {
                           digital landscape.
                         </p>
                         <div
-                          class="techVerse_hero_btns"
+                          className="techVerse_hero_btns"
                           data-aos="fade-right"
                           data-aos-offset="0"
                           data-aos-duration="3000"
                         >
-                          <a href="#" class="btn_with_icon">
+                          <a href="#" className="btn_with_icon">
                             <img
-                              class="btn_with_icon_img"
+                              className="btn_with_icon_img"
                               src={phoneicon}
                               alt=""
                             />
-                            <span class="btn_with_icon_text">Call Now</span>
+                            <span className="btn_with_icon_text">Call Now</span>
                           </a>
-                          <a href="#" class="btn_with_icon btn_secondary">
+                          <a href="#" className="btn_with_icon btn_secondary">
                             <img
-                              class="btn_with_icon_img"
+                              className="btn_with_icon_img"
                               src={chaticon}
                               alt=""
                             />
-                            <span class="btn_with_icon_text">Chat Now</span>
+                            <span className="btn_with_icon_text">Chat Now</span>
                           </a>
                         </div>
                         <div
-                          class="hero_brands"
+                          className="hero_brands"
                           data-aos="fade-right"
                           data-aos-offset="0"
                           data-aos-duration="3000"
                         >
-                          <a href="#" class="hero_brands_img">
+                          <a href="#" className="hero_brands_img">
                             <img src={clutch} alt="" />
                           </a>
-                          <a href="#" class="hero_brands_img">
+                          <a href="#" className="hero_brands_img">
                             <img src={truspilot} alt="" />
                           </a>
-                          <a href="#" class="hero_brands_img">
+                          <a href="#" className="hero_brands_img">
                             <img src={bbb} alt="" />
                           </a>
                         </div>
                       </div>
                     </div>
-                    <div class="col-md-6">
-                      <div class="techVerse_hero_img image_hover">
+                    <div className="col-md-6">
+                      <div className="techVerse_hero_img image_hover">
                         <div className="inner_images  ">
                           <img
                             src={donatblue}
-                            class="techVerse_hero_icon1 animation11"
+                            className="techVerse_hero_icon1 animation11"
                             alt=""
                           />
                           <img
                             src={PillBlueGlossy}
-                            class="techVerse_hero_icon2 animation22"
+                            className="techVerse_hero_icon2 animation22"
                             alt=""
                           />
                           <img
                             src={ConeBlueGlossy}
-                            class="techVerse_hero_icon3 animation22"
+                            className="techVerse_hero_icon3 animation22"
                             alt=""
                           />
                         </div>
@@ -439,19 +434,19 @@ const Home = () => {
           </SwiperSlide>
 
           <SwiperSlide>
-            <section class="techVerse_hero techVerse_hero_two hoverEffectSec">
-              <div class="techVerse_heroContent">
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="techVerse_hero_content">
+            <section className="techVerse_hero techVerse_hero_two hoverEffectSec">
+              <div className="techVerse_heroContent">
+                <div className="container-fluid">
+                  <div className="row">
+                    <div className="col-md-6">
+                      <div className="techVerse_hero_content">
                         <h1
                           data-aos="fade-right"
                           data-aos-offset="0"
                           data-aos-duration="1000"
                         >
                           Creating
-                          <span class="color-lightBlue1">
+                          <span className="color-lightBlue1">
                             {" "}
                             Custom Solutions{" "}
                           </span>
@@ -470,62 +465,62 @@ const Home = () => {
                           presence.
                         </p>
                         <div
-                          class="techVerse_hero_btns"
+                          className="techVerse_hero_btns"
                           data-aos="fade-right"
                           data-aos-offset="0"
                           data-aos-duration="3000"
                         >
-                          <a href="#" class="btn_with_icon">
+                          <a href="#" className="btn_with_icon">
                             <img
-                              class="btn_with_icon_img"
+                              className="btn_with_icon_img"
                               src={phoneicon}
                               alt=""
                             />
-                            <span class="btn_with_icon_text">Call Now</span>
+                            <span className="btn_with_icon_text">Call Now</span>
                           </a>
-                          <a href="#" class="btn_with_icon btn_secondary">
+                          <a href="#" className="btn_with_icon btn_secondary">
                             <img
-                              class="btn_with_icon_img"
+                              className="btn_with_icon_img"
                               src={chaticon}
                               alt=""
                             />
-                            <span class="btn_with_icon_text">Chat Now</span>
+                            <span className="btn_with_icon_text">Chat Now</span>
                           </a>
                         </div>
                         <div
-                          class="hero_brands"
+                          className="hero_brands"
                           data-aos="fade-right"
                           data-aos-offset="0"
                           data-aos-duration="3000"
                         >
-                          <a href="#" class="hero_brands_img">
+                          <a href="#" className="hero_brands_img">
                             <img src={clutch} alt="" />
                           </a>
-                          <a href="#" class="hero_brands_img">
+                          <a href="#" className="hero_brands_img">
                             <img src={truspilot} alt="" />
                           </a>
-                          <a href="#" class="hero_brands_img">
+                          <a href="#" className="hero_brands_img">
                             <img src={bbb} alt="" />
                           </a>
                         </div>
                       </div>
                     </div>
-                    <div class="col-md-6">
-                      <div class="techVerse_hero_img">
+                    <div className="col-md-6">
+                      <div className="techVerse_hero_img">
                         <div className="inner_images">
                           <img
                             src={donatblue}
-                            class="techVerse_hero_icon1 animation11"
+                            className="techVerse_hero_icon1 animation11"
                             alt=""
                           />
                           <img
                             src={PillBlueGlossy}
-                            class="techVerse_hero_icon2 animation22"
+                            className="techVerse_hero_icon2 animation22"
                             alt=""
                           />
                           <img
                             src={ConeBlueGlossy}
-                            class="techVerse_hero_icon3 animation22"
+                            className="techVerse_hero_icon3 animation22"
                             alt=""
                           />
                         </div>
@@ -546,19 +541,19 @@ const Home = () => {
           </SwiperSlide>
 
           <SwiperSlide>
-            <section class="techVerse_hero techVerse_hero_three hoverEffectSec">
-              <div class="techVerse_heroContent">
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="techVerse_hero_content">
+            <section className="techVerse_hero techVerse_hero_three hoverEffectSec">
+              <div className="techVerse_heroContent">
+                <div className="container-fluid">
+                  <div className="row">
+                    <div className="col-md-6">
+                      <div className="techVerse_hero_content">
                         <h1
                           data-aos="fade-right"
                           data-aos-offset="0"
                           data-aos-duration="1000"
                         >
                           Experience
-                          <span class="color-lightBlue1"> The Future </span>
+                          <span className="color-lightBlue1"> The Future </span>
                           Of Digital Innovation With Us
                         </h1>
                         <p
@@ -575,62 +570,62 @@ const Home = () => {
                           digital landscape.
                         </p>
                         <div
-                          class="techVerse_hero_btns"
+                          className="techVerse_hero_btns"
                           data-aos="fade-right"
                           data-aos-offset="0"
                           data-aos-duration="3000"
                         >
-                          <a href="#" class="btn_with_icon">
+                          <a href="#" className="btn_with_icon">
                             <img
-                              class="btn_with_icon_img"
+                              className="btn_with_icon_img"
                               src={phoneicon}
                               alt=""
                             />
-                            <span class="btn_with_icon_text">Call Now</span>
+                            <span className="btn_with_icon_text">Call Now</span>
                           </a>
-                          <a href="#" class="btn_with_icon btn_secondary">
+                          <a href="#" className="btn_with_icon btn_secondary">
                             <img
-                              class="btn_with_icon_img"
+                              className="btn_with_icon_img"
                               src={chaticon}
                               alt=""
                             />
-                            <span class="btn_with_icon_text">Chat Now</span>
+                            <span className="btn_with_icon_text">Chat Now</span>
                           </a>
                         </div>
                         <div
-                          class="hero_brands"
+                          className="hero_brands"
                           data-aos="fade-right"
                           data-aos-offset="0"
                           data-aos-duration="3000"
                         >
-                          <a href="#" class="hero_brands_img">
+                          <a href="#" className="hero_brands_img">
                             <img src={clutch} alt="" />
                           </a>
-                          <a href="#" class="hero_brands_img">
+                          <a href="#" className="hero_brands_img">
                             <img src={truspilot} alt="" />
                           </a>
-                          <a href="#" class="hero_brands_img">
+                          <a href="#" className="hero_brands_img">
                             <img src={bbb} alt="" />
                           </a>
                         </div>
                       </div>
                     </div>
-                    <div class="col-md-6">
-                      <div class="techVerse_hero_img">
+                    <div className="col-md-6">
+                      <div className="techVerse_hero_img">
                         <div className="inner_images">
                           <img
                             src={donatblue}
-                            class="techVerse_hero_icon1 animation11"
+                            className="techVerse_hero_icon1 animation11"
                             alt=""
                           />
                           <img
                             src={PillBlueGlossy}
-                            class="techVerse_hero_icon2 animation22"
+                            className="techVerse_hero_icon2 animation22"
                             alt=""
                           />
                           <img
                             src={ConeBlueGlossy}
-                            class="techVerse_hero_icon3 animation22"
+                            className="techVerse_hero_icon3 animation22"
                             alt=""
                           />
                         </div>
@@ -674,32 +669,32 @@ const Home = () => {
 
       {/* <!-- Website --> */}
       <div ref={website}>
-        <section class="techVerse_webSolution ">
+        <section className="techVerse_webSolution ">
           <div className="techVerse_webSolution_hover">
             <img
-              class="techVerse_webSolution_icon1 animation11"
+              className="techVerse_webSolution_icon1 animation11"
               src={donateWhite}
               alt=""
             />
             <img
-              class="techVerse_webSolution_icon2 animation22"
+              className="techVerse_webSolution_icon2 animation22"
               src={peramidicon}
               alt=""
             />
           </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="techVerse_webSolution_content">
-                  <div class="sec_title">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <div className="techVerse_webSolution_content">
+                  <div className="sec_title">
                     <h2
-                      class="sec_title_head color-lightBlue1"
+                      className="sec_title_head color-lightBlue1"
                       data-aos="fade-up"
                       data-aos-offset="0"
                       data-aos-duration="1000"
                     >
                       Revolutionize Your Business Presence
-                      <span class="color-lightBlue2"> With </span>A Custom
+                      <span className="color-lightBlue2"> With </span>A Custom
                       Website Design
                     </h2>
                     <p
@@ -712,26 +707,28 @@ const Home = () => {
                       enhance user experience but also drive tangible results.
                     </p>
                     <div
-                      class="techVerse_hero_btns"
+                      className="techVerse_hero_btns"
                       data-aos="fade-up"
                       data-aos-offset="0"
                       data-aos-duration="3000"
                     >
-                      <a href="tel:+(1) 23456-7890" class="btn_with_icon">
+                      <a href="tel:+(1) 23456-7890" className="btn_with_icon">
                         <img
-                          class="btn_with_icon_img"
+                          className="btn_with_icon_img"
                           src={phoneicongreen}
                           alt=""
                         />
-                        <span class="btn_with_icon_text">+(1) 23456-7890</span>
+                        <span className="btn_with_icon_text">
+                          +(1) 23456-7890
+                        </span>
                       </a>
-                      <a href="#" class="btn_with_icon btn_secondary">
+                      <a href="#" className="btn_with_icon btn_secondary">
                         <img
-                          class="btn_with_icon_img"
+                          className="btn_with_icon_img"
                           src={chaticonblue}
                           alt=""
                         />
-                        <span class="btn_with_icon_text">
+                        <span className="btn_with_icon_text">
                           Start A Live Chat
                         </span>
                       </a>
@@ -744,47 +741,47 @@ const Home = () => {
         </section>
       </div>
       {/* <!-- Services --> */}
-      <section ref={sec2} class="techVerse_services" id="particles-js2">
+      <section ref={sec2} className="techVerse_services" id="particles-js2">
         <ServiceParticle />
         <div className="sevices_hover">
           <div className="services_inner_images">
             <img
-              class="techVerse_services_icon1 animation11"
+              className="techVerse_services_icon1 animation11"
               src={pinkcapsol}
               alt=""
             />
             <img
-              class="techVerse_services_icon2 animation11"
+              className="techVerse_services_icon2 animation11"
               src={greencube}
               alt=""
             />
             <img
-              class="techVerse_services_icon3 animation33"
+              className="techVerse_services_icon3 animation33"
               src={orangecircle}
               alt=""
             />
             <img
-              class="techVerse_services_icon4 animation22"
+              className="techVerse_services_icon4 animation22"
               src={donatewhitesmall}
               alt=""
             />
             <img
-              class="techVerse_services_icon5 animation33"
+              className="techVerse_services_icon5 animation33"
               src={orangehalfcircle}
               alt=""
             />
           </div>
-          <div class="container services_offerContainer">
-            <div class="row">
-              <div class="sec_title">
+          <div className="container services_offerContainer">
+            <div className="row">
+              <div className="sec_title">
                 <h2
-                  class="sec_title_head color-lightBlue2"
+                  className="sec_title_head color-lightBlue2"
                   data-aos="fade-up"
                   data-aos-offset="0"
                   data-aos-duration="1000"
                 >
                   Services
-                  <span class="color-darkBlue"> We Offer </span>
+                  <span className="color-darkBlue"> We Offer </span>
                 </h2>
                 <p
                   data-aos="fade-up"
@@ -797,24 +794,24 @@ const Home = () => {
                   business:
                 </p>
               </div>
-              <div class="techVerse_services_content">
-                <img src={bluecube} class="blue-cube1 animation11" alt="" />
-                <img src={bluecube} class="blue-cube2 animation11" alt="" />
-                <div class="service_box_1"></div>
-                <div class="service_box_2"></div>
-                <div class="service_box_3"></div>
-                <div class="service_box">
-                  <div class="service_box_before">
-                    <div class="service_box_icon">
+              <div className="techVerse_services_content">
+                <img src={bluecube} className="blue-cube1 animation11" alt="" />
+                <img src={bluecube} className="blue-cube2 animation11" alt="" />
+                <div className="service_box_1"></div>
+                <div className="service_box_2"></div>
+                <div className="service_box_3"></div>
+                <div className="service_box">
+                  <div className="service_box_before">
+                    <div className="service_box_icon">
                       <img src={iosicon} alt="" />
                     </div>
-                    <h3 class="service_box_title">IOS Development</h3>
+                    <h3 className="service_box_title">IOS Development</h3>
                   </div>
-                  <div class="service_box_after">
-                    <h3 class="service_box_title">
+                  <div className="service_box_after">
+                    <h3 className="service_box_title">
                       Cross-Platform Development
                     </h3>
-                    <p class="service_box_p">
+                    <p className="service_box_p">
                       Harness the power of Apple's ecosystem with our iOS
                       development services. Whether you're introducing a new app
                       or improving an existing one, our team ensures seamless
@@ -822,20 +819,20 @@ const Home = () => {
                     </p>
                   </div>
                 </div>
-                <div class="service_box">
-                  <div class="service_box_before">
-                    <div class="service_box_icon">
+                <div className="service_box">
+                  <div className="service_box_before">
+                    <div className="service_box_icon">
                       <img src={smartcontracticon} alt="" />
                     </div>
-                    <h3 class="service_box_title">
+                    <h3 className="service_box_title">
                       Smart Contract Development
                     </h3>
                   </div>
-                  <div class="service_box_after">
-                    <h3 class="service_box_title">
+                  <div className="service_box_after">
+                    <h3 className="service_box_title">
                       Smart Contract Development
                     </h3>
-                    <p class="service_box_p">
+                    <p className="service_box_p">
                       Get the potential of blockchain technology with our
                       brilliant contract development expertise. From initial
                       concept to deployment, we specialize in creating secure
@@ -844,16 +841,16 @@ const Home = () => {
                     </p>
                   </div>
                 </div>
-                <div class="service_box">
-                  <div class="service_box_before">
-                    <div class="service_box_icon">
+                <div className="service_box">
+                  <div className="service_box_before">
+                    <div className="service_box_icon">
                       <img src={andriodicon} alt="" />
                     </div>
-                    <h3 class="service_box_title">Android Development</h3>
+                    <h3 className="service_box_title">Android Development</h3>
                   </div>
-                  <div class="service_box_after">
-                    <h3 class="service_box_title">Android Development</h3>
-                    <p class="service_box_p">
+                  <div className="service_box_after">
+                    <h3 className="service_box_title">Android Development</h3>
+                    <p className="service_box_p">
                       Reach the vast Android user base with our Android
                       development services. We craft scalable and engaging
                       applications that leverage the latest features of the
@@ -862,16 +859,20 @@ const Home = () => {
                     </p>
                   </div>
                 </div>
-                <div class="service_box">
-                  <div class="service_box_before">
-                    <div class="service_box_icon">
+                <div className="service_box">
+                  <div className="service_box_before">
+                    <div className="service_box_icon">
                       <img src={customappicon} alt="" />
                     </div>
-                    <h3 class="service_box_title">Custom App Development</h3>
+                    <h3 className="service_box_title">
+                      Custom App Development
+                    </h3>
                   </div>
-                  <div class="service_box_after">
-                    <h3 class="service_box_title">Custom App Development</h3>
-                    <p class="service_box_p">
+                  <div className="service_box_after">
+                    <h3 className="service_box_title">
+                      Custom App Development
+                    </h3>
+                    <p className="service_box_p">
                       Tailor-made solutions for unique business challenges. Our
                       service is designed to align perfectly with your strategic
                       objectives, delivering functionality and innovation that
@@ -879,20 +880,20 @@ const Home = () => {
                     </p>
                   </div>
                 </div>
-                <div class="service_box">
-                  <div class="service_box_before">
-                    <div class="service_box_icon">
+                <div className="service_box">
+                  <div className="service_box_before">
+                    <div className="service_box_icon">
                       <img src={enterprizeicon} alt="" />
                     </div>
-                    <h3 class="service_box_title">
+                    <h3 className="service_box_title">
                       Enterprise App Development
                     </h3>
                   </div>
-                  <div class="service_box_after">
-                    <h3 class="service_box_title">
+                  <div className="service_box_after">
+                    <h3 className="service_box_title">
                       Enterprise App Development
                     </h3>
-                    <p class="service_box_p">
+                    <p className="service_box_p">
                       Empower your enterprise with robust, scalable
                       applications. Our enterprise app development team combines
                       industry best practices with deep technical expertise to
@@ -901,20 +902,20 @@ const Home = () => {
                     </p>
                   </div>
                 </div>
-                <div class="service_box">
-                  <div class="service_box_before">
-                    <div class="service_box_icon">
+                <div className="service_box">
+                  <div className="service_box_before">
+                    <div className="service_box_icon">
                       <img src={crossplatform} alt="" />
                     </div>
-                    <h3 class="service_box_title">
+                    <h3 className="service_box_title">
                       Cross-Platform Development
                     </h3>
                   </div>
-                  <div class="service_box_after">
-                    <h3 class="service_box_title">
+                  <div className="service_box_after">
+                    <h3 className="service_box_title">
                       Cross-Platform Development
                     </h3>
-                    <p class="service_box_p">
+                    <p className="service_box_p">
                       Maximize your reach with cross-platform development
                       solutions. We utilize leading frameworks to build apps
                       that operate seamlessly across multiple platforms,
@@ -924,15 +925,15 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div class="col-md-12 text-center mt-5">
+              <div className="col-md-12 text-center mt-5">
                 <a
                   href="#"
-                  class="btn_with_icon"
+                  className="btn_with_icon"
                   data-aos="fade-right"
                   data-aos-offset="0"
                   data-aos-duration="2000"
                 >
-                  <span class="btn_with_icon_text">
+                  <span className="btn_with_icon_text">
                     START YOUR PROJECT NOW!
                   </span>
                 </a>
@@ -978,43 +979,43 @@ const Home = () => {
       <Elevateyourbusiness />
 
       {/* <!-- Case Studies --> */}
-      <section class="techVerse_caseStudies" ref={caseStudies}>
+      <section className="techVerse_caseStudies" ref={caseStudies}>
         <div className="caseStudies_hover">
           <div className="caseStudies_inner_images">
             <img
-              class="techVerse_caseStudies_icon1 animation22"
+              className="techVerse_caseStudies_icon1 animation22"
               src={peramidangled}
               alt=""
             />
             <img
-              class="techVerse_caseStudies_icon2 animation11"
+              className="techVerse_caseStudies_icon2 animation11"
               src={greencube}
               alt=""
             />
             <img
-              class="techVerse_caseStudies_icon3 animation22"
+              className="techVerse_caseStudies_icon3 animation22"
               src={donatewhitesmall}
               alt=""
             />
             <img
-              class="techVerse_caseStudies_icon4 animation33"
+              className="techVerse_caseStudies_icon4 animation33"
               src={orangecircle}
               alt=""
             />
           </div>
-          <div class="techVerse_caseStudies-Content">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="sec_title">
+          <div className="techVerse_caseStudies-Content">
+            <div className="container-fluid">
+              <div className="row">
+                <div className="col-md-12">
+                  <div className="sec_title">
                     <h2
-                      class="sec_title_head color-lightBlue2"
+                      className="sec_title_head color-lightBlue2"
                       data-aos="fade-up"
                       data-aos-offset="0"
                       data-aos-duration="1000"
                     >
                       Our
-                      <span class="color-darkBlue"> CASE STUDIES </span>
+                      <span className="color-darkBlue"> CASE STUDIES </span>
                     </h2>
                     <p
                       data-aos="fade-up"
@@ -1028,9 +1029,9 @@ const Home = () => {
                     </p>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div className="col-lg-4 col-md-6">
                   <div
-                    class="techVerse_caseStudy_img bgOrange"
+                    className="techVerse_caseStudy_img bgOrange"
                     data-aos="fade-right"
                     data-aos-offset="0"
                     data-aos-duration="1000"
@@ -1041,9 +1042,9 @@ const Home = () => {
                     <img src={irvingsegalimg} alt="" />
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div className="col-lg-4 col-md-6">
                   <div
-                    class="techVerse_caseStudy_img bgOrange"
+                    className="techVerse_caseStudy_img bgOrange"
                     style={{
                       backgroundImage: `url(${braincarlislebg})`,
                     }}
@@ -1054,9 +1055,9 @@ const Home = () => {
                     <img src={braincarlisleimg} alt="" />
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div className="col-lg-4 col-md-6">
                   <div
-                    class="techVerse_caseStudy_img bgOrange"
+                    className="techVerse_caseStudy_img bgOrange"
                     style={{
                       backgroundImage: `url(${anglebodybg})`,
                     }}
@@ -1067,9 +1068,9 @@ const Home = () => {
                     <img src={anglebodyimg} alt="" />
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div className="col-lg-4 col-md-6">
                   <div
-                    class="techVerse_caseStudy_img bgOrange"
+                    className="techVerse_caseStudy_img bgOrange"
                     style={{
                       backgroundImage: `url(${elevengb})`,
                     }}
@@ -1080,9 +1081,9 @@ const Home = () => {
                     <img src={elevenimg} alt="" />
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div className="col-lg-4 col-md-6">
                   <div
-                    class="techVerse_caseStudy_img bgOrange "
+                    className="techVerse_caseStudy_img bgOrange "
                     style={{
                       backgroundImage: `url(${framewithphotobg})`,
                     }}
@@ -1093,13 +1094,13 @@ const Home = () => {
                     <img src={framewithphotoimg} alt="" />
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div className="col-lg-4 col-md-6">
                   <div
-                    class="techVerse_caseStudy_img bgOrange "
+                    className="techVerse_caseStudy_img bgOrange "
                     style={{
                       backgroundImage: `url(${ryderzvanbg})`,
                     }}
-                    // class="techVerse_caseStudy_img bgOrange caseStudy_img_bg_one"
+                    // className="techVerse_caseStudy_img bgOrange caseStudy_img_bg_one"
                     data-aos="fade-left"
                     data-aos-offset="0"
                     data-aos-duration="3000"
@@ -1114,74 +1115,74 @@ const Home = () => {
       </section>
 
       {/* <!-- Trusted Partners --> */}
-      <section class="techVerse_trustedPartners">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="sec_title">
+      <section className="techVerse_trustedPartners">
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="sec_title">
                 <h2
-                  class="sec_title_head color-lightBlue2"
+                  className="sec_title_head color-lightBlue2"
                   data-aos="fade-up"
                   data-aos-offset="0"
                   data-aos-duration="1000"
                 >
                   Our
-                  <span class="color-darkBlue"> TRUSTED PARTNERS</span>
+                  <span className="color-darkBlue"> TRUSTED PARTNERS</span>
                 </h2>
               </div>
             </div>
-            <div class="col-md-12">
-              <div class="row flex-nowrap gap-4 mb-3 additional_classes">
-                {/* <div class="row flex-nowrap gap-4 mb-3 additional_classes" style={{overflow-x: 'auto' , gap: '15px'}} > */}
-                <div class="marquee-container trusted-partnerContainer">
-                  <div class="marquee">
-                    <div class="trustedPartners">
-                      <div class="trustedPartner col">
+            <div className="col-md-12">
+              <div className="row flex-nowrap gap-4 mb-3 additional_classes">
+                {/* <div className="row flex-nowrap gap-4 mb-3 additional_classes" style={{overflow-x: 'auto' , gap: '15px'}} > */}
+                <div className="marquee-container trusted-partnerContainer">
+                  <div className="marquee">
+                    <div className="trustedPartners">
+                      <div className="trustedPartner col">
                         <img src={partnerImg1} alt="" />
                       </div>
-                      <div class="trustedPartner col">
+                      <div className="trustedPartner col">
                         <img src={partnerImg2} alt="" />
                       </div>
-                      <div class="trustedPartner col">
+                      <div className="trustedPartner col">
                         <img src={partnerImg3} alt="" />
                       </div>
-                      <div class="trustedPartner col">
+                      <div className="trustedPartner col">
                         <img src={partnerImg4} alt="" />
                       </div>
-                      <div class="trustedPartner col">
+                      <div className="trustedPartner col">
                         <img src={partnerImg5} alt="" />
                       </div>
-                      <div class="trustedPartner col">
+                      <div className="trustedPartner col">
                         <img src={partnerImg6} alt="" />
                       </div>
-                      <div class="trustedPartner col">
+                      <div className="trustedPartner col">
                         <img src={partnerImg7} alt="" />
                       </div>
-                      <div class="trustedPartner col">
+                      <div className="trustedPartner col">
                         <img src={partnerImg8} alt="" />
                       </div>
-                      <div class="trustedPartner col">
+                      <div className="trustedPartner col">
                         <img src={partnerImg1} alt="" />
                       </div>
-                      <div class="trustedPartner col">
+                      <div className="trustedPartner col">
                         <img src={partnerImg2} alt="" />
                       </div>
-                      <div class="trustedPartner col">
+                      <div className="trustedPartner col">
                         <img src={partnerImg3} alt="" />
                       </div>
-                      <div class="trustedPartner col">
+                      <div className="trustedPartner col">
                         <img src={partnerImg4} alt="" />
                       </div>
-                      <div class="trustedPartner col">
+                      <div className="trustedPartner col">
                         <img src={partnerImg5} alt="" />
                       </div>
-                      <div class="trustedPartner col">
+                      <div className="trustedPartner col">
                         <img src={partnerImg6} alt="" />
                       </div>
-                      <div class="trustedPartner col">
+                      <div className="trustedPartner col">
                         <img src={partnerImg7} alt="" />
                       </div>
-                      <div class="trustedPartner col">
+                      <div className="trustedPartner col">
                         <img src={partnerImg8} alt="" />
                       </div>
                     </div>
@@ -1189,56 +1190,56 @@ const Home = () => {
                 </div>
               </div>
 
-              <div class="row flex-nowrap gap-4 mb-3 additional_classes">
-                <div class="marquee-container trusted-partnerContainer">
-                  <div class="marquee1">
-                    <div class="trustedPartners">
-                      <div class="trustedPartner col">
+              <div className="row flex-nowrap gap-4 mb-3 additional_classes">
+                <div className="marquee-container trusted-partnerContainer">
+                  <div className="marquee1">
+                    <div className="trustedPartners">
+                      <div className="trustedPartner col">
                         <img src={partnerImg9} alt="" />
                       </div>
-                      <div class="trustedPartner col">
+                      <div className="trustedPartner col">
                         <img src={partnerImg10} alt="" />
                       </div>
-                      <div class="trustedPartner col">
+                      <div className="trustedPartner col">
                         <img src={partnerImg11} alt="" />
                       </div>
-                      <div class="trustedPartner col">
+                      <div className="trustedPartner col">
                         <img src={partnerImg12} alt="" />
                       </div>
-                      <div class="trustedPartner col">
+                      <div className="trustedPartner col">
                         <img src={partnerImg13} alt="" />
                       </div>
-                      <div class="trustedPartner col">
+                      <div className="trustedPartner col">
                         <img src={partnerImg14} alt="" />
                       </div>
-                      <div class="trustedPartner col">
+                      <div className="trustedPartner col">
                         <img src={partnerImg15} alt="" />
                       </div>
-                      <div class="trustedPartner col">
+                      <div className="trustedPartner col">
                         <img src={partnerImg16} alt="" />
                       </div>
-                      <div class="trustedPartner col">
+                      <div className="trustedPartner col">
                         <img src={partnerImg9} alt="" />
                       </div>
-                      <div class="trustedPartner col">
+                      <div className="trustedPartner col">
                         <img src={partnerImg10} alt="" />
                       </div>
-                      <div class="trustedPartner col">
+                      <div className="trustedPartner col">
                         <img src={partnerImg11} alt="" />
                       </div>
-                      <div class="trustedPartner col">
+                      <div className="trustedPartner col">
                         <img src={partnerImg12} alt="" />
                       </div>
-                      <div class="trustedPartner col">
+                      <div className="trustedPartner col">
                         <img src={partnerImg13} alt="" />
                       </div>
-                      <div class="trustedPartner col">
+                      <div className="trustedPartner col">
                         <img src={partnerImg14} alt="" />
                       </div>
-                      <div class="trustedPartner col">
+                      <div className="trustedPartner col">
                         <img src={partnerImg15} alt="" />
                       </div>
-                      <div class="trustedPartner col">
+                      <div className="trustedPartner col">
                         <img src={partnerImg16} alt="" />
                       </div>
                     </div>

@@ -40,22 +40,19 @@ import mediaportfolio3 from "../../asserts/images/media-portfolio-3.webp";
 import mediaportfolio4 from "../../asserts/images/media-portfolio-4.webp";
 import mediaportfolio5 from "../../asserts/images/media-portfolio-5.webp";
 import Testimonials from "../../Components/Testimonials";
-import Helmet from '../../Components/Helmet';
+import Helmet from "../../Components/Helmet";
 import mediaimg3 from "../../asserts/images/media-img-3.webp";
 gsap.registerPlugin(MotionPathPlugin);
 
 const Media = () => {
- 
- 
   Aos.init();
 
   return (
     <UserLayout>
-
-
       <Helmet
-        title="The Media & Entertainment Application Development Services "
-        description="Techverse LLC provides a perfect graphical environment and user-friendly Media & Entertainment application development services. Learn"
+        title="Serving Top IT Services For Media Industry | Techverse LLC"
+        description="At Techverse LLC, we specialize in IT services for the media industry. Trust us to deliver cutting-edge technology solutions that drive your success."
+        keywords="Media"
       />
       <HeroSection
         classheroimage={"media_bg_custom"}
@@ -75,7 +72,7 @@ const Media = () => {
           appstore: appstore,
         }}
 
-      // secondaryButtonClass="btn_with_icon btn_secondary"
+        // secondaryButtonclassName="btn_with_icon btn_secondary"
       />
       {/* <!-- Trusted Partners --> */}
 
@@ -86,7 +83,7 @@ const Media = () => {
       <Portfolio
         pinkcapsol={pinkcapsol}
         classtitle={" color-white  "}
-        newClass={"media-abt1"}
+        newclassName={"media-abt1"}
         greencube={greencube}
         donatorange={donatorange}
         classpara="color-white"
@@ -118,7 +115,7 @@ const Media = () => {
 
       {/* <!-- Real Estate App Dev --> */}
       <Development_Process
-        sportsclass={"media-img-2"}
+        sportsclassName={"media-img-2"}
         image={mediaimg2}
         title="Techverse Paves The Way For The Future Of"
         subtitle="Entertainment"
@@ -160,7 +157,7 @@ const Media = () => {
 
       <Driving_Exprience
         titleclass2="color-darkBlue"
-        titleclass="color-darkBlue"
+        titleclassName="color-darkBlue"
         title="Why Choose Our  "
         subtitle="    Media & Entertainment  "
         title2=" App Development Service  "

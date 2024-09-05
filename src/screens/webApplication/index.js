@@ -27,19 +27,16 @@ import Process from "../../Components/Process";
 import Frequentlyaskquestion from "../../Components/frequentlyaskquestion";
 import Elevateyourbusiness from "../../Components/elevateyourbusiness";
 import Testimonials from "../../Components/Testimonials";
-import Helmet from '../../Components/Helmet';
+import Helmet from "../../Components/Helmet";
 const WebApplication = () => {
   Aos.init();
 
   return (
     <UserLayout>
-      
-
-
-
       <Helmet
-        title="   Producing Functional Web Application That Boosts Business"
-        description="Online operational and functional web application develops according to the custom requirement at Techverse LLC. Expert service available!  "
+        title="Expert Custom Web App Development Services | Techverse LLC"
+        description="Trust Techverse LLC for all your custom web app development needs. Our experts will provide tailored solutions to help your business succeed online."
+        keywords="Custom Web App Development"
       />
       {/* <!-- Inner Hero --> */}
 
@@ -87,7 +84,7 @@ const WebApplication = () => {
         Joomla="Joomla"
         Magneto="Magneto"
         image={webaboutimg11}
-        webclass={"web-app-img11"}
+        webclassName={"web-app-img11"}
         bulletListItems={["WordPress", "PHP", "Shopify", "Joomla", "Magneto"]}
       />
 

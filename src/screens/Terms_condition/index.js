@@ -10,6 +10,8 @@ import "react-toastify/dist/ReactToastify.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import Helmet from "../../Components/Helmet";
+
 const Terms_condition = () => {
   useEffect(() => {
     AOS.init();
@@ -105,28 +107,34 @@ const Terms_condition = () => {
     <div>
       <Header />
 
-      <section class="inner_hero aboutUS_hero hoverEffectSec">
-        <div class="inner-bgColor"></div>
-        <div class="width-1600">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="inner_hero_content centered-text">
+      <Helmet
+        title="Read Our Terms and Conditions | Techverse LLC"
+        description="Explore the terms and conditions of Techverse LLC. Get informed about your rights and obligations when using our services. Read now for full details."
+        keywords="Terms and Conditions"
+      />
+
+      <section className="inner_hero aboutUS_hero hoverEffectSec">
+        <div className="inner-bgColor"></div>
+        <div className="width-1600">
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col-md-12">
+                <div className="inner_hero_content centered-text">
                   <h1
                     data-aos="fade-right"
                     data-aos-offset="0"
                     data-aos-duration="1000"
                   >
                     Terms
-                    <span class="color-lightBlue1"> And </span>
+                    <span className="color-lightBlue1"> And </span>
                     Conditions
                   </h1>
                   {/* <!-- <p data-aos="fade-right" data-aos-offset="0" data-aos-duration="2000">
                             At Techverse LLC, we are committed to empowering businesses and individuals with cutting-edge tech solutions that bridge the gap between innovation and everyday life. Our mission is to provide robust, scalable, and future-proof solutions that cater to our clients' diverse needs.
                         </p>
-                        <div class="icon-container-hover">
-                            <img class="center_donatOrange animation11" src="images/donat-orange.webp" alt="">
-                            <img class="center_donatBlue animation11" src="images/donat-blue.webp" alt="">
+                        <div className="icon-container-hover">
+                            <img className="center_donatOrange animation11" src="images/donat-orange.webp" alt="">
+                            <img className="center_donatBlue animation11" src="images/donat-blue.webp" alt="">
                         </div> --> */}
                 </div>
               </div>
@@ -135,19 +143,19 @@ const Terms_condition = () => {
         </div>
       </section>
 
-      <section class="terms-and-condition">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="terms_condition_content">
-                <div class="sec_title">
+      <section className="terms-and-condition">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="terms_condition_content">
+                <div className="sec_title">
                   <h2
-                    class="sec_title_head color-darkBlue"
+                    className="sec_title_head color-darkBlue"
                     data-aos="fade-up"
                     data-aos-offset="0"
                     data-aos-duration="1000"
                   >
-                    {/* <!-- <span class="color-lightBlue2"></span> --> */}
+                    {/* <!-- <span className="color-lightBlue2"></span> --> */}
                     Introduction
                   </h2>
                   <p
@@ -161,12 +169,12 @@ const Terms_condition = () => {
                     terms.
                   </p>
                   <h2
-                    class="sec_title_head color-darkBlue"
+                    className="sec_title_head color-darkBlue"
                     data-aos="fade-up"
                     data-aos-offset="0"
                     data-aos-duration="1000"
                   >
-                    Services <span class="color-lightBlue2">Offered</span>
+                    Services <span className="color-lightBlue2">Offered</span>
                   </h2>
                   <p
                     data-aos="fade-up"
@@ -177,7 +185,7 @@ const Terms_condition = () => {
                     services, including but not limited to:
                   </p>
                   <ul
-                    class="body-bullet-list"
+                    className="body-bullet-list"
                     data-aos="fade-up"
                     data-aos-offset="0"
                     data-aos-duration="2000"
@@ -191,16 +199,16 @@ const Terms_condition = () => {
                     <li>Web Application</li>
                   </ul>
                   <h2
-                    class="sec_title_head color-darkBlue"
+                    className="sec_title_head color-darkBlue"
                     data-aos="fade-up"
                     data-aos-offset="0"
                     data-aos-duration="1000"
                   >
                     Client{" "}
-                    <span class="color-lightBlue2">Responsibilities</span>
+                    <span className="color-lightBlue2">Responsibilities</span>
                   </h2>
                   <ul
-                    class="body-bullet-list"
+                    className="body-bullet-list"
                     data-aos="fade-up"
                     data-aos-offset="0"
                     data-aos-duration="2000"
@@ -211,12 +219,12 @@ const Terms_condition = () => {
                     <li>Payment as per the agreed terms and schedule</li>
                   </ul>
                   <h2
-                    class="sec_title_head color-darkBlue"
+                    className="sec_title_head color-darkBlue"
                     data-aos="fade-up"
                     data-aos-offset="0"
                     data-aos-duration="1000"
                   >
-                    Project <span class="color-lightBlue2">Initiation</span>
+                    Project <span className="color-lightBlue2">Initiation</span>
                   </h2>
                   <p
                     data-aos="fade-up"
@@ -228,7 +236,7 @@ const Terms_condition = () => {
                     scope outlined in the proposal or contract.
                   </p>
                   <h2
-                    class="sec_title_head color-darkBlue"
+                    className="sec_title_head color-darkBlue"
                     data-aos="fade-up"
                     data-aos-offset="0"
                     data-aos-duration="1000"
@@ -245,12 +253,13 @@ const Terms_condition = () => {
                     project continuity.
                   </p>
                   <h2
-                    class="sec_title_head color-darkBlue"
+                    className="sec_title_head color-darkBlue"
                     data-aos="fade-up"
                     data-aos-offset="0"
                     data-aos-duration="1000"
                   >
-                    Intellectual <span class="color-lightBlue2">Property</span>
+                    Intellectual{" "}
+                    <span className="color-lightBlue2">Property</span>
                   </h2>
                   <p
                     data-aos="fade-up"
@@ -263,7 +272,7 @@ const Terms_condition = () => {
                     contract.
                   </p>
                   <h2
-                    class="sec_title_head color-darkBlue"
+                    className="sec_title_head color-darkBlue"
                     data-aos="fade-up"
                     data-aos-offset="0"
                     data-aos-duration="1000"
@@ -280,7 +289,7 @@ const Terms_condition = () => {
                     the term of engagement.
                   </p>
                   <h2
-                    class="sec_title_head color-darkBlue"
+                    className="sec_title_head color-darkBlue"
                     data-aos="fade-up"
                     data-aos-offset="0"
                     data-aos-duration="1000"
@@ -297,7 +306,7 @@ const Terms_condition = () => {
                     arising out of or related to the services provided.
                   </p>
                   <h2
-                    class="sec_title_head color-darkBlue"
+                    className="sec_title_head color-darkBlue"
                     data-aos="fade-up"
                     data-aos-offset="0"
                     data-aos-duration="1000"
@@ -314,12 +323,12 @@ const Terms_condition = () => {
                     termination date as per the agreed terms.
                   </p>
                   <h2
-                    class="sec_title_head color-darkBlue"
+                    className="sec_title_head color-darkBlue"
                     data-aos="fade-up"
                     data-aos-offset="0"
                     data-aos-duration="1000"
                   >
-                    Governing <span class="color-lightBlue2">Law</span>
+                    Governing <span className="color-lightBlue2">Law</span>
                   </h2>
                   <p
                     data-aos="fade-up"
@@ -331,7 +340,7 @@ const Terms_condition = () => {
                     without regard to its conflict of law provisions.
                   </p>
                   <h2
-                    class="sec_title_head color-darkBlue"
+                    className="sec_title_head color-darkBlue"
                     data-aos="fade-up"
                     data-aos-offset="0"
                     data-aos-duration="1000"
@@ -349,7 +358,7 @@ const Terms_condition = () => {
                     acceptance of the amended terms.
                   </p>
                   <h2
-                    class="sec_title_head color-darkBlue"
+                    className="sec_title_head color-darkBlue"
                     data-aos="fade-up"
                     data-aos-offset="0"
                     data-aos-duration="1000"

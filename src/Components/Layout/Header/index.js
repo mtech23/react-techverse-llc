@@ -123,13 +123,13 @@ export const Header = (props) => {
   console.log("naveshow", naveshow);
 
   return (
-    <section class="techVerse_navbar">
-      <nav class="navbar navbar-expand-lg">
-        <Link class="navbar-brand techVerse_logo" to={"/"}>
+    <section className="techVerse_navbar">
+      <nav className="navbar navbar-expand-lg">
+        <Link className="navbar-brand techVerse_logo" to={"/"}>
           <img src={logo} alt="" />
         </Link>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarNavDropdown"
@@ -137,38 +137,38 @@ export const Header = (props) => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          {/* <!-- <span class="navbar-toggler-icon"></span> --> */}
-          <i class="fa-solid fa-bars"></i>
+          {/* <!-- <span className="navbar-toggler-icon"></span> --> */}
+          <i className="fa-solid fa-bars"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <Link class="nav-link" to={"/about-us"}>
+        <div className="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item">
+              <Link className="nav-link" to={"/about-us"}>
                 About Us
               </Link>
             </li>
-            <li class="nav-item dropdown ">
+            <li className="nav-item dropdown ">
               <Link
                 type="button"
                 onClick={handleclick}
-                class="nav-link dropdown-toggle"
+                className="nav-link dropdown-toggle"
               >
                 Services
               </Link>
-              <div class="" aria-labelledby="navbarDropdown"></div>
+              <div className="" aria-labelledby="navbarDropdown"></div>
             </li>
-            <li class="nav-item dropdown">
+            <li className="nav-item dropdown">
               <Link
                 onClick={handleindustriea}
                 type="button"
-                class="nav-link dropdown-toggle"
+                className="nav-link dropdown-toggle"
               >
                 Industries
               </Link>
-              <div class="" aria-labelledby="navbarDropdown"></div>
+              <div className="" aria-labelledby="navbarDropdown"></div>
             </li>
-            <li class="nav-item">
-              <Link class="nav-link" to={"/case-study"}>
+            <li className="nav-item">
+              <Link className="nav-link" to={"/case-study"}>
                 Case study
               </Link>
             </li>
@@ -178,18 +178,18 @@ export const Header = (props) => {
               </a>
             </li>
 
-            <li class="nav-item">
-              <Link class="nav-link" to={"/contact"}>
+            <li className="nav-item">
+              <Link className="nav-link" to={"/contact"}>
                 Contact
               </Link>
             </li>
 
-            <li class="nav-item icon_list_item">
-              <Link to="/" class="nav-link">
-                <span class="icon_list_icon">
-                  <i class="fa-solid fa-envelope"></i>
+            <li className="nav-item icon_list_item">
+              <Link to="/" className="nav-link">
+                <span className="icon_list_icon">
+                  <i className="fa-solid fa-envelope"></i>
                 </span>
-                <span class="icon_list_text"> info@techversellc.com </span>
+                <span className="icon_list_text"> info@techversellc.com </span>
               </Link>
             </li>
           </ul>
@@ -197,19 +197,19 @@ export const Header = (props) => {
       </nav>
 
       {naveshow === true && (
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-xl-9 col-md-8 customDropdown_leftCol">
-              <div class="customDropdown_left">
-                <div class="dropdown_head">
-                  <div class="row align-items-center">
-                    <div class="col-lg-3 col-md-12">
-                      <div class="dropdown_title">
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-xl-9 col-md-8 customDropdown_leftCol">
+              <div className="customDropdown_left">
+                <div className="dropdown_head">
+                  <div className="row align-items-center">
+                    <div className="col-lg-3 col-md-12">
+                      <div className="dropdown_title">
                         <h3>Services</h3>
                       </div>
                     </div>
-                    <div class="col-lg-9 col-md-12">
-                      <div class="dropdown_desc">
+                    <div className="col-lg-9 col-md-12">
+                      <div className="dropdown_desc">
                         <p>
                           Leading to the next-gen digital solutions that help
                           businesses to fulfill their needs in the digital era.
@@ -219,12 +219,12 @@ export const Header = (props) => {
                   </div>
                 </div>
 
-                <div class="dropdown_content">
-                  <div class="row">
-                    <div class="col-md-6 col-xl-4">
-                      <ul class="custom_dropdown_list">
+                <div className="dropdown_content">
+                  <div className="row">
+                    <div className="col-md-6 col-xl-4">
+                      <ul className="custom_dropdown_list">
                         <li>
-                          <div class="dropdown_linkBox">
+                          <div className="dropdown_linkBox">
                             <Link to={"/mobile-app"}>
                               <h4>Mobile Application Development</h4>
                             </Link>
@@ -232,7 +232,7 @@ export const Header = (props) => {
                           </div>
                         </li>
                         <li>
-                          <div class="dropdown_linkBox">
+                          <div className="dropdown_linkBox">
                             <Link to={"/ecommerse-development"}>
                               <h4>E-Commerce Development</h4>
                             </Link>
@@ -240,7 +240,7 @@ export const Header = (props) => {
                           </div>
                         </li>
                         <li>
-                          <div class="dropdown_linkBox">
+                          <div className="dropdown_linkBox">
                             <Link to={"/app-store"}>
                               <h4>App Store</h4>
                             </Link>
@@ -248,7 +248,7 @@ export const Header = (props) => {
                           </div>
                         </li>
                         <li>
-                          <div class="dropdown_linkBox">
+                          <div className="dropdown_linkBox">
                             <Link to={"/business-devlopment"}>
                               <h4>Business Development</h4>
                             </Link>
@@ -257,10 +257,10 @@ export const Header = (props) => {
                         </li>
                       </ul>
                     </div>
-                    <div class="col-md-6 col-xl-4">
-                      <ul class="custom_dropdown_list">
+                    <div className="col-md-6 col-xl-4">
+                      <ul className="custom_dropdown_list">
                         <li>
-                          <div class="dropdown_linkBox">
+                          <div className="dropdown_linkBox">
                             <Link to={"/web-development"}>
                               <h4>Web Development</h4>
                             </Link>
@@ -268,7 +268,7 @@ export const Header = (props) => {
                           </div>
                         </li>
                         <li>
-                          <div class="dropdown_linkBox">
+                          <div className="dropdown_linkBox">
                             <Link to={"/digital-marketing"}>
                               <h4>Digital Marketing</h4>
                             </Link>
@@ -276,13 +276,13 @@ export const Header = (props) => {
                           </div>
                         </li>
                         <li>
-                          <div class="dropdown_linkBox">
+                          <div className="dropdown_linkBox">
                             <Link to={"/web-application"}>
                               <h4>Web Application</h4>
                             </Link>
                             <p>Web Application</p>
                           </div>
-                          <div class="dropdown_linkBox">
+                          <div className="dropdown_linkBox">
                             <Link to={"/Devops"}>
                               <h4>DevOps</h4>
                             </Link>
@@ -291,16 +291,36 @@ export const Header = (props) => {
                         </li>
                       </ul>
                     </div>
+                    <div className="col-md-6 col-xl-4">
+                      <ul className="custom_dropdown_list">
+                        <li>
+                          <div className="dropdown_linkBox">
+                            <Link to={"/out-sourcing"}>
+                              <h4>Out Source</h4>
+                            </Link>
+                            <p>Out Source</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div className="dropdown_linkBox">
+                            <Link to={"/branding"}>
+                              <h4>Branding</h4>
+                            </Link>
+                            <p>Branding</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-xl-3 col-md-4 custom_dropdown_sidebar">
-              <div class="">
-                <h3 class="custom_dropdown_sidebarTitle">How We Work?</h3>
-                <ul class="custom_dropdown_list">
+            <div className="col-xl-3 col-md-4 custom_dropdown_sidebar">
+              <div className="">
+                <h3 className="custom_dropdown_sidebarTitle">How We Work?</h3>
+                <ul className="custom_dropdown_list">
                   <li>
-                    <div class="dropdown_linkBox">
+                    <div className="dropdown_linkBox">
                       <Link to={"/"}>
                         <h4>Design</h4>
                       </Link>
@@ -308,7 +328,7 @@ export const Header = (props) => {
                     </div>
                   </li>
                   <li>
-                    <div class="dropdown_linkBox">
+                    <div className="dropdown_linkBox">
                       <Link to={"/"}>
                         <h4>Development</h4>
                       </Link>
@@ -316,7 +336,7 @@ export const Header = (props) => {
                     </div>
                   </li>
                   <li>
-                    <div class="dropdown_linkBox">
+                    <div className="dropdown_linkBox">
                       <Link to={"/"}>
                         <h4>Testing</h4>
                       </Link>
@@ -324,7 +344,7 @@ export const Header = (props) => {
                     </div>
                   </li>
                   <li>
-                    <div class="dropdown_linkBox">
+                    <div className="dropdown_linkBox">
                       <Link to={"/"}>
                         <h4>Deployment</h4>
                       </Link>
@@ -338,19 +358,19 @@ export const Header = (props) => {
         </div>
       )}
       {industries === true && (
-        <div class="container-fluid ">
-          <div class="row">
-            <div class="col-xl-9 col-md-8 customDropdown_leftCol">
-              <div class="customDropdown_left">
-                <div class="dropdown_head">
-                  <div class="row align-items-center">
-                    <div class="col-lg-3 col-md-12">
-                      <div class="dropdown_title">
+        <div className="container-fluid ">
+          <div className="row">
+            <div className="col-xl-9 col-md-8 customDropdown_leftCol">
+              <div className="customDropdown_left">
+                <div className="dropdown_head">
+                  <div className="row align-items-center">
+                    <div className="col-lg-3 col-md-12">
+                      <div className="dropdown_title">
                         <h3>Industries</h3>
                       </div>
                     </div>
-                    <div class="col-lg-9 col-md-12">
-                      <div class="dropdown_desc">
+                    <div className="col-lg-9 col-md-12">
+                      <div className="dropdown_desc">
                         <p>
                           We have been successfully delivering the finest mobile
                           applications and eCommerce solutions for clients
@@ -361,12 +381,12 @@ export const Header = (props) => {
                   </div>
                 </div>
 
-                <div class="dropdown_content">
-                  <div class="row">
-                    <div class="col-md-6 col-xl-4">
-                      <ul class="custom_dropdown_list">
+                <div className="dropdown_content">
+                  <div className="row">
+                    <div className="col-md-6 col-xl-4">
+                      <ul className="custom_dropdown_list">
                         <li>
-                          <div class="dropdown_linkBox">
+                          <div className="dropdown_linkBox">
                             <Link to={"/realEstate-and-property"}>
                               <h4>Real Estate & Property </h4>
                             </Link>
@@ -374,7 +394,7 @@ export const Header = (props) => {
                           </div>
                         </li>
                         <li>
-                          <div class="dropdown_linkBox">
+                          <div className="dropdown_linkBox">
                             <Link to={"/automotive"}>
                               <h4>Automotive and Transport </h4>
                             </Link>
@@ -382,7 +402,7 @@ export const Header = (props) => {
                           </div>
                         </li>
                         <li>
-                          <div class="dropdown_linkBox">
+                          <div className="dropdown_linkBox">
                             <Link to={"/ecommerse"}>
                               <h4>E-commerce & Retails </h4>
                               <p>Revolutionized Apps for Retail.</p>
@@ -390,7 +410,7 @@ export const Header = (props) => {
                           </div>
                         </li>
                         <li>
-                          <div class="dropdown_linkBox">
+                          <div className="dropdown_linkBox">
                             <Link to={"/"}>
                               <h4>Advertising </h4>
                             </Link>
@@ -399,10 +419,10 @@ export const Header = (props) => {
                         </li>
                       </ul>
                     </div>
-                    <div class="col-md-6 col-xl-4">
-                      <ul class="custom_dropdown_list">
+                    <div className="col-md-6 col-xl-4">
+                      <ul className="custom_dropdown_list">
                         <li>
-                          <div class="dropdown_linkBox">
+                          <div className="dropdown_linkBox">
                             <Link to={"/education-hr"}>
                               <h4>Education & HR </h4>
                             </Link>
@@ -410,7 +430,7 @@ export const Header = (props) => {
                           </div>
                         </li>
                         <li>
-                          <div class="dropdown_linkBox">
+                          <div className="dropdown_linkBox">
                             <Link to={"/health-care"}>
                               <h4>Health and Life Sciences</h4>
                             </Link>
@@ -418,7 +438,7 @@ export const Header = (props) => {
                           </div>
                         </li>
                         <li>
-                          <div class="dropdown_linkBox">
+                          <div className="dropdown_linkBox">
                             <Link to={"/"}>
                               <h4>Software & High Tech</h4>
                             </Link>
@@ -426,7 +446,7 @@ export const Header = (props) => {
                           </div>
                         </li>
                         <li>
-                          <div class="dropdown_linkBox">
+                          <div className="dropdown_linkBox">
                             <Link to={"/finance"}>
                               <h4>Finance</h4>
                             </Link>
@@ -435,10 +455,10 @@ export const Header = (props) => {
                         </li>
                       </ul>
                     </div>
-                    <div class="col-md-6 col-xl-4">
-                      <ul class="custom_dropdown_list">
+                    <div className="col-md-6 col-xl-4">
+                      <ul className="custom_dropdown_list">
                         <li>
-                          <div class="dropdown_linkBox">
+                          <div className="dropdown_linkBox">
                             <Link to={"/media"}>
                               <h4>Media & Entertainment </h4>
                             </Link>
@@ -446,7 +466,7 @@ export const Header = (props) => {
                           </div>
                         </li>
                         <li>
-                          <div class="dropdown_linkBox">
+                          <div className="dropdown_linkBox">
                             <Link to={"/sports"}>
                               <h4>Sports Teams & Leagues </h4>
                             </Link>
@@ -454,7 +474,7 @@ export const Header = (props) => {
                           </div>
                         </li>
                         <li>
-                          <div class="dropdown_linkBox">
+                          <div className="dropdown_linkBox">
                             <Link to={"/travel"}>
                               <h4>Travel & Hospitality</h4>
                             </Link>
@@ -467,12 +487,12 @@ export const Header = (props) => {
                 </div>
               </div>
             </div>
-            <div class="col-xl-3 col-md-4 custom_dropdown_sidebar">
-              <div class="">
-                <h3 class="custom_dropdown_sidebarTitle">Core Solutions</h3>
-                <ul class="custom_dropdown_list">
+            <div className="col-xl-3 col-md-4 custom_dropdown_sidebar">
+              <div className="">
+                <h3 className="custom_dropdown_sidebarTitle">Core Solutions</h3>
+                <ul className="custom_dropdown_list">
                   <li>
-                    <div class="dropdown_linkBox">
+                    <div className="dropdown_linkBox">
                       <Link to={"/"}>
                         <h4>E-Commerce Solution</h4>
                       </Link>
@@ -480,7 +500,7 @@ export const Header = (props) => {
                     </div>
                   </li>
                   <li>
-                    <div class="dropdown_linkBox">
+                    <div className="dropdown_linkBox">
                       <Link to={"/"}>
                         <h4>Booking App</h4>
                       </Link>
@@ -488,7 +508,7 @@ export const Header = (props) => {
                     </div>
                   </li>
                   <li>
-                    <div class="dropdown_linkBox">
+                    <div className="dropdown_linkBox">
                       <Link to={"/"}>
                         <h4>On Demand Delivery</h4>
                       </Link>
@@ -496,7 +516,7 @@ export const Header = (props) => {
                     </div>
                   </li>
                   <li>
-                    <div class="dropdown_linkBox">
+                    <div className="dropdown_linkBox">
                       <Link to={"/"}>
                         <h4>Restaurant Management</h4>
                       </Link>
@@ -504,7 +524,7 @@ export const Header = (props) => {
                     </div>
                   </li>
                   <li>
-                    <div class="dropdown_linkBox">
+                    <div className="dropdown_linkBox">
                       <Link to={"/"}>
                         <h4>Real Estate</h4>
                       </Link>

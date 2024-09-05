@@ -1,4 +1,3 @@
- 
 import { UserLayout } from "../../Components/Layout/UserLayout";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { gsap } from "gsap";
@@ -27,7 +26,7 @@ import chaticon from "../../asserts/images/chat-icon.webp";
 import digitalmarketinghero from "../../asserts/images/digital-marketing-hero.webp";
 import digitalmarketing01 from "../../asserts/images/digital-marketing-01.webp";
 import digitalmarketing02 from "../../asserts/images/digital-marketing-02.webp";
-import Helmet from '../../Components/Helmet'
+import Helmet from "../../Components/Helmet";
 gsap.registerPlugin(MotionPathPlugin);
 
 const Devops = () => {
@@ -35,11 +34,10 @@ const Devops = () => {
 
   return (
     <UserLayout>
-  
-
       <Helmet
-        title="  Techverse LLC Digital Marketing Like an Army to Reach Goals"
-        description="Digital Marketing that can change business position with new customers every day. Techverse LLC skills in digital marketing are remarkable! "
+        title="Expert DevOps Solutions in California, USA | Techverse LLC"
+        description="Get expert DevOps solutions in California from Techverse LLC. Elevate your business efficiency and innovation with our dedicated services and support."
+        keywords="Devops"
       />
       <HeroSection
         innerbgclass={"inner-bgColor"}
@@ -48,7 +46,6 @@ const Devops = () => {
         title2={"with Expert Dev"}
         subtitle2={"Ops"}
         title3={"Solutions "}
-       
         tagline={
           "Grow your business’s online presence and witness an increase in conversions with Techverse."
         }
@@ -74,7 +71,7 @@ const Devops = () => {
 
       {/* <!-- About Sec --> */}
 
-      <Aboutsection 
+      <Aboutsection
         classSpace="devOps_sec1"
         pinkcapsol={pinkcapsol}
         greencube={greencube}
@@ -93,7 +90,7 @@ const Devops = () => {
         //   chatenow: "Chat Now",
         //   secondaryButtonClass: "btn_with_icon btn_secondary  ",
         // }}
-        // abtImgClass="img_abt_devops"
+        // abtImgclassName="img_abt_devops"
         image={devopsabt}
         bulletListItems={[
           "10+ Years of Experience",
@@ -105,7 +102,6 @@ const Devops = () => {
       />
 
       <Portfolio
-
         pinkcapsol={pinkcapsol}
         greencube={greencube}
         donatorange={donatorange}
@@ -118,7 +114,7 @@ const Devops = () => {
         portfolioimg="portfolio_img"
         chaticon={chaticon}
         phoneicon={phoneicon}
-        newClass="devOps_sec2"
+        newclassName="devOps_sec2"
       />
 
       {/* MOBILE APP */}
@@ -133,7 +129,6 @@ const Devops = () => {
 
       {/* Testimonials */}
       <Testimonials />
-
 
       {/* FAQ section */}
 

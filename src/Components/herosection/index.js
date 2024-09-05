@@ -11,29 +11,28 @@ const HeroSection = (props) => {
   const { CtnbuttonComponent, ctnButtonProps } = props;
   return (
     <div>
-      <section class="inner_hero">
-        <div class={props?.classheroimage}></div>
+      <section className="inner_hero">
+        <div className={props?.classheroimage}></div>
         {/* <div className=' '> */}
         {/* width-1600 */}
-        <div class={props.innerbgclass}></div>
+        <div className={props.innerbgclass}></div>
         <div className="width-1600 ">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="inner_hero_content">
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col-md-6">
+                <div className="inner_hero_content">
                   <h1
                     data-aos="fade-right"
                     data-aos-offset="0"
                     data-aos-duration="1000"
                   >
                     {props?.title}
-                    <span class="color-lightBlue1">
+                    <span className="color-lightBlue1">
                       {" "}
                       {props?.subtitle}
                     </span>{" "}
                     {props?.title2}
-                    <span class="color-lightBlue1">
-                    
+                    <span className="color-lightBlue1">
                       {props?.subtitle2}
                     </span>{" "}
                     {props?.title3}
@@ -46,20 +45,20 @@ const HeroSection = (props) => {
                   >
                     {props?.tagline}{" "}
                   </p>
-                  <div class="hero_social-icons">
-                    <a href="#" class="hero_social-icon">
+                  <div className="hero_social-icons">
+                    <a href="#" className="hero_social-icon">
                       <img src={androidiconw} alt="" />
                     </a>
-                    <a href="#" class="hero_social-icon">
+                    <a href="#" className="hero_social-icon">
                       <img src={angularicon} alt="" />
                     </a>
-                    <a href="#" class="hero_social-icon">
+                    <a href="#" className="hero_social-icon">
                       <img src={appleicon} alt="" />
                     </a>
-                    <a href="#" class="hero_social-icon">
+                    <a href="#" className="hero_social-icon">
                       <img src={fluttericon} alt="" />
                     </a>
-                    <a href="#" class="hero_social-icon">
+                    <a href="#" className="hero_social-icon">
                       <img src={reacticon} alt="" />
                     </a>
                   </div>
@@ -69,8 +68,8 @@ const HeroSection = (props) => {
                   )}
                 </div>
               </div>
-              <div class="col-md-6 inner-hero_rightCol">
-                <div class="inner_hero_img">
+              <div className="col-md-6 inner-hero_rightCol">
+                <div className="inner_hero_img">
                   <img
                     className={props?.className}
                     src={props?.heroimage}

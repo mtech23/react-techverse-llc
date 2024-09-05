@@ -49,42 +49,42 @@ const Aboutsection = (props) => {
   return (
     <div ref={sectionRef}>
       <section
-        class={`techVerse_about techVerse_aboutServices1 ${props?.classSpace}`}
+        className={`techVerse_about techVerse_aboutServices1 ${props?.classSpace}`}
         id="particles-js1"
       >
         <div className=" inner_images">
           <img
-            class="techVerse_about_icon1 animation11"
+            className="techVerse_about_icon1 animation11"
             src={props?.pinkcapsol}
             alt=""
           />
 
           <img
-            class="techVerse_about_icon3 animation11"
+            className="techVerse_about_icon3 animation11"
             src={props?.greencube}
             alt=""
           />
           <img
-            class="techVerse_about_icon4 animation11"
+            className="techVerse_about_icon4 animation11"
             src={props?.donatorange}
             alt=""
           />
         </div>
-        <div class="techVerse_aboutContent techVerse_aboutContentServices1 width-1600">
+        <div className="techVerse_aboutContent techVerse_aboutContentServices1 width-1600">
           <div className=" ">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="techVerse_about_content services-abbout1">
-                    <div class="sec_title">
+            <div className="container-fluid">
+              <div className="row">
+                <div className="col-md-6">
+                  <div className="techVerse_about_content services-abbout1">
+                    <div className="sec_title">
                       <h2
-                        class="sec_title_head color-darkBlue"
+                        className="sec_title_head color-darkBlue"
                         data-aos="fade-up"
                         data-aos-offset="0"
                         data-aos-duration="1000"
                       >
                         {props?.title}
-                        <span class="color-lightBlue2">
+                        <span className="color-lightBlue2">
                           {" "}
                           {props?.subtitle}
                         </span>{" "}
@@ -140,13 +140,13 @@ const Aboutsection = (props) => {
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="techVerse_about_img">
-                    <div class="techVerse_about_laptop_img">
+                <div className="col-md-6">
+                  <div className="techVerse_about_img">
+                    <div className="techVerse_about_laptop_img">
                       <img
                         src={props?.image}
-                        // class="about-laptopImg business-devlopmentImg"
-                        class={`about-laptopImg business-devlopmentImg ${props?.abtImgClass}`}
+                        // className="about-laptopImg business-devlopmentImg"
+                        className={`about-laptopImg business-devlopmentImg ${props?.abtImgClass}`}
                         data-aos="fade-right"
                         data-aos-offset="0"
                         data-aos-duration="1000"

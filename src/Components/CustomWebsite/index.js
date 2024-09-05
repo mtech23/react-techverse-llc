@@ -7,43 +7,43 @@ import aboutimg2 from "../../asserts/images/about-img2.webp";
 const Custom_website = () => {
   return (
     <div>
-      <section class="techVerse_about techVerse_aboutServices2 hoverEffectSec column-reverse-991">
-        <div class="icon-container-hover">
+      <section className="techVerse_about techVerse_aboutServices2 hoverEffectSec column-reverse-991">
+        <div className="icon-container-hover">
           <img
-            class="techVerse_about_icon1 animation11"
+            className="techVerse_about_icon1 animation11"
             src={pinkcapsol}
             alt=""
           />
           {/* <!-- <img
-            class="techVerse_about_icon2 animation33"
+            className="techVerse_about_icon2 animation33"
             src="images/Pill.webp"
             alt=""
           /> --> */}
           <img
-            class="techVerse_about_icon3 animation11"
+            className="techVerse_about_icon3 animation11"
             src={greencube}
             alt=""
           />
           <img
-            class="techVerse_about_icon4 animation11"
+            className="techVerse_about_icon4 animation11"
             src={donatorange}
             alt=""
           />
         </div>
-        <div class="techVerse_aboutContent techVerse_aboutContentServices2 customer_gratification width-1600">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="techVerse_about_content services-abbout2">
-                  <div class="sec_title">
+        <div className="techVerse_aboutContent techVerse_aboutContentServices2 customer_gratification width-1600">
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col-lg-6">
+                <div className="techVerse_about_content services-abbout2">
+                  <div className="sec_title">
                     <h2
-                      class="sec_title_head color-darkBlue"
+                      className="sec_title_head color-darkBlue"
                       data-aos="fade-up"
                       data-aos-offset="0"
                       data-aos-duration="1000"
                     >
                       Customer
-                      <span class="color-lightBlue2">Gratification</span>
+                      <span className="color-lightBlue2">Gratification</span>
                     </h2>
                     <p
                       data-aos="fade-up"
@@ -58,12 +58,12 @@ const Custom_website = () => {
                       partnerships.
                     </p>
                     <h2
-                      class="sec_title_head color-darkBlue"
+                      className="sec_title_head color-darkBlue"
                       data-aos="fade-up"
                       data-aos-offset="0"
                       data-aos-duration="1000"
                     >
-                      <span class="color-lightBlue2">Innovation</span> &
+                      <span className="color-lightBlue2">Innovation</span> &
                       Creativity
                     </h2>
                     <p
@@ -82,12 +82,12 @@ const Custom_website = () => {
                       innovation and creativity into every project we undertake.
                     </p>
                     <h2
-                      class="sec_title_head color-darkBlue"
+                      className="sec_title_head color-darkBlue"
                       data-aos="fade-up"
                       data-aos-offset="0"
                       data-aos-duration="1000"
                     >
-                      Mission &<span class="color-lightBlue2">Vision</span>
+                      Mission &<span className="color-lightBlue2">Vision</span>
                     </h2>
                     <p
                       data-aos="fade-up"
@@ -108,12 +108,12 @@ const Custom_website = () => {
                   </div>
                 </div>
               </div>
-              <div class="col-lg-6">
-                <div class="techVerse_about_img">
-                  <div class="techVerse_about_laptop_img">
+              <div className="col-lg-6">
+                <div className="techVerse_about_img">
+                  <div className="techVerse_about_laptop_img">
                     <img
                       src={aboutimg2}
-                      class="about-laptopImg about-page-img2"
+                      className="about-laptopImg about-page-img2"
                       data-aos="fade-right"
                       data-aos-offset="0"
                       data-aos-duration="1000"

@@ -3,7 +3,7 @@ import "./style.css";
 import { UserLayout } from "../../Components/Layout/UserLayout";
 import phoneicon from "../../asserts/images/phone-icon.webp";
 import chaticon from "../../asserts/images/chat-icon.webp";
- import Helmet from '../../Components/Helmet'
+import Helmet from "../../Components/Helmet";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { gsap } from "gsap";
 import TrustedPartners from "../../Components/TrustedPartners";
@@ -23,6 +23,7 @@ import Frequentlyaskquestion from "../../Components/frequentlyaskquestion";
 import Elevateyourbusiness from "../../Components/elevateyourbusiness";
 import Ecommercedevelopmenthero from "../../asserts/images/Ecommerce-development-hero.webp";
 import Testimonials from "../../Components/Testimonials";
+import Packages from "../../Components/Packages";
 
 gsap.registerPlugin(MotionPathPlugin);
 const EcommerseDevelopment = () => {
@@ -72,13 +73,10 @@ const EcommerseDevelopment = () => {
 
   return (
     <UserLayout>
-   
-
-
-
       <Helmet
-        title="  eCommerce Development with Remarkable ROI at Techverse LLC"
-        description="Techverse LLC brings excellent eCommerce development services at a very affordable rate. A great option for startups with low-cost budgets. "
+        title="Best eCommerce Development Services in USA | Techverse LLC"
+        description="Looking for the best eCommerce development services in USA? Techverse LLC offers expert solutions for your online business needs. Visit our website now!"
+        keywords="eCommerce Development Services"
       />
       <HeroSection
         innerbgclass={"inner-bgColor"}
@@ -128,7 +126,7 @@ const EcommerseDevelopment = () => {
         title2="Our Seamless E-Commerce Solutions.  "
         para="Our expert team customizes every aspect of your website, from intuitive user interfaces to robust backend systems, ensuring seamless functionality and enhanced customer experiences. Whether you're launching a new venture or upgrading an existing platform, trust Techverse LLC to deliver scalable, secure, and visually stunning E-Commerce websites that maximize conversions and propel your business forward in the digital age."
         image={ecommerceabout1}
-        abtImgClass="ecom-dev-img-1"
+        abtImgclassName="ecom-dev-img-1"
       />
 
       {/* MOBILE APP */}
@@ -137,42 +135,42 @@ const EcommerseDevelopment = () => {
 
       {/* Revamp Your Online Presence Section*/}
       <div ref={sectionRef}>
-        <section class="techVerse_about techVerse_aboutServices2 revEcomDevHover hoverEffectSec">
-          <div class="icon-container-hover revEcomDevIconContainer">
+        <section className="techVerse_about techVerse_aboutServices2 revEcomDevHover hoverEffectSec">
+          <div className="icon-container-hover revEcomDevIconContainer">
             <img
-              class="techVerse_about_icon1 animation11"
+              className="techVerse_about_icon1 animation11"
               src={pinkcapsol}
               alt=""
             />
             {/* <!-- <img
-          class="techVerse_about_icon2 animation33"
+          className="techVerse_about_icon2 animation33"
           src="images/Pill.webp"
           alt=""
         /> --> */}
             <img
-              class="techVerse_about_icon3 animation11"
+              className="techVerse_about_icon3 animation11"
               src={greencube}
               alt=""
             />
             <img
-              class="techVerse_about_icon4 animation11"
+              className="techVerse_about_icon4 animation11"
               src={donatorange}
               alt=""
             />
           </div>
-          <div class="techVerse_aboutContent techVerse_aboutContentServices2 width-1600">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="sec_title buildStore_sec_title">
+          <div className="techVerse_aboutContent techVerse_aboutContentServices2 width-1600">
+            <div className="container-fluid">
+              <div className="row">
+                <div className="col-md-12">
+                  <div className="sec_title buildStore_sec_title">
                     <h2
-                      class="sec_title_head color-lightBlue2"
+                      className="sec_title_head color-lightBlue2"
                       data-aos="fade-up"
                       data-aos-offset="0"
                       data-aos-duration="1000"
                     >
                       Revamp Your Online Presence
-                      <span class="color-darkBlue"> With </span> Creative
+                      <span className="color-darkBlue"> With </span> Creative
                       E-Commerce Solutions
                     </h2>
                     <p
@@ -193,12 +191,12 @@ const EcommerseDevelopment = () => {
                     </p>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="techVerse_about_img">
-                    <div class="techVerse_about_laptop_img">
+                <div className="col-md-6">
+                  <div className="techVerse_about_img">
+                    <div className="techVerse_about_laptop_img">
                       <img
                         src={ecommerceimg01}
-                        class="build-store-img"
+                        className="build-store-img"
                         data-aos="fade-right"
                         data-aos-offset="0"
                         data-aos-duration="1000"
@@ -206,16 +204,16 @@ const EcommerseDevelopment = () => {
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="techVerse_about_content services-abbout2">
-                    <div class="sec_title">
+                <div className="col-md-6">
+                  <div className="techVerse_about_content services-abbout2">
+                    <div className="sec_title">
                       <h2
-                        class="sec_title_head color-darkBlue"
+                        className="sec_title_head color-darkBlue"
                         data-aos="fade-up"
                         data-aos-offset="0"
                         data-aos-duration="1000"
                       >
-                        <span class="color-lightBlue2"> Shopify </span>
+                        <span className="color-lightBlue2"> Shopify </span>
                       </h2>
                       <p
                         data-aos="fade-up"
@@ -231,12 +229,12 @@ const EcommerseDevelopment = () => {
                         apart in the competitive e-commerce landscape.
                       </p>
                       <h2
-                        class="sec_title_head color-darkBlue"
+                        className="sec_title_head color-darkBlue"
                         data-aos="fade-up"
                         data-aos-offset="0"
                         data-aos-duration="1000"
                       >
-                        <span class="color-lightBlue2"> WooCommerce </span>
+                        <span className="color-lightBlue2"> WooCommerce </span>
                       </h2>
                       <p
                         data-aos="fade-up"
@@ -254,12 +252,12 @@ const EcommerseDevelopment = () => {
                         optimized for success.
                       </p>
                       <h2
-                        class="sec_title_head color-darkBlue"
+                        className="sec_title_head color-darkBlue"
                         data-aos="fade-up"
                         data-aos-offset="0"
                         data-aos-duration="1000"
                       >
-                        <span class="color-lightBlue2"> Magento </span>
+                        <span className="color-lightBlue2"> Magento </span>
                       </h2>
                       <p
                         data-aos="fade-up"
@@ -283,6 +281,7 @@ const EcommerseDevelopment = () => {
         </section>
       </div>
 
+      <Packages />
       {/* process we use */}
 
       <Process para="We specialize in transforming your business vision into a robust online presence through our streamlined E-Commerce Development process. We make creativity, technical expertise, and strategic insights to provide personalized services according to your unique business needs and goals." />

@@ -1,4 +1,3 @@
- 
 import { UserLayout } from "../../Components/Layout/UserLayout";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { gsap } from "gsap";
@@ -21,7 +20,7 @@ import TechnologiesUse from "../../Components/technologiesuse";
 import Testimonials from "../../Components/Testimonials";
 import Frequentlyaskquestion from "../../Components/frequentlyaskquestion";
 import TrustedPartners from "../../Components/TrustedPartners";
- 
+
 import Helmet from "../../Components/Helmet";
 gsap.registerPlugin(MotionPathPlugin);
 
@@ -31,10 +30,11 @@ const App_store = () => {
   return (
     <UserLayout>
       <Helmet
-        title="Techverse LLC Capable to Offer a Complete App Store Services"
-        description="App Store services in order to initiate business optimization stronger. Techverse LLC enforces the technical abilities to reform business."
+        title="Top App Store Optimization Services in CA, USA | Techverse LLC"
+        description="Boost your app's visibility with expert App Store Optimization services in CA, USA from Techverse LLC. Maximize your app's potential now with our expert team."
+        keywords="App Store Optimization Services"
       />
-   
+
       <HeroSection
         innerbgclass={"inner-bgColor"}
         title={"Innovate Today"}

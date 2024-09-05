@@ -10,6 +10,8 @@ import "react-toastify/dist/ReactToastify.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import Helmet from "../../Components/Helmet";
+
 const Privacy_Policy = () => {
   useEffect(() => {
     AOS.init();
@@ -105,20 +107,26 @@ const Privacy_Policy = () => {
     <div>
       <Header />
 
-      <section class="inner_hero aboutUS_hero hoverEffectSec">
-        <div class="inner-bgColor"></div>
-        <div class="width-1600">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="inner_hero_content centered-text">
+      <Helmet
+        title="Our Privacy Policy Safeguards Your Information | Techverse LLC"
+        description="Learn about Techverse LLC's privacy policy. We are dedicated to safeguarding your information and ensuring your data remains confidential and secure."
+        keywords="Privacy Policy"
+      />
+
+      <section className="inner_hero aboutUS_hero hoverEffectSec">
+        <div className="inner-bgColor"></div>
+        <div className="width-1600">
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col-md-12">
+                <div className="inner_hero_content centered-text">
                   <h1
                     data-aos="fade-right"
                     data-aos-offset="0"
                     data-aos-duration="1000"
                   >
                     Privacy
-                    <span class="color-lightBlue1">Policy</span>
+                    <span className="color-lightBlue1">Policy</span>
                   </h1>
                 </div>
               </div>
@@ -127,19 +135,19 @@ const Privacy_Policy = () => {
         </div>
       </section>
 
-      <section class="terms-and-condition">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="terms_condition_content">
-                <div class="sec_title">
+      <section className="terms-and-condition">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="terms_condition_content">
+                <div className="sec_title">
                   <h2
-                    class="sec_title_head color-darkBlue"
+                    className="sec_title_head color-darkBlue"
                     data-aos="fade-up"
                     data-aos-offset="0"
                     data-aos-duration="1000"
                   >
-                    {/* <!-- <span class="color-lightBlue2"></span> -->Introduction */}
+                    {/* <!-- <span className="color-lightBlue2"></span> -->Introduction */}
                     Introduction
                   </h2>
                   <p
@@ -156,17 +164,17 @@ const Privacy_Policy = () => {
                     treat it.
                   </p>
                   <h2
-                    class="sec_title_head color-darkBlue"
+                    className="sec_title_head color-darkBlue"
                     data-aos="fade-up"
                     data-aos-offset="0"
                     data-aos-duration="1000"
                   >
                     2. Information We{" "}
-                    <span class="color-lightBlue2">Collect</span>
+                    <span className="color-lightBlue2">Collect</span>
                   </h2>
 
                   <ul
-                    class="faqs_ul"
+                    className="faqs_ul"
                     data-aos="fade-up"
                     data-aos-offset="0"
                     data-aos-duration="2000"
@@ -187,16 +195,16 @@ const Privacy_Policy = () => {
                     </li>
                   </ul>
                   <h2
-                    class="sec_title_head color-darkBlue"
+                    className="sec_title_head color-darkBlue"
                     data-aos="fade-up"
                     data-aos-offset="0"
                     data-aos-duration="1000"
                   >
                     3. How We Use Your{" "}
-                    <span class="color-lightBlue2">Information</span>
+                    <span className="color-lightBlue2">Information</span>
                   </h2>
                   <ul
-                    class="faqs_ul"
+                    className="faqs_ul"
                     data-aos="fade-up"
                     data-aos-offset="0"
                     data-aos-duration="2000"
@@ -219,13 +227,13 @@ const Privacy_Policy = () => {
                     <li>To comply with legal obligations.</li>
                   </ul>
                   <h2
-                    class="sec_title_head color-darkBlue"
+                    className="sec_title_head color-darkBlue"
                     data-aos="fade-up"
                     data-aos-offset="0"
                     data-aos-duration="1000"
                   >
                     4. How We Protect Your{" "}
-                    <span class="color-lightBlue2">Information</span>
+                    <span className="color-lightBlue2">Information</span>
                   </h2>
                   <p
                     data-aos="fade-up"
@@ -240,13 +248,13 @@ const Privacy_Policy = () => {
                     transmitted to us.
                   </p>
                   <h2
-                    class="sec_title_head color-darkBlue"
+                    className="sec_title_head color-darkBlue"
                     data-aos="fade-up"
                     data-aos-offset="0"
                     data-aos-duration="1000"
                   >
                     Sharing Your{" "}
-                    <span class="color-lightBlue2">Information</span>
+                    <span className="color-lightBlue2">Information</span>
                   </h2>
                   <p
                     data-aos="fade-up"
@@ -261,12 +269,12 @@ const Privacy_Policy = () => {
                     confidential.
                   </p>
                   <h2
-                    class="sec_title_head color-darkBlue"
+                    className="sec_title_head color-darkBlue"
                     data-aos="fade-up"
                     data-aos-offset="0"
                     data-aos-duration="1000"
                   >
-                    6. Your <span class="color-lightBlue2">Rights</span>
+                    6. Your <span className="color-lightBlue2">Rights</span>
                   </h2>
                   <p
                     data-aos="fade-up"
@@ -282,13 +290,13 @@ const Privacy_Policy = () => {
                     provided below.
                   </p>
                   <h2
-                    class="sec_title_head color-darkBlue"
+                    className="sec_title_head color-darkBlue"
                     data-aos="fade-up"
                     data-aos-offset="0"
                     data-aos-duration="1000"
                   >
                     7. Changes to This{" "}
-                    <span class="color-lightBlue2">Privacy Policy</span>
+                    <span className="color-lightBlue2">Privacy Policy</span>
                   </h2>
                   <p
                     data-aos="fade-up"
@@ -300,7 +308,7 @@ const Privacy_Policy = () => {
                     other operational, legal, or regulatory reasons.
                   </p>
                   <h2
-                    class="sec_title_head color-darkBlue"
+                    className="sec_title_head color-darkBlue"
                     data-aos="fade-up"
                     data-aos-offset="0"
                     data-aos-duration="1000"

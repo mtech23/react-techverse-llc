@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react";
- 
 
 import { UserLayout } from "../../Components/Layout/UserLayout";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
@@ -119,25 +118,26 @@ const About_us = () => {
   return (
     <UserLayout>
       <Helmet
-        title="Welcome to Techverse LLC About us Details and Descriptions"
-        description="Find the information about the company Techverse LLC about us. The quality place of software applications development for web and mobile."
+        title="About Us | Techverse LLC | Web & App Development Company"
+        description="Learn all about Techverse LLC, a top leading web and mobile app development company in USA. Explore our exceptional offerings and talented team."
+        keywords="About"
       />
-     
+
       <div ref={sectionRef}>
-        <section class="inner_hero aboutUS_hero hoverEffectSec">
-          <div class="inner-bgColor"></div>
-          <div class="width-1600">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="inner_hero_content centered-text">
+        <section className="inner_hero aboutUS_hero hoverEffectSec">
+          <div className="inner-bgColor"></div>
+          <div className="width-1600">
+            <div className="container-fluid">
+              <div className="row">
+                <div className="col-md-12">
+                  <div className="inner_hero_content centered-text">
                     <h1
                       data-aos="fade-right"
                       data-aos-offset="0"
                       data-aos-duration="1000"
                     >
                       Tech Solutions
-                      <span class="color-lightBlue1"> For</span> A Connected
+                      <span className="color-lightBlue1"> For</span> A Connected
                       World
                     </h1>
                     <p
@@ -152,14 +152,14 @@ const About_us = () => {
                       and future-proof solutions that cater to our clients'
                       diverse needs.
                     </p>
-                    <div class="icon-container-hover centerTitleIcon">
+                    <div className="icon-container-hover centerTitleIcon">
                       <img
-                        class="center_donatOrange animation11"
+                        className="center_donatOrange animation11"
                         src={donatorange}
                         alt=""
                       />
                       <img
-                        class="center_donatBlue animation11"
+                        className="center_donatBlue animation11"
                         src={donatblue}
                         alt=""
                       />
@@ -181,7 +181,7 @@ const About_us = () => {
         para="At Techverse LLC, we pride ourselves on our ability to transform businesses through meticulously crafted digital solutions. What truly distinguishes us is our holistic approach to web design and development. We begin each project with a deep dive into understanding your business objectives, target audience, and market dynamics. This foundational knowledge allows us to create bespoke websites that not only look stunning but also function seamlessly across all devices. Our team of seasoned designers and developers brings years of industry experience, ensuring that every aspect of your website—from user interface design to backend functionality—is optimized for performance and user experience."
         para2="We believe in continuous collaboration, keeping you involved at every stage of the process to ensure our solutions align perfectly with your vision. Moreover, our commitment doesn't end at launch. We provide comprehensive support and maintenance services to ensure your website remains secure, up-to-date, and responsive to evolving industry trends. Whether you're looking to establish a robust online presence, drive conversions, or enhance customer engagement, Techverse LLC is your trusted partner for achieving digital success."
         image={aboutimg1}
-        abtImgClass={"about-page-img1"}
+        abtImgclassName={"about-page-img1"}
         CtnbuttonComponent={Ctnbutton}
         ctnButtonProps={{
           phoneicon: phoneicon,
@@ -199,39 +199,42 @@ const About_us = () => {
       <Website />
 
       <div ref={sectionRef1}>
-        <section class="techVerse_about techVerse_aboutServices2 customer_gratificationSec hoverEffectSec column-reverse-991">
-          <div class="icon-container-hover cgsIconContainer">
+        <section className="techVerse_about techVerse_aboutServices2 customer_gratificationSec hoverEffectSec column-reverse-991">
+          <div className="icon-container-hover cgsIconContainer">
             <img
-              class="techVerse_about_icon1 animation11"
+              className="techVerse_about_icon1 animation11"
               src={pinkcapsol}
               alt=""
             />
 
             <img
-              class="techVerse_about_icon3 animation11"
+              className="techVerse_about_icon3 animation11"
               src={greencube}
               alt=""
             />
             <img
-              class="techVerse_about_icon4 animation11"
+              className="techVerse_about_icon4 animation11"
               src={donatorange}
               alt=""
             />
           </div>
-          <div class="techVerse_aboutContent techVerse_aboutContentServices2 customer_gratification width-1600">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="techVerse_about_content services-abbout2">
-                    <div class="sec_title">
+          <div className="techVerse_aboutContent techVerse_aboutContentServices2 customer_gratification width-1600">
+            <div className="container-fluid">
+              <div className="row">
+                <div className="col-lg-6">
+                  <div className="techVerse_about_content services-abbout2">
+                    <div className="sec_title">
                       <h2
-                        class="sec_title_head color-darkBlue"
+                        className="sec_title_head color-darkBlue"
                         data-aos="fade-up"
                         data-aos-offset="0"
                         data-aos-duration="1000"
                       >
                         Customer
-                        <span class="color-lightBlue2"> Gratification </span>
+                        <span className="color-lightBlue2">
+                          {" "}
+                          Gratification{" "}
+                        </span>
                       </h2>
                       <p
                         data-aos="fade-up"
@@ -246,12 +249,12 @@ const About_us = () => {
                         long-lasting partnerships.
                       </p>
                       <h2
-                        class="sec_title_head color-darkBlue"
+                        className="sec_title_head color-darkBlue"
                         data-aos="fade-up"
                         data-aos-offset="0"
                         data-aos-duration="1000"
                       >
-                        <span class="color-lightBlue2"> Innovation </span> &
+                        <span className="color-lightBlue2"> Innovation </span> &
                         Creativity
                       </h2>
                       <p
@@ -271,12 +274,13 @@ const About_us = () => {
                         into every project we undertake.
                       </p>
                       <h2
-                        class="sec_title_head color-darkBlue"
+                        className="sec_title_head color-darkBlue"
                         data-aos="fade-up"
                         data-aos-offset="0"
                         data-aos-duration="1000"
                       >
-                        Mission & <span class="color-lightBlue2"> Vision </span>
+                        Mission &{" "}
+                        <span className="color-lightBlue2"> Vision </span>
                       </h2>
                       <p
                         data-aos="fade-up"
@@ -297,12 +301,12 @@ const About_us = () => {
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-6">
-                  <div class="techVerse_about_img">
-                    <div class="techVerse_about_laptop_img">
+                <div className="col-lg-6">
+                  <div className="techVerse_about_img">
+                    <div className="techVerse_about_laptop_img">
                       <img
                         src={aboutimg2}
-                        class="about-laptopImg about-page-img2"
+                        className="about-laptopImg about-page-img2"
                         data-aos="fade-right"
                         data-aos-offset="0"
                         data-aos-duration="1000"

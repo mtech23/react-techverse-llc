@@ -34,6 +34,8 @@ import travelimg1airplane from "../../asserts/images/travel-img-1-airplane.webp"
 import Macbook from "../../asserts/images/Macbook.webp";
 import Testimonials from "../../Components/Testimonials";
 
+import Helmet from "../../Components/Helmet";
+
 import travelimg2 from "../../asserts/images/travel-img-2.webp";
 import travelimg1 from "../../asserts/images/travel-img-1.gif";
 import travelimg3 from "../../asserts/images/travel-img-3.webp";
@@ -50,6 +52,12 @@ const Travel = () => {
 
   return (
     <UserLayout>
+      <Helmet
+        title="Hire #1 IT Solutions Provider For Travel Industry | Techverse LLC"
+        description="Looking for IT solutions in the travel industry? Hire Techverse LLC, the #1 provider, to streamline your processes and elevate your customer satisfaction."
+        keywords="Travel"
+      />
+
       <HeroSection
         classheroimage={"travel_bg_custom"}
         title={"From Click To Content Guest With Techverse Apps"}
@@ -68,7 +76,7 @@ const Travel = () => {
           appstore: appstore,
         }}
 
-        // secondaryButtonClass="btn_with_icon btn_secondary"
+        // secondaryButtonclassName="btn_with_icon btn_secondary"
       />
       {/* <!-- Trusted Partners --> */}
 
@@ -79,7 +87,7 @@ const Travel = () => {
       <Portfolio
         pinkcapsol={pinkcapsol}
         classtitle={" color-darkBlue   "}
-        newClass={"travel-abt1"}
+        newclassName={"travel-abt1"}
         greencube={greencube}
         donatorange={donatorange}
         title="From Guest Engagement To Operations, Techverse Develops"
@@ -111,8 +119,8 @@ const Travel = () => {
 
       {/* <!-- Real Estate App Dev --> */}
       <Development_Process
-        travelbgclass={"travel-abt2"}
-        sportsclass={"travel-img-2"}
+        travelbgclassName={"travel-abt2"}
+        sportsclassName={"travel-img-2"}
         image={travelimg2}
         title="Techverse Builds Scalable Apps For "
         subtitle="Guests & Businesses"
@@ -157,7 +165,7 @@ const Travel = () => {
 
       <Driving_Exprience
         titleclass2="color-darkBlue"
-        titleclass="color-darkBlue"
+        titleclassName="color-darkBlue"
         title="Why Choose Our"
         subtitle="  TRAVEL & HOSPITALITY "
         title2=" App Development Services "

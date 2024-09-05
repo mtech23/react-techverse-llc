@@ -52,8 +52,8 @@
       </ul>
     </div>
     <div className="col-3">
-      <div class="searchbox-and-icon-container">
-        <div class="input-group header__search">
+      <div className="searchbox-and-icon-container">
+        <div className="input-group header__search">
           <button
             className="btn btn-outline-secondary search__btn"
             type="button"
@@ -75,7 +75,7 @@
             <FontAwesomeIcon icon={faList} />
           </button>
         </div>
-        <div class="user__icon-container">
+        <div className="user__icon-container">
           <Link className="nav-link user__icon" to="!#">
             {/* <FontAwesomeIcon icon={faUser} /> */}
             <img src={User_icon_white} />
@@ -146,7 +146,7 @@
               </Link>
             </li>
           </ul>
-          <div class="input-group header__search">
+          <div className="input-group header__search">
             <button
               className="btn btn-outline-secondary search__btn"
               type="button"
@@ -176,8 +176,8 @@
             </Link>
           </div>
         </a>
-        <div class="searchbox-and-icon-container">
-          {/* <div class="input-group header__search d-none d-md-block">
+        <div className="searchbox-and-icon-container">
+          {/* <div className="input-group header__search d-none d-md-block">
             <button
               className="btn btn-outline-secondary search__btn"
               type="button"
@@ -199,7 +199,7 @@
               <FontAwesomeIcon icon={faList} />
             </button>
           </div> */}
-          <div class="user__icon-container">
+          <div className="user__icon-container">
             <Link className="nav-link user__icon" to="!#">
               {/* <FontAwesomeIcon icon={faUser} /> */}
               <img src={User_icon_white} />
@@ -658,7 +658,7 @@ export const Header = (props) => {
             </ul>
           </div>
           <div className="col-2">
-            <div class="searchbox-and-icon-container">
+            <div className="searchbox-and-icon-container">
         
               {!LogoutData ? (
 
@@ -671,7 +671,7 @@ export const Header = (props) => {
 
                
               ) : (
-                <div class="user__icon-container">
+                <div className="user__icon-container">
                   <Link className="nav-link user__icon" to="/account">
                     {/* <FontAwesomeIcon icon={faUser} /> */}
                     <img src={User_icon_white} />
@@ -747,7 +747,7 @@ export const Header = (props) => {
                     </Link>
                   </li>
                 </ul>
-                <div class="input-group header__search">
+                <div className="input-group header__search">
                   <button
                     className="btn btn-outline-secondary search__btn"
                     type="button"
@@ -777,9 +777,9 @@ export const Header = (props) => {
                   </Link>
                 </div>
               </a>
-              <div class="searchbox-and-icon-container">
+              <div className="searchbox-and-icon-container">
                
-                <div class="user__icon-container">
+                <div className="user__icon-container">
                   <Link className="nav-link user__icon" to="!#">
                     {/* <FontAwesomeIcon icon={faUser} /> */}
                     <img src={User_icon_white} />

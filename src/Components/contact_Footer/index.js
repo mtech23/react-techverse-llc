@@ -49,79 +49,81 @@ const Contact_Footer = () => {
     <div>
       <footer id="custom_partilce">
         <ContactParticle />
-        <section class="techVerse_footer">
-          <div class="techVerse_footerContent width-1600">
-            <div class="container-fluid">
-              <div class="row footer_row">
-                <div class="col-xl-9 col-md-12">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <div class="footer_about">
-                        <div class="footer_logo_img_box">
+        <section className="techVerse_footer">
+          <div className="techVerse_footerContent width-1600">
+            <div className="container-fluid">
+              <div className="row footer_row">
+                <div className="col-xl-9 col-md-12">
+                  <div className="row">
+                    <div className="col-md-4">
+                      <div className="footer_about">
+                        <div className="footer_logo_img_box">
                           <Link to={"/"}>
                             <img src={mainSiteLogo} alt="" />
                           </Link>
                         </div>
                       </div>
-                      <ul class="icon_list_items footer__links footer_contactUS">
-                        {/* <li class="icon_list_item footer__link">
+                      <ul className="icon_list_items footer__links footer_contactUS">
+                        {/* <li className="icon_list_item footer__link">
                           <Link href="tel:(866) 123-4567">
-                            <span class="icon_list_icon">
-                              <i class="fa-solid fa-phone"></i>
+                            <span className="icon_list_icon">
+                              <i className="fa-solid fa-phone"></i>
                             </span>
-                            <span class="icon_list_text">
+                            <span className="icon_list_text">
                               For Sales: (866) 123-4567
                             </span>
                           </Link>
                         </li> */}
-                        {/* <li class="icon_list_item footer__link">
+                        {/* <li className="icon_list_item footer__link">
                           <Link href="tel:+1 234-567-890">
-                            <span class="icon_list_icon">
-                              <i class="fa-solid fa-phone"></i>
+                            <span className="icon_list_icon">
+                              <i className="fa-solid fa-phone"></i>
                             </span>
-                            <span class="icon_list_text">
+                            <span className="icon_list_text">
                               For Billing: +1 234-567-890
                             </span>
                           </Link>
                         </li> */}
-                        <li class="icon_list_item footer__link">
+                        <li className="icon_list_item footer__link">
                           <Link href="mailto:info@example.com">
-                            <span class="icon_list_icon">
-                              <i class="fa-solid fa-envelope"></i>
+                            <span className="icon_list_icon">
+                              <i className="fa-solid fa-envelope"></i>
                             </span>
-                            <span class="icon_list_text">info@example.com</span>
+                            <span className="icon_list_text">
+                              info@example.com
+                            </span>
                           </Link>
                         </li>
-                        <li class="icon_list_item footer__link">
+                        <li className="icon_list_item footer__link">
                           <Link to={"/"}>
-                            <span class="icon_list_icon">
-                              <i class="fa-solid fa-location-dot"></i>
+                            <span className="icon_list_icon">
+                              <i className="fa-solid fa-location-dot"></i>
                             </span>
-                            <span class="icon_list_text">USA</span>
+                            <span className="icon_list_text">USA</span>
                           </Link>
                         </li>
                       </ul>
-                      <div class="social_links">
-                        <Link to={"/"} class="social_link">
-                          <i class="fa-brands fa-facebook"></i>
+                      <div className="social_links">
+                        <Link to={"/"} className="social_link">
+                          <i className="fa-brands fa-facebook"></i>
                         </Link>
-                        <Link to={"/"} class="social_link">
-                          <i class="fa-brands fa-youtube"></i>
+                        <Link to={"/"} className="social_link">
+                          <i className="fa-brands fa-youtube"></i>
                         </Link>
-                        <Link to={"/"} class="social_link">
-                          <i class="fa-brands fa-linkedin"></i>
+                        <Link to={"/"} className="social_link">
+                          <i className="fa-brands fa-linkedin"></i>
                         </Link>
-                        <Link to={"/"} class="social_link">
-                          <i class="fa-brands fa-instagram"></i>
+                        <Link to={"/"} className="social_link">
+                          <i className="fa-brands fa-instagram"></i>
                         </Link>
-                        <Link to={"/"} class="social_link">
-                          <i class="fa-brands fa-square-pinterest"></i>
+                        <Link to={"/"} className="social_link">
+                          <i className="fa-brands fa-square-pinterest"></i>
                         </Link>
-                        <Link to={"/"} class="social_link">
-                          <i class="fa-solid fa-star"></i>
+                        <Link to={"/"} className="social_link">
+                          <i className="fa-solid fa-star"></i>
                         </Link>
                       </div>
-                      <div class="footer_bbb">
+                      <div className="footer_bbb">
                         <Link to={"/"}>
                           <img src={bicon} alt="" />
                         </Link>
@@ -129,113 +131,113 @@ const Contact_Footer = () => {
                           <img src={starticon} alt="" />
                         </Link>
                       </div>
-                      <p class="company_wishText">
+                      <p className="company_wishText">
                         A Company oF More Wish Digital
                       </p>
                     </div>
-                    <div class="col-md-3">
-                      <div class="footer__quick-links">
-                        <h3 class="foooter__subhead"> Services</h3>
-                        <ul class="icon_list_items footer__links footer__categories_links">
-                          <li class="footer__link">
+                    <div className="col-md-3">
+                      <div className="footer__quick-links">
+                        <h3 className="foooter__subhead"> Services</h3>
+                        <ul className="icon_list_items footer__links footer__categories_links">
+                          <li className="footer__link">
                             <Link to={"/business-devlopment"} as={"link"}>
                               Business Development
                             </Link>
                           </li>
-                          <li class="footer__link">
+                          <li className="footer__link">
                             <Link to={"/"}>Development</Link>
                           </li>
-                          <li class="footer__link">
+                          <li className="footer__link">
                             <Link to={"/"}>Mobile Application Development</Link>
                           </li>
-                          <li class="footer__link">
+                          <li className="footer__link">
                             <Link to={"/ecommerse-development"}>
                               Ecommerce Development
                             </Link>
                           </li>
-                          {/* <li class="footer__link">
+                          {/* <li className="footer__link">
                             <Link to={"/"}>Game Development</Link>
                           </li> */}
-                          <li class="footer__link">
+                          <li className="footer__link">
                             <Link to={"/web-development"}>Web Development</Link>
                           </li>
-                          <li class="footer__link">
+                          <li className="footer__link">
                             <Link to={"/"}>Android App Development</Link>
                           </li>
-                          <li class="footer__link">
+                          <li className="footer__link">
                             <Link to={"/"}>iOS App Development</Link>
                           </li>
-                          <li class="footer__link">
+                          <li className="footer__link">
                             <Link to={"/"}>Smart Contract Development</Link>
                           </li>
                         </ul>
                       </div>
                     </div>
-                    <div class="col-md-3">
-                      <div class="footer__quick-links">
-                        <h3 class="foooter__subhead">Industries</h3>
-                        <ul class="icon_list_items footer__links footer__categories_links">
-                          <li class="footer__link">
+                    <div className="col-md-3">
+                      <div className="footer__quick-links">
+                        <h3 className="foooter__subhead">Industries</h3>
+                        <ul className="icon_list_items footer__links footer__categories_links">
+                          <li className="footer__link">
                             <Link to={"/"}>Advertising</Link>
                           </li>
-                          <li class="footer__link">
+                          <li className="footer__link">
                             <Link to={"/"}>Gaming & leisure</Link>
                           </li>
-                          <li class="footer__link">
+                          <li className="footer__link">
                             <Link to={"/ecommerse"}>E-commerce & Retails</Link>
                           </li>
-                          <li class="footer__link">
+                          <li className="footer__link">
                             <Link to={"/"}>Media & Entertainment</Link>
                           </li>
-                          <li class="footer__link">
+                          <li className="footer__link">
                             <Link to={"/realEstate-and-property"}>
                               Real Estate & Property
                             </Link>
                           </li>
-                          <li class="footer__link">
+                          <li className="footer__link">
                             <Link to={"/"}>Software & High Tech</Link>
                           </li>
-                          <li class="footer__link">
+                          <li className="footer__link">
                             <Link to={"/sports"}>Sports Teams & Leagues</Link>
                           </li>
-                          <li class="footer__link">
+                          <li className="footer__link">
                             <Link to={"/health-care"}>
                               Health & Life Sciences
                             </Link>
                           </li>
-                          <li class="footer__link">
+                          <li className="footer__link">
                             <Link to={"/travel"}>Travel & Hospitality</Link>
                           </li>
                         </ul>
                       </div>
                     </div>
-                    <div class="col-md-2">
-                      <div class="footer__quick-links">
-                        <h3 class="foooter__subhead">qUIC Link</h3>
-                        <ul class="icon_list_items footer__links footer__categories_links">
-                          <li class="footer__link">
+                    <div className="col-md-2">
+                      <div className="footer__quick-links">
+                        <h3 className="foooter__subhead">qUIC Link</h3>
+                        <ul className="icon_list_items footer__links footer__categories_links">
+                          <li className="footer__link">
                             <Link to={"/"}>About</Link>
                           </li>
-                          <li class="footer__link">
+                          <li className="footer__link">
                             <Link to={"/contact"}> Blogs</Link>
                           </li>
-                          <li class="footer__link">
+                          <li className="footer__link">
                             <Link to={"/"}>Contact</Link>
                           </li>
                         </ul>
                       </div>
                     </div>
                   </div>
-                  <div class="footer-spacer"></div>
-                  <div class="col-md-12 footer_copyright-col px-0">
-                    <div class="row footer_copyright">
-                      <div class="col-lg-4">
-                        <div class="techVerse_footer_copyright">
+                  <div className="footer-spacer"></div>
+                  <div className="col-md-12 footer_copyright-col px-0">
+                    <div className="row footer_copyright">
+                      <div className="col-lg-4">
+                        <div className="techVerse_footer_copyright">
                           <p>© 2024 Techverse All rights reserved.</p>
                         </div>
                       </div>
-                      <div class="col-lg-8">
-                        <div class="techVerse_powerdby">
+                      <div className="col-lg-8">
+                        <div className="techVerse_powerdby">
                           {/* <Link to={"/"}>Corporate Profile</Link>
                           <Link to={"/"}>Our Creations</Link>
                           <Link to={"/"}>Podcast</Link>
@@ -246,9 +248,9 @@ const Contact_Footer = () => {
                           </Link>
                         </div>
                       </div>
-                      <div class="col-md-12">
-                        <div class="techVerse_disclaimer">
-                          <h4 class="techVerse_disclaimer_title">
+                      <div className="col-md-12">
+                        <div className="techVerse_disclaimer">
+                          <h4 className="techVerse_disclaimer_title">
                             DISCLAIMER:
                           </h4>
                           <p>
@@ -272,39 +274,39 @@ const Contact_Footer = () => {
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-3 col-lg-6 col-md-8">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="techVerse_footerRrequest_quote">
-                        <h3 class="foooter__subhead">
+                <div className="col-xl-3 col-lg-6 col-md-8">
+                  <div className="row">
+                    <div className="col-md-12">
+                      <div className="techVerse_footerRrequest_quote">
+                        <h3 className="foooter__subhead">
                           Subscribe to Our Newsletter
                         </h3>
-                        <div class="footer_formBox">
+                        <div className="footer_formBox">
                           <form>
-                            <div class="form-group">
+                            <div className="form-group">
                               <input
                                 type="email"
-                                class="form-control"
+                                className="form-control"
                                 placeholder="Enter email"
                               />
                             </div>
-                            <button type="submit" class="btn btn-primary">
+                            <button type="submit" className="btn btn-primary">
                               Submit
                             </button>
                           </form>
                         </div>
-                        <div class="hero_brands">
-                          <Link to={"/"} class="hero_brands_img">
+                        <div className="hero_brands">
+                          <Link to={"/"} className="hero_brands_img">
                             <img src={dmca} alt="" />
                           </Link>
-                          <Link to={"/"} class="hero_brands_img">
+                          <Link to={"/"} className="hero_brands_img">
                             <img src={dmcacomplaint} alt="" />
                           </Link>
-                          {/* <Link to={"/"} class="hero_brands_img">
+                          {/* <Link to={"/"} className="hero_brands_img">
                             <img src={playstore} alt="" />
                           </Link> */}
                         </div>
-                        <div class="footer_certicate">
+                        <div className="footer_certicate">
                           <img src={footerCertificate} alt="" />
                         </div>
                       </div>
@@ -319,7 +321,7 @@ const Contact_Footer = () => {
               style={{ position: "absolute" , top:"200px"}}
               id="particles-js"
               className="customClass"
-              canvasClassName="abc"
+              canvasclassName="abc"
               init={particlesInit}
               loaded={particlesLoaded}
               options={{

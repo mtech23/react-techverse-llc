@@ -1,4 +1,3 @@
- 
 import "./style.css";
 import { UserLayout } from "../../Components/Layout/UserLayout";
 import phoneicon from "../../asserts/images/phone-icon.webp";
@@ -37,7 +36,7 @@ import Development_Process from "../../Components/Development_Process";
 import Portfolios from "../../Components/portfolios";
 import Driving_Exprience from "../../Components/Driving_experience";
 import Testimonials from "../../Components//Testimonials";
-import Helmet from '../../Components/Helmet';
+import Helmet from "../../Components/Helmet";
 gsap.registerPlugin(MotionPathPlugin);
 
 const Health_care = () => {
@@ -45,18 +44,11 @@ const Health_care = () => {
 
   return (
     <UserLayout>
- 
-
-
-
       <Helmet
-        title="    Techverse LLC Health and Life Sciences Software Solutions"
-        description="Seamless healthcare Apps that can support medical centers & pharmacies. Techverse LLC offers health and life sciences software applications. "
+        title="Professional IT Service For Health Care Industry | Techverse LLC"
+        description="Enhance your healthcare services with Techverse LLC. We provide professional IT solutions designed to meet the unique needs of the healthcare industry."
+        keywords="Health Care"
       />
-
-
-
- 
 
       <HeroSection
         classheroimage={"inner-health-bgColor"}
@@ -76,7 +68,7 @@ const Health_care = () => {
           appstore: appstore,
         }}
 
-        // secondaryButtonClass="btn_with_icon btn_secondary"
+        // secondaryButtonclassName="btn_with_icon btn_secondary"
       />
 
       {/* <!-- Trusted Partners --> */}
@@ -86,7 +78,7 @@ const Health_care = () => {
       <Portfolio
         title="From Patient Engagement To Research, Techverse Develops"
         classtitle="color-darkBlue"
-        newClass="health-care-abt1"
+        newclassName="health-care-abt1"
         // title2=" Entertainment Industry"
         subtitle="Healthcare Solutions"
         para="Techverse is an expert in creating all-inclusive medical solutions. Our customized apps improve patient care, speed up procedures, and guarantee that industry norms are followed. By emphasizing efficiency and creativity, we enable healthcare providers to provide better services and increase patient outcomes.
@@ -122,7 +114,7 @@ const Health_care = () => {
 
 "
         image={healthcareimg2}
-        sportsclass={"health-care-img-2"}
+        sportsclassName={"health-care-img-2"}
         para1="Conduct in-depth evaluations to align healthcare app development with organizational strategies and user requirements, ensuring solutions that effectively address industry challenges and boost operational workflows."
         para2="Leveraging the latest technological advancements, create innovative interfaces and robust healthcare solutions designed to optimize patient interaction and streamline administrative processes."
         para3="Implement stringent testing protocols to validate the functionality, security, and regulatory compliance of healthcare apps, ensuring seamless performance and user satisfaction."
@@ -155,7 +147,7 @@ const Health_care = () => {
 
       <Driving_Exprience
         titleclass2="color-darkBlue"
-        titleclass="color-darkBlue"
+        titleclassName="color-darkBlue"
         title="Why Choose Our  "
         subtitle="    Media & Entertainment "
         title2="    App Development Service"

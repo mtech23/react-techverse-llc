@@ -9,20 +9,20 @@ const Portfolios = (props) => {
     <div>
       {/* new Portfolio swipper section */}
 
-      <section class="techVerse_portfolio">
-        <div class="techVerse_portfolioContent width-1600">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="sec_title">
+      <section className="techVerse_portfolio">
+        <div className="techVerse_portfolioContent width-1600">
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col-md-12">
+                <div className="sec_title">
                   <h2
-                    class="sec_title_head color-lightBlue2"
+                    className="sec_title_head color-lightBlue2"
                     data-aos="fade-up"
                     data-aos-offset="0"
                     data-aos-duration="1000"
                   >
                     {props?.title}
-                    <span class="color-darkBlue"> {props?.subtitle} </span>
+                    <span className="color-darkBlue"> {props?.subtitle} </span>
                   </h2>
                   <p
                     data-aos="fade-up"
@@ -33,10 +33,10 @@ const Portfolios = (props) => {
                   </p>
                 </div>
               </div>
-              <div class="col-md-12">
+              <div className="col-md-12">
                 <div className="custom_tab_height">
                   <div
-                    class="portfolio_tabs nav nav-tabs"
+                    className="portfolio_tabs nav nav-tabs"
                     id="myTab"
                     role="tablist"
                     data-aos="fade-up"
@@ -44,7 +44,7 @@ const Portfolios = (props) => {
                     data-aos-duration="3000"
                   >
                     <a
-                      class="nav-link active"
+                      className="nav-link active"
                       id="mobile_apps"
                       data-toggle="tab"
                       href="#mobile-app"
@@ -53,7 +53,7 @@ const Portfolios = (props) => {
                       Mobile Apps
                     </a>
                     <a
-                      class="nav-link"
+                      className="nav-link"
                       id="websites_tab"
                       data-toggle="tab"
                       href="#website-tab"
@@ -62,7 +62,7 @@ const Portfolios = (props) => {
                       Websites
                     </a>
                     <a
-                      class={props?.classcms}
+                      className={props?.classcms}
                       id="cms_tab"
                       data-toggle="tab"
                       href="#cms-tab"
@@ -72,14 +72,14 @@ const Portfolios = (props) => {
                     </a>
                   </div>
                 </div>
-                <div class="tab-content" id="portfolioTabs">
+                <div className="tab-content" id="portfolioTabs">
                   <div
-                    class="tab-pane fade show active"
+                    className="tab-pane fade show active"
                     id="mobile-app"
                     role="tabpanel"
                     aria-labelledby="mobile_apps"
                   >
-                    <div class="mobile_app_carousel">
+                    <div className="mobile_app_carousel">
                       <Swiper
                         slidesPerView={2.1}
                         spaceBetween={20}
@@ -137,19 +137,19 @@ const Portfolios = (props) => {
                         </SwiperSlide>
                       </Swiper>
 
-                      <div class="our-slider-img">
+                      <div className="our-slider-img">
                         <img src={props?.image6} alt="" />
                       </div>
                     </div>
                   </div>
 
                   <div
-                    class="tab-pane fade"
+                    className="tab-pane fade"
                     id="website-tab"
                     role="tabpanel"
                     aria-labelledby="websites_tab"
                   >
-                    <div class="web_app_carousel">
+                    <div className="web_app_carousel">
                       <Swiper
                         slidesPerView={1}
                         spaceBetween={30}
@@ -195,19 +195,19 @@ const Portfolios = (props) => {
                         </SwiperSlide>
                       </Swiper>
 
-                      <div class="our-slider-webframe">
+                      <div className="our-slider-webframe">
                         <img src={props?.image11} alt="" />
                       </div>
                     </div>
                   </div>
 
                   <div
-                    class="tab-pane fade"
+                    className="tab-pane fade"
                     id="cms-tab"
                     role="tabpanel"
                     aria-labelledby="cms_tab"
                   >
-                    <div class="web_app_carousel">
+                    <div className="web_app_carousel">
                       <Swiper
                         slidesPerView={1}
                         spaceBetween={30}
@@ -247,7 +247,7 @@ const Portfolios = (props) => {
                         </SwiperSlide> */}
                       </Swiper>
 
-                      <div class="our-slider-webframe">
+                      <div className="our-slider-webframe">
                         <img src={props?.image11} alt="" />
                       </div>
                     </div>

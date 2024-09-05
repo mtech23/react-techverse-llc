@@ -3,7 +3,7 @@ const Ctnbutton = (props) => {
   return (
     <div>
       <div
-        class="techVerse_hero_btns"
+        className="techVerse_hero_btns"
         data-aos="fade-up"
         data-aos-offset="00"
         // data-aos-offset="0"
@@ -11,8 +11,8 @@ const Ctnbutton = (props) => {
       >
         {props.primaryButtonClass && (
           <a href="#" className={props?.primaryButtonClass}>
-            <img class="btn_with_icon_img" src={props?.phoneicon} alt="" />
-            <span class="btn_with_icon_text">{props?.calltext}</span>
+            <img className="btn_with_icon_img" src={props?.phoneicon} alt="" />
+            <span className="btn_with_icon_text">{props?.calltext}</span>
           </a>
         )}
 
@@ -26,11 +26,11 @@ const Ctnbutton = (props) => {
           </a>
         )}
 
-        <div class="techVerse_store_links">
-          <a href="#" class="techVerse_store_link">
+        <div className="techVerse_store_links">
+          <a href="#" className="techVerse_store_link">
             <img src={props?.playstore} alt="" />
           </a>
-          <a href="#" class="techVerse_store_link">
+          <a href="#" className="techVerse_store_link">
             <img src={props?.appstore} alt="" />
           </a>
         </div>

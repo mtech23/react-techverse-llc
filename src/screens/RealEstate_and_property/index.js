@@ -37,20 +37,16 @@ import Portfolios from "../../Components/portfolios";
 import App_development_solutions from "../../Components/App_development_solutions";
 import Development_Process from "../../Components/Development_Process";
 import Driving_Exprience from "../../Components/Driving_experience";
-import Helmet from '../../Components/Helmet';
+import Helmet from "../../Components/Helmet";
 const RealEstate_and_property = () => {
   Aos.init();
 
   return (
     <UserLayout>
-       
-
-
-
-      
-<Helmet
-        title="  Software Solutions Development for Real Estate & Property"
-        description="Real Estate & Property services obligatory expert software to perform actions efficiently. Techverse LLC custom-built Real Estate Solutions."
+      <Helmet
+        title="IT Services For Real State & Property Industry | Techverse LLC"
+        description="Techverse LLC offers specialized IT services for the real estate and property sector. Boost your efficiency and success with our innovative technology solutions."
+        keywords="Real State and Property"
       />
       {/* <!-- Inner Hero --> */}
 
@@ -157,7 +153,7 @@ const RealEstate_and_property = () => {
 
       <Driving_Exprience
         titleclass2="color-darkBlue"
-        titleclass="color-darkBlue"
+        titleclassName="color-darkBlue"
         title=" What Makes Our "
         subtitle=" Real Estate "
         title2=" Mobile App Development Stand Out? "

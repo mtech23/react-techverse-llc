@@ -1,4 +1,3 @@
- 
 import { UserLayout } from "../../Components/Layout/UserLayout";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { gsap } from "gsap";
@@ -24,7 +23,7 @@ import chaticon from "../../asserts/images/chat-icon.webp";
 import businessimg01 from "../../asserts/images/business-img-01.webp";
 
 import businessdevelopmenthero from "../../asserts/images/business-development-hero.webp";
-import Helmet from '../../Components/Helmet'
+import Helmet from "../../Components/Helmet";
 gsap.registerPlugin(MotionPathPlugin);
 
 const Businessdevlopment = () => {
@@ -32,12 +31,10 @@ const Businessdevlopment = () => {
 
   return (
     <UserLayout>
-
-
-
       <Helmet
-        title="     Techverse LLC Builds Business Development for Productivity"
-        description="Business development is always a very professional aspect to strong future perspective of earning. Techverse LLC makes it easier for you! "
+        title="Best MVP Development Services in CA, USA | Techverse LLC"
+        description="Professional MVP development services in CA, USA by Techverse LLC. Transform your ideas into successful products with our expert team. Visit our website!"
+        keywords="MVP Development Services"
       />
       <HeroSection
         innerbgclass={"inner-bgColor"}
@@ -63,41 +60,41 @@ const Businessdevlopment = () => {
         }}
       />
       {/* <!-- Trusted Partners --> */}
-      <section class="techVerse_trustedPartners techVerse_trustedPartnersServices">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="row flex-nowrap gap-4 custom_trusted_partners_seprator">
+      <section className="techVerse_trustedPartners techVerse_trustedPartnersServices">
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="row flex-nowrap gap-4 custom_trusted_partners_seprator">
                 <marquee>
-                  <div class="trustedPartners">
-                    <div class="trustedPartner col">
+                  <div className="trustedPartners">
+                    <div className="trustedPartner col">
                       <img src={tpblue} alt="" />
                     </div>
-                    <div class="trustedPartner col">
+                    <div className="trustedPartner col">
                       <img src={tpblack} alt="" />
                     </div>
-                    <div class="trustedPartner col">
+                    <div className="trustedPartner col">
                       <img src={tpblue} alt="" />
                     </div>
-                    <div class="trustedPartner col">
+                    <div className="trustedPartner col">
                       <img src={tpblack} alt="" />
                     </div>
-                    <div class="trustedPartner col">
+                    <div className="trustedPartner col">
                       <img src={tpblue} alt="" />
                     </div>
-                    <div class="trustedPartner col">
+                    <div className="trustedPartner col">
                       <img src={tpblack} alt="" />
                     </div>
-                    <div class="trustedPartner col">
+                    <div className="trustedPartner col">
                       <img src={tpblue} alt="" />
                     </div>
-                    <div class="trustedPartner col">
+                    <div className="trustedPartner col">
                       <img src={tpblack} alt="" />
                     </div>
-                    <div class="trustedPartner col">
+                    <div className="trustedPartner col">
                       <img src={tpblue} alt="" />
                     </div>
-                    <div class="trustedPartner col">
+                    <div className="trustedPartner col">
                       <img src={tpblack} alt="" />
                     </div>
                   </div>

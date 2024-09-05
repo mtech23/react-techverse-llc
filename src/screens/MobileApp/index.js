@@ -1,8 +1,7 @@
-
 import { UserLayout } from "../../Components/Layout/UserLayout";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { gsap } from "gsap";
-import Helmet from '../../Components/Helmet';
+import Helmet from "../../Components/Helmet";
 import Aboutsection from "../../Components/aboutsection";
 
 import Aos from "aos";
@@ -41,13 +40,10 @@ const MobileApp = () => {
 
   return (
     <UserLayout>
-
-
-
-
       <Helmet
-        title=" Special Variety of Mobile Application Development Available"
-        description="Providing the services of mobile application development at Techverse LLC. We craft the solutions for all the software you are looking for  "
+        title="Top Custom Mobile App Development Services | Techverse LLC"
+        description="Techverse LLC a leading provider of custom mobile app development services in USA. Transform your ideas into creative mobile solutions with our expert team."
+        keywords="Custom Mobile App Development Services"
       />
       <HeroSection
         innerbgclass={"inner-bgColor"}
@@ -99,7 +95,7 @@ const MobileApp = () => {
         title2="Charge In Rapid Mobile App Innovation "
         para="Experience the forefront of mobile application development with Techverse LLC, where we excel in rapid application deployment driven by cutting-edge technologies. Our approach blends agile methodologies with the latest advancements in AI, IoT, and blockchain, ensuring that your app not only meets but exceeds industry standards. Whether you require a robust iOS solution, an adaptable Android platform, or a versatile cross-platform app, our seasoned developers are adept at crafting bespoke applications that resonate with your target audience. From initial ideation and meticulous prototyping to seamless deployment and ongoing support, we prioritize collaboration and innovation to deliver solutions that propel your business forward. Trust Techverse LLC to transform your vision into a dynamic and scalable mobile application that stands out in today's competitive digital landscape."
         image={rapidappimg}
-        abtImgClass="mobile-img-1"
+        abtImgclassName="mobile-img-1"
       />
 
       <Portfolio

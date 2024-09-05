@@ -14,6 +14,8 @@ import "swiper/css/pagination";
 import "swiper/css";
 import "./style.css";
 
+import Helmet from "../../Components/Helmet";
+
 import playstore from "../../asserts/images/playstore.webp";
 import appStore from "../../asserts/images/app-store.webp";
 import phoneiconblue from "../../asserts/images/phone-icon-blue.webp";
@@ -161,20 +163,26 @@ const Case_study = () => {
     <>
       <Header />
 
+      <Helmet
+        title="contact Us For Any Information and Queries | Techverse LLC"
+        description="Discover how Techverse LLC, the top app developers in CA, create innovative solutions. Explore our case studies and see our success stories today!"
+        keywords="Case Study"
+      />
+
       <div ref={sectionRef}>
-        <section class="inner_hero case-study-hero hoverEffectSec">
-          <div class="inner-bgColor"></div>
-          <div class="width-1600">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="inner_hero_content centered-text">
+        <section className="inner_hero case-study-hero hoverEffectSec">
+          <div className="inner-bgColor"></div>
+          <div className="width-1600">
+            <div className="container-fluid">
+              <div className="row">
+                <div className="col-md-12">
+                  <div className="inner_hero_content centered-text">
                     <h1
                       data-aos="fade-right"
                       data-aos-offset="0"
                       data-aos-duration="1000"
                     >
-                      <span class="color-lightBlue1">Case Studies</span>
+                      <span className="color-lightBlue1">Case Studies</span>
                     </h1>
                     <p
                       data-aos="fade-right"
@@ -189,28 +197,36 @@ const Case_study = () => {
                       technological solutions.
                     </p>
                     <div
-                      class="techVerse_hero_btns justify-content-center"
+                      className="techVerse_hero_btns justify-content-center"
                       data-aos="fade-right"
                       data-aos-offset="0"
                       data-aos-duration="3000"
                     >
-                      <a href="#" class="btn_with_icon">
-                        <img class="btn_with_icon_img" src={phoneicon} alt="" />
-                        <span class="btn_with_icon_text">Call Now</span>
+                      <a href="#" className="btn_with_icon">
+                        <img
+                          className="btn_with_icon_img"
+                          src={phoneicon}
+                          alt=""
+                        />
+                        <span className="btn_with_icon_text">Call Now</span>
                       </a>
-                      <a href="#" class="btn_with_icon btn_secondary">
-                        <img class="btn_with_icon_img" src={chaticon} alt="" />
-                        <span class="btn_with_icon_text">Chat Now</span>
+                      <a href="#" className="btn_with_icon btn_secondary">
+                        <img
+                          className="btn_with_icon_img"
+                          src={chaticon}
+                          alt=""
+                        />
+                        <span className="btn_with_icon_text">Chat Now</span>
                       </a>
                     </div>
-                    <div class="icon-container-hover">
+                    <div className="icon-container-hover">
                       <img
-                        class="center_donatOrange animation11"
+                        className="center_donatOrange animation11"
                         src={donatorange}
                         alt=""
                       />
                       <img
-                        class="center_donatBlue animation11"
+                        className="center_donatBlue animation11"
                         src={donatblue}
                         alt=""
                       />
@@ -224,20 +240,20 @@ const Case_study = () => {
       </div>
 
       {/* <!-- Case Study Sec 1 --> */}
-      <section class="sec1 case-study-sec case-study-sec1">
-        <div class="width-1600">
-          <div class="container-fluid">
-            <div class="row align-items-center">
-              <div class="col-md-6">
-                <div class="casestudy-content">
-                  <div class="sec_title">
+      <section className="sec1 case-study-sec case-study-sec1">
+        <div className="width-1600">
+          <div className="container-fluid">
+            <div className="row align-items-center">
+              <div className="col-md-6">
+                <div className="casestudy-content">
+                  <div className="sec_title">
                     <div className="d-flex gx-2  my-3 g-2">
                       <img src={playstore} className="rounded" />
                       <img className="ml-4 rounded" src={appStore} />
                     </div>
 
                     <h2
-                      class="sec_title_head"
+                      className="sec_title_head"
                       data-aos="fade-up"
                       data-aos-offset="0"
                       data-aos-duration="1000"
@@ -254,27 +270,29 @@ const Case_study = () => {
                       engagement through a bespoke e-commerce app.
                     </p>
                     <div
-                      class="techVerse_hero_btns "
+                      className="techVerse_hero_btns "
                       data-aos="fade-right"
                       data-aos-offset="0"
                       data-aos-duration="3000"
                     >
-                      <a href="#" class="btn_with_icon btn_secondary">
+                      <a href="#" className="btn_with_icon btn_secondary">
                         <img
-                          class="btn_with_icon_img"
+                          className="btn_with_icon_img"
                           src={phoneiconblue}
                           alt=""
                         />
-                        <span class="btn_with_icon_text">Call Now</span>
+                        <span className="btn_with_icon_text">Call Now</span>
                       </a>
 
                       <button
-                        class="btn_with_icon btn_white"
+                        className="btn_with_icon btn_white"
                         data-toggle="modal"
                         data-target=".bd-example-modal-lg"
                       >
-                        {/* <!-- <img class="btn_with_icon_img" src="images/phone-icon-blue.webp" alt=""> --> */}
-                        <span class="btn_with_icon_text">Request A Quote</span>
+                        {/* <!-- <img className="btn_with_icon_img" src="images/phone-icon-blue.webp" alt=""> --> */}
+                        <span className="btn_with_icon_text">
+                          Request A Quote
+                        </span>
                       </button>
                     </div>
                   </div>
@@ -287,19 +305,19 @@ const Case_study = () => {
 
       {/* <!-- Case Study Sec 2 --> */}
       {/* style="background-image: url(images/case-study-sec222-bg.webp);" */}
-      <section class="sec2 case-study-sec case-study-sec2">
-        <div class="width-1600">
-          <div class="container-fluid">
-            <div class="row align-items-center">
-              <div class="col-md-6">
-                <div class="casestudy-content">
-                  <div class="sec_title">
+      <section className="sec2 case-study-sec case-study-sec2">
+        <div className="width-1600">
+          <div className="container-fluid">
+            <div className="row align-items-center">
+              <div className="col-md-6">
+                <div className="casestudy-content">
+                  <div className="sec_title">
                     <div className="d-flex gx-2  my-3 g-2">
                       <img src={playstore} className="rounded" />
                       <img className="ml-4 rounded" src={appStore} />
                     </div>
                     <h2
-                      class="sec_title_head"
+                      className="sec_title_head"
                       data-aos="fade-up"
                       data-aos-offset="0"
                       data-aos-duration="1000"
@@ -316,35 +334,37 @@ const Case_study = () => {
                       engagement through a bespoke e-commerce app.
                     </p>
                     <div
-                      class="techVerse_hero_btns "
+                      className="techVerse_hero_btns "
                       data-aos="fade-right"
                       data-aos-offset="0"
                       data-aos-duration="3000"
                     >
-                      <a href="#" class="btn_with_icon btn_secondary">
+                      <a href="#" className="btn_with_icon btn_secondary">
                         <img
-                          class="btn_with_icon_img"
+                          className="btn_with_icon_img"
                           src={phoneiconblue}
                           alt=""
                         />
-                        <span class="btn_with_icon_text">Call Now</span>
+                        <span className="btn_with_icon_text">Call Now</span>
                       </a>
-                      {/* <div class="techVerse_store_links">
-                        <a href="#" class="techVerse_store_link">
+                      {/* <div className="techVerse_store_links">
+                        <a href="#" className="techVerse_store_link">
                           <img src={playstore} alt="" />
                         </a>
-                        <a href="#" class="techVerse_store_link">
+                        <a href="#" className="techVerse_store_link">
                           <img src={appStore} alt="" />
                         </a>
                       </div> */}
 
                       <button
-                        class="btn_with_icon btn_white"
+                        className="btn_with_icon btn_white"
                         data-toggle="modal"
                         data-target=".bd-example-modal-lg"
                       >
-                        {/* <!-- <img class="btn_with_icon_img" src="images/phone-icon-blue.webp" alt=""> --> */}
-                        <span class="btn_with_icon_text">Request A Quote</span>
+                        {/* <!-- <img className="btn_with_icon_img" src="images/phone-icon-blue.webp" alt=""> --> */}
+                        <span className="btn_with_icon_text">
+                          Request A Quote
+                        </span>
                       </button>
                     </div>
                   </div>
@@ -358,19 +378,19 @@ const Case_study = () => {
       {/* <!-- Case Study Sec 3 --> */}
 
       {/*  style="background-image: url(images/case-study-sec3-bg.webp);" */}
-      <section class="sec3 case-study-sec case-study-sec3">
-        <div class="width-1600">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="casestudy-content">
-                  <div class="sec_title">
+      <section className="sec3 case-study-sec case-study-sec3">
+        <div className="width-1600">
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col-md-6">
+                <div className="casestudy-content">
+                  <div className="sec_title">
                     <div className="d-flex gx-2  my-3 g-2">
                       <img src={playstore} className="rounded" />
                       <img className="ml-4 rounded" src={appStore} />
                     </div>
                     <h2
-                      class="sec_title_head"
+                      className="sec_title_head"
                       data-aos="fade-up"
                       data-aos-offset="0"
                       data-aos-duration="1000"
@@ -387,34 +407,36 @@ const Case_study = () => {
                       engagement through a bespoke e-commerce app.
                     </p>
                     <div
-                      class="techVerse_hero_btns "
+                      className="techVerse_hero_btns "
                       data-aos="fade-right"
                       data-aos-offset="0"
                       data-aos-duration="3000"
                     >
-                      <a href="#" class="btn_with_icon btn_secondary">
+                      <a href="#" className="btn_with_icon btn_secondary">
                         <img
-                          class="btn_with_icon_img"
+                          className="btn_with_icon_img"
                           src={phoneiconblue}
                           alt=""
                         />
-                        <span class="btn_with_icon_text">Call Now</span>
+                        <span className="btn_with_icon_text">Call Now</span>
                       </a>
-                      {/* <div class="techVerse_store_links">
-                        <a href="#" class="techVerse_store_link">
+                      {/* <div className="techVerse_store_links">
+                        <a href="#" className="techVerse_store_link">
                           <img src={playstore} alt="" />
                         </a>
-                        <a href="#" class="techVerse_store_link">
+                        <a href="#" className="techVerse_store_link">
                           <img src={appStore} alt="" />
                         </a>
                       </div> */}
                       <button
-                        class="btn_with_icon btn_white"
+                        className="btn_with_icon btn_white"
                         data-toggle="modal"
                         data-target=".bd-example-modal-lg"
                       >
-                        {/* <!-- <img class="btn_with_icon_img" src="images/phone-icon-blue.webp" alt=""> --> */}
-                        <span class="btn_with_icon_text">Request A Quote</span>
+                        {/* <!-- <img className="btn_with_icon_img" src="images/phone-icon-blue.webp" alt=""> --> */}
+                        <span className="btn_with_icon_text">
+                          Request A Quote
+                        </span>
                       </button>
                     </div>
                   </div>
@@ -427,15 +449,15 @@ const Case_study = () => {
 
       {/* <!-- Case Study Sec 4 --> */}
       {/* style="background-image: url(images/case-study-sec4-bg.webp);" */}
-      <section class="sec4 case-study-sec case-study-sec4">
-        <div class="width-1600">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="casestudy-content">
-                  <div class="sec_title">
+      <section className="sec4 case-study-sec case-study-sec4">
+        <div className="width-1600">
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col-md-6">
+                <div className="casestudy-content">
+                  <div className="sec_title">
                     <h2
-                      class="sec_title_head"
+                      className="sec_title_head"
                       data-aos="fade-up"
                       data-aos-offset="0"
                       data-aos-duration="1000"
@@ -452,34 +474,36 @@ const Case_study = () => {
                       engagement through a bespoke e-commerce app.
                     </p>
                     <div
-                      class="techVerse_hero_btns "
+                      className="techVerse_hero_btns "
                       data-aos="fade-right"
                       data-aos-offset="0"
                       data-aos-duration="3000"
                     >
-                      <a href="#" class="btn_with_icon btn_secondary">
+                      <a href="#" className="btn_with_icon btn_secondary">
                         <img
-                          class="btn_with_icon_img"
+                          className="btn_with_icon_img"
                           src={phoneiconblue}
                           alt=""
                         />
-                        <span class="btn_with_icon_text">Call Now</span>
+                        <span className="btn_with_icon_text">Call Now</span>
                       </a>
-                      {/* <div class="techVerse_store_links">
-                        <a href="#" class="techVerse_store_link">
+                      {/* <div className="techVerse_store_links">
+                        <a href="#" className="techVerse_store_link">
                           <img src={playstore} alt="" />
                         </a>
-                        <a href="#" class="techVerse_store_link">
+                        <a href="#" className="techVerse_store_link">
                           <img src={appStore} alt="" />
                         </a>
                       </div> */}
                       <button
-                        class="btn_with_icon btn_white"
+                        className="btn_with_icon btn_white"
                         data-toggle="modal"
                         data-target=".bd-example-modal-lg"
                       >
-                        {/* <!-- <img class="btn_with_icon_img" src="images/phone-icon-blue.webp" alt=""> --> */}
-                        <span class="btn_with_icon_text">Request A Quote</span>
+                        {/* <!-- <img className="btn_with_icon_img" src="images/phone-icon-blue.webp" alt=""> --> */}
+                        <span className="btn_with_icon_text">
+                          Request A Quote
+                        </span>
                       </button>
                     </div>
                   </div>
@@ -492,19 +516,19 @@ const Case_study = () => {
 
       {/* <!-- Case Study Sec 5 --> */}
       {/* style={"background-image: url(images/case-study-sec5-bg.webp);"} */}
-      <section class="sec5 case-study-sec case-study-sec5">
-        <div class="width-1600">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="casestudy-content">
-                  <div class="sec_title">
+      <section className="sec5 case-study-sec case-study-sec5">
+        <div className="width-1600">
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col-md-6">
+                <div className="casestudy-content">
+                  <div className="sec_title">
                     <div className="d-flex gx-2  my-3 g-2">
                       <img src={playstore} className="rounded" />
                       <img className="ml-4 rounded" src={appStore} />
                     </div>
                     <h2
-                      class="sec_title_head"
+                      className="sec_title_head"
                       data-aos="fade-up"
                       data-aos-offset="0"
                       data-aos-duration="1000"
@@ -520,35 +544,37 @@ const Case_study = () => {
                       travelers with our innovative travel mobile app solutions.
                     </p>
                     <div
-                      class="techVerse_hero_btns "
+                      className="techVerse_hero_btns "
                       data-aos="fade-right"
                       data-aos-offset="0"
                       data-aos-duration="3000"
                     >
-                      <a href="#" class="btn_with_icon btn_secondary">
+                      <a href="#" className="btn_with_icon btn_secondary">
                         <img
-                          class="btn_with_icon_img"
+                          className="btn_with_icon_img"
                           src={phoneiconblue}
                           alt=""
                         />
-                        <span class="btn_with_icon_text">Call Now</span>
+                        <span className="btn_with_icon_text">Call Now</span>
                       </a>
-                      {/* <div class="techVerse_store_links">
-                        <a href="#" class="techVerse_store_link">
+                      {/* <div className="techVerse_store_links">
+                        <a href="#" className="techVerse_store_link">
                           <img src={playstore} alt="" />
                         </a>
-                        <a href="#" class="techVerse_store_link">
+                        <a href="#" className="techVerse_store_link">
                           <img src={appStore} alt="" />
                         </a>
                       </div> */}
 
                       <button
-                        class="btn_with_icon btn_white"
+                        className="btn_with_icon btn_white"
                         data-toggle="modal"
                         data-target=".bd-example-modal-lg"
                       >
-                        {/* <!-- <img class="btn_with_icon_img" src="images/phone-icon-blue.webp" alt=""> --> */}
-                        <span class="btn_with_icon_text">Request A Quote</span>
+                        {/* <!-- <img className="btn_with_icon_img" src="images/phone-icon-blue.webp" alt=""> --> */}
+                        <span className="btn_with_icon_text">
+                          Request A Quote
+                        </span>
                       </button>
                     </div>
                   </div>
@@ -560,19 +586,19 @@ const Case_study = () => {
       </section>
 
       {/* <!-- Case Study Sec 6 --> */}
-      <section class="sec5 case-study-sec case-study-sec6">
-        <div class="width-1600">
-          <div class="container-fluid">
-            <div class="row align-items-center">
-              <div class="col-md-6">
-                <div class="casestudy-content">
-                  <div class="sec_title">
+      <section className="sec5 case-study-sec case-study-sec6">
+        <div className="width-1600">
+          <div className="container-fluid">
+            <div className="row align-items-center">
+              <div className="col-md-6">
+                <div className="casestudy-content">
+                  <div className="sec_title">
                     <div className="d-flex gx-2  my-3 g-2">
                       <img src={playstore} className="rounded" />
                       <img className="ml-4 rounded" src={appStore} />
                     </div>
                     <h2
-                      class="sec_title_head"
+                      className="sec_title_head"
                       data-aos="fade-up"
                       data-aos-offset="0"
                       data-aos-duration="1000"
@@ -588,35 +614,37 @@ const Case_study = () => {
                       travelers with our innovative travel mobile app solutions.
                     </p>
                     <div
-                      class="techVerse_hero_btns "
+                      className="techVerse_hero_btns "
                       data-aos="fade-right"
                       data-aos-offset="0"
                       data-aos-duration="3000"
                     >
-                      <a href="#" class="btn_with_icon btn_secondary">
+                      <a href="#" className="btn_with_icon btn_secondary">
                         <img
-                          class="btn_with_icon_img"
+                          className="btn_with_icon_img"
                           src={phoneiconblue}
                           alt=""
                         />
-                        <span class="btn_with_icon_text">Call Now</span>
+                        <span className="btn_with_icon_text">Call Now</span>
                       </a>
-                      {/* <div class="techVerse_store_links">
-                        <a href="#" class="techVerse_store_link">
+                      {/* <div className="techVerse_store_links">
+                        <a href="#" className="techVerse_store_link">
                           <img src={playstore} alt="" />
                         </a>
-                        <a href="#" class="techVerse_store_link">
+                        <a href="#" className="techVerse_store_link">
                           <img src={appStore} alt="" />
                         </a>
                       </div> */}
 
                       <button
-                        class="btn_with_icon btn_white"
+                        className="btn_with_icon btn_white"
                         data-toggle="modal"
                         data-target=".bd-example-modal-lg"
                       >
-                        {/* <!-- <img class="btn_with_icon_img" src="images/phone-icon-blue.webp" alt=""> --> */}
-                        <span class="btn_with_icon_text">Request A Quote</span>
+                        {/* <!-- <img className="btn_with_icon_img" src="images/phone-icon-blue.webp" alt=""> --> */}
+                        <span className="btn_with_icon_text">
+                          Request A Quote
+                        </span>
                       </button>
                     </div>
                   </div>
@@ -631,106 +659,112 @@ const Case_study = () => {
         // <div className="modal show" tabIndex="-1" style={{ display: 'block' }}   id="popup_modal_id"> */}
 
         <div
-          class="modal fade bd-example-modal-lg popup_modal"
+          className="modal fade bd-example-modal-lg popup_modal"
           id="popup_modal_id"
           tabindex="-1"
           role="dialog"
           aria-labelledby="myLargeModalLabel"
           aria-hidden="false"
         >
-          <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-              {/* <!-- <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <div className="modal-dialog modal-lg modal-dialog-centered">
+            <div className="modal-content">
+              {/* <!-- <div className="modal-header">
+        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div> --> */}
-              <div class="modal-body">
+              <div className="modal-body">
                 <button
                   type="button"
-                  class="close popup_modal-close"
+                  className="close popup_modal-close"
                   data-dismiss="modal"
                   aria-label="Close"
                 >
                   <span aria-hidden="true">&times;</span>
                 </button>
-                <div class="container-fluid">
-                  <div class="row align-items-center">
-                    <div class="col-md-6">
-                      <div class="popUp_img">
+                <div className="container-fluid">
+                  <div className="row align-items-center">
+                    <div className="col-md-6">
+                      <div className="popUp_img">
                         <img src={sportsimg3} alt="" />
                       </div>
                     </div>
-                    <div class="col-md-6">
-                      <div class="popUp_content">
-                        <div class="popUp_title">
-                          <h2 class="popUp_title_head color-white">
+                    <div className="col-md-6">
+                      <div className="popUp_content">
+                        <div className="popUp_title">
+                          <h2 className="popUp_title_head color-white">
                             Sign Up Now To Get A Free Quote! Upto 50% Off For
                             Limited Time
-                            {/* <!-- <span class="color-lightBlue2">Choose</span> Us? --> */}
+                            {/* <!-- <span className="color-lightBlue2">Choose</span> Us? --> */}
                           </h2>
                         </div>
-                        <div class="popUp_form">
+                        <div className="popUp_form">
                           <form onSubmit={handlesubmit}>
-                            <div class="input-group mb-3">
-                              <div class="input-group-prepend">
+                            <div className="input-group mb-3">
+                              <div className="input-group-prepend">
                                 <span
-                                  class="input-group-text"
+                                  className="input-group-text"
                                   id="inputGroup-sizing-default"
                                 >
-                                  <i class="fa fa-user" aria-hidden="true"></i>
+                                  <i
+                                    className="fa fa-user"
+                                    aria-hidden="true"
+                                  ></i>
                                 </span>
                               </div>
                               <input
                                 type="text"
-                                class="form-control"
+                                className="form-control"
                                 name="name"
                                 placeholder="Name"
                                 onChange={handlechange}
                               />
                             </div>
-                            <div class="input-group mb-3">
-                              <div class="input-group-prepend">
+                            <div className="input-group mb-3">
+                              <div className="input-group-prepend">
                                 <span
-                                  class="input-group-text"
+                                  className="input-group-text"
                                   id="inputGroup-sizing-default"
                                 >
                                   <i
-                                    class="fa fa-envelope"
+                                    className="fa fa-envelope"
                                     aria-hidden="true"
                                   ></i>
                                 </span>
                               </div>
                               <input
                                 type="email"
-                                class="form-control"
+                                className="form-control"
                                 placeholder="Email Here"
                                 onChange={handlechange}
                                 name="email"
                               />
                             </div>
-                            <div class="input-group mb-3">
-                              <div class="input-group-prepend">
+                            <div className="input-group mb-3">
+                              <div className="input-group-prepend">
                                 <span
-                                  class="input-group-text"
+                                  className="input-group-text"
                                   id="inputGroup-sizing-default"
                                 >
-                                  <i class="fa fa-phone" aria-hidden="true"></i>
+                                  <i
+                                    className="fa fa-phone"
+                                    aria-hidden="true"
+                                  ></i>
                                 </span>
                               </div>
                               <input
                                 name="phone"
                                 type="text"
                                 onChange={handlechange}
-                                class="form-control"
+                                className="form-control"
                                 placeholder="Phone Number"
                               />
                             </div>
-                            <div class="input-group">
-                              <div class="input-group-prepend">
-                                <span class="input-group-text">
+                            <div className="input-group">
+                              <div className="input-group-prepend">
+                                <span className="input-group-text">
                                   <i
-                                    class="fa fa-comment"
+                                    className="fa fa-comment"
                                     aria-hidden="true"
                                   ></i>
                                 </span>
@@ -738,17 +772,17 @@ const Case_study = () => {
                               <textarea
                                 onChange={handlechange}
                                 name="message"
-                                class="form-control"
+                                className="form-control"
                                 aria-label="With textarea"
                                 placeholder="Message"
                               ></textarea>
                             </div>
                             <button
                               type="submit"
-                              class="btn_with_icon popUp_form_btn"
+                              className="btn_with_icon popUp_form_btn"
                             >
-                              {/* <!-- <img class="btn_with_icon_img" src="images/phone-icon.webp" alt=""> --> */}
-                              <span class="btn_with_icon_text">
+                              {/* <!-- <img className="btn_with_icon_img" src="images/phone-icon.webp" alt=""> --> */}
+                              <span className="btn_with_icon_text">
                                 Request A Quote
                               </span>
                             </button>

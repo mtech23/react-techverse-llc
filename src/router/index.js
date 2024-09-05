@@ -10,6 +10,7 @@ import EcommerseDevelopment from "../screens/ecommerseDevelopment";
 
 import DigitalMarketing from "../screens/digitalMarketing";
 import Devops from "../screens/Devops";
+import OutSourcing from "../screens/OutSource";
 import Finance from "../screens/finance";
 import WebDevelopment from "../screens/webDevelopment";
 import Automotive from "../screens/automotive";
@@ -25,6 +26,7 @@ import Case_study from "../screens/case_study";
 import Privacy_Policy from "../screens/Privacy_Policy";
 import Terms_condition from "../screens/Terms_condition";
 import ScrollTop from "../Components/Scrolltop/ScrollTop";
+import Branding from "../screens/branding";
 const Router = () => {
   return (
     <BrowserRouter basename="/">
@@ -45,7 +47,9 @@ const Router = () => {
           element={<RealEstate_and_property />}
         ></Route>
         <Route path="/digital-marketing" element={<DigitalMarketing />}></Route>
+        <Route path="/branding" element={<Branding />}></Route>
         <Route path="/Devops" element={<Devops />}></Route>
+        <Route path="/out-sourcing" element={<OutSourcing />}></Route>
         <Route path="/web-Development" element={<WebDevelopment />}></Route>
         <Route path="/automotive" element={<Automotive />}></Route>
         <Route path="/media" element={<Media />}></Route>

@@ -1,4 +1,3 @@
-
 import { UserLayout } from "../../Components/Layout/UserLayout";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { gsap } from "gsap";
@@ -46,7 +45,7 @@ import Macbook from "../../asserts/images/Macbook.webp";
 import Testimonials from "../../Components/Testimonials";
 
 import sportsimg2 from "../../asserts/images/sports-img-2.webp";
-import Helmet from '../../Components/Helmet';
+import Helmet from "../../Components/Helmet";
 gsap.registerPlugin(MotionPathPlugin);
 
 const Sports = () => {
@@ -54,15 +53,11 @@ const Sports = () => {
 
   return (
     <UserLayout>
-  
-
-
-
       <Helmet
-        title=" Sports Teams & Leagues Scorecards with Techverse LLC Apps"
-        description="Professional sports teams management apps with proper records and each player database. Techverse LLC offers sports teams & leagues apps. "
+        title="Unbeatable IT Solutions For Sports Industry | Techverse LLC"
+        description="Techverse LLC offers unbeatable IT solutions for the sports industry. Transform your operations with our cutting-edge technology and dedicated support. "
+        keywords="Sports"
       />
-
 
       <HeroSection
         classheroimage={"sports_bg_custom"}
@@ -82,7 +77,7 @@ const Sports = () => {
           appstore: appstore,
         }}
 
-      // secondaryButtonClass="btn_with_icon btn_secondary"
+        // secondaryButtonclassName="btn_with_icon btn_secondary"
       />
       {/* <!-- Trusted Partners --> */}
 
@@ -91,10 +86,10 @@ const Sports = () => {
       {/* <!-- About Sec --> */}
 
       <Portfolio
-        newClass="health-care-abt1"
+        newclassName="health-care-abt1"
         pinkcapsol={pinkcapsol}
         classtitle={" color-darkBlue   "}
-        // newClass={"media-abt1"}
+        // newclassName={"media-abt1"}
         greencube={greencube}
         donatorange={donatorange}
         title="From Huddle To High-Five Techverse Apps"
@@ -125,7 +120,7 @@ const Sports = () => {
 
       {/* <!-- Real Estate App Dev --> */}
       <Development_Process
-        sportsclass={"sports-img-2"}
+        sportsclassName={"sports-img-2"}
         image={sportsimg2}
         title=" Techverse Leads The Way In "
         title2=" Technology "
@@ -166,7 +161,7 @@ const Sports = () => {
 
       <Driving_Exprience
         titleclass2="color-darkBlue"
-        titleclass="color-darkBlue"
+        titleclassName="color-darkBlue"
         title="Why Choose Our  "
         subtitle="    Media & Entertainment  "
         title2=" App Development Service  "

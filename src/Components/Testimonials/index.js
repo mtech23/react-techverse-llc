@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./style.css";
- 
+
 import video1 from "../../asserts/images/Video 1.mp4";
 import video2 from "../../asserts/images/Video 2.mp4";
 import video3 from "../../asserts/images/Video 3.mp4";
@@ -53,7 +53,6 @@ const videos = [
     thumbnail: image438,
     videoSrc: Video7,
   },
- 
 ];
 
 const Testimonials = () => {
@@ -70,14 +69,14 @@ const Testimonials = () => {
 
   return (
     <>
-      <section class="techVerse_testimonials">
-        {/* <div class="techVerse_testimonialsContent"> */}
-        <div class="width-1600">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="techVerse_testimonialsTextSec">
-                  <div class="testimonials_titleHead">
+      <section className="techVerse_testimonials">
+        {/* <div className="techVerse_testimonialsContent"> */}
+        <div className="width-1600">
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col-md-6">
+                <div className="techVerse_testimonialsTextSec">
+                  <div className="testimonials_titleHead">
                     <span
                       data-aos="fade-right"
                       data-aos-offset="0"
@@ -94,7 +93,7 @@ const Testimonials = () => {
                     />
                   </div>
                   <h2
-                    class="testimonials_title"
+                    className="testimonials_title"
                     data-aos="fade-up"
                     data-aos-offset="0"
                     data-aos-duration="2000"
@@ -102,7 +101,7 @@ const Testimonials = () => {
                     WHAT PEOPLE SAY
                   </h2>
                   <div
-                    class="techVerse_testimonialsTextSec-img testimonial-pic"
+                    className="techVerse_testimonialsTextSec-img testimonial-pic"
                     data-aos="fade-up"
                     data-aos-offset="0"
                     data-aos-duration="3000"
@@ -122,18 +121,18 @@ const Testimonials = () => {
                   </div>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div className="col-md-6">
                 <div
-                  class="testimonial"
+                  className="testimonial"
                   data-aos="fade-left"
                   data-aos-offset="0"
                   data-aos-duration="3000"
                 >
-                  <div class="content active" id="tab1">
+                  <div className="content active" id="tab1">
                     {videos?.map((items, index) => (
                       <div
                         key={index}
-                        class={
+                        className={
                           items?.id == selectedVideo
                             ? "d-block rc"
                             : " rc d-none"

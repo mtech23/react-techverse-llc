@@ -62,39 +62,42 @@ const Driving_Exprience = (props) => {
       <section
         className={`techVerse_about techVerse_aboutServices2 ${props?.classheroimage}`}
       >
-        <div class={props?.class_innerBG}></div>
+        <div className={props?.class_innerBG}></div>
         <div className="inner_images">
           <img
-            class="techVerse_about_icon1 animation11"
+            className="techVerse_about_icon1 animation11"
             src={pinkcapsol}
             alt=""
           />
 
           <img
-            class="techVerse_about_icon3 animation11"
+            className="techVerse_about_icon3 animation11"
             src={greencube}
             alt=""
           />
           <img
-            class="techVerse_about_icon4 animation11"
+            className="techVerse_about_icon4 animation11"
             src={donatorange}
             alt=""
           />
         </div>
-        <div class="techVerse_aboutContent techVerse_aboutContentServices2 width-1600">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="sec_title buildStore_sec_title">
+        <div className="techVerse_aboutContent techVerse_aboutContentServices2 width-1600">
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col-md-12">
+                <div className="sec_title buildStore_sec_title">
                   <h2
-                    class={`sec_title_head color-lightBlue2 ${props?.title_text_class}`}
+                    className={`sec_title_head color-lightBlue2 ${props?.title_text_class}`}
                     data-aos="fade-up"
                     data-aos-offset="0"
                     data-aos-duration="1000"
                   >
-                    <span class={props?.titleclass}>{props?.title}</span>{" "}
+                    <span className={props?.titleclass}>{props?.title}</span>{" "}
                     {props?.subtitle}{" "}
-                    <span class={props?.titleclass2}> {props?.title2} </span>
+                    <span className={props?.titleclass2}>
+                      {" "}
+                      {props?.title2}{" "}
+                    </span>
                   </h2>
 
                   <p
@@ -106,12 +109,12 @@ const Driving_Exprience = (props) => {
                   </p>
                 </div>
               </div>
-              <div class="col-lg-5">
-                <div class="techVerse_about_img">
-                  <div class="techVerse_about_laptop_img driving-2screen">
+              <div className="col-lg-5">
+                <div className="techVerse_about_img">
+                  <div className="techVerse_about_laptop_img driving-2screen">
                     <img
                       src={props?.image}
-                      class={`about-laptopImg mobileApp_devSec_img 4 ${props?.hrimg}`}
+                      className={`about-laptopImg mobileApp_devSec_img 4 ${props?.hrimg}`}
                       data-aos="fade-right"
                       data-aos-offset="0"
                       data-aos-duration="1000"
@@ -119,100 +122,100 @@ const Driving_Exprience = (props) => {
                   </div>
                 </div>
               </div>
-              <div class="col-lg-7">
-                <div class="techVerse_about_content services-abbout2">
-                  <div class="row">
-                    <div class="col-md-6">
+              <div className="col-lg-7">
+                <div className="techVerse_about_content services-abbout2">
+                  <div className="row">
+                    <div className="col-md-6">
                       <div
-                        class="icon_box"
+                        className="icon_box"
                         data-aos="fade-up"
                         data-aos-duration="1000"
                       >
-                        <div class="box_icon">
+                        <div className="box_icon">
                           <img src={reicon1} alt="" />
                         </div>
                         <h4>{props?.h1}</h4>
                       </div>
                     </div>
-                    <div class="col-md-6">
+                    <div className="col-md-6">
                       <div
-                        class="icon_box"
+                        className="icon_box"
                         data-aos="fade-up"
                         data-aos-duration="1000"
                       >
-                        <div class="box_icon">
+                        <div className="box_icon">
                           <img src={reicon2} alt="" />
                         </div>
                         <h4>{props?.h2}</h4>
                       </div>
                     </div>
-                    <div class="col-md-6">
+                    <div className="col-md-6">
                       <div
-                        class="icon_box"
+                        className="icon_box"
                         data-aos="fade-up"
                         data-aos-duration="1000"
                       >
-                        <div class="box_icon">
+                        <div className="box_icon">
                           <img src={reicon3} alt="" />
                         </div>
                         <h4> {props?.h3}</h4>
                       </div>
                     </div>
-                    <div class="col-md-6">
+                    <div className="col-md-6">
                       <div
-                        class="icon_box"
+                        className="icon_box"
                         data-aos="fade-up"
                         data-aos-duration="1000"
                       >
-                        <div class="box_icon">
+                        <div className="box_icon">
                           <img src={reicon4} alt="" />
                         </div>
                         <h4> {props?.h4}</h4>
                       </div>
                     </div>
-                    <div class="col-md-6">
+                    <div className="col-md-6">
                       <div
-                        class="icon_box"
+                        className="icon_box"
                         data-aos="fade-up"
                         data-aos-duration="1000"
                       >
-                        <div class="box_icon">
+                        <div className="box_icon">
                           <img src={reicon5} alt="" />
                         </div>
                         <h4> {props?.h5}</h4>
                       </div>
                     </div>
-                    <div class="col-md-6">
+                    <div className="col-md-6">
                       <div
-                        class="icon_box"
+                        className="icon_box"
                         data-aos="fade-up"
                         data-aos-duration="1000"
                       >
-                        <div class="box_icon">
+                        <div className="box_icon">
                           <img src={reicon6} alt="" />
                         </div>
                         <h4>{props?.h6} </h4>
                       </div>
                     </div>
-                    <div class="col-md-6">
+                    <div className="col-md-6">
                       <div
-                        class="icon_box"
+                        className="icon_box"
                         data-aos="fade-up"
                         data-aos-duration="1000"
                       >
-                        <div class="box_icon">
+                        <div className="box_icon">
                           <img src={reicon7} alt="" />
                         </div>
                         <h4>{props?.h7} </h4>
                       </div>
                     </div>
-                    <div class="col-md-6">
+                    <div className="col-md-6">
                       <div
-                        class="icon_box"
+                        className="icon_box"
                         data-aos="fade-up"
                         data-aos-duration="1000"
                       >
-                        <div class="box_icon">
+                        <div className="box_icon">
                           <img src={reicon8} alt="" />
                         </div>
                         <h4>{props?.h8} </h4>

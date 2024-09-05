@@ -1,4 +1,3 @@
- 
 import { UserLayout } from "../../Components/Layout/UserLayout";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { gsap } from "gsap";
@@ -39,7 +38,7 @@ import Macbook from "../../asserts/images/Macbook.webp";
 import App_development_solutions from "../../Components/App_development_solutions";
 import Development_Process from "../../Components/Development_Process";
 import Testimonials from "../../Components/Testimonials";
- import Helmet from '../../Components/Helmet'
+import Helmet from "../../Components/Helmet";
 
 gsap.registerPlugin(MotionPathPlugin);
 
@@ -48,12 +47,10 @@ const Automotive = () => {
 
   return (
     <UserLayout>
-      
-
-
       <Helmet
-        title="  The Techverse LLC Offers Automotive and Transport Solutions"
-        description="Techverse LLC is the place for developing the best automotive Apps. We can craft Automotive and Transport solutions with live navigations."
+        title="Get Expert IT Services For Automotive Industry | Techverse LLC "
+        description="Get top rated IT services for the automotive industry with Techverse LLC. Our expert team is ready to elevate your business with cutting-edge technology."
+        keywords="Automotive"
       />
       <HeroSection
         classheroimage="inner-automotive-bgColor "
@@ -159,7 +156,7 @@ const Automotive = () => {
       <Driving_Exprience
         class_innerBG="drivingSec_innerBG"
         classheroimage="drivingSec"
-        titleclass="color-white "
+        titleclassName="color-white "
         titleclass2=" color-white "
         title="Beyond The Wheel A Revolution In "
         subtitle=" Driving "

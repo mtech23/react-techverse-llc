@@ -108,19 +108,19 @@ className="mySwiper"
 >
 <SwiperSlide>
 
-  <section class="techVerse_hero">
-    <div class="techVerse_heroContent">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="techVerse_hero_content">
+  <section className="techVerse_hero">
+    <div className="techVerse_heroContent">
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-md-6">
+            <div className="techVerse_hero_content">
               <h1
                 data-aos="fade-right"
                 data-aos-offset="0"
                 data-aos-duration="1000"
               >
                 Award-Winning Mobile App
-                <span class="color-lightBlue1">Development</span>
+                <span className="color-lightBlue1">Development</span>
                 Company In USA
               </h1>
               <p
@@ -134,61 +134,61 @@ className="mySwiper"
                 when an unknown printer took a galley of type
               </p>
               <div
-                class="techVerse_hero_btns"
+                className="techVerse_hero_btns"
                 data-aos="fade-right"
                 data-aos-offset="0"
                 data-aos-duration="3000"
               >
-                <a href="#" class="btn_with_icon">
+                <a href="#" className="btn_with_icon">
                   <img
-                    class="btn_with_icon_img"
+                    className="btn_with_icon_img"
                     src={phoneicon}
                     alt=""
                   />
-                  <span class="btn_with_icon_text">Call Now</span>
+                  <span className="btn_with_icon_text">Call Now</span>
                 </a>
-                <a href="#" class="btn_with_icon btn_secondary">
+                <a href="#" className="btn_with_icon btn_secondary">
                   <img
-                    class="btn_with_icon_img"
+                    className="btn_with_icon_img"
                     src={chaticon}
                     alt=""
                   />
-                  <span class="btn_with_icon_text">Chat Now</span>
+                  <span className="btn_with_icon_text">Chat Now</span>
                 </a>
               </div>
               <div
-                class="hero_brands"
+                className="hero_brands"
                 data-aos="fade-right"
                 data-aos-offset="0"
                 data-aos-duration="3000"
               >
-                <a href="#" class="hero_brands_img"
+                <a href="#" className="hero_brands_img"
                 ><img src={clutch} alt=""
                   /></a>
-                <a href="#" class="hero_brands_img"
+                <a href="#" className="hero_brands_img"
                 ><img src={truspilot} alt=""
                   /></a>
-                <a href="#" class="hero_brands_img"
+                <a href="#" className="hero_brands_img"
                 ><img src={bbb} alt=""
                   /></a>
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="techVerse_hero_img">
+          <div className="col-md-6">
+            <div className="techVerse_hero_img">
               <img
                 src={donatblue}
-                class="techVerse_hero_icon1 animation11"
+                className="techVerse_hero_icon1 animation11"
                 alt=""
               />
               <img
                 src={PillBlueGlossy}
-                class="techVerse_hero_icon2 animation22"
+                className="techVerse_hero_icon2 animation22"
                 alt=""
               />
               <img
                 src={ConeBlueGlossy}
-                class="techVerse_hero_icon3 animation22"
+                className="techVerse_hero_icon3 animation22"
                 alt=""
               />
               <img
@@ -215,19 +215,19 @@ className="mySwiper"
 
 
 <SwiperSlide>
-  <section class="techVerse_hero">
-    <div class="techVerse_heroContent">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="techVerse_hero_content">
+  <section className="techVerse_hero">
+    <div className="techVerse_heroContent">
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-md-6">
+            <div className="techVerse_hero_content">
               <h1
                 data-aos="fade-right"
                 data-aos-offset="0"
                 data-aos-duration="1000"
               >
                 Award-Winning Mobile App
-                <span class="color-lightBlue1">Development</span>
+                <span className="color-lightBlue1">Development</span>
                 Company In USA
               </h1>
               <p
@@ -241,61 +241,61 @@ className="mySwiper"
                 when an unknown printer took a galley of type
               </p>
               <div
-                class="techVerse_hero_btns"
+                className="techVerse_hero_btns"
                 data-aos="fade-right"
                 data-aos-offset="0"
                 data-aos-duration="3000"
               >
-                <a href="#" class="btn_with_icon">
+                <a href="#" className="btn_with_icon">
                   <img
-                    class="btn_with_icon_img"
+                    className="btn_with_icon_img"
                     src={phoneicon}
                     alt=""
                   />
-                  <span class="btn_with_icon_text">Call Now</span>
+                  <span className="btn_with_icon_text">Call Now</span>
                 </a>
-                <a href="#" class="btn_with_icon btn_secondary">
+                <a href="#" className="btn_with_icon btn_secondary">
                   <img
-                    class="btn_with_icon_img"
+                    className="btn_with_icon_img"
                     src={chaticon}
                     alt=""
                   />
-                  <span class="btn_with_icon_text">Chat Now</span>
+                  <span className="btn_with_icon_text">Chat Now</span>
                 </a>
               </div>
               <div
-                class="hero_brands"
+                className="hero_brands"
                 data-aos="fade-right"
                 data-aos-offset="0"
                 data-aos-duration="3000"
               >
-                <a href="#" class="hero_brands_img"
+                <a href="#" className="hero_brands_img"
                 ><img src={clutch} alt=""
                   /></a>
-                <a href="#" class="hero_brands_img"
+                <a href="#" className="hero_brands_img"
                 ><img src={truspilot} alt=""
                   /></a>
-                <a href="#" class="hero_brands_img"
+                <a href="#" className="hero_brands_img"
                 ><img src={bbb} alt=""
                   /></a>
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="techVerse_hero_img">
+          <div className="col-md-6">
+            <div className="techVerse_hero_img">
               <img
                 src={donatblue}
-                class="techVerse_hero_icon1 animation11"
+                className="techVerse_hero_icon1 animation11"
                 alt=""
               />
               <img
                 src={PillBlueGlossy}
-                class="techVerse_hero_icon2 animation22"
+                className="techVerse_hero_icon2 animation22"
                 alt=""
               />
               <img
                 src={ConeBlueGlossy}
-                class="techVerse_hero_icon3 animation22"
+                className="techVerse_hero_icon3 animation22"
                 alt=""
               />
               <img
@@ -317,5 +317,5 @@ className="mySwiper"
 
 
 </SwiperSlide>
-{/* <div class="swiper-pagination hero_pagination"></div> */}
+{/* <div className="swiper-pagination hero_pagination"></div> */}
 </Swiper>
