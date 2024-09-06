@@ -85,7 +85,7 @@ const EcommerseDevelopment = () => {
         subtitle={"Ecommerce Solutions "}
         title2={"For The Modern Entrepreneur"}
         tagline={
-          "Increase your business with Techverse LLC’s eCommerce website development. Our innovative solutions deliver sleek, customizable platforms that empower modern entrepreneurs to excel and grow in the digital marketplace.."
+          "Increase your business with Techverse LLC’s eCommerce website development. Our innovative solutions deliver sleek, customizable platforms that empower modern entrepreneurs to excel and grow in the digital marketplace."
         }
         className={"ecommerceDev_hero_img"}
         heroimage={Ecommercedevelopmenthero}
@@ -237,11 +237,13 @@ const EcommerseDevelopment = () => {
                         data-aos-offset="0"
                         data-aos-duration="2000"
                       >
-                        Magento is a powerful and flexible ecommerce platform
-                        known for its scalability and extensive feature set.
-                        Techverse LLC offers top-tier Magento development
-                        services, designed to meet the demands of large-scale
-                        businesses and complex ecommerce operations.
+                        WooCommerce provides a seamless way to integrate
+                        ecommerce capabilities with your WordPress site,
+                        offering a flexible and cost-effective solution for
+                        online selling. At Techverse LLC, we specialize in
+                        WooCommerce development, crafting tailored online stores
+                        that align with your brand’s identity and business
+                        objectives.
                       </p>
                       <h2
                         className="sec_title_head color-darkBlue"
@@ -256,13 +258,11 @@ const EcommerseDevelopment = () => {
                         data-aos-offset="0"
                         data-aos-duration="2000"
                       >
-                        WooCommerce provides a seamless way to integrate
-                        ecommerce capabilities with your WordPress site,
-                        offering a flexible and cost-effective solution for
-                        online selling. At Techverse LLC, we specialize in
-                        WooCommerce development, crafting tailored online stores
-                        that align with your brand’s identity and business
-                        objectives.
+                        Magento is a powerful and flexible ecommerce platform
+                        known for its scalability and extensive feature set.
+                        Techverse LLC offers top-tier Magento development
+                        services, designed to meet the demands of large-scale
+                        businesses and complex ecommerce operations.
                       </p>
                     </div>
                   </div>

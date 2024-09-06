@@ -59,6 +59,7 @@ import crossplatform from "../../asserts/images/cross-platform.webp";
 import brandingbannerImg from "../../asserts/images/branding-banner-img.png";
 import logoDesignSecImg from "../../asserts/images/logo-design-sec-img.png";
 import PortfoliosTech from "../../Components/PortfoliosTech";
+import Testimonials from "../../Components/Testimonials";
 
 gsap.registerPlugin(MotionPathPlugin);
 
@@ -600,6 +601,8 @@ const Branding = () => {
       {/* <TechnologiesUse /> */}
 
       {/* FAQ section */}
+
+      <Testimonials />
 
       <Frequentlyaskquestion />
     </UserLayout>

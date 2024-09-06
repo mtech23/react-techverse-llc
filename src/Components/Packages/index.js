@@ -331,9 +331,9 @@ const Packages = (props) => {
                 data-aos-offset="0"
                 data-aos-duration="2000"
               >
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s,
+                At Techverse LLC, we offer a range of comprehensive packages
+                designed to meet the diverse needs of businesses and individuals
+                seeking top-notch digital solutions.
               </p>
             </div>
           </div>
@@ -342,7 +342,7 @@ const Packages = (props) => {
               <div className="package_card_head">
                 <div className="package_card_title_div">
                   <h4 className="package_card_title">
-                    <span className="color-lightBlue2">Professional</span>
+                    <span className="color-lightBlue2">Basic</span>
                     <span className="color-darkBlue"> website package</span>
                   </h4>
                 </div>

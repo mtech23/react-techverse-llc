@@ -26,6 +26,7 @@ import chaticon from "../../asserts/images/chat-icon.webp";
 import webdevelopmenthero from "../../asserts/images/web-development-hero.webp";
 import TrustedPartners from "../../Components/TrustedPartners";
 import Helmet from "../../Components/Helmet";
+import Testimonials from "../../Components/Testimonials";
 gsap.registerPlugin(MotionPathPlugin);
 
 const WebDevelopment = () => {
@@ -182,6 +183,8 @@ const WebDevelopment = () => {
 
       {/* <!-- Technologies --> */}
       <TechnologiesUse />
+
+      <Testimonials />
 
       {/* FAQ section */}
 

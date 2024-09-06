@@ -52,6 +52,7 @@ import amazonMarketingIcon from "../../asserts/images/amazon-icon.png";
 import emailMarketingIcon from "../../asserts/images/email-marketing-icon.png";
 import smsMarketingIcon from "../../asserts/images/sms-marketing.png";
 import crossplatform from "../../asserts/images/cross-platform.webp";
+import Testimonials from "../../Components/Testimonials";
 
 gsap.registerPlugin(MotionPathPlugin);
 
@@ -616,6 +617,8 @@ const DigitalMarketing = () => {
 
       {/* <!-- Technologies --> */}
       <TechnologiesUse />
+
+      <Testimonials />
 
       {/* FAQ section */}
 

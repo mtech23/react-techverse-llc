@@ -89,9 +89,7 @@ const BookPublication = () => {
         title="Innovative  "
         subtitle=" Publishing"
         title2="  For A New Era    "
-        tagline={
-          "At Techverse LLC, we redefine book publishing with our Innovative Publishing For A New Era philosophy. We leverage state-of-the-art technology and forward-thinking strategies to transform your manuscript into a polished, market-ready masterpiece. Our approach integrates advanced digital tools with creative insights, offering streamlined processes from editing and design to distribution. This ensures your book not only meets the highest industry standards but also resonates deeply with today's tech-savvy readers"
-        }
+        tagline={`At Techverse LLC, we redefine book publishing with our "Innovative Publishing For A New Era" philosophy. We leverage state-of-the-art technology and forward-thinking strategies to transform your manuscript into a polished, market-ready masterpiece. Our approach integrates advanced digital tools with creative insights, offering streamlined processes from editing and design to distribution. This ensures your book not only meets the highest industry standards but also resonates deeply with today's tech-savvy readers`}
         className="digital-marketing-hero"
         heroimage={brandingbannerImg}
         CtnbuttonComponent={Ctnbutton}
@@ -145,6 +143,7 @@ const BookPublication = () => {
         pinkcapsol={pinkcapsol}
         greencube={greencube}
         donatorange={donatorange}
+        eduHR="bookPublishImg3"
         classtitle="color-darkBlue"
         title="Publishing Solutions  "
         subtitle=" Designed For Success "

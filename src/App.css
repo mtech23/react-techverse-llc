@@ -2161,10 +2161,11 @@ p.company_wishText {
 }
 .package_card_title {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.2;
   text-transform: capitalize;
   margin-bottom: 0px;
+  font-family: "Sora", sans-serif;
   /* border-bottom: 2px solid #02a9f7;
   padding: 0 0 10px; */
 }
@@ -2184,13 +2185,14 @@ p.company_wishText {
 
 .package_card_p {
   color: #020817;
+  font-weight: 300;
 }
 .package_card_price {
   display: flex;
   gap: 30px;
 }
 .package_card_actual_price {
-  font-size: 29px;
+  font-size: 35px;
   font-weight: 500;
   position: relative;
 }
@@ -2227,11 +2229,13 @@ p.company_wishText {
   background-image: linear-gradient(45deg, #3dc1ff, #02a9f7);
   width: 100%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  text-transform: uppercase;
 }
 
 .packages_sec .package_card_recomended .package_card_title {
   margin-top: -10px;
   margin-bottom: -10px;
+  font-weight: 300;
 }
 
 .special_offer::before {
@@ -2290,7 +2294,8 @@ p.package_card_deliveryText {
   position: absolute;
   left: 6px;
   top: 50%;
-  font-size: 14px;
+  /* font-size: 14px; */
+  font-size: 10px;
   /* color: #333; */
   color: #3e66db;
   transform: translateY(-50%);
@@ -2336,6 +2341,12 @@ p.package_card_deliveryText {
   line-height: 1;
   padding: 2.3px;
   border-radius: 50%;
+
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .package_card_title_div {
@@ -2355,6 +2366,19 @@ p.package_card_deliveryText {
 
 .techVerse_webSolution_digital_M {
   background: #000;
+  background: url(./asserts/images/about-sec-bggif.gif) 0 0 / cover no-repeat
+    #000;
+  position: relative;
+}
+.techVerse_webSolution_digital_M::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background: #000000b3;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 .branding-about-sec .body-bullet-list {
@@ -2409,6 +2433,19 @@ img.imgAfterClass {
 
 .connect_min_sec {
   background: #000;
+  background: url(./asserts/images/about-sec-bggif.gif) 0 0 / cover no-repeat
+    #000;
+  position: relative;
+}
+.connect_min_sec::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background: #000000b3;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 .connect_min_sec .sec_title {
   text-align: center;
@@ -2450,7 +2487,14 @@ img.imgAfterClass {
   bottom: 31.8%;
 }
 
+.techVerse_services .btn_with_icon {
+  font-weight: 500;
+}
+
 @media (max-width: 1600px) {
+  .package_card_title {
+    font-size: 15px;
+  }
   .techVerse_caseStudies-Content,
   .techVerse_heroContent,
   .techVerse_navbar,
