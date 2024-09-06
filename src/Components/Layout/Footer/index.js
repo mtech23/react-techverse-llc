@@ -632,38 +632,49 @@ export const Footer = (props) => {
                         <h3 className="foooter__subhead"> Services</h3>
                         <ul className="icon_list_items footer__links footer__categories_links">
                           <li className="footer__link">
-                            <Link to={"/business-devlopment"} as={"link"}>
+                            <Link to={"/app-store"} as={"link"}>
+                              App Store
+                            </Link>
+                          </li>
+                          <li className="footer__link">
+                            <Link to={"/branding"}>Branding</Link>
+                          </li>
+                          <li className="footer__link">
+                            <Link to={"/book-publication"}>
+                              Book Publication
+                            </Link>
+                          </li>
+                          <li className="footer__link">
+                            <Link to={"/business-devlopment"}>
                               Business Development
                             </Link>
-                          </li>
-                          <li className="footer__link">
-                            <Link to={"/"}>Development</Link>
-                          </li>
-                          <li className="footer__link">
-                            <Link to={"/"}>Mobile Application Development</Link>
-                          </li>
-                          <li className="footer__link">
-                            <Link to={"/ecommerse-development"}>
-                              Ecommerce Development
-                            </Link>
-                          </li>
-                          {/* <li className="footer__link">
-                            <Link to={"/"}>Game Development</Link>
-                          </li> */}
-                          <li className="footer__link">
-                            <Link to={"/web-development"}>Web Development</Link>
                           </li>
                           <li className="footer__link">
                             <Link to={"/Devops"}>DevOps</Link>
                           </li>
                           <li className="footer__link">
-                            <Link to={"/"}>Android App Development</Link>
+                            <Link to={"/digital-marketing"}>
+                              Digital Marketing
+                            </Link>
                           </li>
                           <li className="footer__link">
-                            <Link to={"/"}>iOS App Development</Link>
+                            <Link to={"/ecommerse-development"}>
+                              E-Commerce Development
+                            </Link>
                           </li>
                           <li className="footer__link">
-                            <Link to={"/"}>Smart Contract Development</Link>
+                            <Link to={"/mobile-app"}>
+                              Mobile Application Development
+                            </Link>
+                          </li>
+                          <li className="footer__link">
+                            <Link to={"/out-sourcing"}>Out Source</Link>
+                          </li>
+                          <li className="footer__link">
+                            <Link to={"/web-application"}>Web Application</Link>
+                          </li>
+                          <li className="footer__link">
+                            <Link to={"/web-development"}>Web Development</Link>
                           </li>
                         </ul>
                       </div>
@@ -672,33 +683,39 @@ export const Footer = (props) => {
                       <div className="footer__quick-links">
                         <h3 className="foooter__subhead">Industries</h3>
                         <ul className="icon_list_items footer__links footer__categories_links">
+                          {/* <li className="footer__link">
+                            <Link to={"/Advertising"}>Advertising</Link>
+                          </li> */}
                           <li className="footer__link">
-                            <Link to={"/"}>Advertising</Link>
-                          </li>
-                          <li className="footer__link">
-                            <Link to={"/"}>Gaming & leisure</Link>
+                            <Link to={"/automotive"}>
+                              Automotive and Transport
+                            </Link>
                           </li>
                           <li className="footer__link">
                             <Link to={"/ecommerse"}>E-commerce & Retails</Link>
                           </li>
                           <li className="footer__link">
-                            <Link to={"/"}>Media & Entertainment</Link>
+                            <Link to={"/education-hr"}>Education & HR</Link>
+                          </li>
+                          <li className="footer__link">
+                            <Link to={"/finance"}>Finance</Link>
+                          </li>
+                          <li className="footer__link">
+                            <Link to={"/health-care"}>
+                              Health and Life Sciences
+                            </Link>
+                          </li>
+                          <li className="footer__link">
+                            <Link to={"/media"}>Media & Entertainment</Link>
                           </li>
                           <li className="footer__link">
                             <Link to={"/realEstate-and-property"}>
                               Real Estate & Property
                             </Link>
                           </li>
-                          <li className="footer__link">
-                            <Link to={"/"}>Software & High Tech</Link>
-                          </li>
+
                           <li className="footer__link">
                             <Link to={"/sports"}>Sports Teams & Leagues</Link>
-                          </li>
-                          <li className="footer__link">
-                            <Link to={"/health-care"}>
-                              Health & Life Sciences
-                            </Link>
                           </li>
                           <li className="footer__link">
                             <Link to={"/travel"}>Travel & Hospitality</Link>
@@ -708,7 +725,7 @@ export const Footer = (props) => {
                     </div>
                     <div className="col-md-2">
                       <div className="footer__quick-links">
-                        <h3 className="foooter__subhead">qUIC Link</h3>
+                        <h3 className="foooter__subhead">Quick Link</h3>
                         <ul className="icon_list_items footer__links footer__categories_links">
                           <li className="footer__link">
                             <Link to={"/"}>About</Link>

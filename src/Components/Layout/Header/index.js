@@ -225,80 +225,10 @@ export const Header = (props) => {
                       <ul className="custom_dropdown_list">
                         <li>
                           <div className="dropdown_linkBox">
-                            <Link to={"/mobile-app"}>
-                              <h4>Mobile Application Development</h4>
-                            </Link>
-                            <p>Custom Mobile App Development</p>
-                          </div>
-                        </li>
-                        <li>
-                          <div className="dropdown_linkBox">
-                            <Link to={"/ecommerse-development"}>
-                              <h4>E-Commerce Development</h4>
-                            </Link>
-                            <p>Top-Of-The-Line Ecommerce Solutions</p>
-                          </div>
-                        </li>
-                        <li>
-                          <div className="dropdown_linkBox">
                             <Link to={"/app-store"}>
                               <h4>App Store</h4>
                             </Link>
                             <p>Optimization Development Company</p>
-                          </div>
-                        </li>
-                        <li>
-                          <div className="dropdown_linkBox">
-                            <Link to={"/business-devlopment"}>
-                              <h4>Business Development</h4>
-                            </Link>
-                            <p>Optimization Development Company</p>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="col-md-6 col-xl-4">
-                      <ul className="custom_dropdown_list">
-                        <li>
-                          <div className="dropdown_linkBox">
-                            <Link to={"/web-development"}>
-                              <h4>Web Development</h4>
-                            </Link>
-                            <p>Optimization Development Company</p>
-                          </div>
-                        </li>
-                        <li>
-                          <div className="dropdown_linkBox">
-                            <Link to={"/digital-marketing"}>
-                              <h4>Digital Marketing</h4>
-                            </Link>
-                            <p>Digital Marketing Agency USA</p>
-                          </div>
-                        </li>
-                        <li>
-                          <div className="dropdown_linkBox">
-                            <Link to={"/web-application"}>
-                              <h4>Web Application</h4>
-                            </Link>
-                            <p>Web Application</p>
-                          </div>
-                          <div className="dropdown_linkBox">
-                            <Link to={"/Devops"}>
-                              <h4>DevOps</h4>
-                            </Link>
-                            <p>DevOps</p>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="col-md-6 col-xl-4">
-                      <ul className="custom_dropdown_list">
-                        <li>
-                          <div className="dropdown_linkBox">
-                            <Link to={"/out-sourcing"}>
-                              <h4>Out Source</h4>
-                            </Link>
-                            <p>Out Source</p>
                           </div>
                         </li>
                         <li>
@@ -315,6 +245,78 @@ export const Header = (props) => {
                               <h4>Book Publication</h4>
                             </Link>
                             <p>Book Publication</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div className="dropdown_linkBox">
+                            <Link to={"/business-devlopment"}>
+                              <h4>Business Development</h4>
+                            </Link>
+                            <p>Optimization Development Company</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="col-md-6 col-xl-4">
+                      <ul className="custom_dropdown_list">
+                        <li>
+                          <div className="dropdown_linkBox">
+                            <Link to={"/Devops"}>
+                              <h4>DevOps</h4>
+                            </Link>
+                            <p>DevOps</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div className="dropdown_linkBox">
+                            <Link to={"/digital-marketing"}>
+                              <h4>Digital Marketing</h4>
+                            </Link>
+                            <p>Digital Marketing Agency USA</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div className="dropdown_linkBox">
+                            <Link to={"/ecommerse-development"}>
+                              <h4>E-Commerce Development</h4>
+                            </Link>
+                            <p>Top-Of-The-Line Ecommerce Solutions</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div className="dropdown_linkBox">
+                            <Link to={"/mobile-app"}>
+                              <h4>Mobile Application Development</h4>
+                            </Link>
+                            <p>Custom Mobile App Development</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="col-md-6 col-xl-4">
+                      <ul className="custom_dropdown_list">
+                        <li>
+                          <div className="dropdown_linkBox">
+                            <Link to={"/out-sourcing"}>
+                              <h4>Out Source</h4>
+                            </Link>
+                            <p>Out Source</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div className="dropdown_linkBox">
+                            <Link to={"/web-application"}>
+                              <h4>Web Application</h4>
+                            </Link>
+                            <p>Web Application</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div className="dropdown_linkBox">
+                            <Link to={"/web-development"}>
+                              <h4>Web Development</h4>
+                            </Link>
+                            <p>Optimization Development Company</p>
                           </div>
                         </li>
                       </ul>
@@ -393,14 +395,14 @@ export const Header = (props) => {
                   <div className="row">
                     <div className="col-md-6 col-xl-4">
                       <ul className="custom_dropdown_list">
-                        <li>
+                        {/* <li>
                           <div className="dropdown_linkBox">
-                            <Link to={"/realEstate-and-property"}>
-                              <h4>Real Estate & Property </h4>
+                            <Link to={"/"}>
+                              <h4>Advertising </h4>
                             </Link>
-                            <p>Custom-Built Real Estate Solutions.</p>
+                            <p>Advertising Apps Development.</p>
                           </div>
-                        </li>
+                        </li> */}
                         <li>
                           <div className="dropdown_linkBox">
                             <Link to={"/automotive"}>
@@ -413,44 +415,16 @@ export const Header = (props) => {
                           <div className="dropdown_linkBox">
                             <Link to={"/ecommerse"}>
                               <h4>E-commerce & Retails </h4>
-                              <p>Revolutionized Apps for Retail.</p>
                             </Link>
+                            <p>Revolutionized Apps for Retail.</p>
                           </div>
                         </li>
-                        <li>
-                          <div className="dropdown_linkBox">
-                            <Link to={"/"}>
-                              <h4>Advertising </h4>
-                            </Link>
-                            <p>Advertising Apps Development.</p>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="col-md-6 col-xl-4">
-                      <ul className="custom_dropdown_list">
                         <li>
                           <div className="dropdown_linkBox">
                             <Link to={"/education-hr"}>
                               <h4>Education & HR </h4>
                             </Link>
                             <p>Advertising Apps Development.</p>
-                          </div>
-                        </li>
-                        <li>
-                          <div className="dropdown_linkBox">
-                            <Link to={"/health-care"}>
-                              <h4>Health and Life Sciences</h4>
-                            </Link>
-                            <p>Seamless Healthcare App.</p>
-                          </div>
-                        </li>
-                        <li>
-                          <div className="dropdown_linkBox">
-                            <Link to={"/"}>
-                              <h4>Software & High Tech</h4>
-                            </Link>
-                            <p>Seamless Healthcare App.</p>
                           </div>
                         </li>
                         <li>
@@ -467,10 +441,26 @@ export const Header = (props) => {
                       <ul className="custom_dropdown_list">
                         <li>
                           <div className="dropdown_linkBox">
+                            <Link to={"/health-care"}>
+                              <h4>Health and Life Sciences</h4>
+                            </Link>
+                            <p>Seamless Healthcare App.</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div className="dropdown_linkBox">
                             <Link to={"/media"}>
                               <h4>Media & Entertainment </h4>
                             </Link>
                             <p>Application Development Services.</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div className="dropdown_linkBox">
+                            <Link to={"/realEstate-and-property"}>
+                              <h4>Real Estate & Property </h4>
+                            </Link>
+                            <p>Custom-Built Real Estate Solutions.</p>
                           </div>
                         </li>
                         <li>
@@ -481,6 +471,10 @@ export const Header = (props) => {
                             <p>Application Development Services.</p>
                           </div>
                         </li>
+                      </ul>
+                    </div>
+                    <div className="col-md-6 col-xl-4">
+                      <ul className="custom_dropdown_list">
                         <li>
                           <div className="dropdown_linkBox">
                             <Link to={"/travel"}>

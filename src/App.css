@@ -2147,6 +2147,17 @@ p.company_wishText {
 
 .packages_sec {
   padding: 60px 0;
+  background-image: url(asserts/images/packages-sec-bg.png);
+}
+.packages_sec .sec_title {
+  max-width: 991px;
+  margin: 0 auto 35px;
+}
+.packages_sec .sec_title .sec_title_head {
+  text-transform: uppercase;
+}
+.packages_sec .sec_title p {
+  color: #000;
 }
 .package_card_title {
   font-size: 20px;
@@ -2159,10 +2170,12 @@ p.company_wishText {
 }
 .package_card {
   border: 2px solid #02a9f7;
-  border-radius: 15px;
-  padding: 35px 15px;
+  border-radius: 16px;
+  padding: 45px 17px 25px;
   margin-bottom: 30px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #f8fafc;
+  position: relative;
 }
 
 .package_card_recomended .package_card_title_div {
@@ -2215,6 +2228,40 @@ p.company_wishText {
   width: 100%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
+.packages_sec .package_card_recomended .package_card_title {
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+
+.special_offer::before {
+  content: "";
+  background-image: url("asserts/images/special-offer-label.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: -8px;
+  left: -10px;
+}
+
+.bookPublication_packages_sec .package_card_recomned_label {
+  visibility: hidden;
+}
+.bookPublication_packages_sec .package_card_actual_price {
+  font-weight: 700;
+  color: #3dc1ff;
+}
+
+.bookPublication_packages_sec
+  .package_card_recomended
+  .package_card_actual_price {
+  color: #fff;
+}
+
 p.package_card_deliveryText {
   text-align: center;
   margin: 12px 0 20px;

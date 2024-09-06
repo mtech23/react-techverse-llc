@@ -81,11 +81,11 @@ const EcommerseDevelopment = () => {
       <HeroSection
         innerbgclass={"inner-bgColor"}
         // classheroimage={"inner-ecommerce-bgColor"}
-        title={"    Your Gateway"}
-        subtitle={"To "}
-        title2={"Powerful Online Retail Solutions"}
+        title={"    Innovative   "}
+        subtitle={"Ecommerce Solutions "}
+        title2={"For The Modern Entrepreneur"}
         tagline={
-          "At Techverse LLC, we specialize in creating tailored E-Commerce Development solutions that empower businesses to thrive in the digital marketplace. Whether you're starting a new online store or aiming to enhance an existing platform, our squad of skilled developers and designers is devoted to delivering scalable, secure, and feature-rich solutions perfectly suited to your business."
+          "Increase your business with Techverse LLC’s eCommerce website development. Our innovative solutions deliver sleek, customizable platforms that empower modern entrepreneurs to excel and grow in the digital marketplace.."
         }
         className={"ecommerceDev_hero_img"}
         heroimage={Ecommercedevelopmenthero}
@@ -121,10 +121,10 @@ const EcommerseDevelopment = () => {
           // playstore: playstore,
           // appstore: appstore
         }}
-        title="Drive Profitability"
-        subtitle=" With "
-        title2="Our Seamless E-Commerce Solutions.  "
-        para="Our expert team customizes every aspect of your website, from intuitive user interfaces to robust backend systems, ensuring seamless functionality and enhanced customer experiences. Whether you're launching a new venture or upgrading an existing platform, trust Techverse LLC to deliver scalable, secure, and visually stunning E-Commerce websites that maximize conversions and propel your business forward in the digital age."
+        title="Next-Level  "
+        subtitle=" Ecommerce "
+        title2="Websites Designed For Maximum Impact"
+        para="We specialize in creating next-level eCommerce websites designed to deliver maximum impact. Our approach combines cutting-edge technology with user-centric design to create online stores that not only captivate visitors but also drive conversions. By integrating seamless navigation, mobile responsiveness, and optimized checkout processes, we ensure that your eCommerce platform stands out in a crowded marketplace.  "
         image={ecommerceabout1}
         abtImgclassName="ecom-dev-img-1"
       />
@@ -169,25 +169,22 @@ const EcommerseDevelopment = () => {
                       data-aos-offset="0"
                       data-aos-duration="1000"
                     >
-                      Revamp Your Online Presence
-                      <span className="color-darkBlue"> With </span> Creative
-                      E-Commerce Solutions
+                      Build Your
+                      <span className="color-darkBlue"> e-Store </span> With Us
+                      And Skyrocket The Success
                     </h2>
                     <p
                       data-aos="fade-up"
                       data-aos-offset="0"
                       data-aos-duration="2000"
                     >
-                      we specialize in crafting dynamic e-commerce solutions
-                      tailored to increase your business. Whether you're
-                      starting from scratch or seeking to revamp your online
-                      presence, our expert team is here to build, optimize, and
-                      launch your e-store with precision and creativity. From
-                      seamless user experience design to robust backend
-                      development, trust us to transform your vision into a
-                      thriving online business. Hold the future of digital
-                      commerce with Techverse LLC – where innovation meets
-                      e-commerce excellence.
+                      In today’s digital age, a well-designed e-store is crucial
+                      for success in the competitive online marketplace. At
+                      Techverse LLC, we specialize in creating customized
+                      ecommerce solutions tailored to your business needs. Our
+                      expert team leverages cutting-edge technologies and
+                      innovative design principles to build powerful online
+                      stores that attract customers and drive sales.
                     </p>
                   </div>
                 </div>
@@ -220,13 +217,12 @@ const EcommerseDevelopment = () => {
                         data-aos-offset="0"
                         data-aos-duration="2000"
                       >
-                        Empower your online business with our Shopify E-Commerce
-                        Development services at Techverse LLC. We specialize in
-                        crafting tailored Shopify solutions that lift your
-                        digital storefront. From seamless integration of custom
-                        themes and apps to optimizing user experience and
-                        payment gateways, we make sure your Shopify store sets
-                        apart in the competitive e-commerce landscape.
+                        Shopify is renowned for its user-friendly interface and
+                        extensive customization options, making it an ideal
+                        choice for businesses of all sizes. At Techverse LLC, we
+                        excel in Shopify development, crafting bespoke online
+                        stores that are both visually stunning and functionally
+                        robust.
                       </p>
                       <h2
                         className="sec_title_head color-darkBlue"
@@ -241,15 +237,11 @@ const EcommerseDevelopment = () => {
                         data-aos-offset="0"
                         data-aos-duration="2000"
                       >
-                        At Techverse LLC, we specialize in WooCommerce
-                        E-Commerce Development, providing you with a powerful
-                        platform tailored to your business needs. Our team
-                        excels in building scalable and customizable WooCommerce
-                        stores that maximize your online presence. From
-                        implementing responsive design and intuitive navigation
-                        to integrating essential plugins and ensuring secure
-                        payment gateways, we ensure your WooCommerce store is
-                        optimized for success.
+                        Magento is a powerful and flexible ecommerce platform
+                        known for its scalability and extensive feature set.
+                        Techverse LLC offers top-tier Magento development
+                        services, designed to meet the demands of large-scale
+                        businesses and complex ecommerce operations.
                       </p>
                       <h2
                         className="sec_title_head color-darkBlue"
@@ -264,13 +256,13 @@ const EcommerseDevelopment = () => {
                         data-aos-offset="0"
                         data-aos-duration="2000"
                       >
-                        Transform your online business with Techverse LLC's
-                        Magento E-Commerce Development services. As Magento
-                        specialists, we offer comprehensive solutions to create
-                        high-performing e-commerce stores that drive growth and
-                        profitability. Our expertise spans from custom Magento
-                        theme development and extension integration to
-                        optimizing performance and enhancing user experience.
+                        WooCommerce provides a seamless way to integrate
+                        ecommerce capabilities with your WordPress site,
+                        offering a flexible and cost-effective solution for
+                        online selling. At Techverse LLC, we specialize in
+                        WooCommerce development, crafting tailored online stores
+                        that align with your brand’s identity and business
+                        objectives.
                       </p>
                     </div>
                   </div>

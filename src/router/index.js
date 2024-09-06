@@ -33,46 +33,49 @@ const Router = () => {
     <BrowserRouter basename="/">
       <ScrollTop />
       <Routes>
+        {/* Main Pages */}
         <Route path="/" element={<Home />} />
-        <Route path="/app-store" element={<App_store />}></Route>
-        <Route path="/MobileApp" element={<MobileApp />}>
-          {" "}
-        </Route>
-        <Route path="/mobile-app" element={<MobileApp />}>
-          {" "}
-        </Route>
-        <Route path="/ecommerse" element={<Ecommerse />}></Route>
-        <Route path="/web-application" element={<WebApplication />}></Route>
-        <Route
-          path="/realEstate-and-property"
-          element={<RealEstate_and_property />}
-        ></Route>
-        <Route path="/digital-marketing" element={<DigitalMarketing />}></Route>
-        <Route path="/branding" element={<Branding />}></Route>
-        <Route path="/book-publication" element={<BookPublication />}></Route>
-        <Route path="/Devops" element={<Devops />}></Route>
-        <Route path="/out-sourcing" element={<OutSourcing />}></Route>
-        <Route path="/web-Development" element={<WebDevelopment />}></Route>
-        <Route path="/automotive" element={<Automotive />}></Route>
-        <Route path="/media" element={<Media />}></Route>
-        <Route path="/finance" element={<Finance />}></Route>
-        <Route
-          path="/business-devlopment"
-          element={<Businessdevlopment />}
-        ></Route>
-        <Route path="/education-hr" element={<Education_hr />}></Route>
-        <Route path="/health-care" element={<Health_care />}></Route>
-        <Route path="/sports" element={<Sports />}></Route>
-        <Route path="/travel" element={<Travel />}></Route>
-        <Route
-          path="/ecommerse-development"
-          element={<EcommerseDevelopment />}
-        ></Route>
         <Route path="/about-us" element={<About_us />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/case-study" element={<Case_study />} />
         <Route path="/privacy-policy" element={<Privacy_Policy />} />
         <Route path="/terms-conditions" element={<Terms_condition />} />
+        {/* Services Pages */}
+        <Route path="/app-store" element={<App_store />}></Route>
+        <Route path="/branding" element={<Branding />}></Route>
+        <Route path="/book-publication" element={<BookPublication />}></Route>
+        <Route
+          path="/business-devlopment"
+          element={<Businessdevlopment />}
+        ></Route>
+        <Route path="/Devops" element={<Devops />}></Route>
+        <Route path="/digital-marketing" element={<DigitalMarketing />}></Route>
+        <Route
+          path="/ecommerse-development"
+          element={<EcommerseDevelopment />}
+        ></Route>
+        <Route path="/mobile-app" element={<MobileApp />}>
+          {" "}
+        </Route>
+        <Route path="/MobileApp" element={<MobileApp />}>
+          {" "}
+        </Route>
+        <Route path="/out-sourcing" element={<OutSourcing />}></Route>
+        <Route path="/web-application" element={<WebApplication />}></Route>
+        <Route path="/web-Development" element={<WebDevelopment />}></Route>
+        {/* Industries Pages */}
+        <Route path="/automotive" element={<Automotive />}></Route>
+        <Route path="/ecommerse" element={<Ecommerse />}></Route>
+        <Route path="/education-hr" element={<Education_hr />}></Route>
+        <Route path="/finance" element={<Finance />}></Route>
+        <Route path="/health-care" element={<Health_care />}></Route>
+        <Route path="/media" element={<Media />}></Route>
+        <Route
+          path="/realEstate-and-property"
+          element={<RealEstate_and_property />}
+        ></Route>
+        <Route path="/sports" element={<Sports />}></Route>
+        <Route path="/travel" element={<Travel />}></Route>
         {/* <Route path="/Blogs" "Blogs"} /> */}
         Blogs
       </Routes>

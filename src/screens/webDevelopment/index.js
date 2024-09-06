@@ -40,11 +40,11 @@ const WebDevelopment = () => {
       />
       <HeroSection
         innerbgclass={"inner-bgColor"}
-        title={"Building Websites That Reflect Your Vision"}
-        subtitle={"  And "}
-        title2={"Goals"}
+        title={"Designing Websites "}
+        subtitle={"  That Drive Engagement And Growth "}
+        // title2={""}
         tagline={
-          "We specialize in creating websites that mirror your unique vision and propel your business goals forward. Our expert team of developers understands that your website is more than just an online presence—it's a reflection of your brand's identity and aspirations. Discover the power of personalized web development with Techverse LLC, where your vision comes to life in every pixel"
+          "At Techverse LLC, we craft dynamic websites that captivate and convert. Our designs are tailored to drive engagement and foster growth, blending aesthetic appeal with user-centric functionality. Partner with us to lift your online presence and achieve impactful results with a website that stands out and performs."
         }
         className={"web-development_hero_img"}
         heroimage={webdevelopmenthero}
@@ -70,10 +70,10 @@ const WebDevelopment = () => {
         pinkcapsol={pinkcapsol}
         greencube={greencube}
         donatorange={donatorange}
-        title="Innovative Web Solutions"
-        subtitle="   For  "
-        title2="Your Digital Success"
-        para="At Techverse LLC, we specialize in crafting web solutions that propel your business forward. Our expert team of developers blends creativity with practical ability to deliver websites that not only impress but also drive results. Whether you need a smooth company site, an engaging e-commerce platform, or a robust web application, we tailor our web development services to meet your unique goals. Partner with us to leverage cutting-edge technology and strategic insights that enhance your online presence and accelerate your business growth."
+        title="Unique  "
+        subtitle="   Designs  "
+        title2="For Distinctive Online Presence"
+        para="Our website design service combines innovative aesthetics with user-centric functionality, ensuring your brand stands out. We create visually compelling and highly functional websites that leave a lasting impression and drive engagement. Upgrade your online identity with us. "
         //  CtnbuttonComponent={Ctnbutton}
         //  ctnButtonProps={{
         //    phoneicon: phoneIcon,
