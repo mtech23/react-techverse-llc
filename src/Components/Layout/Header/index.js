@@ -120,7 +120,62 @@ export const Header = (props) => {
     setNavshow(false);
     setindustriesshow(!industries);
   };
-  console.log("naveshow", naveshow);
+  // const dropdownRef = useRef(null);  
+ 
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setNavshow(false);  
+    }
+  };
+
+  useEffect(() => {
+      document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+        document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+
+
+
+
+
+
+
+
+
+  const dropdownRef = useRef(null);  
+ 
+  const handleClickOutsidecase_stydy = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setindustriesshow(false);  
+    }
+  };
+
+  useEffect(() => {
+      document.addEventListener("mousedown", handleClickOutsidecase_stydy);
+
+    return () => {
+        document.removeEventListener("mousedown", handleClickOutsidecase_stydy);
+    };
+  }, []);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   return (
     <section className="techVerse_navbar">
@@ -196,8 +251,9 @@ export const Header = (props) => {
         </div>
       </nav>
 
-      {naveshow === true && (
-        <div className="container-fluid">
+
+        <div  className="container-fluid" ref={dropdownRef}>
+        {naveshow === true && (
           <div className="row">
             <div className="col-xl-9 col-md-8 customDropdown_leftCol">
               <div className="customDropdown_left">
@@ -365,8 +421,11 @@ export const Header = (props) => {
               </div>
             </div>
           </div>
+        )}
         </div>
-      )}
+
+
+ 
       {industries === true && (
         <div className="container-fluid ">
           <div className="row">

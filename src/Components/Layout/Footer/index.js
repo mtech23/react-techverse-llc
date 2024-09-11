@@ -582,7 +582,7 @@ export const Footer = (props) => {
                               <i className="fa-solid fa-envelope"></i>
                             </span>
                             <span className="icon_list_text">
-                              info@example.com
+                            info@techversellc.com
                             </span>
                           </Link>
                         </li>
