@@ -153,7 +153,7 @@ const Portfolio = (props) => {
                         data-aos-offset="0"
                         data-aos-duration="3000"
                       >
-                        <a href="#" className="btn_with_icon">
+                        <a href="tel: (815) 247-3253" className="btn_with_icon">
                           <img
                             className="btn_with_icon_img"
                             src={props?.phoneicon}
@@ -161,7 +161,7 @@ const Portfolio = (props) => {
                           />
                           <span className="btn_with_icon_text">Call Now</span>
                         </a>
-                        <a href="#" className="btn_with_icon btn_secondary">
+                        <a href="javascript:void(Tawk_API.toggle())" className="btn_with_icon btn_secondary">
                           <img
                             className="btn_with_icon_img"
                             src={props?.chaticon}

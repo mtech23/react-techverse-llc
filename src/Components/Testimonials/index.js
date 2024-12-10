@@ -161,7 +161,7 @@ const Testimonials = () => {
                         </video>
                       </div>
                     ))}
-                    <h2>{videos[selectedVideo].name}</h2>
+                    <h2>{videos[selectedVideo]?.name}</h2>
                     {/* <p>Lorem Ipsum is simply dummy</p> */}
                   </div>
                 </div>

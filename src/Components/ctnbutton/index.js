@@ -18,7 +18,7 @@ const Ctnbutton = (props) => {
 
         {props.secondaryButtonClass && (
           <a
-            href={props.secondaryButtonLink}
+            href="javascript:void(Tawk_API.toggle())"
             className={props.secondaryButtonClass}
           >
             <img className="btn_with_icon_img" src={props.chaticon} alt="" />

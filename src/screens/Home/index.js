@@ -372,7 +372,7 @@ const Home = () => {
                             />
                             <span className="btn_with_icon_text">Call Now</span>
                           </a>
-                          <a href="#" className="btn_with_icon btn_secondary">
+                          <a href="javascript:void(Tawk_API.toggle())" className="btn_with_icon btn_secondary">
                             <img
                               className="btn_with_icon_img"
                               src={chaticon}
@@ -479,7 +479,7 @@ const Home = () => {
                             />
                             <span className="btn_with_icon_text">Call Now</span>
                           </a>
-                          <a href="#" className="btn_with_icon btn_secondary">
+                          <a href="javascript:void(Tawk_API.toggle())" className="btn_with_icon btn_secondary">
                             <img
                               className="btn_with_icon_img"
                               src={chaticon}
@@ -584,7 +584,7 @@ const Home = () => {
                             />
                             <span className="btn_with_icon_text">Call Now</span>
                           </a>
-                          <a href="#" className="btn_with_icon btn_secondary">
+                          <a href="javascript:void(Tawk_API.toggle())" className="btn_with_icon btn_secondary">
                             <img
                               className="btn_with_icon_img"
                               src={chaticon}
@@ -651,6 +651,7 @@ const Home = () => {
       {/* 'backgroundImage: url(../../asserts/images/hero-bg.webp);' */}
 
       {/* <!-- About Sec --> */}
+      
 
       <Portfolio
         pinkcapsol={pinkcapsol}
@@ -723,7 +724,7 @@ const Home = () => {
                           +(1) 23456-7890
                         </span>
                       </a>
-                      <a href="#" className="btn_with_icon btn_secondary">
+                      <a href="javascript:void(Tawk_API.toggle())" className="btn_with_icon btn_secondary">
                         <img
                           className="btn_with_icon_img"
                           src={chaticonblue}
@@ -928,7 +929,7 @@ const Home = () => {
               </div>
               <div className="col-md-12 text-center mt-5">
                 <a
-                  href="#"
+                  href="/contact"
                   className="btn_with_icon"
                   data-aos="fade-right"
                   data-aos-offset="0"

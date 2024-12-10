@@ -738,7 +738,7 @@ export const Footer = (props) => {
                             <Link to={"/about-us"}>About</Link>
                           </li>
                           <li className="footer__link">
-                            <Link to={"https://techversellc.com/blogs/"}> Blogs</Link>
+                            <a href="https://techversellc.com/blogs/"> Blogs</a>
                           </li>
                           <li className="footer__link">
                             <Link to={"/contact"}>Contact</Link>

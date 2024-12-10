@@ -120,62 +120,37 @@ export const Header = (props) => {
     setNavshow(false);
     setindustriesshow(!industries);
   };
-  // const dropdownRef = useRef(null);  
- 
+  // const dropdownRef = useRef(null);
+
   const handleClickOutside = (event) => {
     if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-      setNavshow(false);  
+      setNavshow(false);
     }
   };
 
   useEffect(() => {
-      document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
 
     return () => {
-        document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
 
+  const dropdownRef = useRef(null);
 
-
-
-
-
-
-
-
-
-  const dropdownRef = useRef(null);  
- 
   const handleClickOutsidecase_stydy = (event) => {
     if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-      setindustriesshow(false);  
+      setindustriesshow(false);
     }
   };
 
   useEffect(() => {
-      document.addEventListener("mousedown", handleClickOutsidecase_stydy);
+    document.addEventListener("mousedown", handleClickOutsidecase_stydy);
 
     return () => {
-        document.removeEventListener("mousedown", handleClickOutsidecase_stydy);
+      document.removeEventListener("mousedown", handleClickOutsidecase_stydy);
     };
   }, []);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   return (
     <section className="techVerse_navbar">
@@ -247,12 +222,23 @@ export const Header = (props) => {
                 <span className="icon_list_text"> info@techversellc.com </span>
               </Link>
             </li>
+           <div className="py-2 px-1 d-none d-md-block">
+           <span style={{border:"1px solid white"}}  ></span>
+           </div>
+            <li className="nav-item icon_list_item">
+              <Link to={"tel: (815) 247-3253"} className="nav-link">
+                <span className="icon_list_icon">
+                  <i className="fa-solid fa-phone"></i>
+                </span>
+                <span className="icon_list_text"> {`(815) 247-3253`}</span>
+              </Link>
+            </li>
+           
           </ul>
         </div>
       </nav>
 
-
-        <div  className="container-fluid" ref={dropdownRef}>
+      <div className="container-fluid" ref={dropdownRef}>
         {naveshow === true && (
           <div className="row">
             <div className="col-xl-9 col-md-8 customDropdown_leftCol">
@@ -422,10 +408,8 @@ export const Header = (props) => {
             </div>
           </div>
         )}
-        </div>
+      </div>
 
-
- 
       {industries === true && (
         <div className="container-fluid " ref={dropdownRef}>
           <div className="row">

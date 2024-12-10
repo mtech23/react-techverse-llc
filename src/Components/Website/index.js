@@ -59,7 +59,7 @@ const Website = (props) => {
                         +(1) 23456-7890
                       </span>
                     </a>
-                    <a href="#" className="btn_with_icon btn_secondary">
+                    <a href="javascript:void(Tawk_API.toggle())" className="btn_with_icon btn_secondary">
                       <img
                         className="btn_with_icon_img"
                         src={chaticonblue}
