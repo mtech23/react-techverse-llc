@@ -5,7 +5,7 @@ import phoneicon from "../../asserts/images/phone-icon.webp";
 import herophonemockupgroup from "../../asserts/images/hero-phone-mockup-group.webp";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import bluecubelarge from "../../asserts/images/blue-cube-large.webp";
-import Particles from "react-particles";
+// import Particles from "react-particles";
 import ServiceParticle from "../../Components/ServiceParticle/ServiceParticle";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -21,7 +21,7 @@ import ryderzvanbg from "../../asserts/images/ryderz-van-bg.webp";
 import elevenimg from "../../asserts/images/1-eleven-img.webp";
 import framewithphotoimg from "../../asserts/images/frame-with-photo-img.webp";
 import ryderzvanimg from "../../asserts/images/ryderz-van-img.webp";
-import { loadSlim } from "tsparticles-slim";
+// import { loadSlim } from "tsparticles-slim";
 import clutch from "../../asserts/images/clutch.webp";
 import truspilot from "../../asserts/images/trus-pilot.webp";
 import laptopFrame from "../../asserts/images/laptop-Frame.webp";
@@ -116,7 +116,7 @@ const Home = () => {
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);
 
-    await loadSlim(engine);
+    // await loadSlim(engine);
   }, []);
 
   const particlesLoaded = useCallback(async (container) => {
@@ -328,6 +328,7 @@ const Home = () => {
             className="parallax-bg pagination_custom"
             data-swiper-parallax="-23%"
           ></div>
+          
           <SwiperSlide>
             <section className="techVerse_hero hoverEffectSec ">
               <div className="techVerse_heroContent">
@@ -363,7 +364,7 @@ const Home = () => {
                           data-aos-offset="0"
                           data-aos-duration="3000"
                         >
-                          <a href="#" className="btn_with_icon">
+                          <a href="tel: (815) 247-3253" className="btn_with_icon">
                             <img
                               className="btn_with_icon_img"
                               src={phoneicon}

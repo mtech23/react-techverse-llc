@@ -14,7 +14,7 @@ import {
 import ContactParticle from "../contactParticle/contactParticle";
 
 import { useCallback } from "react";
-import { loadSlim } from "tsparticles-slim";
+// import { loadSlim } from "tsparticles-slim";
 
 const Contact_Footer = () => {
   const industries = [
@@ -40,7 +40,7 @@ const Contact_Footer = () => {
   const location = useLocation();
 
   const particlesInit = useCallback(async (engine) => {
-    await loadSlim(engine);
+    // await loadSlim(engine);
   }, []);
 
   const particlesLoaded = useCallback(async (container) => {}, []);
@@ -84,6 +84,14 @@ const Contact_Footer = () => {
                             </span>
                           </Link>
                         </li> */}
+                         <li className="icon_list_item footer__link">
+                          <Link to={"tel: (815) 247-3253"}>
+                            <span className="icon_list_icon">
+                              <i className="fa-solid fa-phone"></i>
+                            </span>
+                            <span className="icon_list_text">{`For Sales: (815) 247-3253`}</span>
+                          </Link>
+                        </li>
                         <li className="icon_list_item footer__link">
                           <Link href="mailto:info@example.com">
                             <span className="icon_list_icon">
@@ -213,16 +221,16 @@ const Contact_Footer = () => {
                     </div>
                     <div className="col-md-2">
                       <div className="footer__quick-links">
-                        <h3 className="foooter__subhead">qUIC Link</h3>
+                        <h3 className="foooter__subhead">Quick Link</h3>
                         <ul className="icon_list_items footer__links footer__categories_links">
                           <li className="footer__link">
-                            <Link to={"/"}>About</Link>
+                            <Link to={"/about-us"}>About</Link>
                           </li>
                           <li className="footer__link">
-                            <Link to={"/contact"}> Blogs</Link>
+                            <Link to={"https://techversellc.com/blogs/"}> Blogs</Link>
                           </li>
                           <li className="footer__link">
-                            <Link to={"/"}>Contact</Link>
+                            <Link to={"/contact"}>Contact</Link>
                           </li>
                         </ul>
                       </div>

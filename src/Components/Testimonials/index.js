@@ -22,36 +22,43 @@ const videos = [
     id: 1,
     thumbnail: image44,
     videoSrc: video1,
+    name: "Sophia Grace",
   },
   {
     id: 2,
     thumbnail: image443,
     videoSrc: video2,
+    name: "Isabella Marie",
   },
   {
     id: 3,
     thumbnail: image442,
     videoSrc: video3,
+    name: "Isabella Marie",
   },
   {
     id: 4,
     thumbnail: image441,
     videoSrc: video4,
+    name: "Ethan Michael",
   },
   {
     id: 5,
     thumbnail: image440,
     videoSrc: Video5,
+    name: "Liam Christopher",
   },
   {
     id: 6,
     thumbnail: image439,
     videoSrc: Video6,
+    name: "Maya Elizabeth",
   },
   {
     id: 7,
     thumbnail: image438,
     videoSrc: Video7,
+    name: "Noah Benjamin",
   },
 ];
 
@@ -154,8 +161,8 @@ const Testimonials = () => {
                         </video>
                       </div>
                     ))}
-                    <h2>David Ruffer</h2>
-                    <p>Lorem Ipsum is simply dummy</p>
+                    <h2>{videos[selectedVideo].name}</h2>
+                    {/* <p>Lorem Ipsum is simply dummy</p> */}
                   </div>
                 </div>
               </div>

@@ -427,7 +427,7 @@ export const Header = (props) => {
 
  
       {industries === true && (
-        <div className="container-fluid ">
+        <div className="container-fluid " ref={dropdownRef}>
           <div className="row">
             <div className="col-xl-9 col-md-8 customDropdown_leftCol">
               <div className="customDropdown_left">

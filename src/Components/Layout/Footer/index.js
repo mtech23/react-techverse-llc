@@ -2,7 +2,6 @@ import { useLocation } from "react-router-dom";
 import bicon from "../../../asserts/images/b-icon.webp";
 import { Link } from "react-router-dom";
 import starticon from "../../../asserts/images/start-icon.webp";
-import Particles from "react-particles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   Logo,
@@ -26,7 +25,7 @@ import { gsap } from "gsap";
 // import Particles from "react-particles";
 // import type { Container, Engine } from "tsparticles-engine";
 // import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
-import { loadSlim } from "tsparticles-slim";
+// import { loadSlim } from "tsparticles-slim";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -103,7 +102,7 @@ export const Footer = (props) => {
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);
 
-    await loadSlim(engine);
+    // await loadSlim(engine);
   }, []);
 
   const particlesLoaded = useCallback(async (container) => {
@@ -576,6 +575,14 @@ export const Footer = (props) => {
                             </span>
                           </Link>
                         </li> */}
+                         <li className="icon_list_item footer__link">
+                          <Link to={"tel: (815) 247-3253"}>
+                            <span className="icon_list_icon">
+                              <i className="fa-solid fa-phone"></i>
+                            </span>
+                            <span className="icon_list_text">{`For Sales: (815) 247-3253`}</span>
+                          </Link>
+                        </li>
                         <li className="icon_list_item footer__link">
                           <Link href="mailto:info@example.com">
                             <span className="icon_list_icon">
@@ -728,13 +735,13 @@ export const Footer = (props) => {
                         <h3 className="foooter__subhead">Quick Link</h3>
                         <ul className="icon_list_items footer__links footer__categories_links">
                           <li className="footer__link">
-                            <Link to={"/"}>About</Link>
+                            <Link to={"/about-us"}>About</Link>
                           </li>
                           <li className="footer__link">
-                            <Link to={"/contact"}> Blogs</Link>
+                            <Link to={"https://techversellc.com/blogs/"}> Blogs</Link>
                           </li>
                           <li className="footer__link">
-                            <Link to={"/"}>Contact</Link>
+                            <Link to={"/contact"}>Contact</Link>
                           </li>
                         </ul>
                       </div>
