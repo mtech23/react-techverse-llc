@@ -176,7 +176,7 @@ const WebDevelopment = () => {
       </section> */}
 
       {/* packages */}
-      <Packages />
+      {/* <Packages /> */}
 
       {/* process we use */}
       <Process para="At Techverse LLC, we believe in making dynamic and effective web solutions tailored to meet your unique business needs. Our web development process integrates cutting-edge technology with creative design, ensuring your digital presence stands out in the competitive landscape." />

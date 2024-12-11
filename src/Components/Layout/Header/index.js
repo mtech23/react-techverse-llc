@@ -199,7 +199,7 @@ export const Header = (props) => {
             </li>
             <li className="nav-item">
               <Link className="nav-link" to={"/case-study"}>
-                Case study
+                Case Study
               </Link>
             </li>
             <li className="nav-item">

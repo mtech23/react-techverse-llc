@@ -3,7 +3,7 @@ import "particles.js";
 import "./particle.css";
 const ParticlesComponent = () => {
   useEffect(() => {
-    window.particlesJS("particles-js", {
+    window?.particlesJS("particles-js", {
       particles: {
         number: { value: 150, density: { enable: true, value_area: 800 } },
         color: { value: "#ffffff" },

@@ -273,7 +273,7 @@ const EcommerseDevelopment = () => {
         </section>
       </div>
 
-      <Packages />
+      {/* <Packages /> */}
       {/* process we use */}
 
       <Process para="We specialize in transforming your business vision into a robust online presence through our streamlined E-Commerce Development process. We make creativity, technical expertise, and strategic insights to provide personalized services according to your unique business needs and goals." />
