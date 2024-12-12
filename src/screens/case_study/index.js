@@ -265,9 +265,7 @@ const Case_study = () => {
                       data-aos-offset="0"
                       data-aos-duration="2000"
                     >
-                      Techverse LLC partnered with a leading clothing retailer
-                      aiming to enhance its digital presence and customer
-                      engagement through a bespoke e-commerce app.
+                      Techverse LLC teamed up with ANGEL BODY to create an easy-to-use online store. This app helps customers shop for health and wellness products quickly and safely, with simple navigation and secure payment options.
                     </p>
                     <div
                       className="techVerse_hero_btns "
@@ -329,9 +327,7 @@ const Case_study = () => {
                       data-aos-offset="0"
                       data-aos-duration="2000"
                     >
-                      Techverse LLC partnered with a leading clothing retailer
-                      aiming to enhance its digital presence and customer
-                      engagement through a bespoke e-commerce app.
+                      Techverse LLC worked with Brian Carlisle to build an e-book app where readers can enjoy his books. The app is easy to use, making reading fun and accessible on any device.
                     </p>
                     <div
                       className="techVerse_hero_btns "
@@ -402,9 +398,7 @@ const Case_study = () => {
                       data-aos-offset="0"
                       data-aos-duration="2000"
                     >
-                      Techverse LLC partnered with a leading clothing retailer
-                      aiming to enhance its digital presence and customer
-                      engagement through a bespoke e-commerce app.
+                      Techverse LLC partnered with Ryderz Van to create an online store for automotive products. The app makes it simple for customers to browse and buy car accessories, providing a smooth shopping experience.
                     </p>
                     <div
                       className="techVerse_hero_btns "
@@ -469,9 +463,7 @@ const Case_study = () => {
                       data-aos-offset="0"
                       data-aos-duration="2000"
                     >
-                      Techverse LLC partnered with a leading clothing retailer
-                      aiming to enhance its digital presence and customer
-                      engagement through a bespoke e-commerce app.
+                      Techverse LLC worked with Irving Segal to develop an e-book app that makes reading easy and enjoyable. The app offers a books with simple navigation and features to read anytime, anywhere.
                     </p>
                     <div
                       className="techVerse_hero_btns "
@@ -540,8 +532,7 @@ const Case_study = () => {
                       data-aos-offset="0"
                       data-aos-duration="2000"
                     >
-                      Creating a seamless and personalized experience for
-                      travelers with our innovative travel mobile app solutions.
+                      Techverse LLC joined forces with Frame With Photos to design an online store where customers can easily customize and buy photo frames. The app offers a variety of styles and sizes, making it simple to preserve memories.
                     </p>
                     <div
                       className="techVerse_hero_btns "
@@ -610,8 +601,7 @@ const Case_study = () => {
                       data-aos-offset="0"
                       data-aos-duration="2000"
                     >
-                      Creating a seamless and personalized experience for
-                      travelers with our innovative travel mobile app solutions.
+                      Techverse LLC collaborated with 1-Eleven to create an easy-to-use booking app. The app helps users quickly book appointments and services with real-time availability and instant confirmation for a smooth and hassle-free experience.
                     </p>
                     <div
                       className="techVerse_hero_btns "

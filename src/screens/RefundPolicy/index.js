@@ -148,20 +148,22 @@ const RefundPolicy = () => {
                     data-aos-duration="1000"
                   >
                     {/* <!-- <span className="color-lightBlue2"></span> -->Introduction */}
-                    Introduction
+                    Refund Policy
                   </h2>
                   <p
                     data-aos="fade-up"
                     data-aos-offset="0"
                     data-aos-duration="2000"
                   >
-                    Techverse LLC ("we," "our," "us") is committed to protecting
-                    the privacy of our users. This Privacy Policy outlines how
-                    we collect, use, disclose, and safeguard your information
-                    when you visit our website, use our services, or interact
-                    with us. Please read this policy carefully to understand our
-                    views and practices regarding your data and how we will
-                    treat it.
+                    Techverse LLC has created this refund policy to describe the circumstances when Techverse LLC will issue a refund, the process for claiming a refund against an order and the liabilities of Techverse LLC related to a transaction ending in a refund claim. By registering for any of Techverse LLC services, you are stating that you have read and accept all of the terms and conditions.
+                  </p>
+                  <p
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="2000"
+                  >
+                    The information Techverse LLC collects is used to improve the content of our web site, used to notify consumers about updates to our website or problems with their request. 
+                    If you do not want to receive e-mail from us in the future, please let us know by sending an e-mail to us or by writing to us and telling us that you do not want to receive e-mail from our company.
                   </p>
                   <h2
                     className="sec_title_head color-darkBlue"
@@ -169,8 +171,8 @@ const RefundPolicy = () => {
                     data-aos-offset="0"
                     data-aos-duration="1000"
                   >
-                    2. Information We{" "}
-                    <span className="color-lightBlue2">Collect</span>
+                    Coverage & {" "}
+                    <span className="color-lightBlue2">Scope</span>
                   </h2>
 
                   <ul
@@ -180,18 +182,10 @@ const RefundPolicy = () => {
                     data-aos-duration="2000"
                   >
                     <li>
-                      <b>Personal Information:</b> We may collect personal
-                      information such as your name, email address, phone
-                      number, and company details when you voluntarily submit it
-                      to us through forms on our website or through
-                      communication with us.
+                      This refund policy covers the treatment of refunds by Techverse LLC and/or a website owned and operated by Techverse LLC.
                     </li>
                     <li>
-                      <b>Usage Data:</b> We may collect non-personal information
-                      about how you interact with our website and services,
-                      including IP addresses, browser types, device types, and
-                      pages visited. This information helps us improve our
-                      services and user experience.
+                      This refund policy does not apply to the practices of companies that Techverse LLC does not own or control, or of persons that Techverse LLC does not employ or manage, including any third-party service and/or product providers bound by contract and any third-party websites to which Techverse LLC’ website link.
                     </li>
                   </ul>
                   <h2
@@ -200,8 +194,8 @@ const RefundPolicy = () => {
                     data-aos-offset="0"
                     data-aos-duration="1000"
                   >
-                    3. How We Use Your{" "}
-                    <span className="color-lightBlue2">Information</span>
+                    Filing a  {" "}
+                    <span className="color-lightBlue2">complaint</span>
                   </h2>
                   <ul
                     className="faqs_ul"
@@ -209,22 +203,11 @@ const RefundPolicy = () => {
                     data-aos-offset="0"
                     data-aos-duration="2000"
                   >
-                    <li>Precise project requirements and objectives</li>
-                    <li>To provide, operate, and maintain our services.</li>
+                    <li>Techverse LLC believes that every project starts with a finished project in mind. Therefore, all possible attempts of amicably working out a mutually acceptable solution should be a priority in case of an unsatisfactory service.  </li>
+                    <li>Ultimately, our goal is to a reach a mutually satisfactory solution. If you are unsatisfied for any reason that has caused you to think about filing a refund claim, please a few minutes to write to us at <a href="mailto:info@techversellc.com">info@techversellc.com</a> to initiate a dialog before requesting a refund.</li>
                     <li>
-                      To communicate with you, respond to your inquiries, and
-                      provide support.
+                      Refund claims should only be filed if we are unable to come to a mutually satisfactory solution.
                     </li>
-                    <li>
-                      To personalize and improve our services and user
-                      experience.
-                    </li>
-                    <li>
-                      To send you promotional emails about new services, special
-                      offers, or other information that we think you may find
-                      interesting.
-                    </li>
-                    <li>To comply with legal obligations.</li>
                   </ul>
                   <h2
                     className="sec_title_head color-darkBlue"
@@ -232,97 +215,261 @@ const RefundPolicy = () => {
                     data-aos-offset="0"
                     data-aos-duration="1000"
                   >
-                    4. How We Protect Your{" "}
-                    <span className="color-lightBlue2">Information</span>
+                    Eligibility for {" "}
+                    <span className="color-lightBlue2">refund</span>
                   </h2>
-                  <p
+                  <ul
+                    className="faqs_ul"
                     data-aos="fade-up"
                     data-aos-offset="0"
                     data-aos-duration="2000"
                   >
-                    We have implemented appropriate technical and organizational
-                    security measures designed to protect the security of any
-                    personal information we process. However, no transmission
-                    over the Internet can ever be guaranteed to be secure, so we
-                    cannot guarantee the absolute security of any information
-                    transmitted to us.
-                  </p>
+                    <li>
+                    Techverse LLC takes every project very seriously and ensures that the same is handled in a professional manner and the client gets the result as per the terms and conditions of the proposal. However, if the client is not happy with the outcome and has gone through the Customer Care Concern resolution process then he can request for refund. 
+                    </li>
+                  </ul>
+                  {/* <p
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="2000"
+                  >
+                    Sample
+                  </p> */}
                   <h2
                     className="sec_title_head color-darkBlue"
                     data-aos="fade-up"
                     data-aos-offset="0"
                     data-aos-duration="1000"
                   >
-                    Sharing Your{" "}
-                    <span className="color-lightBlue2">Information</span>
+                    Claim Your {" "}
+                    <span className="color-lightBlue2">Refund</span>
                   </h2>
                   <p
                     data-aos="fade-up"
                     data-aos-offset="0"
                     data-aos-duration="2000"
                   >
-                    We do not sell, trade, or otherwise transfer your personal
-                    information to outside parties. However, we may share your
-                    information with trusted third parties who assist us in
-                    operating our website, conducting our business, or servicing
-                    you, as long as those parties agree to keep this information
-                    confidential.
+                    To claim your refund in accordance with our refund policy eligibility, follow the following steps:
                   </p>
+                  <p
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="2000"
+                  >
+                    You can claim your refund by:
+                  </p>
+                  <ul
+                    className="faqs_ul"
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="2000"
+                  >
+                    <li>Sending us an Email on <a href="mailto:info@techversellc.com">info@techversellc.com</a>.</li>
+                    <li>As soon as we receive your refund request, we will respond to it at our earliest, once the required analysis is completed we will initiate the process which generally take 20-25 Working Days.</li>
+                    <li>After you have received your refund, you will not have any rights to any designs/source code submitted by Techverse LLC, the information will be submitted to the Copyright Acquisition of the Government Copyright Agencies to maintain legality</li>
+                  </ul>
                   <h2
                     className="sec_title_head color-darkBlue"
                     data-aos="fade-up"
                     data-aos-offset="0"
                     data-aos-duration="1000"
                   >
-                    6. Your <span className="color-lightBlue2">Rights</span>
+                    Applicability of the <span className="color-lightBlue2">Delivery Policy</span>
                   </h2>
                   <p
                     data-aos="fade-up"
                     data-aos-offset="0"
                     data-aos-duration="2000"
                   >
-                    You have the right to access the personal information we
-                    hold about you and to ask that your personal information be
-                    corrected, updated, or deleted. You may also object to the
-                    processing of your personal information, restrict its
-                    processing, or request its portability. To exercise these
-                    rights, please get in touch with us using the information
-                    provided below.
+                    Please note that Techverse LLC’ delivery commitment is subject to:
                   </p>
+                  <ul
+                    className="faqs_ul"
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="2000"
+                  >
+                    <li><b>Timely payments: </b>A project is not considered to be void if the agreed upon / listed payments are not clear.</li>
+                    <li><b>Timely communication from the client: </b>Techverse LLC is not bound to respect the Refund Policy, if required information for successful completion of the project is not communicated to us in a timely manner. Any delay or failure of the project arising out of such situations cannot be attributed to Techverse LLC.</li>
+                    <li><b>Completeness of information provided by the client:</b>If the information provided to Techverse LLC is incomplete and/or complete information/scope of the project is not provided at the beginning of the project, Techverse LLC is not bound to maintain its delivery and /or refund commitments.</li>
+                    <li>Techverse LLC will not make any compensation for the delay of delivery under any circumstances, unless there is a special agreement signed with a penalty clause for delay in delivery.</li>
+                  </ul>
+
                   <h2
                     className="sec_title_head color-darkBlue"
                     data-aos="fade-up"
                     data-aos-offset="0"
                     data-aos-duration="1000"
                   >
-                    7. Changes to This{" "}
-                    <span className="color-lightBlue2">Privacy Policy</span>
+                    Concern 
                   </h2>
-                  <p
+                  <ul
+                    className="faqs_ul"
                     data-aos="fade-up"
                     data-aos-offset="0"
                     data-aos-duration="2000"
                   >
-                    We may update this Privacy Policy from time to time in order
-                    to reflect, for example, changes to our practices or for
-                    other operational, legal, or regulatory reasons.
-                  </p>
+                    <li>Client can initiate the concern with company by emailing on <a href="mailto:info@techversellc.com">info@techversellc.com</a> within the 14 days of project initialization, afterwards no request will be entertained for any kind of claims. </li>
+                  </ul>
                   <h2
                     className="sec_title_head color-darkBlue"
                     data-aos="fade-up"
                     data-aos-offset="0"
                     data-aos-duration="1000"
                   >
-                    8. Contact Us
+                    Limitation of {" "}
+                    <span className="color-lightBlue2">Liability</span>
+                  </h2>
+                  <ul
+                    className="faqs_ul"
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="2000"
+                  >
+                    <li>Techverse LLC’ liability is limited to the value of the portion of the project (as per Techverse LLC’ proposal) which stands incomplete at any given point of time. At any point of time, Techverse LLC cannot be held responsible for losses arising out of the services delivered / not delivered or the delay in the same. The liability to refund arises only once the project has been cancelled by the client and such cancellation has been communicated to Techverse LLC in writing.</li>
+                  </ul>
+
+
+                  <h2
+                    className="sec_title_head color-darkBlue"
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="1000"
+                  >
+                    Changes
                   </h2>
                   <p
                     data-aos="fade-up"
                     data-aos-offset="0"
                     data-aos-duration="2000"
                   >
-                    If you have any questions about this Privacy Policy, please
-                    get in touch with us.
+                    Techverse LLC may at any time, without notice to you and in its sole discretion, amend this policy from time to time. Please review this policy periodically. Your continued use of Techverse LLC website after any such amendments signifies your acceptance thereof. 
                   </p>
+
+
+                  <h2
+                    className="sec_title_head color-darkBlue"
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="1000"
+                  >
+                    Quality Assurance Policy
+                  </h2>
+                  <p
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="2000"
+                  >
+                    We do our best to meet your requirements and our team do their best to fulfill your expectations. We believe in providing best service and each of our service is well researched and well created. 
+                  </p>
+
+                  <h2
+                    className="sec_title_head color-darkBlue"
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="1000"
+                  >
+                    We Offer Satisfaction Guarantee
+                  </h2>
+                  <ul
+                    className="faqs_ul"
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="2000"
+                  >
+                    <li>Our unlimited revisions policy is to make sure that you are satisfied.</li>
+                    <li>We aim at exceeding your expectations and strive to accomplish it. </li>
+                    <li>We do not stop our revisions until you are completely satisfied with your design (number of revisions will be according to your package). </li>
+                  </ul>
+
+                  <h2
+                    className="sec_title_head color-darkBlue"
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="1000"
+                  >
+                    Delivery Policy 
+                  </h2>
+                  <ul
+                    className="faqs_ul"
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="2000"
+                  >
+                    <li>The complete order will be sent to the mentioned account on the date stated on Order Confirmation as well as a confirmation email will also be sent.</li>
+                    <li>The turnaround time will be according to the package, the minimum time required is 2 business days. </li>
+                    <li>In case of urgent order, contact our customer support team. </li>
+                  </ul>
+
+
+                  <h2
+                    className="sec_title_head color-darkBlue"
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="1000"
+                  >
+                    Record Maintenance 
+                  </h2>
+                  <p
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="2000"
+                  >Techverse LLC keeps the records of finalized services so that in case of any misplaced order, you will be provided the exact file. </p>
+
+                  <h2
+                    className="sec_title_head color-darkBlue"
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="1000"
+                  >
+                    Customer Support
+                  </h2>
+                  <p
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="2000"
+                  >Our customer support is present 5 days a week during office timings to answer all of your concerns and queries, our team will answer your concerns anytime and every time. </p>
+
+
+                  <h2
+                    className="sec_title_head color-darkBlue"
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="1000"
+                  >
+                    We Offer Satisfaction Guarantee
+                  </h2>
+                  <ul
+                    className="faqs_ul"
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="2000"
+                  >
+                    <li>YOU agree that Techverse LLC is not liable for any correspondence from email address (es) other than the ones followed by our own domain i.e. “...@techversellc.com" or/and any toll-free number that is not mentioned on our website. Techverse LLC should not be held responsible for any damage(s) caused by such correspondence. We only take responsibility of any communication through email address (es) under our own domain name or/and via toll free number i.e. already mentioned on Techverse LLC Website.</li>
+                    <li>We are not responsible for any damages caused due to other contact details not provided by us. </li>
+                    <li>Project activation charges will apply if client fails to respond over a period of 25 days. </li>
+                    <li>We take full responsibility of all the information provided through our official domains.</li>
+                  </ul>
+
+
+
+                  <h2
+                    className="sec_title_head color-darkBlue"
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="1000"
+                  >
+                    Contacting Us Regarding Our Policy
+                  </h2>
+                  <ul
+                    className="faqs_ul"
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="2000"
+                  >
+                    <li>If you have questions or suggestions about this refund policies please e–mail us at <a href="mailto:info@techversellc.com">info@techversellc.com</a>.</li>
+                  </ul>
+
                 </div>
               </div>
             </div>
