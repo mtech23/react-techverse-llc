@@ -30,7 +30,7 @@ import { gsap } from "gsap";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-// mainSiteLogo
+// mainSiteLogo 
 
 import "./style.css";
 
@@ -603,24 +603,24 @@ export const Footer = (props) => {
                         </li>
                       </ul>
                       <div className="social_links">
-                        <Link to={"/"} className="social_link">
+                        <a href="https://www.facebook.com/techversellc/" target="_blank" className="social_link">
                           <i className="fa-brands fa-facebook"></i>
-                        </Link>
-                        <Link to={"/"} className="social_link">
-                          <i className="fa-brands fa-youtube"></i>
-                        </Link>
-                        <Link to={"/"} className="social_link">
+                        </a>
+                        <a href="https://www.linkedin.com/company/techversellc/" target="_blank" className="social_link">
                           <i className="fa-brands fa-linkedin"></i>
-                        </Link>
-                        <Link to={"/"} className="social_link">
+                        </a>
+                        <a href="https://www.instagram.com/itstechversellc/" target="_blank" className="social_link">
                           <i className="fa-brands fa-instagram"></i>
+                        </a>
+                        {/* <Link to={"/"} className="social_link">
+                          <i className="fa-brands fa-youtube"></i>
                         </Link>
                         <Link to={"/"} className="social_link">
                           <i className="fa-brands fa-square-pinterest"></i>
                         </Link>
                         <Link to={"/"} className="social_link">
                           <i className="fa-solid fa-star"></i>
-                        </Link>
+                        </Link> */}
                       </div>
                       <div className="footer_bbb">
                         <Link to={"/"}>

@@ -34,7 +34,7 @@ const videos = [
     id: 3,
     thumbnail: image442,
     videoSrc: video3,
-    name: "Isabella Marie",
+    name: "Alexander James",
   },
   {
     id: 4,
@@ -161,7 +161,7 @@ const Testimonials = () => {
                         </video>
                       </div>
                     ))}
-                    <h2>{videos[selectedVideo]?.name}</h2>
+                    <h2>{videos[selectedVideo-1]?.name}</h2>
                     {/* <p>Lorem Ipsum is simply dummy</p> */}
                   </div>
                 </div>

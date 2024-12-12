@@ -55,7 +55,7 @@ const Contact_Footer = () => {
               <div className="row footer_row">
                 <div className="col-xl-9 col-md-12">
                   <div className="row">
-                    <div className="col-md-4">
+                  <div className="col-md-4">
                       <div className="footer_about">
                         <div className="footer_logo_img_box">
                           <Link to={"/"}>
@@ -98,7 +98,7 @@ const Contact_Footer = () => {
                               <i className="fa-solid fa-envelope"></i>
                             </span>
                             <span className="icon_list_text">
-                              info@example.com
+                            info@techversellc.com
                             </span>
                           </Link>
                         </li>
@@ -112,24 +112,24 @@ const Contact_Footer = () => {
                         </li>
                       </ul>
                       <div className="social_links">
-                        <Link to={"/"} className="social_link">
+                        <a href="https://www.facebook.com/techversellc/" target="_blank" className="social_link">
                           <i className="fa-brands fa-facebook"></i>
-                        </Link>
-                        <Link to={"/"} className="social_link">
-                          <i className="fa-brands fa-youtube"></i>
-                        </Link>
-                        <Link to={"/"} className="social_link">
+                        </a>
+                        <a href="https://www.linkedin.com/company/techversellc/" target="_blank" className="social_link">
                           <i className="fa-brands fa-linkedin"></i>
-                        </Link>
-                        <Link to={"/"} className="social_link">
+                        </a>
+                        <a href="https://www.instagram.com/itstechversellc/" target="_blank" className="social_link">
                           <i className="fa-brands fa-instagram"></i>
+                        </a>
+                        {/* <Link to={"/"} className="social_link">
+                          <i className="fa-brands fa-youtube"></i>
                         </Link>
                         <Link to={"/"} className="social_link">
                           <i className="fa-brands fa-square-pinterest"></i>
                         </Link>
                         <Link to={"/"} className="social_link">
                           <i className="fa-solid fa-star"></i>
-                        </Link>
+                        </Link> */}
                       </div>
                       <div className="footer_bbb">
                         <Link to={"/"}>
@@ -146,37 +146,52 @@ const Contact_Footer = () => {
                     <div className="col-md-3">
                       <div className="footer__quick-links">
                         <h3 className="foooter__subhead"> Services</h3>
+                        
                         <ul className="icon_list_items footer__links footer__categories_links">
                           <li className="footer__link">
-                            <Link to={"/business-devlopment"} as={"link"}>
+                            <Link to={"/app-store"} as={"link"}>
+                              App Store
+                            </Link>
+                          </li>
+                          <li className="footer__link">
+                            <Link to={"/branding"}>Branding</Link>
+                          </li>
+                          <li className="footer__link">
+                            <Link to={"/book-publication"}>
+                              Book Publication
+                            </Link>
+                          </li>
+                          <li className="footer__link">
+                            <Link to={"/business-devlopment"}>
                               Business Development
                             </Link>
                           </li>
                           <li className="footer__link">
-                            <Link to={"/"}>Development</Link>
+                            <Link to={"/Devops"}>DevOps</Link>
                           </li>
                           <li className="footer__link">
-                            <Link to={"/"}>Mobile Application Development</Link>
+                            <Link to={"/digital-marketing"}>
+                              Digital Marketing
+                            </Link>
                           </li>
                           <li className="footer__link">
                             <Link to={"/ecommerse-development"}>
-                              Ecommerce Development
+                              E-Commerce Development
                             </Link>
                           </li>
-                          {/* <li className="footer__link">
-                            <Link to={"/"}>Game Development</Link>
-                          </li> */}
+                          <li className="footer__link">
+                            <Link to={"/mobile-app"}>
+                              Mobile Application Development
+                            </Link>
+                          </li>
+                          <li className="footer__link">
+                            <Link to={"/out-sourcing"}>Out Source</Link>
+                          </li>
+                          <li className="footer__link">
+                            <Link to={"/web-application"}>Web Application</Link>
+                          </li>
                           <li className="footer__link">
                             <Link to={"/web-development"}>Web Development</Link>
-                          </li>
-                          <li className="footer__link">
-                            <Link to={"/"}>Android App Development</Link>
-                          </li>
-                          <li className="footer__link">
-                            <Link to={"/"}>iOS App Development</Link>
-                          </li>
-                          <li className="footer__link">
-                            <Link to={"/"}>Smart Contract Development</Link>
                           </li>
                         </ul>
                       </div>
@@ -186,32 +201,35 @@ const Contact_Footer = () => {
                         <h3 className="foooter__subhead">Industries</h3>
                         <ul className="icon_list_items footer__links footer__categories_links">
                           <li className="footer__link">
-                            <Link to={"/"}>Advertising</Link>
-                          </li>
-                          <li className="footer__link">
-                            <Link to={"/"}>Gaming & leisure</Link>
+                            <Link to={"/automotive"}>
+                              Automotive and Transport
+                            </Link>
                           </li>
                           <li className="footer__link">
                             <Link to={"/ecommerse"}>E-commerce & Retails</Link>
                           </li>
                           <li className="footer__link">
-                            <Link to={"/"}>Media & Entertainment</Link>
+                            <Link to={"/education-hr"}>Education & HR</Link>
+                          </li>
+                          <li className="footer__link">
+                            <Link to={"/finance"}>Finance</Link>
+                          </li>
+                          <li className="footer__link">
+                            <Link to={"/health-care"}>
+                              Health and Life Sciences
+                            </Link>
+                          </li>
+                          <li className="footer__link">
+                            <Link to={"/media"}>Media & Entertainment</Link>
                           </li>
                           <li className="footer__link">
                             <Link to={"/realEstate-and-property"}>
                               Real Estate & Property
                             </Link>
                           </li>
-                          <li className="footer__link">
-                            <Link to={"/"}>Software & High Tech</Link>
-                          </li>
+
                           <li className="footer__link">
                             <Link to={"/sports"}>Sports Teams & Leagues</Link>
-                          </li>
-                          <li className="footer__link">
-                            <Link to={"/health-care"}>
-                              Health & Life Sciences
-                            </Link>
                           </li>
                           <li className="footer__link">
                             <Link to={"/travel"}>Travel & Hospitality</Link>
@@ -219,7 +237,7 @@ const Contact_Footer = () => {
                         </ul>
                       </div>
                     </div>
-                    <div className="col-md-2">
+                    {/* <div className="col-md-2">
                       <div className="footer__quick-links">
                         <h3 className="foooter__subhead">Quick Link</h3>
                         <ul className="icon_list_items footer__links footer__categories_links">
@@ -234,7 +252,24 @@ const Contact_Footer = () => {
                           </li>
                         </ul>
                       </div>
+                    </div> */}
+                    <div className="col-md-2">
+                      <div className="footer__quick-links">
+                        <h3 className="foooter__subhead">Quick Link</h3>
+                        <ul className="icon_list_items footer__links footer__categories_links">
+                          <li className="footer__link">
+                            <Link to={"/about-us"}>About</Link>
+                          </li>
+                          <li className="footer__link">
+                            <a href="https://techversellc.com/blogs/"> Blogs</a>
+                          </li>
+                          <li className="footer__link">
+                            <Link to={"/contact"}>Contact</Link>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
+
                   </div>
                   <div className="footer-spacer"></div>
                   <div className="col-md-12 footer_copyright-col px-0">

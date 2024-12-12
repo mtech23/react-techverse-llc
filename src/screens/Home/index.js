@@ -950,7 +950,7 @@ const Home = () => {
         title="Our"
         subtitle="Portfolio"
         para="Our Company has worked with thousands of businesses 
-     all across the world and has developed highly functional, responsive, and feature-rich applications. Check out some of our best works:"
+        all across the world and has developed highly functional, responsive, and feature-rich applications. Check out some of our best works:"
         image1={portfoliomockup1}
         image2={portfoliomockup2}
         image3={portfoliomockup3}

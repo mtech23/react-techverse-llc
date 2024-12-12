@@ -58,7 +58,7 @@ const App_store = () => {
           // appstore: appstore
         }}
       />
-      {/* <!-- Trusted Partners --> */}
+      {/* <!-- Trusted Partners  --> */}
 
       <TrustedPartners />
       {/* <!-- About Sec --> */}

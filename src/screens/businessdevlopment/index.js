@@ -24,6 +24,7 @@ import businessimg01 from "../../asserts/images/business-img-01.webp";
 
 import businessdevelopmenthero from "../../asserts/images/business-development-hero.webp";
 import Helmet from "../../Components/Helmet";
+import TrustedPartners from "../../Components/TrustedPartners";
 gsap.registerPlugin(MotionPathPlugin);
 
 const Businessdevlopment = () => {
@@ -60,7 +61,8 @@ const Businessdevlopment = () => {
         }}
       />
       {/* <!-- Trusted Partners --> */}
-      <section className="techVerse_trustedPartners techVerse_trustedPartnersServices">
+      <TrustedPartners />
+      {/* <section className="techVerse_trustedPartners techVerse_trustedPartnersServices">
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-12">
@@ -103,7 +105,7 @@ const Businessdevlopment = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* <!-- About Sec --> */}
 
