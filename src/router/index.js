@@ -28,6 +28,7 @@ import Terms_condition from "../screens/Terms_condition";
 import ScrollTop from "../Components/Scrolltop/ScrollTop";
 import Branding from "../screens/branding";
 import BookPublication from "../screens/book-publication";
+import RefundPolicy from "../screens/RefundPolicy";
 const Router = () => {
   return (
     <BrowserRouter basename="/">
@@ -39,6 +40,7 @@ const Router = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/case-study" element={<Case_study />} />
         <Route path="/privacy-policy" element={<Privacy_Policy />} />
+        <Route path="/refund-policy" element={<RefundPolicy />} />
         <Route path="/terms-conditions" element={<Terms_condition />} />
         {/* Services Pages */}
         <Route path="/app-store" element={<App_store />}></Route>

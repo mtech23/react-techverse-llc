@@ -12,7 +12,7 @@ import "aos/dist/aos.css";
 
 import Helmet from "../../Components/Helmet";
 
-const Privacy_Policy = () => {
+const RefundPolicy = () => {
   useEffect(() => {
     AOS.init();
   }, []);
@@ -125,7 +125,7 @@ const Privacy_Policy = () => {
                     data-aos-offset="0"
                     data-aos-duration="1000"
                   >
-                    Privacy
+                    Refund
                     <span className="color-lightBlue1"> Policy</span>
                   </h1>
                 </div>
@@ -335,4 +335,4 @@ const Privacy_Policy = () => {
   );
 };
 
-export default Privacy_Policy;
+export default RefundPolicy;

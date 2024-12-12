@@ -765,6 +765,9 @@ export const Footer = (props) => {
                           <Link to={"/terms-conditions"}>
                             Terms & Conditions
                           </Link>
+                          <Link to={"/refund-policy"}>
+                            Refund Policy
+                          </Link>
                         </div>
                       </div>
                       <div className="col-md-12">
