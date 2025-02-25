@@ -226,11 +226,11 @@ export const Header = (props) => {
            <span style={{border:"1px solid white"}}  ></span>
            </div>
             <li className="nav-item icon_list_item">
-              <Link to={"tel: (815) 247-3253"} className="nav-link">
+              <Link to={"tel: (904) 658-7362"} className="nav-link">
                 <span className="icon_list_icon">
                   <i className="fa-solid fa-phone"></i>
                 </span>
-                <span className="icon_list_text"> {`(815) 247-3253`}</span>
+                <span className="icon_list_text"> {`(904) 658-7362`}</span>
               </Link>
             </li>
            
@@ -263,7 +263,7 @@ export const Header = (props) => {
 
                 <div className="dropdown_content">
                   <div className="row">
-                    <div className="col-md-6 col-xl-4">
+                    <div className="col-md-6 col-xl-3">
                       <ul className="custom_dropdown_list">
                         <li>
                           <div className="dropdown_linkBox">
@@ -299,7 +299,7 @@ export const Header = (props) => {
                         </li>
                       </ul>
                     </div>
-                    <div className="col-md-6 col-xl-4">
+                    <div className="col-md-6 col-xl-3">
                       <ul className="custom_dropdown_list">
                         <li>
                           <div className="dropdown_linkBox">
@@ -335,7 +335,7 @@ export const Header = (props) => {
                         </li>
                       </ul>
                     </div>
-                    <div className="col-md-6 col-xl-4">
+                    <div className="col-md-6 col-xl-3">
                       <ul className="custom_dropdown_list">
                         <li>
                           <div className="dropdown_linkBox">
@@ -363,6 +363,36 @@ export const Header = (props) => {
                         </li>
                       </ul>
                     </div>
+
+                    <div className="col-md-6 col-xl-3">
+                      <ul className="custom_dropdown_list">
+                        <li>
+                          <div className="dropdown_linkBox">
+                            <Link to={"/amazon-dropshipping"}>
+                              <h4>Amazon Dropshipping</h4>
+                            </Link>
+                            <p>Amazon Dropshipping</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div className="dropdown_linkBox">
+                            <Link to={"/wallmart-automation"}>
+                              <h4>Wallmart Automation</h4>
+                            </Link>
+                            <p>Wallmart Automation</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div className="dropdown_linkBox">
+                            <Link to={"/tiktok-shop-automation"}>
+                              <h4>TikTok Shop Automation</h4>
+                            </Link>
+                            <p>TikTok Shop Automation</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+
                   </div>
                 </div>
               </div>

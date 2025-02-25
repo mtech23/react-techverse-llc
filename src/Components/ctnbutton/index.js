@@ -10,7 +10,7 @@ const Ctnbutton = (props) => {
         data-aos-duration="3000"
       >
         {props.primaryButtonClass && (
-          <a href="tel: (815) 247-3253" className={props?.primaryButtonClass}>
+          <a href="tel: (904) 658-7362" className={props?.primaryButtonClass}>
             <img className="btn_with_icon_img" src={props?.phoneicon} alt="" />
             <span className="btn_with_icon_text">{props?.calltext}</span>
           </a>
