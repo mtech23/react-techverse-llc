@@ -29,6 +29,13 @@ import ScrollTop from "../Components/Scrolltop/ScrollTop";
 import Branding from "../screens/branding";
 import BookPublication from "../screens/book-publication";
 import RefundPolicy from "../screens/RefundPolicy";
+
+import AmazonDropshipping from "../screens/AmazonDropshipping";
+import WallmartAutomation from "../screens/WallmartAutomation";
+import TikTokShopAutomation from "../screens/TikTokShopAutomation";
+
+
+
 const Router = () => {
   return (
     <BrowserRouter basename="/">
@@ -78,6 +85,12 @@ const Router = () => {
         ></Route>
         <Route path="/sports" element={<Sports />}></Route>
         <Route path="/travel" element={<Travel />}></Route>
+
+        <Route path="/amazon-dropshipping" element={<AmazonDropshipping />}></Route>
+        <Route path="/wallmart-automation" element={<WallmartAutomation />}></Route>
+        <Route path="/tiktok-shop-automation" element={<TikTokShopAutomation />}></Route>
+
+
         {/* <Route path="/Blogs" "Blogs"} /> */}
         Blogs
       </Routes>

@@ -300,7 +300,7 @@ export const Footer = (props) => {
                         <div className="sec_title">
                           <h2 className="sec_title_head color-lightBlue2">
                             CONTACT
-                            <span className="color-darkBlue"> Us </span>
+                            <span className="color-darkBlue"> US </span>
                           </h2>
                         </div>
                         <form onSubmit={handlesubmit}>
@@ -576,20 +576,20 @@ export const Footer = (props) => {
                           </Link>
                         </li> */}
                          <li className="icon_list_item footer__link">
-                          <Link to={"tel: (815) 247-3253"}>
+                          <Link to={"tel: (904) 658-7362"}>
                             <span className="icon_list_icon">
                               <i className="fa-solid fa-phone"></i>
                             </span>
-                            <span className="icon_list_text">{`For Sales: (815) 247-3253`}</span>
+                            <span className="icon_list_text">{`For Sales: (904) 658-7362`}</span>
                           </Link>
                         </li>
                         <li className="icon_list_item footer__link">
-                          <Link href="mailto:info@example.com">
+                          <Link to={"mailto: info@techversellc.com"}>
                             <span className="icon_list_icon">
                               <i className="fa-solid fa-envelope"></i>
                             </span>
                             <span className="icon_list_text">
-                            info@techversellc.com
+                            info@techversellc.com 
                             </span>
                           </Link>
                         </li>
@@ -598,7 +598,7 @@ export const Footer = (props) => {
                             <span className="icon_list_icon">
                               <i className="fa-solid fa-location-dot"></i>
                             </span>
-                            <span className="icon_list_text">USA</span>
+                            <span className="icon_list_text">1330 Windy Ridge Ln SE, Atlanta, GA 30339</span>
                           </Link>
                         </li>
                       </ul>

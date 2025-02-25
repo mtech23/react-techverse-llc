@@ -85,11 +85,11 @@ const Contact_Footer = () => {
                           </Link>
                         </li> */}
                          <li className="icon_list_item footer__link">
-                          <Link to={"tel: (815) 247-3253"}>
+                          <Link to={"tel: (904) 658-7362"}>
                             <span className="icon_list_icon">
                               <i className="fa-solid fa-phone"></i>
                             </span>
-                            <span className="icon_list_text">{`For Sales: (815) 247-3253`}</span>
+                            <span className="icon_list_text">{`For Sales: (904) 658-7362`}</span>
                           </Link>
                         </li>
                         <li className="icon_list_item footer__link">

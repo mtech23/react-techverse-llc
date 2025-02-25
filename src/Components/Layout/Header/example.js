@@ -191,12 +191,12 @@
           </a>
         </li>
         <li className="nav-item icon_list_item">
-          {/* <a className="nav-link" href="#">(815) 247-3253</a>     */}
-          <a href="tel:(815) 247-3253" className="nav-link">
+          {/* <a className="nav-link" href="#">(904) 658-7362</a>     */}
+          <a href="tel:(904) 658-7362" className="nav-link">
             <span className="icon_list_icon">
               <img src={usaflag} alt="" />
             </span>
-            <span className="icon_list_text">(815) 247-3253</span>
+            <span className="icon_list_text">(904) 658-7362</span>
           </a>
         </li>
       </ul>
